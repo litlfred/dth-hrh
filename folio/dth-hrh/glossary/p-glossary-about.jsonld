@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-glossary-about",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:glossary-about",
+  "kind": "prose",
+  "title": "About this glossary",
+  "text": "p-glossary-about.md",
+  "provenance": "authored"
+}

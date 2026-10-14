@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/pers-training-institution-registrar",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:training-institution-registrar",
+  "kind": "persona",
+  "title": "Training institution registrar",
+  "text": "pers-training-institution-registrar.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "personaType": "person"
+  },
+  "provenance": "authored"
+}

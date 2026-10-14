@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2baca10f88aac07ea9a2ebc50ff6948840ba297f",
+          "ref": "8d872d0a9135aa21222572aa54d3c8ab3a8a00d9",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "2baca10f88aac07ea9a2ebc50ff6948840ba297f",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready', window extended to ~15:20 UTC (after litlfred/cat-harness-tools#190, litlfred/folio-assistant-core#78)"
+              "ref": "8d872d0a9135aa21222572aa54d3c8ab3a8a00d9",
+              "evidence": "Owner window extended to ~18:20 UTC (session selection '1'): merge each PR when green, re-pin dth-hrh. cat-harness-tools#194 merged as 8d872d0 (contributed kinds in gen-block-jsonld; includes #191 plainHeading)."
             }
           }
         }

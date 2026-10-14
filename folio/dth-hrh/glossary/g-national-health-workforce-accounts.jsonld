@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-national-health-workforce-accounts",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-national-health-workforce-accounts",
+  "kind": "prose",
+  "title": "National Health Workforce Accounts (NHWA)",
+  "text": "g-national-health-workforce-accounts.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "national-health-workforce-accounts"
+    }
+  },
+  "provenance": "authored"
+}

@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
+          "ref": "13d4a932197db89a1b59fa37c7bcce7d29819618",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
-              "evidence": "Owner (14:47 UTC+? session message 'Merge one green and ready and repin as necessary for the next 3 hours', 2026-10-14 16:47 UTC): litlfred/cat-harness-tools#197 merged as 6c9453b (KG from the first step); litlfred/folio-assistant-core#83 merged as d024a57 (document site publishes every block's KG node)."
+              "ref": "13d4a932197db89a1b59fa37c7bcce7d29819618",
+              "evidence": "Owner's merge-and-repin window (2026-10-14 16:47-19:50 UTC; 'Merge now' for #208): litlfred/cat-harness-tools#208 merged as bb68cda (✍ suggest runtime, gen-values-jsonld); litlfred/folio-assistant-core#85 merged as 13d4a93 (document site writes values.jsonld, runtime on every page)."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6c9453b04acc5dbfe63471d1323132c0893daf4e",
+          "ref": "bb68cda61d80e7278d97a5c9444054dfe8a1b7d4",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "6c9453b04acc5dbfe63471d1323132c0893daf4e",
-              "evidence": "Owner (14:47 UTC+? session message 'Merge one green and ready and repin as necessary for the next 3 hours', 2026-10-14 16:47 UTC): litlfred/cat-harness-tools#197 merged as 6c9453b (KG from the first step); litlfred/folio-assistant-core#83 merged as d024a57 (document site publishes every block's KG node)."
+              "ref": "bb68cda61d80e7278d97a5c9444054dfe8a1b7d4",
+              "evidence": "Owner's merge-and-repin window (2026-10-14 16:47-19:50 UTC; 'Merge now' for #208): litlfred/cat-harness-tools#208 merged as bb68cda (✍ suggest runtime, gen-values-jsonld); litlfred/folio-assistant-core#85 merged as 13d4a93 (document site writes values.jsonld, runtime on every page)."
             }
           }
         }

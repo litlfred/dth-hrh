@@ -44,3 +44,6 @@ review/wg-comment/raw/
 /issue-marks/**
 /todos/**
 # END state mounts
+
+# Written by the site build (sync-docs-harness), never committed
+docs/_data/

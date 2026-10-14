@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-mds-birth-history",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:mds-birth-history",
+  "kind": "data-element",
+  "title": "Birth history",
+  "text": "de-birth-history.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "minimumDataSet": "WHO 2015",
+    "position": 3
+  },
+  "provenance": "authored"
+}

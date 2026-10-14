@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-health-labour-market",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-health-labour-market",
+  "kind": "prose",
+  "title": "Health labour market",
+  "text": "g-health-labour-market.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "health-labour-market"
+    }
+  },
+  "provenance": "authored"
+}

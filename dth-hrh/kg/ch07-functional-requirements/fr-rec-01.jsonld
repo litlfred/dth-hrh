@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/freq-FR-REC-01",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:FR-REC-01",
+  "kind": "functional-requirement",
+  "title": "Create, view, update and archive the health worker record in line with the…",
+  "text": "fr-rec-01.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "FR-REC-01",
+    "priority": "to-be-prioritized"
+  },
+  "provenance": "authored"
+}

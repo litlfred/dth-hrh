@@ -191,11 +191,13 @@ def read(wb_path):
 
 
 COUNCIL_CHECKS = Path("glossary/professional-council-checks.json")
+COUNCIL_CHECKED_ON = ""
 CHECK_LABEL = {
     "verified": "verified",
     "corrected": "corrected",
     "partly-verified": "partly verified",
     "unverified": "not verified",
+    "not-verified": "not verified",
 }
 
 
@@ -209,9 +211,12 @@ def apply_council_checks(councils):
     value here and the original is kept under `asReceived`, so nothing is
     silently overwritten. A row with no record stays "not checked".
     """
+    global COUNCIL_CHECKED_ON
     checks = {}
     if COUNCIL_CHECKS.exists():
-        for rec in json.loads(COUNCIL_CHECKS.read_text())["checks"]:
+        doc = json.loads(COUNCIL_CHECKS.read_text())
+        COUNCIL_CHECKED_ON = doc.get("checkedOn", "")
+        for rec in doc["checks"]:
             checks[rec["row"]] = rec
     field = {"council": "name", "professions": "professions", "definition": "definition", "mandate": "mandate", "reference": "ref"}
     for k in councils:
@@ -232,6 +237,11 @@ def check_note(k):
     rec = k.get("check")
     if not rec:
         return "Not yet checked against its source."
+    if rec["verdict"] == "not-verified":
+        leads = ", ".join(dict.fromkeys(e["url"] for e in rec.get("searchLeads", [])))
+        return (f"Checked {COUNCIL_CHECKED_ON}: not verified (source pages could not be opened; web search only). "
+                f"Suspected issues, to confirm: {rec.get('suspectedIssues') or 'none found'}"
+                + (f" Search leads: {leads}." if leads else ""))
     urls = ", ".join(dict.fromkeys(e["url"] for e in rec.get("evidence", [])))
     fixed = ", ".join(k.get("asReceived", {})) or "nothing"
     return (f"Checked {rec.get('checkedOn', '')}: {CHECK_LABEL.get(rec['verdict'], rec['verdict'])}. "
@@ -466,7 +476,10 @@ def write_chapter(folio_dir, concepts, order, links, councils, prior):
     rows = ["| WHO region | Country | Council | Regulates | Statutory definition | Mandate | Reference | Checked |", "|---|---|---|---|---|---|---|---|"]
     for k in councils:
         rec = k.get("check")
-        if rec:
+        if rec and rec["verdict"] == "not-verified":
+            leads = " ".join(f"[{i}]({u})" for i, u in enumerate(dict.fromkeys(e["url"] for e in rec.get("searchLeads", [])), start=1))
+            checked = "**not verified** (sources could not be opened). Suspected: " + (rec.get("suspectedIssues") or "none") + (f" Leads: {leads}" if leads else "")
+        elif rec:
             links = " ".join(f"[{i}]({e['url']})" for i, e in enumerate(dict((e["url"], e) for e in rec.get("evidence", [])).values(), start=1))
             fixed = ", ".join(k.get("asReceived", {}))
             checked = CHECK_LABEL.get(rec["verdict"], rec["verdict"]) + (f" (corrected: {fixed})" if fixed else "") + (f" {links}" if links else "")

@@ -378,6 +378,20 @@
           "upstreamPath": "smart-base/code-lists",
           "treeDigest": "f2409d16893088b758175923dd5a263c9b886841293387998c434dee7eb27351",
           "files": 6
+        },
+        {
+          "id": "smart-base-typologies",
+          "path": "smart-base/typologies",
+          "upstreamPath": "smart-base/typologies",
+          "treeDigest": "9b8cbba643e3271f8fb9f97b603d72303520d1d572c20493ab7ff19dc25de74a",
+          "files": 2
+        },
+        {
+          "id": "smart-base-validators",
+          "path": "smart-base/validators",
+          "upstreamPath": "smart-base/validators",
+          "treeDigest": "5233a2bccea03d2a3661791929fadec263e2b2466be301bd4739ac969518f811",
+          "files": 2
         }
       ],
       "assets": [

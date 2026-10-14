@@ -40,7 +40,9 @@
                 "smart-base-scripts",
                 "smart-base-skills",
                 "smart-base-scenarios",
-                "smart-base-code-lists"
+                "smart-base-code-lists",
+                "smart-base-typologies",
+                "smart-base-validators"
               ]
             }
           },
@@ -174,7 +176,7 @@
               "by": "litlfred",
               "on": "2026-10-14",
               "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' — dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
             }
           }
         }
@@ -199,7 +201,7 @@
               "by": "litlfred",
               "on": "2026-10-14",
               "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' — dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
             }
           }
         }

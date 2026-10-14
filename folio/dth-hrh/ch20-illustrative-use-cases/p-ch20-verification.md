@@ -1,3 +1,0 @@
-- An employer or member of the public checks a health worker's status online.
-- A clinical system checks automatically that a prescriber is authorized.
-- A health worker holds a digital credential that can be verified online or offline.

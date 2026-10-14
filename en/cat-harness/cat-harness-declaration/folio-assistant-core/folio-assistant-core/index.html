@@ -436,6 +436,16 @@
     ],
     &quot;title&quot;: &quot;Glossary&quot;,
     &quot;alias&quot;: &quot;glossary&quot;
+  },
+  {
+    &quot;id&quot;: &quot;bibliography&quot;,
+    &quot;renderedBy&quot;: &quot;bibliography-page&quot;,
+    &quot;coversKinds&quot;: [
+      &quot;references&quot;,
+      &quot;catalogue&quot;
+    ],
+    &quot;subgraphs&quot;: &quot;directory&quot;,
+    &quot;title&quot;: &quot;Bibliography&quot;
   }
 ]</pre></dd>
 <dt>_needs_comment</dt><dd>The layer this instance sits on. Owner, 2026-09-20: &quot;So bootsteap, cat harness, fa-core, f-a, from bottom to top.&quot; Declared rather than hardcoded in the navbar, so the ordering is a fact of the repository and not of whichever consumer needed it first. `cat-harness-tools` added 2026-10-01 on owner ruling C1 (epic 7x5n, bean rmi6): the tool implementation layer sits BELOW this one, so core may use it and it may never use core.</dd>
@@ -443,6 +453,11 @@
   &quot;cat-harness&quot;,
   &quot;cat-harness-tools&quot;
 ]</pre></dd>
+<dt>_jsonldPrefixes_comment</dt><dd>The external vocabularies this instance&#39;s JSON-LD speaks (cat-harness schemas/jsonld-prefixes.ts; bean folio-assistant-63q4, owner 2026-10-14). BIBO and FaBiO type and describe reference nodes (schemas/reference.ts, referenceToJsonLd); dcterms comes from cat-harness, which this instance needs, so it is not repeated here.</dd>
+<dt>jsonldPrefixes</dt><dd><pre>{
+  &quot;bibo&quot;: &quot;http://purl.org/ontology/bibo/&quot;,
+  &quot;fabio&quot;: &quot;http://purl.org/spar/fabio/&quot;
+}</pre></dd>
 <dt>_contentAdapters_comment</dt><dd>Declared HERE, by the instance that ships the adapter, so cat-harness&#39;s composition root (`src/builtin-adapters.ts`) finds it by reading declarations instead of holding a `../folio-assistant-core/adapters/document/index.ts` path into the layer above it. That path was the last upward import out of cat-harness, and a variable one no static gate could see (bean p11x, `check:import-direction`).</dd>
 <dt>contentAdapters</dt><dd><pre>[
   {
@@ -518,16 +533,6 @@
     &quot;notes&quot;: &quot;Base content type. All other types inherit Markdown translation.&quot;
   }
 ]</pre></dd>
-<dt>_gateExemptions_comment</dt><dd>Steps of folio-assistant&#39;s own workflows that CI runs and the gate set does not (bean 0r7u: the instance above the tools layer declares them, so the tools layer standalone never carries a stale entry).</dd>
-<dt>gateExemptions</dt><dd><pre>{
-  &quot;steps&quot;: [
-    {
-      &quot;match&quot;: &quot;qa:publish --add&quot;,
-      &quot;kind&quot;: &quot;ci-only&quot;,
-      &quot;reason&quot;: &quot;health-check.yml adds the daily pages-serving observation to the commit&#39;s qa-reports entry (bean 1dre): a WRITE of a network observation into the qa-reports branch, not a check; its add-only rule is covered by qa-store.test.ts in `bun test`&quot;
-    }
-  ]
-}</pre></dd>
 </dl>
 </main>
 </body>

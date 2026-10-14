@@ -1,0 +1,3 @@
+- Coverage and completeness, timeliness of updates, and data quality.
+- Service performance: time to register, renew and verify; system availability.
+- Use: number of connected systems, number of verification queries, and reports used for decisions.

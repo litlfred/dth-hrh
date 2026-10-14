@@ -1,0 +1,1 @@
+**Part 2. Technical Design.** This part gives the technical guidance needed to design a registry that connects with the wider health and government digital ecosystem: where the registry sits, how it exchanges data, what data it holds, and how those data are kept secure and of good quality.

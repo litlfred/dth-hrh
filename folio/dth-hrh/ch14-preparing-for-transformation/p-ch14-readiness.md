@@ -1,0 +1,3 @@
+- Assessment areas: governance and law, data, processes, technology and infrastructure, people and skills, and financing.
+- An inventory of existing registers and systems.
+- Placement on the maturity model and identification of gaps.

@@ -1,0 +1,3 @@
+- A log of who viewed or changed which record, when and why.
+- Routine review of logs, with reports to the governance body.
+- Use of audit data to detect misuse and fraud.

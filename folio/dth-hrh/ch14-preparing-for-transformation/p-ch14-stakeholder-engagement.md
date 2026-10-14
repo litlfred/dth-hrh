@@ -1,0 +1,3 @@
+- Stakeholder mapping, with analysis of interests and influence.
+- Engagement methods: workshops, one-to-one consultation with councils, and dialogue with health worker associations.
+- Responding to concerns about loss of control, workload and use of data.

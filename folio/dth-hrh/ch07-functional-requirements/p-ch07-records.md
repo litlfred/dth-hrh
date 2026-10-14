@@ -1,0 +1,3 @@
+- Create, view, update and archive the health worker record in line with the minimum data set.
+- Hold supporting evidence, such as certificates, or links to it.
+- Record the source and date of each data item.

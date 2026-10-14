@@ -1,0 +1,3 @@
+- Four broad stages: prepare and assess, design, implement, and operate and improve (detailed in Part 3).
+- Typical starting points: paper registers; stand-alone digital systems in each council or ministry; partly connected systems.
+- The guidance will also be published in a form that digital tools, including AI assistants, can use (for example machine-readable requirements and data dictionary).

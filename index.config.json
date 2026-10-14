@@ -1,0 +1,212 @@
+{
+  "$schema": "folio-index-config/v1",
+  "instances": [
+    {
+      "name": "dth-hrh",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      }
+    },
+    {
+      "name": "smart-base",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-base",
+          "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
+          "overrides": {
+            "smart-base": {
+              "path": "smart-base",
+              "directories": [
+                "smart-base-qa-checkers",
+                "smart-base-block-kinds",
+                "smart-base-content-adapters",
+                "smart-base-translations",
+                "library",
+                "methodologies",
+                "processes",
+                "smart-base-house-processes",
+                "smart-base-artifact-index",
+                "tools",
+                "smart-base-themes",
+                "smart-base-docs",
+                "smart-base-document-kinds",
+                "smart-base-findings",
+                "smart-base-external-schemas",
+                "smart-base-platform",
+                "smart-base-schemas",
+                "smart-base-content",
+                "smart-base-scripts",
+                "smart-base-skills",
+                "smart-base-scenarios",
+                "smart-base-code-lists"
+              ]
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fhir-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/fhir-harness",
+          "ref": "346ecd0bc7eb69e608bd0185a58ecb25acf2642e",
+          "overrides": {
+            "fhir-harness": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "346ecd0bc7eb69e608bd0185a58ecb25acf2642e",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "499a01ee2f382fc924eafae7b0c1c29cb8491f44",
+          "overrides": {
+            "folio-assistant-core": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "499a01ee2f382fc924eafae7b0c1c29cb8491f44",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness",
+          "ref": "9712ed14962e2f286138632ebf3d27a7e9962e9c",
+          "overrides": {
+            "cat-harness": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "9712ed14962e2f286138632ebf3d27a7e9962e9c",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness-tools",
+          "ref": "031c9359fdd1d42c6ca45520d2bdbf66fe824841",
+          "overrides": {
+            "cat-harness-tools": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "031c9359fdd1d42c6ca45520d2bdbf66fe824841",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap",
+          "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
+          "overrides": {
+            "bootstrap": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap-tools",
+          "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
+          "overrides": {
+            "bootstrap-tools": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-14",
+              "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' \u2014 dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "site": {
+    "landing": "dth-hrh"
+  }
+}

@@ -1,0 +1,3 @@
+- Map priority processes: first registration, licence renewal, verification, transfer and exit.
+- Record the steps, people involved, documents, time taken and difficulties.
+- Identify duplication across institutions.

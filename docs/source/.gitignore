@@ -1,0 +1,16 @@
+# do not delete me
+#
+# Git tracks files, not directories, so this directory would vanish from
+# the next clone without a file in it. This is that file. It ignores
+# nothing on purpose — see `keepMarker` in schemas/cat-harness.ts.
+#
+# docs-source/
+# The docs graph's own SOURCE: one directory per generated page
+# (`<group>-<slug>/`), holding its authored blocks (`.md`), its
+# content-object manifests (`.ts`, `prose` and `webpage`) and their
+# generated `.jsonld`. `gen-docs-pages.ts` renders each into the page beside
+# it (`docs/<group>/<slug>.md`); Jekyll excludes this directory
+# (`_config.yml`), so a block is never published as a page of its own. Moved
+# here from `content/docs/` on 2026-10-09 (owner: "move content/docs into
+# docs/"), so the docs subgraph carries its own source and a mount of `docs`
+# brings it.

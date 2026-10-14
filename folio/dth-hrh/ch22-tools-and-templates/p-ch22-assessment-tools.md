@@ -1,0 +1,3 @@
+- Readiness assessment, maturity model and data quality assessment.
+- How to carry out each assessment: who takes part, scoring, and use of results.
+- Repeating assessments to track progress.

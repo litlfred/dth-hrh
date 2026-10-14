@@ -1,0 +1,3 @@
+- Specify standards and interfaces, not products.
+- Considerations for open-source, commercial and custom-built options, including digital public goods.
+- Avoiding dependence on one supplier: data ownership, data export, documentation and exit clauses.

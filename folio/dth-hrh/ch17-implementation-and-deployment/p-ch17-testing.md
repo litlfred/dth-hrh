@@ -1,0 +1,3 @@
+- Functional, integration, performance, security and user acceptance testing.
+- Conformance testing of interfaces.
+- Test data and test environments.

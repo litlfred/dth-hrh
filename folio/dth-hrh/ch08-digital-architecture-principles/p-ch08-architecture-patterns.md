@@ -1,0 +1,3 @@
+- The three main patterns and what each means in practice: centralized (one national system holds the master record), federated (source systems keep their data and are linked), and hybrid (a national index with detail held at source).
+- Criteria for choosing: legal mandates, number of regulators, existing systems, connectivity and capacity.
+- Fit with the national digital health enterprise architecture and the registry layer of the draft DPI-H reference architecture.

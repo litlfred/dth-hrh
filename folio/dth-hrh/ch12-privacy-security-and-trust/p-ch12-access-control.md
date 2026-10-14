@@ -1,0 +1,3 @@
+- Role-based access for people; authenticated and authorized access for systems.
+- Self-service access for health workers to their own record.
+- Regular review of user accounts and permissions.

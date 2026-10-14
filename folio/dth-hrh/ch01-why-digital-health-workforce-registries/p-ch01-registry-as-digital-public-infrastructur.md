@@ -1,0 +1,3 @@
+- The draft WHO/ITU reference architecture for digital public infrastructure for health (DPI-H) lists the health workforce registry as a foundational registry, alongside client, facility and product registries.
+- Shared building blocks (identity, registries, data exchange, terminology) are built once and reused by many applications.
+- The registry is publicly governed, interoperable and based on open standards, so countries stay in control and avoid dependence on one supplier.

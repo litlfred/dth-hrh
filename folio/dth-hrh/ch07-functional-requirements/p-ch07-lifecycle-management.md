@@ -1,0 +1,3 @@
+- Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated.
+- Support renewals, recording of continuing professional development, and reminders.
+- Record changes of employment and place of practice over time.

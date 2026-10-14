@@ -1,0 +1,1 @@
+**Part 1. Foundations.** This part sets out the common understanding that health workforce and digital teams need before design starts: what a registry is and what it is for, who uses it, who governs it, what it must do, and the architecture principles it should follow.

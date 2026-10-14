@@ -1,0 +1,3 @@
+- Standard reports and dashboards on stock, distribution, age, sex, occupation and status.
+- Data extracts for NHWA and national planning.
+- Data quality reports for registry managers.

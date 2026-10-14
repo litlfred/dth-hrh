@@ -1,0 +1,3 @@
+- A legal mandate to establish and operate the registry and to require institutions to submit data.
+- Data protection, privacy and consent, including what may be public (for example licence status) and what is restricted.
+- Data-sharing agreements between institutions and, where relevant, across borders.

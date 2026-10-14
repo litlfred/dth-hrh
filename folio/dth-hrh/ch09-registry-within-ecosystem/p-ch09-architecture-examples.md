@@ -1,0 +1,3 @@
+- Illustrative architectures for centralized, federated and hybrid models.
+- An example in which the registry is part of a national health information exchange.
+- An example for a country starting from paper registers or spreadsheets.

@@ -1,0 +1,3 @@
+- Specifications and evaluation criteria based on the requirements and standards.
+- Contract terms: data ownership, access to source code, support, service levels, training and exit.
+- Coordination of funders and alignment with national procurement rules.

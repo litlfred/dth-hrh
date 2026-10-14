@@ -1,0 +1,3 @@
+- Risk assessment, secure hosting, encryption of stored and transmitted data, backup and recovery.
+- Incident response and notification of data breaches.
+- Alignment with national cybersecurity policies and standards.

@@ -1,0 +1,3 @@
+- For health workers: portable and verifiable credentials, simpler renewals, and recognition of training and continuing professional development.
+- For the public and employers: confidence that practitioners are qualified and authorized to practise.
+- For government: reliable workforce numbers for planning, financing, emergency response and international reporting (NHWA, the WHO Global Code of Practice).

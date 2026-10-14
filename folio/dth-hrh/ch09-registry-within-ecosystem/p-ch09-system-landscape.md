@@ -1,0 +1,3 @@
+- Source systems: regulatory council systems, training institution records, HRIS, payroll, national identity and civil registration.
+- Systems that use registry data: electronic medical records, electronic prescribing, telehealth, insurance and claims, health management information systems, emergency rosters, the NHWA platform.
+- Shared services: facility registry, terminology service, interoperability layer, authentication.

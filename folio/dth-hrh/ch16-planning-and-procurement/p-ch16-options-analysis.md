@@ -1,0 +1,3 @@
+- Options: enhance an existing system, adopt an open-source solution or digital public good, buy a commercial product, build a custom system, or use a shared government platform.
+- Criteria: fit with requirements, conformance to standards, cost, local capacity and sustainability.
+- Total cost of ownership and budgeting, following the DIIG approach.

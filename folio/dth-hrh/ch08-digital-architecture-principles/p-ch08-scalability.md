@@ -1,0 +1,3 @@
+- Start with priority occupations or regions and expand without redesign.
+- Performance, availability and hosting options (government data centre or cloud), including for low-connectivity settings.
+- Modular design, so that functions can be added or replaced independently.

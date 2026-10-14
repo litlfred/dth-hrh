@@ -1,0 +1,3 @@
+- Decision-makers: ministry of health leadership, health workforce directorates, digital health units, regulators and professional councils.
+- Implementers: enterprise architects, business analysts, software developers, data managers and implementing partners.
+- Supporters: funders, professional associations, training institutions, private sector employers, and WHO regional and country offices.

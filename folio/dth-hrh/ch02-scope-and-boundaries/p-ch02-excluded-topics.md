@@ -1,0 +1,3 @@
+- Detailed human resource management functions (recruitment, performance appraisal, leave, payroll processing), which belong to HRIS and payroll systems.
+- Design of regulatory policy, scopes of practice and accreditation standards, which are covered by WHO guidance on health practitioner regulation.
+- Workforce planning and labour market analysis methods, and endorsement of specific software products.

@@ -1,0 +1,3 @@
+- Which institution is the source of truth for each data item, such as identity, qualification, licence status and employment.
+- How records from several sources are matched to one unique health worker identifier.
+- Options: a single national system, or several source systems connected to give one consistent view.

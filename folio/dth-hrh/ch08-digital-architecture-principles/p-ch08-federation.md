@@ -1,0 +1,3 @@
+- How several regulators or sub-national registries contribute to a national view through a shared identifier, a common data set and common interfaces.
+- Linking records and resolving conflicts between sources.
+- Responsibilities that stay with each source and those that sit at national level.

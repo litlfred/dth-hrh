@@ -1,0 +1,3 @@
+- A country with a single national registry across professions (case to be confirmed by the working group).
+- How it was established: legal basis, governance and financing.
+- Results and challenges.

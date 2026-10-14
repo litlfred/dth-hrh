@@ -1,0 +1,3 @@
+- Core team: health workforce lead, digital health lead, regulator representatives, business analyst, architect, data manager and legal adviser.
+- Roles, responsibilities and time commitment.
+- When to bring in external technical support.

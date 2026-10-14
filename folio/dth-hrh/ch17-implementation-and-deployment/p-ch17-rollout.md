@@ -1,0 +1,3 @@
+- A pilot, followed by phased roll-out by occupation, institution or region.
+- Criteria for going live, and a period of running old and new processes in parallel.
+- User support during the transition.

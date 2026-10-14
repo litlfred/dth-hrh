@@ -1,0 +1,5 @@
+- A new graduate applies, the qualification is verified with the training institution, a licence is issued and the registry is updated.
+- Renewal linked to continuing professional development.
+- Status changes, such as suspension and reinstatement, with notification to employers.
+
+*Personas:* Health worker, Training institution registrar, Registration officer (regulatory body), Employer or facility human resources manager

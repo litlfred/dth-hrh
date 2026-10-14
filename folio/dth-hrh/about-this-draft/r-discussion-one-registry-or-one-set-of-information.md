@@ -1,0 +1,1 @@
+The WHO 2015 minimum data set describes the registry as “the single authoritative source”, and the draft DPI-H reference architecture appears to describe it as a centralized system. This draft treats the registry as one trusted set of information that may sit in one system or several. The TWG should agree on the wording.

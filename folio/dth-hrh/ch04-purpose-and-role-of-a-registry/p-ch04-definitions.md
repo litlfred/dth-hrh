@@ -1,0 +1,3 @@
+- Working definitions of health workforce registry, professional register, HRIS, health worker, registration, licence and credential (see Glossary annex).
+- Alignment with the WHO 2015 minimum data set definition (“the single authoritative source of health workforce information”) and with the draft DPI-H reference architecture.
+- The difference between a “registry” (the shared national capability) and a “register” (a regulator's legal list of those authorized to practise).

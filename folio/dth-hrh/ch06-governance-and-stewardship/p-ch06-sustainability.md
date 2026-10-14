@@ -1,0 +1,3 @@
+- Options for recurrent financing: government budget, registration and licensing fees, shared digital infrastructure budgets.
+- Institutional capacity: permanent posts for registry operation, data management and technical support.
+- Managing dependence on suppliers and external partners, including handover and exit planning.

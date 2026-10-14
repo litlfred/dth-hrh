@@ -1,0 +1,3 @@
+- The chain from use case to business process, to functional and non-functional requirements, to data elements.
+- Traceability between each requirement and the use case it serves.
+- Prioritization (must have, should have, could have) to support phased delivery.

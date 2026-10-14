@@ -303,7 +303,7 @@
       "status": "candidate"
     },
     {
-      "id": "health-workforce-registry--who-nhwa-2023",
+      "id": "health-workforce-registry--intrahealth-2015",
       "prefLabel": "Health workforce registry",
       "definition": "\"searchable directory of minimal set of health worker information\" \"no intrinsic management function\" \"designed to fit in as part of larger health information system.\" Health Worker Registry Combines Data Sources: pulling together Deployment, License, and Training data from separate source systems.",
       "scopeNote": "Cited as: \"Health Worker Registries, Minimum Data Sets & National Health Workforce Accounts\" (IntraHealth Tech Tuesday presentation, 30 June 2015).",

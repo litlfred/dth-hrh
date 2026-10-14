@@ -1,0 +1,14 @@
+{
+  "id": "hrhis",
+  "channel": "narrative",
+  "sha256": "05a0a6d40495b1b0dbd7754c78b7e23c7cca631294c86c97d1e123677d989208",
+  "importedAt": "2026-10-14T11:11:07.490Z",
+  "rows": 1,
+  "created": [
+    "PC-0002"
+  ],
+  "unplaced": [
+    "PC-0002"
+  ],
+  "skipped": []
+}

@@ -15,7 +15,7 @@ export default chapter({
     section({
       title: "3.1 DIIG alignment",
       label: "sec:3-1",
-      blocks: ["p-ch03-diig-alignment", "f-diig-phases"],
+      blocks: ["p-ch03-diig-alignment", "f-diig-phases", "t-ch03-diig-mapping"],
     }),
     section({
       title: "3.2 Transformation principles",

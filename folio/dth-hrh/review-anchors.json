@@ -1370,6 +1370,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:ch03-diig-mapping",
+   "kind": "table",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "t-ch03-diig-mapping",
+   "sections": [
+    "sec:3-1"
+   ],
+   "caption": "Handbook chapters mapped to the DIIG chapters (proposed, for TWG review)",
+   "hash": "9d1b150bd490",
+   "excerpt": "DIIG chapter What the DIIG step produces Where this handbook covers it for registries --- --- --- 2. Form the team and establish goals Roles and responsibilitie",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch03-transformation-principles",
    "kind": "prose",
    "chapter": "ch03-digital-transformation-approach",
@@ -1593,7 +1606,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "6803e6c0e6f3",
+   "hash": "3b58206c27c5",
    "excerpt": "Person. A person whose job is to protect and improve the health of their community: holds a registration, licence and employment record in the registry, and nee",
    "method": "folio-snapshot"
   },
@@ -1605,8 +1618,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "d25afdf28928",
-   "excerpt": "Person. Staff of a professional council or regulatory body who registers and licenses practitioners, records status changes and answers verification requests. G",
+   "hash": "aeb7f8ea34b2",
+   "excerpt": "Person. Staff of a professional council or regulatory body who registers and licenses practitioners, records status changes and answers verification requests. D",
    "method": "folio-snapshot"
   },
   {
@@ -1617,7 +1630,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "87265cc7dfdf",
+   "hash": "33f28456d539",
    "excerpt": "Person. Recruits, deploys and manages health workers for a public or private employer or facility; verifies credentials and records changes of employment and pl",
    "method": "folio-snapshot"
   },
@@ -1629,8 +1642,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "288b45b067a7",
-   "excerpt": "Person. Records enrolment and graduation in a pre-service education institution and confirms qualifications to the regulator. Goals Tasks Difficulties Digital s",
+   "hash": "b6481a41814b",
+   "excerpt": "Person. Records enrolment and graduation in a pre-service education institution and confirms qualifications to the regulator. Draft for working-group review Out",
    "method": "folio-snapshot"
   },
   {
@@ -1641,7 +1654,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "0cd1e076b16f",
+   "hash": "9cf57f8eeb06",
    "excerpt": "Person. Uses stock, distribution, skill mix, attrition and migration data for planning and NHWA reporting. Specialises the SMART Guidelines generic persona: Hea",
    "method": "folio-snapshot"
   },
@@ -1653,8 +1666,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "84953eabf3a9",
-   "excerpt": "Person. Checks that a practitioner is qualified and authorized to practise. Specialises the SMART Guidelines generic persona: Person. Goals Tasks Difficulties D",
+   "hash": "574c6309f059",
+   "excerpt": "Person. Checks that a practitioner is qualified and authorized to practise. Specialises the SMART Guidelines generic persona: Person. Draft for working-group re",
    "method": "folio-snapshot"
   },
   {
@@ -1665,8 +1678,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "87ac9e029edb",
-   "excerpt": "Person. Identifies, verifies and deploys qualified health workers, emergency medical teams and volunteers during an emergency. Goals Tasks Difficulties Digital ",
+   "hash": "ffbd96d0c654",
+   "excerpt": "Person. Identifies, verifies and deploys qualified health workers, emergency medical teams and volunteers during an emergency. Draft for working-group review Ou",
    "method": "folio-snapshot"
   },
   {
@@ -1677,8 +1690,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "efba99172753",
-   "excerpt": "System. Manages employment transactions, payroll processing, leave and scheduling; supplies employment data to the registry and uses its identities. Goals Tasks",
+   "hash": "7f1d7dd4c20d",
+   "excerpt": "System. Manages employment transactions, payroll processing, leave and scheduling; supplies employment data to the registry and uses its identities. Draft for w",
    "method": "folio-snapshot"
   },
   {
@@ -1689,8 +1702,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "a495dc12adc3",
-   "excerpt": "System. Pays health workers; reconciled against the registry to remove duplicate and ghost records. Goals Tasks Difficulties Digital skills Connectivity --- ---",
+   "hash": "53617f849133",
+   "excerpt": "System. Pays health workers; reconciled against the registry to remove duplicate and ghost records. Draft for working-group review Outline basis --- --- --- Pur",
    "method": "folio-snapshot"
   },
   {
@@ -1701,7 +1714,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "6fe9646e11a4",
+   "hash": "d6118fc4f0e0",
    "excerpt": "System. Identifies and authorizes health workers at the point of care, for example a prescriber, by querying the registry. Specialises the SMART Guidelines gene",
    "method": "folio-snapshot"
   },
@@ -1713,8 +1726,8 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "070f862fc1a9",
-   "excerpt": "System. The authoritative list of health facilities; the registry links each place of practice to it. Goals Tasks Difficulties Digital skills Connectivity --- -",
+   "hash": "bf071ba4acd8",
+   "excerpt": "System. The authoritative list of health facilities; the registry links each place of practice to it. Draft for working-group review Outline basis --- --- --- P",
    "method": "folio-snapshot"
   },
   {
@@ -1725,7 +1738,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "305937d60ee2",
+   "hash": "39e3545da4db",
    "excerpt": "System. Foundational identity; the registry may link each health worker to a national identity number where available and lawful. Specialises the SMART Guidelin",
    "method": "folio-snapshot"
   },
@@ -1737,7 +1750,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "da4f69f359bc",
+   "hash": "21634fdf48be",
    "excerpt": "System. The National Health Workforce Accounts data platform; receives indicator data derived from the registry. Specialises the SMART Guidelines generic person",
    "method": "folio-snapshot"
   },
@@ -4185,8 +4198,21 @@
    "sections": [
     "sec:glossary-priority"
    ],
-   "hash": "6c32f430f0ae",
+   "hash": "00df22141897",
    "excerpt": "Also: Health worker registry, Provider registry. Status: open. 12 candidate definitions, none adopted. Candidate 1 (WHO/ITU. DPI-H reference architecture, draft",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:compare-health-workforce-registry",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-compare-health-workforce-registry",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "caption": "Health workforce registry: candidate definitions side by side (opening sentence of each)",
+   "hash": "0e51e92ea936",
+   "excerpt": "Source Year Opening sentence --- --- --- --- 1 WHO/ITU. DPI-H reference architecture, draft v1.0 for public comment. July 2026 2026 The Health Workforce Registr",
    "method": "folio-snapshot"
   },
   {
@@ -4202,6 +4228,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:compare-human-resources-for-health-information-system",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-compare-human-resources-for-health-information-system",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "caption": "Human resources for health information system: candidate definitions side by side (opening sentence of each)",
+   "hash": "f0dc1f39a23d",
+   "excerpt": "Source Year Opening sentence --- --- --- --- 1 WHO. Health labour market analysis guidebook. 2021 2021 An information system that provides, analyses, evaluates ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:gloss-professional-council",
    "kind": "prose",
    "chapter": "glossary",
@@ -4211,6 +4250,19 @@
    ],
    "hash": "e14449156967",
    "excerpt": "Also: professional regulatory/licensing authority/body, medical council/board, nursing council/board. Status: open. 2 candidate definitions, none adopted. Candi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:compare-professional-council",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-compare-professional-council",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "caption": "Professional council: candidate definitions side by side (opening sentence of each)",
+   "hash": "a5160c7220d4",
+   "excerpt": "Source Year Opening sentence --- --- --- --- 1 WHO. Health labour market analysis guidebook. 2021 2021 Organization with the legal authority to regulate one or ",
    "method": "folio-snapshot"
   },
   {

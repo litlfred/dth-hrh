@@ -1,0 +1,14 @@
+{
+  "id": "registry",
+  "channel": "narrative",
+  "sha256": "626a52cb8e4b93d0367b7815d3da129daebe7c91289ecd9ca5b75c6b728200a5",
+  "importedAt": "2026-10-14T11:11:07.372Z",
+  "rows": 1,
+  "created": [
+    "PC-0001"
+  ],
+  "unplaced": [
+    "PC-0001"
+  ],
+  "skipped": []
+}

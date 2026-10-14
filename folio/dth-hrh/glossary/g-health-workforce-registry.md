@@ -62,7 +62,7 @@
 >
 > The HWR serves as a publicly available “electronic phone-book” of health workers and health services across all sectors (public, private and faith-based organizations). As the World Health Organization points out, the HWR can be seen as the “single authoritative source” of health workforce information that parts of the HIS can query to obtain details on health workers and automatically populate their databases, rather than having to manually enter those details themselves.
 
-**Candidate 9** (WHO. National health workforce accounts: a handbook, 2nd ed. 2023):
+**Candidate 9** (IntraHealth Tech Tuesday: health worker registries, MDS and NHWA (2015)):
 
 > "searchable directory of minimal set of health worker information" "no intrinsic management function" "designed to fit in as part of larger health information system." Health Worker Registry Combines Data Sources: pulling together Deployment, License, and Training data from separate source systems.
 

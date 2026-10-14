@@ -15,7 +15,7 @@ export default chapter({
     section({
       title: "Priority terms for TWG agreement",
       label: "sec:glossary-priority",
-      blocks: ["g-health-workforce-registry", "g-human-resources-for-health-information-system", "g-professional-council"],
+      blocks: ["g-health-workforce-registry", "t-compare-health-workforce-registry", "g-human-resources-for-health-information-system", "t-compare-human-resources-for-health-information-system", "g-professional-council", "t-compare-professional-council"],
     }),
     section({
       title: "Health workforce terms",

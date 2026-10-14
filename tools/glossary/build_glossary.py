@@ -43,6 +43,8 @@ WORKBOOK_REF = "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.
 
 # Short keys for the publications the workbook cites. First match wins.
 SOURCES = [
+    # Specific titles first: this one also contains "National Health Workforce Accounts".
+    ("Tech Tuesday", "intrahealth-2015", "IntraHealth Tech Tuesday: health worker registries, MDS and NHWA (2015)"),
     ("Health labour market analysis guidebook", "who-hlma-2021", "WHO. Health labour market analysis guidebook. 2021"),
     ("ealth practitioner regulation", "who-hpr-2024", "WHO. Health practitioner regulation: design, reform and implementation guidance. 2024"),
     ("National health workforce accounts", "who-nhwa-2023", "WHO. National health workforce accounts: a handbook, 2nd ed. 2023"),
@@ -50,7 +52,6 @@ SOURCES = [
     ("MDS) Crosswalk", "who-mds-crosswalk", "WHO Minimum Data Set (MDS) crosswalk (undated)"),
     ("OpenHIE Health Worker Registry", "openhie-hwr-ig-2016", "OpenHIE Health Worker Registry implementation guide (IntraHealth/CapacityPlus, 2016)"),
     ("Digital Health Enterprise Planning", "dhe-planning-deck", "Digital Health Enterprise Planning Approach, training slide deck (undated)"),
-    ("Tech Tuesday", "intrahealth-2015", "IntraHealth Tech Tuesday: health worker registries, MDS and NHWA (2015)"),
     ("Investment Charter", "who-afro-hwf-charter", "WHO AFRO. Africa Health Workforce Investment Charter"),
     ("Chibuzor", "chibuzor-hwfis-review", "Chibuzor M et al. Implementation of health workforce information systems: eight sub-Saharan countries"),
     ("Reference Architecture and Guidance for Digital Public Infrastructure", "who-itu-dpi-h-ra-draft-2026", "WHO/ITU. DPI-H reference architecture, draft v1.0 for public comment. July 2026"),
@@ -328,6 +329,31 @@ def md_escape_cell(s):
     return s.replace("|", "\\|").replace("\n", "<br>")
 
 
+def opening(definition, n=220):
+    """The candidate's first sentence (quotes and page markers trimmed), for a side-by-side view."""
+    s = " ".join(definition.split()).lstrip("\"“ ")
+    m = re.match(r"(.+?[.;])(\s|$)", s)
+    s = m.group(1) if m else s
+    return s if len(s) <= n else s[: n - 1].rsplit(" ", 1)[0] + "…"
+
+
+def comparison_table(ch, tid, pref, cands):
+    """A priority term's candidates side by side: source, year, opening sentence. Facts only."""
+    bid = f"t-compare-{tid}"
+    (ch / f"{bid}.ts").write_text(
+        'import { table } from "../../schema/builders";\n\nexport default table({\n'
+        f'  label: "tbl:compare-{tid}",\n'
+        f'  caption: {json.dumps(f"{pref}: candidate definitions side by side (opening sentence of each)")},\n'
+        "});\n"
+    )
+    rows = ["| # | Source | Year | Opening sentence |", "|---|---|---|---|"]
+    for i, (cid, key, title, definition) in enumerate(cands, start=1):
+        y = re.findall(r"\b(?:19|20)\d\d\b", title)
+        rows.append(f"| {i} | {md_escape_cell(title)} | {y[-1] if y else '—'} | {md_escape_cell(opening(definition))} |")
+    (ch / f"{bid}.md").write_text("\n".join(rows) + "\n")
+    return bid
+
+
 def write_chapter(folio_dir, concepts, order, links, councils, prior):
     ch = folio_dir / "glossary"
     if ch.exists():
@@ -377,6 +403,8 @@ def write_chapter(folio_dir, concepts, order, links, councils, prior):
             lines += ["", "Country examples are listed in the section *Professional councils: country examples*."]
         (ch / f"{bid}.md").write_text("\n".join(lines) + "\n")
         (blocks_priority if tid in PRIORITY else blocks_general).append(bid)
+        if tid in PRIORITY and tid not in prior:
+            blocks_priority.append(comparison_table(ch, tid, c["pref"], links[tid]))
 
     tbl = "t-professional-council-examples"
     (ch / f"{tbl}.ts").write_text(

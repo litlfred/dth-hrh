@@ -1,0 +1,21 @@
+{
+  "id": "CS-001",
+  "title": "Adopt a definition of health workforce registry",
+  "requirements": "- Choose one of the 12 candidate definitions in Annex 9, or an edited or new one.\n- Stay consistent with the final DPI-H reference architecture definition (candidates 1-2).\n- Decide the TWG point 'one registry or one set of information?' with it (rem:discussion-one-registry-or-one-set-of-information).\n- Write the adopted text into glossary/dth-hrh.glossary.json (status authored) and regenerate Annex 9.",
+  "refs": [
+    "PC-0001"
+  ],
+  "anchor": "prose:gloss-health-workforce-registry",
+  "status": "proposed",
+  "issues": [],
+  "proposedBy": "litlfred",
+  "proposedAt": "2026-10-14T11:11:18.710Z",
+  "history": [
+    {
+      "at": "2026-10-14T11:11:18.710Z",
+      "by": "litlfred",
+      "what": "proposed with 1 comment(s)"
+    }
+  ],
+  "$schema": "changeset/1.0.0"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "pc-0002",
+  "summary": "Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…",
+  "comment": "Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the most appropriate one, or suggest an edited or new version. Many countries run the registry inside an HRIS, so the boundary between the two needs to be clear.",
+  "createdAt": "2026-10-14T11:11:07.490Z",
+  "targetLabel": "prose:gloss-human-resources-for-health-information-system",
+  "tags": {
+    "roles": [
+      "feedback-provider"
+    ],
+    "processes": [
+      "Process_PublicComment"
+    ],
+    "tasks": [
+      {
+        "process": "Process_PublicComment",
+        "task": "Task_Ingest"
+      }
+    ],
+    "identities": [],
+    "references": [],
+    "artefacts": []
+  },
+  "status": "triaged",
+  "priority": "high",
+  "origin": "human",
+  "$schema": "public-comment/1.0.0",
+  "public": {
+    "ref": "PC-0002",
+    "source": {
+      "channel": "narrative",
+      "batch": "hrhis",
+      "sha256": "05a0a6d40495b1b0dbd7754c78b7e23c7cca631294c86c97d1e123677d989208",
+      "segment": 0,
+      "receivedAt": "2026-10-14T11:11:07.490Z"
+    },
+    "reviewer": {
+      "id": "r-25b043f5bc",
+      "organisation": "World Health Organization",
+      "acknowledge": false
+    },
+    "citation": {
+      "raw": "(no citation)"
+    },
+    "anchor": {
+      "targetLabel": "prose:gloss-human-resources-for-health-information-system",
+      "method": "manual",
+      "confidence": "high",
+      "candidates": [],
+      "note": "placed by editor"
+    },
+    "type": "technical",
+    "text": "Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the most appropriate one, or suggest an edited or new version. Many countries run the registry inside an HRIS, so the boundary between the two needs to be clear.",
+    "assignees": [],
+    "recommendations": [],
+    "history": [
+      {
+        "at": "2026-10-14T11:11:07.490Z",
+        "transition": "ingest",
+        "by": "intake",
+        "task": "Process_PublicComment#Task_Ingest",
+        "note": "hrhis"
+      },
+      {
+        "at": "2026-10-14T11:11:17.959Z",
+        "transition": "reassign",
+        "by": "editor",
+        "task": "Process_PublicComment#Task_Triage"
+      },
+      {
+        "at": "2026-10-14T11:11:18.279Z",
+        "transition": "triage",
+        "by": "editor",
+        "task": "Process_PublicComment#Task_Triage"
+      }
+    ]
+  }
+}

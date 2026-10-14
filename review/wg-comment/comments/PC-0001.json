@@ -1,0 +1,78 @@
+{
+  "id": "pc-0001",
+  "summary": "We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…",
+  "comment": "We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Architecture DTH. Please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. The definition used in the DTH should be consistent with the final definition in the Reference Architecture guide.",
+  "createdAt": "2026-10-14T11:11:07.372Z",
+  "targetLabel": "prose:gloss-health-workforce-registry",
+  "tags": {
+    "roles": [
+      "feedback-provider"
+    ],
+    "processes": [
+      "Process_PublicComment"
+    ],
+    "tasks": [
+      {
+        "process": "Process_PublicComment",
+        "task": "Task_Ingest"
+      }
+    ],
+    "identities": [],
+    "references": [],
+    "artefacts": []
+  },
+  "status": "triaged",
+  "priority": "high",
+  "origin": "human",
+  "$schema": "public-comment/1.0.0",
+  "public": {
+    "ref": "PC-0001",
+    "source": {
+      "channel": "narrative",
+      "batch": "registry",
+      "sha256": "626a52cb8e4b93d0367b7815d3da129daebe7c91289ecd9ca5b75c6b728200a5",
+      "segment": 0,
+      "receivedAt": "2026-10-14T11:11:07.372Z"
+    },
+    "reviewer": {
+      "id": "r-25b043f5bc",
+      "organisation": "World Health Organization",
+      "acknowledge": false
+    },
+    "citation": {
+      "raw": "(no citation)"
+    },
+    "anchor": {
+      "targetLabel": "prose:gloss-health-workforce-registry",
+      "method": "manual",
+      "confidence": "high",
+      "candidates": [],
+      "note": "placed by editor"
+    },
+    "type": "technical",
+    "text": "We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Architecture DTH. Please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. The definition used in the DTH should be consistent with the final definition in the Reference Architecture guide.",
+    "assignees": [],
+    "recommendations": [],
+    "history": [
+      {
+        "at": "2026-10-14T11:11:07.372Z",
+        "transition": "ingest",
+        "by": "intake",
+        "task": "Process_PublicComment#Task_Ingest",
+        "note": "registry"
+      },
+      {
+        "at": "2026-10-14T11:11:17.867Z",
+        "transition": "reassign",
+        "by": "editor",
+        "task": "Process_PublicComment#Task_Triage"
+      },
+      {
+        "at": "2026-10-14T11:11:18.180Z",
+        "transition": "triage",
+        "by": "editor",
+        "task": "Process_PublicComment#Task_Triage"
+      }
+    ]
+  }
+}

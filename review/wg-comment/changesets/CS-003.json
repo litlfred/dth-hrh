@@ -1,0 +1,21 @@
+{
+  "id": "CS-003",
+  "title": "Adopt a definition of professional council and verify the country examples",
+  "requirements": "- Choose one of the 3 candidate definitions, or an edited or new one.\n- Verify each AI-generated country row against its cited legislation; correct or drop.\n- Write the adopted text into glossary/dth-hrh.glossary.json and regenerate Annex 9.",
+  "refs": [
+    "PC-0003"
+  ],
+  "anchor": "prose:gloss-professional-council",
+  "status": "proposed",
+  "issues": [],
+  "proposedBy": "litlfred",
+  "proposedAt": "2026-10-14T11:11:19.282Z",
+  "history": [
+    {
+      "at": "2026-10-14T11:11:19.282Z",
+      "by": "litlfred",
+      "what": "proposed with 1 comment(s)"
+    }
+  ],
+  "$schema": "changeset/1.0.0"
+}

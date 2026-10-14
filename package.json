@@ -11,7 +11,8 @@
     "check:dth-glossary": "bun run tools/glossary/validate.ts",
     "wg:changesets:check": "bun run folio-assistant-core/scripts/public-comment-changesets.ts check --store review/wg-comment",
     "review:anchors": "bun run tools/review/review-anchors.ts",
-    "check:review-anchors": "bun run tools/review/review-anchors.ts --check"
+    "check:review-anchors": "bun run tools/review/review-anchors.ts --check",
+    "site:glossary": "bun run tools/glossary/site.ts --out"
   },
   "dependencies": {
     "zod": "^4.6.5"

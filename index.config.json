@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "99e30173130c8c9f40e736324c265d7e0c0c2346",
+          "ref": "713a7f873f640c77d723bd7ac92cdc05f9f4b58c",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "99e30173130c8c9f40e736324c265d7e0c0c2346",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready next 2 hrs'"
+              "ref": "713a7f873f640c77d723bd7ac92cdc05f9f4b58c",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready', window extended to ~15:20 UTC (after litlfred/cat-harness-tools#190, litlfred/folio-assistant-core#78)"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "b6cc927f0fcd7bb3b4f4b20f7085b876a784382f",
+          "ref": "2baca10f88aac07ea9a2ebc50ff6948840ba297f",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "b6cc927f0fcd7bb3b4f4b20f7085b876a784382f",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready next 2 hrs' (after litlfred/cat-harness-tools#187)"
+              "ref": "2baca10f88aac07ea9a2ebc50ff6948840ba297f",
+              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready', window extended to ~15:20 UTC (after litlfred/cat-harness-tools#190, litlfred/folio-assistant-core#78)"
             }
           }
         }

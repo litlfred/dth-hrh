@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s005-chapter-1-why-digital-health-workforce-registrie",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**Chapter 1\\. Why Digital Health Workforce Registries Matter**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s005-chapter-1-why-digital-health-workforce-registrie"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

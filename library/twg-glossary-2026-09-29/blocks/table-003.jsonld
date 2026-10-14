@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-glossary-2026-09-29/blocks/table-003",
+  "@type": [
+    "cat-harness:Block",
+    "doco:Table"
+  ],
+  "kind": "table",
+  "label": "General glossary ",
+  "headers": [
+    "COMMENTS reviewer 1\n(name)",
+    "COMMENTS reviewer 2\n(name)",
+    "COMMENTS reviewer 3\n(name)",
+    "COMMENTS reviewer 4\n(name)",
+    "COMMENTS reviewer 5\n(name)",
+    "COMMENTS reviewer 6\n(name)",
+    "COMMENTS reviewer 7\n(name)",
+    "COMMENTS reviewer 8\n(name)",
+    "COMMENTS reviewer 9\n(name)",
+    "COMMENTS reviewer 10\n(name)"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "provenance": "ingested"
+}

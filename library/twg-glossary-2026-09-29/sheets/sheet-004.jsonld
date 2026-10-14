@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-glossary-2026-09-29/sheets/sheet-004",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "HWF registry",
+  "contains": [
+    "library/twg-glossary-2026-09-29/blocks/table-004"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "provenance": "ingested"
+}

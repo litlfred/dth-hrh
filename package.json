@@ -14,7 +14,8 @@
     "check:review-anchors": "bun run tools/review/review-anchors.ts --check",
     "site:glossary": "bun run tools/glossary/site.ts --out",
     "kg:blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh",
-    "check:kg-blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh --check"
+    "check:kg-blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",
+    "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check"
   },
   "dependencies": {
     "zod": "^4.6.5"

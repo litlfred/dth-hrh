@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s046-chapter-9-registry-within-ecosystem",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**Chapter 9\\. Registry within Ecosystem**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s046-chapter-9-registry-within-ecosystem"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

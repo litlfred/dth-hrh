@@ -13,7 +13,7 @@
       "coverage": {
         "visualiser": [
           {
-            "ref": "docs/en/dth-hrh/index.html",
+            "ref": "en/dth-hrh/index.html",
             "title": "Working document",
             "writer": [
               "folio-assistant-core/scripts/build-document-site.ts"
@@ -41,7 +41,7 @@
       "coverage": {
         "visualiser": [
           {
-            "ref": "docs/en/folio-assistant-core/public-comments/folio/dth-hrh/index.html",
+            "ref": "en/folio-assistant-core/public-comments/folio/dth-hrh/index.html",
             "title": "Working-group comments",
             "writer": [
               "folio-assistant-core/scripts/public-comment-site.ts"
@@ -60,7 +60,7 @@
       "coverage": {
         "visualiser": [
           {
-            "ref": "docs/en/dth-hrh/glossary/index.html",
+            "ref": "en/dth-hrh/glossary/index.html",
             "title": "Glossary",
             "writer": [
               "tools/glossary/site.ts"

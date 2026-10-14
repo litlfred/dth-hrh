@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>try{var s=localStorage.getItem("fa-color-scheme");if(s!=="light"&&s!=="dark"&&window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)s="light";if(s==="light"||s==="dark")document.documentElement.setAttribute("data-fa-scheme",s)}catch(e){}</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public comments — DTH-HRH working document (internal working-group review)</title>
+<style>
+.cs-pcs > summary { cursor:pointer; }
+.cs-pc-list { margin:.3rem 0 .6rem; padding-left:1.1rem; }
+.cs-pc { margin:.5rem 0; padding-bottom:.4rem; border-bottom:1px solid #8883; }
+.cs-pc p { margin:.25rem 0; }
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --chip:#eef2f7;
+    --open:#9a5b00; --editing:#0b5cad; --decided:#2e6b2e; --closed:#5b5b5b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  /* Column and gutters belong to main: the harness rail owns body padding-left. */
+  main { max-width:90rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; }
+  a { color:var(--link); } a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.75rem; margin:1rem 0; }
+  .tile { border:1px solid var(--line); border-radius:.5rem; padding:.5rem .9rem; min-width:7rem; font:inherit; color:var(--fg); background:transparent; text-align:left; cursor:pointer; }
+  .tile b { display:block; font-size:1.6rem; }
+  .tile:hover { border-color:var(--link); }
+  main input[type=checkbox] { min-height:0; width:1.1rem; height:1.1rem; }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+  #open-issue { font:inherit; padding:.45rem .9rem; border:1px solid var(--link); border-radius:.4rem; background:transparent; color:var(--link); cursor:pointer; }
+  #open-issue:disabled { opacity:.5; cursor:default; }
+  .tile[aria-pressed="true"] { border-color:var(--link); box-shadow:inset 0 0 0 1px var(--link); background:var(--chip); }
+  form { display:flex; flex-wrap:wrap; gap:.75rem; align-items:end; margin:1rem 0; }
+  /* Form, table and details rules are scoped to main: the harness rail's header
+     is a label too, and a bare label rule stacked it and hid its avatar. */
+  main label { display:flex; flex-direction:column; font-size:.85rem; color:var(--muted); }
+  main select, main input { font:inherit; padding:.35rem .5rem; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:.35rem; min-height:2.4rem; }
+  .table-wrap { overflow-x:auto; }
+  main table { border-collapse:collapse; width:100%; font-size:.92rem; }
+  main th, main td { border-bottom:1px solid var(--line); padding:.45rem .5rem; text-align:left; vertical-align:top; }
+  main th { position:sticky; top:0; background:var(--bg); }
+  .phase { font-weight:600; white-space:nowrap; }
+  .phase-open { color:var(--open); } .phase-editing { color:var(--editing); } .phase-decided { color:var(--decided); } .phase-closed { color:var(--closed); }
+  .chip { display:inline-block; background:var(--chip); border-radius:.3rem; padding:0 .35rem; margin:0 .2rem .2rem 0; font-size:.82rem; }
+  main details > summary { cursor:pointer; }
+  .muted { color:var(--muted); }
+  .links a { margin-right:.5rem; white-space:nowrap; }
+
+.block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
+.block-actions:hover, .block-actions:focus-within { opacity:1; }
+.block-actions a { text-decoration:none; margin-left:.5rem; }
+.block-actions .ba-existing { margin-left:.5rem; }
+#comments .block-actions { float:none; display:block; margin:.2rem 0 0; opacity:.8; } #comments .block-actions a { margin:0 .5rem 0 0; }</style>
+<link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-27wyuupm9nk.js" defer></script><script src="https://litlfred.github.io/folio-assistant/assets/js/navbar.js" defer></script><script src="../../../../../assets/navbar/row-20jjrsvc4j1.js" defer></script><link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/navbar-row.css"><script src="https://litlfred.github.io/folio-assistant/assets/js/navbar-row.js" defer></script><link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/docs-ui.css" data-fa-platform-ui><script src="https://litlfred.github.io/folio-assistant/assets/js/docs-ui.js" defer data-fa-platform-ui></script></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../../../.." data-fa-row-src="row-20jjrsvc4j1"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-27wyuupm9nk"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
+<main>
+<p><a href="../../../../../en/dth-hrh/index.html">← DTH-HRH working document (internal working-group review)</a></p>
+<h1>Public comments</h1>
+<p class="muted">Generated 2026-10-14 10:57 UTC from the comment store. Open = not yet decided. Editing = decided, and the change is being made on a feature branch. Closed = incorporated, duplicate or withdrawn.</p>
+<div class="tiles" role="group" aria-label="Filter by count">
+<button type="button" class="tile" data-tile="all" aria-pressed="false" title="Show comments"><b>0</b>comments</button>
+<button type="button" class="tile" data-tile="open" aria-pressed="false" title="Show open"><b>0</b>open</button>
+<button type="button" class="tile" data-tile="unplaced" aria-pressed="false" title="Show unplaced"><b>0</b>unplaced</button>
+<button type="button" class="tile" data-tile="editing" aria-pressed="false" title="Show being edited"><b>0</b>being edited</button>
+<button type="button" class="tile" data-tile="decided" aria-pressed="false" title="Show decided"><b>0</b>decided</button>
+<button type="button" class="tile" data-tile="incorporated" aria-pressed="false" title="Show incorporated"><b>0</b>incorporated</button>
+<button type="button" class="tile" data-tile="noissue" aria-pressed="false" title="Show open, in no change-set"><b>0</b>open, in no change-set</button>
+</div>
+<form id="filters" aria-controls="comments">
+<label>Status<select id="f-phase"><option value="">all</option><option value="open" selected>open</option><option value="editing">being edited</option><option value="decided">decided</option><option value="closed">closed</option></select></label>
+<label>Type<select id="f-type"><option value="">all</option></select></label>
+<label>Committee<select id="f-committee"><option value="">all</option></select></label>
+<label>Section<select id="f-section"><option value="">all</option></select></label>
+<label>Search<input id="f-text" type="search" placeholder="words, or PC-0042"></label>
+<p id="f-count" class="muted" aria-live="polite"></p>
+</form>
+
+<p class="picker"><button type="button" id="open-issue" disabled>New change-set from the selected comments</button> <span id="pick-count" class="muted">Tick comments to group them.</span></p>
+<div class="table-wrap">
+<table id="comments">
+<thead><tr><th><span class="sr">Select</span></th><th>Ref</th><th>Status</th><th>Type</th><th>Committee</th><th>Where</th><th>Comment</th><th>Recommendations</th><th>Decision</th><th>Change-set</th><th>Links</th></tr></thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+</main>
+<script type="application/json" id="fa-edit-cfg">{"repo":"litlfred/dth-hrh","branch":"main","content":"dth-hrh","siteUrl":"https://litlfred.github.io/dth-hrh","page":"en/folio-assistant-core/public-comments/folio/dth-hrh/index.html"}</script>
+<script>
+(() => {
+  if (window.faEditLinks) return;
+  function faBlockUrls(c, b) {
+  var enc = encodeURIComponent;
+  var path = b.source.split("/").map(enc).join("/");
+  var branch = c.branch || "main";
+  var repo = b.repo || c.repo;
+  var src = "https://github.com/" + repo + "/blob/" + branch + "/" + path + (b.line ? "#L" + b.line : "");
+  var url = c.siteUrl && b.page ? c.siteUrl.replace(/\/$/, "") + "/" + b.page + "#" + enc(b.label) : (b.pageUrl || "");
+  var values = { block: b.label, section: b.section || "", source: b.source, page: b.page || "", url: url, content: c.content || "" };
+  var q = new URLSearchParams();
+  q.set("title", "Feedback" + (c.content ? " [" + c.content + "]" : "") + ": " + (b.section ? b.section + " — " : "") + b.label);
+  if (c.labels && c.labels.length) q.set("labels", c.labels.join(","));
+  if (c.template) {
+    q.set("template", c.template);
+    (c.templateFields || []).forEach(function (f) { if (values[f]) q.set(f, values[f]); });
+  } else {
+    var facts = c.content ? ["**Content:** \u0060" + c.content + "\u0060"] : [];
+    facts.push("**Block:** \u0060" + b.label + "\u0060");
+    if (b.section) facts.push("**Section:** " + b.section);
+    facts.push("**Source:** " + src);
+    if (url) facts.push("**On the site:** " + url);
+    q.set("body", facts.concat(["", "**Type:** general | technical | editorial", "", "**Comment:**", "", "", "**Proposed change:**", ""]).join("\n"));
+  }
+  return { edit: "https://github.com/" + repo + "/edit/" + branch + "/" + path, source: src, feedback: "https://github.com/" + c.repo + "/issues/new?" + q };
+}
+  let cfg = null;
+  const config = () => {
+    if (cfg) return cfg;
+    const el = document.getElementById("fa-edit-cfg");
+    if (el) cfg = JSON.parse(el.textContent);
+    else {
+      const meta = (n) => { const m = document.querySelector('meta[name="' + n + '"]'); return m ? m.content : undefined; };
+      cfg = { repo: meta("fa-repo"), branch: meta("fa-branch") || "main" };
+    }
+    return cfg;
+  };
+  // A link that names a GitHub file but carries no facts (a generator wrote
+  // its href from data, e.g. sourceLinks) gives them up from its own URL.
+  const GH = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/(?:blob|edit)\/([^/]+)\/([^#?]+)(?:#L(\d+))?$/;
+  const adopt = (a) => {
+    const m = GH.exec(a.getAttribute("href") || "");
+    if (!m) return false;
+    a.dataset.repo = m[1]; a.dataset.branch = m[2];
+    a.dataset.src = m[3].split("/").map(decodeURIComponent).join("/");
+    if (m[4]) a.dataset.line = m[4];
+    return true;
+  };
+  const ready = (host) => {
+    if (host.dataset.ready) return;
+    if (!host.dataset.src && !(host.matches("a[data-fa-link]") && adopt(host))) return;
+    const c0 = config();
+    const c = host.dataset.branch ? Object.assign({}, c0, { branch: host.dataset.branch }) : c0;
+    if (!c.repo && !host.dataset.repo) return;
+    host.dataset.ready = "1";
+    const label = host.dataset.block || host.dataset.src;
+    const u = faBlockUrls(c, { label: label, source: host.dataset.src, section: host.dataset.sec,
+      line: host.dataset.line ? Number(host.dataset.line) : undefined, repo: host.dataset.repo, page: host.dataset.page || c.page,
+      pageUrl: location.href.split("#")[0] + "#" + encodeURIComponent(label) });
+    const links = host.matches("a[data-fa-link]") ? [host] : host.querySelectorAll("a[data-fa-link]");
+    // Only this host's own links: a nested host (a Lean link inside a block's row) fills itself.
+    for (const a of links) if ((a === host || a.closest("[data-src]") === host) && u[a.dataset.faLink]) a.href = u[a.dataset.faLink];
+  };
+  const fill = (root) => { for (const h of (root || document).querySelectorAll("[data-src], a[data-fa-link]")) ready(h); };
+  // A page that learns its repository later (the folio site reads it from its outline) says so here.
+  const configure = (c) => { cfg = c; };
+  window.faEditLinks = { urls: faBlockUrls, fill: fill, configure: configure };
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => { const h = e.target.closest && e.target.closest("[data-src], a[data-fa-link]"); if (h) ready(h); }, { passive: true });
+})();
+</script>
+<script>
+(() => {
+  const REPO = "litlfred/dth-hrh";
+  // [edit]/[feedback]: fill a row's links when the row is reached. The shared
+  // runtime fills on reaching the links' host, but a pointer that lands
+  // straight on a link (no gap crossed) or keyboard focus never reaches it, as
+  // an <a> without an href is not focusable.
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => {
+      const tr = e.target.closest && e.target.closest("#comments tbody tr");
+      if (tr && window.faEditLinks && !tr.dataset.faFilled) { tr.dataset.faFilled = "1"; window.faEditLinks.fill(tr); }
+    }, { passive: true });
+  const $ = (id) => document.getElementById(id);
+  const rows = [...document.querySelectorAll("#comments tbody tr")];
+  const csTrs = [...document.querySelectorAll("#change-sets tbody tr")];
+  const tiles = [...document.querySelectorAll(".tile[data-tile]")];
+
+  // Pre-index DOM dataset attributes into memory once on load to eliminate
+  // thousands of live DOMStringMap reflections and layout invalidations during filtering.
+  const commentItems = rows.map((r) => ({
+    el: r,
+    id: r.id,
+    phase: r.dataset.phase,
+    status: r.dataset.status,
+    type: r.dataset.type,
+    committee: r.dataset.committee,
+    section: r.dataset.section,
+    text: r.dataset.text,
+    placed: r.dataset.placed,
+    incs: r.dataset.incs,
+  }));
+
+  const csItems = csTrs.map((tr) => {
+    const a = tr.querySelector("a.show-cs");
+    const countEl = tr.querySelector(".cs-n");
+    const refs = a && a.dataset.refs ? a.dataset.refs.split(" ") : [];
+    return {
+      el: tr,
+      committee: tr.dataset.committee,
+      refs,
+      countEl,
+      total: refs.length,
+    };
+  });
+
+  // Tiles that ARE a Status value set the select; the other two are extra filters.
+  const PHASE_TILES = ["open", "editing", "decided"];
+  let extra = null; // "unplaced" | "incorporated" | "noissue" | null
+  let only = null; // a change-set's comments, from "show its comments"
+  const active = () => extra ?? ($("f-phase").value || "all");
+  const apply = () => {
+    const ph = $("f-phase").value, ty = $("f-type").value, co = $("f-committee").value, se = $("f-section").value, tx = $("f-text").value.trim().toLowerCase();
+    let n = 0;
+    const shown = new Set();
+    for (let i = 0; i < commentItems.length; i++) {
+      const it = commentItems[i];
+      const s = it.section;
+      const ok = (!ph || it.phase === ph) && (!ty || it.type === ty) && (!co || it.committee === co)
+        && (!se || s === se || s.startsWith(se + ".")) && (!tx || it.text.includes(tx))
+        && (extra !== "unplaced" || it.placed === "0")
+        && (extra !== "incorporated" || it.status === "incorporated")
+        && (extra !== "noissue" || (it.incs === "0" && it.phase === "open"))
+        && (!only || only.has(it.id));
+      if (it.el.hidden !== !ok) it.el.hidden = !ok;
+      if (ok) {
+        n++;
+        shown.add(it.id);
+      }
+    }
+    $("f-count").textContent = n + " of " + commentItems.length + " shown";
+
+    // Change-sets: update visibility and match counts from the in-memory index
+    let m = 0;
+    for (let j = 0; j < csItems.length; j++) {
+      const cs = csItems[j];
+      let k = 0;
+      for (let r = 0; r < cs.refs.length; r++) {
+        if (shown.has(cs.refs[r])) k++;
+      }
+      // Under a committee filter a change-set shows when it is that
+      // committee's, even if only some of its comments are routed there.
+      const csOk = co ? cs.committee === co : k > 0;
+      if (cs.el.hidden !== !csOk) cs.el.hidden = !csOk;
+      if (csOk) m++;
+      if (cs.countEl) {
+        const text = k === cs.total ? String(k) : k + " of " + cs.total;
+        if (cs.countEl.textContent !== text) cs.countEl.textContent = text;
+      }
+    }
+    if ($("cs-count")) $("cs-count").textContent = "Showing " + m + " of " + csItems.length + ", by the filters below.";
+    const on = active();
+    for (const t of tiles) t.setAttribute("aria-pressed", String(t.dataset.tile === on));
+  };
+  // BACK WORKS (D-3 of the 2026-10-06 walkthrough): every filter change is a
+  // history entry whose query string holds the filters, so Back restores the
+  // previous view instead of leaving the page. Typing in Search replaces the
+  // entry rather than adding one per keystroke.
+  const save = (push = true) => {
+    const q = new URLSearchParams();
+    const put = (k, v) => { if (v) q.set(k, v); };
+    q.set("status", $("f-phase").value);
+    put("type", $("f-type").value); put("committee", $("f-committee").value); put("section", $("f-section").value); put("q", $("f-text").value);
+    put("tile", extra); put("only", only ? [...only].join(" ") : "");
+    const url = "?" + q + location.hash;
+    if (url !== location.search + location.hash) history[push ? "pushState" : "replaceState"](null, "", url);
+  };
+  function load() {
+    const q = new URLSearchParams(location.search);
+    if (!q.has("status")) return;
+    $("f-phase").value = q.get("status"); $("f-type").value = q.get("type") ?? ""; $("f-committee").value = q.get("committee") ?? "";
+    $("f-section").value = q.get("section") ?? ""; $("f-text").value = q.get("q") ?? "";
+    extra = q.get("tile"); only = q.get("only") ? new Set(q.get("only").split(" ")) : null;
+    apply();
+  }
+  for (const t of tiles) t.addEventListener("click", () => {
+    const key = t.dataset.tile;
+    // Pressing the tile that is on clears it: back to every comment.
+    const clear = key === active() || key === "all";
+    extra = !clear && !PHASE_TILES.includes(key) ? key : null;
+    $("f-phase").value = !clear && PHASE_TILES.includes(key) ? key : "";
+    only = null;
+    apply(); save();
+  });
+  $("f-phase").addEventListener("input", () => { extra = null; });
+  for (const a of document.querySelectorAll("a.show-cs")) a.addEventListener("click", (e) => {
+    e.preventDefault();
+    only = new Set(a.dataset.refs.split(" "));
+    // Every one of its comments, whatever was filtered before.
+    extra = null; for (const id of ["f-phase", "f-type", "f-committee", "f-section", "f-text"]) $(id).value = "";
+    apply(); save();
+    document.getElementById("comments").scrollIntoView();
+  });
+  // A CHANGE-SET'S COMMENTS IN FULL, IN PLACE (owner, 2026-10-06: "in addition
+  // to jumping to comment from CS you can expand panel to see original PC
+  // details (who, what..)", and "that can be dynamic JS load of KG"). The
+  // records are LOADED when a panel is first opened, from "comments.json"
+  // (the comment store as published), which stays at the dashboard's route
+  // while the page is under the locale (issue #2527). Opened from file://,
+  // where fetch fails, it falls back to the comment rows already on the page.
+  let records = null;
+  const loadRecords = () => (records ??= fetch("../../../../../folio-assistant-core/public-comments/folio/dth-hrh/comments.json")
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((list) => new Map(list.map((x) => [x.ref, x])))
+    .catch(() => null));
+  const h = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const fromRecord = (x) => "<li class=\"cs-pc\"><a href=\"#" + h(x.ref) + "\">" + h(x.ref) + "</a> · " + h(x.status) + (x.type ? " · " + h(x.type) : "") + " · " + h(x.committee ? (x.committee.group || x.committee.raw) : "not routed") +
+    "<div class=\"muted\">" + (x.target ? h(x.section + " " + x.sectionTitle) : "<em>unplaced</em>") + (x.citation ? " — " + h(x.citation) : "") + "</div>" +
+    "<p>" + h(x.text) + "</p>" + (x.suggestion ? "<p><b>Suggested revision:</b> " + h(x.suggestion) + "</p>" : "") +
+    "<p class=\"muted\">" + h(x.reviewer) + "</p>" +
+    (x.recommendations && x.recommendations.length ? "<p>" + x.recommendations.map((r) => "<span class=\"chip\" title=\"" + h(r.rationale) + "\">" + h(r.by) + ": " + h(r.code) + "</span>").join("") + "</p>" : "") +
+    "<div class=\"cs-pc-decision\">" + (x.decision ? "<b>" + h(x.decision.label) + "</b>" + (x.decision.reason ? " — " + h(x.decision.reason) : "") : "<span class=\"muted\">not decided yet</span>") + "</div></li>";
+  const fromRow = (ref) => {
+    const tr = document.getElementById(ref);
+    if (!tr) return "<li>" + h(ref) + " <span class=\"muted\">(not on this page)</span></li>";
+    const c = tr.cells;
+    // Cells: pick, ref, status, type, committee, where, comment, recommendations, decision.
+    const body = [...(c[6].querySelector("details")?.children || [])].filter((x) => x.tagName !== "SUMMARY").map((x) => x.outerHTML).join("");
+    return "<li class=\"cs-pc\"><a href=\"#" + h(ref) + "\">" + h(ref) + "</a> · " + c[2].textContent + (c[3].textContent ? " · " + c[3].textContent : "") + " · " + h(tr.dataset.committee) +
+      "<div class=\"muted\">" + c[5].innerHTML + "</div>" + body + "<div class=\"cs-pc-decision\">" + c[8].innerHTML + "</div></li>";
+  };
+  document.addEventListener("toggle", async (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains("cs-pcs") || !d.open || d.dataset.built) return;
+    d.dataset.built = "1";
+    const ul = document.createElement("ul");
+    ul.className = "cs-pc-list";
+    ul.innerHTML = "<li class=\"muted\">Loading…</li>";
+    d.append(ul);
+    const byRef = await loadRecords();
+    ul.innerHTML = d.dataset.refs.split(" ").map((ref) => (byRef && byRef.get(ref) ? fromRecord(byRef.get(ref)) : fromRow(ref))).join("");
+  }, true);
+  // GROUPING (issue #2183): tick comments, open the "new change-set" issue
+  // form prefilled with them. The repository's workflow records the change-set
+  // from the form and adopts that issue as its own.
+  const picker = $("open-issue");
+  if (picker) {
+    const picked = () => [...document.querySelectorAll("input.pick:checked")].map((x) => x.value);
+    const sync = () => {
+      const n = picked().length;
+      picker.disabled = n === 0;
+      $("pick-count").textContent = n ? n + " selected" : "Tick comments to group them.";
+    };
+    document.getElementById("comments").addEventListener("change", (e) => { if (e.target.classList.contains("pick")) sync(); });
+    picker.addEventListener("click", () => {
+      const refs = picked();
+      if (!refs.length) return;
+      const q = new URLSearchParams({ template: "change-set-new.yml", title: "New change-set: ", comments: refs.join(", ") });
+      const url = "https://github.com/" + REPO + "/issues/new?" + q;
+      window.open(url, "_blank", "noopener");
+    });
+    sync();
+  }
+  // A link to #PC-0042 shows that comment whatever the filters say; a link to
+  // #CS-012 opens the change-sets list there.
+  if (location.hash.startsWith("#PC-")) $("f-phase").value = "";
+  if (location.hash.startsWith("#CS-") && $("change-sets")) { $("change-sets").open = true; document.getElementById(location.hash.slice(1))?.scrollIntoView(); }
+  // A select replaces "show its comments" (it used to stay on, hidden, and
+  // made every later filter look broken: D-2 of the 2026-10-06 walkthrough);
+  // the search box narrows within it.
+  for (const id of ["f-phase", "f-type", "f-committee", "f-section"]) $(id).addEventListener("input", () => { only = null; apply(); save(); });
+  let searchDebounceTimer = null;
+  $("f-text").addEventListener("input", () => {
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => { apply(); save(false); }, 75);
+  });
+  addEventListener("popstate", load);
+  addEventListener("hashchange", () => { if (location.hash.startsWith("#PC-")) { $("f-phase").value = ""; only = null; extra = null; apply(); } });
+  load();
+  apply();
+})();
+</script>
+</body>
+</html>

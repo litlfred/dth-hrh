@@ -29,7 +29,8 @@
       "sourceSteps": [
         "site:document",
         "site:wg-comment",
-        "site:library"
+        "site:library",
+        "site:glossary"
       ],
       "siteSteps": [
         "site:node-kinds"

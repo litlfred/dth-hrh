@@ -9,7 +9,18 @@
       "graphTypologies": [
         "folio"
       ],
-      "description": "The working document of the DTH on health workforce registries: its document, chapters and blocks, including the L1 structured assets (generic personas, user scenarios, requirements, data elements)."
+      "description": "The working document of the DTH on health workforce registries: its document, chapters and blocks, including the L1 structured assets (generic personas, user scenarios, requirements, data elements).",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "docs/en/dth-hrh/index.html",
+            "title": "Working document",
+            "writer": [
+              "folio-assistant-core/scripts/build-document-site.ts"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "library",
@@ -26,7 +37,37 @@
         "todo-items",
         "public-comments"
       ],
-      "description": "The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), and config.json naming the editors and committee. Same machinery as the smart-ra public review, at working-group scale; a public review, when there is one, gets its own store at review/public-comment/."
+      "description": "The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), and config.json naming the editors and committee. Same machinery as the smart-ra public review, at working-group scale; a public review, when there is one, gets its own store at review/public-comment/.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "docs/en/folio-assistant-core/public-comments/folio/dth-hrh/index.html",
+            "title": "Working-group comments",
+            "writer": [
+              "folio-assistant-core/scripts/public-comment-site.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "glossary",
+      "path": "glossary/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by tools/glossary/build_glossary.py.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "docs/en/dth-hrh/glossary/index.html",
+            "title": "Glossary",
+            "writer": [
+              "tools/glossary/site.ts"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "uploads",

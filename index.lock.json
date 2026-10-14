@@ -24,7 +24,7 @@
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "2baca10f88aac07ea9a2ebc50ff6948840ba297f"
+      "ref": "8d872d0a9135aa21222572aa54d3c8ab3a8a00d9"
     },
     {
       "harness": "bootstrap",

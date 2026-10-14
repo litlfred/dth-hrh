@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "1ab030e02cdddc7b44c6a0dd2f7e07b382ef420d",
+          "ref": "002f21a0e46f1a0070470801b472044174c924cf",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "1ab030e02cdddc7b44c6a0dd2f7e07b382ef420d",
-              "evidence": "Owner's repin+merge window ('extend repin+merge window 3 hrs', 2026-10-14 ~20:10-23:10 UTC): cat-harness-tools#218 (1e7ddcd, suggest editor) and #256 (3dda7ad, built text / ctx.why / FSH pane / library extracts) merged, main 1ab030e; folio-assistant-core#97 merged as c418b7c (editor profiles bundled); cat-harness#246 (f789382, runtime asset) and #249 (ea248ae) merged, main b4242fb."
+              "ref": "002f21a0e46f1a0070470801b472044174c924cf",
+              "evidence": "Owner's repin+merge window ('extend repin+merge window 3 hrs', 2026-10-14 ~20:10-23:10 UTC): cat-harness-tools#264 (01abaa2, init-folio --skip-vcs seeds main; primer warns on a non-main default) and #265 (002f21a, library table extracts as cells) merged."
             }
           }
         }

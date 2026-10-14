@@ -32,7 +32,7 @@
   label { margin-right:1rem; }
   @media (max-width:40rem) { dl { grid-template-columns:1fr; } }
 </style>
-<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-27myev621re.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-ctmaozfv09.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
 /* Narrow viewports: nothing may widen the PAGE — bean `2r2n`.
  *
  * At 390 px, 105 of 249 built pages scrolled sideways (measured 2026-09-24).
@@ -111,7 +111,7 @@
 
 </style>
 </head>
-<body data-fa-node-kind-page><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-27myev621re","here":"/en/cat-harness/cat-harness-declaration/dth-hrh/dth-hrh/","documentIndex":{"label":"dth-hrh","icon":"§","items":[{"label":"cat-harness-declaration","icon":"▸","href":"../../"},{"label":"dth-hrh","icon":"▸","href":"../"},{"label":"dth-hrh","icon":"▸"},{"label":"Fields","icon":"·","href":"#fields","depth":1}],"collapsible":true,"open":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav><script type="application/json" data-fa-visualiser-nav>[{"label":"cat-harness-declaration","href":"../../"},{"label":"dth-hrh","href":"../"},{"label":"dth-hrh","items":[{"label":"Fields","href":"#fields"}]}]</script>
+<body data-fa-node-kind-page><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-ctmaozfv09","here":"/en/cat-harness/cat-harness-declaration/dth-hrh/dth-hrh/","documentIndex":{"label":"dth-hrh","icon":"§","items":[{"label":"cat-harness-declaration","icon":"▸","href":"../../"},{"label":"dth-hrh","icon":"▸","href":"../"},{"label":"dth-hrh","icon":"▸"},{"label":"Fields","icon":"·","href":"#fields","depth":1}],"collapsible":true,"open":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav><script type="application/json" data-fa-visualiser-nav>[{"label":"cat-harness-declaration","href":"../../"},{"label":"dth-hrh","href":"../"},{"label":"dth-hrh","items":[{"label":"Fields","href":"#fields"}]}]</script>
 <main>
 <h1 id="nk-title">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</h1>
 <p class="m">A <a href="../../">cat-harness-declaration</a> node held by <a href="../">dth-hrh</a>, at <code>dth-hrh.json</code>.</p>
@@ -128,7 +128,18 @@
     &quot;graphTypologies&quot;: [
       &quot;folio&quot;
     ],
-    &quot;description&quot;: &quot;The working document of the DTH on health workforce registries: its document, chapters and blocks, including the L1 structured assets (generic personas, user scenarios, requirements, data elements).&quot;
+    &quot;description&quot;: &quot;The working document of the DTH on health workforce registries: its document, chapters and blocks, including the L1 structured assets (generic personas, user scenarios, requirements, data elements).&quot;,
+    &quot;coverage&quot;: {
+      &quot;visualiser&quot;: [
+        {
+          &quot;ref&quot;: &quot;en/dth-hrh/index.html&quot;,
+          &quot;title&quot;: &quot;Working document&quot;,
+          &quot;writer&quot;: [
+            &quot;folio-assistant-core/scripts/build-document-site.ts&quot;
+          ]
+        }
+      ]
+    }
   },
   {
     &quot;id&quot;: &quot;library&quot;,
@@ -145,7 +156,37 @@
       &quot;todo-items&quot;,
       &quot;public-comments&quot;
     ],
-    &quot;description&quot;: &quot;The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), and config.json naming the editors and committee. Same machinery as the smart-ra public review, at working-group scale; a public review, when there is one, gets its own store at review/public-comment/.&quot;
+    &quot;description&quot;: &quot;The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), and config.json naming the editors and committee. Same machinery as the smart-ra public review, at working-group scale; a public review, when there is one, gets its own store at review/public-comment/.&quot;,
+    &quot;coverage&quot;: {
+      &quot;visualiser&quot;: [
+        {
+          &quot;ref&quot;: &quot;en/folio-assistant-core/public-comments/folio/dth-hrh/index.html&quot;,
+          &quot;title&quot;: &quot;Working-group comments&quot;,
+          &quot;writer&quot;: [
+            &quot;folio-assistant-core/scripts/public-comment-site.ts&quot;
+          ]
+        }
+      ]
+    }
+  },
+  {
+    &quot;id&quot;: &quot;glossary&quot;,
+    &quot;path&quot;: &quot;glossary/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;glossary&quot;
+    ],
+    &quot;description&quot;: &quot;The handbook&#39;s glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by tools/glossary/build_glossary.py.&quot;,
+    &quot;coverage&quot;: {
+      &quot;visualiser&quot;: [
+        {
+          &quot;ref&quot;: &quot;en/dth-hrh/glossary/index.html&quot;,
+          &quot;title&quot;: &quot;Glossary&quot;,
+          &quot;writer&quot;: [
+            &quot;tools/glossary/site.ts&quot;
+          ]
+        }
+      ]
+    }
   },
   {
     &quot;id&quot;: &quot;uploads&quot;,

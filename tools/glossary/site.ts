@@ -58,7 +58,13 @@ const termHtml = (t: Glossary["terms"][number]) => {
 
 const councils = schemes.get("twg-professional-council-examples");
 const councilRows = (councils?.terms ?? [])
-  .map((t) => `<tr><td>${esc(t.notation ?? "")}</td><td>${esc(text(t.prefLabel))}</td><td>${esc(text(t.definition))}</td></tr>`)
+  .map((t) => {
+    const note = t.scopeNote ?? "";
+    const i = note.search(/Checked |Not yet checked/);
+    const checked = i >= 0 ? note.slice(i) : "";
+    const linked = esc(checked).replace(/https?:\/\/[^\s,]+[^\s,.]/g, (u) => `<a href="${u}">source</a>`);
+    return `<tr><td>${esc(t.notation ?? "")}</td><td>${esc(text(t.prefLabel))}</td><td>${esc(text(t.definition))}</td><td>${linked}</td></tr>`;
+  })
   .join("");
 
 const html = `<!doctype html>
@@ -85,7 +91,7 @@ table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{border:1px solid
 ${main.terms.map(termHtml).join("\n")}
 <h2 id="professional-councils">Professional councils: country examples</h2>
 <p>${esc(councils?.description ?? "")}</p>
-<table><thead><tr><th>Region / country</th><th>Council</th><th>Statutory definition</th></tr></thead><tbody>${councilRows}</tbody></table>
+<table><thead><tr><th>Region / country</th><th>Council</th><th>Statutory definition</th><th>Checked</th></tr></thead><tbody>${councilRows}</tbody></table>
 <p class="note">Machine-readable: <code>glossary/*.glossary.json</code> (SKOS, folio-glossary/v1) in the repository.</p>
 </body></html>
 `;

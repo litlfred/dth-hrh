@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/nfreq-NFR-01",
+  "@type": [
+    "smart-base:NonFunctionalRequirement"
+  ],
+  "label": "nfreq:NFR-01",
+  "kind": "non-functional-requirement",
+  "title": "Security",
+  "text": "nfr-security.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "NFR-01",
+    "priority": "must"
+  },
+  "provenance": "authored"
+}

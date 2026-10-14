@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-mds-contact-information",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:mds-contact-information",
+  "kind": "data-element",
+  "title": "Contact information",
+  "text": "de-contact-information.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "minimumDataSet": "WHO 2015",
+    "position": 6
+  },
+  "provenance": "authored"
+}

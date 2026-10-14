@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-dual-practice",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-dual-practice",
+  "kind": "prose",
+  "title": "Dual practice",
+  "text": "g-dual-practice.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "dual-practice"
+    }
+  },
+  "provenance": "authored"
+}

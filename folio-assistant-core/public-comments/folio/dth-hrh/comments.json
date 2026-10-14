@@ -1,1 +1,92 @@
-[]
+[
+ {
+  "ref": "PC-0001",
+  "status": "triaged",
+  "phase": "open",
+  "type": "technical",
+  "target": "prose:gloss-health-workforce-registry",
+  "section": "",
+  "sectionTitle": "Priority terms for TWG agreement",
+  "citation": "(no citation)",
+  "anchorNote": "placed by editor",
+  "confidence": "high",
+  "summary": "We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…",
+  "text": "We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Architecture DTH. Please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. The definition used in the DTH should be consistent with the final definition in the Reference Architecture guide.",
+  "suggestion": "",
+  "reviewer": "World Health Organization",
+  "recommendations": [],
+  "changeSets": [
+   {
+    "id": "CS-001",
+    "title": "Adopt a definition of health workforce registry",
+    "status": "proposed"
+   }
+  ],
+  "source": "review/wg-comment/comments/PC-0001.json",
+  "links": {
+   "document": "../../../../../en/dth-hrh/index.html#prose%3Agloss-health-workforce-registry",
+   "search": "https://github.com/litlfred/dth-hrh/search?type=issues&q=%22PC-0001%22",
+   "record": "https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0001.json"
+  }
+ },
+ {
+  "ref": "PC-0002",
+  "status": "triaged",
+  "phase": "open",
+  "type": "technical",
+  "target": "prose:gloss-human-resources-for-health-information-system",
+  "section": "",
+  "sectionTitle": "Priority terms for TWG agreement",
+  "citation": "(no citation)",
+  "anchorNote": "placed by editor",
+  "confidence": "high",
+  "summary": "Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…",
+  "text": "Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the most appropriate one, or suggest an edited or new version. Many countries run the registry inside an HRIS, so the boundary between the two needs to be clear.",
+  "suggestion": "",
+  "reviewer": "World Health Organization",
+  "recommendations": [],
+  "changeSets": [
+   {
+    "id": "CS-002",
+    "title": "Adopt a definition of human resources for health information system",
+    "status": "proposed"
+   }
+  ],
+  "source": "review/wg-comment/comments/PC-0002.json",
+  "links": {
+   "document": "../../../../../en/dth-hrh/index.html#prose%3Agloss-human-resources-for-health-information-system",
+   "search": "https://github.com/litlfred/dth-hrh/search?type=issues&q=%22PC-0002%22",
+   "record": "https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0002.json"
+  }
+ },
+ {
+  "ref": "PC-0003",
+  "status": "triaged",
+  "phase": "open",
+  "type": "technical",
+  "target": "prose:gloss-professional-council",
+  "section": "",
+  "sectionTitle": "Priority terms for TWG agreement",
+  "citation": "(no citation)",
+  "anchorNote": "placed by editor",
+  "confidence": "high",
+  "summary": "Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …",
+  "text": "Please review the definitions of professional council (professional regulatory or licensing authority or body, medical or nursing council or board) and the country examples, and comment on the most appropriate definition, or suggest an edited or new version. Some definitions and sources are AI generated and may need correction.",
+  "suggestion": "",
+  "reviewer": "World Health Organization",
+  "recommendations": [],
+  "changeSets": [
+   {
+    "id": "CS-003",
+    "title": "Adopt a definition of professional council and verify the country examples",
+    "status": "proposed"
+   }
+  ],
+  "source": "review/wg-comment/comments/PC-0003.json",
+  "links": {
+   "document": "../../../../../en/dth-hrh/index.html#prose%3Agloss-professional-council",
+   "search": "https://github.com/litlfred/dth-hrh/search?type=issues&q=%22PC-0003%22",
+   "record": "https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0003.json"
+  }
+ }
+]

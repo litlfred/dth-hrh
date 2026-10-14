@@ -1,0 +1,3 @@
+- Collect the minimum data needed, use them only for stated purposes, and set retention limits.
+- Carry out a privacy impact assessment before implementation and before major changes.
+- Tiered disclosure: a public view, an institutional view and restricted data.

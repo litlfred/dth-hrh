@@ -1,0 +1,3 @@
+- Take stock of existing paper and digital records, then clean, de-duplicate and map them.
+- Digitize paper registers and verify the records.
+- Load data in a planned order, for example by occupation or sector.

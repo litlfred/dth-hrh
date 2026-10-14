@@ -1,0 +1,3 @@
+- Query on demand, notification of changes, and bulk exchange through periodic files or extracts.
+- Direct connection compared with exchange through an interoperability layer.
+- Transitional approaches where source systems cannot yet use standards (for example structured file uploads).

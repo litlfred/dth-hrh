@@ -1,0 +1,1 @@
+**Part 0. Introduction.** This part explains why the handbook exists, what it covers and does not cover, who it is for, and the approach it takes: helping countries move from where they are today towards digital, interoperable health workforce registries built on shared digital building blocks.

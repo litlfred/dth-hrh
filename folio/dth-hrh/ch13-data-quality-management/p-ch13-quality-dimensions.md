@@ -1,0 +1,3 @@
+- Completeness, accuracy, timeliness, uniqueness, consistency and validity.
+- Coverage: the proportion of the actual workforce that is in the registry, including the private sector.
+- Targets for each dimension.

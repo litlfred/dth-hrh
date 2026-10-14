@@ -1,0 +1,3 @@
+- Core interfaces: search for and read a health worker record; verify status; submit and update records; receive notice of changes.
+- Security of interfaces: authentication, authorization and consent.
+- Documentation and version management, so that other systems can connect.

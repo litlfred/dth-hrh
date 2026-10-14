@@ -1,0 +1,4 @@
+- Does the five-part structure work for both health workforce and digital readers?
+- Is anything missing that countries are asking for?
+- Is anything included that does not belong in this handbook?
+- Is the level of technical detail right for the main text, or should some of Part 2 move to annexes or online resources?

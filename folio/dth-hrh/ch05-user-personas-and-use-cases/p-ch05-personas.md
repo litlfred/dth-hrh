@@ -1,0 +1,3 @@
+- People: health worker, registration officer in a regulatory body, employer or facility human resources manager, training institution registrar, workforce planner, member of the public, emergency coordinator.
+- Systems: HRIS, payroll, electronic medical record, facility registry, national identity system, NHWA platform.
+- For each persona: goals, tasks, difficulties, digital skills and connectivity.

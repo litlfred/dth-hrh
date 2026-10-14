@@ -1,0 +1,3 @@
+- Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful.
+- Search, match and merge duplicate records across source systems.
+- Manage changes of name and other identity details over a career.

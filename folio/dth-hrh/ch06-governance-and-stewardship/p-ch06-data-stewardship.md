@@ -1,0 +1,3 @@
+- Named data owners, stewards and custodians for each group of data.
+- Policies for data access, use, retention, correction and release.
+- Health workers' rights to access and correct their own record.

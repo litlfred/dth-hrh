@@ -1,0 +1,3 @@
+- HL7 FHIR resources for health workers and where they work (Practitioner, PractitionerRole, Organization, Location) as the recommended exchange format.
+- IHE profiles such as Mobile Care Services Discovery (mCSD) for querying and updating health worker and facility directories.
+- Code systems and classifications, covered in the chapter on data standards.

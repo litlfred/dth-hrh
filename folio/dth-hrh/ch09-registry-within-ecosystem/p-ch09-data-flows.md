@@ -1,0 +1,3 @@
+- Who sends what to whom, when, and which event triggers it.
+- Flows into the registry (new records and updates) and out of it (queries, notifications, reports).
+- Periodic batch exchange compared with real-time exchange.

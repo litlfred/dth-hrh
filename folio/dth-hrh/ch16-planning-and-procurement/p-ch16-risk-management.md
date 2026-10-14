@@ -1,0 +1,3 @@
+- Common risks: weak mandate, stakeholder resistance, poor data, funding gaps, supplier dependence and staff turnover.
+- A risk register with mitigation measures.
+- Phasing and pilots to reduce risk.

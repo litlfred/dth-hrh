@@ -1,0 +1,3 @@
+- Rules and agreements for systems that connect to the registry.
+- Conformance testing against published specifications before a connection goes live.
+- Managing changes to standards and interface versions.

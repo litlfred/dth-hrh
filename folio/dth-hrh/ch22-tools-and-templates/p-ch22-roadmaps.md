@@ -1,0 +1,3 @@
+- Sample phased roadmaps for each starting point: paper, stand-alone digital, and partly connected.
+- Milestones, dependencies and decision points.
+- Budget and resource planning linked to the roadmap.

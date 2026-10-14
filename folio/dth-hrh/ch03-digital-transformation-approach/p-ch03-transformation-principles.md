@@ -1,0 +1,3 @@
+- Country-owned and publicly governed: meet countries where they are.
+- Interoperable, standards-based, reusable, secure and privacy-protecting by design (in line with the draft DPI-H principles and the Principles for Digital Development).
+- People-centred: designed with health workers, regulators and employers as users.

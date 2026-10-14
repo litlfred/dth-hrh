@@ -1,0 +1,3 @@
+- Redesigned workflows using online application, automated checks, shared data and digital credentials.
+- Paper or assisted channels kept where connectivity or digital skills are limited.
+- Policy or legal changes needed to make the new workflows possible.

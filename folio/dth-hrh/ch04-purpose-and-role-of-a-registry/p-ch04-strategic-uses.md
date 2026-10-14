@@ -1,0 +1,3 @@
+- Regulation and public protection: confirming that practitioners are qualified and in good standing.
+- Planning and management: stock, distribution, skill mix, attrition and migration.
+- Service delivery and digital health: identifying and authorizing health workers in electronic records, prescribing, telehealth and payment systems.

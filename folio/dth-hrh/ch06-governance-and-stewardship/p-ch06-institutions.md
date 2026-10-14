@@ -1,0 +1,3 @@
+- Roles of the ministry of health (health workforce and digital units), regulatory councils, public service commission, finance and payroll, education ministry and training institutions, private sector and sub-national authorities.
+- Governance structure: steering committee, technical working group, and registry operator or custodian.
+- Decision rights: who approves data standards, access, changes and new connections.

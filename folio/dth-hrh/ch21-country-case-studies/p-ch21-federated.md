@@ -1,0 +1,3 @@
+- A country where several councils or sub-national authorities keep their own registers, linked to give a national view (case to be confirmed by the working group).
+- How identifiers, the data set and interfaces were harmonized.
+- Results and challenges.

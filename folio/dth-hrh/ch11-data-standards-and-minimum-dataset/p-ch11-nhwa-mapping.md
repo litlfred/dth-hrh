@@ -1,0 +1,3 @@
+- NHWA indicators that can be derived from registry data, such as stock, density, distribution, age and sex, and place of training.
+- Indicators that need other sources, such as finance data and labour market surveys.
+- The breakdowns that NHWA requires and what they mean for the data set.

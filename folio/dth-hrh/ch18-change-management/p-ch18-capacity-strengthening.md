@@ -1,0 +1,3 @@
+- Competencies for registry managers, data officers, technical staff and other users.
+- Training approaches: on-the-job training, e-learning, and peer learning between councils and countries.
+- Building registry skills into pre-service and in-service programmes, and retaining skilled staff.

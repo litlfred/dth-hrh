@@ -1,0 +1,3 @@
+- Key messages for each audience: health workers, regulators, employers, managers and the public.
+- Channels and timing.
+- Responding to concerns about data use and privacy.

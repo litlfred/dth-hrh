@@ -1,0 +1,3 @@
+- One trusted identity and record for each health worker, reused by every system that needs it (“capture once, use many times”).
+- Faster and cheaper administrative processes: registration, licence renewal, verification, deployment and payroll reconciliation.
+- Better evidence for decisions on training, recruitment, distribution, retention and migration.

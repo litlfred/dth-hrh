@@ -1,0 +1,3 @@
+- Occupations: International Standard Classification of Occupations (ISCO-08), with mapping from national occupational titles.
+- Education levels and fields (ISCED), facility types and ownership, and administrative geography.
+- Supporting standards for countries (ISO 3166), dates (ISO 8601) and languages.

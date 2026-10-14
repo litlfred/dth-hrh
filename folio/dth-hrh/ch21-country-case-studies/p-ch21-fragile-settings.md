@@ -1,0 +1,3 @@
+- A fragile, conflict-affected or very low-resource setting, to be nominated through WHO regional offices.
+- A minimum workable approach, options for working offline, and coordination of partners.
+- Protecting data and health workers where security is poor.

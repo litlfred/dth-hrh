@@ -1,0 +1,3 @@
+- Data dictionary structure: element name, definition, data type, permitted values and mapping to FHIR.
+- Information about each data item's origin: source, date recorded, date verified.
+- Version control and publication of the data dictionary and code lists.

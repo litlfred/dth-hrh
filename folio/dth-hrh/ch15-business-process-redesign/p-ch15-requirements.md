@@ -1,0 +1,3 @@
+- Turn future workflows into functional and non-functional requirements (linked to the chapters on use cases and functional requirements).
+- Data requirements for each step.
+- Prioritization and phasing.

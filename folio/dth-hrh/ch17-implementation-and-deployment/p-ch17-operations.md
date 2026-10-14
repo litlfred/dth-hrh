@@ -1,0 +1,3 @@
+- Standard operating procedures, help desk and service levels.
+- Hosting, backup, maintenance and updates.
+- Bringing new data suppliers and connecting systems on board.

@@ -1,0 +1,35 @@
+# State graphs kept on their own branches, mounted here by state:mount (never committed to main)
+/beans/**
+/todos/**
+/fsh-guts/**
+
+# Build output
+build/
+_site/
+.folio-feedback/
+node_modules/
+
+# Generated QA reports
+bib-qa.json
+
+# The QA working copy: machine-written, and recorded on the orphan qa-reports
+# branch, not on main (skills/sdlc/sdlc-core/qa-reports.md). Attestations
+# under test/attestations/ ARE committed. (bean 5qy8)
+test/results/
+
+# Editor / OS
+.DS_Store
+*.swp
+
+# BEGIN index mounts (generated from index.config.json — do not edit)
+/smart-base/
+/fhir-harness/
+/folio-assistant-core/
+/cat-harness/
+/cat-harness-tools/
+/bootstrap/
+/bootstrap-tools/
+# END index mounts
+
+# Private intake: returned working-group spreadsheets may hold reviewers' emails
+review/wg-comment/raw/

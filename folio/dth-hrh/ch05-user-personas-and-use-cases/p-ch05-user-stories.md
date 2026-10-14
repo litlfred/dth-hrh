@@ -1,0 +1,2 @@
+- Standard format: “As a [persona], I need [capability], so that [benefit].”
+- Worked examples for each priority use case.

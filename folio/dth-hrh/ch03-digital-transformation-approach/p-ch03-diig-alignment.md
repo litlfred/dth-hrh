@@ -1,0 +1,3 @@
+- The handbook follows the DIIG sequence: form the team, identify challenges, choose interventions, plan implementation, link to the enterprise architecture, budget and monitor.
+- It sits alongside the other WHO digital transformation handbooks (primary health care, health supply chain architecture, health product catalogue) and the SMART Guidelines approach.
+- It gives the health workforce detail that the DPI-H reference architecture does not go into.

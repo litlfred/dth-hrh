@@ -1,0 +1,4794 @@
+{
+ "$schema": "folio-review-anchors/v1",
+ "document": "dth-hrh",
+ "library": "twg-outline-2026-10-02",
+ "source": {
+  "docx": {
+   "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+   "sha256": "be3708f656a4abfdfe025d3cb0775ba197dd8147619c1196aed60f7e77447855"
+  },
+  "pdf": {
+   "file": "",
+   "sha256": "",
+   "pages": 0
+  }
+ },
+ "note": "Generated from the working document by tools/review/review-anchors.ts (no frozen review version yet).",
+ "chapters": [
+  {
+   "dir": "about-this-draft",
+   "title": "About this draft",
+   "label": "chap:about-this-draft"
+  },
+  {
+   "dir": "ch01-why-digital-health-workforce-registries",
+   "title": "Chapter 1. Why Digital Health Workforce Registries Matter",
+   "number": 1,
+   "label": "chap:ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "dir": "ch02-scope-and-boundaries",
+   "title": "Chapter 2. Scope and Boundaries",
+   "number": 2,
+   "label": "chap:ch02-scope-and-boundaries"
+  },
+  {
+   "dir": "ch03-digital-transformation-approach",
+   "title": "Chapter 3. Digital Transformation Approach",
+   "number": 3,
+   "label": "chap:ch03-digital-transformation-approach"
+  },
+  {
+   "dir": "ch04-purpose-and-role-of-a-registry",
+   "title": "Chapter 4. Purpose and Role of a Registry",
+   "number": 4,
+   "label": "chap:ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "dir": "ch05-user-personas-and-use-cases",
+   "title": "Chapter 5. User Personas and Use Cases",
+   "number": 5,
+   "label": "chap:ch05-user-personas-and-use-cases"
+  },
+  {
+   "dir": "ch06-governance-and-stewardship",
+   "title": "Chapter 6. Governance and Stewardship",
+   "number": 6,
+   "label": "chap:ch06-governance-and-stewardship"
+  },
+  {
+   "dir": "ch07-functional-requirements",
+   "title": "Chapter 7. Functional Requirements",
+   "number": 7,
+   "label": "chap:ch07-functional-requirements"
+  },
+  {
+   "dir": "ch08-digital-architecture-principles",
+   "title": "Chapter 8. Digital Architecture Principles",
+   "number": 8,
+   "label": "chap:ch08-digital-architecture-principles"
+  },
+  {
+   "dir": "ch09-registry-within-ecosystem",
+   "title": "Chapter 9. Registry within Ecosystem",
+   "number": 9,
+   "label": "chap:ch09-registry-within-ecosystem"
+  },
+  {
+   "dir": "ch10-interoperability",
+   "title": "Chapter 10. Interoperability",
+   "number": 10,
+   "label": "chap:ch10-interoperability"
+  },
+  {
+   "dir": "ch11-data-standards-and-minimum-dataset",
+   "title": "Chapter 11. Data Standards and Minimum Dataset",
+   "number": 11,
+   "label": "chap:ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "dir": "ch12-privacy-security-and-trust",
+   "title": "Chapter 12. Privacy, Security and Trust",
+   "number": 12,
+   "label": "chap:ch12-privacy-security-and-trust"
+  },
+  {
+   "dir": "ch13-data-quality-management",
+   "title": "Chapter 13. Data Quality Management",
+   "number": 13,
+   "label": "chap:ch13-data-quality-management"
+  },
+  {
+   "dir": "ch14-preparing-for-transformation",
+   "title": "Chapter 14. Preparing for Transformation",
+   "number": 14,
+   "label": "chap:ch14-preparing-for-transformation"
+  },
+  {
+   "dir": "ch15-business-process-redesign",
+   "title": "Chapter 15. Business Process Redesign",
+   "number": 15,
+   "label": "chap:ch15-business-process-redesign"
+  },
+  {
+   "dir": "ch16-planning-and-procurement",
+   "title": "Chapter 16. Planning and Procurement",
+   "number": 16,
+   "label": "chap:ch16-planning-and-procurement"
+  },
+  {
+   "dir": "ch17-implementation-and-deployment",
+   "title": "Chapter 17. Implementation and Deployment",
+   "number": 17,
+   "label": "chap:ch17-implementation-and-deployment"
+  },
+  {
+   "dir": "ch18-change-management",
+   "title": "Chapter 18. Change Management",
+   "number": 18,
+   "label": "chap:ch18-change-management"
+  },
+  {
+   "dir": "ch19-monitoring-and-continuous-improvement",
+   "title": "Chapter 19. Monitoring and Continuous Improvement",
+   "number": 19,
+   "label": "chap:ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "dir": "ch20-illustrative-use-cases",
+   "title": "Chapter 20. Illustrative Use Cases",
+   "number": 20,
+   "label": "chap:ch20-illustrative-use-cases"
+  },
+  {
+   "dir": "ch21-country-case-studies",
+   "title": "Chapter 21. Country Case Studies",
+   "number": 21,
+   "label": "chap:ch21-country-case-studies"
+  },
+  {
+   "dir": "ch22-tools-and-templates",
+   "title": "Chapter 22. Tools and Templates",
+   "number": 22,
+   "label": "chap:ch22-tools-and-templates"
+  },
+  {
+   "dir": "annexes",
+   "title": "Annexes",
+   "label": "chap:annexes"
+  },
+  {
+   "dir": "glossary",
+   "title": "Annex 9. Glossary",
+   "label": "chap:glossary"
+  },
+  {
+   "dir": "references",
+   "title": "References",
+   "label": "chap:references"
+  }
+ ],
+ "sections": [
+  {
+   "label": "sec:about-lead",
+   "title": "About this draft",
+   "chapter": "about-this-draft"
+  },
+  {
+   "label": "sec:about-questions",
+   "title": "Questions for the TWG",
+   "chapter": "about-this-draft"
+  },
+  {
+   "label": "sec:about-discussion",
+   "title": "Points for discussion",
+   "chapter": "about-this-draft"
+  },
+  {
+   "label": "sec:about-glance",
+   "title": "Handbook at a glance",
+   "chapter": "about-this-draft"
+  },
+  {
+   "label": "sec:ch01-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:1-1",
+   "number": "1.1",
+   "title": "1.1 Global challenges",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:1-2",
+   "number": "1.2",
+   "title": "1.2 Value proposition",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:1-3",
+   "number": "1.3",
+   "title": "1.3 Registry as digital public infrastructure",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:1-4",
+   "number": "1.4",
+   "title": "1.4 Benefits and outcomes",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:ch01-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch01-why-digital-health-workforce-registries"
+  },
+  {
+   "label": "sec:ch02-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch02-scope-and-boundaries"
+  },
+  {
+   "label": "sec:2-1",
+   "number": "2.1",
+   "title": "2.1 Included topics",
+   "chapter": "ch02-scope-and-boundaries"
+  },
+  {
+   "label": "sec:2-2",
+   "number": "2.2",
+   "title": "2.2 Excluded topics",
+   "chapter": "ch02-scope-and-boundaries"
+  },
+  {
+   "label": "sec:2-3",
+   "number": "2.3",
+   "title": "2.3 Target audiences",
+   "chapter": "ch02-scope-and-boundaries"
+  },
+  {
+   "label": "sec:ch02-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch02-scope-and-boundaries"
+  },
+  {
+   "label": "sec:ch03-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch03-digital-transformation-approach"
+  },
+  {
+   "label": "sec:3-1",
+   "number": "3.1",
+   "title": "3.1 DIIG alignment",
+   "chapter": "ch03-digital-transformation-approach"
+  },
+  {
+   "label": "sec:3-2",
+   "number": "3.2",
+   "title": "3.2 Transformation principles",
+   "chapter": "ch03-digital-transformation-approach"
+  },
+  {
+   "label": "sec:3-3",
+   "number": "3.3",
+   "title": "3.3 Country pathway",
+   "chapter": "ch03-digital-transformation-approach"
+  },
+  {
+   "label": "sec:ch03-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch03-digital-transformation-approach"
+  },
+  {
+   "label": "sec:ch04-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:4-1",
+   "number": "4.1",
+   "title": "4.1 Definitions",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:4-2",
+   "number": "4.2",
+   "title": "4.2 Authoritative source",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:4-3",
+   "number": "4.3",
+   "title": "4.3 Health worker lifecycle",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:4-4",
+   "number": "4.4",
+   "title": "4.4 Strategic uses",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:ch04-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch04-purpose-and-role-of-a-registry"
+  },
+  {
+   "label": "sec:ch05-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:5-1",
+   "number": "5.1",
+   "title": "5.1 Personas",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:5-2",
+   "number": "5.2",
+   "title": "5.2 Priority use cases",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:5-3",
+   "number": "5.3",
+   "title": "5.3 User stories",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:5-4",
+   "number": "5.4",
+   "title": "5.4 Requirements derivation",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:ch05-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch05-user-personas-and-use-cases"
+  },
+  {
+   "label": "sec:ch06-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:6-1",
+   "number": "6.1",
+   "title": "6.1 Institutions",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:6-2",
+   "number": "6.2",
+   "title": "6.2 Legal foundations",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:6-3",
+   "number": "6.3",
+   "title": "6.3 Data stewardship",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:6-4",
+   "number": "6.4",
+   "title": "6.4 Sustainability",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:ch06-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch06-governance-and-stewardship"
+  },
+  {
+   "label": "sec:ch07-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-1",
+   "number": "7.1",
+   "title": "7.1 Identity management",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-2",
+   "number": "7.2",
+   "title": "7.2 Records",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-3",
+   "number": "7.3",
+   "title": "7.3 Lifecycle management",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-4",
+   "number": "7.4",
+   "title": "7.4 Verification services",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-5",
+   "number": "7.5",
+   "title": "7.5 Analytics",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:7-nfr",
+   "title": "Non-functional requirements",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:ch07-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch07-functional-requirements"
+  },
+  {
+   "label": "sec:ch08-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:8-1",
+   "number": "8.1",
+   "title": "8.1 Architecture patterns",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:8-2",
+   "number": "8.2",
+   "title": "8.2 Federation",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:8-3",
+   "number": "8.3",
+   "title": "8.3 Scalability",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:8-4",
+   "number": "8.4",
+   "title": "8.4 Technology neutrality",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:ch08-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch08-digital-architecture-principles"
+  },
+  {
+   "label": "sec:ch09-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch09-registry-within-ecosystem"
+  },
+  {
+   "label": "sec:9-1",
+   "number": "9.1",
+   "title": "9.1 System landscape",
+   "chapter": "ch09-registry-within-ecosystem"
+  },
+  {
+   "label": "sec:9-2",
+   "number": "9.2",
+   "title": "9.2 Data flows",
+   "chapter": "ch09-registry-within-ecosystem"
+  },
+  {
+   "label": "sec:9-3",
+   "number": "9.3",
+   "title": "9.3 Architecture examples",
+   "chapter": "ch09-registry-within-ecosystem"
+  },
+  {
+   "label": "sec:ch09-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch09-registry-within-ecosystem"
+  },
+  {
+   "label": "sec:ch10-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:10-1",
+   "number": "10.1",
+   "title": "10.1 Standards",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:10-2",
+   "number": "10.2",
+   "title": "10.2 APIs",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:10-3",
+   "number": "10.3",
+   "title": "10.3 Data exchange patterns",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:10-4",
+   "number": "10.4",
+   "title": "10.4 Governance",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:ch10-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch10-interoperability"
+  },
+  {
+   "label": "sec:ch11-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-1",
+   "number": "11.1",
+   "title": "11.1 Core dataset",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-2",
+   "number": "11.2",
+   "title": "11.2 Classifications",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-3",
+   "number": "11.3",
+   "title": "11.3 Metadata",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-4",
+   "number": "11.4",
+   "title": "11.4 NHWA mapping",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:ch11-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:ch12-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:12-1",
+   "number": "12.1",
+   "title": "12.1 Privacy by design",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:12-2",
+   "number": "12.2",
+   "title": "12.2 Cybersecurity",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:12-3",
+   "number": "12.3",
+   "title": "12.3 Access control",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:12-4",
+   "number": "12.4",
+   "title": "12.4 Audit trails",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:ch12-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch12-privacy-security-and-trust"
+  },
+  {
+   "label": "sec:ch13-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch13-data-quality-management"
+  },
+  {
+   "label": "sec:13-1",
+   "number": "13.1",
+   "title": "13.1 Quality dimensions",
+   "chapter": "ch13-data-quality-management"
+  },
+  {
+   "label": "sec:13-2",
+   "number": "13.2",
+   "title": "13.2 Validation",
+   "chapter": "ch13-data-quality-management"
+  },
+  {
+   "label": "sec:13-3",
+   "number": "13.3",
+   "title": "13.3 Monitoring",
+   "chapter": "ch13-data-quality-management"
+  },
+  {
+   "label": "sec:ch13-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch13-data-quality-management"
+  },
+  {
+   "label": "sec:ch14-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:14-1",
+   "number": "14.1",
+   "title": "14.1 Leadership",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:14-2",
+   "number": "14.2",
+   "title": "14.2 Teams",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:14-3",
+   "number": "14.3",
+   "title": "14.3 Readiness",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:14-4",
+   "number": "14.4",
+   "title": "14.4 Stakeholder engagement",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:ch14-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch14-preparing-for-transformation"
+  },
+  {
+   "label": "sec:ch15-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch15-business-process-redesign"
+  },
+  {
+   "label": "sec:15-1",
+   "number": "15.1",
+   "title": "15.1 Current state mapping",
+   "chapter": "ch15-business-process-redesign"
+  },
+  {
+   "label": "sec:15-2",
+   "number": "15.2",
+   "title": "15.2 Future workflows",
+   "chapter": "ch15-business-process-redesign"
+  },
+  {
+   "label": "sec:15-3",
+   "number": "15.3",
+   "title": "15.3 Requirements",
+   "chapter": "ch15-business-process-redesign"
+  },
+  {
+   "label": "sec:ch15-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch15-business-process-redesign"
+  },
+  {
+   "label": "sec:ch16-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch16-planning-and-procurement"
+  },
+  {
+   "label": "sec:16-1",
+   "number": "16.1",
+   "title": "16.1 Options analysis",
+   "chapter": "ch16-planning-and-procurement"
+  },
+  {
+   "label": "sec:16-2",
+   "number": "16.2",
+   "title": "16.2 Procurement approaches",
+   "chapter": "ch16-planning-and-procurement"
+  },
+  {
+   "label": "sec:16-3",
+   "number": "16.3",
+   "title": "16.3 Risk management",
+   "chapter": "ch16-planning-and-procurement"
+  },
+  {
+   "label": "sec:ch16-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch16-planning-and-procurement"
+  },
+  {
+   "label": "sec:ch17-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:17-1",
+   "number": "17.1",
+   "title": "17.1 Migration",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:17-2",
+   "number": "17.2",
+   "title": "17.2 Testing",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:17-3",
+   "number": "17.3",
+   "title": "17.3 Rollout",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:17-4",
+   "number": "17.4",
+   "title": "17.4 Operations",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:ch17-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch17-implementation-and-deployment"
+  },
+  {
+   "label": "sec:ch18-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch18-change-management"
+  },
+  {
+   "label": "sec:18-1",
+   "number": "18.1",
+   "title": "18.1 Communications",
+   "chapter": "ch18-change-management"
+  },
+  {
+   "label": "sec:18-2",
+   "number": "18.2",
+   "title": "18.2 Adoption",
+   "chapter": "ch18-change-management"
+  },
+  {
+   "label": "sec:18-3",
+   "number": "18.3",
+   "title": "18.3 Capacity strengthening",
+   "chapter": "ch18-change-management"
+  },
+  {
+   "label": "sec:ch18-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch18-change-management"
+  },
+  {
+   "label": "sec:ch19-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "label": "sec:19-1",
+   "number": "19.1",
+   "title": "19.1 KPIs",
+   "chapter": "ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "label": "sec:19-2",
+   "number": "19.2",
+   "title": "19.2 Maturity",
+   "chapter": "ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "label": "sec:19-3",
+   "number": "19.3",
+   "title": "19.3 Evaluation",
+   "chapter": "ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "label": "sec:ch19-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch19-monitoring-and-continuous-improvement"
+  },
+  {
+   "label": "sec:ch20-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:20-1",
+   "number": "20.1",
+   "title": "20.1 Licensing",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:20-2",
+   "number": "20.2",
+   "title": "20.2 Verification",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:20-3",
+   "number": "20.3",
+   "title": "20.3 Emergency response",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:20-4",
+   "number": "20.4",
+   "title": "20.4 Mobility",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:ch20-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch20-illustrative-use-cases"
+  },
+  {
+   "label": "sec:ch21-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:21-1",
+   "number": "21.1",
+   "title": "21.1 Centralized",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:21-2",
+   "number": "21.2",
+   "title": "21.2 Federated",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:21-3",
+   "number": "21.3",
+   "title": "21.3 Fragile settings",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:21-4",
+   "number": "21.4",
+   "title": "21.4 Lessons learned",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:ch21-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch21-country-case-studies"
+  },
+  {
+   "label": "sec:ch22-lead",
+   "title": "Objectives and key messages",
+   "chapter": "ch22-tools-and-templates"
+  },
+  {
+   "label": "sec:22-1",
+   "number": "22.1",
+   "title": "22.1 Checklists",
+   "chapter": "ch22-tools-and-templates"
+  },
+  {
+   "label": "sec:22-2",
+   "number": "22.2",
+   "title": "22.2 Roadmaps",
+   "chapter": "ch22-tools-and-templates"
+  },
+  {
+   "label": "sec:22-3",
+   "number": "22.3",
+   "title": "22.3 Assessment tools",
+   "chapter": "ch22-tools-and-templates"
+  },
+  {
+   "label": "sec:ch22-planned",
+   "title": "Figures, tools and expected outputs",
+   "chapter": "ch22-tools-and-templates"
+  },
+  {
+   "label": "sec:annexes-lead",
+   "title": "Annexes",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-1",
+   "title": "Annex 1. Minimum Data Set",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-2",
+   "title": "Annex 2. Data Dictionary",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-3",
+   "title": "Annex 3. Governance Template",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-4",
+   "title": "Annex 4. User Personas",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-5",
+   "title": "Annex 5. Functional Requirements Catalogue",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-6",
+   "title": "Annex 6. Interoperability Models",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-7",
+   "title": "Annex 7. Readiness Assessment",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-8",
+   "title": "Annex 8. Maturity Model",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annex-10",
+   "title": "Annex 10. NHWA Mapping",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:glossary-lead",
+   "title": "About this glossary",
+   "chapter": "glossary"
+  },
+  {
+   "label": "sec:glossary-priority",
+   "title": "Priority terms for TWG agreement",
+   "chapter": "glossary"
+  },
+  {
+   "label": "sec:glossary-terms",
+   "title": "Health workforce terms",
+   "chapter": "glossary"
+  },
+  {
+   "label": "sec:glossary-councils",
+   "title": "Professional councils: country examples",
+   "chapter": "glossary"
+  },
+  {
+   "label": "sec:references-lead",
+   "title": "References",
+   "chapter": "references"
+  }
+ ],
+ "blocks": [
+  {
+   "label": "prose:about-this-draft",
+   "kind": "prose",
+   "chapter": "about-this-draft",
+   "root": "p-about",
+   "sections": [
+    "sec:about-lead"
+   ],
+   "hash": "0335da870a5a",
+   "excerpt": "Each chapter gives objectives, key messages, proposed sections with the main points to be covered, suggested figures and tables, tools and checklists, and the o",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:twg-questions",
+   "kind": "prose",
+   "chapter": "about-this-draft",
+   "root": "p-twg-questions",
+   "sections": [
+    "sec:about-questions"
+   ],
+   "hash": "a0d2d98b09cd",
+   "excerpt": "- Does the five-part structure work for both health workforce and digital readers? - Is anything missing that countries are asking for? - Is anything included t",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-one-registry-or-one-set-of-information",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-one-registry-or-one-set-of-information",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "37af22cf4c09",
+   "excerpt": "The WHO 2015 minimum data set describes the registry as “the single authoritative source”, and the draft DPI-H reference architecture appears to describe it as ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-boundary-with-hris",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-boundary-with-hris",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "a6e19d784134",
+   "excerpt": "The draft treats human resource management functions as out of scope. The TWG should confirm where the line is drawn, since many countries run the registry insi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-minimum-data-set",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-minimum-data-set",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "afdc3441c2e8",
+   "excerpt": "The draft proposes updating the 2015 minimum data set within this handbook. The TWG should confirm whether the update belongs here or in a separate product.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-unique-health-worker-identification",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-unique-health-worker-identification",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "09b2ed8bc167",
+   "excerpt": "Should this topic have a dedicated chapter?",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-which-health-workers",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-which-health-workers",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "257aff09b19b",
+   "excerpt": "The draft assumes regulated professions first, extending to other occupations including community health workers and the private sector. The TWG should confirm ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-overlap-between-chapters",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-overlap-between-chapters",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "6b73e0461821",
+   "excerpt": "Governance appears in three chapters (Governance and Stewardship, Interoperability, Data Quality and Governance). Requirements appear in three (User Personas an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-step-by-step-or-modular",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-step-by-step-or-modular",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "374d38053331",
+   "excerpt": "Part 3 is drafted as a pathway that countries can enter at different points, taking the parts they need. Is this the right framing.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "rem:discussion-case-studies",
+   "kind": "remark",
+   "chapter": "about-this-draft",
+   "root": "r-discussion-case-studies",
+   "sections": [
+    "sec:about-discussion"
+   ],
+   "hash": "606ae0455c84",
+   "excerpt": "No countries have been selected yet. The TWG should nominate cases.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:handbook-at-a-glance",
+   "kind": "table",
+   "chapter": "about-this-draft",
+   "root": "t-handbook-at-a-glance",
+   "sections": [
+    "sec:about-glance"
+   ],
+   "caption": "Handbook at a glance: parts, chapters and sections",
+   "hash": "b31eea5c3f90",
+   "excerpt": "Part Chapter Sections :---- :---- :---- Part 0. Introduction 1. Why Digital Health Workforce Registries Matter Global challenges; Value proposition; Registry as",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-part-purpose",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-part-purpose",
+   "sections": [
+    "sec:ch01-lead"
+   ],
+   "hash": "54739e8480b1",
+   "excerpt": "Part 0. Introduction. This part explains why the handbook exists, what it covers and does not cover, who it is for, and the approach it takes: helping countries",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-objectives",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-objectives",
+   "sections": [
+    "sec:ch01-lead"
+   ],
+   "hash": "561609261c7d",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Explain the health workforce data problems that a digital registry helps to solve. - Describe the value",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-key-messages",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-key-messages",
+   "sections": [
+    "sec:ch01-lead"
+   ],
+   "hash": "df1a75fa522a",
+   "excerpt": "Key messages - Countries cannot plan, deploy, pay or protect a workforce that they cannot count or verify. - A registry is a trusted, shared set of core informa",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-global-challenges",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-global-challenges",
+   "sections": [
+    "sec:1-1"
+   ],
+   "hash": "3aebfed933cb",
+   "excerpt": "- WHO projects a global shortfall of about 11 million health workers by 2030, with uneven distribution within and between countries. - Workforce data are spread",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-value-proposition",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-value-proposition",
+   "sections": [
+    "sec:1-2"
+   ],
+   "hash": "2b878714aee1",
+   "excerpt": "- One trusted identity and record for each health worker, reused by every system that needs it (“capture once, use many times”). - Faster and cheaper administra",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-registry-as-digital-public-infrastructur",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-registry-as-digital-public-infrastructur",
+   "sections": [
+    "sec:1-3"
+   ],
+   "hash": "88a2c9eb55e0",
+   "excerpt": "- The draft WHO/ITU reference architecture for digital public infrastructure for health (DPI-H) lists the health workforce registry as a foundational registry, ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-benefits-and-outcomes",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-benefits-and-outcomes",
+   "sections": [
+    "sec:1-4"
+   ],
+   "hash": "ab1c74a3ca91",
+   "excerpt": "- For health workers: portable and verifiable credentials, simpler renewals, and recognition of training and continuing professional development. - For the publ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-figures",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-figures",
+   "sections": [
+    "sec:ch01-planned"
+   ],
+   "hash": "0762553b0afe",
+   "excerpt": "Suggested figures and tables - Figure: the registry at the centre, with inputs (training institutions, regulators, employers) and outputs (verification, plannin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-tools",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-tools",
+   "sections": [
+    "sec:ch01-planned"
+   ],
+   "hash": "85fd6c4603a9",
+   "excerpt": "Implementation tools and checklists - One-page advocacy brief template for senior decision-makers. - Quick checklist: “Do we have a registry problem?”",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-outputs",
+   "kind": "prose",
+   "chapter": "ch01-why-digital-health-workforce-registries",
+   "root": "p-ch01-outputs",
+   "sections": [
+    "sec:ch01-planned"
+   ],
+   "hash": "45eb0cfeaead",
+   "excerpt": "Expected outputs for countries - A shared problem statement agreed by health workforce and digital leads. - A high-level vision for the national registry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-objectives",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-objectives",
+   "sections": [
+    "sec:ch02-lead"
+   ],
+   "hash": "48b068b26120",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Define what the handbook covers and what is left to other guidance. - Clarify how a registry differs fr",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-key-messages",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-key-messages",
+   "sections": [
+    "sec:ch02-lead"
+   ],
+   "hash": "523109949602",
+   "excerpt": "Key messages - The handbook covers the registry as a shared foundation, not the full range of human resource management functions. - It applies to all health wo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-included-topics",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-included-topics",
+   "sections": [
+    "sec:2-1"
+   ],
+   "hash": "98860f896cb8",
+   "excerpt": "- Purpose, governance, minimum data set, functional requirements and architecture options for a registry. - Interoperability with regulators, employers, trainin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-excluded-topics",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-excluded-topics",
+   "sections": [
+    "sec:2-2"
+   ],
+   "hash": "d15b4708069e",
+   "excerpt": "- Detailed human resource management functions (recruitment, performance appraisal, leave, payroll processing), which belong to HRIS and payroll systems. - Desi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-target-audiences",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-target-audiences",
+   "sections": [
+    "sec:2-3"
+   ],
+   "hash": "69bc5ee0577e",
+   "excerpt": "- Decision-makers: ministry of health leadership, health workforce directorates, digital health units, regulators and professional councils. - Implementers: ent",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-figures",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-figures",
+   "sections": [
+    "sec:ch02-planned"
+   ],
+   "hash": "6352b1774840",
+   "excerpt": "Suggested figures and tables - Figure: the registry and its neighbouring systems (HRIS, regulatory systems, payroll, education systems, facility registry). - Ta",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-tools",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-tools",
+   "sections": [
+    "sec:ch02-planned"
+   ],
+   "hash": "46588c2f5d88",
+   "excerpt": "Implementation tools and checklists - Scope definition worksheet: which occupations, sectors, levels and functions are included in the first phase.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-outputs",
+   "kind": "prose",
+   "chapter": "ch02-scope-and-boundaries",
+   "root": "p-ch02-outputs",
+   "sections": [
+    "sec:ch02-planned"
+   ],
+   "hash": "b47431b51bb3",
+   "excerpt": "Expected outputs for countries - A documented national scope statement for the registry (occupations, sectors, functions and phases).",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-objectives",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-objectives",
+   "sections": [
+    "sec:ch03-lead"
+   ],
+   "hash": "01941b56c0f9",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Explain how the handbook applies the WHO Digital Implementation Investment Guide (DIIG) to registries. ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-key-messages",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-key-messages",
+   "sections": [
+    "sec:ch03-lead"
+   ],
+   "hash": "bca66408b990",
+   "excerpt": "Key messages - Digital transformation changes processes, governance and skills. It is not only about installing software. - Start from existing systems and impr",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-diig-alignment",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-diig-alignment",
+   "sections": [
+    "sec:3-1"
+   ],
+   "hash": "5ac28d5aaec4",
+   "excerpt": "- The handbook follows the DIIG sequence: form the team, identify challenges, choose interventions, plan implementation, link to the enterprise architecture, bu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:diig-phases",
+   "kind": "figure",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "f-diig-phases",
+   "sections": [
+    "sec:3-1"
+   ],
+   "caption": "Planning and implementing a digital health enterprise: phases, steps and resources (DIIG Fig. 1.1.1)",
+   "hash": "5a1ecd65dade",
+   "excerpt": "Source: WHO Digital implementation investment guide (DIIG), 2020, Fig. 1.1.1. Reused from the smart-base library.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-transformation-principles",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-transformation-principles",
+   "sections": [
+    "sec:3-2"
+   ],
+   "hash": "8e2927330cda",
+   "excerpt": "- Country-owned and publicly governed: meet countries where they are. - Interoperable, standards-based, reusable, secure and privacy-protecting by design (in li",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-country-pathway",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-country-pathway",
+   "sections": [
+    "sec:3-3"
+   ],
+   "hash": "7e00161b476c",
+   "excerpt": "- Four broad stages: prepare and assess, design, implement, and operate and improve (detailed in Part 3). - Typical starting points: paper registers; stand-alon",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-figures",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-figures",
+   "sections": [
+    "sec:ch03-planned"
+   ],
+   "hash": "05b54668c45a",
+   "excerpt": "Suggested figures and tables - Figure: country pathway showing entry points for different starting points. - Table: handbook chapters mapped to DIIG steps. - Fi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-tools",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-tools",
+   "sections": [
+    "sec:ch03-planned"
+   ],
+   "hash": "53ad24494981",
+   "excerpt": "Implementation tools and checklists - “Where are we now?” self-placement tool (linked to the maturity model annex).",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-outputs",
+   "kind": "prose",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "p-ch03-outputs",
+   "sections": [
+    "sec:ch03-planned"
+   ],
+   "hash": "0d1248329557",
+   "excerpt": "Expected outputs for countries - An agreed transformation approach and guiding principles. - The country's starting point and entry point on the pathway.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-part-purpose",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-part-purpose",
+   "sections": [
+    "sec:ch04-lead"
+   ],
+   "hash": "1a4f2ecc212c",
+   "excerpt": "Part 1. Foundations. This part sets out the common understanding that health workforce and digital teams need before design starts: what a registry is and what ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-objectives",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-objectives",
+   "sections": [
+    "sec:ch04-lead"
+   ],
+   "hash": "1297d780628c",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Define a health workforce registry and related terms in plain language. - Explain what “authoritative s",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-key-messages",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-key-messages",
+   "sections": [
+    "sec:ch04-lead"
+   ],
+   "hash": "42f7f8fb318e",
+   "excerpt": "Key messages - The registry holds a minimum set of trusted information that uniquely identifies each health worker, their qualifications, their authorization to",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-definitions",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-definitions",
+   "sections": [
+    "sec:4-1"
+   ],
+   "hash": "f46295dbf4f4",
+   "excerpt": "- Working definitions of health workforce registry, professional register, HRIS, health worker, registration, licence and credential (see Glossary annex). - Ali",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-authoritative-source",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-authoritative-source",
+   "sections": [
+    "sec:4-2"
+   ],
+   "hash": "b821542e2e26",
+   "excerpt": "- Which institution is the source of truth for each data item, such as identity, qualification, licence status and employment. - How records from several source",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-health-worker-lifecycle",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-health-worker-lifecycle",
+   "sections": [
+    "sec:4-3"
+   ],
+   "hash": "9b6217e2417e",
+   "excerpt": "- Stages: pre-service education, graduation, registration and licensing, employment and deployment, continuing professional development, renewal, mobility, exit",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-strategic-uses",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-strategic-uses",
+   "sections": [
+    "sec:4-4"
+   ],
+   "hash": "9a141147b993",
+   "excerpt": "- Regulation and public protection: confirming that practitioners are qualified and in good standing. - Planning and management: stock, distribution, skill mix,",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-figures",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-figures",
+   "sections": [
+    "sec:ch04-planned"
+   ],
+   "hash": "bd2680763a1a",
+   "excerpt": "Suggested figures and tables - Figure: health worker life cycle with the data events at each stage. - Figure: “one set of information, one or many systems”. - T",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-tools",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-tools",
+   "sections": [
+    "sec:ch04-planned"
+   ],
+   "hash": "2b3d8687400b",
+   "excerpt": "Implementation tools and checklists - Data ownership matrix template (data item by source institution). - Terminology alignment checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-outputs",
+   "kind": "prose",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "p-ch04-outputs",
+   "sections": [
+    "sec:ch04-planned"
+   ],
+   "hash": "93d9fc023ec5",
+   "excerpt": "Expected outputs for countries - An agreed national definition and purpose statement for the registry. - A map of the authoritative source for each data item.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-objectives",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-objectives",
+   "sections": [
+    "sec:ch05-lead"
+   ],
+   "hash": "7489ea8f3e70",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Identify the people and systems that supply or use registry information. - Prioritize a small set of us",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-key-messages",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-key-messages",
+   "sections": [
+    "sec:ch05-lead"
+   ],
+   "hash": "4e53d10b1cd5",
+   "excerpt": "Key messages - Requirements should come from real users and tasks, not from software features. - Systems are users too: many registry “users” are other applicat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-personas",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-personas",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "e1c1f4fd4788",
+   "excerpt": "- People: health worker, registration officer in a regulatory body, employer or facility human resources manager, training institution registrar, workforce plan",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:health-worker",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-health-worker",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "6803e6c0e6f3",
+   "excerpt": "Person. A person whose job is to protect and improve the health of their community: holds a registration, licence and employment record in the registry, and nee",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:registration-officer",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-registration-officer",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "d25afdf28928",
+   "excerpt": "Person. Staff of a professional council or regulatory body who registers and licenses practitioners, records status changes and answers verification requests. G",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:employer-hr-manager",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-employer-hr-manager",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "87265cc7dfdf",
+   "excerpt": "Person. Recruits, deploys and manages health workers for a public or private employer or facility; verifies credentials and records changes of employment and pl",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:training-institution-registrar",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-training-institution-registrar",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "288b45b067a7",
+   "excerpt": "Person. Records enrolment and graduation in a pre-service education institution and confirms qualifications to the regulator. Goals Tasks Difficulties Digital s",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:workforce-planner",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-workforce-planner",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "0cd1e076b16f",
+   "excerpt": "Person. Uses stock, distribution, skill mix, attrition and migration data for planning and NHWA reporting. Specialises the SMART Guidelines generic persona: Hea",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:member-of-public",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-member-of-public",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "84953eabf3a9",
+   "excerpt": "Person. Checks that a practitioner is qualified and authorized to practise. Specialises the SMART Guidelines generic persona: Person. Goals Tasks Difficulties D",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:emergency-coordinator",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-emergency-coordinator",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "87ac9e029edb",
+   "excerpt": "Person. Identifies, verifies and deploys qualified health workers, emergency medical teams and volunteers during an emergency. Goals Tasks Difficulties Digital ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-hris",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-hris",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "efba99172753",
+   "excerpt": "System. Manages employment transactions, payroll processing, leave and scheduling; supplies employment data to the registry and uses its identities. Goals Tasks",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-payroll",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-payroll",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "a495dc12adc3",
+   "excerpt": "System. Pays health workers; reconciled against the registry to remove duplicate and ghost records. Goals Tasks Difficulties Digital skills Connectivity --- ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-emr",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-emr",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "6fe9646e11a4",
+   "excerpt": "System. Identifies and authorizes health workers at the point of care, for example a prescriber, by querying the registry. Specialises the SMART Guidelines gene",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-facility-registry",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-facility-registry",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "070f862fc1a9",
+   "excerpt": "System. The authoritative list of health facilities; the registry links each place of practice to it. Goals Tasks Difficulties Digital skills Connectivity --- -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-national-id",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-national-id",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "305937d60ee2",
+   "excerpt": "System. Foundational identity; the registry may link each health worker to a national identity number where available and lawful. Specialises the SMART Guidelin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:system-nhwa-platform",
+   "kind": "persona",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "pers-system-nhwa-platform",
+   "sections": [
+    "sec:5-1"
+   ],
+   "hash": "da4f69f359bc",
+   "excerpt": "System. The National Health Workforce Accounts data platform; receives indicator data derived from the registry. Specialises the SMART Guidelines generic person",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-priority-use-cases",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-priority-use-cases",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "06647b3ec2af",
+   "excerpt": "- Register and license a new graduate; renew a licence; update employment or place of practice. - Verify a health worker's status (by an employer, a patient, an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:register-and-license-new-graduate",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-register-and-license-new-graduate",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "36d7ab0a4e52",
+   "excerpt": "A new graduate applies for registration; the qualification is verified with the training institution; the regulator registers and licenses the graduate; the reg",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:renew-licence",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-renew-licence",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "b1bce667c993",
+   "excerpt": "A health worker renews a time-limited licence, with continuing professional development recorded; the registry updates licence status and validity. Personas: He",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:update-employment",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-update-employment",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "aaaf1a301d4f",
+   "excerpt": "An employer or the health worker records a change of employment or place of practice, linked to the facility registry. Personas: Health worker, Employer or faci",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:verify-status",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-verify-status",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "152b94432a6e",
+   "excerpt": "An employer, a patient, another system or another country checks a health worker's registration and licence status. Personas: Employer or facility human resourc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:workforce-counts-and-nhwa-reporting",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-workforce-counts-and-nhwa-reporting",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "f5f9d31b3611",
+   "excerpt": "Workforce counts and distribution are produced from the registry for national planning and for reporting to the National Health Workforce Accounts. Personas: Wo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-user-stories",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-user-stories",
+   "sections": [
+    "sec:5-3"
+   ],
+   "hash": "efb01ccbcf75",
+   "excerpt": "- Standard format: “As a [persona], I need [capability], so that [benefit].” - Worked examples for each priority use case.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-requirements-derivation",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-requirements-derivation",
+   "sections": [
+    "sec:5-4"
+   ],
+   "hash": "64e9f204851f",
+   "excerpt": "- The chain from use case to business process, to functional and non-functional requirements, to data elements. - Traceability between each requirement and the ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-figures",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-figures",
+   "sections": [
+    "sec:ch05-planned"
+   ],
+   "hash": "3b82f080ff32",
+   "excerpt": "Suggested figures and tables - Figure: persona cards. - Table: use case overview (actor, trigger, data used, systems involved). - Figure: traceability from use ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-tools",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-tools",
+   "sections": [
+    "sec:ch05-planned"
+   ],
+   "hash": "daffcab5fdbf",
+   "excerpt": "Implementation tools and checklists - Persona template (full generic personas in annex). - Use case prioritization matrix (value against feasibility). - User st",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-outputs",
+   "kind": "prose",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "p-ch05-outputs",
+   "sections": [
+    "sec:ch05-planned"
+   ],
+   "hash": "58ca8938629e",
+   "excerpt": "Expected outputs for countries - National personas adapted from the generic set. - A prioritized list of use cases for the first phase. - An initial set of user",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-objectives",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-objectives",
+   "sections": [
+    "sec:ch06-lead"
+   ],
+   "hash": "d2a010408787",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Describe the institutional arrangements needed to govern a registry across health workforce, regulatory",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-key-messages",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-key-messages",
+   "sections": [
+    "sec:ch06-lead"
+   ],
+   "hash": "07086201c108",
+   "excerpt": "Key messages - Weak governance, not technology, is the most common reason registries stall or fail. - The registry needs a clear owner, a mandate, and formal ag",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-institutions",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-institutions",
+   "sections": [
+    "sec:6-1"
+   ],
+   "hash": "712222427799",
+   "excerpt": "- Roles of the ministry of health (health workforce and digital units), regulatory councils, public service commission, finance and payroll, education ministry ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-legal-foundations",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-legal-foundations",
+   "sections": [
+    "sec:6-2"
+   ],
+   "hash": "583bdc81bdc3",
+   "excerpt": "- A legal mandate to establish and operate the registry and to require institutions to submit data. - Data protection, privacy and consent, including what may b",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-data-stewardship",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-data-stewardship",
+   "sections": [
+    "sec:6-3"
+   ],
+   "hash": "7f54f091f11b",
+   "excerpt": "- Named data owners, stewards and custodians for each group of data. - Policies for data access, use, retention, correction and release. - Health workers' right",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-sustainability",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-sustainability",
+   "sections": [
+    "sec:6-4"
+   ],
+   "hash": "b5aa2b3cf356",
+   "excerpt": "- Options for recurrent financing: government budget, registration and licensing fees, shared digital infrastructure budgets. - Institutional capacity: permanen",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-figures",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-figures",
+   "sections": [
+    "sec:ch06-planned"
+   ],
+   "hash": "b38b655310cf",
+   "excerpt": "Suggested figures and tables - Figure: model governance structure. - Table: responsibility matrix (who is responsible, accountable, consulted and informed) for ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-tools",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-tools",
+   "sections": [
+    "sec:ch06-planned"
+   ],
+   "hash": "5427ce0e9f00",
+   "excerpt": "Implementation tools and checklists - Governance terms of reference template (annex). - Data-sharing agreement template. - Legal and policy checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-outputs",
+   "kind": "prose",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "p-ch06-outputs",
+   "sections": [
+    "sec:ch06-planned"
+   ],
+   "hash": "371901be34d6",
+   "excerpt": "Expected outputs for countries - A designated registry owner and governance body. - Signed data-sharing agreements with data-supplying institutions. - A costed ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-objectives",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-objectives",
+   "sections": [
+    "sec:ch07-lead"
+   ],
+   "hash": "5b82fb86bcc0",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Describe the core functions that any health workforce registry should provide. - Distinguish minimum fu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-key-messages",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-key-messages",
+   "sections": [
+    "sec:ch07-lead"
+   ],
+   "hash": "4e4b5f476337",
+   "excerpt": "Key messages - The core is small: identify each worker uniquely, hold a trusted record, keep it current, and answer queries. - Functions can be delivered by one",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-identity-management",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-identity-management",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "3c7438ded45b",
+   "excerpt": "- Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. - Search, match and merge duplicate r",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-ID-01",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-id-01",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "fe99be5372de",
+   "excerpt": "FR-ID-01. Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. Priority: to be set (must / s",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-ID-02",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-id-02",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "1fc2d908bb51",
+   "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-ID-03",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-id-03",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "f0918ed42f22",
+   "excerpt": "FR-ID-03. Manage changes of name and other identity details over a career. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-records",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-records",
+   "sections": [
+    "sec:7-2"
+   ],
+   "hash": "29b9f1040cd1",
+   "excerpt": "- Create, view, update and archive the health worker record in line with the minimum data set. - Hold supporting evidence, such as certificates, or links to it.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-REC-01",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-rec-01",
+   "sections": [
+    "sec:7-2"
+   ],
+   "hash": "b8da7271111a",
+   "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the minimum data set. Priority: to be set (must / should / could). Linked use ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-REC-02",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-rec-02",
+   "sections": [
+    "sec:7-2"
+   ],
+   "hash": "0a55a1b84670",
+   "excerpt": "FR-REC-02. Hold supporting evidence, such as certificates, or links to it. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-REC-03",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-rec-03",
+   "sections": [
+    "sec:7-2"
+   ],
+   "hash": "63bb13d5a0fb",
+   "excerpt": "FR-REC-03. Record the source and date of each data item. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-lifecycle-management",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-lifecycle-management",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "a67be926dd91",
+   "excerpt": "- Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. - Support renewals, recording of continuing professional develop",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-LC-01",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-lc-01",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "8b210acabfaf",
+   "excerpt": "FR-LC-01. Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. Priority: to be set (must / should / could). Linked use ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-LC-02",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-lc-02",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "84a922dbe60c",
+   "excerpt": "FR-LC-02. Support renewals, recording of continuing professional development, and reminders. Priority: to be set (must / should / could). Linked use cases: to b",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-LC-03",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-lc-03",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "f9674e639669",
+   "excerpt": "FR-LC-03. Record changes of employment and place of practice over time. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-verification-services",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-verification-services",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "c5b84fd1fcd8",
+   "excerpt": "- Confirm registration and licence status in real time for employers, the public and other systems. - Issue digital, verifiable credentials or certificates (for",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-VER-01",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-ver-01",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "9ffed6ce482b",
+   "excerpt": "FR-VER-01. Confirm registration and licence status in real time for employers, the public and other systems. Priority: to be set (must / should / could). Linked",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-VER-02",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-ver-02",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "4c977f5bc8e8",
+   "excerpt": "FR-VER-02. Issue digital, verifiable credentials or certificates (for example a certificate of good standing). Priority: to be set (must / should / could). Link",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-VER-03",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-ver-03",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "bb3cf766c50c",
+   "excerpt": "FR-VER-03. Respond to verification requests from other countries. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-analytics",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-analytics",
+   "sections": [
+    "sec:7-5"
+   ],
+   "hash": "7f7411d84c60",
+   "excerpt": "- Standard reports and dashboards on stock, distribution, age, sex, occupation and status. - Data extracts for NHWA and national planning. - Data quality report",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-AN-01",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-an-01",
+   "sections": [
+    "sec:7-5"
+   ],
+   "hash": "b44e6ba2d65b",
+   "excerpt": "FR-AN-01. Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Priority: to be set (must / should / could). Linked use cases",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-AN-02",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-an-02",
+   "sections": [
+    "sec:7-5"
+   ],
+   "hash": "a5ea763422d3",
+   "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:FR-AN-03",
+   "kind": "functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "fr-an-03",
+   "sections": [
+    "sec:7-5"
+   ],
+   "hash": "8915f80e6f2e",
+   "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-nfr-intro",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-nfr-intro",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "7632b20fb43b",
+   "excerpt": "Non-functional requirements matter as much as functions. The initial set, from the chapter's key messages:",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:NFR-01",
+   "kind": "non-functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "nfr-security",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "773321ebed28",
+   "excerpt": "NFR-01 Security. Health workers' personal data are protected in storage and in transit, with role-based access for people and authenticated access for systems (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:NFR-02",
+   "kind": "non-functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "nfr-availability",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "c6f4b8d8254f",
+   "excerpt": "NFR-02 Availability. Verification services are available when employers, the public and other systems need them, with agreed service levels.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:NFR-03",
+   "kind": "non-functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "nfr-offline-use",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "c8e241af94c8",
+   "excerpt": "NFR-03 Offline and low-connectivity use. Registration and verification work in low-connectivity settings, including through paper or assisted channels where nee",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:NFR-04",
+   "kind": "non-functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "nfr-languages",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "3dba5038e42a",
+   "excerpt": "NFR-04 Languages. The registry and its public views support the languages its users need.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:NFR-05",
+   "kind": "non-functional-requirement",
+   "chapter": "ch07-functional-requirements",
+   "root": "nfr-testability",
+   "sections": [
+    "sec:7-nfr"
+   ],
+   "hash": "b2df2b4c5d81",
+   "excerpt": "NFR-05 Testable requirements. Every requirement is written so that conformance to it can be tested.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-figures",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-figures",
+   "sections": [
+    "sec:ch07-planned"
+   ],
+   "hash": "9c983e75d3a4",
+   "excerpt": "Suggested figures and tables - Figure: overview of registry functions. - Table: minimum and advanced functions. - Table: sample requirements (identifier, requir",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-tools",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-tools",
+   "sections": [
+    "sec:ch07-planned"
+   ],
+   "hash": "2618aa0592b2",
+   "excerpt": "Implementation tools and checklists - Functional requirements catalogue (annex). - Non-functional requirements checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-outputs",
+   "kind": "prose",
+   "chapter": "ch07-functional-requirements",
+   "root": "p-ch07-outputs",
+   "sections": [
+    "sec:ch07-planned"
+   ],
+   "hash": "46bd2c03d450",
+   "excerpt": "Expected outputs for countries - A national requirements specification, adapted from the catalogue and prioritized by phase.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-objectives",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-objectives",
+   "sections": [
+    "sec:ch08-lead"
+   ],
+   "hash": "1d94bd1a1d27",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Explain the main architecture options for a registry in non-technical terms. - Help countries choose a ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-key-messages",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-key-messages",
+   "sections": [
+    "sec:ch08-lead"
+   ],
+   "hash": "26615294b2ae",
+   "excerpt": "Key messages - There is no single correct architecture. The choice depends on how authority over health worker data is distributed in the country. - Centralized",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-architecture-patterns",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-architecture-patterns",
+   "sections": [
+    "sec:8-1"
+   ],
+   "hash": "8dba0fde9581",
+   "excerpt": "- The three main patterns and what each means in practice: centralized (one national system holds the master record), federated (source systems keep their data ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-federation",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-federation",
+   "sections": [
+    "sec:8-2"
+   ],
+   "hash": "608b69b7af46",
+   "excerpt": "- How several regulators or sub-national registries contribute to a national view through a shared identifier, a common data set and common interfaces. - Linkin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-scalability",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-scalability",
+   "sections": [
+    "sec:8-3"
+   ],
+   "hash": "479c763f9599",
+   "excerpt": "- Start with priority occupations or regions and expand without redesign. - Performance, availability and hosting options (government data centre or cloud), inc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-technology-neutrality",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-technology-neutrality",
+   "sections": [
+    "sec:8-4"
+   ],
+   "hash": "3c9499a014fd",
+   "excerpt": "- Specify standards and interfaces, not products. - Considerations for open-source, commercial and custom-built options, including digital public goods. - Avoid",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-figures",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-figures",
+   "sections": [
+    "sec:ch08-planned"
+   ],
+   "hash": "612cbda9e4f2",
+   "excerpt": "Suggested figures and tables - Figure: the three architecture patterns side by side. - Figure: decision tree for choosing a pattern. - Table: comparison of patt",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-tools",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-tools",
+   "sections": [
+    "sec:ch08-planned"
+   ],
+   "hash": "d76e732fc590",
+   "excerpt": "Implementation tools and checklists - Architecture pattern selection checklist. - Architecture principles template for national adoption.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-outputs",
+   "kind": "prose",
+   "chapter": "ch08-digital-architecture-principles",
+   "root": "p-ch08-outputs",
+   "sections": [
+    "sec:ch08-planned"
+   ],
+   "hash": "88c4d1779de3",
+   "excerpt": "Expected outputs for countries - A chosen architecture pattern with the reasons for the choice. - An adopted set of national architecture principles for the reg",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-part-purpose",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-part-purpose",
+   "sections": [
+    "sec:ch09-lead"
+   ],
+   "hash": "b86b39b1a207",
+   "excerpt": "Part 2. Technical Design. This part gives the technical guidance needed to design a registry that connects with the wider health and government digital ecosyste",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-objectives",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-objectives",
+   "sections": [
+    "sec:ch09-lead"
+   ],
+   "hash": "b128a0586076",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Map the systems that supply data to the registry or use data from it. - Describe the main data flows be",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-key-messages",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-key-messages",
+   "sections": [
+    "sec:ch09-lead"
+   ],
+   "hash": "646a9c75bfcd",
+   "excerpt": "Key messages - The registry is one of several foundational registries. It is most valuable when linked to the facility registry and to identity systems. - Every",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-system-landscape",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-system-landscape",
+   "sections": [
+    "sec:9-1"
+   ],
+   "hash": "e6d06a18904c",
+   "excerpt": "- Source systems: regulatory council systems, training institution records, HRIS, payroll, national identity and civil registration. - Systems that use registry",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-data-flows",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-data-flows",
+   "sections": [
+    "sec:9-2"
+   ],
+   "hash": "58c1085cc1dd",
+   "excerpt": "- Who sends what to whom, when, and which event triggers it. - Flows into the registry (new records and updates) and out of it (queries, notifications, reports)",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-architecture-examples",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-architecture-examples",
+   "sections": [
+    "sec:9-3"
+   ],
+   "hash": "904bcd486259",
+   "excerpt": "- Illustrative architectures for centralized, federated and hybrid models. - An example in which the registry is part of a national health information exchange.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-figures",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-figures",
+   "sections": [
+    "sec:ch09-planned"
+   ],
+   "hash": "6253cb659628",
+   "excerpt": "Suggested figures and tables - Figure: ecosystem landscape diagram. - Figure: data flow diagram. - Table: systems, their owners, and the data they supply or use",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-tools",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-tools",
+   "sections": [
+    "sec:ch09-planned"
+   ],
+   "hash": "6a6787236c0c",
+   "excerpt": "Implementation tools and checklists - System inventory template. - Data flow mapping template.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch09-outputs",
+   "kind": "prose",
+   "chapter": "ch09-registry-within-ecosystem",
+   "root": "p-ch09-outputs",
+   "sections": [
+    "sec:ch09-planned"
+   ],
+   "hash": "91cfdbbee76d",
+   "excerpt": "Expected outputs for countries - A national map of registry-related systems. - Documented current and target data flows.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-objectives",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-objectives",
+   "sections": [
+    "sec:ch10-lead"
+   ],
+   "hash": "ca681bea65c8",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Explain the standards and interfaces that allow the registry to exchange data with other systems. - Des",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-key-messages",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-key-messages",
+   "sections": [
+    "sec:ch10-lead"
+   ],
+   "hash": "6eaa7f980ae5",
+   "excerpt": "Key messages - Interoperability means that systems can exchange information and use it without manual re-entry. - Use existing open standards. Do not create nat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-standards",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-standards",
+   "sections": [
+    "sec:10-1"
+   ],
+   "hash": "3328753572ea",
+   "excerpt": "- HL7 FHIR resources for health workers and where they work (Practitioner, PractitionerRole, Organization, Location) as the recommended exchange format. - IHE p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-apis",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-apis",
+   "sections": [
+    "sec:10-2"
+   ],
+   "hash": "1c203b69a236",
+   "excerpt": "- Core interfaces: search for and read a health worker record; verify status; submit and update records; receive notice of changes. - Security of interfaces: au",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-data-exchange-patterns",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-data-exchange-patterns",
+   "sections": [
+    "sec:10-3"
+   ],
+   "hash": "35830b9275e1",
+   "excerpt": "- Query on demand, notification of changes, and bulk exchange through periodic files or extracts. - Direct connection compared with exchange through an interope",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-governance",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-governance",
+   "sections": [
+    "sec:10-4"
+   ],
+   "hash": "ebbf845184c7",
+   "excerpt": "- Rules and agreements for systems that connect to the registry. - Conformance testing against published specifications before a connection goes live. - Managin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-figures",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-figures",
+   "sections": [
+    "sec:ch10-planned"
+   ],
+   "hash": "97a7e92d5d0d",
+   "excerpt": "Suggested figures and tables - Figure: layers of interoperability (legal, organizational, semantic, technical). - Table: standards and what each is used for. - ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-tools",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-tools",
+   "sections": [
+    "sec:ch10-planned"
+   ],
+   "hash": "733b994b6063",
+   "excerpt": "Implementation tools and checklists - Interoperability models (annex). - Interface specification checklist. - Conformance test checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch10-outputs",
+   "kind": "prose",
+   "chapter": "ch10-interoperability",
+   "root": "p-ch10-outputs",
+   "sections": [
+    "sec:ch10-planned"
+   ],
+   "hash": "82f6cc0d51e1",
+   "excerpt": "Expected outputs for countries - A national interoperability specification for the registry. - A procedure for connecting new systems.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-objectives",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-objectives",
+   "sections": [
+    "sec:ch11-lead"
+   ],
+   "hash": "98481845dcbb",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Present a minimum data set for a health workforce registry and the reason for each element. - Identify ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-key-messages",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-key-messages",
+   "sections": [
+    "sec:ch11-lead"
+   ],
+   "hash": "722710594492",
+   "excerpt": "Key messages - Collect only what is needed, define it precisely, and keep it up to date. - The minimum data set is a floor, not a ceiling. Countries can extend ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-core-dataset",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-core-dataset",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "07fc0e6b3583",
+   "excerpt": "- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, profe",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-identification-number",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-identification-number",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "3e076c66fa5b",
+   "excerpt": "Identification number — element 1 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-name",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-name",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "d94230429d7f",
+   "excerpt": "Name — element 2 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-birth-history",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-birth-history",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "ad51c728dc5c",
+   "excerpt": "Birth history — element 3 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-citizenship-and-language",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-citizenship-and-language",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "46c5be2939d5",
+   "excerpt": "Citizenship and language — element 4 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mappi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-address",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-address",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "ad5b324f3e5f",
+   "excerpt": "Address — element 5 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-contact-information",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-contact-information",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "b832503eba51",
+   "excerpt": "Contact information — element 6 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-professional-licence-and-certification",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-professional-licence-and-certification",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "7f0fb363818e",
+   "excerpt": "Professional licence and certification — element 7 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitiv",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-employment-status",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-employment-status",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "ba27c60688b0",
+   "excerpt": "Employment status — element 8 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-employment-address",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-employment-address",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "c4b94c9066d0",
+   "excerpt": "Employment address — element 9 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:mds-data-submission-institution",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-data-submission-institution",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "5f2d0b001d62",
+   "excerpt": "Data submission institution — element 10 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR m",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-classifications",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-classifications",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "38476963b878",
+   "excerpt": "- Occupations: International Standard Classification of Occupations (ISCO-08), with mapping from national occupational titles. - Education levels and fields (IS",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-metadata",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-metadata",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "1f81853d8d5e",
+   "excerpt": "- Data dictionary structure: element name, definition, data type, permitted values and mapping to FHIR. - Information about each data item's origin: source, dat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-nhwa-mapping",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-nhwa-mapping",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "cacac1e4f734",
+   "excerpt": "- NHWA indicators that can be derived from registry data, such as stock, density, distribution, age and sex, and place of training. - Indicators that need other",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-figures",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-figures",
+   "sections": [
+    "sec:ch11-planned"
+   ],
+   "hash": "fdbdb3e50862",
+   "excerpt": "Suggested figures and tables - Table: minimum data set. - Figure: logical data model (health worker, qualification, licence, role, facility). - Table: registry ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-tools",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-tools",
+   "sections": [
+    "sec:ch11-planned"
+   ],
+   "hash": "a8392ac0bac5",
+   "excerpt": "Implementation tools and checklists - Minimum data set (annex) and data dictionary (annex). - Template for mapping national occupational titles to ISCO-08. - NH",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-outputs",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-outputs",
+   "sections": [
+    "sec:ch11-planned"
+   ],
+   "hash": "852220d257cf",
+   "excerpt": "Expected outputs for countries - A national minimum data set and data dictionary. - National occupational titles mapped to ISCO-08. - A list of the NHWA indicat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-objectives",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-objectives",
+   "sections": [
+    "sec:ch12-lead"
+   ],
+   "hash": "3e071ab23cc0",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Apply privacy by design to health workers' personal data. - Identify the security controls that a regis",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-key-messages",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-key-messages",
+   "sections": [
+    "sec:ch12-lead"
+   ],
+   "hash": "456ac8253642",
+   "excerpt": "Key messages - A registry holds personal data about health workers. Protecting those data is a legal and ethical duty. - Decide what is public, what is shared b",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-privacy-by-design",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-privacy-by-design",
+   "sections": [
+    "sec:12-1"
+   ],
+   "hash": "8b13db337cb6",
+   "excerpt": "- Collect the minimum data needed, use them only for stated purposes, and set retention limits. - Carry out a privacy impact assessment before implementation an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-cybersecurity",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-cybersecurity",
+   "sections": [
+    "sec:12-2"
+   ],
+   "hash": "950d09bb7604",
+   "excerpt": "- Risk assessment, secure hosting, encryption of stored and transmitted data, backup and recovery. - Incident response and notification of data breaches. - Alig",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-access-control",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-access-control",
+   "sections": [
+    "sec:12-3"
+   ],
+   "hash": "ce4c746cc220",
+   "excerpt": "- Role-based access for people; authenticated and authorized access for systems. - Self-service access for health workers to their own record. - Regular review ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-audit-trails",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-audit-trails",
+   "sections": [
+    "sec:12-4"
+   ],
+   "hash": "706b919ea67d",
+   "excerpt": "- A log of who viewed or changed which record, when and why. - Routine review of logs, with reports to the governance body. - Use of audit data to detect misuse",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-figures",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-figures",
+   "sections": [
+    "sec:ch12-planned"
+   ],
+   "hash": "0387b5eb33ac",
+   "excerpt": "Suggested figures and tables - Figure: tiered data access model. - Table: main threats and the controls that address them. - Table: roles and permissions.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-tools",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-tools",
+   "sections": [
+    "sec:ch12-planned"
+   ],
+   "hash": "93a125b5d148",
+   "excerpt": "Implementation tools and checklists - Privacy impact assessment template. - Security checklist. - Roles and permissions template.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch12-outputs",
+   "kind": "prose",
+   "chapter": "ch12-privacy-security-and-trust",
+   "root": "p-ch12-outputs",
+   "sections": [
+    "sec:ch12-planned"
+   ],
+   "hash": "6b19d7b2c6a9",
+   "excerpt": "Expected outputs for countries - A completed privacy impact assessment. - A data classification and disclosure policy. - A security plan.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-objectives",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-objectives",
+   "sections": [
+    "sec:ch13-lead"
+   ],
+   "hash": "cb359c2cb0cc",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Define data quality for a registry and how to measure it. - Describe validation when data are entered a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-key-messages",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-key-messages",
+   "sections": [
+    "sec:ch13-lead"
+   ],
+   "hash": "b32ab82c430c",
+   "excerpt": "Key messages - A registry is only as useful as its data are complete, accurate and current. - Quality is best assured at source, by the institution that owns th",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-quality-dimensions",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-quality-dimensions",
+   "sections": [
+    "sec:13-1"
+   ],
+   "hash": "6cdb18b6dd8a",
+   "excerpt": "- Completeness, accuracy, timeliness, uniqueness, consistency and validity. - Coverage: the proportion of the actual workforce that is in the registry, includin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-validation",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-validation",
+   "sections": [
+    "sec:13-2"
+   ],
+   "hash": "2acb88f9c6b5",
+   "excerpt": "- Automated rules at data entry (formats, mandatory fields, code lists). - Verification against primary sources, such as training institutions, the national ide",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-monitoring",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-monitoring",
+   "sections": [
+    "sec:13-3"
+   ],
+   "hash": "81e2f7e773a1",
+   "excerpt": "- Data quality indicators and dashboards. - Periodic audits and reconciliation with payroll, facility staffing lists or census data. - Feedback to data supplier",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-figures",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-figures",
+   "sections": [
+    "sec:ch13-planned"
+   ],
+   "hash": "70d84137adb2",
+   "excerpt": "Suggested figures and tables - Table: data quality dimensions with example indicators. - Figure: data quality improvement cycle.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-tools",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-tools",
+   "sections": [
+    "sec:ch13-planned"
+   ],
+   "hash": "d129153f860d",
+   "excerpt": "Implementation tools and checklists - Data quality assessment checklist. - Catalogue of validation rules. - Standard operating procedure template for resolving ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch13-outputs",
+   "kind": "prose",
+   "chapter": "ch13-data-quality-management",
+   "root": "p-ch13-outputs",
+   "sections": [
+    "sec:ch13-planned"
+   ],
+   "hash": "07dc94fd4315",
+   "excerpt": "Expected outputs for countries - A data quality plan with indicators and targets. - A routine data quality report.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-part-purpose",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-part-purpose",
+   "sections": [
+    "sec:ch14-lead"
+   ],
+   "hash": "df5b7dd4fd54",
+   "excerpt": "Part 3. Country Implementation. This part guides countries through the practical steps of transformation, from preparing and assessing readiness to operating an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-objectives",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-objectives",
+   "sections": [
+    "sec:ch14-lead"
+   ],
+   "hash": "3d1e6835e435",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Secure leadership and form the team that will lead the transformation. - Assess readiness and the curre",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-key-messages",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-key-messages",
+   "sections": [
+    "sec:ch14-lead"
+   ],
+   "hash": "835564373b94",
+   "excerpt": "Key messages - Joint leadership by the health workforce and digital health units is essential. - A readiness assessment prevents costly surprises later. - Regul",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-leadership",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-leadership",
+   "sections": [
+    "sec:14-1"
+   ],
+   "hash": "e14b02d90939",
+   "excerpt": "- An executive sponsor and a clear mandate. - A shared vision and goals linked to the national health workforce and digital health strategies. - The registry's ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-teams",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-teams",
+   "sections": [
+    "sec:14-2"
+   ],
+   "hash": "e7a61be45968",
+   "excerpt": "- Core team: health workforce lead, digital health lead, regulator representatives, business analyst, architect, data manager and legal adviser. - Roles, respon",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-readiness",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-readiness",
+   "sections": [
+    "sec:14-3"
+   ],
+   "hash": "3e3168d49d1d",
+   "excerpt": "- Assessment areas: governance and law, data, processes, technology and infrastructure, people and skills, and financing. - An inventory of existing registers a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-stakeholder-engagement",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-stakeholder-engagement",
+   "sections": [
+    "sec:14-4"
+   ],
+   "hash": "518e116bf5fb",
+   "excerpt": "- Stakeholder mapping, with analysis of interests and influence. - Engagement methods: workshops, one-to-one consultation with councils, and dialogue with healt",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-figures",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-figures",
+   "sections": [
+    "sec:ch14-planned"
+   ],
+   "hash": "1a516dd5dd3c",
+   "excerpt": "Suggested figures and tables - Figure: team structure. - Table: readiness assessment areas and sample questions. - Figure: stakeholder map.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-tools",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-tools",
+   "sections": [
+    "sec:ch14-planned"
+   ],
+   "hash": "8fa85014beb5",
+   "excerpt": "Implementation tools and checklists - Readiness assessment (annex). - Stakeholder mapping template. - Team terms of reference template.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch14-outputs",
+   "kind": "prose",
+   "chapter": "ch14-preparing-for-transformation",
+   "root": "p-ch14-outputs",
+   "sections": [
+    "sec:ch14-planned"
+   ],
+   "hash": "bd200c86b76f",
+   "excerpt": "Expected outputs for countries - A mandated team and a vision statement. - A readiness assessment report. - A stakeholder engagement plan.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-objectives",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-objectives",
+   "sections": [
+    "sec:ch15-lead"
+   ],
+   "hash": "18207f81d858",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Document how registration, licensing and related processes work today. - Design improved processes that",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-key-messages",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-key-messages",
+   "sections": [
+    "sec:ch15-lead"
+   ],
+   "hash": "35d42130c262",
+   "excerpt": "Key messages - Digitizing a poor process produces a poor digital process. Simplify first. - Mapping processes with the people who do the work reveals the real b",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-current-state-mapping",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-current-state-mapping",
+   "sections": [
+    "sec:15-1"
+   ],
+   "hash": "af11ea2cded5",
+   "excerpt": "- Map priority processes: first registration, licence renewal, verification, transfer and exit. - Record the steps, people involved, documents, time taken and d",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-future-workflows",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-future-workflows",
+   "sections": [
+    "sec:15-2"
+   ],
+   "hash": "8943f3201f0e",
+   "excerpt": "- Redesigned workflows using online application, automated checks, shared data and digital credentials. - Paper or assisted channels kept where connectivity or ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-requirements",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-requirements",
+   "sections": [
+    "sec:15-3"
+   ],
+   "hash": "da5ec85646cc",
+   "excerpt": "- Turn future workflows into functional and non-functional requirements (linked to the chapters on use cases and functional requirements). - Data requirements f",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-figures",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-figures",
+   "sections": [
+    "sec:ch15-planned"
+   ],
+   "hash": "7b362eeeb742",
+   "excerpt": "Suggested figures and tables - Figure: example current and future workflow for licence renewal. - Table: common difficulties and redesign options.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-tools",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-tools",
+   "sections": [
+    "sec:ch15-planned"
+   ],
+   "hash": "264b5569e5a5",
+   "excerpt": "Implementation tools and checklists - Process mapping template. - Requirements template.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch15-outputs",
+   "kind": "prose",
+   "chapter": "ch15-business-process-redesign",
+   "root": "p-ch15-outputs",
+   "sections": [
+    "sec:ch15-planned"
+   ],
+   "hash": "42c0ebd46fcb",
+   "excerpt": "Expected outputs for countries - Current and future process maps. - Validated requirements. - A list of policy changes needed.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-objectives",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-objectives",
+   "sections": [
+    "sec:ch16-lead"
+   ],
+   "hash": "d6c78096790a",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Compare the options for delivering the registry. - Choose a procurement approach and prepare specificat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-key-messages",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-key-messages",
+   "sections": [
+    "sec:ch16-lead"
+   ],
+   "hash": "66bbe8d3e855",
+   "excerpt": "Key messages - Consider adapting or connecting existing systems before buying or building new ones. - The total cost of ownership over at least five years matte",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-options-analysis",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-options-analysis",
+   "sections": [
+    "sec:16-1"
+   ],
+   "hash": "90e28b7caad6",
+   "excerpt": "- Options: enhance an existing system, adopt an open-source solution or digital public good, buy a commercial product, build a custom system, or use a shared go",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-procurement-approaches",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-procurement-approaches",
+   "sections": [
+    "sec:16-2"
+   ],
+   "hash": "46525ca76bb2",
+   "excerpt": "- Specifications and evaluation criteria based on the requirements and standards. - Contract terms: data ownership, access to source code, support, service leve",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-risk-management",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-risk-management",
+   "sections": [
+    "sec:16-3"
+   ],
+   "hash": "09a709cfda6c",
+   "excerpt": "- Common risks: weak mandate, stakeholder resistance, poor data, funding gaps, supplier dependence and staff turnover. - A risk register with mitigation measure",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-figures",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-figures",
+   "sections": [
+    "sec:ch16-planned"
+   ],
+   "hash": "42a882a119df",
+   "excerpt": "Suggested figures and tables - Table: comparison of delivery options. - Figure: sample phased roadmap. - Table: risk matrix.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-tools",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-tools",
+   "sections": [
+    "sec:ch16-planned"
+   ],
+   "hash": "c0ec44f2c389",
+   "excerpt": "Implementation tools and checklists - Options analysis template. - Total cost of ownership and budget template. - Risk register template. - Procurement specific",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch16-outputs",
+   "kind": "prose",
+   "chapter": "ch16-planning-and-procurement",
+   "root": "p-ch16-outputs",
+   "sections": [
+    "sec:ch16-planned"
+   ],
+   "hash": "36f726c08fc0",
+   "excerpt": "Expected outputs for countries - An options appraisal and decision. - A costed implementation plan and roadmap. - A risk register.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-objectives",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-objectives",
+   "sections": [
+    "sec:ch17-lead"
+   ],
+   "hash": "5f3cf44aec11",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Plan the migration of existing records into the registry. - Test the registry before and during roll-ou",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-key-messages",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-key-messages",
+   "sections": [
+    "sec:ch17-lead"
+   ],
+   "hash": "42feff310164",
+   "excerpt": "Key messages - Data migration and cleaning usually take longer than expected. Plan and resource them. - Test with real users and realistic data. - Roll out in p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-migration",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-migration",
+   "sections": [
+    "sec:17-1"
+   ],
+   "hash": "dddd9d1d53d7",
+   "excerpt": "- Take stock of existing paper and digital records, then clean, de-duplicate and map them. - Digitize paper registers and verify the records. - Load data in a p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-testing",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-testing",
+   "sections": [
+    "sec:17-2"
+   ],
+   "hash": "9caafb009e7e",
+   "excerpt": "- Functional, integration, performance, security and user acceptance testing. - Conformance testing of interfaces. - Test data and test environments.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-rollout",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-rollout",
+   "sections": [
+    "sec:17-3"
+   ],
+   "hash": "8e859611542a",
+   "excerpt": "- A pilot, followed by phased roll-out by occupation, institution or region. - Criteria for going live, and a period of running old and new processes in paralle",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-operations",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-operations",
+   "sections": [
+    "sec:17-4"
+   ],
+   "hash": "6a376ef785e8",
+   "excerpt": "- Standard operating procedures, help desk and service levels. - Hosting, backup, maintenance and updates. - Bringing new data suppliers and connecting systems ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-figures",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-figures",
+   "sections": [
+    "sec:ch17-planned"
+   ],
+   "hash": "8d75d6aab161",
+   "excerpt": "Suggested figures and tables - Figure: data migration steps. - Table: types of testing and their purpose. - Figure: phased roll-out timeline.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-tools",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-tools",
+   "sections": [
+    "sec:ch17-planned"
+   ],
+   "hash": "c751430f85c9",
+   "excerpt": "Implementation tools and checklists - Migration plan template. - Test plan and user acceptance test templates. - Go-live checklist. - Standard operating procedu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch17-outputs",
+   "kind": "prose",
+   "chapter": "ch17-implementation-and-deployment",
+   "root": "p-ch17-outputs",
+   "sections": [
+    "sec:ch17-planned"
+   ],
+   "hash": "552ab8ff01e1",
+   "excerpt": "Expected outputs for countries - Migrated and validated data. - Test reports. - An operating registry with procedures and support arrangements.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-objectives",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-objectives",
+   "sections": [
+    "sec:ch18-lead"
+   ],
+   "hash": "14042135ef93",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Plan communications for each stakeholder group. - Promote adoption and routine use of the registry. - B",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-key-messages",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-key-messages",
+   "sections": [
+    "sec:ch18-lead"
+   ],
+   "hash": "418dc34b3b1e",
+   "excerpt": "Key messages - People adopt systems that make their work easier and whose purpose they understand. - Communicate early, often and in the language of each audien",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-communications",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-communications",
+   "sections": [
+    "sec:18-1"
+   ],
+   "hash": "5b80b85cbaa0",
+   "excerpt": "- Key messages for each audience: health workers, regulators, employers, managers and the public. - Channels and timing. - Responding to concerns about data use",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-adoption",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-adoption",
+   "sections": [
+    "sec:18-2"
+   ],
+   "hash": "f46ca00f02a1",
+   "excerpt": "- Champions, incentives, and links between the registry and processes that users already need, such as licence renewal and employment. - Monitoring uptake and r",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-capacity-strengthening",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-capacity-strengthening",
+   "sections": [
+    "sec:18-3"
+   ],
+   "hash": "c7848591e19d",
+   "excerpt": "- Competencies for registry managers, data officers, technical staff and other users. - Training approaches: on-the-job training, e-learning, and peer learning ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-figures",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-figures",
+   "sections": [
+    "sec:ch18-planned"
+   ],
+   "hash": "c6c912be86a2",
+   "excerpt": "Suggested figures and tables - Table: communication matrix by stakeholder group. - Table: competencies by role.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-tools",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-tools",
+   "sections": [
+    "sec:ch18-planned"
+   ],
+   "hash": "2d060dc85fdc",
+   "excerpt": "Implementation tools and checklists - Communications plan template. - Training plan template. - Change readiness checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch18-outputs",
+   "kind": "prose",
+   "chapter": "ch18-change-management",
+   "root": "p-ch18-outputs",
+   "sections": [
+    "sec:ch18-planned"
+   ],
+   "hash": "809fc6990430",
+   "excerpt": "Expected outputs for countries - A communications plan. - A training plan and materials. - An adoption monitoring report.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-objectives",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-objectives",
+   "sections": [
+    "sec:ch19-lead"
+   ],
+   "hash": "5c36a73c6e91",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Define indicators to track the registry's performance and use. - Use a maturity model to plan progress.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-key-messages",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-key-messages",
+   "sections": [
+    "sec:ch19-lead"
+   ],
+   "hash": "739b11ee4d96",
+   "excerpt": "Key messages - Measure whether the registry is used and useful, not only whether it is installed. - Maturity is gradual. Set realistic targets for the next leve",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-kpis",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-kpis",
+   "sections": [
+    "sec:19-1"
+   ],
+   "hash": "cb226f9a110a",
+   "excerpt": "- Coverage and completeness, timeliness of updates, and data quality. - Service performance: time to register, renew and verify; system availability. - Use: num",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-maturity",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-maturity",
+   "sections": [
+    "sec:19-2"
+   ],
+   "hash": "08b19f0e6722",
+   "excerpt": "- Maturity levels across governance, data, processes, technology, interoperability and use. - Self-assessment and target-setting. - Links to existing WHO assess",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-evaluation",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-evaluation",
+   "sections": [
+    "sec:19-3"
+   ],
+   "hash": "01e40a77d984",
+   "excerpt": "- Periodic evaluation of results against objectives and costs. - Learning reviews with stakeholders. - Updates to the roadmap, requirements and standards.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-figures",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-figures",
+   "sections": [
+    "sec:ch19-planned"
+   ],
+   "hash": "f426f76f8d6b",
+   "excerpt": "Suggested figures and tables - Table: key performance indicators with definitions and data sources. - Figure: maturity model summary. - Figure: results chain fr",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-tools",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-tools",
+   "sections": [
+    "sec:ch19-planned"
+   ],
+   "hash": "f79577fd6e33",
+   "excerpt": "Implementation tools and checklists - Indicator framework template. - Maturity self-assessment (annex).",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch19-outputs",
+   "kind": "prose",
+   "chapter": "ch19-monitoring-and-continuous-improvement",
+   "root": "p-ch19-outputs",
+   "sections": [
+    "sec:ch19-planned"
+   ],
+   "hash": "b1a98cf97736",
+   "excerpt": "Expected outputs for countries - A monitoring and evaluation plan. - A baseline maturity assessment, repeated periodically. - An improvement plan.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-part-purpose",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-part-purpose",
+   "sections": [
+    "sec:ch20-lead"
+   ],
+   "hash": "cb4e3dea2ad2",
+   "excerpt": "Part 4. Examples and Resources. This part illustrates the guidance with worked use cases and country experience, and provides practical tools and templates that",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-objectives",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-objectives",
+   "sections": [
+    "sec:ch20-lead"
+   ],
+   "hash": "48e6066949e4",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Show how the registry supports specific real-world scenarios from start to finish. - Set out the people",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-key-messages",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-key-messages",
+   "sections": [
+    "sec:ch20-lead"
+   ],
+   "hash": "f286909a6b72",
+   "excerpt": "Key messages - Use cases make the value of a registry concrete for decision-makers and guide developers. - The same core data and interfaces serve all four use ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:licensing",
+   "kind": "user-scenario",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "scen-licensing",
+   "sections": [
+    "sec:20-1"
+   ],
+   "hash": "7d084b43561e",
+   "excerpt": "- A new graduate applies, the qualification is verified with the training institution, a licence is issued and the registry is updated. - Renewal linked to cont",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:verification",
+   "kind": "user-scenario",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "scen-verification",
+   "sections": [
+    "sec:20-2"
+   ],
+   "hash": "8c3fe6053c33",
+   "excerpt": "- An employer or member of the public checks a health worker's status online. - A clinical system checks automatically that a prescriber is authorized. - A heal",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:emergency-response",
+   "kind": "user-scenario",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "scen-emergency-response",
+   "sections": [
+    "sec:20-3"
+   ],
+   "hash": "9b25a8dc5bd2",
+   "excerpt": "- Quickly identify available, qualified workers by skill and location for surge deployment. - Verify the credentials of emergency medical teams and volunteers. ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:mobility",
+   "kind": "user-scenario",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "scen-mobility",
+   "sections": [
+    "sec:20-4"
+   ],
+   "hash": "2de459d0718b",
+   "excerpt": "- Verify the credentials of internationally trained workers and issue certificates of good standing. - Track inflows and outflows to support reporting under the",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-figures",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-figures",
+   "sections": [
+    "sec:ch20-planned"
+   ],
+   "hash": "5d788bf60a17",
+   "excerpt": "Suggested figures and tables - Figure: workflow diagram for each use case. - Table: people, data and interfaces involved in each use case.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-tools",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-tools",
+   "sections": [
+    "sec:ch20-planned"
+   ],
+   "hash": "55b4af41e30a",
+   "excerpt": "Implementation tools and checklists - Use case template. - Scenario test scripts.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch20-outputs",
+   "kind": "prose",
+   "chapter": "ch20-illustrative-use-cases",
+   "root": "p-ch20-outputs",
+   "sections": [
+    "sec:ch20-planned"
+   ],
+   "hash": "85b19e3a7033",
+   "excerpt": "Expected outputs for countries - National use cases adapted for priority scenarios.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-objectives",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-objectives",
+   "sections": [
+    "sec:ch21-lead"
+   ],
+   "hash": "0d1aa2fbda00",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Present how countries with different governance models have built their registries. - Draw out practica",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-key-messages",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-key-messages",
+   "sections": [
+    "sec:ch21-lead"
+   ],
+   "hash": "5ebd6911eb1e",
+   "excerpt": "Key messages - Countries have succeeded with different models. Context determines the choice. - Progress is usually gradual, over several years. - Governance an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-centralized",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-centralized",
+   "sections": [
+    "sec:21-1"
+   ],
+   "hash": "68191667ee7e",
+   "excerpt": "- A country with a single national registry across professions (case to be confirmed by the working group). - How it was established: legal basis, governance an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-federated",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-federated",
+   "sections": [
+    "sec:21-2"
+   ],
+   "hash": "46a93d7d2156",
+   "excerpt": "- A country where several councils or sub-national authorities keep their own registers, linked to give a national view (case to be confirmed by the working gro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-fragile-settings",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-fragile-settings",
+   "sections": [
+    "sec:21-3"
+   ],
+   "hash": "b79092aca547",
+   "excerpt": "- A fragile, conflict-affected or very low-resource setting, to be nominated through WHO regional offices. - A minimum workable approach, options for working of",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-lessons-learned",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-lessons-learned",
+   "sections": [
+    "sec:21-4"
+   ],
+   "hash": "d0c7a4072984",
+   "excerpt": "- Common success factors and pitfalls. - What countries would do differently. - What the lessons mean for the country pathway.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-figures",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-figures",
+   "sections": [
+    "sec:ch21-planned"
+   ],
+   "hash": "90d5dfbd1eb3",
+   "excerpt": "Suggested figures and tables - Summary box for each case study, in a standard format. - Table: comparison across the case studies.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-tools",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-tools",
+   "sections": [
+    "sec:ch21-planned"
+   ],
+   "hash": "ecbf4d08002b",
+   "excerpt": "Implementation tools and checklists - Case study documentation template.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch21-outputs",
+   "kind": "prose",
+   "chapter": "ch21-country-case-studies",
+   "root": "p-ch21-outputs",
+   "sections": [
+    "sec:ch21-planned"
+   ],
+   "hash": "5c3671525195",
+   "excerpt": "Expected outputs for countries - A list of peer countries to learn from. - The country's own documented experience, to share with others.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-objectives",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-objectives",
+   "sections": [
+    "sec:ch22-lead"
+   ],
+   "hash": "fc1147ad7fda",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Provide ready-to-adapt tools for each step of the pathway. - Explain when and how to use each tool. - P",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-key-messages",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-key-messages",
+   "sections": [
+    "sec:ch22-lead"
+   ],
+   "hash": "d3a84f76ac17",
+   "excerpt": "Key messages - Tools save time but must be adapted to the national context. - Each tool is linked to a step in the country pathway. - Completed tools should be ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-checklists",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-checklists",
+   "sections": [
+    "sec:22-1"
+   ],
+   "hash": "ee73b8dfe571",
+   "excerpt": "- Legal and governance checklist. - Privacy and security checklist; interoperability checklist. - Go-live checklist.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-roadmaps",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-roadmaps",
+   "sections": [
+    "sec:22-2"
+   ],
+   "hash": "e471907994ce",
+   "excerpt": "- Sample phased roadmaps for each starting point: paper, stand-alone digital, and partly connected. - Milestones, dependencies and decision points. - Budget and",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-assessment-tools",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-assessment-tools",
+   "sections": [
+    "sec:22-3"
+   ],
+   "hash": "b7dc5d711c02",
+   "excerpt": "- Readiness assessment, maturity model and data quality assessment. - How to carry out each assessment: who takes part, scoring, and use of results. - Repeating",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-figures",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-figures",
+   "sections": [
+    "sec:ch22-planned"
+   ],
+   "hash": "d9c7d696ab15",
+   "excerpt": "Suggested figures and tables - Table: all tools, with purpose, when to use, related chapter and annex.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-tools",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-tools",
+   "sections": [
+    "sec:ch22-planned"
+   ],
+   "hash": "889222d309fd",
+   "excerpt": "Implementation tools and checklists - The full set of tools and templates listed in this chapter and in the annexes.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch22-outputs",
+   "kind": "prose",
+   "chapter": "ch22-tools-and-templates",
+   "root": "p-ch22-outputs",
+   "sections": [
+    "sec:ch22-planned"
+   ],
+   "hash": "2afe90db1312",
+   "excerpt": "Expected outputs for countries - A completed set of adapted tools that together document the country's registry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes",
+   "sections": [
+    "sec:annexes-lead"
+   ],
+   "hash": "86a53260cfd1",
+   "excerpt": "The annexes hold the full versions of the tools, templates and reference material the chapters point to. Annex 9 (Glossary) is its own chapter.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-1",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-1",
+   "sections": [
+    "sec:annex-1"
+   ],
+   "hash": "fba6384806b5",
+   "excerpt": "Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set. The 2015 elements are drafted as structured data-element ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-2",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-2",
+   "sections": [
+    "sec:annex-2"
+   ],
+   "hash": "3f0b9dc28338",
+   "excerpt": "For each data element: definition, data type, permitted values, source, and mapping to FHIR.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-3",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-3",
+   "sections": [
+    "sec:annex-3"
+   ],
+   "hash": "00a8d0337ccf",
+   "excerpt": "Model terms of reference for the steering committee and technical working group, a responsibility matrix, and a sample data-sharing agreement.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-4",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-4",
+   "sections": [
+    "sec:annex-4"
+   ],
+   "hash": "264af6db65cb",
+   "excerpt": "Full generic persona descriptions for countries to adapt. The generic personas are drafted as structured persona blocks in section 5.1.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-5",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-5",
+   "sections": [
+    "sec:annex-5"
+   ],
+   "hash": "c484df86e7cc",
+   "excerpt": "Numbered functional and non-functional requirements, each with a priority and linked use case. The functional and non-functional requirements are drafted as str",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-6",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-6",
+   "sections": [
+    "sec:annex-6"
+   ],
+   "hash": "4b122057cb36",
+   "excerpt": "Reference data flows, standard interfaces and example exchanges for centralized, federated and hybrid models.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-7",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-7",
+   "sections": [
+    "sec:annex-7"
+   ],
+   "hash": "10af5f6f0bec",
+   "excerpt": "Questionnaire and scoring guide for each assessment area.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-8",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-8",
+   "sections": [
+    "sec:annex-8"
+   ],
+   "hash": "7c0a9139951e",
+   "excerpt": "Levels and criteria for each area, with a self-assessment form.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annex-10",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annex-10",
+   "sections": [
+    "sec:annex-10"
+   ],
+   "hash": "56b5e433d8a9",
+   "excerpt": "Table linking registry data elements to NHWA indicators.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:glossary-about",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "p-glossary-about",
+   "sections": [
+    "sec:glossary-lead"
+   ],
+   "hash": "f1352c17024b",
+   "excerpt": "This glossary covers health workforce terms. Digital terms are addressed separately. The working group's task is to agree a definition for each term, staying co",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-workforce-registry",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-workforce-registry",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "hash": "6c32f430f0ae",
+   "excerpt": "Also: Health worker registry, Provider registry. Status: open. 12 candidate definitions, none adopted. Candidate 1 (WHO/ITU. DPI-H reference architecture, draft",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-human-resources-for-health-information-system",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-human-resources-for-health-information-system",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "hash": "18ac57b1b137",
+   "excerpt": "Also: HRH-IS, Health workforce information system, human resources information systems for health, HRIS, HRHIS, Information Systems for Human Resources for Heal",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-professional-council",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-professional-council",
+   "sections": [
+    "sec:glossary-priority"
+   ],
+   "hash": "e14449156967",
+   "excerpt": "Also: professional regulatory/licensing authority/body, medical council/board, nursing council/board. Status: open. 2 candidate definitions, none adopted. Candi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-accreditation",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-accreditation",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "26d4a50c2ca6",
+   "excerpt": "Term: Accreditation. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation gui",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-active-health-worker",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-active-health-worker",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "f53a78061a84",
+   "excerpt": "Term: Active health worker. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023):",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-activity-level",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-activity-level",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "4cd6650f385d",
+   "excerpt": "Term: Activity level. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023): • Pra",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-attrition",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-attrition",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "899e5d5e5012",
+   "excerpt": "Term: Attrition. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): Defined broadly as exits ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-certification",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-certification",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "82893c837f0c",
+   "excerpt": "Term: Certification. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The recognition that ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-community-health-workers",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-community-health-workers",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "b3ee01d2e57f",
+   "excerpt": "Term: Community health workers. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 20",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-competence",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-competence",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "14b46906e085",
+   "excerpt": "Term: Competence. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation guidan",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-competencies",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-competencies",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "db57cf1c89be",
+   "excerpt": "Term: Competencies. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The abilities of a per",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-continuing-professional-development",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-continuing-professional-development",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "6afdfa109d42",
+   "excerpt": "Also: CPD. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023): Training that i",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-contract-type",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-contract-type",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "691d8f213950",
+   "excerpt": "Term: Contract type. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023): The co",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-deployment",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-deployment",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "170db71e0082",
+   "excerpt": "Term: Deployment. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The process of allocatin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-distribution",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-distribution",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "c208e1d35f2e",
+   "excerpt": "Term: Distribution. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The result of deployme",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-dual-practice",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-dual-practice",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "a20de50335ae",
+   "excerpt": "Term: Dual practice. Status: open. 3 candidate definitions, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation gu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-education",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-education",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "e29cca95a285",
+   "excerpt": "Term: Education (for health workers). Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-educational-institution",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-educational-institution",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "8aa60a92d1c7",
+   "excerpt": "Term: Educational institution. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): An establis",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-education-and-training-institution",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-education-and-training-institution",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "09a57cd43c2a",
+   "excerpt": "Term: Education and training institution (Health workforce). Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce acc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-employment-status-full-time-part-time-temporary-permanent",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-employment-status-full-time-part-time-temporary-permanent",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "7c55f3bc5443",
+   "excerpt": "Term: Employment status: full-time, part-time, temporary, permanent. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-labour-market",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-labour-market",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "c78ea3cbc57d",
+   "excerpt": "Term: Health labour market. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO AFRO. Africa Health Workforce Investment Charter): The structur",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-practitioner",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-practitioner",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "97afb7b52cfe",
+   "excerpt": "Term: Health practitioner. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementati",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-professional",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-professional",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "a4c30fca03d0",
+   "excerpt": "Term: Health professional. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementati",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-professions-education-accreditation-agency",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-professions-education-accreditation-agency",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "43f09fb7b888",
+   "excerpt": "Term: Health Professions Education Accreditation Agency. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Framework for the Global Digital ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-services-licensing-agency",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-services-licensing-agency",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "c2955738e6d6",
+   "excerpt": "Term: Health Services Licensing Agency. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Framework for the Global Digital Health Certificat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-workers",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-workers",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "d8e2b538ee21",
+   "excerpt": "Also: health workforce, human resources for health (HRH), HRH. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO WPRO. Regional framework to ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-workforce-planning",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-workforce-planning",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "5d1a97b41232",
+   "excerpt": "Term: Health workforce planning. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-workforce",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-workforce",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "c62769cc39f3",
+   "excerpt": "Also: HWF. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO AFRO. Africa Health Workforce Investment Charter): All people engaged in actions",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-health-workforce-observatory",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-health-workforce-observatory",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "8c7b33206adb",
+   "excerpt": "Also: HRH observatory (national). Status: open. 4 candidate definitions, none adopted. Candidate 1 (WHO AFRO. Regional framework for Workforce 2030. 2020): A He",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-human-resources-management",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-human-resources-management",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "f7822302c15f",
+   "excerpt": "Term: Human resources management. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The proc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-in-service-training",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-in-service-training",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "8250c44e16db",
+   "excerpt": "Term: In-service training. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023):",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-international-standard-classification-of-occupations",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-international-standard-classification-of-occupations",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "d429135303a5",
+   "excerpt": "Also: ISCO. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): An international classificatio",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-labour-force-survey",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-labour-force-survey",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "7a6668e4ddad",
+   "excerpt": "Term: Labour force survey. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): A household-bas",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-licensing",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-licensing",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "173e14462cc5",
+   "excerpt": "Term: Licensing. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO WPRO. Regional framework to shape a health workforce for the future of th",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-migration",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-migration",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "a9a3b0f0e1f0",
+   "excerpt": "Term: Migration. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): Process of movement of pe",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-mobility-flow",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-mobility-flow",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "4d8cd2c94162",
+   "excerpt": "Term: Mobility flow. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The movement of perso",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-national-health-workforce-accounts",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-national-health-workforce-accounts",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "b94cd82332af",
+   "excerpt": "Also: NHWA. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023): The NHWA can be",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-occupation",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-occupation",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "c0d7683abb83",
+   "excerpt": "Term: Occupation. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation guida",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-place-of-training",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-place-of-training",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "70aaab295f50",
+   "excerpt": "Term: Place of training. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023): Th",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-pre-service-education",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-pre-service-education",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "573541324cd7",
+   "excerpt": "Term: Pre-service education. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. National health workforce accounts: a handbook, 2nd ed. 2023)",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-qualification",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-qualification",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "05491fb1d898",
+   "excerpt": "Term: Qualification. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation gui",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-recruitment",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-recruitment",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "01a4a6c65791",
+   "excerpt": "Term: Recruitment. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): Process of searching fo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-registration",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-registration",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "1d759df0ca84",
+   "excerpt": "Term: Registration. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): Official recording of",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-regulation",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-regulation",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "54edb565d0ee",
+   "excerpt": "Term: Regulation. Status: open. 4 candidate definitions, none adopted. Candidate 1 (WHO. Health practitioner regulation: design, reform and implementation guida",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-retention",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-retention",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "61920a415c88",
+   "excerpt": "Term: Retention (of health workers). Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): Maint",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-scope-of-practice",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-scope-of-practice",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "2b2f8e088635",
+   "excerpt": "Term: Scope of practice. Status: open. 2 candidate definitions, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The set of tasks",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-stewardship",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-stewardship",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "276917f909ac",
+   "excerpt": "Term: Stewardship. Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO WPRO. Regional framework to shape a health workforce for the future of t",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-stock",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-stock",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "3c60ab3a3039",
+   "excerpt": "Term: Stock (of health workers). Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The total",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:gloss-supply",
+   "kind": "prose",
+   "chapter": "glossary",
+   "root": "g-supply",
+   "sections": [
+    "sec:glossary-terms"
+   ],
+   "hash": "5f10e02dbbf3",
+   "excerpt": "Term: Supply (of health workers). Status: open. 1 candidate definition, none adopted. Candidate 1 (WHO. Health labour market analysis guidebook. 2021): The numb",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:professional-council-examples",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-professional-council-examples",
+   "sections": [
+    "sec:glossary-councils"
+   ],
+   "caption": "Professional councils and boards: statutory definitions and mandates (AI generated in the workbook; to be verified)",
+   "hash": "a9c538f0243a",
+   "excerpt": "WHO region Country Council Regulates Statutory definition Mandate Reference --- --- --- --- --- --- --- AFR Ghana Medical and Dental Council (MDC) Ghana Medicin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:references",
+   "kind": "prose",
+   "chapter": "references",
+   "root": "p-references",
+   "sections": [
+    "sec:references-lead"
+   ],
+   "hash": "4b85faaad1af",
+   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. - WHO. Global strategy on human resources for health",
+   "method": "folio-snapshot"
+  }
+ ]
+}

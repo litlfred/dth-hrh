@@ -1,0 +1,3 @@
+- Periodic evaluation of results against objectives and costs.
+- Learning reviews with stakeholders.
+- Updates to the roadmap, requirements and standards.

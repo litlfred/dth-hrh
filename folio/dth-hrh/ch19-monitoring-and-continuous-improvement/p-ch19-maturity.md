@@ -1,0 +1,3 @@
+- Maturity levels across governance, data, processes, technology, interoperability and use.
+- Self-assessment and target-setting.
+- Links to existing WHO assessments of health workforce information systems and digital health maturity.

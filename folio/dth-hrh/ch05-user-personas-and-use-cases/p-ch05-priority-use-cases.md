@@ -1,0 +1,3 @@
+- Register and license a new graduate; renew a licence; update employment or place of practice.
+- Verify a health worker's status (by an employer, a patient, another system or another country).
+- Produce workforce counts and distribution for planning and NHWA reporting.

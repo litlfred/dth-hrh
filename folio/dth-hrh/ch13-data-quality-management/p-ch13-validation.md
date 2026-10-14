@@ -1,0 +1,3 @@
+- Automated rules at data entry (formats, mandatory fields, code lists).
+- Verification against primary sources, such as training institutions, the national identity system and the issuing regulator.
+- Procedures for finding and resolving duplicate records.

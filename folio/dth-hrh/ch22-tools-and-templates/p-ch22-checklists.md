@@ -1,0 +1,3 @@
+- Legal and governance checklist.
+- Privacy and security checklist; interoperability checklist.
+- Go-live checklist.

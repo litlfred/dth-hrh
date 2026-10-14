@@ -1,0 +1,3 @@
+- Confirm registration and licence status in real time for employers, the public and other systems.
+- Issue digital, verifiable credentials or certificates (for example a certificate of good standing).
+- Respond to verification requests from other countries.

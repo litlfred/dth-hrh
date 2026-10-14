@@ -1,0 +1,3 @@
+- Champions, incentives, and links between the registry and processes that users already need, such as licence renewal and employment.
+- Monitoring uptake and removing barriers.
+- Ways for users to give feedback.

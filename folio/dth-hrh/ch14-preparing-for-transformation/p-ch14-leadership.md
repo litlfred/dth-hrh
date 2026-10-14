@@ -1,0 +1,3 @@
+- An executive sponsor and a clear mandate.
+- A shared vision and goals linked to the national health workforce and digital health strategies.
+- The registry's place in the national digital health architecture and investment plans.

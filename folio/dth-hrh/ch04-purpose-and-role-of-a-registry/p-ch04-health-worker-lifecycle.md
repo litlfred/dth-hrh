@@ -1,0 +1,3 @@
+- Stages: pre-service education, graduation, registration and licensing, employment and deployment, continuing professional development, renewal, mobility, exit and re-entry.
+- The events at each stage that create or change registry data, and who records them.
+- Link to the NHWA health labour market framework (education, labour force, and serving population health needs).

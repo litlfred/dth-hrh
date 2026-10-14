@@ -1,0 +1,3 @@
+- WHO projects a global shortfall of about 11 million health workers by 2030, with uneven distribution within and between countries.
+- Workforce data are spread across ministries, regulatory councils, employers, training institutions and the private sector, often on paper or in stand-alone systems.
+- The results are duplicate and “ghost” records, unverified credentials, slow licensing, weak planning and difficulty reporting to National Health Workforce Accounts (NHWA).

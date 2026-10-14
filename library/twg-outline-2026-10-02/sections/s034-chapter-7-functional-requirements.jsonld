@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s034-chapter-7-functional-requirements",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**Chapter 7\\. Functional Requirements**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s034-chapter-7-functional-requirements"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

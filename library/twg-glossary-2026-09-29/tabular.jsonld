@@ -1,0 +1,130 @@
+{
+  "@context": "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+  "$schema": "folio-tabular-records/v1",
+  "@id": "library/twg-glossary-2026-09-29/tabular",
+  "source": {
+    "file": "HWF_registry_DTH_Glossary_DRAFT.xlsx",
+    "sha256": "8e0fedbcfced32f4b8ac99c473f50f86a5eab20a5d08066c54a2b3a729737642",
+    "bytes": 53581,
+    "mtime": "2026-10-14T08:59:13Z",
+    "mimetype_sniffed": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "mimetype_source": "zip-package"
+  },
+  "format": "xlsx",
+  "sheets": [
+    {
+      "name": "TWG instructions",
+      "headers": [],
+      "rows": 11,
+      "columns": 1,
+      "shape_source": "dimension"
+    },
+    {
+      "name": "Notes",
+      "headers": [
+        "Focus: ",
+        "Health workforce glossary terms (glossary for digital health is addressed separately)"
+      ],
+      "rows": 28,
+      "columns": 5,
+      "shape_source": "dimension"
+    },
+    {
+      "name": "General glossary ",
+      "headers": [
+        "COMMENTS reviewer 1\n(name)",
+        "COMMENTS reviewer 2\n(name)",
+        "COMMENTS reviewer 3\n(name)",
+        "COMMENTS reviewer 4\n(name)",
+        "COMMENTS reviewer 5\n(name)",
+        "COMMENTS reviewer 6\n(name)",
+        "COMMENTS reviewer 7\n(name)",
+        "COMMENTS reviewer 8\n(name)",
+        "COMMENTS reviewer 9\n(name)",
+        "COMMENTS reviewer 10\n(name)"
+      ],
+      "rows": 52,
+      "columns": 20,
+      "shape_source": "dimension"
+    },
+    {
+      "name": "HWF registry",
+      "headers": [
+        "Health workforce registry; health worker registry; provider registry",
+        "COMMENTS reviewer 1\n(name)",
+        "COMMENTS reviewer 2\n(name)",
+        "COMMENTS reviewer 3\n(name)",
+        "COMMENTS reviewer 4\n(name)",
+        "COMMENTS reviewer 5\n(name)",
+        "COMMENTS reviewer 6\n(name)",
+        "COMMENTS reviewer 7\n(name)",
+        "COMMENTS reviewer 8\n(name)",
+        "COMMENTS reviewer 9\n(name)",
+        "COMMENTS reviewer 10\n(name)"
+      ],
+      "rows": 52,
+      "columns": 14,
+      "shape_source": "dimension"
+    },
+    {
+      "name": "HRHIS",
+      "headers": [
+        "Health workforce information system; human resources for health information system; human resources information systems for health; HRIS; HRHIS;HRH-IS; Information Systems for Human Resources for Health (ISHRH)",
+        "COMMENTS reviewer 1\n(name)",
+        "COMMENTS reviewer 2\n(name)",
+        "COMMENTS reviewer 3\n(name)",
+        "COMMENTS reviewer 4\n(name)",
+        "COMMENTS reviewer 5\n(name)",
+        "COMMENTS reviewer 6\n(name)",
+        "COMMENTS reviewer 7\n(name)",
+        "COMMENTS reviewer 8\n(name)",
+        "COMMENTS reviewer 9\n(name)",
+        "COMMENTS reviewer 10\n(name)"
+      ],
+      "rows": 51,
+      "columns": 14,
+      "shape_source": "dimension"
+    },
+    {
+      "name": "Professional council",
+      "headers": [
+        "Claude prompt: definitions and mandates of health professionals councils/boards (medical and/or nursing) with source links and for countries representing all 6 WHO regions",
+        "COMMENTS reviewer 1\n(name)",
+        "COMMENTS reviewer 2\n(name)",
+        "COMMENTS reviewer 3\n(name)",
+        "COMMENTS reviewer 4\n(name)",
+        "COMMENTS reviewer 5\n(name)",
+        "COMMENTS reviewer 6\n(name)",
+        "COMMENTS reviewer 7\n(name)",
+        "COMMENTS reviewer 8\n(name)",
+        "COMMENTS reviewer 9\n(name)",
+        "COMMENTS reviewer 10\n(name)"
+      ],
+      "rows": 52,
+      "columns": 18,
+      "shape_source": "dimension"
+    }
+  ],
+  "n_sheets": 6,
+  "header_vocabulary": [
+    "COMMENTS reviewer 1\n(name)",
+    "COMMENTS reviewer 10\n(name)",
+    "COMMENTS reviewer 2\n(name)",
+    "COMMENTS reviewer 3\n(name)",
+    "COMMENTS reviewer 4\n(name)",
+    "COMMENTS reviewer 5\n(name)",
+    "COMMENTS reviewer 6\n(name)",
+    "COMMENTS reviewer 7\n(name)",
+    "COMMENTS reviewer 8\n(name)",
+    "COMMENTS reviewer 9\n(name)",
+    "Claude prompt: definitions and mandates of health professionals councils/boards (medical and/or nursing) with source links and for countries representing all 6 WHO regions",
+    "Focus: ",
+    "Health workforce glossary terms (glossary for digital health is addressed separately)",
+    "Health workforce information system; human resources for health information system; human resources information systems for health; HRIS; HRHIS;HRH-IS; Information Systems for Human Resources for Health (ISHRH)",
+    "Health workforce registry; health worker registry; provider registry"
+  ],
+  "narrative": {
+    "text": null,
+    "state": "not-authored"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s110-22-3-assessment-tools",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**22.3 Assessment tools**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s110-22-3-assessment-tools"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

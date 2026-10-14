@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s065-chapter-13-data-quality-management",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**Chapter 13\\. Data Quality Management**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s065-chapter-13-data-quality-management"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

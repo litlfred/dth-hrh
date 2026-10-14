@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s027-5-3-user-stories",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**5.3 User stories**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s027-5-3-user-stories"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/twg-outline-2026-10-02/sections/s024-chapter-5-user-personas-and-use-cases",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "**Chapter 5\\. User Personas and Use Cases**",
+  "contains": [
+    "library/twg-outline-2026-10-02/blocks/prose-s024-chapter-5-user-personas-and-use-cases"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "provenance": "ingested"
+}

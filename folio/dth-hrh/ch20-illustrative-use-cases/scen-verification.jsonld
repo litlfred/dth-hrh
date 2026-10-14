@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/scen-verification",
+  "@type": [
+    "smart-base:UserScenario"
+  ],
+  "label": "scen:verification",
+  "kind": "user-scenario",
+  "title": "Verification",
+  "text": "scen-verification.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

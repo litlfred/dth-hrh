@@ -37,7 +37,8 @@
       ],
       "pre": [
         "check:dth-glossary",
-        "check:review-anchors"
+        "check:review-anchors",
+        "check:kg-blocks"
       ]
     }
   }

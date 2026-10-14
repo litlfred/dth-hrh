@@ -7,12 +7,14 @@
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
     "site:node-kinds": "bun run cat-harness-tools/scripts/gen-node-kind-pages.ts --root . --out",
     "check:glossary": "bun run folio-assistant-core/scripts/glossary-page.ts --check",
-    "glossary:build": "python3 -I tools/glossary/build_glossary.py library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx glossary",
+    "glossary:build": "python3 -I tools/glossary/build_glossary.py library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx glossary && bun run kg:blocks",
     "check:dth-glossary": "bun run tools/glossary/validate.ts",
     "wg:changesets:check": "bun run folio-assistant-core/scripts/public-comment-changesets.ts check --store review/wg-comment",
     "review:anchors": "bun run tools/review/review-anchors.ts",
     "check:review-anchors": "bun run tools/review/review-anchors.ts --check",
-    "site:glossary": "bun run tools/glossary/site.ts --out"
+    "site:glossary": "bun run tools/glossary/site.ts --out",
+    "kg:blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh",
+    "check:kg-blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh --check"
   },
   "dependencies": {
     "zod": "^4.6.5"

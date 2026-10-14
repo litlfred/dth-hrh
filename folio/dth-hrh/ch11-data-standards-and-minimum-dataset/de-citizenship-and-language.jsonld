@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-mds-citizenship-and-language",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:mds-citizenship-and-language",
+  "kind": "data-element",
+  "title": "Citizenship and language",
+  "text": "de-citizenship-and-language.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "minimumDataSet": "WHO 2015",
+    "position": 4
+  },
+  "provenance": "authored"
+}

@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-retention",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-retention",
+  "kind": "prose",
+  "title": "Retention (of health workers)",
+  "text": "g-retention.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "retention"
+    }
+  },
+  "provenance": "authored"
+}

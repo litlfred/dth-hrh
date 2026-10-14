@@ -1,0 +1,27 @@
+---
+doc_id: twg-outline-2026-10-02
+doc_title: "Digital Transformation Handbook for Health Workforce Registries and Planning: manuscript outline (TWG, 2 October 2026)"
+section_id: s112-references
+section_title: "**References**"
+file: "HWF_Registry_DTH_Outline.md"
+lines: 1350-1366
+source_sha256: be3708f656a4abfd
+granularity: heading
+---
+# **References**
+
+* WHO. Human resources for health information system: minimum data set for health workforce registry. 2015\.  
+* WHO. Global strategy on human resources for health: Workforce 2030\. 2016\.  
+* WHO. National health workforce accounts: a handbook, second edition. 2023\.  
+* WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010\.  
+* WHO. Health practitioner regulation: design, reform and implementation guidance. 2024\.  
+* WHO. Digital implementation investment guide (DIIG): integrating digital interventions into health programmes. 2020\.  
+* WHO. Digital transformation handbook for primary health care: optimizing person-centred point of service systems. 2024\.  
+* WHO. Digital transformation handbook for health supply chain architecture. 2024\.  
+* WHO. Digital transformation handbook for health product catalogue. 2025\.  
+* WHO and ITU. Reference architecture guidance for digital public infrastructure for health (DPI-H). Draft for public comment, July 2026\.  
+* WHO. Classification of digital interventions, services and applications in health, second edition. 2023\.  
+* WHO. Global strategy on digital health 2020–2025.  
+* WHO SMART Guidelines.  
+* HL7 FHIR; IHE Mobile Care Services Discovery (mCSD) profile.  
+* ILO. International Standard Classification of Occupations (ISCO-08). UNESCO. International Standard Classification of Education (ISCED).

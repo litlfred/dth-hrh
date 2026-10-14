@@ -28,7 +28,18 @@
       "graphTypologies": [
         "library"
       ],
-      "description": "Source material, frozen: the TWG outline (2026-10-02) and glossary workbook (2026-09-29) as received. Never edited to answer a comment."
+      "description": "Source material, frozen: the TWG manuscript outline (2026-10-02; sectioned by its own headings with cat-harness-tools/scripts/text-structure.ts, so the library page can show it) and the TWG glossary workbook (2026-09-29), as received. Never edited to answer a comment.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/library/index.html",
+            "title": "Library",
+            "writer": [
+              "folio-assistant-core/scripts/build-library-site.ts"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "wg-comments",

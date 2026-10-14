@@ -2,6 +2,7 @@
  "$schema": "folio-review-anchors/v1",
  "document": "dth-hrh",
  "library": "twg-outline-2026-10-02",
+ "sourceLabel": "the TWG manuscript outline it was seeded from",
  "source": {
   "docx": {
    "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",

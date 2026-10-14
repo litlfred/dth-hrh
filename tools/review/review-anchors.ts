@@ -74,6 +74,8 @@ const anchors = {
   $schema: "folio-review-anchors/v1",
   document: DOC,
   library: "twg-outline-2026-10-02",
+  // What the library entry is to this folio (shown on its library page).
+  sourceLabel: "the TWG manuscript outline it was seeded from",
   source: {
     // No frozen review version yet: the working document is the review text.
     // The outline it was seeded from stands in as the source of record.

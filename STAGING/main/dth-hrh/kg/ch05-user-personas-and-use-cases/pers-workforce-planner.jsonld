@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/folio-assistant/smart-base/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/pers-workforce-planner",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:workforce-planner",
+  "kind": "persona",
+  "title": "Workforce planner",
+  "text": "pers-workforce-planner.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "personaType": "person",
+    "smartBaseGenericPersona": "HealthSystemManager; DataManager"
+  },
+  "provenance": "authored"
+}

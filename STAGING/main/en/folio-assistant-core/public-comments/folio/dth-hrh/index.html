@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>try{var s=localStorage.getItem("fa-color-scheme");if(s!=="light"&&s!=="dark"&&window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)s="light";if(s==="light"||s==="dark")document.documentElement.setAttribute("data-fa-scheme",s)}catch(e){}</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public comments — DTH-HRH working document (internal working-group review)</title>
+<style>
+.cs-pcs > summary { cursor:pointer; }
+.cs-pc-list { margin:.3rem 0 .6rem; padding-left:1.1rem; }
+.cs-pc { margin:.5rem 0; padding-bottom:.4rem; border-bottom:1px solid #8883; }
+.cs-pc p { margin:.25rem 0; }
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --chip:#eef2f7;
+    --open:#9a5b00; --editing:#0b5cad; --decided:#2e6b2e; --closed:#5b5b5b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  /* Column and gutters belong to main: the harness rail owns body padding-left. */
+  main { max-width:90rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; }
+  a { color:var(--link); } a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.75rem; margin:1rem 0; }
+  .tile { border:1px solid var(--line); border-radius:.5rem; padding:.5rem .9rem; min-width:7rem; font:inherit; color:var(--fg); background:transparent; text-align:left; cursor:pointer; }
+  .tile b { display:block; font-size:1.6rem; }
+  .tile:hover { border-color:var(--link); }
+  main input[type=checkbox] { min-height:0; width:1.1rem; height:1.1rem; }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+  #open-issue { font:inherit; padding:.45rem .9rem; border:1px solid var(--link); border-radius:.4rem; background:transparent; color:var(--link); cursor:pointer; }
+  #open-issue:disabled { opacity:.5; cursor:default; }
+  .tile[aria-pressed="true"] { border-color:var(--link); box-shadow:inset 0 0 0 1px var(--link); background:var(--chip); }
+  form { display:flex; flex-wrap:wrap; gap:.75rem; align-items:end; margin:1rem 0; }
+  /* Form, table and details rules are scoped to main: the harness rail's header
+     is a label too, and a bare label rule stacked it and hid its avatar. */
+  main label { display:flex; flex-direction:column; font-size:.85rem; color:var(--muted); }
+  main select, main input { font:inherit; padding:.35rem .5rem; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:.35rem; min-height:2.4rem; }
+  .table-wrap { overflow-x:auto; }
+  main table { border-collapse:collapse; width:100%; font-size:.92rem; }
+  main th, main td { border-bottom:1px solid var(--line); padding:.45rem .5rem; text-align:left; vertical-align:top; }
+  main th { position:sticky; top:0; background:var(--bg); }
+  .phase { font-weight:600; white-space:nowrap; }
+  .phase-open { color:var(--open); } .phase-editing { color:var(--editing); } .phase-decided { color:var(--decided); } .phase-closed { color:var(--closed); }
+  .chip { display:inline-block; background:var(--chip); border-radius:.3rem; padding:0 .35rem; margin:0 .2rem .2rem 0; font-size:.82rem; }
+  main details > summary { cursor:pointer; }
+  .muted { color:var(--muted); }
+  .links a { margin-right:.5rem; white-space:nowrap; }
+
+.block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
+.block-actions:hover, .block-actions:focus-within { opacity:1; }
+.block-actions a { text-decoration:none; margin-left:.5rem; }
+.block-actions .ba-existing { margin-left:.5rem; }
+#comments .block-actions { float:none; display:block; margin:.2rem 0 0; opacity:.8; } #comments .block-actions a { margin:0 .5rem 0 0; }</style>
+<link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1n25zeqy4jk.js" defer></script><script src="https://litlfred.github.io/folio-assistant/assets/js/navbar.js" defer></script><script src="../../../../../assets/navbar/row-175h52lpj5b.js" defer></script><link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/navbar-row.css"><script src="https://litlfred.github.io/folio-assistant/assets/js/navbar-row.js" defer></script><link rel="stylesheet" href="https://litlfred.github.io/folio-assistant/assets/css/docs-ui.css" data-fa-platform-ui><script src="https://litlfred.github.io/folio-assistant/assets/js/docs-ui.js" defer data-fa-platform-ui></script></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../../../.." data-fa-row-src="row-175h52lpj5b"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1n25zeqy4jk"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
+<main>
+<p><a href="../../../../../en/dth-hrh/index.html">← DTH-HRH working document (internal working-group review)</a></p>
+<h1>Public comments</h1>
+<p class="muted">Generated 2026-10-14 18:08 UTC from the comment store. Open = not yet decided. Editing = decided, and the change is being made on a feature branch. Closed = incorporated, duplicate or withdrawn.</p>
+<div class="tiles" role="group" aria-label="Filter by count">
+<button type="button" class="tile" data-tile="all" aria-pressed="false" title="Show comments"><b>3</b>comments</button>
+<button type="button" class="tile" data-tile="open" aria-pressed="false" title="Show open"><b>3</b>open</button>
+<button type="button" class="tile" data-tile="unplaced" aria-pressed="false" title="Show unplaced"><b>0</b>unplaced</button>
+<button type="button" class="tile" data-tile="editing" aria-pressed="false" title="Show being edited"><b>0</b>being edited</button>
+<button type="button" class="tile" data-tile="decided" aria-pressed="false" title="Show decided"><b>0</b>decided</button>
+<button type="button" class="tile" data-tile="incorporated" aria-pressed="false" title="Show incorporated"><b>0</b>incorporated</button>
+<button type="button" class="tile" data-tile="noissue" aria-pressed="false" title="Show open, in no change-set"><b>0</b>open, in no change-set</button>
+</div>
+<form id="filters" aria-controls="comments">
+<label>Status<select id="f-phase"><option value="">all</option><option value="open" selected>open</option><option value="editing">being edited</option><option value="decided">decided</option><option value="closed">closed</option></select></label>
+<label>Type<select id="f-type"><option value="">all</option><option>technical</option></select></label>
+<label>Committee<select id="f-committee"><option value="">all</option><option>not routed</option></select></label>
+<label>Section<select id="f-section"><option value="">all</option></select></label>
+<label>Search<input id="f-text" type="search" placeholder="words, or PC-0042"></label>
+<p id="f-count" class="muted" aria-live="polite"></p>
+</form>
+<details id="change-sets"><summary><b>Change-sets (3)</b>: 3 proposed, 0 discussing, 0 editing, 0 incorporated, 0 closed. A change-set gets its GitHub issue the first time somebody discusses it, recommends on it or decides it. <span id="cs-count" class="muted" aria-live="polite"></span></summary>
+<div class="table-wrap"><table><thead><tr><th>Id</th><th>Change</th><th>Committee</th><th>Status</th><th>Comments</th><th>Issue</th><th>PR</th><th></th></tr></thead><tbody>
+<tr id="CS-001" data-cs-status="proposed" data-committee="not routed"><td>CS-001</td><td>Adopt a definition of health workforce registry<details><summary class="muted">requirements</summary><p>- Choose one of the 12 candidate definitions in Annex 9, or an edited or new one.<br>- Stay consistent with the final DPI-H reference architecture definition (candidates 1-2).<br>- Decide the TWG point &#39;one registry or one set of information?&#39; with it (rem:discussion-one-registry-or-one-set-of-information).<br>- Write the adopted text into glossary/dth-hrh.glossary.json (status authored) and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0001"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-001%3A+Adopt+a+definition+of+health+workforce+registry&amp;cs=CS-001">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0001">show its comments</a></td></tr>
+<tr id="CS-002" data-cs-status="proposed" data-committee="not routed"><td>CS-002</td><td>Adopt a definition of human resources for health information system<details><summary class="muted">requirements</summary><p>- Choose one of the 12 candidate definitions, or an edited or new one.<br>- Make the registry/HRIS boundary explicit (TWG point &#39;Boundary with HRIS&#39;).<br>- Write the adopted text into glossary/dth-hrh.glossary.json and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0002"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-002%3A+Adopt+a+definition+of+human+resources+for+health+information+system&amp;cs=CS-002">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0002">show its comments</a></td></tr>
+<tr id="CS-003" data-cs-status="proposed" data-committee="not routed"><td>CS-003</td><td>Adopt a definition of professional council and verify the country examples<details><summary class="muted">requirements</summary><p>- Choose one of the 3 candidate definitions, or an edited or new one.<br>- Verify each AI-generated country row against its cited legislation; correct or drop.<br>- Write the adopted text into glossary/dth-hrh.glossary.json and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0003"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-003%3A+Adopt+a+definition+of+professional+council+and+verify+the+country+examples&amp;cs=CS-003">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0003">show its comments</a></td></tr>
+</tbody></table></div></details>
+<p class="picker"><button type="button" id="open-issue" disabled>New change-set from the selected comments</button> <span id="pick-count" class="muted">Tick comments to group them.</span></p>
+<div class="table-wrap">
+<table id="comments">
+<thead><tr><th><span class="sr">Select</span></th><th>Ref</th><th>Status</th><th>Type</th><th>Committee</th><th>Where</th><th>Comment</th><th>Recommendations</th><th>Decision</th><th>Change-set</th><th>Links</th></tr></thead>
+<tbody>
+<tr id="PC-0001" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0001 we need agreement on the health workforce registry definition soon, to ensure consistency with the who/itu reference architecture dth. please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. the definition used in the dth should be consistent with the final definition in the reference architecture guide.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0001" aria-label="Select PC-0001"></td>
+<td><a href="#PC-0001">PC-0001</a><span class="block-actions" data-block="PC-0001" data-src="review/wg-comment/comments/PC-0001.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…</summary><p>We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Architecture DTH. Please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. The definition used in the DTH should be consistent with the final definition in the Reference Architecture guide.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of health workforce registry (proposed)"><a href="#CS-001">CS-001</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-001%3A+Adopt+a+definition+of+health+workforce+registry&amp;cs=CS-001">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-health-workforce-registry">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0001%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0001.json">record</a></td>
+</tr>
+<tr id="PC-0002" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0002 please review the definitions of human resources for health information system (hris, hrhis, hrh-is) and comment on the most appropriate one, or suggest an edited or new version. many countries run the registry inside an hris, so the boundary between the two needs to be clear.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0002" aria-label="Select PC-0002"></td>
+<td><a href="#PC-0002">PC-0002</a><span class="block-actions" data-block="PC-0002" data-src="review/wg-comment/comments/PC-0002.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…</summary><p>Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the most appropriate one, or suggest an edited or new version. Many countries run the registry inside an HRIS, so the boundary between the two needs to be clear.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of human resources for health information system (proposed)"><a href="#CS-002">CS-002</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-002%3A+Adopt+a+definition+of+human+resources+for+health+information+system&amp;cs=CS-002">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-human-resources-for-health-information-system">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0002%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0002.json">record</a></td>
+</tr>
+<tr id="PC-0003" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0003 please review the definitions of professional council (professional regulatory or licensing authority or body, medical or nursing council or board) and the country examples, and comment on the most appropriate definition, or suggest an edited or new version. some definitions and sources are ai generated and may need correction.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0003" aria-label="Select PC-0003"></td>
+<td><a href="#PC-0003">PC-0003</a><span class="block-actions" data-block="PC-0003" data-src="review/wg-comment/comments/PC-0003.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …</summary><p>Please review the definitions of professional council (professional regulatory or licensing authority or body, medical or nursing council or board) and the country examples, and comment on the most appropriate definition, or suggest an edited or new version. Some definitions and sources are AI generated and may need correction.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of professional council and verify the country examples (proposed)"><a href="#CS-003">CS-003</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-003%3A+Adopt+a+definition+of+professional+council+and+verify+the+country+examples&amp;cs=CS-003">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-professional-council">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0003%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0003.json">record</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+<script type="application/json" id="fa-edit-cfg">{"repo":"litlfred/dth-hrh","branch":"main","content":"dth-hrh","siteUrl":"https://litlfred.github.io/dth-hrh","page":"en/folio-assistant-core/public-comments/folio/dth-hrh/index.html"}</script>
+<script>
+(() => {
+  if (window.faEditLinks) return;
+  function faBlockUrls(c, b) {
+  var enc = encodeURIComponent;
+  var path = b.source.split("/").map(enc).join("/");
+  var branch = c.branch || "main";
+  var repo = b.repo || c.repo;
+  var src = "https://github.com/" + repo + "/blob/" + branch + "/" + path + (b.line ? "#L" + b.line : "");
+  var url = c.siteUrl && b.page ? c.siteUrl.replace(/\/$/, "") + "/" + b.page + "#" + enc(b.label) : (b.pageUrl || "");
+  var values = { block: b.label, section: b.section || "", source: b.source, page: b.page || "", url: url, content: c.content || "" };
+  var q = new URLSearchParams();
+  q.set("title", "Feedback" + (c.content ? " [" + c.content + "]" : "") + ": " + (b.section ? b.section + " — " : "") + b.label);
+  if (c.labels && c.labels.length) q.set("labels", c.labels.join(","));
+  if (c.template) {
+    q.set("template", c.template);
+    (c.templateFields || []).forEach(function (f) { if (values[f]) q.set(f, values[f]); });
+  } else {
+    var facts = c.content ? ["**Content:** \u0060" + c.content + "\u0060"] : [];
+    facts.push("**Block:** \u0060" + b.label + "\u0060");
+    if (b.section) facts.push("**Section:** " + b.section);
+    facts.push("**Source:** " + src);
+    if (url) facts.push("**On the site:** " + url);
+    q.set("body", facts.concat(["", "**Type:** general | technical | editorial", "", "**Comment:**", "", "", "**Proposed change:**", ""]).join("\n"));
+  }
+  return { edit: "https://github.com/" + repo + "/edit/" + branch + "/" + path, suggest: "https://github.com/" + repo + "/edit/" + branch + "/" + path, source: src, feedback: "https://github.com/" + c.repo + "/issues/new?" + q };
+}
+  let cfg = null;
+  const config = () => {
+    if (cfg) return cfg;
+    const el = document.getElementById("fa-edit-cfg");
+    if (el) cfg = JSON.parse(el.textContent);
+    else {
+      const meta = (n) => { const m = document.querySelector('meta[name="' + n + '"]'); return m ? m.content : undefined; };
+      cfg = { repo: meta("fa-repo"), branch: meta("fa-branch") || "main" };
+    }
+    return cfg;
+  };
+  // A link that names a GitHub file but carries no facts (a generator wrote
+  // its href from data, e.g. sourceLinks) gives them up from its own URL.
+  const GH = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/(?:blob|edit)\/([^/]+)\/([^#?]+)(?:#L(\d+))?$/;
+  const adopt = (a) => {
+    const m = GH.exec(a.getAttribute("href") || "");
+    if (!m) return false;
+    a.dataset.repo = m[1]; a.dataset.branch = m[2];
+    a.dataset.src = m[3].split("/").map(decodeURIComponent).join("/");
+    if (m[4]) a.dataset.line = m[4];
+    return true;
+  };
+  const ready = (host) => {
+    if (host.dataset.ready) return;
+    if (!host.dataset.src && !(host.matches("a[data-fa-link]") && adopt(host))) return;
+    const c0 = config();
+    const c = host.dataset.branch ? Object.assign({}, c0, { branch: host.dataset.branch }) : c0;
+    if (!c.repo && !host.dataset.repo) return;
+    host.dataset.ready = "1";
+    const label = host.dataset.block || host.dataset.src;
+    const u = faBlockUrls(c, { label: label, source: host.dataset.src, section: host.dataset.sec,
+      line: host.dataset.line ? Number(host.dataset.line) : undefined, repo: host.dataset.repo, page: host.dataset.page || c.page,
+      pageUrl: location.href.split("#")[0] + "#" + encodeURIComponent(label) });
+    const links = host.matches("a[data-fa-link]") ? [host] : host.querySelectorAll("a[data-fa-link]");
+    // Only this host's own links: a nested host (a Lean link inside a block's row) fills itself.
+    for (const a of links) if ((a === host || a.closest("[data-src]") === host) && u[a.dataset.faLink]) a.href = u[a.dataset.faLink];
+  };
+  const fill = (root) => { addSuggest(root); for (const h of (root || document).querySelectorAll("[data-src], a[data-fa-link]")) ready(h); };
+  // A page that learns its repository later (the folio site reads it from its outline) says so here.
+  const configure = (c) => { cfg = c; };
+  // ── ✍ suggest: a block's Markdown in a WYSIWYG editor, the change as a prefilled issue ──
+  //
+  // Beside every ✎ edit link whose source is Markdown, on any page of any
+  // harness. The editor (Milkdown Crepe, MIT) is imported only on first use.
+  // The text is read through the block's KG node (<block>.jsonld, its text)
+  // from the repository itself, and the change leaves as a GitHub issue the
+  // reader submits: no OAuth, no token, no server. Variables, directives and
+  // LaTeX references are the reader's to change, add or delete; what is
+  // checked is that each is well-formed, and the panel under the editor shows
+  // each variable's current value from the site's values.jsonld. Nothing read
+  // is written as HTML.
+  const SUGGEST_LIB = "https://cdn.jsdelivr.net/npm/@milkdown/crepe@7.22.2";
+  const SUGGEST_KATEX_CSS = "https://cdn.jsdelivr.net/npm/katex@0.18.10/dist/katex.min.css";
+  const TOKENISH = /\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}|:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^}\n]*\})?|\\[A-Za-z]+\{[^}\n]*\}/g;
+  // Variables, directives and LaTeX references stay the reader's to change,
+  // add or delete. They are wrapped in \u27e6 \u27e7 only so the editor's
+  // Markdown escaping cannot corrupt them, and unwrapped on submit; what is
+  // checked is that each one is still well-formed, nothing more (owner,
+  // 2026-10-14: "I only want that the syntax is valid").
+  const wrap = (md) => md.replace(TOKENISH, (m) => "\u27e6" + m + "\u27e7");
+  const unwrap = (md) => md.replace(/\u27e6([^\u27e6\u27e7]*)\u27e7/g, (m, inner) => inner.replace(/\\([!-\/:-@\[-\u0060{-~])/g, "$1"));
+  const LIQUID = /^\{\{\s*[A-Za-z_][\w-]*(?:\.[\w-]+|\[\d+\])*\s*(?:\|\s*[A-Za-z_]\w*(?:\s*:\s*[^|{}]+?)?\s*)*\}\}$/;
+  const TAG = /^\{%\s*[A-Za-z_]\w*[^%]*%\}$/;
+  const DIRECTIVE = /^:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^{}\n]*\})?$/;
+  const LATEXREF = /^\\[A-Za-z]+\{[^{}\n]+\}$/;
+  const syntaxErrors = (md) => {
+    const bad = [];
+    for (const m of md.matchAll(/\{\{[\s\S]*?(?:\}\}|$)|\{%[\s\S]*?(?:%\}|$)/g)) if (!LIQUID.test(m[0]) && !TAG.test(m[0])) bad.push(m[0]);
+    for (const m of md.matchAll(/:{1,2}[A-Za-z][\w-]*\[[^\n]*?(?:\](?:\{[^\n]*?\})?|$)/gm)) if (!DIRECTIVE.test(m[0])) bad.push(m[0]);
+    for (const m of md.matchAll(/\\(?:cite|ref|eqref|autoref|cref)\b[^\s]*/g)) if (!LATEXREF.test(m[0].replace(/[.,;:)]+$/, ""))) bad.push(m[0]);
+    return bad;
+  };
+  // Variable names and, when the site published them, their current values.
+  const variablesIn = (md) => Array.from(md.matchAll(/\{\{\s*([A-Za-z_][\w.\-\[\]]*)/g), (m) => m[1]);
+  const lineDiff = (a, b) => {
+    const x = a.split("\n"), y = b.split("\n"), n = x.length, m = y.length;
+    const L = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = x[i] === y[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    const out = [];
+    let i = 0, j = 0;
+    while (i < n || j < m) {
+      if (i < n && j < m && x[i] === y[j]) { out.push(" " + x[i]); i++; j++; }
+      else if (j < m && (i === n || L[i][j + 1] > L[i + 1][j])) out.push("+" + y[j++]);
+      else out.push("-" + x[i++]);
+    }
+    // Two lines of context around each change.
+    const keep = out.map((l, k) => out.slice(Math.max(0, k - 2), k + 3).some((c) => c[0] !== " "));
+    const hunks = [];
+    out.forEach((l, k) => { if (keep[k]) hunks.push(l); else if (hunks.length && hunks[hunks.length - 1] !== "@@") hunks.push("@@"); });
+    if (hunks[hunks.length - 1] === "@@") hunks.pop();
+    return hunks.join("\n");
+  };
+  const raw = (repo, branch, path) => "https://raw.githubusercontent.com/" + repo + "/" + branch + "/" + path.split("/").map(encodeURIComponent).join("/");
+  const sourceOf = (a) => {
+    const h = a.closest("[data-src]");
+    if (h && h.dataset.src) return { src: h.dataset.src, label: h.dataset.block || h.dataset.src, repo: h.dataset.repo, branch: h.dataset.branch };
+    if (a.dataset.src || adopt(a)) return { src: a.dataset.src, label: a.dataset.block || a.dataset.src, repo: a.dataset.repo, branch: a.dataset.branch };
+    return null;
+  };
+  const el = (tag, props, kids) => { const e = Object.assign(document.createElement(tag), props || {}); for (const k of kids || []) e.append(k); return e; };
+  const suggest = async (a) => {
+    const s = sourceOf(a), c = config();
+    if (!s || !/\.md$/.test(s.src)) return;
+    const repo = s.repo || c.repo, branch = s.branch || c.branch || "main";
+    const status = el("p", { className: "fa-suggest-status", textContent: "Loading " + s.src + " …" });
+    const host = el("div", { className: "fa-suggest-editor" });
+    const send = el("button", { type: "button", textContent: "Submit as an issue", disabled: true });
+    const close = el("button", { type: "button", textContent: "Cancel" });
+    const vars = el("ul", { className: "fa-suggest-vars" });
+    const dlg = el("dialog", { className: "fa-suggest" }, [el("h2", { textContent: "Suggest a change: " + s.label }), status, host, vars, el("p", {}, [send, " ", close])]);
+    close.onclick = () => { dlg.close(); dlg.remove(); };
+    if (!document.getElementById("fa-suggest-css"))
+      document.head.append(el("style", { id: "fa-suggest-css", textContent: "dialog.fa-suggest{width:min(60rem,95vw);max-height:90vh;overflow:auto;padding:1rem 1.25rem}dialog.fa-suggest h2{font-size:1.1rem;margin:0 0 .5rem}.fa-suggest-status{color:#5b6770;font-size:.9rem}.fa-suggest-editor{border:1px solid #d6dde2;min-height:12rem;margin:.5rem 0}.fa-suggest-vars{font-size:.85rem;color:#5b6770;margin:.25rem 0;padding-left:1.2rem}.fa-suggest-vars .bad{color:#b3261e}" }));
+    document.body.append(dlg);
+    dlg.showModal();
+    let path = s.src, original;
+    try {
+      // The KG node names the block's text; a page without one falls back to the source.
+      const node = await fetch(raw(repo, branch, s.src.replace(/\.md$/, ".jsonld"))).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+      if (node && typeof node.text === "string") path = s.src.replace(/[^/]*$/, "") + node.text;
+      const r = await fetch(raw(repo, branch, path));
+      if (!r.ok) throw new Error(r.status + " reading " + path);
+      original = await r.text();
+    } catch (e) { status.textContent = "Could not load the block: " + e.message; return; }
+    const wrapped = wrap(original);
+    // The site's variable values, as KG nodes (values.jsonld), when it publishes them.
+    const values = c.values ? await fetch(c.values).then((r) => (r.ok ? r.json() : null)).catch(() => null) : null;
+    const valueOf = (key) => {
+      const nodes = values && (values["@graph"] || values);
+      const n = Array.isArray(nodes) ? nodes.find((x) => x.key === key) : null;
+      return n ? String(n.formatted !== undefined ? n.formatted : n.value) : undefined;
+    };
+    let get, base;
+    try {
+      const lib = (c.suggest && c.suggest.lib) || SUGGEST_LIB;
+      // The theme's own @import of KaTeX names a package, which a CDN cannot resolve: named here.
+      for (const href of [lib + "/lib/theme/common/style.css", lib + "/lib/theme/frame/style.css", SUGGEST_KATEX_CSS])
+        if (!document.querySelector('link[href="' + href + '"]')) document.head.append(el("link", { rel: "stylesheet", href: href }));
+      const { Crepe } = await import((c.suggest && c.suggest.module) || lib + "/+esm");
+      const crepe = new Crepe({ root: host, defaultValue: wrapped });
+      await crepe.create();
+      get = () => crepe.getMarkdown();
+      status.textContent = wrapped === original ? "" : "Variables, glossary terms and references are shown in \u27e6 \u27e7: change, add or delete them freely; their syntax is checked when you submit.";
+    } catch (e) {
+      // No editor (offline, blocked CDN): the same flow over plain Markdown.
+      const ta = el("textarea", { value: wrapped, rows: 16, style: "width:100%" });
+      host.append(ta);
+      get = () => ta.value;
+      status.textContent = "The visual editor did not load (" + e.message + "); editing the Markdown directly.";
+    }
+    base = get();
+    // Live: each variable and its current value, and any item whose syntax is broken.
+    const refresh = () => {
+      if (!dlg.isConnected) return clearInterval(timer);
+      const text = unwrap(get());
+      const items = variablesIn(text).map((k) => { const v = valueOf(k); return el("li", { textContent: k + (v === undefined ? (values ? " \u2014 not a published variable" : " \u2014 value not published") : " = " + v) }); });
+      for (const b of syntaxErrors(text)) items.push(el("li", { className: "bad", textContent: "Not well-formed: " + b.slice(0, 80) }));
+      vars.replaceChildren(...items);
+    };
+    const timer = setInterval(refresh, 800);
+    refresh();
+    send.disabled = false;
+    send.onclick = async () => {
+      const now = get();
+      if (now === base) { status.textContent = "Nothing has changed yet."; return; }
+      const errs = syntaxErrors(unwrap(now));
+      if (errs.length) { status.textContent = "Fix the syntax first: " + errs.map((e) => e.slice(0, 60)).join(" \u00b7 "); return; }
+      const facts = ["**Block:** \u0060" + s.label + "\u0060", "**Source:** https://github.com/" + repo + "/blob/" + branch + "/" + path, "**On the site:** " + location.href.split("#")[0] + "#" + encodeURIComponent(s.label)];
+      const body = facts.concat(["", "**Suggested change**, made in the visual editor (the diff is against the editor's rendering of the source):", "", "\u0060\u0060\u0060diff", lineDiff(unwrap(base), unwrap(now)), "\u0060\u0060\u0060", "", "**Why:**", ""]).join("\n");
+      const q = new URLSearchParams({ title: "Suggested edit: " + s.label, body: body });
+      let url = "https://github.com/" + (c.repo || repo) + "/issues/new?" + q;
+      // GitHub refuses very long URLs: carry the body on the clipboard instead.
+      if (url.length > 7000) {
+        try { await navigator.clipboard.writeText(body); } catch (e) { status.textContent = "Too long for a link, and the clipboard is blocked."; return; }
+        url = "https://github.com/" + (c.repo || repo) + "/issues/new?" + new URLSearchParams({ title: "Suggested edit: " + s.label, body: "The suggested change is on the clipboard: paste it here." });
+      }
+      window.open(url, "_blank", "noopener");
+      close.onclick();
+    };
+  };
+  const SUGGEST_TITLE = "Suggest a change in a visual editor (opens a GitHub issue)";
+  const addSuggest = (root) => {
+    // Only over a real DOM: the runtime is also evaluated against stubs (a
+    // viewer's own tests), where there is nothing to add a link to.
+    const r = root || document;
+    if (!r || typeof r.querySelectorAll !== "function") return;
+    for (const a of r.querySelectorAll('a[data-fa-link="edit"], a.ba-edit')) {
+      if (a.nextElementSibling && a.nextElementSibling.dataset.faLink === "suggest") continue;
+      const s = sourceOf(a);
+      if (!s || !/\.md$/.test(s.src)) continue;
+      const b = el("a", { className: "ba-suggest", href: a.getAttribute("href") || "#", title: SUGGEST_TITLE, textContent: "✍ suggest", tabIndex: 0 });
+      b.dataset.faLink = "suggest";
+      a.after(b);
+    }
+  };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest('a[data-fa-link="suggest"]');
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault();
+    suggest(a);
+  });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => addSuggest());
+  else addSuggest();
+  window.faEditLinks = { urls: faBlockUrls, fill: fill, configure: configure };
+  // Both the link reached and the host it sits in: a pointer that lands
+  // straight on a compact host's link (no gap crossed) or keyboard focus on it
+  // matches the bare link first, which carries no facts of its own.
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => {
+      if (!e.target.closest) return;
+      const a = e.target.closest("a[data-fa-link]"), h = e.target.closest("[data-src]");
+      if (a) ready(a);
+      if (h && h !== a) ready(h);
+    }, { passive: true });
+})();
+</script>
+<script>
+(() => {
+  const REPO = "litlfred/dth-hrh";
+  // [edit]/[feedback]: fill a row's links when the row is reached. The shared
+  // runtime fills on reaching the links' host, but a pointer that lands
+  // straight on a link (no gap crossed) or keyboard focus never reaches it, as
+  // an <a> without an href is not focusable.
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => {
+      const tr = e.target.closest && e.target.closest("#comments tbody tr");
+      if (tr && window.faEditLinks && !tr.dataset.faFilled) { tr.dataset.faFilled = "1"; window.faEditLinks.fill(tr); }
+    }, { passive: true });
+  const $ = (id) => document.getElementById(id);
+  const rows = [...document.querySelectorAll("#comments tbody tr")];
+  const csTrs = [...document.querySelectorAll("#change-sets tbody tr")];
+  const tiles = [...document.querySelectorAll(".tile[data-tile]")];
+
+  // Pre-index DOM dataset attributes into memory once on load to eliminate
+  // thousands of live DOMStringMap reflections and layout invalidations during filtering.
+  const commentItems = rows.map((r) => ({
+    el: r,
+    id: r.id,
+    phase: r.dataset.phase,
+    status: r.dataset.status,
+    type: r.dataset.type,
+    committee: r.dataset.committee,
+    section: r.dataset.section,
+    text: r.dataset.text,
+    placed: r.dataset.placed,
+    incs: r.dataset.incs,
+  }));
+
+  const csItems = csTrs.map((tr) => {
+    const a = tr.querySelector("a.show-cs");
+    const countEl = tr.querySelector(".cs-n");
+    const refs = a && a.dataset.refs ? a.dataset.refs.split(" ") : [];
+    return {
+      el: tr,
+      committee: tr.dataset.committee,
+      refs,
+      countEl,
+      total: refs.length,
+    };
+  });
+
+  // Tiles that ARE a Status value set the select; the other two are extra filters.
+  const PHASE_TILES = ["open", "editing", "decided"];
+  let extra = null; // "unplaced" | "incorporated" | "noissue" | null
+  let only = null; // a change-set's comments, from "show its comments"
+  const active = () => extra ?? ($("f-phase").value || "all");
+  const apply = () => {
+    const ph = $("f-phase").value, ty = $("f-type").value, co = $("f-committee").value, se = $("f-section").value, tx = $("f-text").value.trim().toLowerCase();
+    let n = 0;
+    const shown = new Set();
+    for (let i = 0; i < commentItems.length; i++) {
+      const it = commentItems[i];
+      const s = it.section;
+      const ok = (!ph || it.phase === ph) && (!ty || it.type === ty) && (!co || it.committee === co)
+        && (!se || s === se || s.startsWith(se + ".")) && (!tx || it.text.includes(tx))
+        && (extra !== "unplaced" || it.placed === "0")
+        && (extra !== "incorporated" || it.status === "incorporated")
+        && (extra !== "noissue" || (it.incs === "0" && it.phase === "open"))
+        && (!only || only.has(it.id));
+      if (it.el.hidden !== !ok) it.el.hidden = !ok;
+      if (ok) {
+        n++;
+        shown.add(it.id);
+      }
+    }
+    $("f-count").textContent = n + " of " + commentItems.length + " shown";
+
+    // Change-sets: update visibility and match counts from the in-memory index
+    let m = 0;
+    for (let j = 0; j < csItems.length; j++) {
+      const cs = csItems[j];
+      let k = 0;
+      for (let r = 0; r < cs.refs.length; r++) {
+        if (shown.has(cs.refs[r])) k++;
+      }
+      // Under a committee filter a change-set shows when it is that
+      // committee's, even if only some of its comments are routed there.
+      const csOk = co ? cs.committee === co : k > 0;
+      if (cs.el.hidden !== !csOk) cs.el.hidden = !csOk;
+      if (csOk) m++;
+      if (cs.countEl) {
+        const text = k === cs.total ? String(k) : k + " of " + cs.total;
+        if (cs.countEl.textContent !== text) cs.countEl.textContent = text;
+      }
+    }
+    if ($("cs-count")) $("cs-count").textContent = "Showing " + m + " of " + csItems.length + ", by the filters below.";
+    const on = active();
+    for (const t of tiles) t.setAttribute("aria-pressed", String(t.dataset.tile === on));
+  };
+  // BACK WORKS (D-3 of the 2026-10-06 walkthrough): every filter change is a
+  // history entry whose query string holds the filters, so Back restores the
+  // previous view instead of leaving the page. Typing in Search replaces the
+  // entry rather than adding one per keystroke.
+  const save = (push = true) => {
+    const q = new URLSearchParams();
+    const put = (k, v) => { if (v) q.set(k, v); };
+    q.set("status", $("f-phase").value);
+    put("type", $("f-type").value); put("committee", $("f-committee").value); put("section", $("f-section").value); put("q", $("f-text").value);
+    put("tile", extra); put("only", only ? [...only].join(" ") : "");
+    const url = "?" + q + location.hash;
+    if (url !== location.search + location.hash) history[push ? "pushState" : "replaceState"](null, "", url);
+  };
+  function load() {
+    const q = new URLSearchParams(location.search);
+    if (!q.has("status")) return;
+    $("f-phase").value = q.get("status"); $("f-type").value = q.get("type") ?? ""; $("f-committee").value = q.get("committee") ?? "";
+    $("f-section").value = q.get("section") ?? ""; $("f-text").value = q.get("q") ?? "";
+    extra = q.get("tile"); only = q.get("only") ? new Set(q.get("only").split(" ")) : null;
+    apply();
+  }
+  for (const t of tiles) t.addEventListener("click", () => {
+    const key = t.dataset.tile;
+    // Pressing the tile that is on clears it: back to every comment.
+    const clear = key === active() || key === "all";
+    extra = !clear && !PHASE_TILES.includes(key) ? key : null;
+    $("f-phase").value = !clear && PHASE_TILES.includes(key) ? key : "";
+    only = null;
+    apply(); save();
+  });
+  $("f-phase").addEventListener("input", () => { extra = null; });
+  for (const a of document.querySelectorAll("a.show-cs")) a.addEventListener("click", (e) => {
+    e.preventDefault();
+    only = new Set(a.dataset.refs.split(" "));
+    // Every one of its comments, whatever was filtered before.
+    extra = null; for (const id of ["f-phase", "f-type", "f-committee", "f-section", "f-text"]) $(id).value = "";
+    apply(); save();
+    document.getElementById("comments").scrollIntoView();
+  });
+  // A CHANGE-SET'S COMMENTS IN FULL, IN PLACE (owner, 2026-10-06: "in addition
+  // to jumping to comment from CS you can expand panel to see original PC
+  // details (who, what..)", and "that can be dynamic JS load of KG"). The
+  // records are LOADED when a panel is first opened, from "comments.json"
+  // (the comment store as published), which stays at the dashboard's route
+  // while the page is under the locale (issue #2527). Opened from file://,
+  // where fetch fails, it falls back to the comment rows already on the page.
+  let records = null;
+  const loadRecords = () => (records ??= fetch("../../../../../folio-assistant-core/public-comments/folio/dth-hrh/comments.json")
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((list) => new Map(list.map((x) => [x.ref, x])))
+    .catch(() => null));
+  const h = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const fromRecord = (x) => "<li class=\"cs-pc\"><a href=\"#" + h(x.ref) + "\">" + h(x.ref) + "</a> · " + h(x.status) + (x.type ? " · " + h(x.type) : "") + " · " + h(x.committee ? (x.committee.group || x.committee.raw) : "not routed") +
+    "<div class=\"muted\">" + (x.target ? h(x.section + " " + x.sectionTitle) : "<em>unplaced</em>") + (x.citation ? " — " + h(x.citation) : "") + "</div>" +
+    "<p>" + h(x.text) + "</p>" + (x.suggestion ? "<p><b>Suggested revision:</b> " + h(x.suggestion) + "</p>" : "") +
+    "<p class=\"muted\">" + h(x.reviewer) + "</p>" +
+    (x.recommendations && x.recommendations.length ? "<p>" + x.recommendations.map((r) => "<span class=\"chip\" title=\"" + h(r.rationale) + "\">" + h(r.by) + ": " + h(r.code) + "</span>").join("") + "</p>" : "") +
+    "<div class=\"cs-pc-decision\">" + (x.decision ? "<b>" + h(x.decision.label) + "</b>" + (x.decision.reason ? " — " + h(x.decision.reason) : "") : "<span class=\"muted\">not decided yet</span>") + "</div></li>";
+  const fromRow = (ref) => {
+    const tr = document.getElementById(ref);
+    if (!tr) return "<li>" + h(ref) + " <span class=\"muted\">(not on this page)</span></li>";
+    const c = tr.cells;
+    // Cells: pick, ref, status, type, committee, where, comment, recommendations, decision.
+    const body = [...(c[6].querySelector("details")?.children || [])].filter((x) => x.tagName !== "SUMMARY").map((x) => x.outerHTML).join("");
+    return "<li class=\"cs-pc\"><a href=\"#" + h(ref) + "\">" + h(ref) + "</a> · " + c[2].textContent + (c[3].textContent ? " · " + c[3].textContent : "") + " · " + h(tr.dataset.committee) +
+      "<div class=\"muted\">" + c[5].innerHTML + "</div>" + body + "<div class=\"cs-pc-decision\">" + c[8].innerHTML + "</div></li>";
+  };
+  document.addEventListener("toggle", async (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains("cs-pcs") || !d.open || d.dataset.built) return;
+    d.dataset.built = "1";
+    const ul = document.createElement("ul");
+    ul.className = "cs-pc-list";
+    ul.innerHTML = "<li class=\"muted\">Loading…</li>";
+    d.append(ul);
+    const byRef = await loadRecords();
+    ul.innerHTML = d.dataset.refs.split(" ").map((ref) => (byRef && byRef.get(ref) ? fromRecord(byRef.get(ref)) : fromRow(ref))).join("");
+  }, true);
+  // GROUPING (issue #2183): tick comments, open the "new change-set" issue
+  // form prefilled with them. The repository's workflow records the change-set
+  // from the form and adopts that issue as its own.
+  const picker = $("open-issue");
+  if (picker) {
+    const picked = () => [...document.querySelectorAll("input.pick:checked")].map((x) => x.value);
+    const sync = () => {
+      const n = picked().length;
+      picker.disabled = n === 0;
+      $("pick-count").textContent = n ? n + " selected" : "Tick comments to group them.";
+    };
+    document.getElementById("comments").addEventListener("change", (e) => { if (e.target.classList.contains("pick")) sync(); });
+    picker.addEventListener("click", () => {
+      const refs = picked();
+      if (!refs.length) return;
+      const q = new URLSearchParams({ template: "change-set-new.yml", title: "New change-set: ", comments: refs.join(", ") });
+      const url = "https://github.com/" + REPO + "/issues/new?" + q;
+      window.open(url, "_blank", "noopener");
+    });
+    sync();
+  }
+  // A link to #PC-0042 shows that comment whatever the filters say; a link to
+  // #CS-012 opens the change-sets list there.
+  if (location.hash.startsWith("#PC-")) $("f-phase").value = "";
+  if (location.hash.startsWith("#CS-") && $("change-sets")) { $("change-sets").open = true; document.getElementById(location.hash.slice(1))?.scrollIntoView(); }
+  // A select replaces "show its comments" (it used to stay on, hidden, and
+  // made every later filter look broken: D-2 of the 2026-10-06 walkthrough);
+  // the search box narrows within it.
+  for (const id of ["f-phase", "f-type", "f-committee", "f-section"]) $(id).addEventListener("input", () => { only = null; apply(); save(); });
+  let searchDebounceTimer = null;
+  $("f-text").addEventListener("input", () => {
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => { apply(); save(false); }, 75);
+  });
+  addEventListener("popstate", load);
+  addEventListener("hashchange", () => { if (location.hash.startsWith("#PC-")) { $("f-phase").value = ""; only = null; extra = null; apply(); } });
+  load();
+  apply();
+})();
+</script>
+</body>
+</html>

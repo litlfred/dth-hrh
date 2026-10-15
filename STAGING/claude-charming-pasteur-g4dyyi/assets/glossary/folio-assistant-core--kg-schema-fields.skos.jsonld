@@ -755,6 +755,25 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#glossary/kg-schema-fields/changeset.computeoptions.builders",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "ComputeOptions.builders"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The contributed builders, so contributed (DAK) blocks are blocks too. See {@link snapshot}."
+        }
+      ],
+      "dcterms:source": "folio-assistant-core/schemas/changeset.ts#ComputeOptions.builders",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#glossary/kg-schema-fields/changeset.computeoptions.folio",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -847,6 +866,25 @@
         }
       ],
       "dcterms:source": "folio-assistant-core/schemas/changeset.ts#RefSchema.ref",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#glossary/kg-schema-fields/changeset.snap.fields",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Snap.fields"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "A contributed (structured) kind's manifest fields, read as text (bean f327). Never serialised."
+        }
+      ],
+      "dcterms:source": "folio-assistant-core/schemas/changeset.ts#Snap.fields",
       "skos:note": "candidate"
     },
     {

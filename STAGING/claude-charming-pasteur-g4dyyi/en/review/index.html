@@ -60,6 +60,10 @@
   :root[data-fa-scheme="dark"] ins { background: #12391d; color: #c8f2d0; } :root[data-fa-scheme="dark"] del { background: #45181a; color: #f5caca; }
   :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
   .diff-sbs { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+  .diff-fields table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  .diff-fields caption { text-align: left; font-weight: 600; padding: .25rem 0; }
+  .diff-fields th, .diff-fields td { border: 1px solid var(--rule); padding: .25rem .4rem; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  .diff-fields td:last-child { white-space: nowrap; font-weight: 600; }
   .diff-sbs iframe { width: 100%; height: 22rem; border: 1px solid var(--rule); border-radius: .3rem; background: #fff; }
   @media (max-width: 40rem) { .diff-sbs { grid-template-columns: 1fr; } }
   /* Visual diff (0rxe): pictures on a white card, since they are screenshots
@@ -166,7 +170,7 @@ var reviewSiteRoot = function reviewSiteRoot(pathname, locales) {
   const segs = String(pathname || "").split("/");
   return segs.length >= 4 && locales.indexOf(segs[segs.length - 3]) >= 0 ? "../../" : "../";
 };
-var RENDERERS = [{"id":"word","label":"Word diff of the source","description":"The block's Markdown with removed words struck through and added words marked. Shows exactly what the author typed.","needs":["text"],"defaultFor":["*"]},{"id":"inline","label":"Inline, as rendered","description":"The block as a reader sees it now, with added words marked and removed words struck through where they were.","needs":["text"],"defaultFor":["prose","remark","definition","example","recommendation"]},{"id":"visual","label":"Pictures, before and after","description":"A picture of the block on the published page and on this preview, with a slider between them and a view that marks every changed pixel. For figures, diagrams and tables, whose markup says little.","needs":["screenshots"],"defaultFor":["table","figure","diagram","equation","simulator"]},{"id":"side-by-side","label":"Side by side","description":"The published page and this preview next to each other, each scrolled to the block. For tables, figures and anything whose layout is the change.","needs":["pages"],"defaultFor":["table","figure","diagram","equation","simulator"]}];
+var RENDERERS = [{"id":"word","label":"Word diff of the source","description":"The block's Markdown with removed words struck through and added words marked. Shows exactly what the author typed.","needs":["text"],"defaultFor":["*"]},{"id":"inline","label":"Inline, as rendered","description":"The block as a reader sees it now, with added words marked and removed words struck through where they were.","needs":["text"],"defaultFor":["prose","remark","definition","example","recommendation"]},{"id":"visual","label":"Pictures, before and after","description":"A picture of the block on the published page and on this preview, with a slider between them and a view that marks every changed pixel. For figures, diagrams and tables, whose markup says little.","needs":["screenshots"],"defaultFor":["table","figure","diagram","equation","simulator"]},{"id":"side-by-side","label":"Side by side","description":"The published page and this preview next to each other, each scrolled to the block. For tables, figures and anything whose layout is the change.","needs":["pages"],"defaultFor":["table","figure","diagram","equation","simulator"]},{"id":"fields","label":"Fields, before and after","description":"The block's fields side by side, one row each, with every added, removed and changed field named. For structured blocks — a persona, a requirement, a data element — whose source diff is unreadable.","needs":["structure"],"defaultFor":["@structured"]}];
 var wordDiff = function wordDiff(a, b, limit = 4000000) {
   const tok = (s) => s.match(/\s+|[\p{L}\p{N}_]+|[^\s\p{L}\p{N}_]/gu) || [], x = tok(a), y = tok(b);
   let pre = 0;
@@ -304,6 +308,71 @@ var renderInline = function renderInline(doc, baseHtml, headHtml, diff, clean) {
   }
   while (head.firstChild)
     box.appendChild(head.firstChild);
+  return box;
+};
+var renderFields = function renderFields(doc, s) {
+  const base = s.base || {}, head = s.head || {}, keys = Object.keys(base).concat(Object.keys(head).filter((k) => !(k in base))).sort(), box = doc.createElement("div");
+  box.className = "diff diff-fields";
+  const table = (rows, caption) => {
+    const t = doc.createElement("table"), cap = doc.createElement("caption");
+    cap.textContent = caption;
+    t.appendChild(cap);
+    const tr0 = doc.createElement("tr");
+    ["field", "main", "this preview", "change"].forEach((h) => {
+      const th = doc.createElement("th");
+      th.scope = "col";
+      th.textContent = h;
+      tr0.appendChild(th);
+    });
+    t.appendChild(tr0);
+    rows.forEach((r) => {
+      const tr = doc.createElement("tr");
+      tr.className = "f-" + r[3];
+      r.forEach((c, i) => {
+        const td = doc.createElement(i === 0 ? "th" : "td");
+        if (i === 0)
+          td.scope = "row";
+        if (i === 0) {
+          const code = doc.createElement("code");
+          code.textContent = c;
+          td.appendChild(code);
+        } else
+          td.textContent = c;
+        tr.appendChild(td);
+      });
+      t.appendChild(tr);
+    });
+    return t;
+  }, changed = [], same = [];
+  keys.forEach((k) => {
+    const b = k in base ? base[k] : null, h = k in head ? head[k] : null;
+    if (b === h)
+      same.push([k, b ?? "", h ?? "", "unchanged"]);
+    else
+      changed.push([k, b ?? "\u2014", h ?? "\u2014", b === null ? "added" : h === null ? "removed" : "changed"]);
+  });
+  const sideless = !s.base ? "This block is new: every field is added." : !s.head ? "This block was removed: every field is removed." : null;
+  if (sideless) {
+    const p = doc.createElement("p");
+    p.className = "muted";
+    p.textContent = sideless;
+    box.appendChild(p);
+  }
+  if (changed.length)
+    box.appendChild(table(changed, changed.length + " field" + (changed.length === 1 ? "" : "s") + " differ (" + s.kind + ")"));
+  else {
+    const p = doc.createElement("p");
+    p.className = "muted";
+    p.textContent = "No field differs: the change is to the manifest's form, not its values.";
+    box.appendChild(p);
+  }
+  if (same.length) {
+    const d = doc.createElement("details"), sum = doc.createElement("summary");
+    sum.textContent = same.length + " unchanged field" + (same.length === 1 ? "" : "s");
+    d.appendChild(sum);
+    d.appendChild(table(same, "Unchanged fields"));
+    box.appendChild(d);
+  }
   return box;
 };
 var renderSideBySide = function renderSideBySide(doc, before, after) {
@@ -1004,8 +1073,11 @@ var renderMeasured = function renderMeasured(box, model) {
   var VIEW_KEY = "folio-review:view";
   function loadView() { try { return window.localStorage.getItem(VIEW_KEY) || ""; } catch (e) { return ""; } }
   function saveView(v) { try { window.localStorage.setItem(VIEW_KEY, v); } catch (e) { /* the defaults, then */ } }
-  function defaultFor(kind) {
+  function defaultFor(kind, structured) {
     var fb = null;
+    // A block the build published fields for opens on the field renderer
+    // (STRUCTURED, bean f327) before any renderer its kind names.
+    if (structured) for (var j = 0; j < RENDERERS.length; j++) if (RENDERERS[j].defaultFor.indexOf("@structured") >= 0) return RENDERERS[j].id;
     for (var i = 0; i < RENDERERS.length; i++) {
       if (RENDERERS[i].defaultFor.indexOf(kind) >= 0) return RENDERERS[i].id;
       if (RENDERERS[i].defaultFor.indexOf("*") >= 0) fb = RENDERERS[i].id;
@@ -1019,6 +1091,7 @@ var renderMeasured = function renderMeasured(box, model) {
       if (n === "text" && !ctx.text) return "no prose on either side";
       if (n === "pages" && !ctx.before && !ctx.after) return "no page to show";
       if (n === "screenshots" && !ctx.visual) return "no pictures on this build";
+      if (n === "structure" && !ctx.structure) return "no fields for this block";
     }
     return null;
   }
@@ -1037,6 +1110,8 @@ var renderMeasured = function renderMeasured(box, model) {
       out = renderSideBySide(document, ctx.before, ctx.after);
     } else if (id === "visual") {
       out = renderVisual(document, ctx.visual, ROOT, "vis-" + panel.id);
+    } else if (id === "fields") {
+      out = renderFields(document, ctx.structure);
     }
     if (typeof out === "string") panel.appendChild(el("p", out, "muted"));
     else if (out) panel.appendChild(out);
@@ -1066,7 +1141,8 @@ var renderMeasured = function renderMeasured(box, model) {
         // can, preferring those that list this block's kind (0rxe: a table
         // with no pictures opens side by side, not on a word diff).
         var can = RENDERERS.filter(function (x) { return !unavailable(x, ctx); });
-        r = can.filter(function (x) { return x.defaultFor.indexOf(ctx.kind) >= 0; })[0] || can[0];
+        r = (ctx.structure ? can.filter(function (x) { return x.defaultFor.indexOf("@structured") >= 0; })[0] : null) ||
+          can.filter(function (x) { return x.defaultFor.indexOf(ctx.kind) >= 0; })[0] || can[0];
       }
       if (!r) { while (panel.firstChild) panel.removeChild(panel.firstChild); panel.appendChild(el("p", "Nothing to show for this change: it is to the manifest only.", "muted")); return; }
       sel.value = r.id;
@@ -1075,12 +1151,12 @@ var renderMeasured = function renderMeasured(box, model) {
     sel.addEventListener("change", function () { pick(sel.value); });
     row.appendChild(lab);
     row.appendChild(sel);
-    var v = { row: row, panel: panel, pick: pick, kind: ctx.kind };
+    var v = { row: row, panel: panel, pick: pick, kind: ctx.kind, structured: !!ctx.structure };
     viewers.push(v);
     return v;
   }
   function applyView(global) {
-    viewers.forEach(function (v) { v.pick(global || defaultFor(v.kind)); });
+    viewers.forEach(function (v) { v.pick(global || defaultFor(v.kind, v.structured)); });
   }
   var viewAll = document.getElementById("view");
   var none = el("option", "Each block's default");
@@ -1120,7 +1196,9 @@ var renderMeasured = function renderMeasured(box, model) {
       get(ROOT + "block-qa.json").catch(function () { return null; }),
       get(ROOT + "outline.json").catch(function () { return null; }),
       get(ROOT + "visual-diff.json").catch(function () { return null; }),
+      get(ROOT + "changeset-structure.json").catch(function () { return null; }),
     ]).then(function (both) {
+      var structureFile = both[7];
       var visualFile = both[6];
       OUTLINE = both[5];
       var blocksFile = both[3];
@@ -1209,6 +1287,7 @@ var renderMeasured = function renderMeasured(box, model) {
             kind: (c.head || c.base || {}).kind || "",
             text: txt && txt.blocks ? txt.blocks[c.label] || null : null,
             visual: visualFile && visualFile.blocks ? visualFile.blocks[c.label] || null : null,
+            structure: structureFile && structureFile.blocks ? structureFile.blocks[c.label] || null : null,
             before: before,
             after: after,
           });

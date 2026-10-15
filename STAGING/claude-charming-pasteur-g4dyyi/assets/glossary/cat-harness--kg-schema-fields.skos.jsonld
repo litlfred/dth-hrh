@@ -13098,7 +13098,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Block kinds this renderer is the DEFAULT for, from `BLOCK_KINDS`. `*` is the fallback, and exactly one renderer carries it. Two renderers may list the same kind: order is preference, and the page takes the first one that can run on the block. A test holds every other entry to a kind that exists, so a renamed kind cannot silently lose its default."
+          "@value": "Block kinds this renderer is the DEFAULT for, from `BLOCK_KINDS`. `*` is the fallback, and exactly one renderer carries it. {@link STRUCTURED} is any block with structured sides, and comes before its kind. Two renderers may list the same kind: order is preference, and the page takes the first one that can run on the block. A test holds every other entry to a kind that exists, so a renamed kind cannot silently lose its default."
         }
       ],
       "dcterms:source": "cat-harness/schemas/diff-renderers.ts#DiffRendererSchema.defaultFor",

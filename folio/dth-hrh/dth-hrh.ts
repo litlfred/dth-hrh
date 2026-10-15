@@ -9,7 +9,7 @@ import { paper, chapterRef } from "../schema/builders";
  * because labels, uses[], feedback and QA sidecars all key on names.
  *
  * Seeded from the TWG manuscript outline (2026-10-02) by
- * tools/folio/build_from_outline.py; edited by hand from then on.
+ * scripts/folio/build_from_outline.py; edited by hand from then on.
  */
 export default paper({
   title: "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",

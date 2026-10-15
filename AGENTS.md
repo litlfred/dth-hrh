@@ -27,7 +27,7 @@ kind `dth` (`smart-base/document-kinds/dth.json`), at the TWG-outline stage.
 
 | what | where | how it is made |
 |---|---|---|
-| the working document | `folio/dth-hrh/` | seeded once from the TWG outline by `tools/folio/build_from_outline.py`; **edited by hand from then on** — never re-run it without `--force`, which discards edits |
+| the working document | `folio/dth-hrh/` | seeded once from the TWG outline by `scripts/folio/build_from_outline.py`; **edited by hand from then on** — never re-run it without `--force`, which discards edits |
 | the glossary (Annex 9) | `glossary/*.glossary.json` (SKOS, `folio-glossary/v1`) and `folio/dth-hrh/glossary/` | `bun run glossary:build` from the TWG workbook; the chapter is generated — edit the glossary, not the chapter |
 | sources, frozen | `library/twg-outline-2026-10-02/`, `library/twg-glossary-2026-09-29/` | as received; never edited to answer a comment |
 | working-group comments and change sets | `review/wg-comment/` | the platform's public-comment tooling with `--store review/wg-comment` |

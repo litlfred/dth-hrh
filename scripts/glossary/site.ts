@@ -2,7 +2,7 @@
 /**
  * Write the glossary page of this folio's site: <out>/en/dth-hrh/glossary/index.html.
  *
- *   bun run tools/glossary/site.ts --out <site source dir>
+ *   bun run scripts/glossary/site.ts --out <site source dir>
  *
  * Reads glossary/*.glossary.json (folio-glossary/v1, validated with the
  * platform's GlossarySchema) and renders one page: the consolidated scheme's
@@ -21,7 +21,7 @@ const NS = "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/";
 const i = process.argv.indexOf("--out");
 const out = i > 0 ? resolve(process.argv[i + 1]) : undefined;
 if (!out) {
-  console.error("usage: bun run tools/glossary/site.ts --out <site source dir>");
+  console.error("usage: bun run scripts/glossary/site.ts --out <site source dir>");
   process.exit(2);
 }
 

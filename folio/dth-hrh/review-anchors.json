@@ -14,7 +14,7 @@
    "pages": 0
   }
  },
- "note": "Generated from the working document by tools/review/review-anchors.ts (no frozen review version yet).",
+ "note": "Generated from the working document by scripts/review/review-anchors.ts (no frozen review version yet).",
  "chapters": [
   {
    "dir": "about-this-draft",
@@ -4187,7 +4187,7 @@
    "sections": [
     "sec:glossary-lead"
    ],
-   "hash": "f1352c17024b",
+   "hash": "54b831ecc3b2",
    "excerpt": "This glossary covers health workforce terms. Digital terms are addressed separately. The working group's task is to agree a definition for each term, staying co",
    "method": "folio-snapshot"
   },

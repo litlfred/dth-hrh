@@ -88,7 +88,7 @@
   button.linklike { border: 0; padding: 0; min-height: 0; background: none; color: var(--link); text-decoration: underline; cursor: pointer; font: inherit; text-align: left; }
   h2:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
 </style>
-<link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-cg7fs3b09g.js" defer></script><script src="../../assets/js/navbar.js" defer></script><script src="../../assets/navbar/row-jhgovzdlm1.js" defer></script><link rel="stylesheet" href="../../assets/css/navbar-row.css"><script src="../../assets/js/navbar-row.js" defer></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../assets/js/docs-ui.js" defer data-fa-platform-ui></script></head>
+<link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-23j6d3zg3qo.js" defer></script><script src="../../assets/js/navbar.js" defer></script><script src="../../assets/navbar/row-jhgovzdlm1.js" defer></script><link rel="stylesheet" href="../../assets/css/navbar-row.css"><script src="../../assets/js/navbar-row.js" defer></script><script src="../../assets/js/vendor/lunr.min.js" defer></script><script src="../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../assets/page-layout.css" data-fa-page-layout><script src="../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../.."></head>
 <body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
 function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
 function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
@@ -139,7 +139,7 @@ function go(){
 measure();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
-})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-jhgovzdlm1"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-cg7fs3b09g"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-jhgovzdlm1"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-23j6d3zg3qo","here":"/en/review/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <div class="layout">
 <aside id="navpane" aria-label="Navigation"></aside>
 <main>
@@ -960,8 +960,23 @@ var renderMeasured = function renderMeasured(box, model) {
     d.appendChild(el("span", c.summary));
     if (r.anchoredFrom && r.anchoredFrom.length) d.appendChild(el("span", " (made on " + r.anchoredFrom.join(", ") + ")", "muted"));
     if (r.commentUrl) { d.appendChild(el("span", " ")); var a = el("a", "read on the pull request"); a.href = r.commentUrl; d.appendChild(a); }
+    // Deciding it is a pull-request comment too (bean 423d, owner 2026-10-15):
+    // the page is static and writes nothing. The words offered are the moves
+    // the review-comment table allows from this status; the build applies
+    // the tag for a repository owner, member or collaborator.
+    var next = DECIDE[c.status];
+    if (next && c.id) {
+      var h = el("div", null, "muted");
+      h.appendChild(el("span", "To decide it, comment "));
+      h.appendChild(el("code", "resolve: " + c.id, "tagline"));
+      h.appendChild(el("span", " with the line "));
+      next.forEach(function (w, i) { if (i) h.appendChild(el("span", i === next.length - 1 ? " or " : ", ")); h.appendChild(el("code", "decision: " + w, "tagline")); });
+      d.appendChild(h);
+    }
     return d;
   }
+  // From each status, the decisions the review-comment table allows (folio-assistant-core review-comment.ts).
+  var DECIDE = { open: ["addressed", "adjudicated", "withdrawn"], addressed: ["resolved", "reopened", "adjudicated", "withdrawn"] };
   function commentList(cs) {
     var box = el("div", null, "comments");
     cs.forEach(function (c) { box.appendChild(commentEl(c)); });
@@ -1236,7 +1251,7 @@ var renderMeasured = function renderMeasured(box, model) {
         section("Orphaned: the block these were made on is gone", rc.comments
           .filter(function (c) { return c.review && c.review.orphaned; })
           .map(function (c) { var d = el("div"); d.appendChild(el("span", c.targetLabel, "label")); d.appendChild(commentList([c])); return d; }));
-        section("Comments whose tag could not be read", rc.malformed.map(function (m) {
+        section("Tags that could not be read or applied", rc.malformed.map(function (m) {
           var d = el("div");
           d.appendChild(el("span", m.error + " "));
           var a = el("a", "fix it on the pull request"); a.href = m.url; d.appendChild(a);

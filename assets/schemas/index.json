@@ -68282,6 +68282,98 @@
       "exported": true
     },
     {
+      "id": "folio-assistant-core/schemas/review-comment.ts#DecisionResult",
+      "name": "DecisionResult",
+      "module": "folio-assistant-core/schemas/review-comment.ts",
+      "kind": "interface",
+      "fields": [
+        {
+          "name": "comments",
+          "type": "ReviewComment[]",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "applied",
+          "type": "string[]",
+          "optional": false,
+          "array": true,
+          "doc": "Decisions applied by this run, as `<decision comment id> → <review comment id>: <status>`."
+        },
+        {
+          "name": "refused",
+          "type": "Array<{ commentId: number; url: string; error: string }>",
+          "optional": false,
+          "array": false,
+          "doc": "A decision tag that could not be applied, and why: said, never silently dropped."
+        },
+        {
+          "name": "tagged",
+          "type": "number",
+          "optional": false,
+          "array": false,
+          "doc": "How many PR comments carried a decision tag, so they are not counted as conversation."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/review-comment.ts#ReviewComment"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/review-comment.ts#DecisionTag",
+      "name": "DecisionTag",
+      "module": "folio-assistant-core/schemas/review-comment.ts",
+      "kind": "interface",
+      "fields": [
+        {
+          "name": "target",
+          "type": "string",
+          "optional": false,
+          "array": false,
+          "doc": "The review comment's id."
+        },
+        {
+          "name": "decision",
+          "type": "DecisionWord",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "optional": false,
+          "array": false,
+          "doc": "Everything after the header, trimmed: the reason."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/review-comment.ts#DecisionWord"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/review-comment.ts#DecisionWord",
+      "name": "DecisionWord",
+      "module": "folio-assistant-core/schemas/review-comment.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "folio-assistant-core/schemas/review-comment.ts#IngestResult",
       "name": "IngestResult",
       "module": "folio-assistant-core/schemas/review-comment.ts",
@@ -68360,6 +68452,13 @@
           "type": "string",
           "optional": false,
           "array": false
+        },
+        {
+          "name": "association",
+          "type": "string",
+          "optional": true,
+          "array": false,
+          "doc": "GitHub's `author_association`: OWNER, MEMBER, COLLABORATOR, CONTRIBUTOR, NONE… Absent when not known."
         }
       ],
       "extendsNames": [],
@@ -68661,6 +68760,13 @@
           "optional": true,
           "array": false,
           "doc": "The 9gyz Decision that closed it. Required once resolved or adjudicated."
+        },
+        {
+          "name": "decisions",
+          "type": "z.array(z.number().int().positive()).default([])",
+          "optional": true,
+          "array": true,
+          "doc": "The PR conversation comments whose `resolve:` tag has moved this comment"
         }
       ],
       "extendsNames": [],
@@ -79751,6 +79857,22 @@
       "via": "provenance",
       "kind": "field",
       "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/review-comment.ts#DecisionResult",
+      "to": "folio-assistant-core/schemas/review-comment.ts#ReviewComment",
+      "via": "comments",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/review-comment.ts#DecisionTag",
+      "to": "folio-assistant-core/schemas/review-comment.ts#DecisionWord",
+      "via": "decision",
+      "kind": "field",
+      "optional": false,
       "array": false
     },
     {

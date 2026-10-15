@@ -2621,6 +2621,21 @@
       "isTest": false
     },
     {
+      "module": "folio-assistant-core/schemas/manifest-fields.test.ts",
+      "instance": "folio-assistant-core",
+      "name": "manifest-fields.test",
+      "graphNode": "undeclared",
+      "isTest": true
+    },
+    {
+      "module": "folio-assistant-core/schemas/manifest-fields.ts",
+      "instance": "folio-assistant-core",
+      "name": "manifest-fields",
+      "graphNode": "undeclared",
+      "summary": "A block manifest's fields, read from its TEXT: the object literal passed to",
+      "isTest": false
+    },
+    {
       "module": "folio-assistant-core/schemas/masked-region.test.ts",
       "instance": "folio-assistant-core",
       "name": "masked-region.test",
@@ -65429,6 +65444,49 @@
       "exported": true
     },
     {
+      "id": "folio-assistant-core/schemas/changeset.ts#ChangeSetStructure",
+      "name": "ChangeSetStructure",
+      "module": "folio-assistant-core/schemas/changeset.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/changeset.ts#ChangeSetStructureSchema",
+      "name": "ChangeSetStructureSchema",
+      "module": "folio-assistant-core/schemas/changeset.ts",
+      "kind": "zod-object",
+      "doc": "`changeset-structure.json`: for every block the ChangeSet lists whose kind",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(CHANGESET_STRUCTURE_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "blocks",
+          "type": "z.record( z.string(), z.object({ kind: z.string(), base: z.record(z.string(), z.string()).optional(), head: z.record(z.…",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "CHANGESET_STRUCTURE_SCHEMA",
+        "z"
+      ],
+      "exported": true
+    },
+    {
       "id": "folio-assistant-core/schemas/changeset.ts#ChangeSetText",
       "name": "ChangeSetText",
       "module": "folio-assistant-core/schemas/changeset.ts",
@@ -65506,6 +65564,13 @@
           "optional": true,
           "array": false,
           "doc": "A ref, or {@link WORKTREE} (the default) for the files on disk."
+        },
+        {
+          "name": "builders",
+          "type": "ReadonlyMap<string, string>",
+          "optional": true,
+          "array": false,
+          "doc": "The contributed builders, so contributed (DAK) blocks are blocks too. See {@link snapshot}."
         }
       ],
       "extendsNames": [],
@@ -65581,6 +65646,13 @@
           "type": "string[]",
           "optional": false,
           "array": true
+        },
+        {
+          "name": "fields",
+          "type": "ManifestFields",
+          "optional": true,
+          "array": false,
+          "doc": "A contributed (structured) kind's manifest fields, read as text (bean f327). Never serialised."
         }
       ],
       "extendsNames": [
@@ -65588,7 +65660,8 @@
       ],
       "values": [],
       "refs": [
-        "folio-assistant-core/schemas/changeset.ts#BlockAt"
+        "folio-assistant-core/schemas/changeset.ts#BlockAt",
+        "folio-assistant-core/schemas/manifest-fields.ts#ManifestFields"
       ],
       "unresolved": [],
       "external": [],
@@ -66675,6 +66748,33 @@
       "unresolved": [],
       "external": [],
       "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/manifest-fields.ts#ManifestFields",
+      "name": "ManifestFields",
+      "module": "folio-assistant-core/schemas/manifest-fields.ts",
+      "kind": "type-alias",
+      "doc": "A field path (`meta.source.file`, `uses[0]`) → its value as a reader sees it.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/manifest-fields.ts#Value",
+      "name": "Value",
+      "module": "folio-assistant-core/schemas/manifest-fields.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
     },
     {
       "id": "folio-assistant-core/schemas/materialization.ts#CompiledInputs",
@@ -79494,6 +79594,14 @@
       "via": "",
       "kind": "extends",
       "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/changeset.ts#Snap",
+      "to": "folio-assistant-core/schemas/manifest-fields.ts#ManifestFields",
+      "via": "fields",
+      "kind": "field",
+      "optional": true,
       "array": false
     },
     {

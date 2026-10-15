@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b",
+          "ref": "80bfe56333193cd19a3211520ae44989b24c3b94",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
+              "ref": "80bfe56333193cd19a3211520ae44989b24c3b94",
+              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "40e08dbf3bc6e236ba3ab1933cef25307bd1653b",
+          "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -72,8 +72,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "40e08dbf3bc6e236ba3ab1933cef25307bd1653b",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
+              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98",
+          "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
+              "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
+              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
+          "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
+              "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6",
+              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
         }

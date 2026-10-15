@@ -4,12 +4,12 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b"
+      "ref": "80bfe56333193cd19a3211520ae44989b24c3b94"
     },
     {
       "harness": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "ref": "40e08dbf3bc6e236ba3ab1933cef25307bd1653b"
+      "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68"
     },
     {
       "harness": "folio-assistant-core",
@@ -19,12 +19,12 @@
     {
       "harness": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98"
+      "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e"
     },
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7"
+      "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6"
     },
     {
       "harness": "bootstrap",
@@ -99,7 +99,7 @@
     {
       "instance": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "sha": "4d35fe53c6661871f326c49345394f4dfdb49c98",
+      "sha": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
       "upstreamRoot": "",
       "path": "cat-harness",
       "via": "cat-harness",
@@ -113,22 +113,22 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "41c10e3ab59a5eea19c46146c0cf6c6cc964c755b3dd40c0d04efe07aadaa076",
-          "files": 13718
+          "treeDigest": "b47287ea9c7c3c0b8c4c381abd84c0aaf0912b4316a719e42f0beaa2e5bf5204",
+          "files": 13747
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-15",
-        "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98",
+        "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
         "approver": "unverified"
       }
     },
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
+      "sha": "99ca018e44f4b60677a063677cfcd19c4940adf6",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
@@ -142,22 +142,22 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "4996ea8deda6083aa768ea249739e5041442bfc8bfb881b657b05a05722af647",
-          "files": 2435
+          "treeDigest": "e0a0668a9c9be4b2c213175c600e7ba9781bf8de1318efa5fc1aab0ce0983468",
+          "files": 2439
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-15",
-        "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
+        "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6",
         "approver": "unverified"
       }
     },
     {
       "instance": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "sha": "40e08dbf3bc6e236ba3ab1933cef25307bd1653b",
+      "sha": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
       "upstreamRoot": "",
       "path": "fhir-harness",
       "via": "fhir-harness",
@@ -171,7 +171,7 @@
           "id": "*",
           "path": "fhir-harness",
           "upstreamPath": ".",
-          "treeDigest": "bda46c15935bec2c5027e65436375c441c77ba243ef261024c15533bdd79fdec",
+          "treeDigest": "84f14ec95792858748a1bc7c2e8abc6d97d547d2126967156af2d1ffc175735d",
           "files": 532
         }
       ],
@@ -179,7 +179,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-15",
-        "ref": "40e08dbf3bc6e236ba3ab1933cef25307bd1653b",
+        "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
         "approver": "unverified"
       }
     },
@@ -215,7 +215,7 @@
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "2a80d31ddda913c7919fe74b33d43762cf02928b",
+      "sha": "80bfe56333193cd19a3211520ae44989b24c3b94",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -412,7 +412,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-15",
-        "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b",
+        "ref": "80bfe56333193cd19a3211520ae44989b24c3b94",
         "approver": "unverified"
       }
     }

@@ -2113,6 +2113,22 @@
       "isTest": false
     },
     {
+      "module": "cat-harness/schemas/tool-folders.test.ts",
+      "instance": "cat-harness",
+      "name": "tool-folders.test",
+      "graphNode": "undeclared",
+      "summary": "A Tool's own IRI sits beside its instance document (bean `tdir`).",
+      "isTest": true
+    },
+    {
+      "module": "cat-harness/schemas/tool-folders.ts",
+      "instance": "cat-harness",
+      "name": "tool-folders",
+      "graphNode": "undeclared",
+      "summary": "One Tool per folder: `<tools dir>/<id>/<id>.ts`, and the loader that reads them.",
+      "isTest": false
+    },
+    {
       "module": "cat-harness/schemas/tool-invocation.ts",
       "instance": "cat-harness",
       "name": "tool-invocation",
@@ -52542,6 +52558,34 @@
       "exported": true
     },
     {
+      "id": "cat-harness/schemas/tool-folders.ts#ToolFactory",
+      "name": "ToolFactory",
+      "module": "cat-harness/schemas/tool-folders.ts",
+      "kind": "type-alias",
+      "doc": "What `<tools dir>/<id>/<id>.ts` default-exports: given the type minter and",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness/schemas/tool-folders.ts#TypeIri",
+      "name": "TypeIri",
+      "module": "cat-harness/schemas/tool-folders.ts",
+      "kind": "type-alias",
+      "doc": "Mint the IRI of one shared I/O type against the publication base.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness/schemas/tool-invocation.ts#InvocationAuthority",
       "name": "InvocationAuthority",
       "module": "cat-harness/schemas/tool-invocation.ts",
@@ -54597,7 +54641,8 @@
           "name": "shell",
           "type": "z.string().optional()",
           "optional": true,
-          "array": false
+          "array": false,
+          "doc": "The command a caller types, from the repository root."
         },
         {
           "name": "container",

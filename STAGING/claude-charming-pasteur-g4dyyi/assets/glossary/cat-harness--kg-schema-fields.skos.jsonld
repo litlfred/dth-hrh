@@ -34081,6 +34081,25 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/cat-harness/0.1.0/ns#glossary/kg-schema-fields/tool.toolinvokeschema.shell",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/cat-harness/0.1.0/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "ToolInvokeSchema.shell"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The command a caller types, from the repository root."
+        }
+      ],
+      "dcterms:source": "cat-harness/schemas/tool.ts#ToolInvokeSchema.shell",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/cat-harness/0.1.0/ns#glossary/kg-schema-fields/tool.toolmaintainsschema.artefact",
       "@type": "skos:Concept",
       "skos:inScheme": {

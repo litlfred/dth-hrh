@@ -560,33 +560,33 @@
   them: those are versioned in their own URLs already.
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/navbar-row.css?v=1792091342">
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/docs-ui.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/navbar-row.css?v=1792096875">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/docs-ui.css?v=1792096875">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/narrow-viewport.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/narrow-viewport.css?v=1792096875">
 
 <!--
   The work-plan dashboard's styles, split from docs-ui.css so that
   `state-visualizer.ts` can inline exactly these bytes into the generated
   `<base>/<stub>/state-visualizer/` pages. One rule, two surfaces.
 -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/work-plan.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/work-plan.css?v=1792096875">
 <!-- Sticky themes. GENERATED from the theme nodes in `schemas/themes.ts` by
      `bun run cat themes:css`; `themes:css:check` fails the build when it is stale.
      Loaded AFTER docs-ui.css deliberately: it supplies the `--fa-sticky-*`
      roles that docs-ui.css consumes, and a custom property has to be set on a
      matching element before the rule reading it takes effect. -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/themes.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/themes.css?v=1792096875">
 <!-- UML overview colours: one class per graph typology, set on the Mermaid nodes
      that `scripts/gen-uml-overview.ts` writes into docs/uml/overview/. -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/uml.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/uml.css?v=1792096875">
 <!-- Kind avatars. GENERATED from `schemas/avatars.ts` by `bun run cat avatars:css`;
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/avatars.css?v=1792091342">
+<link rel="stylesheet" href="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/css/avatars.css?v=1792096875">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -607,12 +607,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/navbar-row.js?v=1792091342" defer></script>
-<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/docs-ui.js?v=1792091342" defer></script>
+<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/navbar-row.js?v=1792096875" defer></script>
+<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/docs-ui.js?v=1792096875" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/edit-links.js?v=1792091342" defer></script>
+<script src="/dth-hrh/STAGING/claude-charming-pasteur-g4dyyi/assets/js/edit-links.js?v=1792096875" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -697,7 +697,7 @@
   is broken when it is doing exactly what it can.
 -->
 
-<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-23j6d3zg3qo.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../../.."></head>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1vyqy49ses0.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../../.."></head>
 
 <body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
 function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
@@ -749,7 +749,7 @@ function go(){
 measure();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
-})();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-23j6d3zg3qo","here":"/cat-harness/auto-docs/index/docs/docs/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
+})();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1vyqy49ses0","here":"/cat-harness/auto-docs/index/docs/docs/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="svg-link" viewBox="0 0 24 24">
@@ -928,7 +928,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </div>
 
 <ul class="subs">
-<li><strong>docs</strong> <span class="p">cat-harness/docs</span> <span class="n">366</span></li>
+<li><strong>docs</strong> <span class="p">cat-harness/docs</span> <span class="n">357</span></li>
 <li><a href="../docs-source/">docs-source</a> <span class="p">cat-harness/docs/source</span> <span class="n">172</span></li>
 <li><a href="../folio-assistant-core-docs/">folio-assistant-core-docs</a> <span class="p">folio-assistant-core/docs</span> <span class="n">2</span></li>
 <li><a href="../site-chrome/">site-chrome</a> <span class="p">cat-harness/site-chrome</span> <span class="n">13</span></li>
@@ -962,14 +962,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/architecture/sdlc-agentic-coverage.md"><code>sdlc-agentic-coverage</code></a><br><span class="p">cat-harness/docs/architecture/sdlc-agentic-coverage.md</span></td>
-  <td><span class="none">no description in the artefact</span></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/assets/library/jsonld/smart-base/9789240116191-eng/l1-extraction/extraction-warnings.md"><code>extraction-warnings</code></a><br><span class="p">cat-harness/docs/assets/library/jsonld/smart-base/9789240116191-eng/l1-extraction/extraction-warnings.md</span></td>
-  <td><span class="none">no description in the artefact</span></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/assets/library/jsonld/smart-base/9789240116191-eng/l1-extraction/scenarios/scenario-warnings.md"><code>scenario-warnings</code></a><br><span class="p">cat-harness/docs/assets/library/jsonld/smart-base/9789240116191-eng/l1-extraction/scenarios/scenario-warnings.md</span></td>
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>
@@ -1553,14 +1545,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/lsi/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/lsi/index.md</span></td>
-  <td>&quot;Every published LSI index over a declared prose graph — its latent dimensions, its findings, and which graphs still need one.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/methodologies/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/methodologies/index.md</span></td>
-  <td>&quot;The methodologies this repository has adopted — what each is for, where it came from, and whether the source it rests on is held here.&quot;</td>
-</tr>
-<tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/node-kind-index/cat-harness/docs/_data/node-kinds/index.html"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/node-kind-index/cat-harness/docs/_data/node-kinds/index.html</span></td>
   <td><span class="none">no description in the artefact</span></td>
 </tr>
@@ -1574,42 +1558,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/todo/index.html"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/todo/index.html</span></td>
-  <td><span class="none">no description in the artefact</span></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/cat-harness-tools/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/cat-harness-tools/index.md</span></td>
-  <td>&quot;The Tool nodes cat-harness-tools declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/cat-harness/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/cat-harness/index.md</span></td>
-  <td>&quot;The Tool nodes cat-harness declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/fhir-harness/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/fhir-harness/index.md</span></td>
-  <td>&quot;The Tool nodes fhir-harness declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/folio-assistant-core/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/folio-assistant-core/index.md</span></td>
-  <td>&quot;The Tool nodes folio-assistant-core declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/folio-assistant-sci/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/folio-assistant-sci/index.md</span></td>
-  <td>&quot;The Tool nodes folio-assistant-sci declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/index.md</span></td>
-  <td>&quot;The Tool nodes every instance in this checkout declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/smart-base/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/smart-base/index.md</span></td>
-  <td>&quot;The Tool nodes smart-base declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/tools/who-iris/index.md"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/tools/who-iris/index.md</span></td>
-  <td>&quot;The Tool nodes who-iris declares — how each is installed and invoked, and which skill it satisfies.&quot;</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/en/cat-harness/translation-status/index.html"><code>index</code></a><br><span class="p">cat-harness/docs/en/cat-harness/translation-status/index.html</span></td>
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>
@@ -2337,11 +2285,27 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-code/as-is.html"><code>as-is</code></a><br><span class="p">cat-harness/docs/wireframes/state-code/as-is.html</span></td>
+  <td>As-is wireframe: an instance's code directories</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-code/intent.md"><code>intent</code></a><br><span class="p">cat-harness/docs/wireframes/state-code/intent.md</span></td>
+  <td><span class="none">no description in the artefact</span></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-dashboard/as-is.html"><code>as-is</code></a><br><span class="p">cat-harness/docs/wireframes/state-dashboard/as-is.html</span></td>
   <td>As-is wireframe: a state graph's dashboard</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-dashboard/intent.md"><code>intent</code></a><br><span class="p">cat-harness/docs/wireframes/state-dashboard/intent.md</span></td>
+  <td><span class="none">no description in the artefact</span></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-registry/as-is.html"><code>as-is</code></a><br><span class="p">cat-harness/docs/wireframes/state-registry/as-is.html</span></td>
+  <td>As-is wireframe: a harness registry, one page per instance</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/docs/wireframes/state-registry/intent.md"><code>intent</code></a><br><span class="p">cat-harness/docs/wireframes/state-registry/intent.md</span></td>
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>

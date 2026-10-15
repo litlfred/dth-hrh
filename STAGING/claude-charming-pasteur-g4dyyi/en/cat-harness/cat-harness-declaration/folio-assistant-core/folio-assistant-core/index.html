@@ -476,7 +476,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     }
   }
 ]</pre></dd>
-<dt>_visualisers_comment</dt><dd>THE VISUALISERS THIS HARNESS DECLARES, at its own level (owner, 2026-10-09: &quot;I still want the harness to be where specific visualizers/pages are declared for the harness at the level … Need harness to declare visualizer is renderedBy&quot;). Until then the glossary directory named its page (`coverage.visualiser: cat-harness/docs/glossary/index.md`) — a page in another layer&#39;s tree at a URL nothing derived. The page is now at &lt;base&gt;/folio-assistant-core/glossary/, computed by visualiserRoute from this entry, drawn by the `glossary-page` Tool (scripts/glossary-page.ts), with &lt;base&gt;/glossary/ kept as its declared alias so no existing link breaks. It covers the glossary KIND rather than this instance&#39;s directory by id (bean folio-assistant-1nu0, owner 2026-10-15): the page already reads every instance&#39;s glossary directory, so who-iris&#39;s glossary row opens it rather than reading &quot;no viewer yet&quot;.</dd>
+<dt>_visualisers_comment</dt><dd>THE VISUALISERS THIS HARNESS DECLARES, at its own level (owner, 2026-10-09: &quot;I still want the harness to be where specific visualizers/pages are declared for the harness at the level … Need harness to declare visualizer is renderedBy&quot;). Until then the glossary directory named its page (`coverage.visualiser: cat-harness/docs/glossary/index.md`) — a page in another layer&#39;s tree at a URL nothing derived. The page is now at &lt;base&gt;/folio-assistant-core/glossary/, computed by visualiserRoute from this entry, drawn by the `glossary-page` Tool (scripts/glossary-page.ts), with &lt;base&gt;/glossary/ kept as its declared alias so no existing link breaks. It covers the glossary KIND rather than this instance&#39;s directory by id (bean folio-assistant-1nu0, owner 2026-10-15): the page already reads every instance&#39;s glossary directory, so who-iris&#39;s glossary row opens it rather than reading &quot;no viewer yet&quot;. Since owner choice &quot;3a&quot; (2026-10-15) each instance&#39;s tile opens ITS OWN page, &lt;base&gt;/folio-assistant-core/glossary/instance/&lt;instance&gt;/ — `subgraphs: &quot;instance&quot;` nested under the declared `subgraphUnder` path `instance/`, so a sub-graph page cannot collide with the per-asset-type pages (glossary/skills/, glossary/tools/, …); the shared page stays the index.</dd>
 <dt>visualisers</dt><dd><pre>[
   {
     &quot;id&quot;: &quot;glossary&quot;,
@@ -484,6 +484,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     &quot;coversKinds&quot;: [
       &quot;glossary&quot;
     ],
+    &quot;subgraphs&quot;: &quot;instance&quot;,
+    &quot;subgraphUnder&quot;: {
+      &quot;glossary&quot;: &quot;instance&quot;
+    },
     &quot;title&quot;: &quot;Glossary&quot;,
     &quot;alias&quot;: &quot;glossary&quot;
   },

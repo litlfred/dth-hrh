@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "08af3ae4a414881d5142f1a0febcc84e8b3e059a",
+          "ref": "ef2f3adbe22057878978cc7dd0d84de791561f4c",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "08af3ae4a414881d5142f1a0febcc84e8b3e059a",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
+              "ref": "ef2f3adbe22057878978cc7dd0d84de791561f4c",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the final 08:45 check."
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "40bb0aff90d99a8af02f2d99bb3f1f9c54b0e133",
+          "ref": "377e24c806938971651fb039d8f678dc0716a02a",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -72,8 +72,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "40bb0aff90d99a8af02f2d99bb3f1f9c54b0e133",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 08:20 check."
+              "ref": "377e24c806938971651fb039d8f678dc0716a02a",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the final 08:45 check."
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "0cae8593aa87412c6b92b1cb4a51d8920e25d3c2",
+          "ref": "2c651f6095d84fcf2b57ce76675fb3b10b9e0528",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "0cae8593aa87412c6b92b1cb4a51d8920e25d3c2",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
+              "ref": "2c651f6095d84fcf2b57ce76675fb3b10b9e0528",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the final 08:45 check."
             }
           }
         }

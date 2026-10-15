@@ -2,12 +2,12 @@
 """Seed the working document folio from the TWG manuscript outline.
 
 Usage:
-    python3 -I tools/folio/build_from_outline.py <outline.md> [--force]
+    python3 -I scripts/folio/build_from_outline.py <outline.md> [--force]
 
 Reads library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md and writes
 folio/dth-hrh/: the document manifest, one directory per chapter, and one
 block (a .ts manifest and a .md body) per piece of the outline. The glossary
-chapter is written by tools/glossary/build_glossary.py, not here.
+chapter is written by scripts/glossary/build_glossary.py, not here.
 
 This is a ONE-TIME SEED. After it, the folio is the working document and is
 edited by hand. The script refuses to overwrite a chapter directory that
@@ -462,7 +462,7 @@ def main():
  * because labels, uses[], feedback and QA sidecars all key on names.
  *
  * Seeded from the TWG manuscript outline (2026-10-02) by
- * tools/folio/build_from_outline.py; edited by hand from then on.
+ * scripts/folio/build_from_outline.py; edited by hand from then on.
  */
 export default paper({{
   title: {json.dumps(TITLE)},

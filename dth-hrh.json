@@ -67,14 +67,14 @@
       "graphTypologies": [
         "glossary"
       ],
-      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by tools/glossary/build_glossary.py.",
+      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by scripts/glossary/build_glossary.py.",
       "coverage": {
         "visualiser": [
           {
             "ref": "en/dth-hrh/glossary/index.html",
             "title": "Glossary",
             "writer": [
-              "tools/glossary/site.ts"
+              "scripts/glossary/site.ts"
             ]
           }
         ]

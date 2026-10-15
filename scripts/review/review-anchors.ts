@@ -2,7 +2,7 @@
 /**
  * Write folio/dth-hrh/review-anchors.json from the working document itself.
  *
- *   bun run tools/review/review-anchors.ts [--check]
+ *   bun run scripts/review/review-anchors.ts [--check]
  *
  * In smart-ra the anchors come from the frozen review version (a line-numbered
  * PDF and its .docx, via docx-to-folio.ts), and every public comment is placed
@@ -82,7 +82,7 @@ const anchors = {
     docx: { file: OUTLINE, sha256: sha(OUTLINE) },
     pdf: { file: "", sha256: "", pages: 0 },
   },
-  note: "Generated from the working document by tools/review/review-anchors.ts (no frozen review version yet).",
+  note: "Generated from the working document by scripts/review/review-anchors.ts (no frozen review version yet).",
   chapters,
   sections,
   blocks,
@@ -90,7 +90,7 @@ const anchors = {
 const text = JSON.stringify(anchors, null, 1) + "\n";
 if (process.argv.includes("--check")) {
   const ok = existsSync(OUT) && readFileSync(OUT, "utf-8") === text;
-  console.log(ok ? "✓ review-anchors.json is current" : "✗ review-anchors.json is stale: run bun run tools/review/review-anchors.ts");
+  console.log(ok ? "✓ review-anchors.json is current" : "✗ review-anchors.json is stale: run bun run scripts/review/review-anchors.ts");
   process.exit(ok ? 0 : 1);
 }
 writeFileSync(OUT, text);

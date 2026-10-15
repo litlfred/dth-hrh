@@ -47,3 +47,4 @@ review/wg-comment/raw/
 
 # Written by the site build (sync-docs-harness), never committed
 docs/_data/
+__pycache__/

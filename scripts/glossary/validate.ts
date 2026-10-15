@@ -4,7 +4,7 @@
  * folio-glossary/v1 schema, and check every `related` IRI that points into
  * this instance's namespace names a term (or scheme) that exists.
  *
- *   bun run tools/glossary/validate.ts
+ *   bun run scripts/glossary/validate.ts
  */
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";

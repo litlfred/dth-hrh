@@ -4,4 +4,4 @@ The working group's task is to agree a definition for each term, staying consist
 
 Each entry below lists the candidate definitions proposed in the TWG glossary workbook (29 September 2026), each with its source. Comment on the entry: say which candidate you prefer, or propose an edited or new definition. Some definitions and sources in the workbook were generated with AI and may need correction.
 
-The machine-readable form is in `glossary/` (SKOS concept schemes). This chapter is generated from it by `tools/glossary/build_glossary.py`; edit the glossary, not this chapter.
+The machine-readable form is in `glossary/` (SKOS concept schemes). This chapter is generated from it by `scripts/glossary/build_glossary.py`; edit the glossary, not this chapter.

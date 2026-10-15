@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "6979bf8dac69d445c37027692c1b638557076f65",
+          "ref": "08af3ae4a414881d5142f1a0febcc84e8b3e059a",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "6979bf8dac69d445c37027692c1b638557076f65",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "08af3ae4a414881d5142f1a0febcc84e8b3e059a",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "7ceb95fd37f01acd1b8e124a3d7aff4b65daefc0",
+          "ref": "0cae8593aa87412c6b92b1cb4a51d8920e25d3c2",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "7ceb95fd37f01acd1b8e124a3d7aff4b65daefc0",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "0cae8593aa87412c6b92b1cb4a51d8920e25d3c2",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
+          "ref": "7c2daaa6c78653b5980de6acb2334e01bf3ba6ee",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "7c2daaa6c78653b5980de6acb2334e01bf3ba6ee",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
+          "ref": "f94bae41e57ba1a8ace840ba88e5f76f92b69182",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "f94bae41e57ba1a8ace840ba88e5f76f92b69182",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }
@@ -165,7 +165,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "3dff0263ab5db5788d15e406358925bf659ebf06",
+          "ref": "bc304e8971f7c34d94cd75f5e17d0c4932c1f0a5",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -175,8 +175,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "3dff0263ab5db5788d15e406358925bf659ebf06",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "bc304e8971f7c34d94cd75f5e17d0c4932c1f0a5",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }
@@ -187,7 +187,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "052f428da9a70e9aa3ee5fb85fc71274cb6d3e6c",
+          "ref": "94e51ae297ea039cf5f3b5055e01c85149578f48",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -200,8 +200,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "052f428da9a70e9aa3ee5fb85fc71274cb6d3e6c",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
+              "ref": "94e51ae297ea039cf5f3b5055e01c85149578f48",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): layers re-pinned to their current main at the 07:20 check."
             }
           }
         }

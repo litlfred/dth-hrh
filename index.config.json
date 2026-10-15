@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "11386316eaad179daf85b93e27bd5af409e8c063",
+          "ref": "41ed9b217b4539c80345ad6b3a7b01a32b36ceee",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "11386316eaad179daf85b93e27bd5af409e8c063",
-              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "ref": "41ed9b217b4539c80345ad6b3a7b01a32b36ceee",
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -73,7 +73,7 @@
               "by": "litlfred",
               "on": "2026-10-15",
               "ref": "4c7fa7ba11bad9172b45cf93c7b8821efe970d60",
-              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b0424082e3780a2e3886111d6124184517810c5f",
+          "ref": "f412c113e5eae7b7d5eaff5188005dd3bd0315ff",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "b0424082e3780a2e3886111d6124184517810c5f",
-              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "ref": "f412c113e5eae7b7d5eaff5188005dd3bd0315ff",
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -129,7 +129,7 @@
               "by": "litlfred",
               "on": "2026-10-15",
               "ref": "5463bf121d472bbda817c6e0a4a73a2945793164",
-              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "46d209524832c61ea598bd08be0e620a6f6a947e",
+          "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "46d209524832c61ea598bd08be0e620a6f6a947e",
-              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -176,7 +176,7 @@
               "by": "litlfred",
               "on": "2026-10-15",
               "ref": "9ecfb729b38b9196063fee76c6f7932f92502353",
-              "evidence": "Re-pin bootstrap to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~20:29Z)"
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }
@@ -201,7 +201,7 @@
               "by": "litlfred",
               "on": "2026-10-15",
               "ref": "7dc55773590bbc3158c877a3d61222aa7864006c",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
             }
           }
         }

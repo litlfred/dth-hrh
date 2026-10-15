@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "ea3e26e3c67c7f017a715a3c3ce1c607c0fefb1b",
+          "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "ea3e26e3c67c7f017a715a3c3ce1c607c0fefb1b",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): final check."
+              "ref": "2a80d31ddda913c7919fe74b33d43762cf02928b",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "08ce41b1f9dc321d725c712bf84405a7002bc8ec",
+          "ref": "ec456ccfe2a179bb03aecfc73eb37b93c20a0c39",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "08ce41b1f9dc321d725c712bf84405a7002bc8ec",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "ec456ccfe2a179bb03aecfc73eb37b93c20a0c39",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "62687063ec0e14a02cc6578ae720cd23dc6c719f",
+          "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "62687063ec0e14a02cc6578ae720cd23dc6c719f",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "4d35fe53c6661871f326c49345394f4dfdb49c98",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "a7aeec3b47bd5dc1e39fd7f3a25e0d3c3df71768",
+          "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "a7aeec3b47bd5dc1e39fd7f3a25e0d3c3df71768",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): final check."
+              "ref": "94e1f81841f938d72778a75632c0fa5ccbc7e3d7",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
             }
           }
         }
@@ -165,7 +165,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c022d5c90954763d15fe40cf7c04e1210d2382f6",
+          "ref": "caab56402eef8b0a0e4d56344c77568413576c1a",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -175,8 +175,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "c022d5c90954763d15fe40cf7c04e1210d2382f6",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "caab56402eef8b0a0e4d56344c77568413576c1a",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
             }
           }
         }

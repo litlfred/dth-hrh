@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "96e43858f0e190380a571469ced640957f2916e6",
+          "ref": "55570bd37a197b2363cc37e8c72c3bce16622d66",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "96e43858f0e190380a571469ced640957f2916e6",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC): layers re-pinned to their current main."
+              "ref": "55570bd37a197b2363cc37e8c72c3bce16622d66",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI')."
             }
           }
         }

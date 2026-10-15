@@ -6,21 +6,16 @@
       "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
     }
   ],
-  "@id": "papers/dth-hrh/blocks/prose-ch01-figures",
+  "@id": "papers/dth-hrh/blocks/prose-ch01-register-not-registry",
   "@type": [
     "folio-assistant-core:Prose",
     "doco:Section"
   ],
-  "label": "prose:ch01-figures",
+  "label": "prose:ch01-register-not-registry",
   "kind": "prose",
-  "text": "p-ch01-figures.md",
+  "text": "p-ch01-register-not-registry.md",
   "meta": {
-    "source": {
-      "library": "twg-outline-2026-10-02",
-      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "method": "outline-seed"
-    },
-    "title": "Suggested figures and tables"
+    "title": "A register is not a registry"
   },
   "provenance": "authored"
 }

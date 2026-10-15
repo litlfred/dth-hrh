@@ -25,7 +25,7 @@ export default chapter({
     section({
       title: "1.3 Registry as digital public infrastructure",
       label: "sec:1-3",
-      blocks: ["p-ch01-registry-as-digital-public-infrastructur"],
+      blocks: ["p-ch01-registry-as-digital-public-infrastructur", "p-ch01-register-not-registry"],
     }),
     section({
       title: "1.4 Benefits and outcomes",
@@ -35,7 +35,7 @@ export default chapter({
     section({
       title: "Figures, tools and expected outputs",
       label: "sec:ch01-planned",
-      blocks: ["p-ch01-figures", "p-ch01-tools", "p-ch01-outputs"],
+      blocks: ["p-ch01-outputs", "p-ch01-tools"],
     }),
   ],
 });

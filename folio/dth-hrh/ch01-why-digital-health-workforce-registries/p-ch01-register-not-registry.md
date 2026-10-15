@@ -1,0 +1,1 @@
+A *register* is a list a body keeps for its own purpose, such as a council's roll of licensed nurses. A *registry*, in this handbook, is the shared, authoritative service that brings those lists together under one identity for each health worker, so that every system that needs the record reads the same one.

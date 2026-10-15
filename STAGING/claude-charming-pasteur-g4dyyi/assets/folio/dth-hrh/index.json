@@ -4139,7 +4139,7 @@
         },
         {
           "path": "dth-hrh/dth-hrh.ts",
-          "bytes": 2423,
+          "bytes": 2425,
           "size": "2.4 KB"
         },
         {
@@ -4879,7 +4879,7 @@
         },
         {
           "path": "dth-hrh/glossary/glossary.ts",
-          "bytes": 2208,
+          "bytes": 2210,
           "size": "2.2 KB"
         },
         {
@@ -4889,8 +4889,8 @@
         },
         {
           "path": "dth-hrh/glossary/p-glossary-about.md",
-          "bytes": 959,
-          "size": "959 B"
+          "bytes": 961,
+          "size": "961 B"
         },
         {
           "path": "dth-hrh/glossary/p-glossary-about.ts",
@@ -4984,7 +4984,7 @@
         },
         {
           "path": "dth-hrh/review-anchors.json",
-          "bytes": 158731,
+          "bytes": 158733,
           "size": "155.0 KB"
         },
         {

@@ -10,7 +10,7 @@
       "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Human Resources for Health and Health Worker Registries",
-      "skos:definition": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running tools/glossary/build_glossary.py keeps authored terms.",
+      "skos:definition": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms.",
       "dcterms:modified": "2026-10-14",
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "dcterms:license": "CC-BY-NC-SA-3.0-IGO"

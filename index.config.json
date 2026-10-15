@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "069862c0f1a12bc66dfde67c4bbbd201f0c12fac",
+          "ref": "6979bf8dac69d445c37027692c1b638557076f65",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -36,7 +36,7 @@
                 "smart-base-external-schemas",
                 "smart-base-platform",
                 "smart-base-schemas",
-                "smart-base-content",
+                "smart-base-pipeline",
                 "smart-base-scripts",
                 "smart-base-skills",
                 "smart-base-scenarios",
@@ -49,9 +49,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "069862c0f1a12bc66dfde67c4bbbd201f0c12fac",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready next 2 hrs'"
+              "on": "2026-10-15",
+              "ref": "6979bf8dac69d445c37027692c1b638557076f65",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "9dcd2422edf8a4296f9eaed3f0d52aca5d6bfad8",
+          "ref": "2aa1f8be1a6e2edfca99afdf4b82b954c7cc1d62",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -71,9 +71,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "9dcd2422edf8a4296f9eaed3f0d52aca5d6bfad8",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'merge + repin when ready next 2 hrs'"
+              "on": "2026-10-15",
+              "ref": "2aa1f8be1a6e2edfca99afdf4b82b954c7cc1d62",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "c418b7c4f18d632d90439cc0fbd76fb44f0e235d",
+          "ref": "7ceb95fd37f01acd1b8e124a3d7aff4b65daefc0",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -99,9 +99,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "c418b7c4f18d632d90439cc0fbd76fb44f0e235d",
-              "evidence": "Owner's repin+merge window ('extend repin+merge window 3 hrs', 2026-10-14 ~20:10-23:10 UTC): cat-harness-tools#218 (1e7ddcd, suggest editor) and #256 (3dda7ad, built text / ctx.why / FSH pane / library extracts) merged, main 1ab030e; folio-assistant-core#97 merged as c418b7c (editor profiles bundled); cat-harness#246 (f789382, runtime asset) and #249 (ea248ae) merged, main b4242fb."
+              "on": "2026-10-15",
+              "ref": "7ceb95fd37f01acd1b8e124a3d7aff4b65daefc0",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "b4242fba8bc58842bbcdd1d34e22b1d1219e89b0",
+          "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "b4242fba8bc58842bbcdd1d34e22b1d1219e89b0",
-              "evidence": "Owner's repin+merge window ('extend repin+merge window 3 hrs', 2026-10-14 ~20:10-23:10 UTC): cat-harness-tools#218 (1e7ddcd, suggest editor) and #256 (3dda7ad, built text / ctx.why / FSH pane / library extracts) merged, main 1ab030e; folio-assistant-core#97 merged as c418b7c (editor profiles bundled); cat-harness#246 (f789382, runtime asset) and #249 (ea248ae) merged, main b4242fb."
+              "on": "2026-10-15",
+              "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "002f21a0e46f1a0070470801b472044174c924cf",
+          "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -152,9 +152,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "002f21a0e46f1a0070470801b472044174c924cf",
-              "evidence": "Owner's repin+merge window ('extend repin+merge window 3 hrs', 2026-10-14 ~20:10-23:10 UTC): cat-harness-tools#264 (01abaa2, init-folio --skip-vcs seeds main; primer warns on a non-main default) and #265 (002f21a, library table extracts as cells) merged."
+              "on": "2026-10-15",
+              "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -165,7 +165,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
+          "ref": "3dff0263ab5db5788d15e406358925bf659ebf06",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -174,9 +174,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' — dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+              "on": "2026-10-15",
+              "ref": "3dff0263ab5db5788d15e406358925bf659ebf06",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }
@@ -187,7 +187,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
+          "ref": "052f428da9a70e9aa3ee5fb85fc71274cb6d3e6c",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -199,9 +199,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
-              "evidence": "owner (litlfred), session https://claude.ai/code/session_0147GQWs8akum21vSh5XYURR 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh' and 'set this up like smart-ra' — dth-hrh mounts the same pinned layers as litlfred/smart-ra main"
+              "on": "2026-10-15",
+              "ref": "052f428da9a70e9aa3ee5fb85fc71274cb6d3e6c",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~05:55-08:55 UTC): every platform layer re-pinned to its current main."
             }
           }
         }

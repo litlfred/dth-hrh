@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "80bfe56333193cd19a3211520ae44989b24c3b94",
+          "ref": "5eeeba05c2820ad7ed76b17365e45f04d406a88a",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "80bfe56333193cd19a3211520ae44989b24c3b94",
-              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
+              "ref": "5eeeba05c2820ad7ed76b17365e45f04d406a88a",
+              "evidence": "Re-pin smart-base to its current main for dth-hrh: picks up per-repo viewer pages (cat-harness-tools#324) (owner: merge and repin, 2026-10-15)"
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
+          "ref": "b2aaf24d85b8d6db047c5d4b88d36ecbb8696ba9",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -72,7 +72,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "16b08eec72d7bf2d18e85cd1aa6464b70f215f68",
+              "ref": "b2aaf24d85b8d6db047c5d4b88d36ecbb8696ba9",
               "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "ec456ccfe2a179bb03aecfc73eb37b93c20a0c39",
+          "ref": "cb76a1cb093fb5fc2a8e04b1fee95c62de271f05",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "ec456ccfe2a179bb03aecfc73eb37b93c20a0c39",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
+              "ref": "cb76a1cb093fb5fc2a8e04b1fee95c62de271f05",
+              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh: picks up per-repo viewer pages (cat-harness-tools#324) (owner: merge and repin, 2026-10-15)"
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
+          "ref": "a74a2e28ca927629975233cc40024dc9f7525e5a",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -128,7 +128,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "f5a17d3e8e1c3c53c4f83d0a5443e99a0428d15e",
+              "ref": "a74a2e28ca927629975233cc40024dc9f7525e5a",
               "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6",
+          "ref": "45944015783ca604e75e8ddea5f5230cebd09793",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,7 +153,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "99ca018e44f4b60677a063677cfcd19c4940adf6",
+              "ref": "45944015783ca604e75e8ddea5f5230cebd09793",
               "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner: merge and repin, 2026-10-15)"
             }
           }
@@ -165,7 +165,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "caab56402eef8b0a0e4d56344c77568413576c1a",
+          "ref": "f3850e42201d293fa7a1eb689021f509fbe79509",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -175,8 +175,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "caab56402eef8b0a0e4d56344c77568413576c1a",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~16:29-19:29 UTC)."
+              "ref": "f3850e42201d293fa7a1eb689021f509fbe79509",
+              "evidence": "Re-pin bootstrap to its current main for dth-hrh: picks up per-repo viewer pages (cat-harness-tools#324) (owner: merge and repin, 2026-10-15)"
             }
           }
         }

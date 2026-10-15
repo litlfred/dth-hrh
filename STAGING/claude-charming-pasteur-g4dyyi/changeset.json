@@ -3,7 +3,7 @@
   "folio": "folio/dth-hrh",
   "base": {
     "ref": "origin/main",
-    "commit": "d8fca7dffa5f245c1eba365a218bf77542a261f7"
+    "commit": "3928938f357ab1ff706f022010db4bfb519e0599"
   },
   "head": {
     "ref": "worktree",

@@ -1176,7 +1176,11 @@ ca&amp;at-harness
     &quot;renderedBy&quot;: &quot;folio-viewer&quot;,
     &quot;covers&quot;: [
       &quot;folio&quot;
-    ]
+    ],
+    &quot;coversKinds&quot;: [
+      &quot;folio&quot;
+    ],
+    &quot;subgraphs&quot;: &quot;instance&quot;
   },
   {
     &quot;id&quot;: &quot;auto-docs&quot;,
@@ -1249,6 +1253,10 @@ ca&amp;at-harness
     &quot;covers&quot;: [
       &quot;beans&quot;
     ],
+    &quot;coversKinds&quot;: [
+      &quot;beans&quot;
+    ],
+    &quot;subgraphs&quot;: &quot;instance&quot;,
     &quot;alias&quot;: &quot;beans&quot;
   },
   {
@@ -1280,17 +1288,19 @@ ca&amp;at-harness
   {
     &quot;id&quot;: &quot;health&quot;,
     &quot;renderedBy&quot;: &quot;state-viewer&quot;,
-    &quot;covers&quot;: [
+    &quot;coversKinds&quot;: [
       &quot;health&quot;
     ],
+    &quot;subgraphs&quot;: &quot;instance&quot;,
     &quot;alias&quot;: &quot;health&quot;
   },
   {
     &quot;id&quot;: &quot;attestations&quot;,
     &quot;renderedBy&quot;: &quot;state-viewer&quot;,
-    &quot;covers&quot;: [
+    &quot;coversKinds&quot;: [
       &quot;attestations&quot;
     ],
+    &quot;subgraphs&quot;: &quot;instance&quot;,
     &quot;alias&quot;: &quot;attestations&quot;
   },
   {
@@ -1726,6 +1736,54 @@ ca&amp;at-harness
     &quot;reason&quot;: &quot;the QA projection, from qa-reports&quot;
   },
   {
+    &quot;path&quot;: &quot;docs/assets/folio/folio-assistant-core/&quot;,
+    &quot;writer&quot;: [
+      &quot;folio:viz&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s folio-graph projection (bean folio-assistant-1nu0): one per instance in the checkout holding a folio directory, other than this one&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/folio/who-iris/&quot;,
+    &quot;writer&quot;: [
+      &quot;folio:viz&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s folio-graph projection (bean folio-assistant-1nu0): one per instance in the checkout holding a folio directory, other than this one&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/beans/cat-harness-tools/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s own work plan (bean folio-assistant-1nu0): one page per instance in the checkout holding a beans store of its own&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/beans/folio-assistant-core/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s own work plan (bean folio-assistant-1nu0): one page per instance in the checkout holding a beans store of its own&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/folio/folio-assistant-core/&quot;,
+    &quot;writer&quot;: [
+      &quot;folio:viz&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s folio-graph page (bean folio-assistant-1nu0): one per instance in the checkout holding a folio directory, other than this one&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/folio/who-iris/&quot;,
+    &quot;writer&quot;: [
+      &quot;folio:viz&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s folio-graph page (bean folio-assistant-1nu0): one per instance in the checkout holding a folio directory, other than this one&quot;
+  },
+  {
     &quot;path&quot;: &quot;docs/en/cat-harness/qa/cat-harness/&quot;,
     &quot;writer&quot;: [
       &quot;state:visualizer&quot;
@@ -1783,6 +1841,60 @@ ca&amp;at-harness
     ],
     &quot;because&quot;: &quot;checkout&quot;,
     &quot;reason&quot;: &quot;another instance&#39;s QA results page (bean folio-assistant-1nu0): one per instance in the checkout holding a qa directory, projecting that instance&#39;s test/results/&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/health/cat-harness/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;state&quot;,
+    &quot;from&quot;: [
+      &quot;health&quot;
+    ],
+    &quot;reason&quot;: &quot;this instance&#39;s own health page (bean folio-assistant-1nu0): it projects test/health/results/, which the daily sweep writes and nothing commits&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/health/cat-harness-tools/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s health page (bean folio-assistant-1nu0): one per instance in the checkout holding a health directory, projecting that instance&#39;s health reports&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/health/folio-assistant-core/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s health page (bean folio-assistant-1nu0): one per instance in the checkout holding a health directory, projecting that instance&#39;s health reports&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/health/who-iris/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s health page (bean folio-assistant-1nu0): one per instance in the checkout holding a health directory, projecting that instance&#39;s health reports&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/attestations/cat-harness/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;state&quot;,
+    &quot;from&quot;: [
+      &quot;attestations&quot;
+    ],
+    &quot;reason&quot;: &quot;this instance&#39;s own attestations page (bean folio-assistant-1nu0): a projection of test/attestations/, rebuilt each publish rather than committed beside it&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/attestations/folio-assistant-sci/&quot;,
+    &quot;writer&quot;: [
+      &quot;state:visualizer&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;another instance&#39;s attestations page (bean folio-assistant-1nu0): one per instance in the checkout holding an attestations directory, projecting that instance&#39;s test/attestations/&quot;
   },
   {
     &quot;path&quot;: &quot;docs/todos.json&quot;,

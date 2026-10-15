@@ -4,7 +4,7 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "96e43858f0e190380a571469ced640957f2916e6"
+      "ref": "55570bd37a197b2363cc37e8c72c3bce16622d66"
     },
     {
       "harness": "fhir-harness",
@@ -215,7 +215,7 @@
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "96e43858f0e190380a571469ced640957f2916e6",
+      "sha": "55570bd37a197b2363cc37e8c72c3bce16622d66",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -278,7 +278,7 @@
           "id": "smart-base-house-processes",
           "path": "smart-base/processes",
           "upstreamPath": "smart-base/processes",
-          "treeDigest": "04ffd309233b9e7d606ad06002b03ee8039cc35a55404d71dd4bae1a95f2c5d8",
+          "treeDigest": "f787074c98057b0f3134735132c9454c1b515dfb282a7d6a0b3bb389241fa167",
           "files": 16
         },
         {
@@ -362,7 +362,7 @@
           "id": "smart-base-skills",
           "path": "smart-base/skills",
           "upstreamPath": "smart-base/skills",
-          "treeDigest": "c4d5f35c75af206e421526bfd8e014054d197fa9ee7dbf31ae9c850e15d1f1b2",
+          "treeDigest": "0d3b3270df4e5b5043836521d30f19ad2fab65050d08b849aa25b941df5311e6",
           "files": 24
         },
         {
@@ -412,7 +412,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-15",
-        "ref": "96e43858f0e190380a571469ced640957f2916e6",
+        "ref": "55570bd37a197b2363cc37e8c72c3bce16622d66",
         "approver": "unverified"
       }
     }

@@ -3,7 +3,7 @@
   "folio": "folio/dth-hrh",
   "base": {
     "ref": "origin/main",
-    "commit": "3928938f357ab1ff706f022010db4bfb519e0599"
+    "commit": "9bdd8d47805284faf1efaf0e5efd93f83d102689"
   },
   "head": {
     "ref": "worktree",
@@ -12,32 +12,12 @@
   "summary": {
     "added": 0,
     "removed": 0,
-    "changed": 1,
-    "unchanged": 269,
+    "changed": 0,
+    "unchanged": 270,
     "renamed": 0,
-    "prose": 1,
+    "prose": 0,
     "manifest": 0,
     "moved": 0
   },
-  "changes": [
-    {
-      "change": "changed",
-      "label": "prose:glossary-about",
-      "aspects": [
-        "prose"
-      ],
-      "base": {
-        "file": "glossary/p-glossary-about.ts",
-        "kind": "prose",
-        "section": "glossary::sec:glossary-lead",
-        "index": 0
-      },
-      "head": {
-        "file": "glossary/p-glossary-about.ts",
-        "kind": "prose",
-        "section": "glossary::sec:glossary-lead",
-        "index": 0
-      }
-    }
-  ]
+  "changes": []
 }

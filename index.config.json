@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "41ed9b217b4539c80345ad6b3a7b01a32b36ceee",
+          "ref": "7886a3e008deedd4c224e9d8f23ceb5c9febc446",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "41ed9b217b4539c80345ad6b3a7b01a32b36ceee",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "7886a3e008deedd4c224e9d8f23ceb5c9febc446",
+              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "4c7fa7ba11bad9172b45cf93c7b8821efe970d60",
+          "ref": "c2fe449ab41f8765b7be16b75d2fc6c6cb781183",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -72,8 +72,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "4c7fa7ba11bad9172b45cf93c7b8821efe970d60",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "c2fe449ab41f8765b7be16b75d2fc6c6cb781183",
+              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "f412c113e5eae7b7d5eaff5188005dd3bd0315ff",
+          "ref": "61db7aea2cfac0d3dc73aaeb60b2df241f078de9",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "f412c113e5eae7b7d5eaff5188005dd3bd0315ff",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "61db7aea2cfac0d3dc73aaeb60b2df241f078de9",
+              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5463bf121d472bbda817c6e0a4a73a2945793164",
+          "ref": "472a4f0880818b90d1388e50b85f3d71f8c3cfdf",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "5463bf121d472bbda817c6e0a4a73a2945793164",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "472a4f0880818b90d1388e50b85f3d71f8c3cfdf",
+              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
+          "ref": "01856e96574967dfd04c415c2bc2978836e0ab44",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "01856e96574967dfd04c415c2bc2978836e0ab44",
+              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
             }
           }
         }

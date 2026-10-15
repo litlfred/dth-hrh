@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio/dth-hrh",
+  "base": {
+    "ref": "origin/main",
+    "commit": "0ce663536e10e2e5957c1c09c83c2351256a9606"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 270,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 0
+  },
+  "changes": []
+}

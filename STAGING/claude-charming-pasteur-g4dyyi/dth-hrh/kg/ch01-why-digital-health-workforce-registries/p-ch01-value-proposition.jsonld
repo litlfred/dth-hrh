@@ -6,12 +6,12 @@
       "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
     }
   ],
-  "@id": "papers/dth-hrh/blocks/prose-ch01-value-for-stakeholders",
+  "@id": "papers/dth-hrh/blocks/prose-ch01-value-proposition",
   "@type": [
     "folio-assistant-core:Prose",
     "doco:Section"
   ],
-  "label": "prose:ch01-value-for-stakeholders",
+  "label": "prose:ch01-value-proposition",
   "kind": "prose",
   "text": "p-ch01-value-proposition.md",
   "meta": {

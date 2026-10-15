@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "d6e41b3dacf4464e6cd901a1c0ce748ee8a353e4",
+          "ref": "ea3e26e3c67c7f017a715a3c3ce1c607c0fefb1b",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "d6e41b3dacf4464e6cd901a1c0ce748ee8a353e4",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "ea3e26e3c67c7f017a715a3c3ce1c607c0fefb1b",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): final check."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2bc3a32ef4e183428acafabcbb0af44263a6da63",
+          "ref": "a7aeec3b47bd5dc1e39fd7f3a25e0d3c3df71768",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -153,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "2bc3a32ef4e183428acafabcbb0af44263a6da63",
-              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): every layer re-pinned to its current main at the 12:37 check."
+              "ref": "a7aeec3b47bd5dc1e39fd7f3a25e0d3c3df71768",
+              "evidence": "Owner's merge-and-repin window ('merge and repin open 3 hrs', 2026-10-15 ~11:14-14:14 UTC; 'merge regardless CI'): final check."
             }
           }
         }

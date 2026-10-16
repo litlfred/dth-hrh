@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "884c0e8313af8d8c17723a79a81f75fbb1ba82c5",
+          "ref": "cc324e771140b559b0409282a271acd2ef33dd02",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -50,8 +50,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-16",
-              "ref": "884c0e8313af8d8c17723a79a81f75fbb1ba82c5",
-              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
+              "ref": "cc324e771140b559b0409282a271acd2ef33dd02",
+              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged"
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "5507c9464fb622f62ac9d30d2a6233fdd22472d4",
+          "ref": "9482de982b5857241a49f00c5ca4f03428dd1035",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-16",
-              "ref": "5507c9464fb622f62ac9d30d2a6233fdd22472d4",
-              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
+              "ref": "9482de982b5857241a49f00c5ca4f03428dd1035",
+              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged"
             }
           }
         }

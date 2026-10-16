@@ -31256,6 +31256,57 @@
       "exported": true
     },
     {
+      "id": "cat-harness/schemas/node-kind-index.ts#LayerRatchet",
+      "name": "LayerRatchet",
+      "module": "cat-harness/schemas/node-kind-index.ts",
+      "kind": "interface",
+      "doc": "One instance's verdict against its own baseline.",
+      "fields": [
+        {
+          "name": "instance",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "fresh",
+          "type": "string[]",
+          "optional": false,
+          "array": true,
+          "doc": "Unkinded now, owned here, and not in the baseline: the gate's finding."
+        },
+        {
+          "name": "gone",
+          "type": "string[]",
+          "optional": false,
+          "array": true,
+          "doc": "In the baseline and no longer an unkinded family here: a stale baseline, shrunk by the writer."
+        },
+        {
+          "name": "foreign",
+          "type": "string[]",
+          "optional": false,
+          "array": true,
+          "doc": "In the baseline and unkinded, but OWNED by another instance: a baseline may name only its own."
+        },
+        {
+          "name": "keep",
+          "type": "Unkinded[]",
+          "optional": false,
+          "array": true,
+          "doc": "What the writer leaves in the baseline (what it held and still owns unkinded, plus `fresh` when accepted)."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness/schemas/node-kind-index.ts#Unkinded"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness/schemas/node-kind-index.ts#NameRule",
       "name": "NameRule",
       "module": "cat-harness/schemas/node-kind-index.ts",
@@ -31446,7 +31497,7 @@
       "name": "NodeKindIndexFileKind",
       "module": "cat-harness/schemas/node-kind-index.ts",
       "kind": "zod-object",
-      "doc": "The committed index file, `cat-harness/docs/_data/node-kinds.json`, as a",
+      "doc": "The index file, `cat-harness/docs/_data/node-kinds.json`, as a node kind —",
       "fields": [],
       "extendsNames": [
         "nodeKind"
@@ -31496,6 +31547,66 @@
       "values": [],
       "refs": [],
       "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness/schemas/node-kind-index.ts#UnkindedBaselineEntry",
+      "name": "UnkindedBaselineEntry",
+      "module": "cat-harness/schemas/node-kind-index.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness/schemas/node-kind-index.ts#UnkindedBaselineEntrySchema",
+      "name": "UnkindedBaselineEntrySchema",
+      "module": "cat-harness/schemas/node-kind-index.ts",
+      "kind": "zod-object",
+      "doc": "One family an instance's baseline admits: the key, nothing that can drift with another layer.",
+      "fields": [
+        {
+          "name": "typology",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "family",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness/schemas/node-kind-index.ts#UnkindedBaselineKind",
+      "name": "UnkindedBaselineKind",
+      "module": "cat-harness/schemas/node-kind-index.ts",
+      "kind": "zod-object",
+      "doc": "An instance's ratchet baseline: the families IT owns ({@link typologyOwner})",
+      "fields": [],
+      "extendsNames": [
+        "nodeKind"
+      ],
+      "values": [],
+      "refs": [],
+      "unresolved": [
+        "nodeKind"
+      ],
       "external": [],
       "exported": true
     },
@@ -42436,10 +42547,25 @@
           "array": false
         },
         {
+          "name": "variant",
+          "type": "z.enum([\"pdf\", \"notebook\", \"text\"]).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Which structure variant: only a PDF has pages and a TOC (library-document.ts)."
+        },
+        {
           "name": "pages",
-          "type": "z.number().int()",
+          "type": "z.number().int().nullable()",
           "optional": false,
-          "array": false
+          "array": false,
+          "doc": "Unknown is not zero: an older ingestion records no page count."
+        },
+        {
+          "name": "pagesCovered",
+          "type": "z.number().int().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "When `pages` is unknown, the last page a section reaches."
         },
         {
           "name": "tocSource",
@@ -74299,6 +74425,14 @@
       "kind": "field",
       "optional": true,
       "array": false
+    },
+    {
+      "from": "cat-harness/schemas/node-kind-index.ts#LayerRatchet",
+      "to": "cat-harness/schemas/node-kind-index.ts#Unkinded",
+      "via": "keep",
+      "kind": "field",
+      "optional": false,
+      "array": true
     },
     {
       "from": "cat-harness/schemas/node-kind-index.ts#NameRuleKind",

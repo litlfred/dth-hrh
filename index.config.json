@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "7886a3e008deedd4c224e9d8f23ceb5c9febc446",
+          "ref": "884c0e8313af8d8c17723a79a81f75fbb1ba82c5",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -49,9 +49,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "7886a3e008deedd4c224e9d8f23ceb5c9febc446",
-              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~23:35Z)"
+              "on": "2026-10-16",
+              "ref": "884c0e8313af8d8c17723a79a81f75fbb1ba82c5",
+              "evidence": "Re-pin smart-base to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
             }
           }
         }
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "5c09a35510b0f52abca63985e28e419551c9a0af",
+          "ref": "122e16e3b1d4253203a3a3cd0fa6e838c95b7ca2",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -71,9 +71,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "5c09a35510b0f52abca63985e28e419551c9a0af",
-              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~01:35Z)"
+              "on": "2026-10-16",
+              "ref": "122e16e3b1d4253203a3a3cd0fa6e838c95b7ca2",
+              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
             }
           }
         }
@@ -84,7 +84,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "6047a1bf21e7eaf04f7505f32903a1bcc5a04cbf",
+          "ref": "5507c9464fb622f62ac9d30d2a6233fdd22472d4",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -99,9 +99,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "6047a1bf21e7eaf04f7505f32903a1bcc5a04cbf",
-              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~01:35Z)"
+              "on": "2026-10-16",
+              "ref": "5507c9464fb622f62ac9d30d2a6233fdd22472d4",
+              "evidence": "Re-pin folio-assistant-core to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "cd13ff8479240a6220e9d67dc23262f7e2c75b2c",
+          "ref": "cfe72555e9fc68f86c8bf4612dbd6bcdd027b553",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "cd13ff8479240a6220e9d67dc23262f7e2c75b2c",
-              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~01:35Z)"
+              "on": "2026-10-16",
+              "ref": "cfe72555e9fc68f86c8bf4612dbd6bcdd027b553",
+              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "31d19ac8c73f2bf3f4d54d3495dc8604a1076b1d",
+          "ref": "fd9cbf17d78408e90eb7fc5fbc301162527ebfb0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -152,9 +152,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "31d19ac8c73f2bf3f4d54d3495dc8604a1076b1d",
-              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner: merge and repin, extended 2026-10-15 to ~01:35Z)"
+              "on": "2026-10-16",
+              "ref": "fd9cbf17d78408e90eb7fc5fbc301162527ebfb0",
+              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
             }
           }
         }

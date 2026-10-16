@@ -608,6 +608,13 @@ ca&amp;at-harness
     &quot;role&quot;: &quot;package-manifest&quot;,
     &quot;title&quot;: &quot;package.json&quot;,
     &quot;description&quot;: &quot;The npm pre-packaging source manifest declaring package identity, exports, dependencies, scripts, and tarball whitelist.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;unkinded-baseline&quot;,
+    &quot;src&quot;: &quot;node-kinds.baseline.json&quot;,
+    &quot;role&quot;: &quot;unkinded-baseline&quot;,
+    &quot;title&quot;: &quot;Unkinded families — cat-harness&quot;,
+    &quot;description&quot;: &quot;The families whose typology THIS instance declares (in code, BASE_GRAPH_TYPOLOGIES and its registrations, or in its archimate/ and openapi/ typologies graphs) that predate node kinds and may stay unkinded; `node-kinds:check` fails on any other. Owner, 2026-10-15: split out of docs/_data/node-kinds.json, which spanned every layer and is now built at publish, so each layer&#39;s families are judged by its own commit. Written by `bun run cat node-kinds`, which only shrinks it; `--accept-unkinded` grows it deliberately.&quot;
   }
 ]</pre></dd>
 <dt>_stub_comment</dt><dd>RENAMED from `folio-assistant` on 2026-09-21, on the owner&#39;s ruling, closing the collision issue #649 raised and bean `x3bd` flagged as settle-before-you-move. `artefactStub(d) = d.stub ?? d.name`, so this field is the ONLY stub declared anywhere in the tree — every other instance falls through to its `name`. While it read `folio-assistant` it was the string the REPOSITORY ROOT instance also carries as its `name`, so both resolved to `&lt;base&gt;/folio-assistant.jsonld`: two vocabularies, one path, and a reader dereferencing it got whichever layer answered. It is kept as an explicit field rather than deleted so the rename is visible where the collision was, and because `x3bd` records that this string names published artefacts (`.jsonld`, `.schema.json`, the viewer directory) rather than being cosmetic.</dd>
@@ -1429,6 +1436,26 @@ ca&amp;at-harness
     ],
     &quot;because&quot;: &quot;checkout&quot;,
     &quot;reason&quot;: &quot;a page per skill of every instance (measured: drifted on fhir-harness and folio-assistant-core skills at the current pins)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/_data/node-kinds.json&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kinds&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reads&quot;: [
+      &quot;typologies&quot;,
+      &quot;validators&quot;
+    ],
+    &quot;reason&quot;: &quot;the node-kind table: every node kind and unkinded family the typologies and validator nodes of EVERY instance in the checkout declare. Owner, 2026-10-15: built at publish, and the ratchet it carried moved to each instance&#39;s own `unkinded-baseline` asset (this instance&#39;s is node-kinds.baseline.json). Listed before node-kind:pages, which renders it, so it is written first&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/node-kind-index/&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kind:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the node-kind-index kind&#39;s pages: its one node is docs/_data/node-kinds.json, listed just above and built at publish, which the node page renders verbatim (measured: the committed page went stale the day the table was regenerated, ci72 2026-10-15)&quot;
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/cat-harness-declaration/&quot;,

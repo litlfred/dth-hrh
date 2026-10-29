@@ -1,3 +1,3 @@
-![Planning and implementing a digital health enterprise: phases, steps and resources (DIIG Fig. 1.1.1)](media/diig-fig-1-1-1.svg)
+![Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04](media/diig-phases-hrh.svg)
 
-*Source: WHO Digital implementation investment guide (DIIG), 2020, Fig. 1.1.1. Reused from the smart-base library, adapted: the DIIG tile's label "(this document)" is replaced with "(DIIG)", since this handbook is not the DIIG.*
+*Source: adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, itself adapted from the 2020 WHO Digital implementation investment guide (DIIG), Fig. 1.1.1. Redrawn; this handbook is added across phases 02–04 and marked "(this document)" in place of the product catalogue handbook.*

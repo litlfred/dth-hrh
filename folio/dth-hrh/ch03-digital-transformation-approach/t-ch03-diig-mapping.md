@@ -9,6 +9,6 @@
 | 8. Monitor the implementation and use data effectively | A logic model; an M&E plan; a culture of data use; adaptive management | Ch. 13 Data quality management; Ch. 19 Monitoring and continuous improvement |
 | 9. Value proposition and next steps | The case made to whoever pays | Ch. 1.2 Value proposition and 1.4 Benefits and outcomes (with the advocacy brief template) |
 
-DIIG chapter 1 (Introduction) corresponds to Part 0 of this handbook. Part 4 (Chapters 20–22: illustrative use cases, country case studies, tools and templates) supports every step. In DIIG Fig. 1.1.1 above, the Guide itself spans phases 02–05; this handbook adds the registry-specific detail within that span.
+DIIG chapter 1 (Introduction) corresponds to Part 0 of this handbook. Part 4 (Chapters 20–22: illustrative use cases, country case studies, tools and templates) supports every step. In the figure above (adapted from DIIG Fig. 1.1.1 by way of the product catalogue handbook), the DIIG spans phases 02–05, and this handbook sits across phases 02–04, adding the registry-specific detail within that span.
 
 *Source for the DIIG chapters and their outputs: WHO, ITU and UN Foundation, Digital implementation investment guide (DIIG), 2020, as summarized in `smart-base/methodologies/diig.md`. The mapping is a proposal for the TWG.*

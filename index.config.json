@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+          "ref": "b17b03ac5e7375470ef3dd2efc5b2cf30952de7a",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
-              "evidence": "smart-base main (smart-base#224, owner's option B on who-iris#107) needs who-iris, so re-pinning smart-base for the 8lcl schemas move brings who-iris into dth-hrh's closure; mounted as smart-base mounts it. main tip 04472dc (IRIS assets #108, dark replica #110, navbar #112, direction #114 #118, CI #116). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "ref": "b17b03ac5e7375470ef3dd2efc5b2cf30952de7a",
+              "evidence": "litlfred, 2026-10-30 23:10Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Yes, re-pin in #42' to 'May I re-pin who-iris in dth-hrh to fix the mount?'. who-iris main b17b03a carries who-iris#124 (resolve the layers beside who-iris), without which who-iris's dependencies cannot install in dth-hrh (npm 404 on @litlfred/folio-assistant-core) and every CI mount fails."
             }
           }
         }

@@ -10,11 +10,48 @@
       }
     },
     {
+      "name": "who-iris",
+      "source": {
+        "remote": {
+          "repository": "litlfred/who-iris",
+          "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+          "overrides": {
+            "who-iris": {
+              "whole": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+              "evidence": "smart-base main (smart-base#224, owner's option B on who-iris#107) needs who-iris, so re-pinning smart-base for the 8lcl schemas move brings who-iris into dth-hrh's closure; mounted as smart-base mounts it. main tip 04472dc (IRIS assets #108, dark replica #110, navbar #112, direction #114 #118, CI #116). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+            }
+          }
+        }
+      }
+    },
+    {
       "name": "smart-base",
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "cc324e771140b559b0409282a271acd2ef33dd02",
+          "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -33,7 +70,6 @@
                 "smart-base-docs",
                 "smart-base-document-kinds",
                 "smart-base-findings",
-                "smart-base-external-schemas",
                 "smart-base-platform",
                 "smart-base-schemas",
                 "smart-base-pipeline",
@@ -49,9 +85,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-16",
-              "ref": "cc324e771140b559b0409282a271acd2ef33dd02",
-              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged"
+              "on": "2026-10-30",
+              "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
+              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged; main tip 07a4c1e (who-iris mount #224, CI #227 #229, schemas move #225, sidecars #198). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -62,7 +98,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "122e16e3b1d4253203a3a3cd0fa6e838c95b7ca2",
+          "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -71,9 +107,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-16",
-              "ref": "122e16e3b1d4253203a3a3cd0fa6e838c95b7ca2",
-              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
+              "on": "2026-10-30",
+              "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
+              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip 5545d6b (IG pages #214, CI #217 #221, direction #224, schemas move #215). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -84,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "9482de982b5857241a49f00c5ca4f03428dd1035",
+          "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -99,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-16",
-              "ref": "9482de982b5857241a49f00c5ca4f03428dd1035",
-              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged"
+              "on": "2026-10-30",
+              "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged; main tip be4e571 (BCP 47 #257, CI #267 #270, schemas move #265). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -112,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "cfe72555e9fc68f86c8bf4612dbd6bcdd027b553",
+          "ref": "f24a8886f94fff9ff4257dc7a1b4a3e4c847b14f",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -127,9 +163,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-16",
-              "ref": "cfe72555e9fc68f86c8bf4612dbd6bcdd027b553",
-              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
+              "on": "2026-10-30",
+              "ref": "f24a8886f94fff9ff4257dc7a1b4a3e4c847b14f",
+              "evidence": "Re-pin cat-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip f24a888 (schemas move #773, direction #784, attestations #786, CI #775 #778 #780). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -140,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "fd9cbf17d78408e90eb7fc5fbc301162527ebfb0",
+          "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -152,9 +188,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-16",
-              "ref": "fd9cbf17d78408e90eb7fc5fbc301162527ebfb0",
-              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin)"
+              "on": "2026-10-30",
+              "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
+              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip d96004f (schemas move #952, uml/readme gates #897, direction #968, CI #951 #957 #964). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -165,7 +201,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "9ecfb729b38b9196063fee76c6f7932f92502353",
+          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -174,9 +210,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "9ecfb729b38b9196063fee76c6f7932f92502353",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "on": "2026-10-30",
+              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'; main tip 3ce2b5d (main, matches cat-harness-tools). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }
@@ -187,7 +223,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "7dc55773590bbc3158c877a3d61222aa7864006c",
+          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -199,9 +235,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-15",
-              "ref": "7dc55773590bbc3158c877a3d61222aa7864006c",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "on": "2026-10-30",
+              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'; main tip b7fb762 (main, exports importClosure that cat-harness-tools needs). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
             }
           }
         }

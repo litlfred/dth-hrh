@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "b17b03ac5e7375470ef3dd2efc5b2cf30952de7a",
+          "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "b17b03ac5e7375470ef3dd2efc5b2cf30952de7a",
-              "evidence": "litlfred, 2026-10-30 23:10Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Yes, re-pin in #42' to 'May I re-pin who-iris in dth-hrh to fix the mount?'. who-iris main b17b03a carries who-iris#124 (resolve the layers beside who-iris), without which who-iris's dependencies cannot install in dth-hrh (npm 404 on @litlfred/folio-assistant-core) and every CI mount fails."
+              "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
+              "evidence": "litlfred, 2026-10-30 23:10Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Yes, re-pin in #42' to 'May I re-pin who-iris in dth-hrh to fix the mount?'; at 23:33Z the thread said it would take who-iris#133 under that OK and the owner then merged #133 (23:36Z). main tip bdadee3 = #133 (catalogue forwarding stub gets a body, which staging-banner needs) + #132 (glossary regen) on top of b17b03a."
             }
           }
         }

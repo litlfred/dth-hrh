@@ -1,9 +1,9 @@
 {
   "@context": [
-    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/0.1.0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
     }
   ],
   "@id": "papers/dth-hrh/blocks/pers-system-payroll",

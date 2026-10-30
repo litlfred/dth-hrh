@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://litlfred.github.io/folio-assistant/ns/content/v1.jsonld",
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/"
     }
@@ -125,7 +125,7 @@
     "library/twg-outline-2026-10-02/sections/s112-references"
   ],
   "provenance": "ingested",
-  "inSubgraph": "https://litlfred.github.io/folio-assistant/dth-hrh/dth-hrh.jsonld#directory/library",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/dth-hrh/directory/library",
   "meta": {
     "doc_id": "twg-outline-2026-10-02",
     "title_source": "text-heading",

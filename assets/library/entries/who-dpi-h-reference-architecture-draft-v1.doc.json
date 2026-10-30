@@ -1537,7 +1537,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 4150,
-      "summary": null,
+      "summary": {
+        "text": "Front matter, table of contents, acronyms, glossary, executive summary, audience-specific reading paths matrix, and Section 1.1 opening for the WHO–ITU Draft v1.0 Reference Architecture and Guidance for Digital Public Infrastructure for the Health Sector (DPI-H). Introduces DPI-H as shared, standards-based digital resources serving multiple health agency functions; defines Resilient Essential Data and Digital Health Infrastructure (REDDHI); outlines the TOGAF and ArchiMate enterprise-architecture approach anchored on seven priority health goals; explains how the guidance extends the WHO–ITU Digital Health Platform Handbook, OpenHIE Architecture, and WHO Digital Implementation Investment Guide (DIIG); and provides a section-by-section relevance matrix for policy makers, DPI authorities, enterprise architects, development partners, and procurement teams.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi-h reference",
@@ -1585,7 +1588,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 160,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.1.1 defines a reference architecture as a technology-neutral blueprint capturing the common building blocks, relationships, and design principles of a technical environment, drawing on NIST SP 500-292 and TOGAF 9.2. Explains how a shared vocabulary and reusable building blocks align decisions across programmes, institutions, and levels of care, enabling countries to translate health policy goals into interoperable, governable, and context-adaptable digital infrastructure.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "reference architecture",
@@ -1621,7 +1627,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 890,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.1.2 traces the evolution from the 2020 WHO–ITU Digital Health Platform ('infostructure') concept to cross-sectoral Digital Public Infrastructure (DPI) as defined by the World Bank and the 2023 G20 Digital Economy Ministers' consensus, and derives the formal definition of Health Digital Public Infrastructure (DPI-H) as publicly governed, open-standards-based digital resources (systems and specifications) built as a shared means for fulfilling multiple health agency functions. Highlights two defining dimensions: shared reusable infrastructure across health actors and purposeful domain-specific extension of foundational DPI rather than vertical, programme-siloed digitalisation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "public infrastructure",
@@ -1669,7 +1678,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 857,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.1.3 situates the DPI-H reference architecture as an extension of the 2020 WHO–ITU Digital Health Platform Handbook, OpenHIE Architecture Specification, and TOGAF. Illustrates cross-sectoral foundational DPI reuse with India's CoWIN vaccination platform built on Aadhaar and Estonia's national electronic health record running on X-Road and national digital ID, notes that the guidance articulates explicit health-sector requirements for both foundational DPIs and shared health DPIs, and introduces Box 1.1 listing the seven priority health sector goals alongside their taglines.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "foundational dpi",
@@ -1717,7 +1729,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 368,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.1.4 details how six primary stakeholder groups benefit from the DPI-H reference architecture: (1) Health Ministries and Programme Managers aligning health infrastructure with national DPI across disease areas and care levels; (2) DPI Authorities understanding health-sector demand and domain requirements; (3) Enterprise Architects and Technical Teams applying TOGAF methodology, formal patterns, and standards-based blueprints; (4) Development Partners and Donors coordinating investments and embedding DPI into health financing and public financial management; (5) Procurement Teams using common specifications and conformance requirements for vendor-neutral evaluation; and (6) Policy Makers translating policy intent on governance, data protection, consent, country ownership, and financing into coherent technical direction.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "broader dpi",
@@ -1765,7 +1780,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 269,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.2 explains why the health sector requires capabilities beyond general-purpose foundational DPIs (identity, payments, and data exchange): foundational DPIs intentionally leave sector-specific logic to consuming sectors, and in many low- and middle-income countries foundational DPIs remain nascent or absent while care delivery, disease surveillance, health financing, and supply chain management must operate immediately without creating permanent parallel silos.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "foundational dpi",
@@ -1813,7 +1831,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 561,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.2.1 and Box 1.2 examine why foundational identity DPI is necessary but insufficient on its own for healthcare, identifying six health-specific requirements: (1) universal coverage across newborns prior to civil registration, refugees, undocumented migrants, and marginalised groups to preserve care continuity and surveillance denominators; (2) purpose context such as scheme enrolment and service entitlements; (3) granular health privacy and consent management; (4) probabilistic clinical matching, duplicate detection, and family linkage for undocumented patients; (5) coexistence of multiple context-specific health identifiers; and (6) cross-border recognition. Positions the Client Registry as the health sector's identity DPI bridging foundational identity with health-specific needs.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "identity dpi",
@@ -1861,7 +1882,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 402,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.2.2 and Box 1.3 contrast content-neutral foundational data exchange DPI—which acts like a postal service transporting sealed envelopes securely between registered parties—with two additional health-sector interoperability requirements: (1) structural, semantic, and message-format interoperability using health standards such as HL7 FHIR so clinical meaning is preserved across heterogeneous systems, and (2) cross-border and multi-jurisdiction health data exchange for migrants, travellers, regional surveillance, and emergency response using standards such as the International Patient Summary (IPS).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "exchange dpi",
@@ -1909,7 +1933,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 608,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.2.3 and Box 1.4 analyse the relationship between foundational payments DPI (instant payment rails, mobile money, G2P transfers) and health financing's three core functions of revenue raising, pooling, and purchasing across public financial management (PFM) and multi-payer schemes. Explains that payment rails execute disbursements only after health-specific determinations—claim adjudication against benefit packages, multi-payer coordination, provider/facility credential verification, clinical event verification, and capitation or performance calculations—which are supported in the reference architecture by the Benefits Package Registry together with client, product, and provider registries.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "payments dpi",
@@ -1957,7 +1984,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 91,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.3 introduces the value proposition of DPI-H as an investment philosophy that shifts from procuring discrete technology products to building shared, reusable capabilities serving the entire health system simultaneously, grounded in proven population-scale country implementations.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi-h",
@@ -1985,7 +2015,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 533,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.3.1 analyses the technical, economic, and political-economy costs of vertical, programme-driven digital health fragmentation across HIV, immunisation, maternal health, TB, and malaria silos. Explains that point-to-point integration costs grow quadratically as programmes are added, and—citing a 2026 Wilton Park report on leveraging DPI for health transformation—shows how programme-specific career incentives, discrete project procurement cycles, and vertical donor accountability perpetuate silos, framing DPI-H adoption as a deliberate political and institutional commitment to long-term system coherence.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dominant pattern",
@@ -2033,7 +2066,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 153,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.3.2 explains what DPI-H makes possible by replacing vertical product procurement and vendor lock-in with open-standards, modular capability investment that lowers development and maintenance burdens and enables public and private local innovators to build new services on a governed foundational layer.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi-h",
@@ -2069,7 +2105,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 416,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.3.3 summarises how shared DPI-H distributes value across ten stakeholder groups: patients (continuity of clinical history, identity, and entitlements), health workers (reduced duplicate data entry and richer point-of-care context), health programme managers (cross-programme analytics and planning), Ministries of Health (ecosystem visibility and governance), Ministries of Finance (expenditure transparency, fraud detection, and timely provider payment evidence), development partners and donors (investments outlasting single funding cycles), researchers (consistent consented datasets), the commercial sector (value-added innovation on shared foundations), DPI Authorities (extended utility of foundational DPI), and the health system overall, while enabling rather than replacing point-of-service applications.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "shared infrastructure",
@@ -2117,7 +2156,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 589,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.4 defines six core principles governing how DPI-H is conceived, built, governed, and sustained: Interoperability (data and system exchange extensible without disruption), Reusability (shared functionality and data across programmes), Open Standards and Specifications (SDO-governed open APIs and standards avoiding proprietary lock-in), Public Governance (accountable public-interest stewardship and oversight regardless of whether components are operated by public, private, or NGO actors), Security and Privacy (zero-trust security, privacy as a right, and service resilience by design), and Autonomy and Sovereignty (national ownership and control free from external jurisdictional dependency).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi-h",
@@ -2165,7 +2207,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 592,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.5 introduces the seven priority health sector goals as mutually reinforcing, outcome-oriented ambitions (mapped to WHO's six health system building blocks in an annex) anchored on the principle that data about a person, facility, product, or transaction should be 'captured once, governed well, and used many times.' Explains how capturing well-governed data at the point of care eliminates duplicate manual register compilation and programme reporting burdens while compounding value across workforce management, care continuity, supply chain logistics, health financing verification, and outbreak/climate surveillance.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "seven",
@@ -2213,7 +2258,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 984,
-      "summary": null,
+      "summary": {
+        "text": "Section 1.5.1 and the opening of Chapter 2 articulate each of the seven priority health sector goals—(1) building trusted data foundations (supporting clinical care, CRVS, mortality, public health, and domestic AI), (2) supporting a capable, well-distributed health workforce via an authoritative registry linked to licensing and payroll, (3) ensuring quality and continuity of care via lifelong health records and computable decision support, (4) establishing trusted, consent-controlled personal health records, (5) optimising supply chain management with standardised product catalogues and real-time visibility, (6) advancing efficient and equitable health financing, and (7) strengthening climate and epidemic resilience—stressing ongoing implementation evaluation, and then introduce Chapter 2's adaptive TOGAF-based DPI-H Reference Architecture Framework.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "goal",
@@ -2261,7 +2309,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 207,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.1 defines the national health-system scope of the DPI-H reference architecture: it specifies shared capabilities and DPI-H components across two layers while explicitly excluding point-of-service and operational programme applications (such as EMRs, order-management platforms, warehouse tools, forecasting tools, and disease-specific systems) that consume shared infrastructure rather than constitute it.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "point-of-service applications",
@@ -2301,7 +2352,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.1.1 heading transition line ('44') preceding the detailed exposition of the two DPI-H architectural layers (metadata registries/foundational components and the business services layer).",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "44",
       "extractCut": false
@@ -2316,7 +2370,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 522,
-      "summary": null,
+      "summary": {
+        "text": "Sections 2.1.1 and 2.1.2 define the two layers of DPI-H components and cross-cutting properties. Layer 1 (Metadata registries and foundational components) comprises the Client, Health Facility, Health Workforce, and Product registries alongside the Lifelong Health Record, Terminology Services, and Logical Information Model Repository (LIMR), tested by cross-domain reusability, stable interfaces, and domain neutrality. Layer 2 (Business services layer) groups capabilities across clinical care, public health, supply chain, and health financing realised through shared components—Computable Decision Support Engine, Benefits Package Registry, Supplier Registry, Health Management Information Systems, and Public Health Surveillance Platforms—while treating interoperability and governance as cross-cutting properties of the entire architecture.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "layer",
@@ -2364,7 +2421,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 164,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.1.3 explains that the DPI-H architecture integrates with and builds upon foundational DPI (digital identity, payments, general data exchange) where accessible without duplicating it, while ensuring health systems can operate effectively where foundational DPI is absent and sequence investments progressively starting from an essential foundation (REDDHI).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "foundational dpi",
@@ -2400,7 +2460,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 103,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.2.1 opening describes the typical country starting point of inherited vertical disease-programme systems, donor-funded tools, and unreconciled identifier lists whose repeated data capture burdens health workers and degrades data quality, trust, and security.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "slate",
@@ -2428,7 +2491,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 645,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.2 and Table 2.2 define Resilient Essential Data and Digital Health Infrastructure (REDDHI) as an evolving condition of self-sustaining national digital health maturity rather than a fixed compliance checklist or procurement bundle. Explains the interdependence of the core registries (Client, Health Facility, Health Workforce, Product) in establishing record attribution and provenance for the Lifelong Health Record, and tabulates eight foundational capabilities alongside the DPI-H and foundational components that deliver them: unique identification, authentication/access management, longitudinal health records, standards-based data exchange, consistent terminology meaning, consistent data structure (LIMR as a maturing enabler), data governance/quality/audit, and consent/authorisation/privacy.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "reddhi",
@@ -2476,7 +2542,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3480,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.2.2 and Section 2.3 (Principles I–IX opening) set out the enabling conditions for REDDHI via the 'full-STAC' approach—Open Standards (HL7 FHIR, ICD, LOINC, SNOMED CT/GPS), Open Technologies, Open Architectures, and Open Content (WHO SMART Guidelines)—illustrated by Figure 2.2, and then define the first nine DPI-H Reference Architecture Design Principles translating DPI-H commitments into structural choices: (I) Governance and data-quality stewardship with contributor feedback loops, (II) Open Standards with progressive readiness pathways, (III) Interoperability including decentralised and federated models without single-mediator bottlenecks, (IV) financial and technical whole-of-life Sustainability, (V) loose-coupled Modularity, (VI) Local Capacity and operational transparency, (VII) Equity and Inclusion through context scaling and graceful degradation, (VIII) Data Ownership, Access, and Control (standards-based consent such as IHE profiles and FHIR Consent plus public practical control over data), and (IX) Trust and Security.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "reddhi",
@@ -2524,7 +2593,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 423,
-      "summary": null,
+      "summary": {
+        "text": "Completes Design Principle IX (Trust and Security—verified participant identity and authorisation, cryptographic provenance, containment of component compromise, and graduated assurance leveraging national PKI/verifiable-credential infrastructure) and Principle X (Ethics—preventing misuse, governing secondary use for analytics/research/AI with de-identification, group-harm protection, and audit transparency, summarised in Figure 2.3), and then presents Section 2.4 on the TOGAF-based methodology mapping the seven priority health goals both top-down (goals → stakeholder value → capabilities → services → components) and bottom-up to demonstrate how core DPI-H registries recur across goals while enabling point-of-service and functional applications.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "goals",
@@ -2572,7 +2644,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 156,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.4.1 defines the uniform four-part structure used to articulate each of the seven priority health goals (the accountable health outcome, technology-neutral system abilities, required capabilities mapped to DPI-H components and foundational-DPI dependencies, and cross-goal component reuse) and introduces 'Advance Efficient and Equitable Health Financing' as the worked example with full mappings in Appendix E.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "goal",
@@ -2604,7 +2679,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 810,
-      "summary": null,
+      "summary": {
+        "text": "Section 2.4.2 (Table 2.4) presents the worked example mapping 'Advance Efficient and Equitable Health Financing' to DPI-H components—showing that beneficiary identification, provider empanelment/credentialing, accurate pricing/reimbursement, fund movement, and data exchange reuse existing components (Client, Facility, Workforce, and Product registries, Terminology Services, foundational payments DPI, and shared exchange standards) while introducing only one new DPI-H component, the Benefits Package Registry, consumed by external claims and PFM applications—and opens Chapter 3 outlining Sections 3.1–3.6 of the DPI-H Reference Architecture.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "financing",
@@ -2652,7 +2730,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1868,
-      "summary": null,
+      "summary": {
+        "text": "Sections 3.1 and 3.2 (with Tables 3.1, 3.2, and 3.3 and Figure 3.1) explain the architecture description approach using The Open Group's ArchiMate 3.2 modelling language (authored in Archi and exchangeable via the ArchiMate Model Exchange Format) and TOGAF 10 viewpoints. Defines the nine ArchiMate element types used (Stakeholder, Goal, Outcome, Value, Capability, Application component, Application service, Data object, Product) and the typed relationships connecting them (Realisation, Composition, Serving, Access, Assignment, Triggering), and explains how different audiences read goal/capability, realisation, and motivation views as functional roles rather than one-to-one software procurement instructions.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "navigable views",
@@ -2700,7 +2781,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1106,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.3 (with Figures 3.2–3.5) illustrates the DPI-H reference architecture in practice through the integrated layered view and worked goal walkthroughs for 'Establish Trusted Personal Health Records' and 'Ensure Quality and Continuity of Care' (such as comprehensive needs assessment and shared care planning). Shows how sub-goals trace through outcomes and capabilities to shared DPI-H components (Client Registry, Lifelong Health Record, Terminology Service, Computable Decision Support Engine), functional applications/digital health wallets, and cross-cutting enablers (interoperability and governance).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "layered view",
@@ -2748,7 +2832,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4 heading fragment ('DPI-H') introducing the sub-chapter on Governance of Digital Health Architectures and DPI-H.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "219 DPI-H 220",
       "extractCut": false
@@ -2763,7 +2850,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 211,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4.1 frames governance as the institutional arrangements distributing, exercising, and accounting for decision authority across shared DPI-H infrastructure to preserve trust, financial sustainability, equity, and semantic consistency over time, distinguishing strategic governance from day-to-day operational governance and emphasising that institutional coordination and data harmonisation must precede technology deployment.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "shared infrastructure",
@@ -2803,7 +2893,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 174,
-      "summary": null,
+      "summary": {
+        "text": "Completes Section 3.4.1—noting that governance structures are country- or region-specific policy choices distinct from whether canonical registries are implemented centrally, federated, or as a hybrid—and opens Section 3.4.2 with the first governance principle, Subsidiarity (placing decision authority at the lowest effective level and separating operational execution from strategic deliberation).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "governance",
@@ -2839,7 +2932,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1046,
-      "summary": null,
+      "summary": {
+        "text": "Completes Section 3.4.2's governance principles—Inclusive representation of underserved communities, Financial sustainability as a strategic mandate, Prevention of resource overuse (drawing on commons governance), Transparency and accountability, and Adaptability and learning—and presents Section 3.4.3 on Strategic Governance responsibilities and the three substantive safeguards for the shared resource: securing financial continuity via multi-stakeholder funding models and reserves, operationalising equity in governance bodies across civil society, subnational regions, gender, and language, and managing demand on shared capacity via usage tiers and monitoring.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "strategic governance",
@@ -2887,7 +2983,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 454,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4.4 details Operational Governance responsibilities—distributed Master Data Management across authoritative custodians, release management, change management, service levels and incident management, interoperability and semantic governance conformance, field evaluation of systems in use, and explicit, time-bound escalation pathways to strategic governance when scope, equity, capacity, security, or funding thresholds are crossed.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "operational governance",
@@ -2935,7 +3034,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1680,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4.5 (with Figures 3.4.1–3.4.3) introduces the Semantic Governance Infrastructure (SGI) as a cross-cutting institutional and procedural capability—distinct from runtime terminology servers—that coordinates content lifecycle management across all DPI-H metadata registries (Client, Facility, Workforce, Product, Terminology Service, and LIMR). Distinguishes the governance, runtime, and content/application layers; defines five SGI capability categories (Intake, Authoring and publication, Monitoring of both content quality and field adoption, Distribution, and Consumption); outlines an incremental maturity spectrum adapted from OpenHIE; and explains how SGI mediates top-down global-to-national harmonisation and bottom-up local feedback drawing on frameworks such as HL7 UTG, SNOMED National Release Centres, and the OpenHIE National Health Data Dictionary (NHDD).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "semantic governance",
@@ -2983,7 +3085,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 255,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4.6 examines regional and multi-country DPI-H governance considerations across three dimensions: resolving jurisdictional complexity and national data sovereignty across legal frameworks, establishing a regional strategic governance body with ministerial representation and dedicated financial sustainability for shared regional components, and documenting a layered governance model with explicit handoff protocols between regional and national authorities.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "regional",
@@ -3031,7 +3136,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 201,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.4.7 addresses governance maturity considerations across diverse country starting points, illustrating how a lower-capacity setting may initially combine strategic and senior operational authority within a single ministerial steering committee with a roadmap to separate them as institutional capacity grows, while embedding governance maturity assessment into DPI-H readiness evaluation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "governance",
@@ -3071,7 +3179,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 101,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5 introduces the sub-chapter on DPI-H Application Components—the shared, reusable digital resources established once and drawn upon across programmes and points of care—previewing their distinguishing criteria, standard description structure, two-layer architectural organisation, and full specifications in Appendix C.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "components",
@@ -3099,7 +3210,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 860,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5.1 and Box 3.1 define the eight criteria that distinguish a DPI-H Application Component from functional or point-of-care applications: cross-programme reusability, stable standards-based interfaces, foundational rather than programme-specific function, public governance, full lifecycle governance, non-transactional national data orchestration, functional stability, and technology neutrality. Clarifies that point-of-care clinical systems, cross-cutting interoperability, and foundational cross-sectoral DPI (such as CRVS or national geospatial registries) sit outside DPI-H components, and distinguishes policy-level canonical registry authority from centralised, federated, or hybrid implementation choices.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi-h component",
@@ -3147,7 +3261,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 115,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5.2 outlines the nine-part structure used to describe every DPI-H component in Appendix C: architectural placement, definition and description, relevance to health outcomes, core attributes and capabilities, connections to other DPI-H and foundational DPI components, functional requirements with SHALL/SHOULD/MAY normative status, data requirements, and governance considerations.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "component",
@@ -3175,7 +3292,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 93,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5.3 introduces the two-layer organisation of DPI-H application components and presents the caption for Figure 3.5 showing the layered view across functional applications, DPI-H registries and shared services, cross-cutting enablers, foundational DPI, and technology.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "organised",
@@ -3203,7 +3323,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1964,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5.3.1 and Table 3.5 describe the foundational shared data layer—comprising the REDDHI core registries (Client Registry, Health Facility Registry, Health Workforce Registry, Product Registry) and the person-centred Lifelong Health Record, together with the Terminology Service (TS) and Logical Information Model Repository (LIMR)—and provide a detailed comparative matrix contrasting the LIMR (syntax/structure, cardinalities, design-time logical models, FHIR StructureDefinitions/openEHR archetypes, preventing semantic fragmentation) against the TS (semantics/coded meaning, design- and runtime code validation/expansion/translation via FHIR CodeSystem/ValueSet/ConceptMap and SNOMED CT/ICD-11/LOINC, preventing semantic drift).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "blood pressure",
@@ -3251,7 +3374,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 372,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.5.3.2 describes the five shared components of the DPI-H business services layer—Computable Decision Support Engine, Public Health Surveillance Platform, Health Management Information System (HMIS), Supplier Registry, and Benefits Package Registry—that build on the foundational shared data layer to support clinical care, public health, supply chain, and health financing across programmes.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "services layer",
@@ -3299,7 +3425,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 283,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6 introduces the Interoperability Architecture within DPI-H, framing interoperability as a cross-cutting capability of the reference architecture rather than a single procured component or layer, and distinguishing four complementary dimensions required for safe clinical and operational data exchange: technical transport, structural consistency, semantic preservation, and organisational/governance arrangements (legal basis, consent, and data-sharing agreements).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "agreed exchange",
@@ -3347,7 +3476,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 608,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6.1 explains why the DPI-H reference architecture treats interoperability as a pervasive capability rather than a single central software component (contrasting with how OpenHIE's interoperability layer is often misinterpreted as a centrally procured bus creating single points of control and failure). Distinguishes bilateral system integration from true open-standards interoperability enabling one-to-many reuse, and separates the functional role of mediation (routing, translation, authentication, orchestration, and audit logging) from the implementation topology (distributed access points, central bus, component gateways, or endpoint-level exchange).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "central bus",
@@ -3395,7 +3527,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 564,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6.2 describes how semantic and structural interoperability depend on two complementary foundational DPI-H components—the Terminology Service ('dictionary' governing coded meaning across SNOMED CT/GPS, ICD-11, LOINC, GS1, IDMP, and DICOM) and the Logical Information Model Repository ('grammar' governing structured, versioned national information models)—together with exchange standards such as HL7 FHIR, IHE profiles, and the International Patient Summary (IPS). Explains that nationally governed information models prevent uncoordinated standard extensions ('interoperable silos') and recommends consumer-side boundary adapters for legacy representational translation without altering clinical meaning.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "meaning",
@@ -3443,7 +3578,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1044,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6.3 and Figure 3.6 define the division of responsibility between content-neutral foundational data-exchange DPI (such as the GovStack Information Mediator Building Block providing REST-based service/event gateways, signed timestamped audit logs, non-repudiation, and data-sharing agreements) and health-sector endpoints that handle clinical semantics, record correlation, and granular consent at the source. Illustrates how multiple exchange topologies—point-to-point standards-conforming connections, central service buses, component gateways, distributed access points, and asynchronous store-and-forward publish–subscribe eventing (for example, publishing a birth registration event once for both CRVS and immunisation registries across intermittent connectivity)—can coexist within a single country.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "dpi",
@@ -3491,7 +3629,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 600,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6.4 examines cross-border health data flows for mobile populations, cross-border care, and infectious-disease emergencies through federated national gateways rather than supranational data stores. Contrasts the European cross-border health services infrastructure (MyHealth@EU national contact points exchanging patient summaries and e-prescriptions, alongside the EU European Health Data Space Regulation 2025/327 distinguishing primary care from secondary research/policy use) with WHO's Global Digital Health Certification Network (GDHCN, providing PKI-based cryptographic trust verification for verifiable health documents without centralising personal data), and lists five core requirements for cross-border exchange (IPS alignment, terminology/language translation, cross-jurisdiction PKI trust frameworks, explicit legal/consent bases, and reuse of foundational cross-border identity/trust DPI).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "cross-border",
@@ -3539,7 +3680,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 81,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.6.5 notes that because interoperability is realised through conformance to shared content, terminology, information-model, and exchange specifications, those requirements should be made testable to verify vendor claims before and during procurement, and introduces Section 3.7 on Conformance and Testing across Architecture and Components.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "conformance",
@@ -3567,7 +3711,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 287,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.1 sets out the purpose of the architecture's machine-readable conformance and testing model: enabling structured assessment at two complementary levels—conformance of concrete systems to the capabilities, services, and standards of their claimed roles, and conformance of a national or organisational architecture itself (completeness, traceability, and explicit documentation of adoptions, adaptations, or mappings)—alongside outcome-based validation of whether architectural goals are being achieved.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "reference architecture",
@@ -3611,7 +3758,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1446,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.2 (with Table 3.7.1 and Figures 3.7.1–3.7.2) defines the ArchiMate conformance and testing model extending Section 3.1 with Application Interaction, Application Function, Assignment, and Triggering. Models abstract actors and concrete systems as Application Components linked by Realisation; distinguishes offered services (realised by the responder actor) from required services (serving the initiator actor) and separates direction (offered/required) from support obligation (mandatory/optional); explains why Application Services can be reached via multiple access patterns (machine-to-machine transactions or human UI workflows); and establishes four principles of component-level conformance tested one side at a time against a simulator or UI test operator.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "opposite actor",
@@ -3659,7 +3809,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 180,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.3 explains how the reference architecture aligns with Integrating the Healthcare Enterprise (IHE) profiles through selective deferral: the architecture retains ownership of the actor, service, and interaction model while deferring transaction protocol details and conformance testing to existing IHE specifications and tooling where an IHE transaction applies, and specifying non-IHE or human-initiated UI interactions by other means.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "ihe",
@@ -3695,7 +3848,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 479,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.4 explains how decomposing the architecture into actors and services makes conformance testing plannable from the outset by separating standardised components (which arrive with reusable IHE/standard test plans, simulators, and reference data) from bespoke or UI-driven components that the adopter must test. Defines three quantitative testing progress ratios—requirements coverage, standards conformance, and capability completeness—and shows how the machine-readable model automatically surfaces architectural gaps such as un-realised capabilities or un-served required services.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "testing",
@@ -3743,7 +3899,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 690,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.5 extends the formal verification model to validating health goals and measuring national architecture adoption. Shows that goal validation mirrors component testing at the motivation layer (checking Goals against measurable Outcomes via indicator behaviours), and defines how mapping country architecture elements to reference elements via ArchiMate Realisation relationships—across direct adoption, documented adaptation, or established-architecture mapping—makes reference coverage, inherited conformance criteria, and missing-element gaps mechanically quantifiable.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "element realises",
@@ -3791,7 +3950,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 349,
-      "summary": null,
+      "summary": {
+        "text": "Section 3.7.6 and Table 3.7.2 summarise the ten core architectural conformance constructs (Actor, System realising an actor, Offered service, Required service, Support qualifier, Interaction, Conformance, Simulator, Goal criterion, and Country-to-reference mapping) alongside their ArchiMate 3.2 elements, binding relationships, and IHE counterparts, and then introduce Chapter 4 ('Implementing a National Digital Health Architecture') and the accountabilities of ministries, architects, implementers, and development partners.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "opposite actor",
@@ -3839,7 +4001,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.1 heading transition line ('12') introducing the sub-chapter on Understanding the Starting Point for national DPI-H implementation.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "12",
       "extractCut": false
@@ -3854,7 +4019,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 168,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.1.1 ('No Country Starts from Zero') emphasises that every country begins DPI-H implementation with legacy programme applications, siloed registries, and spreadsheet reporting, and frames Chapter 4 as practical, phased guidance for deciding which existing investments to preserve, upgrade to open standards, integrate into shared infrastructure, or retire while progressing toward REDDHI as a continuously maturing direction of travel.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "legacy",
@@ -3890,7 +4058,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 427,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.1.2 outlines the four core questions of a national digital health architecture baseline assessment—(1) inventorying existing health systems and registries against REDDHI functions and open standards, (2) assessing the reach and health-readiness of foundational DPI (identity, payments, data exchange), (3) evaluating legal, institutional, procurement, and government capacity conditions, and (4) selecting two to three priority health goals and high-value use cases—whose outputs feed a living national architecture roadmap backed by a benefits case, logic model, and digital-readiness baseline.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "high-value",
@@ -3938,7 +4109,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.2 heading transition line ('63') introducing the sub-chapter on Charting a Path to REDDHI.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "63",
       "extractCut": false
@@ -3953,7 +4127,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 542,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.2.1 defines four common country entry points toward REDDHI and their respective priorities: Entry point 1 (Building from the ground up—establishing governance and architectural standards before donor projects create new silos, then deploying the REDDHI minimum viable layer), Entry point 2 (Integrating existing systems—deploying shared layers such as a client registry and interoperability capability alongside programme silos via APIs before gradual migration), Entry point 3 (Upgrading existing infrastructure—enforcing open standards, standard APIs, and the 'right to move' to overcome vendor lock-in), and Entry point 4 (Scaling and deepening—expanding into the business services layer, semantic governance, last-mile reach, domestic financing with Ministries of Finance, and in-house government enterprise architecture capacity).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "entry",
@@ -4001,7 +4178,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 984,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.2.2 outlines a four-phase iterative implementation progression complementing the WHO Digital Implementation Investment Guide (DIIG): Phase 1 (Assess, align, and plan—baseline assessment, governance body, stakeholder and Ministry of Finance engagement, selecting 2–3 priority goals/use cases, aligning procurement, and producing a roadmap), Phase 2 (Establish the foundation—deploying or consolidating foundational shared data layer components needed for priority goals, integrating with foundational identity DPI, establishing interoperability capability, and connecting 2–3 priority programme systems in production), Phase 3 (Connect and expand—connecting further programmes, establishing semantic governance infrastructure, extending to subnational/primary/offline care, migrating legacy functions, and deploying the business services layer), and Phase 4 (Sustain and evolve—transitioning to domestic financing, building in-government enterprise architecture capacity, aligning development partners, and continuously evolving the architecture).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "phase",
@@ -4049,7 +4229,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 299,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.2.3 sets out four principles for managing legacy systems during DPI-H implementation: (1) Assess before you act (evaluating alignment with REDDHI, API/standards upgradeability, and replacement disruption), (2) Integrate before you replace (exposing indispensable legacy data via standard APIs and interoperability capabilities in the near term), (3) Replace at natural transition points (using procurement cycles, end-of-life events, and major upgrades to migrate data into open-standards shared infrastructure), and (4) Stop creating new silos (making architectural conformance a mandatory procurement requirement for all new systems).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "legacy",
@@ -4097,7 +4280,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 275,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.2.4, drawing on the February 2026 Wilton Park dialogue on DPI for health, highlights the urgent priority of establishing an enduring National Digital Architect function (an empowered individual or small team embedded in the Ministry of Health, digital health agency, or whole-of-government digital authority) prior to major implementation. Distinguishes this accountable architectural designer—holding authority to set standards, evaluate conformance, coordinate across ministries, and veto or escalate non-conformant investments—from IT managers, project coordinators, or donor-funded consultants, and notes the support available from regional and global architect networks.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "architect",
@@ -4141,7 +4327,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 87,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3 introduces the sub-chapter on Profiles and Specifications for Implementation, explaining that translating architectural intent into working systems requires a concrete specification layer defining minimum data structures, actor roles, transaction patterns, and foundational-DPI integration interfaces regardless of technology choices.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "profiles",
@@ -4169,7 +4358,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 389,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.1 emphasises that defining and standardising minimum data models before software procurement is the most consequential implementation decision for semantic interoperability. Recommends governing national data models (mandatory core attributes plus country-specific extensions) through the Logical Information Model Repository, and specifies the minimum data model scope for the Client Registry (demographic/identity attributes), Facility Registry (location, capabilities, operational status), Health Workforce Registry (credentials, specialisation, deployment), Product Registry (identity, classification, regulatory status), and metadata profiles for Terminology Services and the LIMR.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "minimum attributes",
@@ -4217,7 +4409,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 337,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.2 explains why implementable DPI-H specifications must explicitly define human and system actors and their roles alongside data models to anchor role-based access control, record attribution, workflow steps, and conformance capability statements. Illustrates this discipline with WHO SMART Guidelines—where L2 Digital Adaptation Kits (DAKs) define generic personas that L3 FHIR Implementation Guides express as computable actor definitions—and recommends governing reusable actor and role schemas (such as registrant, verifying authority, and consuming system) across all DPI-H components.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "computable actor",
@@ -4265,7 +4460,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 427,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.3 recommends HL7 FHIR (Release 5) as the framework for specifying and implementing DPI-H health data exchange services, RESTful APIs, search parameters, and transaction patterns. Clarifies that FHIR profiles must be derived from and validated against the technology-independent Logical Information Model Repository and bound to governed Terminology Services to guarantee shared meaning, and outlines a progressive adoption path where countries align underlying data models to FHIR resource structures early even before achieving full FHIR API compliance.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "fhir",
@@ -4313,7 +4511,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 374,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.4 specifies two categories of integration interfaces between DPI-H and foundational cross-sectoral DPI: (1) general APIs enabled by foundational DPI for health use (identity verification APIs for the client registry, CRVS birth/death event APIs for client and workforce registries, payment gateway APIs for health financing, and national data exchange APIs), and (2) health-sector APIs consumed by foundational DPI or external services (client registry patient matching, facility registry geolocation/capability APIs, workforce credential verification for payments, and terminology service APIs). Advises countries to communicate missing API requirements to foundational DPI authorities rather than duplicating them, or build interim capabilities with documented transition plans.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "foundational dpi",
@@ -4361,7 +4562,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 303,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.4 (Interoperability Implementation Pathways) recommends logically decoupling core functions (clinical data exchange, health financing, and shared registries) via open standards and profiles so countries can adopt modular capabilities incrementally across three physical topologies: centralised models (national shared infrastructure orchestrating exchange with strong public governance), federated models (direct peer-to-peer exchange anchored on shared registry identifiers and terminology), and hybrid models (combining centralised registries/policy enforcement or health information exchange with specialised or decentralised exchange such as a dedicated health financing claims exchange).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "centralised",
@@ -4409,7 +4613,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 127,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.3.5 recommends establishing minimum conformance requirements and reusable testing mechanisms—such as an openly available, standards-based interoperability test bed providing FHIR validators, simulators, and test-management tooling adapted to national profiles—and making conformance certification against published profiles a mandatory condition for procurement approval of DPI-H components.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "conformance",
@@ -4441,7 +4648,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 213,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.4 explains how the formal verification and mapping mechanisms introduced in Section 3.7 are applied during national implementation: requiring profile conformance certification in procurement (Section 4.3), measuring the proportion of reference architecture elements realised by the national architecture (coverage), and using un-realised reference elements to surface roadmap gaps (Section 4.1) and justify continued investment.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "national architecture",
@@ -4481,7 +4691,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 188,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.4.1 ('Assessing impact: Are goals being achieved?') describes how countries evaluate whether DPI-H implementation is achieving its intended health goals by tracing outcome indicators back through capabilities and components. Highlights two practical requirements—capturing outcome baselines during the initial current-state assessment (Section 4.1) and conducting process evaluations alongside outcome metrics to capture workflow and organisational effects—and notes that the reference architecture's canonical goal-to-component decomposition enables cross-context comparison and international learning.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "goals",
@@ -4517,7 +4730,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 206,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.4.2 defines four dimensions for tracking national DPI-H progress on an annual or biannual basis—(1) component coverage (functionality, geographic, and population reach of REDDHI components), (2) standards conformance (open standards, APIs, and governed terminology/data models), (3) governance maturity (institutional, legal, and operational sustainability foundations), and (4) outcome linkage (evidence of improved health outcomes, reduced administrative burden, and resource efficiency)—to guide roadmap adjustments and sustain the investment case with Ministries of Finance and development partners.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "progress",
@@ -4557,7 +4773,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 48,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.5 introduces the sub-chapter on Roles, Skills, and Capacity, noting that a reference architecture's impact depends on how different actors apply it, the specialist roles and skills available to build and govern it, and how countries develop and retain that capacity over time.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "skills",
@@ -4585,7 +4804,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 255,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.5.1 summarises how five stakeholder groups use the DPI-H reference architecture—governments and policymakers (prioritising goals, sequencing phased investments, enforcing alignment), architects (adopting, adapting, or mapping national architectures), implementers and suppliers (building and assessing systems against data models, actors, profiles, and conformance criteria), development partners (aligning contributions to national shared components rather than parallel silos), and reviewers/assessors (benchmarking coverage, conformance, and goal-to-component impact)—emphasising that discipline, shared vocabulary, open standards, and explicit mapping matter more than verbatim adoption.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "reference model",
@@ -4629,7 +4851,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 348,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.5.2 identifies nine core specialist roles required alongside the National Digital Architect to build and govern a national architecture: enterprise and solution architects, information and FHIR modellers, terminology and semantic specialists, standards and interoperability specialists, security and privacy architects, integration and implementation engineers, data governance and stewardship roles, clinical and public-health informaticians, and change and programme managers. Notes that responsibilities must be explicitly assigned even where posts are combined, with technical modelling/terminology/security skills peaking during foundation-building and governance/stewardship/change-management growing during sustained operation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "skills",
@@ -4677,7 +4902,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 216,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.5.3 addresses building and sustaining national capacity as a systemic public-sector capability rather than ad-hoc hiring or permanent consultant dependency. Highlights national digital health leadership and technical training programmes (citing the UK NHS Digital Academy model), regional and global peer networks of national architects and implementers, and deliberate investment in organisational change management (stakeholder engagement, training, workflow redesign, and communicating benefits).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "sustaining",
@@ -4717,7 +4945,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 53,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.6 introduces the sub-chapter on Financing and Partnerships, emphasising that shared DPI-H infrastructure must outlive initial project cycles as a sustained national capability backed by deliberate financing and partnership arrangements from the outset.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "deserve",
@@ -4745,7 +4976,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 230,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.6.1 ('The Investment Case'), drawing on the February 2026 Wilton Park report, distinguishes two complementary arguments: how DPI for health is financed (sustaining shared infrastructure, human capital, and operations) versus what DPI for health financing delivers (revenue collection, pooling, resource allocation, fraud detection, and accountability). Explains that engaging Ministries of Finance as strategic partners requires framing DPI-H around public financial management outcomes—budget execution, reduced leakage, timely provider payments, traceable expenditure, and administrative efficiency—justifying multi-year recurrent domestic budget lines and cost-recovery rather than short-term donor project cycles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "ministries",
@@ -4789,7 +5023,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 142,
-      "summary": null,
+      "summary": {
+        "text": "Section 4.6.2 defines five mutually reinforcing dimensions of 'Sustainability by Design' for DPI-H: a clear value proposition, sound technical architecture and open standards, operational and governance organisational structures, financial resilience, and durable enabling legislation providing the legal basis to operate shared infrastructure, share data across programmes, and mandate conformance.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "wilton park",
@@ -4825,7 +5062,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 706,
-      "summary": null,
+      "summary": {
+        "text": "Sections 4.6.3 and 4.6.4 outline six complementary financing mechanisms for DPI-H—recurrent national health budget lines, blended domestic/donor financing with explicit government transition plans, contributions from health coverage schemes tied to usage, captured and reinvested efficiency dividends, bounded private-sector hosting/development retaining public ownership of registries and data, and cross-programme investment pooling—supported by roadmap and Section 4.4 progress evidence, examine cross-government and development-partner partnerships coordinated by the National Digital Architect, and then open Chapter 5 ('Future proofing the Architecture') by framing artificial intelligence (from rule-based and ML models to LLMs/LMMs) and emerging technologies in relation to shared DPI-H foundations and WHO/EU AI governance frameworks.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "multi-modal models",
@@ -4873,7 +5113,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1177,
-      "summary": null,
+      "summary": {
+        "text": "Sections 5.1 and 5.2 explain why emerging technologies—especially artificial intelligence—depend on rather than substitute for the shared DPI-H data foundation (while noting that standalone consumer self-management apps not using health-system data sit outside this scope). Detail how five architectural elements—Terminology Services, the Logical Information Model Repository, the Client Registry, cross-cutting interoperability, and embedded governance/consent/privacy—prevent AI models from amplifying fragmented or misattributed data; emphasise that semantic governance and auditable, curated registry grounding become even more critical with large language and multi-modal models; and describe the emerging pattern of giving AI models access to deterministic, governed capabilities via skills, orchestrating agents, shared interfaces such as the Model Context Protocol (MCP), and machine-readable implementation guide metadata.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "emerging technologies",
@@ -4921,7 +5164,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 401,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.3 surveys credible near-term, assistive AI applications across priority health goals under human oversight: (1) health financing (distinguishing pattern-based fraud/waste/abuse detection across claim volumes from rule- or ML-based individual claims adjudication support), (2) supply chain (demand forecasting, catalogue mapping, quality control, and anomaly/diversion detection), (3) clinical and public health services (point-of-care diagnostic/decision support, image interpretation, risk prediction, and outbreak forecasting), (4) planning and reach (combining satellite imagery settlement estimation with governed geo/facility reference data for microplanning), and (5) cross-domain document extraction, coding assistance, and guidance navigation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "scanned",
@@ -4969,7 +5215,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.4 heading transition line ('139') introducing the sub-chapter on Readiness, oversight, and responsible adoption of AI in health.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "139",
       "extractCut": false
@@ -4984,7 +5233,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 173,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.4.1 defines national AI readiness as a property of the receiving environment across three dimensions: the quality and governance of the data a model uses, the legal and policy framework governing its use (covering data protection, input/output safeguards, training-data representativeness, and model-drift monitoring), and institutional capacity to deploy, evaluate, monitor, and maintain systems, citing WHO's 2021 and 2024 AI ethics/governance guidance alongside emerging national and international AI statutes.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "readiness",
@@ -5020,7 +5272,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 385,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.4.2 explains that trustworthy AI in healthcare must be earned through evidence of effectiveness, safety, transparency about limitations, human accountability, fairness, and meaningful human oversight. Advises decision-makers to interrogate vendor claims (task specificity, data dependencies, evaluation evidence, error accountability, and governance) and conduct recurring evaluations ('evals') against representative cases and explicit criteria before and during deployment, referencing the Council of Europe AI Framework Convention (CETS No. 225), national AI statutes in the Republic of Korea (Act No. 20676) and Peru (Ley N.º 31814), and WHO AI resources.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "artificial intelligence",
@@ -5068,7 +5323,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 83,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.4.3 highlights equity and safety in health AI, explaining that models trained on poorly governed or unrepresentative data systematically reproduce and magnify inequities at scale in ways harder to detect than individual errors, making data representativeness and quality an integral part of the core data-foundation discipline rather than a separate ethical exercise.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "equity",
@@ -5096,7 +5354,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 252,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.4.4 ('Cost, sustainability, and commercial pressure') addresses computing resource disparities, volatile commercial AI pricing, and single-provider lock-in risk, recommending architectural separation between service orchestration and individual models, noting trade-offs around sovereign models hosted under domestic/regional authority, and cautioning against vendor, donor, or political pressure to deploy AI on fragmented foundations rather than sequencing foundations first.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "commercial",
@@ -5140,7 +5401,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 393,
-      "summary": null,
+      "summary": {
+        "text": "Section 5.5 ('Keeping the architecture open and adaptable') concludes Chapter 5 by explaining that trusted registries, governed semantics, and reliable interoperability enable countries to integrate AI, genomics, remote monitoring, and decentralised identity without creating new silos; notes that flexible interfaces allow the foundations to evolve while treating AI for now as a cross-cutting consideration rather than a single platform; and transitions to the References placeholder and Appendix.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "emerging technologies",
@@ -5188,7 +5452,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 139,
-      "summary": null,
+      "summary": {
+        "text": "Appendix A ('Table A: DPI-H Stakeholders') categorises DPI-H stakeholders across nine groups: Individuals and Communities (individuals/care recipients, caregivers, families), Health Workforce (healthcare providers, citing WHO's classification of health workers), Health Facilities and Institutions, Health Management Personnel, Leadership and Governance (Ministries of Health and Finance, public health authorities, policy makers/regulators, foundational DPI agencies), Health Financing Actors, Supply Chain Actors, Academic/Research/Training Bodies, and Support and Implementation Partners.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "academic",
@@ -5224,7 +5491,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 118,
-      "summary": null,
+      "summary": {
+        "text": "Appendix B ('Table B: Mapping of health sector goals to WHO health system building blocks') maps the seven priority health sector goals (trusted data foundations, health workforce, quality and continuity of care, trusted personal health records, supply chain management, efficient and equitable health financing, and climate and epidemic resilience) plus cross-cutting leadership and governance to the WHO health system building blocks, and introduces the heading for Appendix C ('DPI-H Application Component Descriptions').",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "appendix",
@@ -5260,7 +5530,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 2,
-      "summary": null,
+      "summary": {
+        "text": "Appendix C sub-heading transition ('Metadata registries and foundational components') introducing the list of foundational DPI-H application component descriptions.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "18 •",
       "extractCut": false
@@ -5275,7 +5548,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 4028,
-      "summary": null,
+      "summary": {
+        "text": "Lists the foundational DPI-H components covered in Appendix C and provides the full Component Articulation for the Client Registry (Core Registries for Health · DPI-H Foundational Layer). Details its architecture placement as the health sector's authoritative person-identity anchor and Master Patient Index (MPI/EMPI); explains why identity resolution matters for clinical safety, surveillance, and equity; specifies eight core attributes; analyses its relationship with foundational ID systems across WHO HUID Guidance (2023) Models A, B, and C as well as other DPI-H components (Lifelong Health Record, Benefits Package Registry, Health Facility Registry, Health Workforce Registry, LIMR, Terminology Service, and PKI); enumerates 25 Required and Recommended functional requirements extending OpenHIE (CRWF-1–4, CRF-1–10) and IHE PMIR/PIX; defines the 17-element minimum dataset; and sets out four multi-sectoral governance principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "client registry",
@@ -5323,7 +5599,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 5129,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Health Facility Registry (Core Registries for Health · DPI-H Foundational Layer). Distinguishes the registry system from the Master Facility List (MFL) dataset and the cross-sectoral Common Geo-Registry (CGR), as well as facilities, buildings, locations, and organisations; explains why geolocated, temporally valid facility data across public, private, faith-based, NGO, logistics, and temporary/campaign sites matters for service delivery, emergency response (citing the WHO Geolocated Health Facilities Data initiative), supply routing, and claims validation; specifies nine core attributes including three independent hierarchy types (administrative, operational, and referral/catchment); details connections with the CGR, supply chain pillars, Health Workforce Registry (via IHE mCSD joint queries), Benefits Package Registry, and Terminology Service; enumerates 22 Required and Recommended functional requirements extending OpenHIE (FRF-1–14, FRWF-1); defines the 17-element signature and service domain dataset; and outlines four governance considerations.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "facility registry",
@@ -5371,7 +5650,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3830,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Health Workforce Registry (Core Registries for Health · DPI-H Foundational Layer). Distinguishes the registry's authoritative worker identity and credential master record from operational HRIS and LMS platforms; explains its role in supporting 12 of the 29 WHO National Health Workforce Accounts (NHWA, 2nd ed., 2023) indicators, point-of-care credential verification, and payroll/claims fraud prevention; defines eight core attributes covering ISCO-08 occupational classification, licensing, qualifications/CPD, and facility affiliation; describes connections with the Client Registry, Health Facility Registry (via IHE mCSD), Terminology Service, LIMR, downstream clinical/claims/payroll/LMS applications, and foundational IDs; specifies 22 Required and Recommended functional requirements extending OpenHIE (HWWF-1–4, HWRF-1–12); defines the 23-element minimum dataset; and sets out four governance considerations including low-latency licence revocation propagation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "workforce registry",
@@ -5419,7 +5701,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 4108,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Product Registry (Core Registries for Health · DPI-H Foundational Layer). Distinguishes the cross-sectorally reusable Product Registry from the downstream Product Catalogue Management Tool (PCMT); explains how shared product master data prevents fragmented local lists and enables demand aggregation, warehouse matching, and batch/serial traceability (citing the WHO 2025 Digital Transformation Handbook for Health Product Catalogue, USAID GHSC-PSM, GS1, and CGD); defines eight core attributes covering generic-to-item mapping, GTINs, multi-scheme classification (UNSPSC, GPC, ATC, WHODrug), and packaging hierarchies; details connections with the PCMT, supply chain systems, Terminology Service, LIMR, Health Facility Registry, and Supplier Registry; specifies 16 functional requirements and an 18-element minimum dataset; outlines three governance rules; and presents a nine-dimension comparative table contrasting the Product Registry with the PCMT.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "product registry",
@@ -5467,7 +5752,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 4458,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Lifelong Health Record (LHR, DPI-H Foundational Layer · Shared Data Layer). Explains why 'Lifelong Health Record' is used in preference to OpenHIE's 'Shared Health Record' and how the LHR—whether centralised, federated, hybrid, or virtual—differs from facility-level EMRs/EHRs and person-facing Personal Health Record (PHR) or Digital Health Wallet applications; describes its impact on care continuity, clinical decision support, patient empowerment, and capture-once derivation for HMIS and surveillance; specifies ten core attributes; details connections with the Client Registry, Health Facility and Workforce Registries, LIMR, Terminology Service, CDSE, HMIS, and PHSP; enumerates 21 Required and Recommended functional requirements extending OpenHIE (SHRWF-1–2, SHRF-1–9); and establishes nine governance principles covering public stewardship, legal mandate, consent, role-based and break-glass access, data quality, federation, retention, transparency, and cross-programme use.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "lhr serves",
@@ -5515,7 +5803,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3913,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Terminology Service (TS, DPI-H Foundational Layer · Shared Data Layer · Semantic Governance Infrastructure). Explains how the TS manages coded meaning alongside the LIMR's structural definitions, distinguishing a national semantic-governance TS from local facility deployments and covering both international standards (ICD-11, SNOMED CT/GPS, LOINC, ICPC, ATC, ICF) and local/national code systems and concept maps; describes why centralised terminology services prevent semantic divergence and simplify proprietary licence compliance; specifies eight core attributes; details connections with the LIMR, LHR, CDSE, HMIS, PHSP, and Core Registries; enumerates 25 Required and Recommended functional requirements extending OpenHIE (TSWF-1–8, TSF-1–13) and IHE SVCM; and sets out six governance principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "terminology service",
@@ -5563,7 +5854,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3582,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Logical Information Model Repository (LIMR, DPI-H Foundational Layer · Shared Data Layer · Semantic Governance Infrastructure). Positions the LIMR as a progressive DPI-H enabler (with no direct OpenHIE equivalent) that governs computable structural definitions and WHO SMART Guidelines L3 artefacts across formalisms (HL7 FHIR StructureDefinitions/IGs, openEHR archetypes, SMART Guidelines data dictionaries) alongside the Terminology Service; explains how explicit, clinically governed structural models prevent semantic fragmentation and vendor lock-in; defines nine core attributes; details connections with the TS, LHR, Client Registry, CDSE, HMIS, and PHSP; specifies 17 Required and Recommended functional requirements; outlines seven governance principles; and transitions to the Business Services component descriptions.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "logical model",
@@ -5611,7 +5905,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1,
-      "summary": null,
+      "summary": {
+        "text": "Appendix C sub-heading transition ('Business Services Components') introducing the business-services-layer DPI-H application component descriptions.",
+        "status": "draft"
+      },
       "keywords": [],
       "extract": "•",
       "extractCut": false
@@ -5626,7 +5923,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 4937,
-      "summary": null,
+      "summary": {
+        "text": "Lists the Business Services Layer components covered in Appendix C and provides the full Component Articulation for the Computable Decision Support Engine (CDSE, Business Services Layer · Clinical and Operational Decision Support). Positions the CDSE as a progressive DPI-H capability separating governed clinical and operational decision logic (knowledge base in the LIMR, inference engine in the CDSE, and communication via CDS Hooks and SMART on FHIR) from point-of-care applications; explains how it closes the evidence-to-practice gap, operationalises WHO SMART Guidelines L3 content, and supports medication safety and care equity; specifies 13 core attributes; details connections with the LHR, LIMR, Terminology Service, Client/Workforce/Facility Registries, HMIS, and PHSP; enumerates 25 Required and Recommended functional requirements; and establishes seven clinical governance, liability, explainability, and override-feedback principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "computable decision",
@@ -5674,7 +5974,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3559,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Supplier Registry (Business Services Layer · Health Supply Chain). Positions the Supplier Registry as the third supply-chain master data pillar alongside the Product and Health Facility Registries, noting that supplier registries are often stewarded cross-sectorally by finance, trade, or procurement authorities and are architecturally distinct from operational Supplier and Contracts Management Systems; explains how shared supplier identity and regulatory/certification status support compliance verification, product recalls, cold-chain assurance, and end-to-end traceability; specifies eight core attributes including GS1 GLN cross-referencing; details connections across supply chain and government systems; enumerates 18 Required and Recommended functional requirements; defines a 16-element minimum dataset; and sets out four governance principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "supplier registry",
@@ -5722,7 +6025,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3391,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Benefits Package Registry (Business Services Layer · Health Financing). Positions the registry as the authoritative national metadata reference for health benefit packages across all financing schemes (government entitlements, social health insurance, community-based, donor-funded, and private schemes), distinct from the operational Contract and Benefits Management System and the Beneficiary Registry; explains its role in UHC transparency, point-of-care eligibility checking, claims validation, and coverage gap analysis; specifies eight core attributes; details connections with foundational registries, consuming eligibility/claims/analytics systems, and external social-protection registries; enumerates 18 Required and Recommended functional requirements extending OpenHIE FIS (FISF-01–05); maps seven stakeholder groups; and outlines three multi-institutional governance principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "package registry",
@@ -5770,7 +6076,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1287,
-      "summary": null,
+      "summary": {
+        "text": "Presents a nine-dimension comparative table ('Distinguishing the Benefits Package Registry, Contract & Benefits Management System, and Beneficiary Registry') contrasting the three health financing components across architecture layer, core question answered, managed artefacts, relationship to the Client Registry, design-time versus runtime use, scope boundaries, inter-component dependencies, FHIR R6 resource alignment (InsuranceProduct/InsurancePlan vs Coverage/Claim/Contract vs person-specific Coverage/Group), risk if absent, and primary users.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "package registry",
@@ -5818,7 +6127,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 3763,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Health Management Information System (HMIS / RHIS, Business Services Layer · Health System Performance and Analytics). Positions the HMIS (with integrated analytics) as a shared business service that derives aggregate population and programme indicators primarily from person-level data already captured in the Lifelong Health Record rather than through parallel manual reporting; explains how this reduces health worker reporting burden and improves timeliness and comparability; specifies 11 core attributes covering indicator registries, aggregation, quality assurance, spatial analysis, cohort tracking, de-identification, and secondary use; details connections with the LHR, Client/Facility/Workforce Registries, Terminology Service, PHSP, CDSE, and LIMR; enumerates 22 Required and Recommended functional requirements extending OpenHIE (HMISF-1–7, HMISWF-1); and sets out five governance principles.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "openhie hmis",
@@ -5866,7 +6178,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 5003,
-      "summary": null,
+      "summary": {
+        "text": "Provides the Appendix C Component Articulation for the Public Health Surveillance Platform (PHSP / eIDSR, Business Services Layer · Public Health and Epidemic Preparedness). Distinguishes the PHSP's case-, event-, and indicator-based threat detection and response functions from the HMIS's routine programme monitoring, grounded in WHO IDSR (3rd ed., 2019), IHR (2005), and the WHO Event Information System; explains how deriving surveillance signals from the LHR and shared registries eliminates parallel reporting while extending surveillance to laboratory networks and climate/environmental health threats; specifies 12 core attributes; details connections across DPI-H components and international platforms; enumerates 22 Required and Recommended functional requirements; and establishes 11 governance principles covering legal mandate, privacy, outbreak declaration, IHR compliance, laboratory and climate integration, data quality, after-action review, and sustainable domestic financing.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "surveillance platform",
@@ -5914,7 +6229,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 334,
-      "summary": null,
+      "summary": {
+        "text": "Introduces Appendix D ('Country and Regional Implementation Examples'), explaining that the national, subnational, and regional implementations and Section D.1 standards-based tools are cited descriptively without WHO/ITU endorsement or ranking, and clarifying that whether a software tool functions as shared DPI-H depends on how a country deploys and governs it.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "appendix",
@@ -5962,7 +6280,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 32,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Client Registry') lists Open Client Registry (OpenCR) from the OpenHIE community as an illustrative open-source Client Registry providing person identity matching and master patient index capabilities.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "client registry",
@@ -5990,7 +6311,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 55,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Lifelong Health Record') lists HAPI FHIR Server and EHRbase (openEHR-conformant) as illustrative open-source clinical data repository technologies supporting centralised and federated Lifelong Health Record implementations.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "record",
@@ -6018,7 +6342,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 195,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Computable Decision Support Engine') lists seven illustrative standards and tools for computable decision support: CDS Hooks, Clinical Quality Language (CQL) and HL7 FHIR Clinical Reasoning, OpenCDS, WHO SMART Guidelines Digital Adaptation Kits and L3 content, the OpenMRS decision-support module, Firely Server, and GDL2 / openEHR decision support.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "clinical reasoning",
@@ -6058,7 +6385,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 40,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Health Management Information Service') lists DHIS2 as a widely deployed open-source application supporting aggregate collection, indicator management, data-quality tooling, dashboards, individual-level tracking, FHIR integration, and offline/low-connectivity operation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "data-quality",
@@ -6086,7 +6416,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 176,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Public Health Surveillance Platform') lists seven illustrative surveillance and outbreak-response tools and platforms: DHIS2 Tracker, WHO Go.Data, the Bahmni surveillance module, SORMAS, OpenELIS, CDC Epi Info, and the WHO Integrated Data Platform.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "surveillance",
@@ -6126,7 +6459,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 36,
-      "summary": null,
+      "summary": {
+        "text": "Section D.1 ('Terminology Service and Logical Information Model Repository') lists Snowstorm and Ontoserver as FHIR-conformant terminology servers used by national terminology services to host SNOMED CT and national extensions.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "fhir-conformant terminology",
@@ -6154,7 +6490,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 206,
-      "summary": null,
+      "summary": {
+        "text": "Completes the Section D.1 list of Terminology Service and LIMR tools (HL7 FHIR reference terminology service tx.fhir.org, openEHR Clinical Knowledge Manager, and national FHIR profile registries such as Simplifier) and opens Section D.2 ('Country implementation examples') with Australia, illustrating how My Health Record (opt-out LHR), a national terminology service, AU Base FHIR profiles (LIMR), and decision support are governed as a single coherent national programme.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "australia",
@@ -6198,7 +6537,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 70,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Denmark (illustrating LHR), describing how the national health portal (sundhed.dk) provides individuals and clinicians a single person-centred point of access over federated regional clinical systems without centralising the underlying records.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "denmark",
@@ -6226,7 +6568,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 78,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Estonia (illustrating LHR), describing the centralised national longitudinal health record (Tervise Infosüsteem) linked to foundational national digital identity infrastructure across primary to tertiary care.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "estonia",
@@ -6254,7 +6599,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 98,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for India (illustrating LHR, HMIS, and PHSP), describing the federated Ayushman Bharat Digital Mission (ABDM) anchored on a national health identifier and consent-governed exchange alongside a national HMIS and the case-based Integrated Health Information Platform (IHIP) across a decentralised federal health system.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "india",
@@ -6286,7 +6634,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 68,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Kenya (illustrating LHR), describing how facility-level clinical systems are connected through a national health information exchange to assemble longitudinal record capabilities incrementally ahead of full national consolidation.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "kenya",
@@ -6314,7 +6665,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 71,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Nigeria (illustrating PHSP), describing how routine aggregate reporting, outbreak investigation, contact tracing, and laboratory-network integration are combined within an Integrated Disease Surveillance and Response (IDSR) approach across a large, administratively complex country.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "disease surveillance",
@@ -6342,7 +6696,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 101,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Rwanda (illustrating LHR, CDSE, HMIS, and PHSP), describing how shared OpenHIE-aligned foundations support protocol-aligned facility decision support, high-completeness HMIS reporting linked to performance-based financing, and laboratory-linked disease surveillance.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "rwanda",
@@ -6374,7 +6731,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 86,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Spain (illustrating LHR, HMIS, and LIMR), describing the federated Historia Clínica Digital del SNS sharing clinical documents across seventeen autonomous communities via a national interoperability node, a federated national health information system, and the SOMSNS national repository of logical information models.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "spain",
@@ -6406,7 +6766,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 94,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 subnational example for Catalonia, Spain (illustrating LHR, HMIS, and PHSP), describing the Catalan shared clinical history (HC3) integrating primary, hospital, mental health, pharmacy, and social-care data with patient portal access, a health-system performance observatory, and epidemiological surveillance incorporating environmental and climate-related health monitoring.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "climate-related",
@@ -6434,7 +6797,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 85,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Tanzania (illustrating HMIS), describing how its mature national health management information system consolidates routine facility reporting across all care levels with HIV, malaria, immunisation, and maternal and child health programme data while strengthening data-quality governance and managing reporting burden.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "facility reporting",
@@ -6462,7 +6828,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 85,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for Uganda (illustrating HMIS and CDSE), describing the Ministry of Health's national HMIS integrating community health worker reporting, logistics data, and surveillance alongside pilot deployments of computable decision logic derived from WHO SMART Guidelines.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "uganda",
@@ -6490,7 +6859,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 88,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for the United Kingdom (England) (illustrating CDSE and Terminology Service), describing centrally governed pharmaceutical decision support (drug interactions, allergy alerts, dosage guidance) and the national terminology service hosting the SNOMED CT UK Edition and the dictionary of medicines and devices (dm+d).",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "england",
@@ -6518,7 +6890,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 79,
-      "summary": null,
+      "summary": {
+        "text": "Section D.2 country example for the United States (illustrating CDSE and PHSP), highlighting centralised CDC immunisation decision-support logic (CDSi) consumed across decentralised clinical and immunisation systems and population-scale syndromic surveillance (BioSense / NSSP) drawing on point-of-care clinical data, and introducing Section D.3 ('Regional and multi-country examples').",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "immunisation",
@@ -6546,7 +6921,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 87,
-      "summary": null,
+      "summary": {
+        "text": "Section D.3 regional example for the European Union and European Economic Area (illustrating PHSP), describing The European Surveillance System (TESSy) operated by the European Centre for Disease Prevention and Control (ECDC) for standardised cross-border communicable-disease surveillance across sovereign member states.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "surveillance",
@@ -6574,7 +6952,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 75,
-      "summary": null,
+      "summary": {
+        "text": "Section D.3 multi-country example on WHO SMART Guidelines pilot implementations (illustrating CDSE) in Ethiopia, the Philippines, and Uganda, demonstrating how internationally developed L3 computable decision logic for antenatal care, HIV, and immunisation can be adapted and operationalised within national health information systems.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "computable",
@@ -6602,7 +6983,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 1975,
-      "summary": null,
+      "summary": {
+        "text": "Appendix E ('Health Goals to DPI Mapping') explains how the seven priority health goals map through stakeholder value, business capabilities, and application services to shared DPI-H and foundational-DPI components: Goal 1 (Build Trusted Data Foundations) serves as the shared REDDHI foundation reused by all other goals; Goal 2 (Health Workforce) centres on the Health Workforce, Facility, and Terminology Services; Goal 3 (Quality and Continuity of Care) reuses core registries and the LHR while introducing the CDSE; Goal 4 (Trusted Personal Health Records) realises person-controlled access over the LHR, registries, and foundational trust/consent services; Goal 5 (Supply Chain Management) adds the Product and Supplier Registries; Goal 6 (Health Financing) references Section 2.4.2 and the full financing mapping spreadsheet; and Goal 7 (Climate and Epidemic Resilience) combines the PHSP and shared health registries with cross-sectoral weather, climate, and environmental data infrastructure.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "foundational-dpi dependencies",
@@ -6650,7 +7034,10 @@
       "labelStart": null,
       "labelEnd": null,
       "words": 611,
-      "summary": null,
+      "summary": {
+        "text": "Appendix F ('Semantic Governance Infrastructure: capability details'), Table F ('SGI Capability Details'), and Figure A.1 break down the five semantic governance capability categories introduced in Section 3.4.5—Intake (change requests, upstream release ingestion, deprecation handling, triage, queue management), Authoring and publication (content authoring, review workflow, approval, versioning, release packaging, business rule enforcement, audit trail), Monitoring (governance compliance, content quality, currency/staleness, uptake telemetry, reporting/alerting), Distribution (multi-modal delivery, access control, reliability, versioned canonical URLs, endpoint discovery), and Consumption (discovery, retrieval, integration tooling, change subscription, maintainer feedback)—across the roles (stakeholders, authors, owners), rules, and policies that govern them.",
+        "status": "draft"
+      },
       "keywords": [
         {
           "term": "capability details",

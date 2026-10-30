@@ -32,7 +32,7 @@
   label { margin-right:1rem; }
   @media (max-width:40rem) { dl { grid-template-columns:1fr; } }
 </style>
-<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-5nzaswmc4t.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1drg6e6ibqw.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
 /* Narrow viewports: nothing may widen the PAGE — bean `2r2n`.
  *
  * At 390 px, 105 of 249 built pages scrolled sideways (measured 2026-09-24).
@@ -111,7 +111,7 @@
 
 </style>
 </head>
-<body data-fa-node-kind-page><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-5nzaswmc4t","here":"/en/cat-harness/cat-harness-declaration/folio-assistant-core/folio-assistant-core/","documentIndex":{"label":"folio-assistant-core","icon":"§","items":[{"label":"cat-harness-declaration","icon":"▸","href":"../../"},{"label":"folio-assistant-core","icon":"▸","href":"../"},{"label":"folio-assistant-core","icon":"▸"},{"label":"Fields","icon":"·","href":"#fields","depth":1}],"collapsible":true,"open":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav><script type="application/json" data-fa-visualiser-nav>[{"label":"cat-harness-declaration","href":"../../"},{"label":"folio-assistant-core","href":"../"},{"label":"folio-assistant-core","items":[{"label":"Fields","href":"#fields"}]}]</script>
+<body data-fa-node-kind-page><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-1drg6e6ibqw","here":"/en/cat-harness/cat-harness-declaration/folio-assistant-core/folio-assistant-core/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav>
 <main>
 <h1 id="nk-title">Folio Assistant Core</h1>
 <p class="m">A <a href="../../">cat-harness-declaration</a> node held by <a href="../">folio-assistant-core</a>, at <code>folio-assistant-core/folio-assistant-core.json</code>.</p>
@@ -189,7 +189,7 @@
       },
       {
         &quot;label&quot;: &quot;Processes&quot;,
-        &quot;href&quot;: &quot;/process/publication-workflow.html&quot;,
+        &quot;href&quot;: &quot;/folio-assistant-core/process/publication-workflow.html&quot;,
         &quot;note&quot;: &quot;The BPMN diagrams, which are the source of truth rather than a picture of it.&quot;
       },
       {
@@ -199,7 +199,7 @@
       },
       {
         &quot;label&quot;: &quot;Acquisition&quot;,
-        &quot;href&quot;: &quot;/guides/document-ingestion.html&quot;,
+        &quot;href&quot;: &quot;/folio-assistant-core/guides/document-ingestion.html&quot;,
         &quot;note&quot;: &quot;How a source gets from uploads/ into library/.&quot;
       },
       {
@@ -224,7 +224,7 @@
     &quot;id&quot;: &quot;folio-assistant-core-docs&quot;,
     &quot;path&quot;: &quot;docs/&quot;,
     &quot;instanceRoot&quot;: true,
-    &quot;description&quot;: &quot;This instance&#39;s own reader-facing pages, and the page `/folio-assistant-core/` serves. Added 2026-10-05 with `folio-assistant-core.config.json` (issue #2196, bean c5fm), when the owner asked for the instance to be staged and instantiated so the navbar&#39;s Harnesses list shows it. Without a docs directory the harness tile can only open this instance&#39;s section of the landing (`/#harness-folio-assistant-core`), and `harness-tiles.ts` reports that as a finding. Authored markdown, composed THROUGH just-the-docs like smart-base&#39;s and smart-trust&#39;s pages, so it gets the sidebar, search and layout. Declared HERE, in this instance&#39;s own file, rather than in the root&#39;s or cat-harness&#39;s: `compose-docs.docsLayers` treats every docs-kind entry in `cat-harness.json` as a composition layer, so declaring it there would overlay this `index.md` onto the site&#39;s own.&quot;,
+    &quot;description&quot;: &quot;This instance&#39;s own reader-facing pages, and the page `/folio-assistant-core/` serves. Added 2026-10-05 with `folio-assistant-core.config.json` (issue #2196, bean c5fm), when the owner asked for the instance to be staged and instantiated so the navbar&#39;s Harnesses list shows it. Without a docs directory the harness tile can only open this instance&#39;s section of the landing (`/#harness-folio-assistant-core`), and `harness-tiles.ts` reports that as a finding. Authored markdown, composed THROUGH just-the-docs like the FHIR IG layers&#39; pages, so it gets the sidebar, search and layout. Declared HERE, in this instance&#39;s own file, rather than in the root&#39;s or cat-harness&#39;s: `compose-docs.docsLayers` treats every docs-kind entry in `cat-harness.json` as a composition layer, so declaring it there would overlay this `index.md` onto the site&#39;s own.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;docs&quot;
     ],
@@ -252,7 +252,7 @@
   {
     &quot;id&quot;: &quot;folio-assistant-core-content-adapters&quot;,
     &quot;path&quot;: &quot;content-adapters/&quot;,
-    &quot;description&quot;: &quot;The `document` block VOCABULARY&#39;s node, folio-content-adapter/v1: its name, its companion roles (md, ts) and that cat-harness&#39;s code types it. Every kind in block-kinds/ names it. Owner, 2026-10-12 (bean bzwk, option B): each layer declares its own adapter and a folio may mix them, so the paper profile is core&#39;s `document` kinds plus folio-assistant-sci&#39;s `mathpaper` kinds.&quot;,
+    &quot;description&quot;: &quot;The `document` block VOCABULARY&#39;s node, folio-content-adapter/v1: its name, its companion roles (md, ts) and that cat-harness&#39;s code types it. Every kind in block-kinds/ names it. Owner, 2026-10-12 (bean bzwk, option B): each layer declares its own adapter and a folio may mix them, so the paper profile is core&#39;s `document` kinds plus the science layer&#39;s `mathpaper` kinds.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;content-adapters&quot;
     ]
@@ -282,12 +282,20 @@
     ]
   },
   {
+    &quot;id&quot;: &quot;core-pipeline-plugins&quot;,
+    &quot;path&quot;: &quot;pipeline-plugins/&quot;,
+    &quot;description&quot;: &quot;The generic pipeline slots this layer fills, one `folio-pipeline-plugin/v1` node per slot, naming `PIPELINE_IMPLEMENTATIONS` in `pipeline/plugin-slots.ts`, registered for a folio through its dependency tree by `loadContributions`. One today: `tabular-csvw` (bean `urat`, owner ruling 2026-10-20), through which cat-harness-tools&#39; `ingest-document.ts` reaches this layer&#39;s CSVW extractors (`scripts/tabular-csv.ts`, `scripts/tabular-xlsx.ts`) without naming this layer.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;pipeline-plugins&quot;
+    ]
+  },
+  {
     &quot;id&quot;: &quot;core-pipeline&quot;,
     &quot;path&quot;: &quot;pipeline/&quot;,
     &quot;graphTypologies&quot;: [
       &quot;code&quot;
     ],
-    &quot;description&quot;: &quot;`pipeline/qa-checkers-recommendation.ts`, the automated checker `qa-checkers/recommendation-strength-resolves.json` names (`RECOMMENDATION_CHECKERS`). Under `pipeline/` because that is where the harness&#39;s `imports` input-site looks for a contributed checker, as sci&#39;s cost checkers and smart-base&#39;s DAK checkers are; it was `content/pipeline/` until every layer&#39;s pipeline moved to `pipeline/` (owner, 2026-10-14).&quot;
+    &quot;description&quot;: &quot;`pipeline/qa-checkers-recommendation.ts`, the automated checker `qa-checkers/recommendation-strength-resolves.json` names (`RECOMMENDATION_CHECKERS`), and `pipeline/plugin-slots.ts`, the table `pipeline-plugins/tabular-csvw.json` names (`PIPELINE_IMPLEMENTATIONS`, bean `urat`). Under `pipeline/` because that is where the harness&#39;s `imports` input-site looks for a contributed checker, as the science layer&#39;s cost checkers and the DAK layer&#39;s checkers are; it was `content/pipeline/` until every layer&#39;s pipeline moved to `pipeline/` (owner, 2026-10-14).&quot;
   },
   {
     &quot;id&quot;: &quot;folio-assistant-core-typologies&quot;,
@@ -301,7 +309,7 @@
     &quot;id&quot;: &quot;core-schemas&quot;,
     &quot;path&quot;: &quot;schemas/&quot;,
     &quot;description&quot;: &quot;The schemas of the content layer&#39;s Node Kinds, kept as their own Subgraph until this repository is split.&quot;,
-    &quot;_description_comment&quot;: &quot;The content layer&#39;s own schema nodes. Three today, and they are one chain: `dublin-core` is what a source system SAYS about an item, `catalogue` is the shape of the collection that item sits in, and `materialization` is whether any of its bytes are actually here. The third is the load-bearing one — see its module doc for why bootstrap fetching a harness and who-iris fetching three items out of 361.55 GB are the same process with two names.&quot;,
+    &quot;_description_comment&quot;: &quot;The content layer&#39;s own schema nodes. Three today, and they are one chain: `dublin-core` is what a source system SAYS about an item, `catalogue` is the shape of the collection that item sits in, and `materialization` is whether any of its bytes are actually here. The third is the load-bearing one — see its module doc for why bootstrap fetching a harness and the IRIS catalogue instance fetching three items out of 361.55 GB are the same process with two names.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;schemas&quot;,
       &quot;cat-harness&quot;
@@ -310,7 +318,7 @@
   {
     &quot;id&quot;: &quot;folios&quot;,
     &quot;path&quot;: &quot;folios/&quot;,
-    &quot;description&quot;: &quot;What an AUTHOR creates using the graph -- a note, a visualization, a paper. Owner, 2026-09-20: &#39;folios/ would be a note, visualization, paper etc that user/author is creating referencing the KG... folios in f-a-core as it is about KG management workflows built on cat-harness document rendering justthedocs simple rendering.&#39; It declares the EXISTING `folio` kind rather than a new one: `folio` is already &#39;authored content, rendered to a website&#39;, registered by core because only core can render it, and a second kind for the same thing would be two spellings of one concept. The contrast is with `docs` in cat-harness, whose subject is the harness itself. Worked example of the distinction: the who-iris catalogue goes in `library/` or is referenced remotely; a note ABOUT it is a folio; the page explaining how ingestion works is docs.&quot;,
+    &quot;description&quot;: &quot;What an AUTHOR creates using the graph -- a note, a visualization, a paper. Owner, 2026-09-20: &#39;folios/ would be a note, visualization, paper etc that user/author is creating referencing the KG... folios in f-a-core as it is about KG management workflows built on cat-harness document rendering justthedocs simple rendering.&#39; It declares the EXISTING `folio` kind rather than a new one: `folio` is already &#39;authored content, rendered to a website&#39;, registered by core because only core can render it, and a second kind for the same thing would be two spellings of one concept. The contrast is with `docs` in cat-harness, whose subject is the harness itself. Worked example of the distinction: the IRIS catalogue goes in `library/` or is referenced remotely; a note ABOUT it is a folio; the page explaining how ingestion works is docs.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;folio&quot;
     ]
@@ -334,7 +342,7 @@
   {
     &quot;id&quot;: &quot;core-adapters&quot;,
     &quot;path&quot;: &quot;adapters/&quot;,
-    &quot;description&quot;: &quot;The content layer&#39;s own ContentAdapters. `document/` arrived 2026-09-30 as step 2 of the adapters closure (bean `ybp4`, planned in `r0tm`, ruled by the owner as option A: two PRs, paper first). It took the `cat-harness -&gt;` sibling-import count from 2 to 0 — the last two escapes were `intake-records.ts` and its test, both importing `schemas/dublin-core.js` UP out of the harness, and both are now intra-instance. The remedy is `yj6r`&#39;s throughout: the CONSUMER moves up and the schema stays; no schema moved down into `cat-harness/schemas/`, which that bean forbids as buying a green gate by relocating the boundary the gate protects. The directory&#39;s own imports into `cat-harness-tools/src/`, `cat-harness/schemas/` and `cat-harness-tools/pipeline/` are DOWNWARD and therefore legal — core declares `needs: [\&quot;cat-harness\&quot;]`. Its six consuming tests moved with it into `scripts/tests/`, because a test does not leave its subject to make a count fall. Three things shipped in the same commit because each fails SILENTLY rather than loudly: this declaration, `tsconfig.json`&#39;s `include` entry (without it `bun run typecheck` goes green while covering twelve fewer files, and no gate reports a shrinking program), and the `BUILTIN_ADAPTERS` module path — which is resolved by VARIABLE specifier, so no static-import gate would have caught it. `paper/` is not here: it is the science layer&#39;s and lives in `folio-assistant-sci/adapters/paper/` since bean `y5si`, step 1 of the same closure.&quot;,
+    &quot;description&quot;: &quot;The content layer&#39;s own ContentAdapters. `document/` arrived 2026-09-30 as step 2 of the adapters closure (bean `ybp4`, planned in `r0tm`, ruled by the owner as option A: two PRs, paper first). It took the `cat-harness -&gt;` sibling-import count from 2 to 0 — the last two escapes were `intake-records.ts` and its test, both importing `schemas/dublin-core.js` UP out of the harness, and both are now intra-instance. The remedy is `yj6r`&#39;s throughout: the CONSUMER moves up and the schema stays; no schema moved down into `cat-harness/schemas/`, which that bean forbids as buying a green gate by relocating the boundary the gate protects. The directory&#39;s own imports into `cat-harness-tools/src/`, `cat-harness/schemas/` and `cat-harness-tools/pipeline/` are DOWNWARD and therefore legal — core declares `needs: [\&quot;cat-harness\&quot;]`. Its six consuming tests moved with it into `scripts/tests/`, because a test does not leave its subject to make a count fall. Three things shipped in the same commit because each fails SILENTLY rather than loudly: this declaration, `tsconfig.json`&#39;s `include` entry (without it `bun run typecheck` goes green while covering twelve fewer files, and no gate reports a shrinking program), and the `BUILTIN_ADAPTERS` module path — which is resolved by VARIABLE specifier, so no static-import gate would have caught it. `paper/` is not here: it is the science layer&#39;s and lives in that layer&#39;s own `adapters/paper/` since bean `y5si`, step 1 of the same closure.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;code&quot;
     ]
@@ -356,9 +364,17 @@
     ]
   },
   {
+    &quot;id&quot;: &quot;core-templates&quot;,
+    &quot;path&quot;: &quot;templates/&quot;,
+    &quot;description&quot;: &quot;Files this layer&#39;s tools WRITE INTO a folio that opts in, kept as real files rather than strings inside a script. `public-comment/github/` holds the issue forms and the two workflows that `scripts/public-comment-changesets.ts install` copies into a folio&#39;s `.github/` (`TEMPLATE_DIR`). They moved up here from the tools layer&#39;s `templates/public-comment/` (move M10, folio-assistant#2598), because this layer is the only one that installs them.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;code&quot;
+    ]
+  },
+  {
     &quot;id&quot;: &quot;core-library&quot;,
     &quot;path&quot;: &quot;library/&quot;,
-    &quot;description&quot;: &quot;L1 source content this LAYER owns — the publications core&#39;s own vocabulary is derived FROM, one `&lt;bib-slug&gt;/` per ingested document. Declared 2026-09-23 on the owner&#39;s ruling that Doc-Researcher (arXiv:2510.21603v1) is part of the f-a-c subgraph, and declared rather than borrowed for the reason `methodology-adoption` §4 gives: a method is placed by OWNERSHIP so that extraction is literal, and a paper core&#39;s methodology cites from another instance&#39;s library would not lift out with it. `ingest-document.ts` refuses to guess a destination when several are declared, which is what surfaced the absence. `dependents: skip` because these are THIS layer&#39;s sources; a downstream folio&#39;s library is its own and reproducing these would hand it somebody else&#39;s corpus.&quot;,
+    &quot;description&quot;: &quot;L1 source content this LAYER owns — the publications core&#39;s own vocabulary is derived FROM, one `&lt;bib-slug&gt;/` per ingested document. Declared 2026-09-23 on the owner&#39;s ruling that Doc-Researcher (`arxiv-2510.21603v1`) is part of the f-a-c subgraph, and declared rather than borrowed for the reason `methodology-adoption` §4 gives: a method is placed by OWNERSHIP so that extraction is literal, and a paper core&#39;s methodology cites from another instance&#39;s library would not lift out with it. Holds `arxiv-2510.21603v1`, the C2PA Technical Specification 2.5 (`c2pa-2026-specification-2-5`, CC-BY-4.0) and the DSpace 7 REST Contract (`dspace-7-rest-contract`, BSD-3-Clause, bean `mwzd`, issue #1614 item 4). `ingest-document.ts` refuses to guess a destination when several are declared, which is what surfaced the absence. `dependents: skip` because these are THIS layer&#39;s sources; a downstream folio&#39;s library is its own and reproducing these would hand it somebody else&#39;s corpus.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;library&quot;
     ]
@@ -391,6 +407,14 @@
     ]
   },
   {
+    &quot;id&quot;: &quot;scenarios&quot;,
+    &quot;path&quot;: &quot;scenarios/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;scenarios&quot;
+    ],
+    &quot;description&quot;: &quot;Scenarios: the roles an actor takes on, in `roles.json`, the user stories told as them, in `stories.json`, and the actors in `actors/`. The deep-researcher, evidence-agent and onboarding-agent roles moved here from cat-harness in M4 (cat-harness#443), and this layer&#39;s `address-*` voices point at them. The files arrived without this declaration, so `check:voices` found no role graph here.&quot;
+  },
+  {
     &quot;id&quot;: &quot;qa&quot;,
     &quot;path&quot;: &quot;test/results/&quot;,
     &quot;storage&quot;: {
@@ -419,6 +443,20 @@
     ]
   },
   {
+    &quot;id&quot;: &quot;folio-assistant-core-libraries&quot;,
+    &quot;coverage&quot;: {
+      &quot;exempt&quot;: {
+        &quot;visualiser&quot;: &quot;Owner, 2026-10-29 (cat-harness#691): no viewer by design. Each node is an outside package whose registry tarball and SPDX licence the node already links, so a viewer would only repeat the registry.&quot;
+      }
+    },
+    &quot;path&quot;: &quot;libraries/&quot;,
+    &quot;title&quot;: &quot;Software libraries&quot;,
+    &quot;description&quot;: &quot;The outside libraries this layer&#39;s code imports: one `software-library/1.0.0` node per dependency in `package.json`, with the version and sha512 that `bun.lock` pins, the registry tarball, the SPDX licence read from the installed package, the range, whether it is a dev dependency, the files that import it (`usedBy`) and the `types/*.d.ts` shim that types it. GENERATED, never hand-edited: `bun run cat libraries:derive` writes it and `libraries:check` fails on a stale node, an import no node names, and a shim no node names. The kind is cat-harness&#39;s (bean `jbvi`, option D: one outside-software core shared with `tool-release`); this layer keeps its own nodes because it pins its own versions.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;software-library&quot;
+    ]
+  },
+  {
     &quot;id&quot;: &quot;health&quot;,
     &quot;path&quot;: &quot;test/health/results/&quot;,
     &quot;description&quot;: &quot;Repository health reports for THIS repository: the one `health-report/v1` document `bun run cat-harness-tools/test/health/run.ts --instance &lt;this instance&gt;` writes. Each repository the separation made is its own clone, with its own size, publish branch, branches and stores, so each carries its own report (owner, 2026-10-10: \&quot;All repos need health check\&quot;). The graph typology is cat-harness&#39;s; its `health` entry says what separates a health report (about the repository) from a `qa` verdict (about an artefact).&quot;,
@@ -433,7 +471,7 @@
     }
   }
 ]</pre></dd>
-<dt>_visualisers_comment</dt><dd>THE VISUALISERS THIS HARNESS DECLARES, at its own level (owner, 2026-10-09: &quot;I still want the harness to be where specific visualizers/pages are declared for the harness at the level … Need harness to declare visualizer is renderedBy&quot;). Until then the glossary directory named its page (`coverage.visualiser: cat-harness/docs/glossary/index.md`) — a page in another layer&#39;s tree at a URL nothing derived. The page is now at &lt;base&gt;/folio-assistant-core/glossary/, computed by visualiserRoute from this entry, drawn by the `glossary-page` Tool (scripts/glossary-page.ts), with &lt;base&gt;/glossary/ kept as its declared alias so no existing link breaks. It covers the glossary KIND rather than this instance&#39;s directory by id (bean folio-assistant-1nu0, owner 2026-10-15): the page already reads every instance&#39;s glossary directory, so who-iris&#39;s glossary row opens it rather than reading &quot;no viewer yet&quot;. Since owner choice &quot;3a&quot; (2026-10-15) each instance&#39;s tile opens ITS OWN page, &lt;base&gt;/folio-assistant-core/glossary/instance/&lt;instance&gt;/ — `subgraphs: &quot;instance&quot;` nested under the declared `subgraphUnder` path `instance/`, so a sub-graph page cannot collide with the per-asset-type pages (glossary/skills/, glossary/tools/, …); the shared page stays the index.</dd>
+<dt>_visualisers_comment</dt><dd>THE VISUALISERS THIS HARNESS DECLARES, at its own level (owner, 2026-10-09: &quot;I still want the harness to be where specific visualizers/pages are declared for the harness at the level … Need harness to declare visualizer is renderedBy&quot;). Until then the glossary directory named its page (`coverage.visualiser: cat-harness/docs/glossary/index.md`) — a page in another layer&#39;s tree at a URL nothing derived. The page is now at &lt;base&gt;/folio-assistant-core/glossary/, computed by visualiserRoute from this entry, drawn by the `glossary-page` Tool (scripts/glossary-page.ts), with &lt;base&gt;/glossary/ kept as its declared alias so no existing link breaks. It covers the glossary KIND rather than this instance&#39;s directory by id (bean folio-assistant-1nu0, owner 2026-10-15): the page already reads every instance&#39;s glossary directory, so a catalogue instance&#39;s glossary row opens it rather than reading &quot;no viewer yet&quot;. Since owner choice &quot;3a&quot; (2026-10-15) each instance&#39;s tile opens ITS OWN page, &lt;base&gt;/folio-assistant-core/glossary/instance/&lt;instance&gt;/ — `subgraphs: &quot;instance&quot;` nested under the declared `subgraphUnder` path `instance/`, so a sub-graph page cannot collide with the per-asset-type pages (glossary/skills/, glossary/tools/, …); the shared page stays the index.</dd>
 <dt>visualisers</dt><dd><pre>[
   {
     &quot;id&quot;: &quot;glossary&quot;,
@@ -481,6 +519,14 @@
   }
 ]</pre></dd>
 <dt>_contentAdapters_comment</dt><dd>Declared HERE, by the instance that ships the adapter, so cat-harness&#39;s composition root (`src/builtin-adapters.ts`) finds it by reading declarations instead of holding a `../folio-assistant-core/adapters/document/index.ts` path into the layer above it. That path was the last upward import out of cat-harness, and a variable one no static gate could see (bean p11x, `check:import-direction`).</dd>
+<dt>_lsiUnitProviders_comment</dt><dd>Declared HERE, by the instance that ships the provider, so `lsi:near` in cat-harness-tools finds it by reading declarations instead of importing a layer above it (bean ec2a step 3, owner decision A: one list per graph).</dd>
+<dt>lsiUnitProviders</dt><dd><pre>[
+  {
+    &quot;graphKind&quot;: &quot;blocks&quot;,
+    &quot;module&quot;: &quot;scripts/lsi-blocks.ts&quot;,
+    &quot;export&quot;: &quot;lsiNearUnits&quot;
+  }
+]</pre></dd>
 <dt>contentAdapters</dt><dd><pre>[
   {
     &quot;contentType&quot;: &quot;document&quot;,
@@ -555,6 +601,21 @@
     &quot;notes&quot;: &quot;Base content type. All other types inherit Markdown translation.&quot;
   }
 ]</pre></dd>
+<dt>_gateExemptions_comment</dt><dd>Files of this instance that a gate below it admits, each with its reason, so the gate reads them here instead of naming this layer&#39;s files (owner, 2026-10-16, item 6b of the folio-assistant#2598 wrong-direction triage). `check:structure-accessor` (bean rkqp) refuses the quoted token &quot;structure.json&quot; outside the accessor in `cat-harness/schemas/document-structure.ts`; these two only test whether a library entry was ingested and never parse the file.</dd>
+<dt>gateExemptions</dt><dd><pre>{
+  &quot;files&quot;: [
+    {
+      &quot;gate&quot;: &quot;check:structure-accessor&quot;,
+      &quot;file&quot;: &quot;schemas/library-ref.ts&quot;,
+      &quot;reason&quot;: &quot;EXISTENCE only — whether an entry was ingested at all — and it never parses the file&quot;
+    },
+    {
+      &quot;gate&quot;: &quot;check:structure-accessor&quot;,
+      &quot;file&quot;: &quot;scripts/check-catalogue.ts&quot;,
+      &quot;reason&quot;: &quot;EXISTENCE only — whether a catalogue item&#39;s libraryId was ingested — and it never parses the file&quot;
+    }
+  ]
+}</pre></dd>
 </dl>
 </main>
 </body>

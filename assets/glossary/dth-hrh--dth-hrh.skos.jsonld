@@ -7,7 +7,7 @@
   "_generated": "folio-assistant-core/scripts/glossary-page.ts — do not hand-edit; run `bun run cat glossary:page`",
   "@graph": [
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Human Resources for Health and Health Worker Registries",
       "skos:definition": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms.",
@@ -16,10 +16,10 @@
       "dcterms:license": "CC-BY-NC-SA-3.0-IGO"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/accreditation",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/accreditation",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -36,10 +36,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/active-health-worker",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/active-health-worker",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -56,10 +56,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/activity-level",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/activity-level",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -76,10 +76,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/attrition",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/attrition",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -96,10 +96,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/certification",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/certification",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -116,10 +116,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/community-health-workers",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -136,10 +136,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/competence",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/competence",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -156,10 +156,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/competencies",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/competencies",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -176,10 +176,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/continuing-professional-development",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/continuing-professional-development",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -202,10 +202,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/contract-type",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/contract-type",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -222,10 +222,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/deployment",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/deployment",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -242,10 +242,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/distribution",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/distribution",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -262,10 +262,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/dual-practice",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/dual-practice",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -288,10 +288,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/education",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -308,10 +308,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/educational-institution",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/educational-institution",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -328,10 +328,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/education-and-training-institution",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education-and-training-institution",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -348,10 +348,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/employment-status-full-time-part-time-temporary-permanent",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/employment-status-full-time-part-time-temporary-permanent",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -368,10 +368,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-labour-market",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-labour-market",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -388,10 +388,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-practitioner",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -408,10 +408,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-professional",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -428,10 +428,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-professions-education-accreditation-agency",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professions-education-accreditation-agency",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -448,10 +448,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-services-licensing-agency",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-services-licensing-agency",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -468,10 +468,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-workers",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -493,10 +493,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-workforce-planning",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-planning",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -516,10 +516,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-workforce",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -539,10 +539,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-workforce-registry",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -596,10 +596,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/health-workforce-observatory",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-observatory",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -628,10 +628,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/human-resources-management",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/human-resources-management",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -648,10 +648,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/human-resources-for-health-information-system",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/human-resources-for-health-information-system",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -709,10 +709,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/in-service-training",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/in-service-training",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -732,10 +732,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -755,10 +755,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/labour-force-survey",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/labour-force-survey",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -775,10 +775,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/licensing",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/licensing",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -798,10 +798,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/migration",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/migration",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -818,10 +818,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/mobility-flow",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/mobility-flow",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -838,10 +838,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/national-health-workforce-accounts",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/national-health-workforce-accounts",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -861,10 +861,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/occupation",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -884,10 +884,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/place-of-training",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/place-of-training",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -904,10 +904,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/pre-service-education",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/pre-service-education",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -924,10 +924,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/professional-council",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/professional-council",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -955,10 +955,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/qualification",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/qualification",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -975,10 +975,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/recruitment",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/recruitment",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -995,10 +995,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/registration",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/registration",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1018,10 +1018,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/regulation",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1047,10 +1047,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/retention",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/retention",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1067,10 +1067,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/scope-of-practice",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/scope-of-practice",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1090,10 +1090,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/stewardship",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/stewardship",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1110,10 +1110,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/stock",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/stock",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {
@@ -1130,10 +1130,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh/supply",
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/supply",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/dth-hrh"
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh"
       },
       "skos:prefLabel": [
         {

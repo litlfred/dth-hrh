@@ -86,6 +86,12 @@ html[data-fa-scheme="light"] .lib-page {
 .lib-page .badge { border:1px solid var(--line); border-radius:8px; padding:5px 10px; font-size:.82rem; background:var(--panel); }
 .lib-page .badge b { font-variant-numeric:tabular-nums; }
 .lib-page .badge.q b { color:var(--warn); }
+/* The view panel (viewPanelHtml): the entry's primary asset, under the head. */
+.lib-page .lib-view { padding:10px 0; border-bottom:1px solid var(--line); }
+.lib-page .lib-view summary { cursor:pointer; font-size:1rem; }
+.lib-page .lib-view .pdf-viewer { margin:.6rem 0 0 !important; }
+.lib-page .lib-view img { display:block; max-width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
+.lib-page .lib-view-absent p { margin:0; }
 .lib-page .toolbar { padding:10px 0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; border-bottom:1px solid var(--line); }
 .lib-page input, .lib-page select, .lib-page button { font:inherit; color:var(--fg); background:var(--box);
   border:1px solid var(--line); border-radius:6px; padding:6px 9px; }
@@ -220,12 +226,12 @@ html[data-fa-scheme="light"] .lib-page {
 body { max-width: 72rem; margin: 0 auto; padding: 1rem 16px; }
 .doc-actions a { margin-left: .4em; font-size: .8rem; font-weight: normal; }
 </style>
-<link rel="stylesheet" href="../../../../assets/css/navbar.css"><script src="../../../../assets/navbar/rail-16i8x4vn5ga.js" defer></script><script src="../../../../assets/js/navbar.js" defer></script><script src="../../../../assets/navbar/row-20m86tnysei.js" defer></script><link rel="stylesheet" href="../../../../assets/css/navbar-row.css"><script src="../../../../assets/js/navbar-row.js" defer></script><script src="../../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../.."></head>
-<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../../.." data-fa-row-src="row-20m86tnysei"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../..">{"data":"rail-16i8x4vn5ga","here":"/en/folio-assistant-core/library/twg-outline-2026-10-02/","documentIndex":{"label":"On this page","icon":"§","items":[{"label":"HWF_Registry_DTH_Outline.md","icon":"▸","href":"#sec-s001-hwf-registry-dth-outline-md"},{"label":"About this draft","icon":"▸","href":"#sec-s002-about-this-draft"},{"label":"Handbook at a glance","icon":"▸","href":"#sec-s003-handbook-at-a-glance"},{"label":"Part 0. Introduction","icon":"▸","href":"#sec-s004-part-0-introduction"},{"label":"Chapter 1. Why Digital Health Workforce Registries Matter","icon":"·","href":"#sec-s005-chapter-1-why-digital-health-workforce-registrie","depth":1},{"label":"Chapter 2. Scope and Boundaries","icon":"·","href":"#sec-s010-chapter-2-scope-and-boundaries","depth":1},{"label":"Chapter 3. Digital Transformation Approach","icon":"·","href":"#sec-s014-chapter-3-digital-transformation-approach","depth":1},{"label":"Part 1. Foundations","icon":"▸","href":"#sec-s018-part-1-foundations"},{"label":"Chapter 4. Purpose and Role of a Registry","icon":"·","href":"#sec-s019-chapter-4-purpose-and-role-of-a-registry","depth":1},{"label":"Chapter 5. User Personas and Use Cases","icon":"·","href":"#sec-s024-chapter-5-user-personas-and-use-cases","depth":1},{"label":"Chapter 6. Governance and Stewardship","icon":"·","href":"#sec-s029-chapter-6-governance-and-stewardship","depth":1},{"label":"Chapter 7. Functional Requirements","icon":"·","href":"#sec-s034-chapter-7-functional-requirements","depth":1},{"label":"Chapter 8. Digital Architecture Principles","icon":"·","href":"#sec-s040-chapter-8-digital-architecture-principles","depth":1},{"label":"Part 2. Technical Design","icon":"▸","href":"#sec-s045-part-2-technical-design"},{"label":"Chapter 9. Registry within Ecosystem","icon":"·","href":"#sec-s046-chapter-9-registry-within-ecosystem","depth":1},{"label":"Chapter 10. Interoperability","icon":"·","href":"#sec-s050-chapter-10-interoperability","depth":1},{"label":"Chapter 11. Data Standards and Minimum Dataset","icon":"·","href":"#sec-s055-chapter-11-data-standards-and-minimum-dataset","depth":1},{"label":"Chapter 12. Privacy, Security and Trust","icon":"·","href":"#sec-s060-chapter-12-privacy-security-and-trust","depth":1},{"label":"Chapter 13. Data Quality Management","icon":"·","href":"#sec-s065-chapter-13-data-quality-management","depth":1},{"label":"Part 3. Country Implementation","icon":"▸","href":"#sec-s069-part-3-country-implementation"},{"label":"Chapter 14. Preparing for Transformation","icon":"·","href":"#sec-s070-chapter-14-preparing-for-transformation","depth":1},{"label":"Chapter 15. Business Process Redesign","icon":"·","href":"#sec-s075-chapter-15-business-process-redesign","depth":1},{"label":"Chapter 16. Planning and Procurement","icon":"·","href":"#sec-s079-chapter-16-planning-and-procurement","depth":1},{"label":"Chapter 17. Implementation and Deployment","icon":"·","href":"#sec-s083-chapter-17-implementation-and-deployment","depth":1},{"label":"Chapter 18. Change Management","icon":"·","href":"#sec-s088-chapter-18-change-management","depth":1},{"label":"Chapter 19. Monitoring and Continuous Improvement","icon":"·","href":"#sec-s092-chapter-19-monitoring-and-continuous-improvement","depth":1},{"label":"Part 4. Examples and Resources","icon":"▸","href":"#sec-s096-part-4-examples-and-resources"},{"label":"Chapter 20. Illustrative Use Cases","icon":"·","href":"#sec-s097-chapter-20-illustrative-use-cases","depth":1},{"label":"Chapter 21. Country Case Studies","icon":"·","href":"#sec-s102-chapter-21-country-case-studies","depth":1},{"label":"Chapter 22. Tools and Templates","icon":"·","href":"#sec-s107-chapter-22-tools-and-templates","depth":1},{"label":"Annexes","icon":"▸","href":"#sec-s111-annexes"},{"label":"References","icon":"▸","href":"#sec-s112-references"}],"collapsible":true,"open":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<link rel="stylesheet" href="../../../../assets/css/navbar.css"><script src="../../../../assets/navbar/rail-1p3792gxi9b.js" defer></script><script src="../../../../assets/js/navbar.js" defer></script><script src="../../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../../assets/css/navbar-row.css"><script src="../../../../assets/js/navbar-row.js" defer></script><script src="../../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../.."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../..">{"data":"rail-1p3792gxi9b","here":"/en/folio-assistant-core/library/twg-outline-2026-10-02/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <p><a href="../">Library</a></p>
 <h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries — the TWG manuscript outline it was seeded from</h1>
 <p class="note">A frozen source: the library keeps it exactly as published. Edits are made in the folio, and each section's ✎ edit opens the folio block made from it.</p>
-<section id="document"><p class="note">Loading the document…</p></section><script type="application/json" data-fa-visualiser-nav>[{"label":"HWF_Registry_DTH_Outline.md","href":"#sec-s001-hwf-registry-dth-outline-md"},{"label":"About this draft","href":"#sec-s002-about-this-draft"},{"label":"Handbook at a glance","href":"#sec-s003-handbook-at-a-glance"},{"label":"Part 0. Introduction","href":"#sec-s004-part-0-introduction","items":[{"label":"Chapter 1. Why Digital Health Workforce Registries Matter","href":"#sec-s005-chapter-1-why-digital-health-workforce-registrie"},{"label":"Chapter 2. Scope and Boundaries","href":"#sec-s010-chapter-2-scope-and-boundaries"},{"label":"Chapter 3. Digital Transformation Approach","href":"#sec-s014-chapter-3-digital-transformation-approach"}]},{"label":"Part 1. Foundations","href":"#sec-s018-part-1-foundations","items":[{"label":"Chapter 4. Purpose and Role of a Registry","href":"#sec-s019-chapter-4-purpose-and-role-of-a-registry"},{"label":"Chapter 5. User Personas and Use Cases","href":"#sec-s024-chapter-5-user-personas-and-use-cases"},{"label":"Chapter 6. Governance and Stewardship","href":"#sec-s029-chapter-6-governance-and-stewardship"},{"label":"Chapter 7. Functional Requirements","href":"#sec-s034-chapter-7-functional-requirements"},{"label":"Chapter 8. Digital Architecture Principles","href":"#sec-s040-chapter-8-digital-architecture-principles"}]},{"label":"Part 2. Technical Design","href":"#sec-s045-part-2-technical-design","items":[{"label":"Chapter 9. Registry within Ecosystem","href":"#sec-s046-chapter-9-registry-within-ecosystem"},{"label":"Chapter 10. Interoperability","href":"#sec-s050-chapter-10-interoperability"},{"label":"Chapter 11. Data Standards and Minimum Dataset","href":"#sec-s055-chapter-11-data-standards-and-minimum-dataset"},{"label":"Chapter 12. Privacy, Security and Trust","href":"#sec-s060-chapter-12-privacy-security-and-trust"},{"label":"Chapter 13. Data Quality Management","href":"#sec-s065-chapter-13-data-quality-management"}]},{"label":"Part 3. Country Implementation","href":"#sec-s069-part-3-country-implementation","items":[{"label":"Chapter 14. Preparing for Transformation","href":"#sec-s070-chapter-14-preparing-for-transformation"},{"label":"Chapter 15. Business Process Redesign","href":"#sec-s075-chapter-15-business-process-redesign"},{"label":"Chapter 16. Planning and Procurement","href":"#sec-s079-chapter-16-planning-and-procurement"},{"label":"Chapter 17. Implementation and Deployment","href":"#sec-s083-chapter-17-implementation-and-deployment"},{"label":"Chapter 18. Change Management","href":"#sec-s088-chapter-18-change-management"},{"label":"Chapter 19. Monitoring and Continuous Improvement","href":"#sec-s092-chapter-19-monitoring-and-continuous-improvement"}]},{"label":"Part 4. Examples and Resources","href":"#sec-s096-part-4-examples-and-resources","items":[{"label":"Chapter 20. Illustrative Use Cases","href":"#sec-s097-chapter-20-illustrative-use-cases"},{"label":"Chapter 21. Country Case Studies","href":"#sec-s102-chapter-21-country-case-studies"},{"label":"Chapter 22. Tools and Templates","href":"#sec-s107-chapter-22-tools-and-templates"}]},{"label":"Annexes","href":"#sec-s111-annexes"},{"label":"References","href":"#sec-s112-references"}]</script>
+<section id="document"><p class="note">Loading the document…</p></section>
 <noscript><p>This page draws the document from <a href="../../../../folio-assistant-core/library/twg-outline-2026-10-02/entries/twg-outline-2026-10-02.doc.json">its JSON</a>; it needs JavaScript.</p></noscript>
 <script>
 function $(i){ return document.getElementById(i); }
@@ -389,6 +395,24 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
     }
     return best === null ? null : location.origin + best + "assets/vendor/crepe/";
   };
+  // The site's editor bundle (suggest-editor.ts), fetched once: on the first
+  // hover or focus of a ✍ suggest link, so it is usually ready by the click.
+  // A failed fetch is forgotten, so the next open tries again.
+  let bundle = null;
+  const editorBundle = () => {
+    const sc = config().suggest || {};
+    const vb = vendorBase();
+    const moduleUrl = sc.module || (vb && vb + "crepe.js");
+    if (!moduleUrl) return Promise.reject(new Error("this site has no editor bundle (assets/vendor/crepe/)"));
+    const cssUrl = sc.css || (vb && !sc.module ? vb + "crepe.css" : null);
+    if (cssUrl && !document.querySelector('link[href="' + cssUrl + '"]')) document.head.append(el("link", { rel: "stylesheet", href: cssUrl }));
+    if (!bundle) bundle = import(moduleUrl).catch((e) => { bundle = null; throw e; });
+    return bundle;
+  };
+  // How long the visual editor may take to open before the dialog falls back
+  // to the raw Markdown: a slow link or a stalled import must not leave the
+  // reader looking at an empty editor (smart-ra, 2026-10-26).
+  const VISUAL_WAIT_MS = 20000;
   // The KG labels and bibliography keys a profile's checker warns against, read once from the page's graph.
   let kgRefs;
   const kgReferences = async (c) => {
@@ -638,6 +662,7 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
       if (!r.ok) throw new Error(r.status + " reading " + path);
       original = await r.text();
     } catch (e) { status.textContent = "Could not load the block: " + e.message; return; }
+    status.textContent = "Loaded " + path + ". Opening the editor …";
     const fm = FRONT_MATTER.exec(original);
     const head = fm ? fm[0] : "", body = original.slice(head.length);
     // The site's variable values, as KG nodes (values.jsonld), when it publishes them.
@@ -750,6 +775,10 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
     const syntaxErrors = (t) => tokens.errors(t, !!mod);
     const wrapped = shield(body);
     let katex = null, lib = null, visualBase = null;
+    // Each surface choice takes a ticket; a visual editor still opening when
+    // a newer choice (a timeout, Raw, closing the dialog) is made is dropped.
+    let ticket = 0;
+    const abandoned = () => new Error("abandoned");
     // The visual surface: Crepe, with the profile's feature settings, node views
     // and first remark transformer, the toolbar's commands and the change
     // marks. Its base is Crepe's round-trip of the SOURCE, kept across a
@@ -759,14 +788,12 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
       // The site's own bundle (suggest-editor.ts): Crepe and KaTeX from one
       // copy of ProseMirror, its stylesheet with every import resolved.
       const sc = c.suggest || {};
-      const vb = vendorBase();
-      const moduleUrl = sc.module || (vb && vb + "crepe.js");
-      if (!moduleUrl) throw new Error("this site has no editor bundle (assets/vendor/crepe/)");
-      const cssUrl = sc.css || (vb && !sc.module ? vb + "crepe.css" : null);
-      if (cssUrl && !document.querySelector('link[href="' + cssUrl + '"]')) document.head.append(el("link", { rel: "stylesheet", href: cssUrl }));
-      lib = lib || (await import(moduleUrl));
+      const mine = ++ticket;
+      const live = () => mine === ticket && dlg.isConnected;
+      lib = lib || (await editorBundle());
       const Crepe = lib.Crepe;
       if (mod && mod.nodeViews && !katex) katex = sc.katex ? (await import(sc.katex)).default : lib.default;
+      if (!live()) throw abandoned();
       const box = el("div");
       host.replaceChildren(box);
       // The dialog's own toolbar replaces Crepe's selection toolbar, and
@@ -790,6 +817,7 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
         };
       });
       await crepe.create();
+      if (!live()) { try { crepe.destroy(); } catch {} throw abandoned(); }
       const view = crepe.editor.action((ctx) => ctx.get("editorView"));
       const run = (cmd, payload) => { view.focus(); crepe.editor.action(lib.callCommand(cmd.key, payload)); };
       const get = () => unwrap(crepe.getMarkdown());
@@ -806,6 +834,7 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
         if (visualBase === null) visualBase = unwrap(probe.getMarkdown());
         if (marks) baseBlocks = baseBlocksOf(probe.editor.action((ctx) => ctx.get("editorView")).state.doc);
         probe.destroy();
+        if (!live()) { try { crepe.destroy(); } catch {} throw abandoned(); }
       }
       if (marks) view.dispatch(view.state.tr.setMeta(marks.key, true));
       return {
@@ -819,6 +848,7 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
     };
     // The raw surface: the block's Markdown exactly as it is; the toolbar types Markdown.
     const rawSurface = (text) => {
+      ticket++;
       const ta = el("textarea", { value: text });
       ta.setAttribute("aria-label", "The block's Markdown");
       host.replaceChildren(ta);
@@ -849,8 +879,13 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
       visualBtn.setAttribute("aria-pressed", String(surface.name === "visual"));
       rawBtn.setAttribute("aria-pressed", String(surface.name === "raw"));
     };
+    // The visual editor, unless it does not open in time: then the raw pane.
+    const visualInTime = (text) => new Promise((resolve, reject) => {
+      const t = setTimeout(() => reject(new Error("it did not open within " + VISUAL_WAIT_MS / 1000 + " seconds; press Visual to try again")), VISUAL_WAIT_MS);
+      visual(text).then((v) => { clearTimeout(t); resolve(v); }, (e) => { clearTimeout(t); reject(e); });
+    });
     try {
-      surface = rawFirst ? rawSurface(body) : await visual(wrapped);
+      surface = rawFirst ? rawSurface(body) : await visualInTime(wrapped);
     } catch (e) {
       // No editor bundle, or it failed: the same flow over plain Markdown.
       surface = rawSurface(body);
@@ -863,7 +898,8 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
       if (surface.name === next) return;
       const text = surface.get();
       surface.destroy();
-      try { surface = next === "raw" ? rawSurface(text) : await visual(shield(text)); }
+      status.textContent = next === "raw" ? "" : "Opening the visual editor …";
+      try { surface = next === "raw" ? rawSurface(text) : await visualInTime(shield(text)); }
       catch (e) { surface = rawSurface(text); notes.push("The visual editor did not load (" + e.message + ")."); }
       show();
       status.textContent = notes.concat([describe()]).filter(Boolean).join(" ");
@@ -938,6 +974,7 @@ var DATA_HREF = new URL("../../../../folio-assistant-core/library/twg-outline-20
       const a = e.target.closest("a[data-fa-link]"), h = e.target.closest("[data-src]");
       if (a) ready(a);
       if (h && h !== a) ready(h);
+      if (a && a.dataset.faLink === "suggest") editorBundle().catch(() => {});
     }, { passive: true });
 })();
 

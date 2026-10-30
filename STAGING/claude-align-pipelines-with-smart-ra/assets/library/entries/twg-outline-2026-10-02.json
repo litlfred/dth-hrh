@@ -1,0 +1,2134 @@
+{
+  "$schema": "folio-library-entry/v1",
+  "id": "twg-outline-2026-10-02",
+  "blocks": [
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s001-hwf-registry-dth-outline-md",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "HWF_Registry_DTH_Outline.md",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s001-hwf-registry-dth-outline-md.md",
+      "narrative": null,
+      "content": "**WHO Digital Transformation Handbook for Health Workforce Registries and Planning**\n\n**Manuscript Outline**",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s002-about-this-draft",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**About this draft**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s002-about-this-draft.md",
+      "narrative": null,
+      "content": "# **About this draft**\n\nEach chapter gives objectives, key messages, proposed sections with the main points to be covered, suggested figures and tables, tools and checklists, and the outputs that a country would be expected to produce. The content draws on published WHO guidance listed at the end of this document. \n\n**Questions for the TWG**\n\n* Does the five-part structure work for both health workforce and digital readers?  \n* Is anything missing that countries are asking for?  \n* Is anything included that does not belong in this handbook?   \n* Is the level of technical detail right for the m",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s003-handbook-at-a-glance",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Handbook at a glance**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s003-handbook-at-a-glance.md",
+      "narrative": null,
+      "content": "# **Handbook at a glance**\n\n| Part | Chapter | Sections |\n| :---- | :---- | :---- |\n| **Part 0\\. Introduction** | 1\\. Why Digital Health Workforce Registries Matter | Global challenges; Value proposition; Registry as digital public infrastructure; Benefits and outcomes |\n|  | 2\\. Scope and Boundaries | Included topics; Excluded topics; Target audiences |\n|  | 3\\. Digital Transformation Approach  | DIIG alignment; Transformation principles; Country pathway |\n| **Part 1\\. Foundations** | 4\\. Purpose and Role of a Registry | Definitions; Authoritative source; Health worker lifecycle; Strategic us",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s004-part-0-introduction",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Part 0\\. Introduction**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s004-part-0-introduction.md",
+      "narrative": null,
+      "content": "# **Part 0\\. Introduction**\n\n**Purpose:** This part explains why the handbook exists, what it covers and does not cover, who it is for, and the approach it takes: helping countries move from where they are today towards digital, interoperable health workforce registries built on shared digital building blocks.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s005-chapter-1-why-digital-health-workforce-registrie",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 1\\. Why Digital Health Workforce Registries Matter**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s005-chapter-1-why-digital-health-workforce-registrie.md",
+      "narrative": null,
+      "content": "## **Chapter 1\\. Why Digital Health Workforce Registries Matter**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Explain the health workforce data problems that a digital registry helps to solve.  \n* Describe the value of a registry for health workers, regulators, employers, planners and the public.  \n* Position the registry as a shared, reusable part of a country's digital public infrastructure for health.\n\n**Key messages**\n\n* Countries cannot plan, deploy, pay or protect a workforce that they cannot count or verify.  \n* A registry is a trusted, shared set of core information",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s006-1-1-global-challenges",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**1.1 Global challenges**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s006-1-1-global-challenges.md",
+      "narrative": null,
+      "content": "### **1.1 Global challenges**\n\n* WHO projects a global shortfall of about 11 million health workers by 2030, with uneven distribution within and between countries.  \n* Workforce data are spread across ministries, regulatory councils, employers, training institutions and the private sector, often on paper or in stand-alone systems.  \n* The results are duplicate and “ghost” records, unverified credentials, slow licensing, weak planning and difficulty reporting to National Health Workforce Accounts (NHWA).",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s007-1-2-value-proposition",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**1.2 Value proposition**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s007-1-2-value-proposition.md",
+      "narrative": null,
+      "content": "### **1.2 Value proposition**\n\n* One trusted identity and record for each health worker, reused by every system that needs it (“capture once, use many times”).  \n* Faster and cheaper administrative processes: registration, licence renewal, verification, deployment and payroll reconciliation.  \n* Better evidence for decisions on training, recruitment, distribution, retention and migration.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s008-1-3-registry-as-digital-public-infrastructure",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**1.3 Registry as digital public infrastructure**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s008-1-3-registry-as-digital-public-infrastructure.md",
+      "narrative": null,
+      "content": "### **1.3 Registry as digital public infrastructure**\n\n* The draft WHO/ITU reference architecture for digital public infrastructure for health (DPI-H) lists the health workforce registry as a foundational registry, alongside client, facility and product registries.  \n* Shared building blocks (identity, registries, data exchange, terminology) are built once and reused by many applications.  \n* The registry is publicly governed, interoperable and based on open standards, so countries stay in control and avoid dependence on one supplier.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s009-1-4-benefits-and-outcomes",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**1.4 Benefits and outcomes**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s009-1-4-benefits-and-outcomes.md",
+      "narrative": null,
+      "content": "### **1.4 Benefits and outcomes**\n\n* For health workers: portable and verifiable credentials, simpler renewals, and recognition of training and continuing professional development.  \n* For the public and employers: confidence that practitioners are qualified and authorized to practise.  \n* For government: reliable workforce numbers for planning, financing, emergency response and international reporting (NHWA, the WHO Global Code of Practice).\n\n**Suggested figures and tables**\n\n* Figure: the registry at the centre, with inputs (training institutions, regulators, employers) and outputs (verifica",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s010-chapter-2-scope-and-boundaries",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 2\\. Scope and Boundaries**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s010-chapter-2-scope-and-boundaries.md",
+      "narrative": null,
+      "content": "## **Chapter 2\\. Scope and Boundaries**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Define what the handbook covers and what is left to other guidance.  \n* Clarify how a registry differs from, and relates to, human resources information systems (HRIS), regulatory, payroll and education systems.  \n* Identify the audiences and how each should use the handbook.\n\n**Key messages**\n\n* The handbook covers the registry as a shared foundation, not the full range of human resource management functions.  \n* It applies to all health workers a country chooses to include: usually regulate",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s011-2-1-included-topics",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**2.1 Included topics**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s011-2-1-included-topics.md",
+      "narrative": null,
+      "content": "### **2.1 Included topics**\n\n* Purpose, governance, minimum data set, functional requirements and architecture options for a registry.  \n* Interoperability with regulators, employers, training institutions, the facility registry, identity systems and NHWA reporting.  \n* A phased country pathway from assessment to routine operation, for paper-based, partly digital and fully digital starting points.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s012-2-2-excluded-topics",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**2.2 Excluded topics**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s012-2-2-excluded-topics.md",
+      "narrative": null,
+      "content": "### **2.2 Excluded topics**\n\n* Detailed human resource management functions (recruitment, performance appraisal, leave, payroll processing), which belong to HRIS and payroll systems.  \n* Design of regulatory policy, scopes of practice and accreditation standards, which are covered by WHO guidance on health practitioner regulation.  \n* Workforce planning and labour market analysis methods, and endorsement of specific software products.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s013-2-3-target-audiences",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**2.3 Target audiences**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s013-2-3-target-audiences.md",
+      "narrative": null,
+      "content": "### **2.3 Target audiences**\n\n* Decision-makers: ministry of health leadership, health workforce directorates, digital health units, regulators and professional councils.  \n* Implementers: enterprise architects, business analysts, software developers, data managers and implementing partners.  \n* Supporters: funders, professional associations, training institutions, private sector employers, and WHO regional and country offices.\n\n**Suggested figures and tables**\n\n* Figure: the registry and its neighbouring systems (HRIS, regulatory systems, payroll, education systems, facility registry).  \n* Ta",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s014-chapter-3-digital-transformation-approach",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 3\\. Digital Transformation Approach**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s014-chapter-3-digital-transformation-approach.md",
+      "narrative": null,
+      "content": "## **Chapter 3\\. Digital Transformation Approach**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Explain how the handbook applies the WHO Digital Implementation Investment Guide (DIIG) to registries.  \n* Describe the principles that guide a registry transformation.  \n* Outline a phased pathway that a country can follow, whatever its starting point.\n\n**Key messages**\n\n* Digital transformation changes processes, governance and skills. It is not only about installing software.  \n* Start from existing systems and improve them step by step. Full replacement is rarely necessary.  \n*",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s015-3-1-diig-alignment",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**3.1 DIIG alignment**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s015-3-1-diig-alignment.md",
+      "narrative": null,
+      "content": "### **3.1 DIIG alignment**\n\n* The handbook follows the DIIG sequence: form the team, identify challenges, choose interventions, plan implementation, link to the enterprise architecture, budget and monitor.  \n* It sits alongside the other WHO digital transformation handbooks (primary health care, health supply chain architecture, health product catalogue) and the SMART Guidelines approach.  \n* It gives the health workforce detail that the DPI-H reference architecture does not go into.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s016-3-2-transformation-principles",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**3.2 Transformation principles**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s016-3-2-transformation-principles.md",
+      "narrative": null,
+      "content": "### **3.2 Transformation principles**\n\n* Country-owned and publicly governed: meet countries where they are.  \n* Interoperable, standards-based, reusable, secure and privacy-protecting by design (in line with the draft DPI-H principles and the Principles for Digital Development).  \n* People-centred: designed with health workers, regulators and employers as users.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s017-3-3-country-pathway",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**3.3 Country pathway**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s017-3-3-country-pathway.md",
+      "narrative": null,
+      "content": "### **3.3 Country pathway**\n\n* Four broad stages: prepare and assess, design, implement, and operate and improve (detailed in Part 3).  \n* Typical starting points: paper registers; stand-alone digital systems in each council or ministry; partly connected systems.  \n* The guidance will also be published in a form that digital tools, including AI assistants, can use (for example machine-readable requirements and data dictionary).\n\n**Suggested figures and tables**\n\n* Figure: country pathway showing entry points for different starting points.  \n* Table: handbook chapters mapped to DIIG steps.  \n*",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s018-part-1-foundations",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Part 1\\. Foundations**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s018-part-1-foundations.md",
+      "narrative": null,
+      "content": "# **Part 1\\. Foundations**\n\n**Purpose:** This part sets out the common understanding that health workforce and digital teams need before design starts: what a registry is and what it is for, who uses it, who governs it, what it must do, and the architecture principles it should follow.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s019-chapter-4-purpose-and-role-of-a-registry",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 4\\. Purpose and Role of a Registry**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s019-chapter-4-purpose-and-role-of-a-registry.md",
+      "narrative": null,
+      "content": "## **Chapter 4\\. Purpose and Role of a Registry**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Define a health workforce registry and related terms in plain language.  \n* Explain what “authoritative source” means and how it can be achieved with one system or several.  \n* Show how the registry supports each stage of the health worker life cycle and its main strategic uses.\n\n**Key messages**\n\n* The registry holds a minimum set of trusted information that uniquely identifies each health worker, their qualifications, their authorization to practise and where they work.  \n* “Autho",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s020-4-1-definitions",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**4.1 Definitions**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s020-4-1-definitions.md",
+      "narrative": null,
+      "content": "### **4.1 Definitions**\n\n* Working definitions of health workforce registry, professional register, HRIS, health worker, registration, licence and credential (see Glossary annex).  \n* Alignment with the WHO 2015 minimum data set definition (“the single authoritative source of health workforce information”) and with the draft DPI-H reference architecture.  \n* The difference between a “registry” (the shared national capability) and a “register” (a regulator's legal list of those authorized to practise).",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s021-4-2-authoritative-source",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**4.2 Authoritative source**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s021-4-2-authoritative-source.md",
+      "narrative": null,
+      "content": "### **4.2 Authoritative source**\n\n* Which institution is the source of truth for each data item, such as identity, qualification, licence status and employment.  \n* How records from several sources are matched to one unique health worker identifier.  \n* Options: a single national system, or several source systems connected to give one consistent view.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s022-4-3-health-worker-lifecycle",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**4.3 Health worker lifecycle**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s022-4-3-health-worker-lifecycle.md",
+      "narrative": null,
+      "content": "### **4.3 Health worker lifecycle**\n\n* Stages: pre-service education, graduation, registration and licensing, employment and deployment, continuing professional development, renewal, mobility, exit and re-entry.  \n* The events at each stage that create or change registry data, and who records them.  \n* Link to the NHWA health labour market framework (education, labour force, and serving population health needs).",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s023-4-4-strategic-uses",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**4.4 Strategic uses**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s023-4-4-strategic-uses.md",
+      "narrative": null,
+      "content": "### **4.4 Strategic uses**\n\n* Regulation and public protection: confirming that practitioners are qualified and in good standing.  \n* Planning and management: stock, distribution, skill mix, attrition and migration.  \n* Service delivery and digital health: identifying and authorizing health workers in electronic records, prescribing, telehealth and payment systems.\n\n**Suggested figures and tables**\n\n* Figure: health worker life cycle with the data events at each stage.  \n* Figure: “one set of information, one or many systems”.  \n* Table: registry compared with HRIS, professional register and p",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s024-chapter-5-user-personas-and-use-cases",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 5\\. User Personas and Use Cases**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s024-chapter-5-user-personas-and-use-cases.md",
+      "narrative": null,
+      "content": "## **Chapter 5\\. User Personas and Use Cases**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Identify the people and systems that supply or use registry information.  \n* Prioritize a small set of use cases to drive the first phase.  \n* Show how personas, use cases and user stories are turned into requirements.\n\n**Key messages**\n\n* Requirements should come from real users and tasks, not from software features.  \n* Systems are users too: many registry “users” are other applications requesting information through interfaces.  \n* Start with a few high-value use cases and add more",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s025-5-1-personas",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**5.1 Personas**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s025-5-1-personas.md",
+      "narrative": null,
+      "content": "### **5.1 Personas**\n\n* People: health worker, registration officer in a regulatory body, employer or facility human resources manager, training institution registrar, workforce planner, member of the public, emergency coordinator.  \n* Systems: HRIS, payroll, electronic medical record, facility registry, national identity system, NHWA platform.  \n* For each persona: goals, tasks, difficulties, digital skills and connectivity.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s026-5-2-priority-use-cases",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**5.2 Priority use cases**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s026-5-2-priority-use-cases.md",
+      "narrative": null,
+      "content": "### **5.2 Priority use cases**\n\n* Register and license a new graduate; renew a licence; update employment or place of practice.  \n* Verify a health worker's status (by an employer, a patient, another system or another country).  \n* Produce workforce counts and distribution for planning and NHWA reporting.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s027-5-3-user-stories",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**5.3 User stories**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s027-5-3-user-stories.md",
+      "narrative": null,
+      "content": "### **5.3 User stories**\n\n* Standard format: “As a \\[persona\\], I need \\[capability\\], so that \\[benefit\\].”  \n* Worked examples for each priority use case.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s028-5-4-requirements-derivation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**5.4 Requirements derivation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s028-5-4-requirements-derivation.md",
+      "narrative": null,
+      "content": "### **5.4 Requirements derivation**\n\n* The chain from use case to business process, to functional and non-functional requirements, to data elements.  \n* Traceability between each requirement and the use case it serves.  \n* Prioritization (must have, should have, could have) to support phased delivery.\n\n**Suggested figures and tables**\n\n* Figure: persona cards.  \n* Table: use case overview (actor, trigger, data used, systems involved).  \n* Figure: traceability from use case to requirement to data element.\n\n**Implementation tools and checklists**\n\n* Persona template (full generic personas in ann",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s029-chapter-6-governance-and-stewardship",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 6\\. Governance and Stewardship**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s029-chapter-6-governance-and-stewardship.md",
+      "narrative": null,
+      "content": "## **Chapter 6\\. Governance and Stewardship**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Describe the institutional arrangements needed to govern a registry across health workforce, regulatory and digital bodies.  \n* Identify the legal and policy foundations for collecting, sharing and publishing health worker data.  \n* Plan for long-term stewardship, financing and sustainability.\n\n**Key messages**\n\n* Weak governance, not technology, is the most common reason registries stall or fail.  \n* The registry needs a clear owner, a mandate, and formal agreements with every institut",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s030-6-1-institutions",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**6.1 Institutions**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s030-6-1-institutions.md",
+      "narrative": null,
+      "content": "### **6.1 Institutions**\n\n* Roles of the ministry of health (health workforce and digital units), regulatory councils, public service commission, finance and payroll, education ministry and training institutions, private sector and sub-national authorities.  \n* Governance structure: steering committee, technical working group, and registry operator or custodian.  \n* Decision rights: who approves data standards, access, changes and new connections.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s031-6-2-legal-foundations",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**6.2 Legal foundations**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s031-6-2-legal-foundations.md",
+      "narrative": null,
+      "content": "### **6.2 Legal foundations**\n\n* A legal mandate to establish and operate the registry and to require institutions to submit data.  \n* Data protection, privacy and consent, including what may be public (for example licence status) and what is restricted.  \n* Data-sharing agreements between institutions and, where relevant, across borders.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s032-6-3-data-stewardship",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**6.3 Data stewardship**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s032-6-3-data-stewardship.md",
+      "narrative": null,
+      "content": "### **6.3 Data stewardship**\n\n* Named data owners, stewards and custodians for each group of data.  \n* Policies for data access, use, retention, correction and release.  \n* Health workers' rights to access and correct their own record.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s033-6-4-sustainability",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**6.4 Sustainability**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s033-6-4-sustainability.md",
+      "narrative": null,
+      "content": "### **6.4 Sustainability**\n\n* Options for recurrent financing: government budget, registration and licensing fees, shared digital infrastructure budgets.  \n* Institutional capacity: permanent posts for registry operation, data management and technical support.  \n* Managing dependence on suppliers and external partners, including handover and exit planning.\n\n**Suggested figures and tables**\n\n* Figure: model governance structure.  \n* Table: responsibility matrix (who is responsible, accountable, consulted and informed) for registry functions.  \n* Table: legal and policy instruments typically nee",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s034-chapter-7-functional-requirements",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 7\\. Functional Requirements**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s034-chapter-7-functional-requirements.md",
+      "narrative": null,
+      "content": "## **Chapter 7\\. Functional Requirements**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Describe the core functions that any health workforce registry should provide.  \n* Distinguish minimum functions from optional or advanced ones.  \n* Provide a requirements catalogue that countries can adapt for specification and procurement.\n\n**Key messages**\n\n* The core is small: identify each worker uniquely, hold a trusted record, keep it current, and answer queries.  \n* Functions can be delivered by one system or shared across several connected systems.  \n* Non-functional requirements",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s035-7-1-identity-management",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**7.1 Identity management**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s035-7-1-identity-management.md",
+      "narrative": null,
+      "content": "### **7.1 Identity management**\n\n* Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful.  \n* Search, match and merge duplicate records across source systems.  \n* Manage changes of name and other identity details over a career.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s036-7-2-records",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**7.2 Records**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s036-7-2-records.md",
+      "narrative": null,
+      "content": "### **7.2 Records**\n\n* Create, view, update and archive the health worker record in line with the minimum data set.  \n* Hold supporting evidence, such as certificates, or links to it.  \n* Record the source and date of each data item.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s037-7-3-lifecycle-management",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**7.3 Lifecycle management**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s037-7-3-lifecycle-management.md",
+      "narrative": null,
+      "content": "### **7.3 Lifecycle management**\n\n* Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated.  \n* Support renewals, recording of continuing professional development, and reminders.  \n* Record changes of employment and place of practice over time.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s038-7-4-verification-services",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**7.4 Verification services**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s038-7-4-verification-services.md",
+      "narrative": null,
+      "content": "### **7.4 Verification services**\n\n* Confirm registration and licence status in real time for employers, the public and other systems.  \n* Issue digital, verifiable credentials or certificates (for example a certificate of good standing).  \n* Respond to verification requests from other countries.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s039-7-5-analytics",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**7.5 Analytics**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s039-7-5-analytics.md",
+      "narrative": null,
+      "content": "### **7.5 Analytics**\n\n* Standard reports and dashboards on stock, distribution, age, sex, occupation and status.  \n* Data extracts for NHWA and national planning.  \n* Data quality reports for registry managers.\n\n**Suggested figures and tables**\n\n* Figure: overview of registry functions.  \n* Table: minimum and advanced functions.  \n* Table: sample requirements (identifier, requirement, priority, linked use case).\n\n**Implementation tools and checklists**\n\n* Functional requirements catalogue (annex).  \n* Non-functional requirements checklist.\n\n**Expected outputs for countries**\n\n* A national req",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s040-chapter-8-digital-architecture-principles",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 8\\. Digital Architecture Principles**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s040-chapter-8-digital-architecture-principles.md",
+      "narrative": null,
+      "content": "## **Chapter 8\\. Digital Architecture Principles**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Explain the main architecture options for a registry in non-technical terms.  \n* Help countries choose a pattern that fits their governance, existing systems and capacity.  \n* Set out principles that keep the registry scalable, reusable and independent of any one product.\n\n**Key messages**\n\n* There is no single correct architecture. The choice depends on how authority over health worker data is distributed in the country.  \n* Centralized, federated and hybrid models can all provide",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s041-8-1-architecture-patterns",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**8.1 Architecture patterns**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s041-8-1-architecture-patterns.md",
+      "narrative": null,
+      "content": "### **8.1 Architecture patterns**\n\n* The three main patterns and what each means in practice: centralized (one national system holds the master record), federated (source systems keep their data and are linked), and hybrid (a national index with detail held at source).  \n* Criteria for choosing: legal mandates, number of regulators, existing systems, connectivity and capacity.  \n* Fit with the national digital health enterprise architecture and the registry layer of the draft DPI-H reference architecture.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s042-8-2-federation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**8.2 Federation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s042-8-2-federation.md",
+      "narrative": null,
+      "content": "### **8.2 Federation**\n\n* How several regulators or sub-national registries contribute to a national view through a shared identifier, a common data set and common interfaces.  \n* Linking records and resolving conflicts between sources.  \n* Responsibilities that stay with each source and those that sit at national level.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s043-8-3-scalability",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**8.3 Scalability**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s043-8-3-scalability.md",
+      "narrative": null,
+      "content": "### **8.3 Scalability**\n\n* Start with priority occupations or regions and expand without redesign.  \n* Performance, availability and hosting options (government data centre or cloud), including for low-connectivity settings.  \n* Modular design, so that functions can be added or replaced independently.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s044-8-4-technology-neutrality",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**8.4 Technology neutrality**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s044-8-4-technology-neutrality.md",
+      "narrative": null,
+      "content": "### **8.4 Technology neutrality**\n\n* Specify standards and interfaces, not products.  \n* Considerations for open-source, commercial and custom-built options, including digital public goods.  \n* Avoiding dependence on one supplier: data ownership, data export, documentation and exit clauses.\n\n**Suggested figures and tables**\n\n* Figure: the three architecture patterns side by side.  \n* Figure: decision tree for choosing a pattern.  \n* Table: comparison of patterns (advantages, risks, prerequisites).\n\n**Implementation tools and checklists**\n\n* Architecture pattern selection checklist.  \n* Archite",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s045-part-2-technical-design",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Part 2\\. Technical Design**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s045-part-2-technical-design.md",
+      "narrative": null,
+      "content": "# **Part 2\\. Technical Design**\n\n**Purpose:** This part gives the technical guidance needed to design a registry that connects with the wider health and government digital ecosystem: where the registry sits, how it exchanges data, what data it holds, and how those data are kept secure and of good quality.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s046-chapter-9-registry-within-ecosystem",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 9\\. Registry within Ecosystem**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s046-chapter-9-registry-within-ecosystem.md",
+      "narrative": null,
+      "content": "## **Chapter 9\\. Registry within Ecosystem**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Map the systems that supply data to the registry or use data from it.  \n* Describe the main data flows between these systems.  \n* Illustrate how the registry fits into different national architectures.\n\n**Key messages**\n\n* The registry is one of several foundational registries. It is most valuable when linked to the facility registry and to identity systems.  \n* Every connection needs a defined purpose, an owner and a documented data flow.  \n* Mapping what already exists is the first des",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s047-9-1-system-landscape",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**9.1 System landscape**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s047-9-1-system-landscape.md",
+      "narrative": null,
+      "content": "### **9.1 System landscape**\n\n* Source systems: regulatory council systems, training institution records, HRIS, payroll, national identity and civil registration.  \n* Systems that use registry data: electronic medical records, electronic prescribing, telehealth, insurance and claims, health management information systems, emergency rosters, the NHWA platform.  \n* Shared services: facility registry, terminology service, interoperability layer, authentication.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s048-9-2-data-flows",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**9.2 Data flows**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s048-9-2-data-flows.md",
+      "narrative": null,
+      "content": "### **9.2 Data flows**\n\n* Who sends what to whom, when, and which event triggers it.  \n* Flows into the registry (new records and updates) and out of it (queries, notifications, reports).  \n* Periodic batch exchange compared with real-time exchange.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s049-9-3-architecture-examples",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**9.3 Architecture examples**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s049-9-3-architecture-examples.md",
+      "narrative": null,
+      "content": "### **9.3 Architecture examples**\n\n* Illustrative architectures for centralized, federated and hybrid models.  \n* An example in which the registry is part of a national health information exchange.  \n* An example for a country starting from paper registers or spreadsheets.\n\n**Suggested figures and tables**\n\n* Figure: ecosystem landscape diagram.  \n* Figure: data flow diagram.  \n* Table: systems, their owners, and the data they supply or use.\n\n**Implementation tools and checklists**\n\n* System inventory template.  \n* Data flow mapping template.\n\n**Expected outputs for countries**\n\n* A national m",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s050-chapter-10-interoperability",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 10\\. Interoperability**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s050-chapter-10-interoperability.md",
+      "narrative": null,
+      "content": "## **Chapter 10\\. Interoperability**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Explain the standards and interfaces that allow the registry to exchange data with other systems.  \n* Describe common data exchange patterns and when to use each.  \n* Define how interoperability is governed and tested.\n\n**Key messages**\n\n* Interoperability means that systems can exchange information and use it without manual re-entry.  \n* Use existing open standards. Do not create national formats where a standard already exists.  \n* Agreeing on meaning (shared codes and definitions) is as impor",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s051-10-1-standards",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**10.1 Standards**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s051-10-1-standards.md",
+      "narrative": null,
+      "content": "### **10.1 Standards**\n\n* HL7 FHIR resources for health workers and where they work (Practitioner, PractitionerRole, Organization, Location) as the recommended exchange format.  \n* IHE profiles such as Mobile Care Services Discovery (mCSD) for querying and updating health worker and facility directories.  \n* Code systems and classifications, covered in the chapter on data standards.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s052-10-2-apis",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**10.2 APIs**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s052-10-2-apis.md",
+      "narrative": null,
+      "content": "### **10.2 APIs**\n\n* Core interfaces: search for and read a health worker record; verify status; submit and update records; receive notice of changes.  \n* Security of interfaces: authentication, authorization and consent.  \n* Documentation and version management, so that other systems can connect.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s053-10-3-data-exchange-patterns",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**10.3 Data exchange patterns**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s053-10-3-data-exchange-patterns.md",
+      "narrative": null,
+      "content": "### **10.3 Data exchange patterns**\n\n* Query on demand, notification of changes, and bulk exchange through periodic files or extracts.  \n* Direct connection compared with exchange through an interoperability layer.  \n* Transitional approaches where source systems cannot yet use standards (for example structured file uploads).",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s054-10-4-governance",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**10.4 Governance**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s054-10-4-governance.md",
+      "narrative": null,
+      "content": "### **10.4 Governance**\n\n* Rules and agreements for systems that connect to the registry.  \n* Conformance testing against published specifications before a connection goes live.  \n* Managing changes to standards and interface versions.\n\n**Suggested figures and tables**\n\n* Figure: layers of interoperability (legal, organizational, semantic, technical).  \n* Table: standards and what each is used for.  \n* Figure: step-by-step sequence of a verification query.\n\n**Implementation tools and checklists**\n\n* Interoperability models (annex).  \n* Interface specification checklist.  \n* Conformance test ch",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s055-chapter-11-data-standards-and-minimum-dataset",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 11\\. Data Standards and Minimum Dataset**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s055-chapter-11-data-standards-and-minimum-dataset.md",
+      "narrative": null,
+      "content": "## **Chapter 11\\. Data Standards and Minimum Dataset**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Present a minimum data set for a health workforce registry and the reason for each element.  \n* Identify the classifications and code lists that make data comparable.  \n* Show how registry data map to NHWA indicators.\n\n**Key messages**\n\n* Collect only what is needed, define it precisely, and keep it up to date.  \n* The minimum data set is a floor, not a ceiling. Countries can extend it.  \n* International classifications allow comparison across institutions and countries.  \n* A",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s056-11-1-core-dataset",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**11.1 Core dataset**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s056-11-1-core-dataset.md",
+      "narrative": null,
+      "content": "### **11.1 Core dataset**\n\n* The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.  \n* Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.  \n* For each element: definition, format, whether mandatory, so",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s057-11-2-classifications",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**11.2 Classifications**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s057-11-2-classifications.md",
+      "narrative": null,
+      "content": "### **11.2 Classifications**\n\n* Occupations: International Standard Classification of Occupations (ISCO-08), with mapping from national occupational titles.  \n* Education levels and fields (ISCED), facility types and ownership, and administrative geography.  \n* Supporting standards for countries (ISO 3166), dates (ISO 8601\\) and languages.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s058-11-3-metadata",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**11.3 Metadata**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s058-11-3-metadata.md",
+      "narrative": null,
+      "content": "### **11.3 Metadata**\n\n* Data dictionary structure: element name, definition, data type, permitted values and mapping to FHIR.  \n* Information about each data item's origin: source, date recorded, date verified.  \n* Version control and publication of the data dictionary and code lists.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s059-11-4-nhwa-mapping",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**11.4 NHWA mapping**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s059-11-4-nhwa-mapping.md",
+      "narrative": null,
+      "content": "### **11.4 NHWA mapping**\n\n* NHWA indicators that can be derived from registry data, such as stock, density, distribution, age and sex, and place of training.  \n* Indicators that need other sources, such as finance data and labour market surveys.  \n* The breakdowns that NHWA requires and what they mean for the data set.\n\n**Suggested figures and tables**\n\n* Table: minimum data set.  \n* Figure: logical data model (health worker, qualification, licence, role, facility).  \n* Table: registry data elements mapped to NHWA indicators.\n\n**Implementation tools and checklists**\n\n* Minimum data set (annex",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s060-chapter-12-privacy-security-and-trust",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 12\\. Privacy, Security and Trust**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s060-chapter-12-privacy-security-and-trust.md",
+      "narrative": null,
+      "content": "## **Chapter 12\\. Privacy, Security and Trust**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Apply privacy by design to health workers' personal data.  \n* Identify the security controls that a registry needs.  \n* Describe how access is controlled and audited so that stakeholders can trust the registry.\n\n**Key messages**\n\n* A registry holds personal data about health workers. Protecting those data is a legal and ethical duty.  \n* Decide what is public, what is shared between institutions and what is restricted, and be open about it.  \n* Security is a continuous activity, not a",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s061-12-1-privacy-by-design",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**12.1 Privacy by design**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s061-12-1-privacy-by-design.md",
+      "narrative": null,
+      "content": "### **12.1 Privacy by design**\n\n* Collect the minimum data needed, use them only for stated purposes, and set retention limits.  \n* Carry out a privacy impact assessment before implementation and before major changes.  \n* Tiered disclosure: a public view, an institutional view and restricted data.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s062-12-2-cybersecurity",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**12.2 Cybersecurity**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s062-12-2-cybersecurity.md",
+      "narrative": null,
+      "content": "### **12.2 Cybersecurity**\n\n* Risk assessment, secure hosting, encryption of stored and transmitted data, backup and recovery.  \n* Incident response and notification of data breaches.  \n* Alignment with national cybersecurity policies and standards.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s063-12-3-access-control",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**12.3 Access control**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s063-12-3-access-control.md",
+      "narrative": null,
+      "content": "### **12.3 Access control**\n\n* Role-based access for people; authenticated and authorized access for systems.  \n* Self-service access for health workers to their own record.  \n* Regular review of user accounts and permissions.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s064-12-4-audit-trails",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**12.4 Audit trails**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s064-12-4-audit-trails.md",
+      "narrative": null,
+      "content": "### **12.4 Audit trails**\n\n* A log of who viewed or changed which record, when and why.  \n* Routine review of logs, with reports to the governance body.  \n* Use of audit data to detect misuse and fraud.\n\n**Suggested figures and tables**\n\n* Figure: tiered data access model.  \n* Table: main threats and the controls that address them.  \n* Table: roles and permissions.\n\n**Implementation tools and checklists**\n\n* Privacy impact assessment template.  \n* Security checklist.  \n* Roles and permissions template.\n\n**Expected outputs for countries**\n\n* A completed privacy impact assessment.  \n* A data cla",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s065-chapter-13-data-quality-management",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 13\\. Data Quality Management**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s065-chapter-13-data-quality-management.md",
+      "narrative": null,
+      "content": "## **Chapter 13\\. Data Quality Management**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Define data quality for a registry and how to measure it.  \n* Describe validation when data are entered and when they are compared across sources.  \n* Set up routine monitoring and improvement of data quality.\n\n**Key messages**\n\n* A registry is only as useful as its data are complete, accurate and current.  \n* Quality is best assured at source, by the institution that owns the data.  \n* Routine use of the data is the strongest driver of quality.  \n* Data quality needs named responsibility",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s066-13-1-quality-dimensions",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**13.1 Quality dimensions**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s066-13-1-quality-dimensions.md",
+      "narrative": null,
+      "content": "### **13.1 Quality dimensions**\n\n* Completeness, accuracy, timeliness, uniqueness, consistency and validity.  \n* Coverage: the proportion of the actual workforce that is in the registry, including the private sector.  \n* Targets for each dimension.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s067-13-2-validation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**13.2 Validation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s067-13-2-validation.md",
+      "narrative": null,
+      "content": "### **13.2 Validation**\n\n* Automated rules at data entry (formats, mandatory fields, code lists).  \n* Verification against primary sources, such as training institutions, the national identity system and the issuing regulator.  \n* Procedures for finding and resolving duplicate records.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s068-13-3-monitoring",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**13.3 Monitoring**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s068-13-3-monitoring.md",
+      "narrative": null,
+      "content": "### **13.3 Monitoring**\n\n* Data quality indicators and dashboards.  \n* Periodic audits and reconciliation with payroll, facility staffing lists or census data.  \n* Feedback to data suppliers and corrective action.\n\n**Suggested figures and tables**\n\n* Table: data quality dimensions with example indicators.  \n* Figure: data quality improvement cycle.\n\n**Implementation tools and checklists**\n\n* Data quality assessment checklist.  \n* Catalogue of validation rules.  \n* Standard operating procedure template for resolving duplicates.\n\n**Expected outputs for countries**\n\n* A data quality plan with ind",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s069-part-3-country-implementation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Part 3\\. Country Implementation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s069-part-3-country-implementation.md",
+      "narrative": null,
+      "content": "# **Part 3\\. Country Implementation**\n\n**Purpose:** This part guides countries through the practical steps of transformation, from preparing and assessing readiness to operating and improving the registry. Countries can enter at the step that matches their situation.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s070-chapter-14-preparing-for-transformation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 14\\. Preparing for Transformation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s070-chapter-14-preparing-for-transformation.md",
+      "narrative": null,
+      "content": "## **Chapter 14\\. Preparing for Transformation**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Secure leadership and form the team that will lead the transformation.  \n* Assess readiness and the current state of registry-related systems.  \n* Engage the stakeholders on whose participation the registry depends.\n\n**Key messages**\n\n* Joint leadership by the health workforce and digital health units is essential.  \n* A readiness assessment prevents costly surprises later.  \n* Regulators and professional councils are partners and data owners, not only data suppliers.  \n* Agree the v",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s071-14-1-leadership",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**14.1 Leadership**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s071-14-1-leadership.md",
+      "narrative": null,
+      "content": "### **14.1 Leadership**\n\n* An executive sponsor and a clear mandate.  \n* A shared vision and goals linked to the national health workforce and digital health strategies.  \n* The registry's place in the national digital health architecture and investment plans.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s072-14-2-teams",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**14.2 Teams**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s072-14-2-teams.md",
+      "narrative": null,
+      "content": "### **14.2 Teams**\n\n* Core team: health workforce lead, digital health lead, regulator representatives, business analyst, architect, data manager and legal adviser.  \n* Roles, responsibilities and time commitment.  \n* When to bring in external technical support.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s073-14-3-readiness",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**14.3 Readiness**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s073-14-3-readiness.md",
+      "narrative": null,
+      "content": "### **14.3 Readiness**\n\n* Assessment areas: governance and law, data, processes, technology and infrastructure, people and skills, and financing.  \n* An inventory of existing registers and systems.  \n* Placement on the maturity model and identification of gaps.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s074-14-4-stakeholder-engagement",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**14.4 Stakeholder engagement**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s074-14-4-stakeholder-engagement.md",
+      "narrative": null,
+      "content": "### **14.4 Stakeholder engagement**\n\n* Stakeholder mapping, with analysis of interests and influence.  \n* Engagement methods: workshops, one-to-one consultation with councils, and dialogue with health worker associations.  \n* Responding to concerns about loss of control, workload and use of data.\n\n**Suggested figures and tables**\n\n* Figure: team structure.  \n* Table: readiness assessment areas and sample questions.  \n* Figure: stakeholder map.\n\n**Implementation tools and checklists**\n\n* Readiness assessment (annex).  \n* Stakeholder mapping template.  \n* Team terms of reference template.\n\n**Exp",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s075-chapter-15-business-process-redesign",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 15\\. Business Process Redesign**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s075-chapter-15-business-process-redesign.md",
+      "narrative": null,
+      "content": "## **Chapter 15\\. Business Process Redesign**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Document how registration, licensing and related processes work today.  \n* Design improved processes that make use of digital capabilities.  \n* Derive system requirements from the redesigned processes.\n\n**Key messages**\n\n* Digitizing a poor process produces a poor digital process. Simplify first.  \n* Mapping processes with the people who do the work reveals the real bottlenecks.  \n* Redesign should reduce the burden on health workers.  \n* Some process changes need regulatory or policy c",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s076-15-1-current-state-mapping",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**15.1 Current state mapping**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s076-15-1-current-state-mapping.md",
+      "narrative": null,
+      "content": "### **15.1 Current state mapping**\n\n* Map priority processes: first registration, licence renewal, verification, transfer and exit.  \n* Record the steps, people involved, documents, time taken and difficulties.  \n* Identify duplication across institutions.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s077-15-2-future-workflows",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**15.2 Future workflows**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s077-15-2-future-workflows.md",
+      "narrative": null,
+      "content": "### **15.2 Future workflows**\n\n* Redesigned workflows using online application, automated checks, shared data and digital credentials.  \n* Paper or assisted channels kept where connectivity or digital skills are limited.  \n* Policy or legal changes needed to make the new workflows possible.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s078-15-3-requirements",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**15.3 Requirements**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s078-15-3-requirements.md",
+      "narrative": null,
+      "content": "### **15.3 Requirements**\n\n* Turn future workflows into functional and non-functional requirements (linked to the chapters on use cases and functional requirements).  \n* Data requirements for each step.  \n* Prioritization and phasing.\n\n**Suggested figures and tables**\n\n* Figure: example current and future workflow for licence renewal.  \n* Table: common difficulties and redesign options.\n\n**Implementation tools and checklists**\n\n* Process mapping template.  \n* Requirements template.\n\n**Expected outputs for countries**\n\n* Current and future process maps.  \n* Validated requirements.  \n* A list of",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s079-chapter-16-planning-and-procurement",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 16\\. Planning and Procurement**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s079-chapter-16-planning-and-procurement.md",
+      "narrative": null,
+      "content": "## **Chapter 16\\. Planning and Procurement**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Compare the options for delivering the registry.  \n* Choose a procurement approach and prepare specifications.  \n* Develop a costed implementation plan and manage risk.\n\n**Key messages**\n\n* Consider adapting or connecting existing systems before buying or building new ones.  \n* The total cost of ownership over at least five years matters more than the purchase price.  \n* Contracts must protect the country's ownership of its data and avoid dependence on one supplier.  \n* Plan in phases wi",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s080-16-1-options-analysis",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**16.1 Options analysis**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s080-16-1-options-analysis.md",
+      "narrative": null,
+      "content": "### **16.1 Options analysis**\n\n* Options: enhance an existing system, adopt an open-source solution or digital public good, buy a commercial product, build a custom system, or use a shared government platform.  \n* Criteria: fit with requirements, conformance to standards, cost, local capacity and sustainability.  \n* Total cost of ownership and budgeting, following the DIIG approach.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s081-16-2-procurement-approaches",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**16.2 Procurement approaches**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s081-16-2-procurement-approaches.md",
+      "narrative": null,
+      "content": "### **16.2 Procurement approaches**\n\n* Specifications and evaluation criteria based on the requirements and standards.  \n* Contract terms: data ownership, access to source code, support, service levels, training and exit.  \n* Coordination of funders and alignment with national procurement rules.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s082-16-3-risk-management",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**16.3 Risk management**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s082-16-3-risk-management.md",
+      "narrative": null,
+      "content": "### **16.3 Risk management**\n\n* Common risks: weak mandate, stakeholder resistance, poor data, funding gaps, supplier dependence and staff turnover.  \n* A risk register with mitigation measures.  \n* Phasing and pilots to reduce risk.\n\n**Suggested figures and tables**\n\n* Table: comparison of delivery options.  \n* Figure: sample phased roadmap.  \n* Table: risk matrix.\n\n**Implementation tools and checklists**\n\n* Options analysis template.  \n* Total cost of ownership and budget template.  \n* Risk register template.  \n* Procurement specification checklist.\n\n**Expected outputs for countries**\n\n* An",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s083-chapter-17-implementation-and-deployment",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 17\\. Implementation and Deployment**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s083-chapter-17-implementation-and-deployment.md",
+      "narrative": null,
+      "content": "## **Chapter 17\\. Implementation and Deployment**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Plan the migration of existing records into the registry.  \n* Test the registry before and during roll-out.  \n* Roll out in phases and establish routine operations.\n\n**Key messages**\n\n* Data migration and cleaning usually take longer than expected. Plan and resource them.  \n* Test with real users and realistic data.  \n* Roll out in phases, learn, and adjust.  \n* Put operations and support in place before going live.\n\n**Proposed sections**",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s084-17-1-migration",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**17.1 Migration**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s084-17-1-migration.md",
+      "narrative": null,
+      "content": "### **17.1 Migration**\n\n* Take stock of existing paper and digital records, then clean, de-duplicate and map them.  \n* Digitize paper registers and verify the records.  \n* Load data in a planned order, for example by occupation or sector.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s085-17-2-testing",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**17.2 Testing**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s085-17-2-testing.md",
+      "narrative": null,
+      "content": "### **17.2 Testing**\n\n* Functional, integration, performance, security and user acceptance testing.  \n* Conformance testing of interfaces.  \n* Test data and test environments.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s086-17-3-rollout",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**17.3 Rollout**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s086-17-3-rollout.md",
+      "narrative": null,
+      "content": "### **17.3 Rollout**\n\n* A pilot, followed by phased roll-out by occupation, institution or region.  \n* Criteria for going live, and a period of running old and new processes in parallel.  \n* User support during the transition.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s087-17-4-operations",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**17.4 Operations**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s087-17-4-operations.md",
+      "narrative": null,
+      "content": "### **17.4 Operations**\n\n* Standard operating procedures, help desk and service levels.  \n* Hosting, backup, maintenance and updates.  \n* Bringing new data suppliers and connecting systems on board.\n\n**Suggested figures and tables**\n\n* Figure: data migration steps.  \n* Table: types of testing and their purpose.  \n* Figure: phased roll-out timeline.\n\n**Implementation tools and checklists**\n\n* Migration plan template.  \n* Test plan and user acceptance test templates.  \n* Go-live checklist.  \n* Standard operating procedure template.\n\n**Expected outputs for countries**\n\n* Migrated and validated da",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s088-chapter-18-change-management",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 18\\. Change Management**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s088-chapter-18-change-management.md",
+      "narrative": null,
+      "content": "## **Chapter 18\\. Change Management**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Plan communications for each stakeholder group.  \n* Promote adoption and routine use of the registry.  \n* Build the skills needed to operate, use and sustain the registry.\n\n**Key messages**\n\n* People adopt systems that make their work easier and whose purpose they understand.  \n* Communicate early, often and in the language of each audience.  \n* Health workers must see benefits for themselves.  \n* Capacity strengthening is continuous and should be built into institutions.\n\n**Proposed sections**",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s089-18-1-communications",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**18.1 Communications**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s089-18-1-communications.md",
+      "narrative": null,
+      "content": "### **18.1 Communications**\n\n* Key messages for each audience: health workers, regulators, employers, managers and the public.  \n* Channels and timing.  \n* Responding to concerns about data use and privacy.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s090-18-2-adoption",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**18.2 Adoption**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s090-18-2-adoption.md",
+      "narrative": null,
+      "content": "### **18.2 Adoption**\n\n* Champions, incentives, and links between the registry and processes that users already need, such as licence renewal and employment.  \n* Monitoring uptake and removing barriers.  \n* Ways for users to give feedback.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s091-18-3-capacity-strengthening",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**18.3 Capacity strengthening**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s091-18-3-capacity-strengthening.md",
+      "narrative": null,
+      "content": "### **18.3 Capacity strengthening**\n\n* Competencies for registry managers, data officers, technical staff and other users.  \n* Training approaches: on-the-job training, e-learning, and peer learning between councils and countries.  \n* Building registry skills into pre-service and in-service programmes, and retaining skilled staff.\n\n**Suggested figures and tables**\n\n* Table: communication matrix by stakeholder group.  \n* Table: competencies by role.\n\n**Implementation tools and checklists**\n\n* Communications plan template.  \n* Training plan template.  \n* Change readiness checklist.\n\n**Expected o",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s092-chapter-19-monitoring-and-continuous-improvement",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 19\\. Monitoring and Continuous Improvement**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s092-chapter-19-monitoring-and-continuous-improvement.md",
+      "narrative": null,
+      "content": "## **Chapter 19\\. Monitoring and Continuous Improvement**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Define indicators to track the registry's performance and use.  \n* Use a maturity model to plan progress.  \n* Evaluate results and feed lessons into improvement.\n\n**Key messages**\n\n* Measure whether the registry is used and useful, not only whether it is installed.  \n* Maturity is gradual. Set realistic targets for the next level.  \n* Regular review keeps the registry in step with changing needs.  \n* Share lessons with other countries.\n\n**Proposed sections**",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s093-19-1-kpis",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**19.1 KPIs**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s093-19-1-kpis.md",
+      "narrative": null,
+      "content": "### **19.1 KPIs**\n\n* Coverage and completeness, timeliness of updates, and data quality.  \n* Service performance: time to register, renew and verify; system availability.  \n* Use: number of connected systems, number of verification queries, and reports used for decisions.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s094-19-2-maturity",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**19.2 Maturity**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s094-19-2-maturity.md",
+      "narrative": null,
+      "content": "### **19.2 Maturity**\n\n* Maturity levels across governance, data, processes, technology, interoperability and use.  \n* Self-assessment and target-setting.  \n* Links to existing WHO assessments of health workforce information systems and digital health maturity.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s095-19-3-evaluation",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**19.3 Evaluation**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s095-19-3-evaluation.md",
+      "narrative": null,
+      "content": "### **19.3 Evaluation**\n\n* Periodic evaluation of results against objectives and costs.  \n* Learning reviews with stakeholders.  \n* Updates to the roadmap, requirements and standards.\n\n**Suggested figures and tables**\n\n* Table: key performance indicators with definitions and data sources.  \n* Figure: maturity model summary.  \n* Figure: results chain from inputs to outcomes.\n\n**Implementation tools and checklists**\n\n* Indicator framework template.  \n* Maturity self-assessment (annex).\n\n**Expected outputs for countries**\n\n* A monitoring and evaluation plan.  \n* A baseline maturity assessment, re",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s096-part-4-examples-and-resources",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Part 4\\. Examples and Resources**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s096-part-4-examples-and-resources.md",
+      "narrative": null,
+      "content": "# **Part 4\\. Examples and Resources**\n\n**Purpose:** This part illustrates the guidance with worked use cases and country experience, and provides practical tools and templates that countries can adapt.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s097-chapter-20-illustrative-use-cases",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 20\\. Illustrative Use Cases**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s097-chapter-20-illustrative-use-cases.md",
+      "narrative": null,
+      "content": "## **Chapter 20\\. Illustrative Use Cases**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Show how the registry supports specific real-world scenarios from start to finish.  \n* Set out the people, data, workflows and interfaces involved in each scenario.  \n* Help countries adapt the use cases to their own context.\n\n**Key messages**\n\n* Use cases make the value of a registry concrete for decision-makers and guide developers.  \n* The same core data and interfaces serve all four use cases.  \n* Each use case can be implemented in stages.  \n* The use cases are illustrative, not presc",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s098-20-1-licensing",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**20.1 Licensing**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s098-20-1-licensing.md",
+      "narrative": null,
+      "content": "### **20.1 Licensing**\n\n* A new graduate applies, the qualification is verified with the training institution, a licence is issued and the registry is updated.  \n* Renewal linked to continuing professional development.  \n* Status changes, such as suspension and reinstatement, with notification to employers.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s099-20-2-verification",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**20.2 Verification**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s099-20-2-verification.md",
+      "narrative": null,
+      "content": "### **20.2 Verification**\n\n* An employer or member of the public checks a health worker's status online.  \n* A clinical system checks automatically that a prescriber is authorized.  \n* A health worker holds a digital credential that can be verified online or offline.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s100-20-3-emergency-response",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**20.3 Emergency response**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s100-20-3-emergency-response.md",
+      "narrative": null,
+      "content": "### **20.3 Emergency response**\n\n* Quickly identify available, qualified workers by skill and location for surge deployment.  \n* Verify the credentials of emergency medical teams and volunteers.  \n* Track deployment and return.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s101-20-4-mobility",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**20.4 Mobility**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s101-20-4-mobility.md",
+      "narrative": null,
+      "content": "### **20.4 Mobility**\n\n* Verify the credentials of internationally trained workers and issue certificates of good standing.  \n* Track inflows and outflows to support reporting under the WHO Global Code of Practice on the International Recruitment of Health Personnel.  \n* Movement within the country between regions, sectors and employers.\n\n**Suggested figures and tables**\n\n* Figure: workflow diagram for each use case.  \n* Table: people, data and interfaces involved in each use case.\n\n**Implementation tools and checklists**\n\n* Use case template.  \n* Scenario test scripts.\n\n**Expected outputs for",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s102-chapter-21-country-case-studies",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 21\\. Country Case Studies**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s102-chapter-21-country-case-studies.md",
+      "narrative": null,
+      "content": "## **Chapter 21\\. Country Case Studies**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Present how countries with different governance models have built their registries.  \n* Draw out practical lessons, including from fragile and low-resource settings.  \n* Help readers find experience that is relevant to their own context.\n\n**Key messages**\n\n* Countries have succeeded with different models. Context determines the choice.  \n* Progress is usually gradual, over several years.  \n* Governance and data quality are recurring challenges everywhere.  \n* Fragile settings can start with",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s103-21-1-centralized",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**21.1 Centralized**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s103-21-1-centralized.md",
+      "narrative": null,
+      "content": "### **21.1 Centralized**\n\n* A country with a single national registry across professions (case to be confirmed by the working group).  \n* How it was established: legal basis, governance and financing.  \n* Results and challenges.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s104-21-2-federated",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**21.2 Federated**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s104-21-2-federated.md",
+      "narrative": null,
+      "content": "### **21.2 Federated**\n\n* A country where several councils or sub-national authorities keep their own registers, linked to give a national view (case to be confirmed by the working group).  \n* How identifiers, the data set and interfaces were harmonized.  \n* Results and challenges.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s105-21-3-fragile-settings",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**21.3 Fragile settings**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s105-21-3-fragile-settings.md",
+      "narrative": null,
+      "content": "### **21.3 Fragile settings**\n\n* A fragile, conflict-affected or very low-resource setting, to be nominated through WHO regional offices.  \n* A minimum workable approach, options for working offline, and coordination of partners.  \n* Protecting data and health workers where security is poor.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s106-21-4-lessons-learned",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**21.4 Lessons learned**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s106-21-4-lessons-learned.md",
+      "narrative": null,
+      "content": "### **21.4 Lessons learned**\n\n* Common success factors and pitfalls.  \n* What countries would do differently.  \n* What the lessons mean for the country pathway.\n\n**Suggested figures and tables**\n\n* Summary box for each case study, in a standard format.  \n* Table: comparison across the case studies.\n\n**Implementation tools and checklists**\n\n* Case study documentation template.\n\n**Expected outputs for countries**\n\n* A list of peer countries to learn from.  \n* The country's own documented experience, to share with others.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s107-chapter-22-tools-and-templates",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Chapter 22\\. Tools and Templates**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s107-chapter-22-tools-and-templates.md",
+      "narrative": null,
+      "content": "## **Chapter 22\\. Tools and Templates**\n\n**Chapter objectives**\n\nThis chapter will help readers to:\n\n* Provide ready-to-adapt tools for each step of the pathway.  \n* Explain when and how to use each tool.  \n* Point to the annexes and online resources where full versions are kept.\n\n**Key messages**\n\n* Tools save time but must be adapted to the national context.  \n* Each tool is linked to a step in the country pathway.  \n* Completed tools should be kept up to date as living documents.  \n* Tools will be maintained online and, where relevant, in machine-readable form.\n\n**Proposed sections**",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s108-22-1-checklists",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**22.1 Checklists**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s108-22-1-checklists.md",
+      "narrative": null,
+      "content": "### **22.1 Checklists**\n\n* Legal and governance checklist.  \n* Privacy and security checklist; interoperability checklist.  \n* Go-live checklist.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s109-22-2-roadmaps",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**22.2 Roadmaps**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s109-22-2-roadmaps.md",
+      "narrative": null,
+      "content": "### **22.2 Roadmaps**\n\n* Sample phased roadmaps for each starting point: paper, stand-alone digital, and partly connected.  \n* Milestones, dependencies and decision points.  \n* Budget and resource planning linked to the roadmap.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s110-22-3-assessment-tools",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**22.3 Assessment tools**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s110-22-3-assessment-tools.md",
+      "narrative": null,
+      "content": "### **22.3 Assessment tools**\n\n* Readiness assessment, maturity model and data quality assessment.  \n* How to carry out each assessment: who takes part, scoring, and use of results.  \n* Repeating assessments to track progress.\n\n**Suggested figures and tables**\n\n* Table: all tools, with purpose, when to use, related chapter and annex.\n\n**Implementation tools and checklists**\n\n* The full set of tools and templates listed in this chapter and in the annexes.\n\n**Expected outputs for countries**\n\n* A completed set of adapted tools that together document the country's registry.",
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s111-annexes",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**Annexes**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s111-annexes.md",
+      "narrative": null,
+      "content": "# **Annexes**\n\n* **Annex 1\\. Minimum Data Set:** Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set.  \n* **Annex 2\\. Data Dictionary:** For each data element: definition, data type, permitted values, source, and mapping to FHIR.  \n* **Annex 3\\. Governance Template:** Model terms of reference for the steering committee and technical working group, a responsibility matrix, and a sample data-sharing agreement.  \n* **Annex 4\\. User Personas:** Full generic persona descriptions for countries to adapt.  \n* **Annex 5\\. Functional Requirements Catalog",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    },
+    {
+      "id": "library/twg-outline-2026-10-02/blocks/prose-s112-references",
+      "types": [
+        "folio-assistant-core:Prose",
+        "doco:Section"
+      ],
+      "kind": "prose",
+      "title": "**References**",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": "../sections/s112-references.md",
+      "narrative": null,
+      "content": "# **References**\n\n* WHO. Human resources for health information system: minimum data set for health workforce registry. 2015\\.  \n* WHO. Global strategy on human resources for health: Workforce 2030\\. 2016\\.  \n* WHO. National health workforce accounts: a handbook, second edition. 2023\\.  \n* WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010\\.  \n* WHO. Health practitioner regulation: design, reform and implementation guidance. 2024\\.  \n* WHO. Digital implementation investment guide (DIIG): integrating digital interventions into health programmes. 2020\\.  \n* W",
+      "truncated": true,
+      "provenance": "ingested",
+      "summary": {
+        "status": "not-summarised"
+      }
+    }
+  ]
+}

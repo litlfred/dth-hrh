@@ -1,0 +1,16 @@
+{
+  "branch": "claude/align-pipelines-with-smart-ra",
+  "sha": "4594f9d",
+  "built": "2026-10-30T23:41:43Z (built locally by an agent)",
+  "pr": "42",
+  "prUrl": "https://github.com/litlfred/dth-hrh/pull/42",
+  "branchUrl": "https://github.com/litlfred/dth-hrh/tree/claude/align-pipelines-with-smart-ra",
+  "issue": null,
+  "issueUrl": null,
+  "runUrl": "https://github.com/litlfred/dth-hrh/commit/4594f9de98e1f6b1c9099c3f60fb3bb22ba1239e",
+  "checksUrl": null,
+  "mainSite": "https://litlfred.github.io/dth-hrh",
+  "beforeRef": "main",
+  "mainPagesKnown": false,
+  "newPages": []
+}

@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
+          "ref": "5480fd19c8793a759d87df87647c89b919d360ba",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
-              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip d96004f (schemas move #952, uml/readme gates #897, direction #968, CI #951 #957 #964). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "ref": "5480fd19c8793a759d87df87647c89b919d360ba",
+              "evidence": "litlfred, 2026-10-30 23:26Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Shared mount tool' to 'Where should I fix the 2 dead who-iris links blocking publish?', explained as a cat-harness-tools re-pin in dth-hrh#42. main tip 5480fd1 carries d7f3daa (mount-instance-docs cites by repository a link to what the site leaves out), which the who-iris docs README needs."
             }
           }
         }

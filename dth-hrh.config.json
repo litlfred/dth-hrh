@@ -40,7 +40,11 @@
         "check:review-anchors",
         "check:kg-blocks",
         "check:library-kg"
+      ],
+      "keep": [
+        "ns"
       ]
     }
-  }
+  },
+  "_site_comment": "`site.build.keep`: `ns`, the JSON-LD context at ns/context/v1.jsonld that the block KG nodes name (iriBase in dth-hrh.json); the root publish keeps it, as smart-ra's does."
 }

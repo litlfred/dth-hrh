@@ -1365,9 +1365,9 @@
    "sections": [
     "sec:3-1"
    ],
-   "caption": "Planning and implementing a digital health enterprise: phases, steps and resources (DIIG Fig. 1.1.1)",
-   "hash": "8e5d9b9fefae",
-   "excerpt": "Source: WHO Digital implementation investment guide (DIIG), 2020, Fig. 1.1.1. Reused from the smart-base library, adapted: the DIIG tile's label \"(this document",
+   "caption": "Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04 (adapted from the product catalogue handbook, Fig. 4, and DIIG Fig. 1.1.1)",
+   "hash": "28f3400dc1bd",
+   "excerpt": "Source: adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, itself adapted from the 2020 WHO Digital implementation inv",
    "method": "folio-snapshot"
   },
   {
@@ -1379,7 +1379,7 @@
     "sec:3-1"
    ],
    "caption": "Handbook chapters mapped to the DIIG chapters (proposed, for TWG review)",
-   "hash": "9d1b150bd490",
+   "hash": "b697b112f804",
    "excerpt": "DIIG chapter What the DIIG step produces Where this handbook covers it for registries --- --- --- 2. Form the team and establish goals Roles and responsibilitie",
    "method": "folio-snapshot"
   },

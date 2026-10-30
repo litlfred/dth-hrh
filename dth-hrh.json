@@ -2,6 +2,8 @@
   "$schema": "cat-harness-declaration/1.0.0",
   "name": "dth-hrh",
   "title": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
+  "version": "0.1.0",
+  "iriBase": "https://litlfred.github.io/dth-hrh/",
   "directories": [
     {
       "id": "folio",

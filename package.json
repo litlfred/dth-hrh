@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "cat": "bun cat-harness-tools/scripts/run-script.ts",
-    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --out",
+    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --out",
     "site:wg-comment": "bun run folio-assistant-core/scripts/public-comment-site.ts --store review/wg-comment --out",
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
     "site:node-kinds": "bun run cat-harness-tools/scripts/gen-node-kind-pages.ts --root . --out",
@@ -13,10 +13,18 @@
     "review:anchors": "bun run scripts/review/review-anchors.ts",
     "check:review-anchors": "bun run scripts/review/review-anchors.ts --check",
     "site:glossary": "bun run scripts/glossary/site.ts --out",
-    "kg:blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh",
-    "check:kg-blocks": "bun run cat-harness-tools/content/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",
+    "kg:blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh",
+    "check:kg-blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",
     "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check"
   },
+  "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra and folio-assistant list them: they import each other by package name (@litlfred/cat-harness-tools, ...), and nothing publishes those packages, so a mount resolves them only through the ONE root node_modules that bunfig.toml's hoisted linker lays out. Without this, fhir-harness's scripts could not find @litlfred/cat-harness-tools and check:review-anchors, site:document and the CI publish failed (dth-hrh#41).",
+  "workspaces": [
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "folio-assistant-core",
+    "fhir-harness"
+  ],
   "dependencies": {
     "zod": "^4.6.5"
   }

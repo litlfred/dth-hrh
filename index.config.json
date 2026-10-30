@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+          "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
-              "evidence": "smart-base main (smart-base#224, owner's option B on who-iris#107) needs who-iris, so re-pinning smart-base for the 8lcl schemas move brings who-iris into dth-hrh's closure; mounted as smart-base mounts it. main tip 04472dc (IRIS assets #108, dark replica #110, navbar #112, direction #114 #118, CI #116). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
+              "evidence": "litlfred, 2026-10-30 23:10Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Yes, re-pin in #42' to 'May I re-pin who-iris in dth-hrh to fix the mount?'; at 23:33Z the thread said it would take who-iris#133 under that OK and the owner then merged #133 (23:36Z). main tip bdadee3 = #133 (catalogue forwarding stub gets a body, which staging-banner needs) + #132 (glossary regen) on top of b17b03a."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
+          "ref": "5480fd19c8793a759d87df87647c89b919d360ba",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "d96004f24e7eba41e620184e73c5dac44dcc8d6b",
-              "evidence": "Re-pin cat-harness-tools to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip d96004f (schemas move #952, uml/readme gates #897, direction #968, CI #951 #957 #964). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "ref": "5480fd19c8793a759d87df87647c89b919d360ba",
+              "evidence": "litlfred, 2026-10-30 23:26Z, decision card in thread 'Align smart-ra and DTH handbook pipelines': 'A. Shared mount tool' to 'Where should I fix the 2 dead who-iris links blocking publish?', explained as a cat-harness-tools re-pin in dth-hrh#42. main tip 5480fd1 carries d7f3daa (mount-instance-docs cites by repository a link to what the site leaves out), which the who-iris docs README needs."
             }
           }
         }

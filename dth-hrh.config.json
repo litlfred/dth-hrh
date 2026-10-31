@@ -30,6 +30,7 @@
         "site:document",
         "site:wg-comment",
         "site:library",
+        "site:review-sheet",
         "site:glossary"
       ],
       "siteSteps": [

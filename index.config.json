@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2d017c9fd101ec8735ce68282005b68c6df775fa",
+          "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "2d017c9fd101ec8735ce68282005b68c6df775fa",
-              "evidence": "litlfred, 2026-10-31 01:59:58Z (via coordinator): 'merge repin winfow + 3hts' (window to ~05:00Z); main tip 2d017c9 (re-pin tools past the archimate fix (#1070))."
+              "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
+              "evidence": "litlfred, 2026-10-31 13:12:59Z, decision card in thread 'Watch DTH-HRH Contributor Log': 'A. Separate PR, merge, restage' (repin dth-hrh's cat-harness-tools to main f62a1d9, past #1123 9b3f7be: numbered figure and table headings)."
             }
           }
         }

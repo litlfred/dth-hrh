@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/main",
-    "commit": "a3b19a1e0fd2bbcae01c8b49511e8f2ec0500fd0"
+    "commit": "09152dbb817092affbb358ee4c98fba75d60a9fe"
   },
   "head": {
     "ref": "worktree",
@@ -12,10 +12,10 @@
   "summary": {
     "added": 0,
     "removed": 0,
-    "changed": 12,
-    "unchanged": 310,
+    "changed": 14,
+    "unchanged": 308,
     "renamed": 0,
-    "prose": 12,
+    "prose": 14,
     "manifest": 1,
     "moved": 0
   },
@@ -156,6 +156,25 @@
     },
     {
       "change": "changed",
+      "label": "prose:ch11-core-dataset",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
       "label": "prose:ch11-objectives",
       "aspects": [
         "prose"
@@ -247,6 +266,25 @@
         "kind": "prose",
         "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
         "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:references",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/references/p-references.ts",
+        "kind": "prose",
+        "section": "dth-hrh/references::sec:references-lead",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/references/p-references.ts",
+        "kind": "prose",
+        "section": "dth-hrh/references::sec:references-lead",
+        "index": 0
       }
     }
   ]

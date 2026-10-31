@@ -66,9 +66,10 @@
   "id": "https://litlfred.github.io/folio-assistant/cat-harness/state.jsonld",
   "type": "cat-harness:DynamicState",
   "harness": "cat-harness",
-  "generatedAt": "2026-10-31T08:13:59.668Z",
+  "generatedAt": "2026-10-31T12:51:45.206Z",
   "unreadStores": [
-    "cat-harness"
+    "cat-harness",
+    "dpi-h-ra"
   ],
   "graph": [
     {

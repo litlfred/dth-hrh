@@ -5094,6 +5094,13 @@
       "uningested": 1
     },
     {
+      "instance": "dpi-h-ra",
+      "dir": "dpi-h-ra/uploads",
+      "total": 0,
+      "ingested": 0,
+      "uningested": 0
+    },
+    {
       "instance": "dth-hrh",
       "dir": "uploads",
       "total": 1,

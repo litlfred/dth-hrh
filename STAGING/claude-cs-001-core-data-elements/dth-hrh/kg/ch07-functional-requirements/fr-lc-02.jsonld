@@ -21,7 +21,17 @@
       "method": "outline-seed"
     },
     "requirementId": "FR-LC-02",
-    "priority": "to-be-prioritized"
+    "priority": "to-be-prioritized",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-60fef4bb58954bcba6ff516b47ccdbc3.jsonld",
+          "name": "Credential Maintenance and Renewal (CPD Compliance)"
+        }
+      ]
+    }
   },
   "provenance": "authored"
 }

@@ -195,7 +195,7 @@
     "section": "annexes::sec:annex-2"
   },
   "prose:annex-1": {
-    "hash": "8aa52eb2943baa49b508493cee7b9e2504397c4928b03498f2217dc78ddabece",
+    "hash": "6afac9f4325ec8a23986cb18a23545b1ca09f159e1a21c1a7a0be7a29a78ecad",
     "renamedFrom": [],
     "section": "annexes::sec:annex-1"
   },
@@ -675,7 +675,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
   },
   "prose:ch11-core-dataset": {
-    "hash": "10e0a5b854cab47d075f1303fdb92912233dcb92f4c3c4cf08f48c61e030d6f0",
+    "hash": "32f669bc2b7dc33eaee6dfc9d4d93076652d4ae187c840900ab9318f00552827",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
@@ -725,7 +725,7 @@
     "section": "ch15-business-process-redesign::sec:15-1"
   },
   "prose:references": {
-    "hash": "fc14e8432f9d95935cb236d4a547a3bcd7eeed37533eab5e76e6887546b4abd0",
+    "hash": "921dc8c42a2384754d150e2c58a1978f9d1569de802e6527b0489c39f7a34a8e",
     "renamedFrom": [],
     "section": "references::sec:references-lead"
   },
@@ -850,7 +850,7 @@
     "section": "about-this-draft::sec:about-discussion"
   },
   "rem:discussion-minimum-data-set": {
-    "hash": "2373c15a5d2e209bcd2a48917eac196fbd35e0d9905751257d42bcefd2c45a78",
+    "hash": "14af51245a7d94655d9a875d1bf1ddbea429441cb7f576190923ea6dd91a5d72",
     "renamedFrom": [],
     "section": "about-this-draft::sec:about-discussion"
   },

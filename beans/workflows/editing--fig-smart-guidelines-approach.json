@@ -1,0 +1,88 @@
+{
+  "$schema": "folio-workflow-instance/v1",
+  "id": "editing--fig-smart-guidelines-approach",
+  "processId": "Process_Editing",
+  "source": "folio-assistant-core/processes/content/editing-hci-validation.bpmn",
+  "subject": "fig:smart-guidelines-approach",
+  "tokens": [],
+  "arrivals": {},
+  "status": "completed",
+  "startedAt": "2026-10-31T21:00:00.000Z",
+  "updatedAt": "2026-10-31T21:20:00.000Z",
+  "history": [
+    {
+      "at": "2026-10-31T21:00:00.000Z",
+      "node": "Task_DescribeChange",
+      "actor": "litlfred",
+      "note": "Generate the SMART Guidelines approach SVG from who-iris data (dth-hrh#70)."
+    },
+    {
+      "at": "2026-10-31T21:05:00.000Z",
+      "node": "Task_DraftEdit",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:10:00.000Z",
+      "node": "Task_SchemaValidate",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:10:00.000Z",
+      "node": "Task_SyntaxSpell",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:10:00.000Z",
+      "node": "Task_BuildGates",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:12:00.000Z",
+      "node": "Gateway_ReviewerKind",
+      "outcome": "no",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:14:00.000Z",
+      "node": "Task_AgentReview",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:15:00.000Z",
+      "node": "Task_CollateFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:16:00.000Z",
+      "node": "Task_LogFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:18:00.000Z",
+      "node": "Task_ReviewFindings",
+      "actor": "litlfred"
+    },
+    {
+      "at": "2026-10-31T21:19:00.000Z",
+      "node": "Task_RecordDecision",
+      "actor": "litlfred",
+      "note": "Accepted."
+    },
+    {
+      "at": "2026-10-31T21:19:30.000Z",
+      "node": "Gateway_EditorDecision",
+      "outcome": "accept",
+      "actor": "litlfred"
+    },
+    {
+      "at": "2026-10-31T21:20:00.000Z",
+      "node": "Task_Commit",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-10-31T21:20:30.000Z",
+      "node": "Task_ResolveBean",
+      "actor": "claude"
+    }
+  ]
+}

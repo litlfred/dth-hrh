@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/main",
-    "commit": "15f2530f17442b5847008fab54e6ab7e1b376517"
+    "commit": "0807788e55615935c7602410205ced8a28307369"
   },
   "head": {
     "ref": "worktree",
@@ -16,7 +16,7 @@
     "unchanged": 308,
     "renamed": 0,
     "prose": 14,
-    "manifest": 1,
+    "manifest": 2,
     "moved": 0
   },
   "changes": [
@@ -24,7 +24,8 @@
       "change": "changed",
       "label": "rem:discussion-minimum-data-set",
       "aspects": [
-        "prose"
+        "prose",
+        "manifest"
       ],
       "base": {
         "file": "dth-hrh/about-this-draft/r-discussion-minimum-data-set.ts",

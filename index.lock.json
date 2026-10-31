@@ -19,7 +19,7 @@
     {
       "harness": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "ref": "70c47f371026bd72bda91db56c7d51d81899f511"
+      "ref": "4ee6f5c0832b8c7d60166e004ebc8c3135b149d2"
     },
     {
       "harness": "cat-harness",

@@ -69,14 +69,14 @@
       "graphTypologies": [
         "glossary"
       ],
-      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by scripts/glossary/build_glossary.py.",
+      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by scripts/glossary/build_glossary.py. Its page is core's per-instance glossary page, written into this site with --instance dth-hrh.",
       "coverage": {
         "visualiser": [
           {
-            "ref": "en/dth-hrh/glossary/index.html",
+            "ref": "en/folio-assistant-core/glossary/instance/dth-hrh/index.html",
             "title": "Glossary",
             "writer": [
-              "scripts/glossary/site.ts"
+              "folio-assistant-core/scripts/glossary-page.ts"
             ]
           }
         ]

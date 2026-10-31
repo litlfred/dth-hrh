@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_HRH_BP_01"
+                  targetNamespace="https://litlfred.github.io/dth-hrh/bpmn">
+
+  <bpmn:resource id="pers:training-institution-registrar" name="Training institution registrar"/>
+  <bpmn:resource id="pers:registration-officer" name="Registration officer (regulatory body)"/>
+  <bpmn:resource id="pers:employer-hr-manager" name="Employer or facility human resources manager"/>
+  <bpmn:resource id="pers:system-payroll" name="Payroll system"/>
+
+  <bpmn:collaboration id="Collab_HRH_BP_01">
+    <bpmn:participant id="Pool_HRH_BP_01" name="HRH-BP-01 Health worker lifecycle and registry record maintenance" processRef="HRH_BP_01"/>
+  </bpmn:collaboration>
+
+  <bpmn:process id="HRH_BP_01" name="Health worker lifecycle and registry record maintenance (HRH-BP-01)" isExecutable="false">
+    <bpmn:documentation>Maintains a single authoritative registry record for a health worker from pre-service education through registration, active employment, payroll reconciliation and exit from the active workforce.</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_HRH_BP_01">
+      <bpmn:lane id="Lane_BP01_TrainingRegistrar" name="Training institution registrar" partitionElementRef="pers:training-institution-registrar">
+        <bpmn:flowNodeRef>Start_BP01</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP01_01</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP01_RegistrationOfficer" name="Registration officer (regulatory body)" partitionElementRef="pers:registration-officer">
+        <bpmn:flowNodeRef>Task_BP01_02</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_BP01_Active</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP01_05</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP01_06</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_BP01</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP01_EmployerHR" name="Employer or facility HR manager" partitionElementRef="pers:employer-hr-manager">
+        <bpmn:flowNodeRef>Task_BP01_03</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP01_Payroll" name="Payroll system" partitionElementRef="pers:system-payroll">
+        <bpmn:flowNodeRef>Task_BP01_04</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_BP01" name="Student enrolled">
+      <bpmn:outgoing>Flow_BP01_01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_BP01_01" name="Record indexing and graduation">
+      <bpmn:incoming>Flow_BP01_01</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_02</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_BP01_02" name="Register practitioner and issue HWR ID">
+      <bpmn:incoming>Flow_BP01_02</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_03</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_BP01_03" name="Record recruitment and facility posting">
+      <bpmn:incoming>Flow_BP01_03</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_04</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Task_BP01_04" name="Reconcile active payroll against registry">
+      <bpmn:incoming>Flow_BP01_04</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_05</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gw_BP01_Active" name="Status event?">
+      <bpmn:incoming>Flow_BP01_05</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_06</bpmn:outgoing>
+      <bpmn:outgoing>Flow_BP01_07</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_BP01_05" name="Record progression, CPD and licence renewal">
+      <bpmn:incoming>Flow_BP01_06</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_08</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:businessRuleTask id="Task_BP01_06" name="Record exit, retirement or suspension (retain history)">
+      <bpmn:incoming>Flow_BP01_07</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP01_09</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:endEvent id="End_BP01" name="Lifecycle state updated">
+      <bpmn:incoming>Flow_BP01_08</bpmn:incoming>
+      <bpmn:incoming>Flow_BP01_09</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_BP01_01" sourceRef="Start_BP01" targetRef="Task_BP01_01"/>
+    <bpmn:sequenceFlow id="Flow_BP01_02" sourceRef="Task_BP01_01" targetRef="Task_BP01_02"/>
+    <bpmn:sequenceFlow id="Flow_BP01_03" sourceRef="Task_BP01_02" targetRef="Task_BP01_03"/>
+    <bpmn:sequenceFlow id="Flow_BP01_04" sourceRef="Task_BP01_03" targetRef="Task_BP01_04"/>
+    <bpmn:sequenceFlow id="Flow_BP01_05" sourceRef="Task_BP01_04" targetRef="Gw_BP01_Active"/>
+    <bpmn:sequenceFlow id="Flow_BP01_06" sourceRef="Gw_BP01_Active" targetRef="Task_BP01_05" name="Continuing"/>
+    <bpmn:sequenceFlow id="Flow_BP01_07" sourceRef="Gw_BP01_Active" targetRef="Task_BP01_06" name="Exit / sanction"/>
+    <bpmn:sequenceFlow id="Flow_BP01_08" sourceRef="Task_BP01_05" targetRef="End_BP01"/>
+    <bpmn:sequenceFlow id="Flow_BP01_09" sourceRef="Task_BP01_06" targetRef="End_BP01"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_HRH_BP_01">
+    <bpmndi:BPMNPlane id="BPMNPlane_HRH_BP_01" bpmnElement="Collab_HRH_BP_01">
+      <bpmndi:BPMNShape id="Pool_HRH_BP_01_di" bpmnElement="Pool_HRH_BP_01" isHorizontal="true">
+        <dc:Bounds x="120" y="80" width="1650" height="600"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP01_TrainingRegistrar_di" bpmnElement="Lane_BP01_TrainingRegistrar" isHorizontal="true">
+        <dc:Bounds x="150" y="80" width="1620" height="150"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP01_RegistrationOfficer_di" bpmnElement="Lane_BP01_RegistrationOfficer" isHorizontal="true">
+        <dc:Bounds x="150" y="230" width="1620" height="150"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP01_EmployerHR_di" bpmnElement="Lane_BP01_EmployerHR" isHorizontal="true">
+        <dc:Bounds x="150" y="380" width="1620" height="150"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP01_Payroll_di" bpmnElement="Lane_BP01_Payroll" isHorizontal="true">
+        <dc:Bounds x="150" y="530" width="1620" height="150"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_BP01_di" bpmnElement="Start_BP01">
+        <dc:Bounds x="202" y="137" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_01_di" bpmnElement="Task_BP01_01">
+        <dc:Bounds x="340" y="121" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_02_di" bpmnElement="Task_BP01_02">
+        <dc:Bounds x="525" y="271" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_03_di" bpmnElement="Task_BP01_03">
+        <dc:Bounds x="710" y="421" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_04_di" bpmnElement="Task_BP01_04">
+        <dc:Bounds x="895" y="571" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_BP01_Active_di" bpmnElement="Gw_BP01_Active" isMarkerVisible="true">
+        <dc:Bounds x="1120" y="280" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_05_di" bpmnElement="Task_BP01_05">
+        <dc:Bounds x="1265" y="245" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP01_06_di" bpmnElement="Task_BP01_06">
+        <dc:Bounds x="1265" y="305" width="130" height="68"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_BP01_di" bpmnElement="End_BP01">
+        <dc:Bounds x="1497" y="287" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_BP01_01_di" bpmnElement="Flow_BP01_01">
+        <di:waypoint x="238" y="155"/>
+        <di:waypoint x="340" y="155"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_02_di" bpmnElement="Flow_BP01_02">
+        <di:waypoint x="470" y="155"/>
+        <di:waypoint x="498" y="155"/>
+        <di:waypoint x="498" y="305"/>
+        <di:waypoint x="525" y="305"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_03_di" bpmnElement="Flow_BP01_03">
+        <di:waypoint x="655" y="305"/>
+        <di:waypoint x="683" y="305"/>
+        <di:waypoint x="683" y="455"/>
+        <di:waypoint x="710" y="455"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_04_di" bpmnElement="Flow_BP01_04">
+        <di:waypoint x="840" y="455"/>
+        <di:waypoint x="868" y="455"/>
+        <di:waypoint x="868" y="605"/>
+        <di:waypoint x="895" y="605"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_05_di" bpmnElement="Flow_BP01_05">
+        <di:waypoint x="1025" y="605"/>
+        <di:waypoint x="1073" y="605"/>
+        <di:waypoint x="1073" y="305"/>
+        <di:waypoint x="1120" y="305"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_06_di" bpmnElement="Flow_BP01_06">
+        <di:waypoint x="1170" y="305"/>
+        <di:waypoint x="1218" y="305"/>
+        <di:waypoint x="1218" y="279"/>
+        <di:waypoint x="1265" y="279"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_07_di" bpmnElement="Flow_BP01_07">
+        <di:waypoint x="1170" y="305"/>
+        <di:waypoint x="1218" y="305"/>
+        <di:waypoint x="1218" y="339"/>
+        <di:waypoint x="1265" y="339"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_08_di" bpmnElement="Flow_BP01_08">
+        <di:waypoint x="1395" y="279"/>
+        <di:waypoint x="1446" y="279"/>
+        <di:waypoint x="1446" y="305"/>
+        <di:waypoint x="1497" y="305"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP01_09_di" bpmnElement="Flow_BP01_09">
+        <di:waypoint x="1395" y="339"/>
+        <di:waypoint x="1446" y="339"/>
+        <di:waypoint x="1446" y="305"/>
+        <di:waypoint x="1497" y="305"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

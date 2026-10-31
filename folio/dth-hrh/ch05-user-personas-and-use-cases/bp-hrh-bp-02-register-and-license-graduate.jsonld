@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/bp-hrh-bp-02-register-and-license-graduate",
+  "@type": [
+    "smart-base:BusinessProcess",
+    "doco:Figure"
+  ],
+  "label": "bp:hrh-bp-02-register-and-license-graduate",
+  "kind": "business-process",
+  "title": "Register and license a new graduate (HRH-BP-02)",
+  "text": "bp-hrh-bp-02-register-and-license-graduate.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed",
+      "outlineBasis": "5.2, 7.1, 7.2, 13.2, 20.1",
+      "issue": "litlfred/dth-hrh#47"
+    },
+    "code": "HRH-BP-02",
+    "bpmnFile": "bp-hrh-bp-02-register-and-license-graduate.bpmn",
+    "svgFile": "media/bp-hrh-bp-02-register-and-license-graduate.svg",
+    "lanes": [
+      {
+        "laneId": "Lane_BP02_HealthWorker",
+        "persona": "pers:health-worker",
+        "name": "Health worker"
+      },
+      {
+        "laneId": "Lane_BP02_TrainingRegistrar",
+        "persona": "pers:training-institution-registrar",
+        "name": "Training institution registrar"
+      },
+      {
+        "laneId": "Lane_BP02_NationalId",
+        "persona": "pers:system-national-id",
+        "name": "National identity system"
+      },
+      {
+        "laneId": "Lane_BP02_RegistrationOfficer",
+        "persona": "pers:registration-officer",
+        "name": "Registration officer (regulatory body)"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-82fc8a35ade94ff3a02acc9194490fc8.jsonld",
+          "name": "Academic & Training Institutions",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-63c448813aea4067bb68281f7926fd2b.jsonld",
+          "name": "Licensing Bodies",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-10058e61afa048128fdb46dc0bcb884c.jsonld",
+          "name": "National ID Government Provider",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-3bc59974bc1e4e5d8e795cdc1606587e.jsonld",
+          "name": "Credential & License",
+          "type": "ApplicationFunction"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "name": "ALL High Level - Health Workforce"
+        }
+      ]
+    },
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/registration",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/licensing",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/certification",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education-and-training-institution",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/professional-council"
+    ],
+    "relatedBlocks": [
+      "scen:register-and-license-new-graduate",
+      "pers:health-worker",
+      "pers:training-institution-registrar",
+      "pers:system-national-id",
+      "pers:registration-officer",
+      "freq:FR-ID-01",
+      "freq:FR-ID-02",
+      "freq:FR-REC-01",
+      "freq:FR-REC-02",
+      "dt:hrh-dt-01-registration-eligibility"
+    ]
+  },
+  "provenance": "authored"
+}

@@ -16,7 +16,8 @@
     "site:glossary": "bun run folio-assistant-core/scripts/glossary-page.ts --instance dth-hrh --site",
     "kg:blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh",
     "check:kg-blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",
-    "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check"
+    "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check",
+    "glossary:acronyms": "bun run folio-assistant-core/scripts/glossary-acronyms.ts --folio folio"
   },
   "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra and folio-assistant list them: they import each other by package name (@litlfred/cat-harness-tools, ...), and nothing publishes those packages, so a mount resolves them only through the ONE root node_modules that bunfig.toml's hoisted linker lays out. Without this, fhir-harness's scripts could not find @litlfred/cat-harness-tools and check:review-anchors, site:document and the CI publish failed (dth-hrh#41).",
   "workspaces": [

@@ -28,8 +28,9 @@ mounts nothing. Then `bun run cat mount:remote` writes `index.lock.json`, and
 ## 2. Declare the dependency
 
 In `<dth>.json`, `needs` becomes `["smart-base", "dpi-h-ra"]`. Keep
-smart-base: the DAK block kinds (persona, user scenario, requirements, data
-elements) reach a DTH through smart-base's `content-adapters/dak.json`.
+smart-base: the DAK block kinds (persona, user scenario, business process,
+decision table, requirements, data elements) reach a DTH through smart-base's
+`content-adapters/dak.json`.
 
 ## 3. Glossary links
 
@@ -49,8 +50,9 @@ proposal for the working group. If the scheme is generated (dth-hrh's
 
 ## 4. ArchiMate links
 
-A narrative or requirement block that names an architecture element carries
-the element's IRI in its manifest's `meta.archimate`:
+A narrative, persona, business-process, decision-table or requirement block
+that names an architecture element carries the element's IRI in its
+manifest's `meta.archimate`:
 
 ```json
 "archimate": {
@@ -64,17 +66,39 @@ the element's IRI in its manifest's `meta.archimate`:
 IRIs use Archi's own ids, which stay stable across model versions. Then
 `bun run kg:blocks` so the block JSON-LD carries the links.
 
-## 5. Check
+## 5. Structured content: Personas, BPMN 2.0 processes, and DMN decision tables
+
+- **Personas (`smart-base:Persona`):** The 13 Chapter 5 personas (`HRH-R-01`
+  to `HRH-R-13`) and 2 Chapter 6 governance/stewardship personas
+  (`pers-registry-governance-body` / `HRH-R-14`, and
+  `pers-registry-custodian` / `HRH-R-15`) link via `uses` and `meta` to:
+  1. their BPMN 2.0 swimlane(s) (`meta.bpmnLanes`),
+  2. a `dpi-h-ra` ArchiMate Business Role, Business Actor or Application
+     Component (`meta.archimate.elements`), and
+  3. a glossary term in `dth-hrh` or `dpi-h-ra` (`meta.glossaryTerms`).
+- **BPMN 2.0 business processes (`smart-base:BusinessProcess`):** Each process
+  (`bp-hrh-bp-01-lifecycle-maintenance` in Chapter 4;
+  `bp-hrh-bp-02-register-and-license-graduate`,
+  `bp-hrh-bp-03-renew-licence-and-verify-status`,
+  `bp-hrh-bp-04-update-employment-and-deployment`, and
+  `bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting` in Chapter 5; and
+  `bp-hrh-bp-06-governance-and-stewardship-review` in Chapter 6) has a `.bpmn`
+  companion with one `<bpmn:lane partitionElementRef="pers:…">` per role, a
+  rendered SVG in `folio/dth-hrh/media/bp-….svg`, and a structured step table
+  in its `.md` companion.
+- **DMN decision tables (`smart-base:DecisionTable`):** The Chapter 7 rules
+  (`dt-hrh-dt-01-registration-eligibility` in Section 7.1,
+  `dt-hrh-dt-02-lifecycle-status-transition` in Section 7.3, and
+  `dt-hrh-dt-03-verification-and-access-response` in Section 7.4) follow
+  `cat-harness` `dmn-authoring` (`hitPolicy="FIRST"`, supported FEEL subset,
+  explicit third-state handling, and catch-all rule), cite their source
+  blocks, and use only qualitative states from the source text.
+
+## 6. Check
 
 `bun run check:dth-glossary` checks the glossary schema, every `related`
-link, every SKOS match into dpi-h-ra, and every `meta.archimate` IRI against
-the mounted model. This is a stopgap in the DTH repo; the general checks are
-smart-base#242 (cross-instance glossary validator, ArchiMate-link check).
-
-## Not part of the wiring
-
-BPMN per business process, persona links to lanes and roles, and DMN tables
-(dth-hrh#47, structured content) wait for the structured-authoring work
-(smart-base#244, #246 and the step-table schema in smart-base#242).
-The folio's `level` stays `L1` until the L2 DTH document kind exists
-(smart-base#242).
+link, every SKOS match into `dpi-h-ra`, every `meta.archimate` and
+`meta.glossaryTerms` IRI against the mounted model and glossaries, every
+persona-to-lane binding, every BPMN process (`dak-companion-present`,
+`dak-bpmn-has-process`), and every DMN decision table
+(`dak-dmn-has-decision-table`, `loadDecisionTable`, `unreadableExpressions`).

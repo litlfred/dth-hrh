@@ -1516,6 +1516,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-01-lifecycle-maintenance",
+   "kind": "business-process",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "bp-hrh-bp-01-lifecycle-maintenance",
+   "sections": [
+    "sec:4-3"
+   ],
+   "hash": "90d988a3a52f",
+   "excerpt": "Maintains a single authoritative registry record for a health worker from pre-service education through registration, active employment, payroll reconciliation ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch04-strategic-uses",
    "kind": "prose",
    "chapter": "ch04-purpose-and-role-of-a-registry",
@@ -1607,7 +1619,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "3b58206c27c5",
+   "hash": "87791ee232b3",
    "excerpt": "Person. A person whose job is to protect and improve the health of their community: holds a registration, licence and employment record in the registry, and nee",
    "method": "folio-snapshot"
   },
@@ -1619,7 +1631,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "aeb7f8ea34b2",
+   "hash": "1fb8e0ebc90c",
    "excerpt": "Person. Staff of a professional council or regulatory body who registers and licenses practitioners, records status changes and answers verification requests. D",
    "method": "folio-snapshot"
   },
@@ -1631,7 +1643,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "33f28456d539",
+   "hash": "73abdc76c2a3",
    "excerpt": "Person. Recruits, deploys and manages health workers for a public or private employer or facility; verifies credentials and records changes of employment and pl",
    "method": "folio-snapshot"
   },
@@ -1643,7 +1655,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "b6481a41814b",
+   "hash": "c5ea655e0b54",
    "excerpt": "Person. Records enrolment and graduation in a pre-service education institution and confirms qualifications to the regulator. Draft for working-group review Out",
    "method": "folio-snapshot"
   },
@@ -1655,7 +1667,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "9cf57f8eeb06",
+   "hash": "a4e65ecaecbb",
    "excerpt": "Person. Uses stock, distribution, skill mix, attrition and migration data for planning and NHWA reporting. Specialises the SMART Guidelines generic persona: Hea",
    "method": "folio-snapshot"
   },
@@ -1667,7 +1679,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "574c6309f059",
+   "hash": "e026b7099185",
    "excerpt": "Person. Checks that a practitioner is qualified and authorized to practise. Specialises the SMART Guidelines generic persona: Person. Draft for working-group re",
    "method": "folio-snapshot"
   },
@@ -1679,7 +1691,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "ffbd96d0c654",
+   "hash": "fd59cc3405ef",
    "excerpt": "Person. Identifies, verifies and deploys qualified health workers, emergency medical teams and volunteers during an emergency. Draft for working-group review Ou",
    "method": "folio-snapshot"
   },
@@ -1691,7 +1703,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "7f1d7dd4c20d",
+   "hash": "fb8c613d9ef0",
    "excerpt": "System. Manages employment transactions, payroll processing, leave and scheduling; supplies employment data to the registry and uses its identities. Draft for w",
    "method": "folio-snapshot"
   },
@@ -1703,7 +1715,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "53617f849133",
+   "hash": "9e6ff339f57e",
    "excerpt": "System. Pays health workers; reconciled against the registry to remove duplicate and ghost records. Draft for working-group review Outline basis --- --- --- Pur",
    "method": "folio-snapshot"
   },
@@ -1715,7 +1727,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "d6118fc4f0e0",
+   "hash": "0d06809af6db",
    "excerpt": "System. Identifies and authorizes health workers at the point of care, for example a prescriber, by querying the registry. Specialises the SMART Guidelines gene",
    "method": "folio-snapshot"
   },
@@ -1727,7 +1739,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "bf071ba4acd8",
+   "hash": "f4554c208ffa",
    "excerpt": "System. The authoritative list of health facilities; the registry links each place of practice to it. Draft for working-group review Outline basis --- --- --- P",
    "method": "folio-snapshot"
   },
@@ -1739,7 +1751,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "39e3545da4db",
+   "hash": "7709d1c55b10",
    "excerpt": "System. Foundational identity; the registry may link each health worker to a national identity number where available and lawful. Specialises the SMART Guidelin",
    "method": "folio-snapshot"
   },
@@ -1751,7 +1763,7 @@
    "sections": [
     "sec:5-1"
    ],
-   "hash": "21634fdf48be",
+   "hash": "38a04e509473",
    "excerpt": "System. The National Health Workforce Accounts data platform; receives indicator data derived from the registry. Specialises the SMART Guidelines generic person",
    "method": "folio-snapshot"
   },
@@ -1780,6 +1792,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-02-register-and-license-graduate",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-02-register-and-license-graduate",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "35b34f39172c",
+   "excerpt": "Registers and licenses a newly graduated health worker by verifying pre-service qualification with the training institution, checking foundational identity and ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "scen:renew-licence",
    "kind": "user-scenario",
    "chapter": "ch05-user-personas-and-use-cases",
@@ -1789,18 +1813,6 @@
    ],
    "hash": "b1bce667c993",
    "excerpt": "A health worker renews a time-limited licence, with continuing professional development recorded; the registry updates licence status and validity. Personas: He",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "scen:update-employment",
-   "kind": "user-scenario",
-   "chapter": "ch05-user-personas-and-use-cases",
-   "root": "scen-update-employment",
-   "sections": [
-    "sec:5-2"
-   ],
-   "hash": "aaaf1a301d4f",
-   "excerpt": "An employer or the health worker records a change of employment or place of practice, linked to the facility registry. Personas: Health worker, Employer or faci",
    "method": "folio-snapshot"
   },
   {
@@ -1816,6 +1828,42 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-03-renew-licence-and-verify-status",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-03-renew-licence-and-verify-status",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "ee849e305642",
+   "excerpt": "Renews a health worker's licence to practise based on continuing professional development and good-standing rules, and serves tiered status verification respons",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:update-employment",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-update-employment",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "aaaf1a301d4f",
+   "excerpt": "An employer or the health worker records a change of employment or place of practice, linked to the facility registry. Personas: Health worker, Employer or faci",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-04-update-employment-and-deployment",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-04-update-employment-and-deployment",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "ae7b976b2492",
+   "excerpt": "Updates a health worker's employer, position, facility affiliation and emergency surge deployment in the registry while validating facility identifiers against ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "scen:workforce-counts-and-nhwa-reporting",
    "kind": "user-scenario",
    "chapter": "ch05-user-personas-and-use-cases",
@@ -1825,6 +1873,18 @@
    ],
    "hash": "f5f9d31b3611",
    "excerpt": "Workforce counts and distribution are produced from the registry for national planning and for reporting to the National Health Workforce Accounts. Personas: Wo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "6a875c74033b",
+   "excerpt": "Produces de-identified workforce stock, distribution, skill-mix, attrition and migration indicators from the registry and submits validated aggregate extracts t",
    "method": "folio-snapshot"
   },
   {
@@ -1924,6 +1984,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "pers:registry-governance-body",
+   "kind": "persona",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "pers-registry-governance-body",
+   "sections": [
+    "sec:6-1"
+   ],
+   "hash": "8e92860f3a7d",
+   "excerpt": "Person. Multi-stakeholder steering committee (bringing together the Ministry of Health, regulatory councils, public and private employers, training institutions",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch06-legal-foundations",
    "kind": "prose",
    "chapter": "ch06-governance-and-stewardship",
@@ -1945,6 +2017,30 @@
    ],
    "hash": "7f54f091f11b",
    "excerpt": "- Named data owners, stewards and custodians for each group of data. - Policies for data access, use, retention, correction and release. - Health workers' right",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:registry-custodian",
+   "kind": "persona",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "pers-registry-custodian",
+   "sections": [
+    "sec:6-3"
+   ],
+   "hash": "c9eab6db9c61",
+   "excerpt": "Person. Designated operational and data-stewardship team that operates the health workforce registry, enforces role-based access and audit logging, runs routine",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-06-governance-and-stewardship-review",
+   "kind": "business-process",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "bp-hrh-bp-06-governance-and-stewardship-review",
+   "sections": [
+    "sec:6-3"
+   ],
+   "hash": "da6c13dfd923",
+   "excerpt": "Governs inter-institutional data-sharing agreements and access tiers through the multi-stakeholder steering committee, enforces routine data quality and dedupli",
    "method": "folio-snapshot"
   },
   {
@@ -2068,6 +2164,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "dt:hrh-dt-01-registration-eligibility",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-01-registration-eligibility",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "3dfab5a39136",
+   "excerpt": "Decision table HRH-DT-01 ( Decision HRH DT 01 , hit policy FIRST ) formalizes the rules in Section 7.1 (Identity management) and Section 7.2 (Records) governing",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch07-records",
    "kind": "prose",
    "chapter": "ch07-functional-requirements",
@@ -2164,6 +2272,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "dt:hrh-dt-02-lifecycle-status-transition",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-02-lifecycle-status-transition",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "54c7ef7ccbee",
+   "excerpt": "Decision table HRH-DT-02 ( Decision HRH DT 02 , hit policy FIRST ) formalizes the rules in Section 7.3 (Lifecycle management) and Section 4.3 (Health worker lif",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch07-verification-services",
    "kind": "prose",
    "chapter": "ch07-functional-requirements",
@@ -2209,6 +2329,18 @@
    ],
    "hash": "bb3cf766c50c",
    "excerpt": "FR-VER-03. Respond to verification requests from other countries. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:hrh-dt-03-verification-and-access-response",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-03-verification-and-access-response",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "fae6eba78c7f",
+   "excerpt": "Decision table HRH-DT-03 ( Decision HRH DT 03 , hit policy FIRST ) formalizes the rules in Section 7.4 (Verification services) , Section 7.5 (Analytics) , Secti",
    "method": "folio-snapshot"
   },
   {

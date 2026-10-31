@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+  "@type": [
+    "smart-base:BusinessProcess",
+    "doco:Figure"
+  ],
+  "label": "bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+  "kind": "business-process",
+  "title": "Workforce counts and NHWA reporting (HRH-BP-05)",
+  "text": "bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed",
+      "outlineBasis": "4.4, 5.2, 7.5, 11.4, 20.4",
+      "issue": "litlfred/dth-hrh#47"
+    },
+    "code": "HRH-BP-05",
+    "bpmnFile": "bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting.bpmn",
+    "svgFile": "media/bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting.svg",
+    "lanes": [
+      {
+        "laneId": "Lane_BP05_WorkforcePlanner",
+        "persona": "pers:workforce-planner",
+        "name": "Workforce planner"
+      },
+      {
+        "laneId": "Lane_BP05_NHWAPlatform",
+        "persona": "pers:system-nhwa-platform",
+        "name": "NHWA platform"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-8852987c90c84071ae92ad3621548adf.jsonld",
+          "name": "Workforce Data Analytics",
+          "type": "ApplicationFunction"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-bbd18f65be45490fbbaf02346511ae5e.jsonld",
+          "name": "Reporting Module",
+          "type": "ApplicationFunction"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-3fd92d497ca040c8a436f355c0b68770.jsonld",
+          "name": "Analytics & Reporting Platform",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "name": "ALL High Level - Health Workforce"
+        }
+      ]
+    },
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-planning",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/national-health-workforce-accounts",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/distribution",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/stock",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/attrition"
+    ],
+    "relatedBlocks": [
+      "scen:workforce-counts-and-nhwa-reporting",
+      "pers:workforce-planner",
+      "pers:system-nhwa-platform",
+      "freq:FR-AN-01",
+      "freq:FR-AN-02",
+      "freq:FR-AN-03",
+      "dt:hrh-dt-03-verification-and-access-response"
+    ]
+  },
+  "provenance": "authored"
+}

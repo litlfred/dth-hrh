@@ -25,7 +25,7 @@ export default chapter({
     section({
       title: "4.3 Health worker lifecycle",
       label: "sec:4-3",
-      blocks: ["p-ch04-health-worker-lifecycle"],
+      blocks: ["p-ch04-health-worker-lifecycle", "bp-hrh-bp-01-lifecycle-maintenance"],
     }),
     section({
       title: "4.4 Strategic uses",

@@ -5,9 +5,9 @@ Registers and licenses a newly graduated health worker by verifying pre-service 
 **Swimlanes (one lane per role):**
 
 - `Lane_BP02_HealthWorker` — **Health worker** (`pers:health-worker`)
+- `Lane_BP02_RegistrationOfficer` — **Registration officer (regulatory body)** (`pers:registration-officer`)
 - `Lane_BP02_TrainingRegistrar` — **Training institution registrar** (`pers:training-institution-registrar`)
 - `Lane_BP02_NationalId` — **National identity system** (`pers:system-national-id`)
-- `Lane_BP02_RegistrationOfficer` — **Registration officer (regulatory body)** (`pers:registration-officer`)
 
 | Step ID | Lane (persona) | Activity | Linked requirement / decision table | Outline basis |
 |---|---|---|---|---|

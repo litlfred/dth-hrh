@@ -33,6 +33,11 @@
         "name": "Health worker"
       },
       {
+        "laneId": "Lane_BP02_RegistrationOfficer",
+        "persona": "pers:registration-officer",
+        "name": "Registration officer (regulatory body)"
+      },
+      {
         "laneId": "Lane_BP02_TrainingRegistrar",
         "persona": "pers:training-institution-registrar",
         "name": "Training institution registrar"
@@ -41,11 +46,6 @@
         "laneId": "Lane_BP02_NationalId",
         "persona": "pers:system-national-id",
         "name": "National identity system"
-      },
-      {
-        "laneId": "Lane_BP02_RegistrationOfficer",
-        "persona": "pers:registration-officer",
-        "name": "Registration officer (regulatory body)"
       }
     ],
     "archimate": {

@@ -1,0 +1,22 @@
+{
+  "$schema": "diig-phases-adaptation/v1",
+  "adapts": "who-iris/library/9789240116191-eng/figure-data/fig-4-diig-phases.json",
+  "title": "Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04",
+  "resources": [
+    {
+      "id": "who-handbook-for-human-resources-for-health",
+      "label": ["WHO", "handbook", "for human", "resources", "for health", "and health", "worker", "registries"],
+      "icons": ["d"]
+    }
+  ],
+  "tiles": [
+    { "resource": "who-handbook-for-human-resources-for-health", "columns": [8, 8], "rows": [1, 3], "outlinePhase": "02" }
+  ],
+  "thisDocument": {
+    "resource": "who-handbook-for-human-resources-for-health",
+    "style": "dashed",
+    "color": "#1A8FD6",
+    "fill": "#E8F3FB",
+    "note": "(this document)"
+  }
+}

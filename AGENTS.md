@@ -4,11 +4,15 @@ This is a **folio**: the content repository. The authoring platform —
 skills, schemas, MCP tools, the publication pipeline — is
 folio-assistant, **remote-mounted** at the repository root from the SHAs pinned in
 `index.lock.json` (`smart-base/`, `folio-assistant-core/`, `cat-harness/`,
-`cat-harness-tools/`, `fhir-harness/`, `bootstrap/`, `bootstrap-tools/`; all
+`cat-harness-tools/`, `fhir-harness/`, `bootstrap/`, `bootstrap-tools/`,
+`who-iris/`, `dpi-h-ra/`; all
 gitignored). The session-start hook mounts them; by hand:
 `bun run cat-harness-tools/scripts/remote-mount.ts`. Set up like
 [litlfred/smart-ra](https://github.com/litlfred/smart-ra), on the smart-base harness
-(`needs: ["smart-base"]` in `dth-hrh.json`).
+(`needs: ["smart-base", "dpi-h-ra"]` in `dth-hrh.json`). It is the pilot L2
+DTH on smart-ra: smart-ra's `glossary/` and `archimate/` are mounted at
+`dpi-h-ra/`, glossary terms carry SKOS matches to its concepts, and blocks name
+ArchiMate elements in `meta.archimate`. How, step by step: `docs/l2-wiring.md`.
 
 This file is the **agent-generic** source of truth, read natively by Claude
 Code, Gemini CLI, Antigravity, Cursor and Copilot. `CLAUDE.md` and

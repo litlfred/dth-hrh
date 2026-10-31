@@ -295,7 +295,10 @@
         "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-mds-crosswalk"
       ],
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry"
+      ]
     },
     {
       "id": "health-workforce-observatory",

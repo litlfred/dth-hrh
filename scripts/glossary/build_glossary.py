@@ -332,10 +332,17 @@ def build(wb_path, out_dir):
     # The consolidated glossary keeps whatever a person has already authored.
     main_path = out_dir / "dth-hrh.glossary.json"
     prior = {}
+    # SKOS matches to other schemes (such as smart-ra's dpi-h-ra glossary,
+    # dth-hrh#47) are curated links, not workbook content: keep them too.
+    MATCHES = ("exactMatch", "closeMatch", "broadMatch", "narrowMatch")
+    prior_matches = {}
     if main_path.exists():
         for t in json.loads(main_path.read_text()).get("terms", []):
             if t.get("status") == "authored":
                 prior[t["id"]] = t
+            kept = {m: t[m] for m in MATCHES if t.get(m)}
+            if kept:
+                prior_matches[t["id"]] = kept
     terms = []
     for tid in order:
         c = concepts[tid]
@@ -363,6 +370,7 @@ def build(wb_path, out_dir):
             t["related"] = rel
         t["source"] = WORKBOOK_REF
         t["status"] = "candidate"
+        t.update(prior_matches.get(tid, {}))
         terms.append(t)
     main = {
         "$schema": "folio-glossary/v1",

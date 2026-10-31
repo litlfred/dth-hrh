@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "c2ef11bc2ec16f922da97689722b9120af4e3dac",
+          "ref": "2d017c9fd101ec8735ce68282005b68c6df775fa",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "c2ef11bc2ec16f922da97689722b9120af4e3dac",
-              "evidence": "litlfred, 2026-10-31 01:59:58Z (via coordinator): 'merge repin winfow + 3hts' (window to ~05:00Z); main tip c2ef11b (state @base #1051)."
+              "ref": "2d017c9fd101ec8735ce68282005b68c6df775fa",
+              "evidence": "litlfred, 2026-10-31 01:59:58Z (via coordinator): 'merge repin winfow + 3hts' (window to ~05:00Z); main tip 2d017c9 (re-pin tools past the archimate fix (#1070))."
             }
           }
         }

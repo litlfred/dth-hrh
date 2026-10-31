@@ -415,7 +415,7 @@
   instance's `glassStrip` declaration by `sync-docs-harness.ts`; absent when
   nothing declared one. Replica pages read `assets/harness/glass-strip.json`.
 -->
-<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]">
+<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;,&quot;library&quot;]">
 
 <!--
   THE SITE'S BASEURL, for the tiles above.
@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../assets/css/avatars.css?v=64b44e43f389">
+<link rel="stylesheet" href="../../../../assets/css/avatars.css?v=780d571c53c1">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -917,7 +917,7 @@
 </div>
 
 <ul class="subs">
-<li><a href="core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">194</span></li>
+<li><a href="core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">199</span></li>
 <li><a href="fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">45</span></li>
 <li><a href="processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">549</span></li>
 <li><a href="smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">105</span></li>
@@ -3657,6 +3657,14 @@
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2 · Write the legal text&amp;#10;[document-authoring]"><code>P1.2 · Write the legal text&amp;#10;[document-authoring]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2 · Write the legal text&amp;#10;[document-authoring]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-2a-Record-the-legal-basis-10-normative-statements-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2a · Record the legal basis&amp;#10;[normative-statements]"><code>P1.2a · Record the legal basis&amp;#10;[normative-statements]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2a · Record the legal basis&amp;#10;[normative-statements]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-2b-Draft-the-plain-language-summary-10-document-authoring-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]"><code>P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-3-Derive-the-ODRL-2-2-Agreement">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.3 · Derive the ODRL 2.2 Agreement"><code>P1.3 · Derive the ODRL 2.2 Agreement</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.3 · Derive the ODRL 2.2 Agreement</span></td>
   <td>userTask in dsa-document-lifecycle</td>
@@ -3677,24 +3685,36 @@
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.2 · Decide what happens to existing grants"><code>P14.2 · Decide what happens to existing grants</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.2 · Decide what happens to existing grants</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-5-Set-the-catalogue-status-to-ended">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended"><code>P14.5 · Set the catalogue status to ended</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-3-Record-that-new-consent-is-needed">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.3 · Record that new consent is needed"><code>P14.3 · Record that new consent is needed</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.3 · Record that new consent is needed</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-5-Set-the-catalogue-status-to-ended-10-dsa-catalogue-status-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]"><code>P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-1-Assign-the-version-and-its-immutable-URL-10-content-publish-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]"><code>P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2-Record-the-SHA-256-of-each-file">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file"><code>P2.2 · Record the SHA-256 of each file</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2-Record-the-SHA-256-of-each-file-10-dsa-checksum-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]"><code>P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-3-Make-the-ODRL-cite-the-text-by-URL-and-hash">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash"><code>P2.3 · Make the ODRL cite the text by URL and hash</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2a-Hash-the-plain-language-summary-with-the-agreement-10-dsa-checksum-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]"><code>P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-4-5-Write-the-DCAT-3-record-and-link-versions">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions"><code>P2.4–5 · Write the DCAT 3 record and link versions</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2b-State-the-fixed-version-URL-and-hash-a-Consent-cites-10-content-publish-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]"><code>P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-3-Make-the-ODRL-cite-the-text-by-URL-and-hash-10-dsa-odrl-source-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]"><code>P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-4-5-Write-the-DCAT-3-record-and-link-versions-10-dsa-dcat-record-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]"><code>P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-Public-comment-on-the-template-10-public-comment-">

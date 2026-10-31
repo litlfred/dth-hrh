@@ -415,7 +415,7 @@
   instance's `glassStrip` declaration by `sync-docs-harness.ts`; absent when
   nothing declared one. Replica pages read `assets/harness/glass-strip.json`.
 -->
-<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]">
+<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;,&quot;library&quot;]">
 
 <!--
   THE SITE'S BASEURL, for the tiles above.
@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=64b44e43f389">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=780d571c53c1">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -918,7 +918,7 @@
 
 <ul class="subs">
 <li><a href="../bootstrap-tools-skills/">bootstrap-tools-skills</a> <span class="p">bootstrap-tools/skills</span> <span class="n">3</span></li>
-<li><strong>core-skills</strong> <span class="p">folio-assistant-core/skills</span> <span class="n">38</span></li>
+<li><strong>core-skills</strong> <span class="p">folio-assistant-core/skills</span> <span class="n">43</span></li>
 <li><a href="../fhir-ig-skills/">fhir-ig-skills</a> <span class="p">fhir-harness/skills</span> <span class="n">18</span></li>
 <li><a href="../skills/">skills</a> <span class="p">cat-harness/skills</span> <span class="n">249</span></li>
 <li><a href="../smart-base-skills/">smart-base-skills</a> <span class="p">smart-base/skills</span> <span class="n">24</span></li>
@@ -970,6 +970,22 @@
   <td><span class="none">no description in the artefact</span></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/dsa-catalogue-status.md"><code>dsa-catalogue-status</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/dsa-catalogue-status.md</span></td>
+  <td>Set the life-cycle status (<code>adms:status</code>, W3C DCAT 3 §6.4.30) on a Data Sharing Agreement's DCAT 3 catalogue record when the agreement is amended, renewed, terminated, or expires, while keeping all published versions re…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/dsa-checksum.md"><code>dsa-checksum</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/dsa-checksum.md</span></td>
+  <td>Compute and record the SHA-256 cryptographic digest of a signed Data Sharing Agreement's legal text as a W3C DCAT 3 <code>spdx:checksum</code> (<code>spdx:Checksum</code> with <code>spdx:checksumAlgorithm_sha256</code> and 64-character lowercase hex `s…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/dsa-dcat-record.md"><code>dsa-dcat-record</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/dsa-dcat-record.md</span></td>
+  <td>Write the W3C DCAT 3 <code>dcat:Resource</code> and <code>dcat:Distribution</code> catalogue record for a Data Sharing Agreement (<code>dcat:downloadURL</code>, <code>spdx:checksum</code>, <code>odrl:hasPolicy</code>) and link versions with <code>dcat:version</code> and `dcat:previous…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/dsa-odrl-source.md"><code>dsa-odrl-source</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/dsa-odrl-source.md</span></td>
+  <td>Bind a computable Data Sharing Agreement's W3C ODRL 2.2 <code>Agreement</code> to its signed legal text distribution using DCMI Metadata Terms <code>dcterms:source</code>, naming the exact <code>dcat:Distribution</code> whose <code>spdx:checksum</code> is checked…</td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/folio-board-diagram-interchange.md"><code>folio-board-diagram-interchange</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/folio-board-diagram-interchange.md</span></td>
   <td>The content-folio half of the harness's board-diagram-interchange skill: binds processes/ui/board-place-note.bpmn and board-relocate.bpmn, folio board filters over pages and block kinds, and note-to-board arrow directio…</td>
 </tr>
@@ -1004,6 +1020,10 @@
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/public-comment.md"><code>public-comment</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/public-comment.md</span></td>
   <td><span class="none">no description in the artefact</span></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/review-sheet-script.md"><code>review-sheet-script</code></a><br><span class="p">folio-assistant-core/skills/content/folio-document-adapter/review-sheet-script.md</span></td>
+  <td>Build, install and reuse the Google Apps Script that keeps a review sheet's links and joined columns current (Tool <code>review-sheet-sync</code>).</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/requirements-planning/plan-request-gate.md"><code>plan-request-gate</code></a><br><span class="p">folio-assistant-core/skills/content/requirements-planning/plan-request-gate.md</span></td>

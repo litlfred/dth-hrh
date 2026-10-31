@@ -415,7 +415,7 @@
   instance's `glassStrip` declaration by `sync-docs-harness.ts`; absent when
   nothing declared one. Replica pages read `assets/harness/glass-strip.json`.
 -->
-<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]">
+<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;,&quot;library&quot;]">
 
 <!--
   THE SITE'S BASEURL, for the tiles above.
@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=64b44e43f389">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=780d571c53c1">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -1492,7 +1492,7 @@
     </tr>
     <tr>
       <td><a href="dsa-document-lifecycle.html">Data sharing agreement document life cycle</a></td>
-      <td>22</td>
+      <td>27</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1649,7 +1649,7 @@
 
 <p>The reverse of <code class="language-plaintext highlighter-rouge">&lt;bootstrap.processes:skill ref&gt;</code>, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it.</p>
 
-<p><strong>174</strong> distinct skill(s) are named by an activity.</p>
+<p><strong>178</strong> distinct skill(s) are named by an activity.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -1882,6 +1882,22 @@
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document-structure</code></td>
       <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dsa-catalogue-status</code></td>
+      <td><a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dsa-checksum</code></td>
+      <td><a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dsa-dcat-record</code></td>
+      <td><a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dsa-odrl-source</code></td>
+      <td><a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">evidence-appraisal</code></td>
@@ -3167,9 +3183,9 @@
 </h3>
     
 
-<p><strong>57</strong> across <strong>28</strong> diagram(s). This section reported them as defects in its first version, and that was wrong: beans <code class="language-plaintext highlighter-rouge">luke</code> and <code class="language-plaintext highlighter-rouge">uuhu</code> worked this corpus from 90 down to this remainder and settled what is left. <code class="language-plaintext highlighter-rouge">luke</code>: <em>“coverage is deliberately NOT gated — a human sign-off step has no skill”</em>. <code class="language-plaintext highlighter-rouge">uuhu</code> added the call-activity exemption and recorded that its own remainder <em>“are not gaps”</em>.</p>
+<p><strong>54</strong> across <strong>28</strong> diagram(s). This section reported them as defects in its first version, and that was wrong: beans <code class="language-plaintext highlighter-rouge">luke</code> and <code class="language-plaintext highlighter-rouge">uuhu</code> worked this corpus from 90 down to this remainder and settled what is left. <code class="language-plaintext highlighter-rouge">luke</code>: <em>“coverage is deliberately NOT gated — a human sign-off step has no skill”</em>. <code class="language-plaintext highlighter-rouge">uuhu</code> added the call-activity exemption and recorded that its own remainder <em>“are not gaps”</em>.</p>
 
-<p><strong>16</strong> are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other <strong>41</strong> are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run.</p>
+<p><strong>16</strong> are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other <strong>38</strong> are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -3185,23 +3201,19 @@
     </tr>
     <tr>
       <td>Parties and signatories (provider, recipient)</td>
-      <td>5</td>
+      <td>6</td>
     </tr>
     <tr>
       <td>Stakeholders</td>
       <td>4</td>
     </tr>
     <tr>
-      <td>Author and policy author</td>
-      <td>3</td>
-    </tr>
-    <tr>
       <td>Build pipeline</td>
       <td>3</td>
     </tr>
     <tr>
-      <td>Publisher (data provider’s publication manager)</td>
-      <td>3</td>
+      <td>Author and policy author</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>Cloudflare git (Artifacts)</td>
@@ -3258,7 +3270,7 @@
   </tbody>
 </table></div>
 
-<p><strong>No verdict is offered on which of these is a gap</strong>, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — <code class="language-plaintext highlighter-rouge">process-model.ts</code> notes sixty lanes spell two dozen positions. The lane’s <code class="language-plaintext highlighter-rouge">partitionElementRef</code> is the join that would answer it, and it is present on <strong>41</strong> of these <strong>41</strong> steps — which is the measurement, not an impression. An earlier draft of this sentence said <em>few of these</em> and was counting whether the lane had a NAME, a different question with a different answer.</p>
+<p><strong>No verdict is offered on which of these is a gap</strong>, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — <code class="language-plaintext highlighter-rouge">process-model.ts</code> notes sixty lanes spell two dozen positions. The lane’s <code class="language-plaintext highlighter-rouge">partitionElementRef</code> is the join that would answer it, and it is present on <strong>38</strong> of these <strong>38</strong> steps — which is the measurement, not an impression. An earlier draft of this sentence said <em>few of these</em> and was counting whether the lane had a NAME, a different question with a different answer.</p>
 
           
 

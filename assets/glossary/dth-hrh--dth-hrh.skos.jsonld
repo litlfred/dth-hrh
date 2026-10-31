@@ -29,7 +29,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/accreditation--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/accreditation--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -49,7 +49,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/active-health-worker--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/active-health-worker--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -69,7 +69,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/activity-level--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/activity-level--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -89,7 +89,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/attrition--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/attrition--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -109,7 +109,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/certification--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/certification--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -129,7 +129,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/community-health-workers--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/community-health-workers--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -149,7 +149,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/competence--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/competence--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -169,7 +169,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/competencies--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/competencies--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -192,10 +192,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/continuing-professional-development--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/continuing-professional-development--who-nhwa-2023"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/continuing-professional-development--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/continuing-professional-development--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -215,7 +215,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/contract-type--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/contract-type--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -235,7 +235,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/deployment--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/deployment--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -255,7 +255,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/distribution--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/distribution--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -275,13 +275,13 @@
       "skos:scopeNote": "Open for working-group review: 3 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/dual-practice--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-hpr-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/dual-practice--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-nhwa-2023"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/dual-practice--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -301,7 +301,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/education--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/education--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -321,7 +321,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/educational-institution--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/educational-institution--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -341,7 +341,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/education-and-training-institution--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/education-and-training-institution--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -361,7 +361,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/employment-status-full-time-part-time-temporary-permanent--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/employment-status-full-time-part-time-temporary-permanent--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -381,7 +381,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-labour-market--who-afro-hwf-charter"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-labour-market--who-afro-hwf-charter"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -401,7 +401,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-practitioner--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-practitioner--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -421,7 +421,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-professional--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-professional--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -441,7 +441,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-professions-education-accreditation-agency--who-gdhcn-framework-2026"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-professions-education-accreditation-agency--who-gdhcn-framework-2026"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -461,7 +461,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-services-licensing-agency--who-gdhcn-framework-2026"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-services-licensing-agency--who-gdhcn-framework-2026"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -486,7 +486,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workers--who-wpro-hwf-framework-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workers--who-wpro-hwf-framework-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -506,10 +506,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-planning--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-planning--who-nhwa-2023"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-planning--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-planning--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -532,7 +532,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce--who-afro-hwf-charter"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce--who-afro-hwf-charter"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -556,40 +556,40 @@
       "skos:scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions). Must stay consistent with the final DPI-H reference architecture definition.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026-2"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026-2"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-hrhis-mds-2015"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hrhis-mds-2015"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hpr-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-hwf-data-handbook-2022"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hwf-data-handbook-2022"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--joachim-hwf-forecasting"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--joachim-hwf-forecasting"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-hwis-2013"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-hwis-2013"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--openhie-hwr-ig-2016"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--openhie-hwr-ig-2016"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-2015"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-2015"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--chibuzor-hwfis-review"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--chibuzor-hwfis-review"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--dhe-planning-deck"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--dhe-planning-deck"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-registry--who-mds-crosswalk"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-mds-crosswalk"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -612,16 +612,16 @@
       "skos:scopeNote": "Open for working-group review: 4 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-observatory--who-afro-workforce2030-2020"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-afro-workforce2030-2020"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-observatory--who-hwf-data-handbook-2022"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-hwf-data-handbook-2022"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-observatory--who-hrh-observatories-2012"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-hrh-observatories-2012"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/health-workforce-observatory--openhie-hwr-ig-2016"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--openhie-hwr-ig-2016"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -641,7 +641,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-management--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-management--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -669,40 +669,40 @@
       "skos:scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions).",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021-2"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021-2"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hwf-data-handbook-2022"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hwf-data-handbook-2022"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--eurohealth-2022"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--eurohealth-2022"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--riley-hrhis-review-2012"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--riley-hrhis-review-2012"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--intrahealth-hwis-2013"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--intrahealth-hwis-2013"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--ishijima-hrhis-tanzania"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--ishijima-hrhis-tanzania"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--were-south-south-hris"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--were-south-south-hris"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--chibuzor-hwfis-review"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--chibuzor-hwfis-review"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--measure-evaluation-m3-2018"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--measure-evaluation-m3-2018"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--waters-zhris"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--waters-zhris"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/human-resources-for-health-information-system--wikipedia-hrhis"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--wikipedia-hrhis"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -722,10 +722,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/in-service-training--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/in-service-training--who-nhwa-2023"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/in-service-training--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/in-service-training--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -748,7 +748,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/international-standard-classification-of-occupations--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/international-standard-classification-of-occupations--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -768,7 +768,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/labour-force-survey--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/labour-force-survey--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -788,10 +788,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/licensing--who-wpro-hwf-framework-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/licensing--who-wpro-hwf-framework-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/licensing--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/licensing--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -811,7 +811,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/migration--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/migration--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -831,7 +831,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/mobility-flow--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/mobility-flow--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -854,7 +854,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/national-health-workforce-accounts--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/national-health-workforce-accounts--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -874,10 +874,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/occupation--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/occupation--who-hpr-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/occupation--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/occupation--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -897,7 +897,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/place-of-training--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/place-of-training--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -917,7 +917,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/pre-service-education--who-nhwa-2023"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/pre-service-education--who-nhwa-2023"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -942,13 +942,13 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted. TWG priority term (workbook instructions).",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/professional-council--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/professional-council--who-hlma-2021"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/professional-council--openhie-hwr-ig-2016"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/professional-council--openhie-hwr-ig-2016"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-professional-council-examples"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-professional-council-examples"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -968,7 +968,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/qualification--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/qualification--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -988,7 +988,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/recruitment--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/recruitment--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1008,10 +1008,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/registration--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/registration--who-hlma-2021"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/registration--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/registration--who-hpr-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1031,16 +1031,16 @@
       "skos:scopeNote": "Open for working-group review: 4 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/regulation--who-hpr-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-hpr-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/regulation--who-rural-retention-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-rural-retention-2021"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/regulation--who-wpro-hwf-framework-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-wpro-hwf-framework-2024"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/regulation--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1060,7 +1060,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/retention--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/retention--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1080,10 +1080,10 @@
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/scope-of-practice--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/scope-of-practice--who-hlma-2021"
         },
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/scope-of-practice--who-rural-retention-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/scope-of-practice--who-rural-retention-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1103,7 +1103,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/stewardship--who-wpro-hwf-framework-2024"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/stewardship--who-wpro-hwf-framework-2024"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1123,7 +1123,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/stock--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/stock--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
@@ -1143,7 +1143,7 @@
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/folio-assistant/dth-hrh/ns#glossary/twg-candidates/supply--who-hlma-2021"
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/supply--who-hlma-2021"
         }
       ],
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",

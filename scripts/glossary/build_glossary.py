@@ -328,6 +328,7 @@ def build(wb_path, out_dir):
             "scopeNote": f"Regulates: {k['professions']}. Mandate: {k['mandate']} Reference: {k['ref']} {check_note(k)}",
             "source": f"{WORKBOOK_REF}#Professional council!row {k['row']}",
             "status": "candidate",
+            "focus": {"type": "FormalOrganization"},
         }
         council_terms.append(ct)
     council = {
@@ -366,9 +367,12 @@ def build(wb_path, out_dir):
     }
     prior_matches = {}
     extra_terms = []
+    prior_members = []
     order_set = set(order)
     if main_path.exists():
-        for t in json.loads(main_path.read_text()).get("terms", []):
+        prior_doc = json.loads(main_path.read_text())
+        prior_members = prior_doc.get("members", [])
+        for t in prior_doc.get("terms", []):
             if t["id"] not in order_set:
                 extra_terms.append(t)
                 continue
@@ -421,12 +425,16 @@ def build(wb_path, out_dir):
             "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each "
             "related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when "
             "the working group adopts a definition: a person sets `definition` and `status`, citing the change set that "
-            "decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms."
+            "decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms. "
+            "Organizations several handbooks name live once in smart-ra's organizations scheme (litlfred/smart-ra#198) "
+            "and are listed under members; organization terms here carry a foaf:focus to a W3C ORG organization "
+            "(litlfred/folio-assistant-core#411)."
         ),
         "modified": TODAY,
         "source": WORKBOOK_REF,
         "license": "CC-BY-NC-SA-3.0-IGO",
         "terms": terms,
+        **({"members": prior_members} if prior_members else {}),
     }
 
     for name, doc in [("twg-candidates", candidates), ("twg-professional-council-examples", council), ("dth-hrh", main)]:

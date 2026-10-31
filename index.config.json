@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "7da9b6667b42d042b5d72cb9abb666c255a2eb73",
+          "ref": "c2ef11bc2ec16f922da97689722b9120af4e3dac",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "7da9b6667b42d042b5d72cb9abb666c255a2eb73",
-              "evidence": "litlfred, 2026-10-31 01:59:58Z (via coordinator): 'merge repin winfow + 3hts' (window to ~05:00Z); main tip 7da9b66 (On this page rail #1043, direction #1050)."
+              "ref": "c2ef11bc2ec16f922da97689722b9120af4e3dac",
+              "evidence": "litlfred, 2026-10-31 01:59:58Z (via coordinator): 'merge repin winfow + 3hts' (window to ~05:00Z); main tip c2ef11b (state @base #1051)."
             }
           }
         }

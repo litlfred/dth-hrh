@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1ea546d8550146aead7202ba82f1045f1ecf817b",
+          "ref": "70c47f371026bd72bda91db56c7d51d81899f511",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,8 +136,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "1ea546d8550146aead7202ba82f1045f1ecf817b",
-              "evidence": "litlfred, 2026-10-31 01:19:51Z, card 'A. Merge and switch' on 'Merge core#309 and smart-ra#138, then switch dth-hrh to the core builder?' (thread Align smart-ra and DTH handbook pipelines)"
+              "ref": "70c47f371026bd72bda91db56c7d51d81899f511",
+              "evidence": "litlfred, 2026-10-31 01:19:42Z, card 'A. Extend core's per-repo page' on 'How should the handbook's glossary page join the shared platform?' (thread Align smart-ra and DTH handbook pipelines): core#312 (70c47f3) extends core's per-instance glossary page so dth-hrh can retire its own"
             }
           }
         }

@@ -37,7 +37,9 @@ from pathlib import Path
 
 import openpyxl
 
-NS = "https://litlfred.github.io/folio-assistant/dth-hrh/ns#"
+# The instance namespace (instanceNamespace: iriBase in dth-hrh.json, then
+# v<major>/ns#), so a related IRI names the term core publishes at it.
+NS = "https://litlfred.github.io/dth-hrh/v0/ns#"
 TODAY = "2026-10-14"
 WORKBOOK_REF = "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx"
 

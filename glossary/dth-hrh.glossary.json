@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-hrh",
   "title": "Glossary of the Digital Transformation Handbook for Human Resources for Health and Health Worker Registries",
-  "description": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms.",
+  "description": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms. Organizations several handbooks name live once in smart-ra's organizations scheme (litlfred/smart-ra#198) and are listed under members; organization terms here carry a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
   "modified": "2026-10-14",
   "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -620,7 +620,14 @@
       "notation": "WHO",
       "scopeNote": "Named throughout the handbook outline and glossary workbook, including its six regional offices (AFRO, WPRO, AFR, AMR, EUR, SEAR, WPR). A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.who.int/",
+        "subOrganizationOf": [
+          "united-nations"
+        ]
+      }
     },
     {
       "id": "digital-public-infrastructure-for-health",
@@ -698,7 +705,14 @@
       "notation": "ITU",
       "scopeNote": "Named in Chapter 1 (WHO/ITU DPI-H reference architecture); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.itu.int/",
+        "subOrganizationOf": [
+          "united-nations"
+        ]
+      }
     },
     {
       "id": "minimum-data-set",
@@ -720,7 +734,11 @@
       "notation": "OpenHIE",
       "scopeNote": "Named in Chapter 10 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "OrganizationalCollaboration",
+        "homepage": "https://ohie.org/"
+      }
     },
     {
       "id": "health-information-system",
@@ -786,7 +804,14 @@
       "notation": "GDHCN",
       "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "OrganizationalCollaboration",
+        "homepage": "https://www.who.int/initiatives/global-digital-health-certification-network",
+        "subOrganizationOf": [
+          "world-health-organization"
+        ]
+      }
     },
     {
       "id": "health-level-seven",
@@ -797,7 +822,11 @@
       "notation": "HL7",
       "scopeNote": "Named in Chapter 10 (HL7 FHIR); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.hl7.org/"
+      }
     },
     {
       "id": "health-management-information-system",
@@ -830,7 +859,11 @@
       "notation": "IHE",
       "scopeNote": "Named in Chapter 10 (IHE mCSD and HPD profiles); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.ihe.net/"
+      }
     },
     {
       "id": "ihris",
@@ -863,7 +896,11 @@
       "notation": "ISO",
       "scopeNote": "Named in Chapter 11; expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.iso.org/"
+      }
     },
     {
       "id": "learning-management-system",
@@ -929,7 +966,14 @@
       "notation": "ILO",
       "scopeNote": "Named in Chapter 11 and references (ISCO-08 custodian); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.ilo.org/",
+        "subOrganizationOf": [
+          "united-nations"
+        ]
+      }
     },
     {
       "id": "key-performance-indicator",
@@ -962,7 +1006,7 @@
         "MOH"
       ],
       "notation": "MoH",
-      "scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written. A kind of organization (each country has one), so it has no focus.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -975,7 +1019,11 @@
       "notation": "OECD",
       "scopeNote": "Named in the glossary workbook (Joint Questionnaire on non-monetary health care statistics); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.oecd.org/"
+      }
     },
     {
       "id": "service-oriented-architecture",
@@ -1008,7 +1056,11 @@
       "notation": "UN",
       "scopeNote": "Used in Chapter 3; expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.un.org/"
+      }
     },
     {
       "id": "unesco",
@@ -1019,7 +1071,14 @@
       "notation": "UNESCO",
       "scopeNote": "Named in Chapter 11 and references (ISCED custodian); expansion supplied for review. A candidate: no definition has been written.",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.unesco.org/",
+        "subOrganizationOf": [
+          "united-nations"
+        ]
+      }
     },
     {
       "id": "simple-knowledge-organization-system",
@@ -1047,5 +1106,13 @@
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie"
   ]
 }

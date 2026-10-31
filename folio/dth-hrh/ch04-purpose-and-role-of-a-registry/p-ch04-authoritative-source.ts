@@ -3,5 +3,5 @@ import { prose } from "../../schema/builders";
 export default prose({
   label: "prose:ch04-authoritative-source",
   uses: [],
-  meta: {"source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}, "title": "4.2 Authoritative source"},
+  meta: {"source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}, "title": "4.2 Authoritative source", "archimate": {"model": "smart-ra 0.2.0", "basis": "agent-proposed by name, for working-group review (dth-hrh#47)", "elements": [{"iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld", "name": "DPI-H Health Workforce Registry (HWR)"}, {"iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-558aba849cc54d659ef1a5473d9aa2f1.jsonld", "name": "Establishment of Authoritative National Health Workforce Registry"}, {"iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-dcb4ea610e32444899cc9aa0697c7ce9.jsonld", "name": "Assignment of Unique Health Worker ID)"}]}},
 });

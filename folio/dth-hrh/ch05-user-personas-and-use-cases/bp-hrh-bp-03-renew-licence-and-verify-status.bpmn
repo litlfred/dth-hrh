@@ -44,10 +44,10 @@
       <bpmn:incoming>Flow_BP03_01</bpmn:incoming>
       <bpmn:outgoing>Flow_BP03_02</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:businessRuleTask id="Task_BP03_02" name="Evaluate lifecycle status transition rules">
+    <bpmn:serviceTask id="Task_BP03_02" name="Evaluate lifecycle status transition rules">
       <bpmn:incoming>Flow_BP03_02</bpmn:incoming>
       <bpmn:outgoing>Flow_BP03_03</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:serviceTask>
     <bpmn:exclusiveGateway id="Gw_BP03_Renewed" name="Status?">
       <bpmn:incoming>Flow_BP03_03</bpmn:incoming>
       <bpmn:outgoing>Flow_BP03_04</bpmn:outgoing>
@@ -70,10 +70,10 @@
       <bpmn:incoming>Flow_BP03_08</bpmn:incoming>
       <bpmn:outgoing>Flow_BP03_09</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:businessRuleTask id="Task_BP03_07" name="Return tiered verification response">
+    <bpmn:serviceTask id="Task_BP03_07" name="Return tiered verification response">
       <bpmn:incoming>Flow_BP03_09</bpmn:incoming>
       <bpmn:outgoing>Flow_BP03_10</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:serviceTask>
     <bpmn:endEvent id="End_BP03" name="Status updated and verified">
       <bpmn:incoming>Flow_BP03_10</bpmn:incoming>
     </bpmn:endEvent>

@@ -38,14 +38,14 @@
         "name": "Registry governance body (steering committee)"
       },
       {
-        "laneId": "Lane_BP06_Custodian",
-        "persona": "pers:registry-custodian",
-        "name": "Registry operator and data custodian"
-      },
-      {
         "laneId": "Lane_BP06_HealthWorker",
         "persona": "pers:health-worker",
         "name": "Health worker"
+      },
+      {
+        "laneId": "Lane_BP06_Custodian",
+        "persona": "pers:registry-custodian",
+        "name": "Registry operator and data custodian"
       },
       {
         "laneId": "Lane_BP06_RegistrationOfficer",

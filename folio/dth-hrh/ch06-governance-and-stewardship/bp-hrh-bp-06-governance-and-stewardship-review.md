@@ -5,8 +5,8 @@ Governs inter-institutional data-sharing agreements and access tiers through the
 **Swimlanes (one lane per role):**
 
 - `Lane_BP06_GovernanceBody` — **Registry governance body (steering committee)** (`pers:registry-governance-body`)
-- `Lane_BP06_Custodian` — **Registry operator and data custodian** (`pers:registry-custodian`)
 - `Lane_BP06_HealthWorker` — **Health worker** (`pers:health-worker`)
+- `Lane_BP06_Custodian` — **Registry operator and data custodian** (`pers:registry-custodian`)
 - `Lane_BP06_RegistrationOfficer` — **Registration officer (regulatory body)** (`pers:registration-officer`)
 
 | Step ID | Lane (persona) | Activity | Linked requirement / decision table | Outline basis |

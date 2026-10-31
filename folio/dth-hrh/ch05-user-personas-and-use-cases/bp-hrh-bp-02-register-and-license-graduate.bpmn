@@ -23,18 +23,18 @@
         <bpmn:flowNodeRef>Task_BP02_01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_BP02_07</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_BP02_TrainingRegistrar" name="Training institution registrar" partitionElementRef="pers:training-institution-registrar">
-        <bpmn:flowNodeRef>Task_BP02_02</bpmn:flowNodeRef>
-      </bpmn:lane>
-      <bpmn:lane id="Lane_BP02_NationalId" name="National identity system" partitionElementRef="pers:system-national-id">
-        <bpmn:flowNodeRef>Task_BP02_03</bpmn:flowNodeRef>
-      </bpmn:lane>
       <bpmn:lane id="Lane_BP02_RegistrationOfficer" name="Registration officer (regulatory body)" partitionElementRef="pers:registration-officer">
         <bpmn:flowNodeRef>Task_BP02_04</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gw_BP02_Eligible</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_BP02_05</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_BP02_06</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>End_BP02</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP02_TrainingRegistrar" name="Training institution registrar" partitionElementRef="pers:training-institution-registrar">
+        <bpmn:flowNodeRef>Task_BP02_02</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP02_NationalId" name="National identity system" partitionElementRef="pers:system-national-id">
+        <bpmn:flowNodeRef>Task_BP02_03</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:startEvent id="Start_BP02" name="Graduation completed">
@@ -92,105 +92,111 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_HRH_BP_02">
     <bpmndi:BPMNPlane id="BPMNPlane_HRH_BP_02" bpmnElement="Collab_HRH_BP_02">
       <bpmndi:BPMNShape id="Pool_HRH_BP_02_di" bpmnElement="Pool_HRH_BP_02" isHorizontal="true">
-        <dc:Bounds x="120" y="80" width="1835" height="600"/>
+        <dc:Bounds x="120" y="80" width="1180" height="660" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_BP02_HealthWorker_di" bpmnElement="Lane_BP02_HealthWorker" isHorizontal="true">
-        <dc:Bounds x="150" y="80" width="1805" height="150"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_BP02_TrainingRegistrar_di" bpmnElement="Lane_BP02_TrainingRegistrar" isHorizontal="true">
-        <dc:Bounds x="150" y="230" width="1805" height="150"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_BP02_NationalId_di" bpmnElement="Lane_BP02_NationalId" isHorizontal="true">
-        <dc:Bounds x="150" y="380" width="1805" height="150"/>
+        <dc:Bounds x="150" y="80" width="1150" height="150" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_BP02_RegistrationOfficer_di" bpmnElement="Lane_BP02_RegistrationOfficer" isHorizontal="true">
-        <dc:Bounds x="150" y="530" width="1805" height="150"/>
+        <dc:Bounds x="150" y="230" width="1150" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP02_TrainingRegistrar_di" bpmnElement="Lane_BP02_TrainingRegistrar" isHorizontal="true">
+        <dc:Bounds x="150" y="450" width="1150" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP02_NationalId_di" bpmnElement="Lane_BP02_NationalId" isHorizontal="true">
+        <dc:Bounds x="150" y="590" width="1150" height="150" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Start_BP02_di" bpmnElement="Start_BP02">
-        <dc:Bounds x="202" y="137" width="36" height="36"/>
+        <dc:Bounds x="205" y="137" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="186" y="177" width="75" height="36" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_01_di" bpmnElement="Task_BP02_01">
-        <dc:Bounds x="340" y="121" width="130" height="68"/>
+        <dc:Bounds x="290" y="121" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_02_di" bpmnElement="Task_BP02_02">
-        <dc:Bounds x="525" y="271" width="130" height="68"/>
+        <dc:Bounds x="290" y="486" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_03_di" bpmnElement="Task_BP02_03">
-        <dc:Bounds x="710" y="421" width="130" height="68"/>
+        <dc:Bounds x="290" y="631" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_04_di" bpmnElement="Task_BP02_04">
-        <dc:Bounds x="895" y="571" width="130" height="68"/>
+        <dc:Bounds x="520" y="306" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gw_BP02_Eligible_di" bpmnElement="Gw_BP02_Eligible" isMarkerVisible="true">
-        <dc:Bounds x="1120" y="580" width="50" height="50"/>
+        <dc:Bounds x="750" y="315" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="700" y="285" width="70" height="18" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_05_di" bpmnElement="Task_BP02_05">
-        <dc:Bounds x="1265" y="545" width="130" height="68"/>
+        <dc:Bounds x="910" y="246" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_06_di" bpmnElement="Task_BP02_06">
-        <dc:Bounds x="1265" y="605" width="130" height="68"/>
+        <dc:Bounds x="910" y="356" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_BP02_07_di" bpmnElement="Task_BP02_07">
-        <dc:Bounds x="1450" y="121" width="130" height="68"/>
+        <dc:Bounds x="910" y="121" width="170" height="68" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="End_BP02_di" bpmnElement="End_BP02">
-        <dc:Bounds x="1682" y="587" width="36" height="36"/>
+        <dc:Bounds x="1160" y="322" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1141" y="362" width="74" height="36" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_BP02_01_di" bpmnElement="Flow_BP02_01">
-        <di:waypoint x="238" y="155"/>
-        <di:waypoint x="340" y="155"/>
+        <di:waypoint x="241" y="155" />
+        <di:waypoint x="290" y="155" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_02_di" bpmnElement="Flow_BP02_02">
-        <di:waypoint x="470" y="155"/>
-        <di:waypoint x="498" y="155"/>
-        <di:waypoint x="498" y="305"/>
-        <di:waypoint x="525" y="305"/>
+        <di:waypoint x="375" y="189" />
+        <di:waypoint x="375" y="486" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_03_di" bpmnElement="Flow_BP02_03">
-        <di:waypoint x="655" y="305"/>
-        <di:waypoint x="683" y="305"/>
-        <di:waypoint x="683" y="455"/>
-        <di:waypoint x="710" y="455"/>
+        <di:waypoint x="375" y="554" />
+        <di:waypoint x="375" y="631" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_04_di" bpmnElement="Flow_BP02_04">
-        <di:waypoint x="840" y="455"/>
-        <di:waypoint x="868" y="455"/>
-        <di:waypoint x="868" y="605"/>
-        <di:waypoint x="895" y="605"/>
+        <di:waypoint x="460" y="665" />
+        <di:waypoint x="490" y="665" />
+        <di:waypoint x="490" y="340" />
+        <di:waypoint x="520" y="340" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_05_di" bpmnElement="Flow_BP02_05">
-        <di:waypoint x="1025" y="605"/>
-        <di:waypoint x="1120" y="605"/>
+        <di:waypoint x="690" y="340" />
+        <di:waypoint x="750" y="340" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_06_di" bpmnElement="Flow_BP02_06">
-        <di:waypoint x="1170" y="605"/>
-        <di:waypoint x="1218" y="605"/>
-        <di:waypoint x="1218" y="579"/>
-        <di:waypoint x="1265" y="579"/>
+        <di:waypoint x="775" y="315" />
+        <di:waypoint x="775" y="280" />
+        <di:waypoint x="910" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="815" y="256" width="55" height="18" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_07_di" bpmnElement="Flow_BP02_07">
-        <di:waypoint x="1170" y="605"/>
-        <di:waypoint x="1218" y="605"/>
-        <di:waypoint x="1218" y="639"/>
-        <di:waypoint x="1265" y="639"/>
+        <di:waypoint x="775" y="365" />
+        <di:waypoint x="775" y="390" />
+        <di:waypoint x="910" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="800" y="396" width="85" height="18" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_08_di" bpmnElement="Flow_BP02_08">
-        <di:waypoint x="1395" y="579"/>
-        <di:waypoint x="1423" y="579"/>
-        <di:waypoint x="1423" y="155"/>
-        <di:waypoint x="1450" y="155"/>
+        <di:waypoint x="995" y="246" />
+        <di:waypoint x="995" y="189" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_09_di" bpmnElement="Flow_BP02_09">
-        <di:waypoint x="1580" y="155"/>
-        <di:waypoint x="1631" y="155"/>
-        <di:waypoint x="1631" y="605"/>
-        <di:waypoint x="1682" y="605"/>
+        <di:waypoint x="1080" y="155" />
+        <di:waypoint x="1178" y="155" />
+        <di:waypoint x="1178" y="322" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_BP02_10_di" bpmnElement="Flow_BP02_10">
-        <di:waypoint x="1395" y="639"/>
-        <di:waypoint x="1539" y="639"/>
-        <di:waypoint x="1539" y="605"/>
-        <di:waypoint x="1682" y="605"/>
+        <di:waypoint x="1080" y="390" />
+        <di:waypoint x="1120" y="390" />
+        <di:waypoint x="1120" y="340" />
+        <di:waypoint x="1160" y="340" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

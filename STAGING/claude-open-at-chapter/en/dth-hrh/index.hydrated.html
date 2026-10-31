@@ -22,7 +22,7 @@
   a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
   h1, h2, h3 { line-height: 1.25; }
   table { border-collapse: collapse; } th, td { border: 1px solid var(--muted); padding: .3rem .5rem; }
-  :target { scroll-margin-top: 1rem; }
+  :target, main [id] { scroll-margin-top: 1rem; }
   .katex-display { overflow-x: auto; overflow-y: hidden; }
   dfn.defterm { font-style: normal; font-weight: 600; }
   .cite { color: var(--muted); }
@@ -4758,17 +4758,30 @@ Table linking registry data elements to NHWA indicators.</p>
   for (const [, h] of entries) { total += h.n; open += h.o; }
   const idle = window.requestIdleCallback || ((f) => setTimeout(() => f({ timeRemaining: () => 8 }), 1));
   let i = 0;
+  // A lazy document page keeps the reader's place as each batch lands
+  // (`faKeepPlace`, build-document-site.ts), so nothing is seen to move.
+  // Any other page jumps back to the target once, at the end, instantly:
+  // the theme's smooth scroll animated it (dth-hrh, 2026-10-31).
+  const keep = window.faKeepPlace || ((f) => f());
   const batch = (deadline) => {
-    do { if (i >= entries.length) break; note(entries[i][0], entries[i][1]); i++; } while (deadline.timeRemaining() > 2 || i % 40 !== 0);
+    keep(() => {
+      do { if (i >= entries.length) break; note(entries[i][0], entries[i][1]); i++; } while (deadline.timeRemaining() > 2 || i % 40 !== 0);
+    });
     if (i < entries.length) idle(batch);
-    else if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    else if (!window.faKeepPlace && location.hash.length > 1) {
+      const t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      const s = document.documentElement.style, was = s.scrollBehavior;
+      s.scrollBehavior = "auto";
+      t?.scrollIntoView();
+      s.scrollBehavior = was;
+    }
   };
   idle(batch);
   const bar = document.createElement("div");
   bar.className = "pc-bar";
   bar.innerHTML = '<a href="' + esc(meta.dashboard) + '">Public comments</a>: ' + total + " shown in this document, " + open + " open";
   const main = document.querySelector(".fa-doc") || document.querySelector("main") || document.body;
-  main.prepend(bar);
+  keep(() => main.prepend(bar));
 })();
 </script>
 </body>

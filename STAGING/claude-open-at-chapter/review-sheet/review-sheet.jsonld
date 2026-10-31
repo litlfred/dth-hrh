@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@graph": [
+    {
+      "@id": "Code.gs",
+      "@type": "schema:SoftwareSourceCode",
+      "schema:name": "Review sheet Apps Script (generic)",
+      "schema:programmingLanguage": "Google Apps Script",
+      "schema:codeRepository": "https://github.com/litlfred/folio-assistant-core/tree/main/tools/review-sheet-sync",
+      "schema:version": "da2d5ccef46ee9503afb1f0c6ee3b05d351b5735",
+      "spdx:checksum": {
+        "spdx:algorithm": "SHA-256",
+        "spdx:checksumValue": "574f882d9aaa2f476212a9ea48dd88a0b71f16e7d42e22a8045e2b72f2784794"
+      },
+      "schema:permissions": [
+        "https://www.googleapis.com/auth/spreadsheets.currentonly",
+        "https://www.googleapis.com/auth/script.scriptapp",
+        "https://www.googleapis.com/auth/script.container.ui"
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "https://github.com/litlfred/folio-assistant-core/tree/main/tools/review-sheet-sync#review-sheet-sync"
+      }
+    },
+    {
+      "@id": "drafting.config-rows.json",
+      "@type": "schema:Dataset",
+      "schema:name": "Review sheet settings (drafting)",
+      "dcterms:source": "review/drafting/sheet-sync.json",
+      "schema:isPartOf": {
+        "@id": "https://docs.google.com/spreadsheets/d/136BxUK15IUKEm2u-H6rpUkFac6754aRWTeJFe_UKbdU/edit"
+      },
+      "dcterms:conformsTo": {
+        "@id": "Code.gs"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "https://github.com/litlfred/folio-assistant-core/tree/main/tools/review-sheet-sync#review-sheet-sync"
+      }
+    }
+  ]
+}

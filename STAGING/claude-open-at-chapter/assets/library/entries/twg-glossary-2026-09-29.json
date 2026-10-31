@@ -1,0 +1,108 @@
+{
+  "$schema": "folio-library-entry/v1",
+  "id": "twg-glossary-2026-09-29",
+  "blocks": [
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-001",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    },
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-002",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    },
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-003",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    },
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-004",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    },
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-005",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    },
+    {
+      "id": "library/twg-glossary-2026-09-29/blocks/table-006",
+      "types": [
+        "cat-harness:Block",
+        "doco:Table"
+      ],
+      "kind": "table",
+      "title": "",
+      "pageStart": null,
+      "pageEnd": null,
+      "target": null,
+      "narrative": null,
+      "content": null,
+      "truncated": false,
+      "provenance": "ingested",
+      "summary": null
+    }
+  ]
+}

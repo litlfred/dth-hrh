@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-mds-identification-number",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:mds-identification-number",
+  "kind": "data-element",
+  "title": "Identification number",
+  "text": "de-identification-number.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "minimumDataSet": "WHO 2015",
+    "position": 1
+  },
+  "provenance": "authored"
+}

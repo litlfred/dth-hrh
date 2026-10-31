@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/tbl-ch03-diig-mapping",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:ch03-diig-mapping",
+  "kind": "table",
+  "uses": [
+    "papers/dth-hrh/blocks/fig-diig-phases"
+  ],
+  "text": "t-ch03-diig-mapping.md",
+  "meta": {
+    "source": {
+      "diig": "smart-base/methodologies/diig.md",
+      "library": "9789240010567-eng",
+      "method": "authored-draft"
+    },
+    "status": "proposed"
+  },
+  "provenance": "authored"
+}

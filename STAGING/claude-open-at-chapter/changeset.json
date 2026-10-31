@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "ffb89ebeb0f12ddd09267fe1052ce0b13d950f04"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 322,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 0
+  },
+  "changes": []
+}

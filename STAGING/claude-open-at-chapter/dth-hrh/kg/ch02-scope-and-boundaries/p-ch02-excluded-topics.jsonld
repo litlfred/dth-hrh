@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-ch02-excluded-topics",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:ch02-excluded-topics",
+  "kind": "prose",
+  "text": "p-ch02-excluded-topics.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "title": "2.2 Excluded topics"
+  },
+  "provenance": "authored"
+}

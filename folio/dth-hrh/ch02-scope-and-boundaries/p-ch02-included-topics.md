@@ -1,3 +1,3 @@
-- Purpose, governance, minimum data set, functional requirements and architecture options for a registry.
+- Purpose, governance, core data elements, functional requirements and architecture options for a registry.
 - Interoperability with regulators, employers, training institutions, the facility registry, identity systems and NHWA reporting.
 - A phased country pathway from assessment to routine operation, for paper-based, partly digital and fully digital starting points.

@@ -17,13 +17,10 @@ if [ ! -f cat-harness-tools/scripts/session-start-coord-sweep.sh ]; then
       git -C "$M" checkout -q FETCH_HEAD &&
       bun run "$M/scripts/mount-from-lock.ts" --root .
     rm -rf "$M"
-    for d in $(python3 -c "import json;print(' '.join(sorted({i['path'] for i in json.load(open('index.lock.json'))['instances']})))"); do
-      [ -f "$d/package.json" ] && (cd "$d" && bun install --no-save >/dev/null)
-    done
   } >&2
 fi
-# This folio's own dependencies (zod, for smart-base's DAK block builders).
-[ -d node_modules ] || bun install --frozen-lockfile >/dev/null 2>&1 || bun install >/dev/null 2>&1
+# This folio's own dependencies and workspace mounts, pinned by bun.lock.
+[ -d node_modules ] || bun install --frozen-lockfile >/dev/null 2>&1
 
 [ -f cat-harness-tools/scripts/session-start-coord-sweep.sh ] &&
   exec bash "$PWD/cat-harness-tools/scripts/session-start-coord-sweep.sh"

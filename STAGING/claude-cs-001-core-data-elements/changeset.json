@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/main",
-    "commit": "09152dbb817092affbb358ee4c98fba75d60a9fe"
+    "commit": "15f2530f17442b5847008fab54e6ab7e1b376517"
   },
   "head": {
     "ref": "worktree",

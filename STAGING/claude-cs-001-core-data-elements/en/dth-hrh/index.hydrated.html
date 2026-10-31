@@ -66,6 +66,27 @@ function fill(d,f,r){
   if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
   stamp(f);
   measure();
+  fresh(d,f);
+}
+// Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
+// head now and say so when it has moved past the commit this preview was
+// built from. Unauthenticated, one request per page view; on any failure
+// (rate limit, offline, a deleted branch) it says nothing rather than guess.
+function fresh(d,f){
+  var m=String(f.branchUrl||'').match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\//);
+  if(!m||!f.branch||!f.sha||typeof fetch!=='function')return;
+  fetch('https://api.github.com/repos/'+m[1]+'/'+m[2]+'/commits/'+encodeURIComponent(f.branch),
+    {headers:{Accept:'application/vnd.github.sha'},cache:'no-store'})
+    .then(function(x){if(!x.ok)throw 0;return x.text();})
+    .then(function(head){
+      head=String(head).trim();
+      if(!/^[0-9a-f]{7,40}$/.test(head)||head.indexOf(f.sha)===0)return;
+      d.appendChild(sep());
+      var w=el('strong',{'data-fa-staging-stale':'',style:'background:#b00020;padding:0 .4em;border-radius:3px'},'\u26a0 stale: the branch is now at ');
+      w.appendChild(chip(head.slice(0,7)));
+      w.appendChild(document.createTextNode(', newer than this preview'));
+      d.appendChild(w);measure();
+    }).catch(function(){});
 }
 function stamp(f){
   var p=document.querySelector('.fa-build-stamp');if(!p)return;
@@ -83,7 +104,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-7jnivcyk1b","here":"/en/dth-hrh/index.hydrated.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
@@ -134,7 +163,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p><a id="sec:about-glance"></a></p>
 <h3>Handbook at a glance</h3>
 <p><a id="tbl:handbook-at-a-glance"></a><span class="block-actions" data-block="tbl:handbook-at-a-glance"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/about-this-draft/t-handbook-at-a-glance.md" title="Edit this block's source on GitHub (folio/dth-hrh/about-this-draft/t-handbook-at-a-glance.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Handbook+at+a+glance+%E2%80%94+tbl%3Ahandbook-at-a-glance&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Handbook+at+a+glance&amp;block=tbl%3Ahandbook-at-a-glance&amp;source=folio%2Fdth-hrh%2Fabout-this-draft%2Ft-handbook-at-a-glance.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:handbook-at-a-glance" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>
@@ -422,12 +451,12 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <li>It gives the health workforce detail that the DPI-H reference architecture does not go into.</li>
 </ul>
 <p><a id="fig:diig-phases"></a><span class="block-actions" data-block="fig:diig-phases"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch03-digital-transformation-approach/f-diig-phases.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch03-digital-transformation-approach/f-diig-phases.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+3.1+DIIG+alignment+%E2%80%94+fig%3Adiig-phases&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=3.1+DIIG+alignment&amp;block=fig%3Adiig-phases&amp;source=folio%2Fdth-hrh%2Fch03-digital-transformation-approach%2Ff-diig-phases.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure.</strong></p>
+<strong>Figure.</strong> <a href="#fig:diig-phases" class="block-anchor" aria-label="Link to Figure" title="Link to Figure"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/diig-phases-hrh.svg" alt="Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04"></p>
 <p><em>Source: adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, itself adapted from the 2020 WHO Digital implementation investment guide (DIIG), Fig. 1.1.1. Redrawn; this handbook is added across phases 02–04 and marked "(this document)" in place of the product catalogue handbook.</em></p>
 <p><em>Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04 (adapted from the product catalogue handbook, Fig. 4, and DIIG Fig. 1.1.1)</em></p>
 <p><a id="tbl:ch03-diig-mapping"></a><span class="block-actions" data-block="tbl:ch03-diig-mapping"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+3.1+DIIG+alignment+%E2%80%94+tbl%3Ach03-diig-mapping&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=3.1+DIIG+alignment&amp;block=tbl%3Ach03-diig-mapping&amp;source=folio%2Fdth-hrh%2Fch03-digital-transformation-approach%2Ft-ch03-diig-mapping.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:ch03-diig-mapping" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>
@@ -2801,7 +2830,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <p>"A health worker registry is a centralized listing of health workers within a country. Information contained within a health worker registry most often comes from different health management information systems (HMIS), such as iHRIS, used, for example, by independent organizations, health clinics run by non-state actors or regulatory bodies. These client systems are often organized around specific workflows revolving around human resources (hiring a new health worker, providing a salary bonus, transferring a health worker to a new location), but the health worker registry may contain only specific information about health workers."</p>
 </blockquote>
 <p><a id="tbl:compare-health-workforce-registry"></a><span class="block-actions" data-block="tbl:compare-health-workforce-registry"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-health-workforce-registry.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-health-workforce-registry.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-health-workforce-registry&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-health-workforce-registry&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-health-workforce-registry.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:compare-health-workforce-registry" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>
@@ -2940,7 +2969,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <p>A human resource for health information system (HRHIS), also known as human resource information system (HRIS) — is a system for collecting, processing, managing and disseminating data and information on human resource for health (HRH). Depending on the level of development of a country's health care system and the organization of its workforce, an HRHIS can be computerized or paper-based, including information on numbers and distribution of health workers and track their career information.[1]</p>
 </blockquote>
 <p><a id="tbl:compare-human-resources-for-health-information-system"></a><span class="block-actions" data-block="tbl:compare-human-resources-for-health-information-system"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-human-resources-for-health-information-system.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-human-resources-for-health-information-system.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-human-resources-for-health-information-system&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-human-resources-for-health-information-system&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-human-resources-for-health-information-system.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:compare-human-resources-for-health-information-system" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>
@@ -3040,7 +3069,7 @@ Table linking registry data elements to NHWA indicators.</p>
 </blockquote>
 <p>Country examples are listed in the section <em>Professional councils: country examples</em>.</p>
 <p><a id="tbl:compare-professional-council"></a><span class="block-actions" data-block="tbl:compare-professional-council"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-professional-council.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-professional-council.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-professional-council&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-professional-council&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-professional-council.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:compare-professional-council" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>
@@ -3503,7 +3532,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <p><a id="sec:glossary-councils"></a></p>
 <h3>Professional councils: country examples</h3>
 <p><a id="tbl:professional-council-examples"></a><span class="block-actions" data-block="tbl:professional-council-examples"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-professional-council-examples.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-professional-council-examples.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Professional+councils%3A+country+examples+%E2%80%94+tbl%3Aprofessional-council-examples&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Professional+councils%3A+country+examples&amp;block=tbl%3Aprofessional-council-examples&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-professional-council-examples.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table.</strong></p>
+<strong>Table.</strong> <a href="#tbl:professional-council-examples" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
 <thead>
 <tr>

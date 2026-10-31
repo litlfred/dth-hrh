@@ -629,7 +629,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=780d571c53c1">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -785,6 +785,27 @@ function fill(d,f,r){
   if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
   stamp(f);
   measure();
+  fresh(d,f);
+}
+// Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
+// head now and say so when it has moved past the commit this preview was
+// built from. Unauthenticated, one request per page view; on any failure
+// (rate limit, offline, a deleted branch) it says nothing rather than guess.
+function fresh(d,f){
+  var m=String(f.branchUrl||'').match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\//);
+  if(!m||!f.branch||!f.sha||typeof fetch!=='function')return;
+  fetch('https://api.github.com/repos/'+m[1]+'/'+m[2]+'/commits/'+encodeURIComponent(f.branch),
+    {headers:{Accept:'application/vnd.github.sha'},cache:'no-store'})
+    .then(function(x){if(!x.ok)throw 0;return x.text();})
+    .then(function(head){
+      head=String(head).trim();
+      if(!/^[0-9a-f]{7,40}$/.test(head)||head.indexOf(f.sha)===0)return;
+      d.appendChild(sep());
+      var w=el('strong',{'data-fa-staging-stale':'',style:'background:#b00020;padding:0 .4em;border-radius:3px'},'\u26a0 stale: the branch is now at ');
+      w.appendChild(chip(head.slice(0,7)));
+      w.appendChild(document.createTextNode(', newer than this preview'));
+      d.appendChild(w);measure();
+    }).catch(function(){});
 }
 function stamp(f){
   var p=document.querySelector('.fa-build-stamp');if(!p)return;
@@ -802,7 +823,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-158mycfjxen","here":"/en/cat-harness/methodologies/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#choosing-one","label":"Choosing one"},{"href":"#where-each-one-came-from","label":"Where each one came from","children":[{"href":"#adequacy-for-purpose-modelling","label":"Adequacy-for-purpose modelling — a model is judged against what it is FOR, not against reality","depth":1},{"href":"#agentic-pre-merge-review","label":"Tool-Integrated Agentic Pre-Merge Review — Multi-Agent Verification Loops, Supervised Consistency, and Gate Boundaries","depth":1},{"href":"#agentic-se-literature-synthesis","label":"Agentic Software Engineering Literature Synthesis — Cross-Paper Synthesis and Bidirectional Adversarial Analysis","depth":1},{"href":"#consensus-grounded-subject-evaluation","label":"Consensus-grounded subject evaluation — independent indexers as the answer key, and a panel instead of one score","depth":1},{"href":"#correspondence-analysis","label":"Correspondence analysis for retrieval — decompose the departure from independence, not the counts","depth":1},{"href":"#diig","label":"DIIG — Digital Implementation Investment Guide","depth":1},{"href":"#dmn","label":"DMN — Decision Model and Notation","depth":1},{"href":"#doc-researcher","label":"Doc-Researcher — parse for multiple granularities, then research iteratively against a sufficiency threshold","depth":1},{"href":"#hybrid-llm-deterministic","label":"Hybrid LLM/deterministic — the model proposes a RULE, machinery validates and runs it","depth":1},{"href":"#json-ld-serialisation","label":"JSON-LD 1.1 — the knowledge graph serialised as Linked Data in plain JSON","depth":1},{"href":"#kepner-tregoe","label":"Kepner-Tregoe Decision Analysis","depth":1},{"href":"#lsi","label":"Latent Semantic Indexing — retrieve and relate by co-occurrence structure, not by shared words","depth":1},{"href":"#madr","label":"MADR — Markdown Architectural Decision Records","depth":1},{"href":"#mcdm-aggregation","label":"Aggregation-type MCDM — an alternatives-criteria matrix collapsed to one score per alternative","depth":1},{"href":"#odrl-policies","label":"ODRL 2.2 — what a party may do, as permission and prohibition rules over actions","depth":1},{"href":"#probabilistic-decision-analysis","label":"Probabilistic decision-making algorithms — and what their regret bounds are claims ABOUT","depth":1},{"href":"#prov-o-provenance","label":"PROV-O — the record of who did what, in which role, under which plan","depth":1},{"href":"#raci","label":"RACI — who is involved in an activity, and in which of four ways","depth":1},{"href":"#rasci","label":"RASCI — RACI plus Supportive, for when doing the work and owning it come apart","depth":1},{"href":"#requirements-filing-and-organisation","label":"Requirements filing and organisation — literature search, candidate methodologies, and filing process","depth":1},{"href":"#requirements-standards-assessment","label":"Assessment of open standards for requirements and methodologies fitting the bootstrap Requirement","depth":1},{"href":"#sdlc-agentic-landscape","label":"SDLC agentic landscape — mapping LLM multi-agent systems to the software development lifecycle","depth":1},{"href":"#skill-pipeline-subject-indexing","label":"Skill-pipeline subject indexing — one policy-grounded stage per cognitive step, each output inspectable","depth":1},{"href":"#spdx-3","label":"SPDX 3 — a bill of materials as a graph of elements, for what crosses a trust boundary","depth":1},{"href":"#specification-compiled-agents","label":"Specification-compiled agents — the control flow comes from the diagram, not from the model’s plan","depth":1},{"href":"#swot","label":"SWOT — situation analysis over internal and external factors","depth":1},{"href":"#terminology-coding","label":"WHO SMART Guidelines Terminology Classification and Reuse-First Coding","depth":1},{"href":"#verifiable-ai-guideline-evaluation","label":"Verifiable AI guideline evaluation — multi-measurement debiased inference, peer councils, and hybrid no-gold-standard bounds for clinical guidelines","depth":1},{"href":"#wiregen","label":"WireGen: wireframing from a written design intent","depth":1},{"href":"#zero-trust-architecture","label":"Zero trust architecture (NIST SP 800-207) — trust is never granted implicitly, it is evaluated per request at a decision point","depth":1}],"fold":"30 sub-sections"},{"href":"#files-in-the-graph-that-are-not-methodology-nodes","label":"Files in the graph that are not methodology nodes"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>

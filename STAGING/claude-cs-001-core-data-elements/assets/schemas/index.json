@@ -786,6 +786,14 @@
       "isTest": true
     },
     {
+      "module": "cat-harness-tools/schemas/harness-root.test.ts",
+      "instance": "cat-harness-tools",
+      "name": "harness-root.test",
+      "graphNode": "undeclared",
+      "summary": "`harnessRoot()` takes the cat-harness beside this layer before the one a",
+      "isTest": true
+    },
+    {
       "module": "cat-harness-tools/schemas/harness-root.ts",
       "instance": "cat-harness-tools",
       "name": "harness-root",
@@ -15517,6 +15525,13 @@
           "type": "z.array(z.string().min(1)).optional()",
           "optional": true,
           "array": true
+        },
+        {
+          "name": "prov:wasInformedBy",
+          "type": "z.union([z.string().min(1), z.array(z.string().min(1)).min(1)]).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "W3C PROV-O `prov:wasInformedBy`: the activity (or activities) this one"
         },
         {
           "name": "cat-harness:underPolicy",

@@ -2,7 +2,7 @@ import { chapter, section } from "../../schema/builders";
 
 export default chapter({
   number: 11,
-  title: "Chapter 11. Data Standards and Minimum Dataset",
+  title: "Chapter 11. Data Standards and Core Data Elements",
   label: "chap:ch11-data-standards-and-minimum-dataset",
   meta: {"part": "Part 2. Technical Design"},
   sections: [

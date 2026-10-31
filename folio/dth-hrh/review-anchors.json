@@ -1028,8 +1028,8 @@
    "sections": [
     "sec:about-discussion"
    ],
-   "hash": "cbbf9ceb6788",
-   "excerpt": "The draft proposes updating the WHO 2015 minimum data set within this handbook, as the core data elements for a health workforce registry (CDE-HRH). The TWG sho",
+   "hash": "89e2afd0afd8",
+   "excerpt": "The draft proposes core data elements for a health workforce registry (CDE-HRH) within this handbook, taking inspiration from the WHO 2015 minimum data set. The",
    "method": "folio-snapshot"
   },
   {
@@ -2723,8 +2723,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "07fc0e6b3583",
-   "excerpt": "- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, profe",
+   "hash": "f38a643fcb49",
+   "excerpt": "- The WHO 2015 minimum data set as a source of inspiration: identification number, name, birth history, citizenship and language, address, contact information, ",
    "method": "folio-snapshot"
   },
   {
@@ -4079,8 +4079,8 @@
    "sections": [
     "sec:annex-1"
    ],
-   "hash": "5a8c5b81e30d",
-   "excerpt": "Proposed core and optional data elements with definitions: the core data elements for a health workforce registry (CDE-HRH). CDE-HRH builds on the WHO 2015 mini",
+   "hash": "b0bfce747a5d",
+   "excerpt": "Proposed core and optional data elements with definitions: the core data elements for a health workforce registry (CDE-HRH). CDE-HRH takes inspiration from the ",
    "method": "folio-snapshot"
   },
   {
@@ -4839,8 +4839,8 @@
    "sections": [
     "sec:references-lead"
    ],
-   "hash": "4b85faaad1af",
-   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. - WHO. Global strategy on human resources for health",
+   "hash": "21ee88f7d25a",
+   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. <https://www.who.int/publications/i/item/97892415492",
    "method": "folio-snapshot"
   }
  ]

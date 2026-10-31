@@ -14,7 +14,7 @@
    "pages": 0
   }
  },
- "note": "Generated from the working document by scripts/review/review-anchors.ts (no frozen review version yet).",
+ "note": "Generated from the working document by folio-assistant-core/scripts/review-anchors-from-folio.ts (no frozen review version yet).",
  "chapters": [
   {
    "dir": "about-this-draft",

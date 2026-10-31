@@ -21,7 +21,17 @@
       "method": "outline-seed"
     },
     "requirementId": "FR-AN-03",
-    "priority": "to-be-prioritized"
+    "priority": "to-be-prioritized",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-c794022993b0421f995b6f273a3ba252.jsonld",
+          "name": "Registry Maintenance and Data Quality"
+        }
+      ]
+    }
   },
   "provenance": "authored"
 }

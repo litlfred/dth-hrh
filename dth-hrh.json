@@ -132,7 +132,8 @@
   ],
   "description": "WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.",
   "needs": [
-    "smart-base"
+    "smart-base",
+    "dpi-h-ra"
   ],
-  "_needs_comment": "An L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14: 'use the litlfred/smart-base harness to initiate dth-hrh')."
+  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14)."
 }

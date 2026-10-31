@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public comments — DTH-HRH working document (internal working-group review)</title>
+<style>
+.cs-pcs > summary { cursor:pointer; }
+.cs-pc-list { margin:.3rem 0 .6rem; padding-left:1.1rem; }
+.cs-pc { margin:.5rem 0; padding-bottom:.4rem; border-bottom:1px solid #8883; }
+.cs-pc p { margin:.25rem 0; }
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --chip:#eef2f7;
+    --open:#9a5b00; --editing:#0b5cad; --decided:#2e6b2e; --closed:#5b5b5b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --chip:#23272e;
+    --open:#f0b35a; --editing:#7db4ff; --decided:#8fd18f; --closed:#a8a8a4; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  /* Column and gutters belong to main: the harness rail owns body padding-left. */
+  main { max-width:90rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; }
+  a { color:var(--link); } a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.75rem; margin:1rem 0; }
+  .tile { border:1px solid var(--line); border-radius:.5rem; padding:.5rem .9rem; min-width:7rem; font:inherit; color:var(--fg); background:transparent; text-align:left; cursor:pointer; }
+  .tile b { display:block; font-size:1.6rem; }
+  .tile:hover { border-color:var(--link); }
+  main input[type=checkbox] { min-height:0; width:1.1rem; height:1.1rem; }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+  #open-issue { font:inherit; padding:.45rem .9rem; border:1px solid var(--link); border-radius:.4rem; background:transparent; color:var(--link); cursor:pointer; }
+  #open-issue:disabled { opacity:.5; cursor:default; }
+  .tile[aria-pressed="true"] { border-color:var(--link); box-shadow:inset 0 0 0 1px var(--link); background:var(--chip); }
+  form { display:flex; flex-wrap:wrap; gap:.75rem; align-items:end; margin:1rem 0; }
+  /* Form, table and details rules are scoped to main: the harness rail's header
+     is a label too, and a bare label rule stacked it and hid its avatar. */
+  main label { display:flex; flex-direction:column; font-size:.85rem; color:var(--muted); }
+  main select, main input { font:inherit; padding:.35rem .5rem; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:.35rem; min-height:2.4rem; }
+  .table-wrap { overflow-x:auto; }
+  main table { border-collapse:collapse; width:100%; font-size:.92rem; }
+  main th, main td { border-bottom:1px solid var(--line); padding:.45rem .5rem; text-align:left; vertical-align:top; }
+  main th { position:sticky; top:0; background:var(--bg); }
+  .phase { font-weight:600; white-space:nowrap; }
+  .phase-open { color:var(--open); } .phase-editing { color:var(--editing); } .phase-decided { color:var(--decided); } .phase-closed { color:var(--closed); }
+  .chip { display:inline-block; background:var(--chip); border-radius:.3rem; padding:0 .35rem; margin:0 .2rem .2rem 0; font-size:.82rem; }
+  main details > summary { cursor:pointer; }
+  .muted { color:var(--muted); }
+  .links a { margin-right:.5rem; white-space:nowrap; }
+
+.block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
+.block-actions:hover, .block-actions:focus-within { opacity:1; }
+.block-actions a { text-decoration:none; margin-left:.5rem; }
+.block-actions .ba-existing { margin-left:.5rem; }
+#comments .block-actions { float:none; display:block; margin:.2rem 0 0; opacity:.8; } #comments .block-actions a { margin:0 .5rem 0 0; }</style>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><script src="../../../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../../../assets/css/navbar-row.css"><script src="../../../../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../../.."></head>
+<body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
+function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
+function chip(text){return el('span',{style:"font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:3px"},text);}
+function sep(){return document.createTextNode(' \u00b7 ');}
+function root(){var m=location.pathname.match(/^(.*\/STAGING\/[^/]+\/)/);return m?m[1]:null;}
+function measure(){var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');}
+function fill(d,f,r){
+  while(d.firstChild)d.removeChild(d.firstChild);
+  d.appendChild(document.createTextNode('\u2014 '));
+  var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
+  d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
+  d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
+  if(f.issue){d.appendChild(sep());d.appendChild(link(f.issueUrl,'issue #'+f.issue));}
+  d.appendChild(sep());
+  var rel=location.pathname.slice(r.length);
+  if(rel===''||rel.charAt(rel.length-1)==='/')rel+='index.html';
+  if(!f.mainPagesKnown){
+    d.appendChild(link(f.mainSite+'/','compare with '+(f.beforeRef||'main')+' \u2197'));
+  }else if(f.newPages.indexOf(rel)>=0){
+    d.appendChild(link(f.mainSite+'/',(f.beforeRef||'main')+' \u2197'));
+    d.appendChild(document.createTextNode(' '));
+    d.appendChild(el('span',{style:'opacity:.85'},'(new page)'));
+  }else{
+    d.appendChild(link(f.mainSite+'/'+rel,'compare with '+(f.beforeRef||'main')+' \u2197'));
+  }
+  d.appendChild(sep());d.appendChild(link(f.runUrl,'build log'));
+  if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
+  stamp(f);
+  measure();
+}
+function stamp(f){
+  var p=document.querySelector('.fa-build-stamp');if(!p)return;
+  while(p.firstChild)p.removeChild(p.firstChild);
+  p.appendChild(document.createTextNode('deployed '));
+  var a=link(f.runUrl,'');a.appendChild(el('code',null,f.sha));p.appendChild(a);
+  p.appendChild(document.createTextNode(' · '+f.built));
+}
+function go(){
+  measure();
+  var d=document.querySelector('[data-fa-staging-detail]');if(!d)return;
+  var r=root();
+  if(!r){d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+  fetch(r+'staging.json',{cache:'no-store'}).then(function(x){if(!x.ok)throw 0;return x.json();})
+    .then(function(f){fill(d,f,r);})
+    .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
+}
+measure();
+if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
+window.addEventListener('resize',measure);window.addEventListener('load',measure);
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../../../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-158mycfjxen","here":"/en/folio-assistant-core/public-comments/folio/dth-hrh/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<main>
+<p><a href="../../../../../en/dth-hrh/index.html">← DTH-HRH working document (internal working-group review)</a></p>
+<h1>Public comments</h1>
+<p class="muted">Generated 2026-10-31 08:13 UTC from the comment store. Open = not yet decided. Editing = decided, and the change is being made on a feature branch. Closed = incorporated, duplicate or withdrawn.</p>
+<div class="tiles" role="group" aria-label="Filter by count">
+<button type="button" class="tile" data-tile="all" aria-pressed="false" title="Show comments"><b>3</b>comments</button>
+<button type="button" class="tile" data-tile="open" aria-pressed="false" title="Show open"><b>3</b>open</button>
+<button type="button" class="tile" data-tile="unplaced" aria-pressed="false" title="Show unplaced"><b>0</b>unplaced</button>
+<button type="button" class="tile" data-tile="editing" aria-pressed="false" title="Show being edited"><b>0</b>being edited</button>
+<button type="button" class="tile" data-tile="decided" aria-pressed="false" title="Show decided"><b>0</b>decided</button>
+<button type="button" class="tile" data-tile="incorporated" aria-pressed="false" title="Show incorporated"><b>0</b>incorporated</button>
+<button type="button" class="tile" data-tile="noissue" aria-pressed="false" title="Show open, in no change-set"><b>0</b>open, in no change-set</button>
+</div>
+<form id="filters" aria-controls="comments">
+<label>Status<select id="f-phase"><option value="">all</option><option value="open" selected>open</option><option value="editing">being edited</option><option value="decided">decided</option><option value="closed">closed</option></select></label>
+<label>Type<select id="f-type"><option value="">all</option><option>technical</option></select></label>
+<label>Committee<select id="f-committee"><option value="">all</option><option>not routed</option></select></label>
+<label>Section<select id="f-section"><option value="">all</option></select></label>
+<label>Search<input id="f-text" type="search" placeholder="words, or PC-0042"></label>
+<p id="f-count" class="muted" aria-live="polite"></p>
+</form>
+<details id="change-sets"><summary><b>Change-sets (3)</b>: 3 proposed, 0 discussing, 0 editing, 0 incorporated, 0 closed. A change-set gets its GitHub issue the first time somebody discusses it, recommends on it or decides it. <span id="cs-count" class="muted" aria-live="polite"></span></summary>
+<div class="table-wrap"><table><thead><tr><th>Id</th><th>Change</th><th>Committee</th><th>Status</th><th>Comments</th><th>Issue</th><th>PR</th><th></th></tr></thead><tbody>
+<tr id="CS-001" data-cs-status="proposed" data-committee="not routed"><td>CS-001</td><td>Adopt a definition of health workforce registry<details><summary class="muted">requirements</summary><p>- Choose one of the 12 candidate definitions in Annex 9, or an edited or new one.<br>- Stay consistent with the final DPI-H reference architecture definition (candidates 1-2).<br>- Decide the TWG point &#39;one registry or one set of information?&#39; with it (rem:discussion-one-registry-or-one-set-of-information).<br>- Write the adopted text into glossary/dth-hrh.glossary.json (status authored) and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0001"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-001%3A+Adopt+a+definition+of+health+workforce+registry&amp;cs=CS-001">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0001">show its comments</a></td></tr>
+<tr id="CS-002" data-cs-status="proposed" data-committee="not routed"><td>CS-002</td><td>Adopt a definition of human resources for health information system<details><summary class="muted">requirements</summary><p>- Choose one of the 12 candidate definitions, or an edited or new one.<br>- Make the registry/HRIS boundary explicit (TWG point &#39;Boundary with HRIS&#39;).<br>- Write the adopted text into glossary/dth-hrh.glossary.json and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0002"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-002%3A+Adopt+a+definition+of+human+resources+for+health+information+system&amp;cs=CS-002">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0002">show its comments</a></td></tr>
+<tr id="CS-003" data-cs-status="proposed" data-committee="not routed"><td>CS-003</td><td>Adopt a definition of professional council and verify the country examples<details><summary class="muted">requirements</summary><p>- Choose one of the 3 candidate definitions, or an edited or new one.<br>- Verify each AI-generated country row against its cited legislation; correct or drop.<br>- Write the adopted text into glossary/dth-hrh.glossary.json and regenerate Annex 9.</p></details><details class="cs-pcs" data-refs="PC-0003"><summary class="muted">its 1 comment, in full</summary></details></td><td class="cs-committee"><span class="muted">1 not routed</span></td><td>proposed</td><td class="cs-n">1</td><td><a class="discuss" href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-003%3A+Adopt+a+definition+of+professional+council+and+verify+the+country+examples&amp;cs=CS-003">Discuss</a></td><td></td><td><a href="#" class="show-cs" data-refs="PC-0003">show its comments</a></td></tr>
+</tbody></table></div></details>
+<p class="picker"><button type="button" id="open-issue" disabled>New change-set from the selected comments</button> <span id="pick-count" class="muted">Tick comments to group them.</span></p>
+<div class="table-wrap">
+<table id="comments">
+<thead><tr><th><span class="sr">Select</span></th><th>Ref</th><th>Status</th><th>Type</th><th>Committee</th><th>Where</th><th>Comment</th><th>Recommendations</th><th>Decision</th><th>Change-set</th><th>Links</th></tr></thead>
+<tbody>
+<tr id="PC-0001" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0001 we need agreement on the health workforce registry definition soon, to ensure consistency with the who/itu reference architecture dth. please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. the definition used in the dth should be consistent with the final definition in the reference architecture guide.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0001" aria-label="Select PC-0001"></td>
+<td><a href="#PC-0001">PC-0001</a><span class="block-actions" data-block="PC-0001" data-src="review/wg-comment/comments/PC-0001.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…</summary><p>We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Architecture DTH. Please review the definitions provided and comment on the most appropriate one, or suggest an edited or new version. The definition used in the DTH should be consistent with the final definition in the Reference Architecture guide.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of health workforce registry (proposed)"><a href="#CS-001">CS-001</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-001%3A+Adopt+a+definition+of+health+workforce+registry&amp;cs=CS-001">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-health-workforce-registry">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0001%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0001.json">record</a></td>
+</tr>
+<tr id="PC-0002" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0002 please review the definitions of human resources for health information system (hris, hrhis, hrh-is) and comment on the most appropriate one, or suggest an edited or new version. many countries run the registry inside an hris, so the boundary between the two needs to be clear.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0002" aria-label="Select PC-0002"></td>
+<td><a href="#PC-0002">PC-0002</a><span class="block-actions" data-block="PC-0002" data-src="review/wg-comment/comments/PC-0002.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…</summary><p>Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the most appropriate one, or suggest an edited or new version. Many countries run the registry inside an HRIS, so the boundary between the two needs to be clear.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of human resources for health information system (proposed)"><a href="#CS-002">CS-002</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-002%3A+Adopt+a+definition+of+human+resources+for+health+information+system&amp;cs=CS-002">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-human-resources-for-health-information-system">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0002%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0002.json">record</a></td>
+</tr>
+<tr id="PC-0003" data-phase="open" data-status="triaged" data-placed="1" data-incs="1" data-summary="Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …" data-type="technical" data-committee="not routed" data-section="" data-text="pc-0003 please review the definitions of professional council (professional regulatory or licensing authority or body, medical or nursing council or board) and the country examples, and comment on the most appropriate definition, or suggest an edited or new version. some definitions and sources are ai generated and may need correction.  priority terms for twg agreement">
+<td><input type="checkbox" class="pick" value="PC-0003" aria-label="Select PC-0003"></td>
+<td><a href="#PC-0003">PC-0003</a><span class="block-actions" data-block="PC-0003" data-src="review/wg-comment/comments/PC-0003.json" data-sec="Priority terms for TWG agreement"><a class="ba-edit" data-fa-link="edit" tabindex="0" title="Edit this block's source on GitHub">✎ edit</a><a class="ba-feedback" data-fa-link="feedback" tabindex="0" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></td>
+<td class="phase phase-open">triaged</td>
+<td>technical</td>
+<td><span class="muted">not routed</span></td>
+<td> Priority terms for TWG agreement<br><span class="muted">(no citation)</span></td>
+<td><details><summary>Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …</summary><p>Please review the definitions of professional council (professional regulatory or licensing authority or body, medical or nursing council or board) and the country examples, and comment on the most appropriate definition, or suggest an edited or new version. Some definitions and sources are AI generated and may need correction.</p><p class="muted">World Health Organization</p></details></td>
+<td><span class="muted">none</span></td>
+<td><span class="muted">not yet</span></td>
+<td><span class="chip" title="Adopt a definition of professional council and verify the country examples (proposed)"><a href="#CS-003">CS-003</a> <a href="https://github.com/litlfred/dth-hrh/issues/new?template=change-set.yml&amp;title=CS-003%3A+Adopt+a+definition+of+professional+council+and+verify+the+country+examples&amp;cs=CS-003">discuss</a></span></td>
+<td class="links"><a href="../../../../../en/dth-hrh/index.html#prose%3Agloss-professional-council">in the document</a> <a href="https://github.com/litlfred/dth-hrh/search?type=issues&amp;q=%22PC-0003%22">all mentions on GitHub</a> <a href="https://github.com/litlfred/dth-hrh/blob/main/review/wg-comment/comments/PC-0003.json">record</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+<script type="application/json" id="fa-edit-cfg">{"repo":"litlfred/dth-hrh","branch":"main","content":"dth-hrh","siteUrl":"https://litlfred.github.io/dth-hrh","template":"block-feedback.yml","templateFields":["content","section","block","url","source","type","comment","proposed"],"page":"en/folio-assistant-core/public-comments/folio/dth-hrh/index.html"}</script>
+<script>
+(() => {
+  if (window.faEditLinks) return;
+  function faBlockUrls(c, b) {
+  var enc = encodeURIComponent;
+  var path = b.source.split("/").map(enc).join("/");
+  var branch = c.branch || "main";
+  var repo = b.repo || c.repo;
+  var src = "https://github.com/" + repo + "/blob/" + branch + "/" + path + (b.line ? "#L" + b.line : "");
+  var url = c.siteUrl && b.page ? c.siteUrl.replace(/\/$/, "") + "/" + b.page + "#" + enc(b.label) : (b.pageUrl || "");
+  var values = { block: b.label, section: b.section || "", source: b.source, page: b.page || "", url: url, content: c.content || "" };
+  var q = new URLSearchParams();
+  q.set("title", "Feedback" + (c.content ? " [" + c.content + "]" : "") + ": " + (b.section ? b.section + " — " : "") + b.label);
+  if (c.labels && c.labels.length) q.set("labels", c.labels.join(","));
+  if (c.template) {
+    q.set("template", c.template);
+    (c.templateFields || []).forEach(function (f) { if (values[f]) q.set(f, values[f]); });
+  } else {
+    var facts = c.content ? ["**Content:** \u0060" + c.content + "\u0060"] : [];
+    facts.push("**Block:** \u0060" + b.label + "\u0060");
+    if (b.section) facts.push("**Section:** " + b.section);
+    facts.push("**Source:** " + src);
+    if (url) facts.push("**On the site:** " + url);
+    q.set("body", facts.concat(["", "**Type:** general | technical | editorial", "", "**Comment:**", "", "", "**Proposed change:**", ""]).join("\n"));
+  }
+  return { edit: "https://github.com/" + repo + "/edit/" + branch + "/" + path, suggest: "https://github.com/" + repo + "/edit/" + branch + "/" + path, source: src, feedback: "https://github.com/" + c.repo + "/issues/new?" + q };
+}
+  function faSuggestTokens(contributed) {
+  var re = function (s) { if (s instanceof RegExp) return s; var i = s.lastIndexOf("/"); return new RegExp(s.slice(1, i), s.slice(i + 1)); };
+  var withG = function (r) { return r.flags.indexOf("g") >= 0 ? r : new RegExp(r.source, r.flags + "g"); };
+  var own = [
+    { id: "liquid", shield: /\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, find: /\{\{[\s\S]*?(?:\}\}|$)|\{%[\s\S]*?(?:%\}|$)/g,
+      valid: /^\{\{\s*[A-Za-z_][\w-]*(?:\.[\w-]+|\[\d+\])*\s*(?:\|\s*[A-Za-z_]\w*(?:\s*:\s*[^|{}]+?)?\s*)*\}\}$|^\{%\s*[A-Za-z_]\w*[^%]*%\}$/ },
+    { id: "directive", shield: /:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^}\n]*\})?/, find: /:{1,2}[A-Za-z][\w-]*\[[^\n]*?(?:\](?:\{[^\n]*?\})?|$)/gm,
+      valid: /^:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^{}\n]*\})?$/ },
+  ];
+  var theirs = (contributed || []).filter(function (t) { return t && typeof t.id === "string"; }).map(function (t) {
+    return { id: t.id, shield: t.shield && re(t.shield), find: t.find && re(t.find), valid: t.valid && re(t.valid), trim: t.trim && re(t.trim) };
+  });
+  var shieldOf = function (rules) {
+    return new RegExp(rules.filter(function (r) { return r.shield; }).map(function (r) { return "(?:" + r.shield.source + ")"; }).join("|"), "g");
+  };
+  var both = own.concat(theirs), ownShield = shieldOf(own), allShield = shieldOf(both);
+  return {
+    wrap: function (md, ownOnly) { return md.replace(ownOnly ? ownShield : allShield, function (m) { return "\u27e6" + m + "\u27e7"; }); },
+    errors: function (md, ownOnly) {
+      var bad = [];
+      (ownOnly ? own : both).forEach(function (r) {
+        if (!r.find || !r.valid) return;
+        for (const m of md.matchAll(withG(r.find))) if (!r.valid.test(r.trim ? m[0].replace(r.trim, "") : m[0])) bad.push(m[0]);
+      });
+      return bad;
+    },
+  };
+}
+  let cfg = null;
+  const config = () => {
+    if (cfg) return cfg;
+    const el = document.getElementById("fa-edit-cfg");
+    if (el) cfg = JSON.parse(el.textContent);
+    else {
+      const meta = (n) => { const m = document.querySelector('meta[name="' + n + '"]'); return m ? m.content : undefined; };
+      cfg = { repo: meta("fa-repo"), branch: meta("fa-branch") || "main" };
+    }
+    return cfg;
+  };
+  // A link that names a GitHub file but carries no facts (a generator wrote
+  // its href from data, e.g. sourceLinks) gives them up from its own URL.
+  const GH = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/(?:blob|edit)\/([^/]+)\/([^#?]+)(?:#L(\d+))?$/;
+  const adopt = (a) => {
+    const m = GH.exec(a.getAttribute("href") || "");
+    if (!m) return false;
+    a.dataset.repo = m[1]; a.dataset.branch = m[2];
+    a.dataset.src = m[3].split("/").map(decodeURIComponent).join("/");
+    if (m[4]) a.dataset.line = m[4];
+    return true;
+  };
+  const ready = (host) => {
+    if (host.dataset.ready) return;
+    if (!host.dataset.src && !(host.matches("a[data-fa-link]") && adopt(host))) return;
+    const c0 = config();
+    const c = host.dataset.branch ? Object.assign({}, c0, { branch: host.dataset.branch }) : c0;
+    if (!c.repo && !host.dataset.repo) return;
+    host.dataset.ready = "1";
+    const label = host.dataset.block || host.dataset.src;
+    const u = faBlockUrls(c, { label: label, source: host.dataset.src, section: host.dataset.sec,
+      line: host.dataset.line ? Number(host.dataset.line) : undefined, repo: host.dataset.repo, page: host.dataset.page || c.page,
+      pageUrl: location.href.split("#")[0] + "#" + encodeURIComponent(label) });
+    const links = host.matches("a[data-fa-link]") ? [host] : host.querySelectorAll("a[data-fa-link]");
+    // Only this host's own links: a nested host (a Lean link inside a block's row) fills itself.
+    for (const a of links) if ((a === host || a.closest("[data-src]") === host) && u[a.dataset.faLink]) a.href = u[a.dataset.faLink];
+  };
+  const fill = (root) => { addSuggest(root); for (const h of (root || document).querySelectorAll("[data-src], a[data-fa-link]")) ready(h); };
+  // A page that learns its repository later (the folio site reads it from its outline) says so here.
+  const configure = (c) => { cfg = c; };
+  // ── ✍ suggest: a block's Markdown in a WYSIWYG editor, the change as a prefilled issue ──
+  //
+  // Beside every ✎ edit link whose source is Markdown, on any page of any
+  // harness. The editor (Milkdown Crepe, MIT) is imported only on first use.
+  // The text is read through the block's KG node (<block>.jsonld, its text)
+  // from the repository itself, and the change leaves as a GitHub issue the
+  // reader submits: no OAuth, no token, no server. Variables, directives and
+  // any syntax a content profile declares are the reader's to change, add or
+  // delete; what is checked is that each is well-formed (faSuggestTokens), and
+  // the panel under the editor shows each variable's current value from the
+  // site's values.jsonld. Nothing read is written as HTML.
+  const unwrap = (md) => md.replace(/\u27e6([^\u27e6\u27e7]*)\u27e7/g, (m, inner) => inner.replace(/\\([!-\/:-@\[-\u0060{-~])/g, "$1"));
+  // Variable names and, when the site published them, their current values.
+  const variablesIn = (md) => Array.from(md.matchAll(/\{\{\s*([A-Za-z_][\w.\-\[\]]*)/g), (m) => m[1]);
+  const lineDiff = (a, b) => {
+    const x = a.split("\n"), y = b.split("\n"), n = x.length, m = y.length;
+    const L = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = x[i] === y[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    const out = [];
+    let i = 0, j = 0;
+    while (i < n || j < m) {
+      if (i < n && j < m && x[i] === y[j]) { out.push(" " + x[i]); i++; j++; }
+      else if (j < m && (i === n || L[i][j + 1] > L[i + 1][j])) out.push("+" + y[j++]);
+      else out.push("-" + x[i++]);
+    }
+    // Two lines of context around each change.
+    const keep = out.map((l, k) => out.slice(Math.max(0, k - 2), k + 3).some((c) => c[0] !== " "));
+    const hunks = [];
+    out.forEach((l, k) => { if (keep[k]) hunks.push(l); else if (hunks.length && hunks[hunks.length - 1] !== "@@") hunks.push("@@"); });
+    if (hunks[hunks.length - 1] === "@@") hunks.pop();
+    return hunks.join("\n");
+  };
+  const raw = (repo, branch, path) => "https://raw.githubusercontent.com/" + repo + "/" + branch + "/" + path.split("/").map(encodeURIComponent).join("/");
+  const sourceOf = (a) => {
+    // From the link's parent: ready() gives a link with no facts of its own
+    // (the ✍ link beside ✎ edit) a data-src adopted from its href, and the
+    // block's label is the host's, not the link's.
+    const h = a.parentElement && a.parentElement.closest("[data-src]");
+    if (h && h.dataset.src) return { src: h.dataset.src, label: h.dataset.block || h.dataset.src, repo: h.dataset.repo, branch: h.dataset.branch, mode: h.dataset.suggestMode, text: h.dataset.suggestText };
+    if (a.dataset.src || adopt(a)) return { src: a.dataset.src, label: a.dataset.block || a.dataset.src, repo: a.dataset.repo, branch: a.dataset.branch, mode: a.dataset.suggestMode, text: a.dataset.suggestText };
+    return null;
+  };
+  const el = (tag, props, kids) => { const e = Object.assign(document.createElement(tag), props || {}); for (const k of kids || []) e.append(k); return e; };
+  // A block's YAML front matter is not the reader's to edit: Crepe would turn
+  // it into a thematic break and a setext heading. It is kept aside, unchanged.
+  const FRONT_MATTER = /^---\n[\s\S]*?\n---\n/;
+  // The site root, from any same-origin URL under /assets/ the page already
+  // loads (a page is served at several depths, and the runtime is often
+  // inlined, so it cannot use its own script's URL); the editor bundle is under it.
+  // The page's own site root: the longest root of a same-origin /assets/ URL
+  // the page loads that also contains this page (a page can load another
+  // site's chrome from the same origin, /folio-assistant/assets/…).
+  const vendorBase = () => {
+    let best = null;
+    for (const e of document.querySelectorAll("script[src], link[href]")) {
+      let u;
+      try { u = new URL(e.getAttribute("src") || e.getAttribute("href"), location.href); } catch { continue; }
+      const i = u.pathname.indexOf("/assets/");
+      if (u.origin !== location.origin || i < 0) continue;
+      const root = u.pathname.slice(0, i + 1);
+      if (location.pathname.indexOf(root) === 0 && (!best || root.length > best.length)) best = root;
+    }
+    return best === null ? null : location.origin + best + "assets/vendor/crepe/";
+  };
+  // The site's editor bundle (suggest-editor.ts), fetched once: on the first
+  // hover or focus of a ✍ suggest link, so it is usually ready by the click.
+  // A failed fetch is forgotten, so the next open tries again.
+  let bundle = null;
+  const editorBundle = () => {
+    const sc = config().suggest || {};
+    const vb = vendorBase();
+    const moduleUrl = sc.module || (vb && vb + "crepe.js");
+    if (!moduleUrl) return Promise.reject(new Error("this site has no editor bundle (assets/vendor/crepe/)"));
+    const cssUrl = sc.css || (vb && !sc.module ? vb + "crepe.css" : null);
+    if (cssUrl && !document.querySelector('link[href="' + cssUrl + '"]')) document.head.append(el("link", { rel: "stylesheet", href: cssUrl }));
+    if (!bundle) bundle = import(moduleUrl).catch((e) => { bundle = null; throw e; });
+    return bundle;
+  };
+  // How long the visual editor may take to open before the dialog falls back
+  // to the raw Markdown: a slow link or a stalled import must not leave the
+  // reader looking at an empty editor (smart-ra, 2026-10-26).
+  const VISUAL_WAIT_MS = 20000;
+  // The KG labels and bibliography keys a profile's checker warns against, read once from the page's graph.
+  let kgRefs;
+  const kgReferences = async (c) => {
+    if (kgRefs !== undefined) return kgRefs;
+    kgRefs = null;
+    const g = c.graph ? await fetch(c.graph).then((r) => (r.ok ? r.json() : null)).catch(() => null) : null;
+    const nodes = g && (g["@graph"] || g);
+    if (!Array.isArray(nodes)) return kgRefs;
+    const labels = [], keys = [];
+    for (const n of nodes) {
+      if (n && typeof n.label === "string" && n.label) labels.push(n.label);
+      const m = n && typeof n["@id"] === "string" ? /(?:^|\/)references\/([^/#?]+)$/.exec(n["@id"]) : null;
+      if (m) keys.push(decodeURIComponent(m[1]));
+    }
+    // A graph with no reference nodes says nothing about citations: that check is skipped, not failed.
+    kgRefs = keys.length ? { labels: labels, citeKeys: keys } : { labels: labels };
+    return kgRefs;
+  };
+  // A profile (an editor-checker node a content layer declares, bundled by the
+  // site) for the block's kind: its checker, its tokens, and its Crepe settings.
+  // Or a mode: a profile whose module opens its own editor (a Questionnaire
+  // form builder, in the page or in another window) over a file it declares by
+  // extension. A host names one with data-suggest-mode.
+  const profilesOf = (c) => ((c.suggest && c.suggest.profiles) || []).filter((p) => p && p.module);
+  const fileOk = (p, src) => (p.extensions && p.extensions.length ? p.extensions.some((x) => src.endsWith(x)) : /\.md$/.test(src));
+  // A host that names its mode is served by that profile whatever its file is
+  // (a Questionnaire written in FSH); otherwise by file type.
+  const suggestable = (c, s) => (s.mode ? profilesOf(c).some((p) => p.id === s.mode) : /\.md$/.test(s.src) || profilesOf(c).some((p) => fileOk(p, s.src)));
+  const profileFor = (c, kind, s) => s.mode
+    ? profilesOf(c).find((p) => p.id === s.mode)
+    : profilesOf(c).find((p) => fileOk(p, s.src) && (!p.kinds || p.kinds.indexOf(kind) >= 0));
+  // The issue: prefilled by URL, or, past GitHub's URL limit, carried on the clipboard.
+  const openIssue = async (repo, title, body, template, status) => {
+    const q = { title: title, body: body };
+    if (template) q.template = template;
+    let url = "https://github.com/" + repo + "/issues/new?" + new URLSearchParams(q);
+    if (url.length > 7000) {
+      try { await navigator.clipboard.writeText(body); } catch { status.textContent = "Too long for a link, and the clipboard is blocked."; return false; }
+      url = "https://github.com/" + repo + "/issues/new?" + new URLSearchParams({ title: title, body: "The suggested change is on the clipboard: paste it here." });
+    }
+    window.open(url, "_blank", "noopener");
+    return true;
+  };
+  const findingItem = (f) => el("li", { className: f.severity === "error" ? "bad" : "warn", textContent: (f.severity === "error" ? "Error" : "Warning") + (f.line ? " (line " + f.line + ")" : "") + ": " + f.message });
+  // \u2500\u2500 The dialog: wireframe candidate A (cat-harness docs/wireframes/suggest-editor,
+  // owner's choice 2026-10-14): one screen, a toolbar always shown, changes
+  // marked as you type (new text green and underlined, removed text red and
+  // struck through), a Why field that becomes the issue's reason, and a size
+  // the reader chooses. Underline is not offered: Markdown has none, and
+  // underlined means added.
+  const SUGGEST_CSS = [
+    "dialog.fa-suggest{width:min(60rem,95vw);height:min(44rem,90vh);max-width:100vw;max-height:100vh;padding:0;border:2px solid #1b1b1b;display:flex;flex-direction:column;overflow:hidden}",
+    "dialog.fa-suggest:not([open]){display:none}",
+    "dialog.fa-suggest.fa-sg-large{width:min(80rem,98vw);height:94vh}",
+    "dialog.fa-suggest.fa-sg-full{width:100vw;height:100vh;margin:0}",
+    ".fa-sg-hd{display:flex;align-items:center;gap:.5rem;padding:.5rem .75rem;border-bottom:1px solid #d6dde2}",
+    ".fa-sg-hd h2{font-size:1.05rem;margin:0;flex:1;overflow-wrap:anywhere}",
+    "dialog.fa-suggest button{min-height:44px;min-width:44px;padding:0 .7rem;border:1px solid #1b1b1b;background:#fff;color:#1b1b1b;font:inherit;cursor:pointer;border-radius:4px}",
+    "dialog.fa-suggest button[aria-pressed=true]{background:#e8e8e8;font-weight:700}",
+    "dialog.fa-suggest button:focus-visible{outline:3px solid #0b57d0;outline-offset:2px}",
+    ".fa-sg-tb{display:flex;flex-wrap:wrap;gap:.25rem;align-items:center;padding:.4rem .75rem;border-bottom:1px solid #d6dde2}",
+    ".fa-sg-tb .fa-sg-sep{width:1px;align-self:stretch;background:#d6dde2;margin:0 .2rem}",
+    ".fa-sg-tb .fa-sg-note{font-size:.8rem;color:#5b6770;margin:0 .4rem}",
+    ".fa-sg-tb .fa-sg-mode{margin-left:auto;display:inline-flex;gap:.25rem}",
+    ".fa-suggest-status{color:#5b6770;font-size:.9rem;margin:.25rem .75rem}",
+    ".fa-suggest-status:empty{display:none}",
+    ".fa-suggest-editor{flex:1;min-height:8rem;overflow:auto;margin:0}",
+    ".fa-suggest-editor textarea{width:100%;height:100%;min-height:12rem;box-sizing:border-box;font-family:ui-monospace,monospace;font-size:.9rem;border:0;padding:.75rem;resize:none}",
+    "dialog.fa-suggest .milkdown .ProseMirror{padding:.75rem 1rem}",
+    "dialog.fa-suggest .ProseMirror a{text-decoration-style:dotted}",
+    "ins.fa-sg-ins,.fa-sg-ins-block{color:#0b6b2a;background:#e6f4ea;text-decoration:underline 3px;text-underline-offset:3px}",
+    "del.fa-sg-del{color:#b3261e;text-decoration:line-through 2px;margin-right:.2em;user-select:none}",
+    "ins.fa-sg-ins::before,del.fa-sg-del::before{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}",
+    "ins.fa-sg-ins::before{content:' [added: '}del.fa-sg-del::before{content:' [removed: '}",
+    ".fa-suggest-vars{font-size:.85rem;color:#5b6770;margin:.25rem .75rem;padding-left:1.2rem;max-height:6rem;overflow:auto}",
+    ".fa-suggest-vars .bad{color:#b3261e}.fa-suggest-vars .warn{color:#8a5a00}",
+    ".fa-sg-why{padding:.25rem .75rem}.fa-sg-why label{font-weight:700;display:block}",
+    ".fa-sg-why textarea{width:100%;box-sizing:border-box;min-height:4rem;font:inherit;padding:.4rem;border:1px solid #1b1b1b;border-radius:4px}",
+    ".fa-sg-ft{display:flex;gap:.5rem;align-items:center;padding:.5rem .75rem;border-top:1px solid #d6dde2}",
+    ".fa-sg-ft .fa-sg-help{flex:1;font-size:.85rem;color:#5b6770}",
+    ".fa-sg-ft button.fa-sg-send{font-weight:700}",
+    "@media (max-width:700px){dialog.fa-suggest,dialog.fa-suggest.fa-sg-large{width:100vw;height:100vh;margin:0;border:0}.fa-sg-size{display:none}.fa-sg-tb .fa-sg-note{flex-basis:100%;order:9}.fa-sg-tb .fa-sg-mode{margin-left:0}.fa-sg-ft{flex-wrap:wrap}.fa-sg-ft .fa-sg-help{flex-basis:100%}.fa-sg-ft button{flex:1}}",
+  ].join("");
+  // A block's text as tokens (words, spaces, and a separator between paragraphs),
+  // each with the document position it starts at: what the change marks diff.
+  const tokensOf = (node, at0) => {
+    const start = at0 + 1;
+    const out = [];
+    let word = null;
+    const flush = () => { if (word) { out.push(word); word = null; } };
+    node.descendants((child, pos) => {
+      if (child.isTextblock && out.length + (word ? 1 : 0)) { flush(); out.push({ t: "\n", pos: start + pos }); }
+      if (child.isText) {
+        const at = start + pos;
+        for (let k = 0; k < child.text.length; k++) {
+          const ch = child.text[k], sp = /\s/.test(ch);
+          if (word && word.sp === sp) word.t += ch;
+          else { flush(); word = { t: ch, pos: at + k, sp: sp }; }
+        }
+      } else if (child.isLeaf && !child.isText) { flush(); out.push({ t: "\ufffc" + child.type.name, pos: start + pos, size: child.nodeSize }); }
+      return true;
+    });
+    flush();
+    return out;
+  };
+  // Longest common subsequence of two arrays by key: the pairs that did not change.
+  const lcs = (a, b, key) => {
+    const n = a.length, m = b.length;
+    if (n * m > 4e6) return [];
+    const L = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = key(a[i]) === key(b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    const pairs = [];
+    let i = 0, j = 0;
+    while (i < n && j < m) {
+      if (key(a[i]) === key(b[j])) { pairs.push([i, j]); i++; j++; }
+      else if (L[i + 1][j] >= L[i][j + 1]) i++;
+      else j++;
+    }
+    return pairs;
+  };
+  // The change marks: what differs between the source as the editor first
+  // showed it and the document now, as ProseMirror decorations. Removed text is
+  // a widget (it is not in the document); added text an inline <ins>.
+  const changeMarks = (lib, baseOf) => {
+    let count = 0;
+    const key = new lib.PluginKey("fa-suggest-changes");
+    const decorate = (doc) => {
+      const base = baseOf();
+      count = 0;
+      if (!base) return lib.DecorationSet.empty;
+      const blocks = [];
+      doc.forEach((node, offset) => blocks.push({ node: node, pos: offset, text: node.type.name + ":" + node.textContent }));
+      const decos = [];
+      const del = (pos, text) => {
+        if (!text.trim()) return;
+        decos.push(lib.Decoration.widget(pos, () => { const d = document.createElement("del"); d.className = "fa-sg-del"; d.textContent = text; return d; }, { side: -1, key: "del" + pos + ":" + text }));
+      };
+      const tokenDiff = (was, now, blockEnd) => {
+        const pairs = lcs(was, now, (x) => x.t);
+        let wi = 0, ni = 0;
+        const step = (toW, toN) => {
+          const gone = was.slice(wi, toW).map((x) => (x.t === "\n" ? " " : x.t.charAt(0) === "\ufffc" ? "" : x.t)).join("");
+          const added = now.slice(ni, toN).filter((x) => x.t !== "\n");
+          const hasAdd = added.length && added.some((x) => !/^\s+$/.test(x.t));
+          if (hasAdd || gone.trim()) count++;
+          if (hasAdd) {
+            const last = added[added.length - 1];
+            decos.push(lib.Decoration.inline(added[0].pos, last.pos + (last.size || last.t.length), { nodeName: "ins", class: "fa-sg-ins" }));
+          }
+          const at = toN < now.length ? now[toN].pos : blockEnd;
+          if (gone) del(added.length ? added[0].pos : at, gone);
+          wi = toW; ni = toN;
+        };
+        // A shared space between two changed words does not split one replacement into two.
+        for (const [w, n] of pairs) { if (/^\s+$/.test(was[w].t)) continue; if (w > wi || n > ni) step(w, n); wi = w + 1; ni = n + 1; }
+        if (wi < was.length || ni < now.length) step(was.length, now.length);
+      };
+      const pairs = lcs(base, blocks, (x) => x.text);
+      let bi = 0, di = 0;
+      const gap = (toB, toD) => {
+        const goneB = base.slice(bi, toB), newB = blocks.slice(di, toD);
+        const k = Math.min(goneB.length, newB.length);
+        for (let x = 0; x < k; x++) tokenDiff(goneB[x].tokens, tokensOf(newB[x].node, newB[x].pos), newB[x].pos + newB[x].node.nodeSize - 1);
+        for (let x = k; x < newB.length; x++) { count++; decos.push(lib.Decoration.node(newB[x].pos, newB[x].pos + newB[x].node.nodeSize, { class: "fa-sg-ins-block" })); }
+        const at = toD < blocks.length ? blocks[toD].pos : doc.content.size;
+        for (let x = k; x < goneB.length; x++) { count++; del(at, goneB[x].node.textContent); }
+        bi = toB; di = toD;
+      };
+      for (const [b, d] of pairs) { if (b > bi || d > di) gap(b, d); bi = b + 1; di = d + 1; }
+      if (bi < base.length || di < blocks.length) gap(base.length, blocks.length);
+      return lib.DecorationSet.create(doc, decos);
+    };
+    const plugin = new lib.Plugin({
+      key: key,
+      state: { init: (_, state) => decorate(state.doc), apply: (tr, old, _, state) => (tr.docChanged || tr.getMeta(key) ? decorate(state.doc) : old) },
+      props: { decorations: (state) => key.getState(state) },
+    });
+    return { plugin: plugin, key: key, count: () => count };
+  };
+  // The base blocks, with their tokens, from the document the editor first showed.
+  const baseBlocksOf = (doc) => {
+    const out = [];
+    doc.forEach((node, offset) => out.push({ node: node, pos: offset, text: node.type.name + ":" + node.textContent, tokens: tokensOf(node, offset) }));
+    return out;
+  };
+  // Markdown around the raw pane's selection, typed so the browser's own undo keeps it.
+  const rawWrap = (ta, before, after, linePrefix) => {
+    ta.focus();
+    const a = ta.selectionStart, b = ta.selectionEnd, sel = ta.value.slice(a, b);
+    let text;
+    if (linePrefix) {
+      const ls = ta.value.lastIndexOf("\n", a - 1) + 1;
+      ta.setSelectionRange(ls, b);
+      text = ta.value.slice(ls, b).split("\n").map((l) => linePrefix + l).join("\n");
+    } else text = before + (sel || "text") + after;
+    if (!document.execCommand("insertText", false, text)) ta.setRangeText(text, ta.selectionStart, ta.selectionEnd, "end");
+  };
+  const suggest = async (a) => {
+    const s = sourceOf(a), c = config();
+    if (!s || !suggestable(c, s)) return;
+    const repo = s.repo || c.repo, branch = s.branch || c.branch || "main";
+    const btn = (label, title, extra) => { const b = el("button", Object.assign({ type: "button", textContent: label, title: title }, extra || {})); b.setAttribute("aria-label", title); return b; };
+    const titleId = "fa-sg-title-" + Date.now();
+    const status = el("p", { className: "fa-suggest-status", textContent: "Loading " + s.src + " …" });
+    status.setAttribute("role", "status");
+    const host = el("div", { className: "fa-suggest-editor" });
+    const send = btn("Submit as an issue", "Submit as an issue", { className: "fa-sg-send", disabled: true });
+    const close = btn("Cancel", "Cancel");
+    const larger = btn("Larger", "Make the editor larger", { className: "fa-sg-size" });
+    const full = btn("Full screen", "Fill the screen", { className: "fa-sg-size" });
+    const x = btn("\u2715", "Close");
+    larger.setAttribute("aria-pressed", "false");
+    full.setAttribute("aria-pressed", "false");
+    const toolbar = el("div", { className: "fa-sg-tb" });
+    toolbar.setAttribute("role", "toolbar");
+    toolbar.setAttribute("aria-label", "Formatting");
+    const visualBtn = btn("Visual", "Edit visually"), rawBtn = btn("Raw", "Edit the raw Markdown");
+    const mode = el("span", { className: "fa-sg-mode" }, [visualBtn, rawBtn]);
+    const vars = el("ul", { className: "fa-suggest-vars" });
+    vars.setAttribute("aria-live", "polite");
+    const why = el("textarea", { id: titleId + "-why", rows: 3, placeholder: "What should change, and why? This becomes the issue's reason." });
+    const whyBox = el("div", { className: "fa-sg-why" }, [el("label", { htmlFor: why.id, textContent: "Why?" }), why]);
+    const h2 = el("h2", { id: titleId, textContent: "Suggest a change: " + s.label });
+    const dlg = el("dialog", { className: "fa-suggest" }, [
+      el("div", { className: "fa-sg-hd" }, [h2, larger, full, x]),
+      status, toolbar, host, vars, whyBox,
+      el("div", { className: "fa-sg-ft" }, [el("span", { className: "fa-sg-help", textContent: "Opens a GitHub issue with your change and your reason." }), send, close]),
+    ]);
+    dlg.setAttribute("aria-labelledby", titleId);
+    let surface = null, timer = null;
+    const cleanup = () => { if (timer) clearInterval(timer); if (surface) surface.destroy(); surface = null; if (dlg.isConnected) dlg.remove(); };
+    close.onclick = x.onclick = () => { if (dlg.open) dlg.close(); cleanup(); };
+    // Esc closes it, as a modal dialog does; focus stays inside while it is open.
+    dlg.addEventListener("close", cleanup);
+    larger.onclick = () => { const on = dlg.classList.toggle("fa-sg-large"); larger.setAttribute("aria-pressed", String(on)); };
+    full.onclick = () => { const on = dlg.classList.toggle("fa-sg-full"); full.setAttribute("aria-pressed", String(on)); };
+    if (!document.getElementById("fa-suggest-css")) document.head.append(el("style", { id: "fa-suggest-css", textContent: SUGGEST_CSS }));
+    document.body.append(dlg);
+    dlg.showModal();
+    let path = s.src, original, kind = String(s.label).split(":")[0];
+    try {
+      // The KG node names the block's text and its kind; a page without one falls back to the source.
+      const node = await fetch(raw(repo, branch, s.src.replace(/\.md$/, ".jsonld"))).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+      if (node && typeof node.text === "string") path = s.src.replace(/[^/]*$/, "") + node.text;
+      if (node && typeof node.kind === "string") kind = node.kind;
+      const r = await fetch(raw(repo, branch, path));
+      if (!r.ok) throw new Error(r.status + " reading " + path);
+      original = await r.text();
+    } catch (e) { status.textContent = "Could not load the block: " + e.message; return; }
+    status.textContent = "Loaded " + path + ". Opening the editor …";
+    const fm = FRONT_MATTER.exec(original);
+    const head = fm ? fm[0] : "", body = original.slice(head.length);
+    // The site's variable values, as KG nodes (values.jsonld), when it publishes them.
+    const values = c.values ? await fetch(c.values).then((r) => (r.ok ? r.json() : null)).catch(() => null) : null;
+    const valueOf = (key) => {
+      const nodes = values && (values["@graph"] || values);
+      const n = Array.isArray(nodes) ? nodes.find((x) => x.key === key) : null;
+      return n ? String(n.formatted !== undefined ? n.formatted : n.value) : undefined;
+    };
+    // The block's profile, when the site declares one for its kind. A profile
+    // that fails to load leaves the generic editor and its generic checks.
+    const prof = profileFor(c, kind, s);
+    let mod = null;
+    const notes = [];
+    if (prof) {
+      try { mod = await import(new URL(prof.module, location.href).href); }
+      catch (e) { notes.push("The " + (prof.id || "profile") + " checks did not load (" + e.message + ")."); }
+    }
+    const facts = ["**Block:** \u0060" + s.label + "\u0060", "**Source:** https://github.com/" + repo + "/blob/" + branch + "/" + path, "**On the site:** " + location.href.split("#")[0] + "#" + encodeURIComponent(s.label)];
+    const reason = () => (why.value.trim() ? why.value.trim() : "");
+    // A mode: its own editor, the same issue flow over the text it hands back.
+    // get() may be async (an editor in another window answers by postMessage);
+    // it is read on submit, not polled.
+    if (mod && typeof mod.open === "function") {
+      toolbar.hidden = true;
+      // The mode's text: the block's source, or, when the host names one
+      // (data-suggest-text), what the site BUILT from it, e.g. a Questionnaire
+      // compiled from FSH. The source stays the issue's subject either way.
+      let text = original;
+      if (s.text) {
+        try {
+          const r = await fetch(new URL(s.text, location.href).href);
+          if (!r.ok) throw new Error(r.status + " reading " + s.text);
+          text = await r.text();
+        } catch (e) { status.textContent = "Could not load the built text: " + e.message; return; }
+      }
+      // ctx.why is live: the reader's reason as it stands when the mode reads it.
+      const ctx = { text: text, sourceText: original, sourcePath: path, src: s.src, path: path, label: s.label, kind: kind, repo: repo, branch: branch, config: c, status: (m) => { status.textContent = String(m); }, get why() { return reason(); } };
+      const formBox = el("div"), srcBox = el("div", { hidden: true });
+      host.replaceChildren(formBox, srcBox);
+      let handle;
+      try { handle = await mod.open(formBox, ctx); }
+      catch (e) { status.textContent = "The " + (prof.id || "editor") + " did not open: " + e.message; return; }
+      surface = { name: "mode", get: () => handle.get(), base: text, destroy: () => { try { if (handle && handle.dispose) handle.dispose(); } catch {} } };
+      // Both editors when the mode edits a built text (owner, 2026-10-14: "Both"):
+      // the mode's own, and the source itself, raw. The issue carries whichever
+      // the reader used; the mode stays open, so switching back loses nothing.
+      let onSource = false, srcArea = null;
+      if (s.text) {
+        const ext = (path.match(/\.([A-Za-z0-9]+)$/) || [])[1];
+        const formBtn = btn("Form", "Edit in the form"), srcBtn = btn(ext ? ext.toUpperCase() : "Source", "Edit the source text");
+        const sw = el("div", { className: "fa-sg-tb" }, [el("span", { className: "fa-sg-mode" }, [formBtn, srcBtn])]);
+        sw.setAttribute("role", "group");
+        sw.setAttribute("aria-label", "Editor");
+        host.before(sw);
+        const show = () => {
+          formBtn.setAttribute("aria-pressed", String(!onSource));
+          srcBtn.setAttribute("aria-pressed", String(onSource));
+          formBox.hidden = onSource;
+          srcBox.hidden = !onSource;
+        };
+        formBtn.onclick = () => { onSource = false; show(); };
+        srcBtn.onclick = () => {
+          if (!srcArea) { srcArea = el("textarea", { value: original }); srcArea.setAttribute("aria-label", "The source: " + path); srcBox.append(srcArea); }
+          onSource = true; show(); srcArea.focus();
+        };
+        show();
+      }
+      status.textContent = notes.join(" ");
+      const sourceIssue = async () => {
+        const now = srcArea.value;
+        if (now === original) { status.textContent = "Nothing has changed yet."; return; }
+        const body = facts.concat(["", "**Suggested change**, made in the source (" + path + "):", "", "\u0060\u0060\u0060diff", lineDiff(original, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
+        if (await openIssue(c.repo || repo, "Suggested edit: " + s.label, body, undefined, status)) close.onclick();
+      };
+      send.disabled = false;
+      send.onclick = async () => {
+        if (onSource) return sourceIssue();
+        let now;
+        try { now = await surface.get(); } catch (e) { status.textContent = "Could not read the edit: " + e.message; return; }
+        if (typeof now !== "string" || now === text) { status.textContent = "Nothing has changed yet."; return; }
+        let found = [];
+        if (typeof mod.check === "function") {
+          try { found = (await mod.check(text, now, { kg: (await kgReferences(c)) || undefined })) || []; }
+          catch (e) { found = [{ severity: "warning", message: "the checker failed: " + e.message }]; }
+        }
+        vars.replaceChildren(...found.map(findingItem));
+        const errs = found.filter((f) => f.severity === "error");
+        if (errs.length) { status.textContent = "Fix first: " + errs.map((f) => String(f.message).slice(0, 60)).join(" \u00b7 "); return; }
+        let custom = null;
+        if (typeof mod.issue === "function") { try { custom = await mod.issue(text, now, ctx); } catch { custom = null; } }
+        const title = (custom && custom.title) || "Suggested edit: " + s.label;
+        // A mode's own body keeps the reader's reason: appended when the body does not already carry it.
+        const why = reason();
+        const own = custom && custom.body ? (why && custom.body.indexOf(why) < 0 ? custom.body + "\n\n**Why:**\n" + why + "\n" : custom.body) : null;
+        const issueBody = own || facts.concat(["", "**Suggested change**, made in the " + (prof.id || "profile") + " editor:", "", "\u0060\u0060\u0060diff", lineDiff(text, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
+        if (await openIssue(c.repo || repo, title, issueBody, custom && custom.template, status)) close.onclick();
+      };
+      return;
+    }
+    const km = (c.suggest && c.suggest.katexMacros) || {};
+    const macros = mod && typeof mod.macros === "function" ? mod.macros(km) : undefined;
+    const kg = mod && typeof mod.check === "function" ? await kgReferences(c) : null;
+    // The harness's tokens and the profile's. A profile whose module keeps its
+    // own syntax verbatim (remarkFirst) must not have it wrapped in \u27e6 \u27e7
+    // as well, and one whose module loaded checks its own syntax: its tokens
+    // are shielded and checked here only when its module is not.
+    const tokens = faSuggestTokens(prof && prof.tokens);
+    const shield = (t) => tokens.wrap(t, !!(mod && mod.remarkFirst));
+    const syntaxErrors = (t) => tokens.errors(t, !!mod);
+    const wrapped = shield(body);
+    let katex = null, lib = null, visualBase = null;
+    // Each surface choice takes a ticket; a visual editor still opening when
+    // a newer choice (a timeout, Raw, closing the dialog) is made is dropped.
+    let ticket = 0;
+    const abandoned = () => new Error("abandoned");
+    // The visual surface: Crepe, with the profile's feature settings, node views
+    // and first remark transformer, the toolbar's commands and the change
+    // marks. Its base is Crepe's round-trip of the SOURCE, kept across a
+    // switch to raw and back, so escapes Crepe adds are not counted as the
+    // reader's change and the marks always compare with the source.
+    const visual = async (text) => {
+      // The site's own bundle (suggest-editor.ts): Crepe and KaTeX from one
+      // copy of ProseMirror, its stylesheet with every import resolved.
+      const sc = c.suggest || {};
+      const mine = ++ticket;
+      const live = () => mine === ticket && dlg.isConnected;
+      lib = lib || (await editorBundle());
+      const Crepe = lib.Crepe;
+      if (mod && mod.nodeViews && !katex) katex = sc.katex ? (await import(sc.katex)).default : lib.default;
+      if (!live()) throw abandoned();
+      const box = el("div");
+      host.replaceChildren(box);
+      // The dialog's own toolbar replaces Crepe's selection toolbar, and
+      // Crepe's block handle (the wide left gutter) is not used here.
+      const opts = { root: box, defaultValue: text, features: { [Crepe.Feature.Toolbar]: false, [Crepe.Feature.BlockEdit]: false } };
+      if (mod && typeof mod.featureConfigs === "function") opts.featureConfigs = mod.featureConfigs(Crepe.Feature, km);
+      const crepe = new Crepe(opts);
+      let baseBlocks = null;
+      const marks = lib.Plugin && lib.DecorationSet ? changeMarks(lib, () => baseBlocks) : null;
+      // Milkdown's own InitReady timer, found in the schema's wait list so no
+      // second copy of @milkdown/core is imported: after it, before the schema
+      // builds the parser, is when a remark plugin can still go first, and
+      // before the editor state is made a ProseMirror plugin can still join.
+      crepe.editor.use((ctx) => {
+        const init = (ctx.get("schemaTimer") || []).find((t) => t && t.name === "InitReady");
+        return async () => {
+          if (init) await ctx.wait(init);
+          if (mod && typeof mod.remarkFirst === "function") ctx.update("remarkPlugins", mod.remarkFirst(macros));
+          if (mod && mod.nodeViews && katex) ctx.update("nodeView", (v) => v.concat(Object.keys(mod.nodeViews).map((n) => [n, mod.nodeViews[n](katex, km)])));
+          if (marks) ctx.update("prosePlugins", (p) => p.concat([marks.plugin]));
+        };
+      });
+      await crepe.create();
+      if (!live()) { try { crepe.destroy(); } catch {} throw abandoned(); }
+      const view = crepe.editor.action((ctx) => ctx.get("editorView"));
+      const run = (cmd, payload) => { view.focus(); crepe.editor.action(lib.callCommand(cmd.key, payload)); };
+      const get = () => unwrap(crepe.getMarkdown());
+      // The base, and the marks, are the SOURCE as Crepe shows it: this
+      // editor's first document when it opened on the source, else a probe
+      // editor's (it opened on text carried over from the raw pane).
+      if (text === wrapped) {
+        if (visualBase === null) visualBase = get();
+        if (marks) baseBlocks = baseBlocksOf(view.state.doc);
+      } else if (marks || visualBase === null) {
+        const probe = new Crepe({ root: el("div"), defaultValue: wrapped, features: { [Crepe.Feature.Toolbar]: false, [Crepe.Feature.BlockEdit]: false } });
+        probe.editor.use((ctx) => { const init = (ctx.get("schemaTimer") || []).find((t) => t && t.name === "InitReady"); return async () => { if (init) await ctx.wait(init); if (mod && typeof mod.remarkFirst === "function") ctx.update("remarkPlugins", mod.remarkFirst(macros)); }; });
+        await probe.create();
+        if (visualBase === null) visualBase = unwrap(probe.getMarkdown());
+        if (marks) baseBlocks = baseBlocksOf(probe.editor.action((ctx) => ctx.get("editorView")).state.doc);
+        probe.destroy();
+        if (!live()) { try { crepe.destroy(); } catch {} throw abandoned(); }
+      }
+      if (marks) view.dispatch(view.state.tr.setMeta(marks.key, true));
+      return {
+        name: "visual", get: get, base: visualBase, changes: () => (marks ? marks.count() : null),
+        destroy: () => { try { crepe.destroy(); } catch {} },
+        bold: () => run(lib.toggleStrongCommand), italic: () => run(lib.toggleEmphasisCommand), strike: () => run(lib.toggleStrikethroughCommand),
+        heading: () => run(lib.wrapInHeadingCommand, 3), bullets: () => run(lib.wrapInBulletListCommand), numbers: () => run(lib.wrapInOrderedListCommand),
+        code: () => run(lib.toggleInlineCodeCommand), undo: () => run(lib.undoCommand), redo: () => run(lib.redoCommand),
+        link: () => { const href = window.prompt("Link address"); if (href) run(lib.toggleLinkCommand, { href: href }); },
+      };
+    };
+    // The raw surface: the block's Markdown exactly as it is; the toolbar types Markdown.
+    const rawSurface = (text) => {
+      ticket++;
+      const ta = el("textarea", { value: text });
+      ta.setAttribute("aria-label", "The block's Markdown");
+      host.replaceChildren(ta);
+      const ex = (c2) => () => { ta.focus(); document.execCommand(c2); };
+      return {
+        name: "raw", get: () => ta.value, base: body, changes: () => null, destroy: () => {},
+        bold: () => rawWrap(ta, "**", "**"), italic: () => rawWrap(ta, "_", "_"), strike: () => rawWrap(ta, "~~", "~~"),
+        heading: () => rawWrap(ta, "", "", "### "), bullets: () => rawWrap(ta, "", "", "- "), numbers: () => rawWrap(ta, "", "", "1. "),
+        code: () => rawWrap(ta, "\u0060", "\u0060"), undo: ex("undo"), redo: ex("redo"),
+        link: () => { const href = window.prompt("Link address"); if (href) rawWrap(ta, "[", "](" + href + ")"); },
+      };
+    };
+    // The toolbar: the same buttons on both surfaces.
+    const tools = [["B", "Bold", "bold"], ["I", "Italic", "italic"], ["S", "Strikethrough", "strike"], null, ["H", "Heading", "heading"], ["\u2022", "Bulleted list", "bullets"], ["1.", "Numbered list", "numbers"], null, ["\ud83d\udd17", "Link", "link"], ["</>", "Code", "code"], null, ["\u21b6", "Undo", "undo"], ["\u21b7", "Redo", "redo"]];
+    for (const t of tools) {
+      if (!t) { toolbar.append(el("span", { className: "fa-sg-sep" })); continue; }
+      const b = btn(t[0], t[1]);
+      if (t[2] === "bold") b.style.fontWeight = "700";
+      if (t[2] === "italic") b.style.fontStyle = "italic";
+      if (t[2] === "strike") b.style.textDecoration = "line-through";
+      b.onmousedown = (e) => e.preventDefault();
+      b.onclick = () => { if (surface && surface[t[2]]) surface[t[2]](); };
+      toolbar.append(b);
+    }
+    toolbar.append(el("span", { className: "fa-sg-note", textContent: "No underline: underlined text means added." }), mode);
+    const rawFirst = !!(prof && prof.rawFirstFor && prof.rawFirstFor.indexOf(kind) >= 0);
+    const show = () => {
+      visualBtn.setAttribute("aria-pressed", String(surface.name === "visual"));
+      rawBtn.setAttribute("aria-pressed", String(surface.name === "raw"));
+    };
+    // The visual editor, unless it does not open in time: then the raw pane.
+    const visualInTime = (text) => new Promise((resolve, reject) => {
+      const t = setTimeout(() => reject(new Error("it did not open within " + VISUAL_WAIT_MS / 1000 + " seconds; press Visual to try again")), VISUAL_WAIT_MS);
+      visual(text).then((v) => { clearTimeout(t); resolve(v); }, (e) => { clearTimeout(t); reject(e); });
+    });
+    try {
+      surface = rawFirst ? rawSurface(body) : await visualInTime(wrapped);
+    } catch (e) {
+      // No editor bundle, or it failed: the same flow over plain Markdown.
+      surface = rawSurface(body);
+      notes.push("The visual editor did not load (" + e.message + "); editing the Markdown directly.");
+    }
+    show();
+    const describe = () => (surface.name === "raw" ? "Editing the raw Markdown." : wrapped === body ? "" : "Variables, glossary terms and references are shown in \u27e6 \u27e7: change, add or delete them freely; their syntax is checked when you submit.");
+    status.textContent = notes.concat([describe()]).filter(Boolean).join(" ");
+    const switchTo = async (next) => {
+      if (surface.name === next) return;
+      const text = surface.get();
+      surface.destroy();
+      status.textContent = next === "raw" ? "" : "Opening the visual editor …";
+      try { surface = next === "raw" ? rawSurface(text) : await visualInTime(shield(text)); }
+      catch (e) { surface = rawSurface(text); notes.push("The visual editor did not load (" + e.message + ")."); }
+      show();
+      status.textContent = notes.concat([describe()]).filter(Boolean).join(" ");
+    };
+    visualBtn.onclick = () => switchTo("visual");
+    rawBtn.onclick = () => switchTo("raw");
+    // What the profile's checker says the edit introduces: errors block, warnings do not.
+    const findings = (text) => {
+      if (!mod || typeof mod.check !== "function" || text === surface.base) return [];
+      try { return mod.check(surface.base, text, { macros: macros, kg: kg || undefined }) || []; }
+      catch (e) { return [{ severity: "warning", message: "the checker failed: " + e.message, line: 0 }]; }
+    };
+    // Live: how many changes, each variable and its current value, any item
+    // whose syntax is broken, and the profile's findings.
+    const refresh = () => {
+      if (!dlg.isConnected || !surface) return clearInterval(timer);
+      const text = surface.get();
+      const n = surface.changes();
+      const items = [];
+      if (n !== null) {
+        const li = el("li", {}, [n ? n + (n === 1 ? " change: " : " changes: ") : "No changes yet. ", ...(n ? [Object.assign(document.createElement("ins"), { className: "fa-sg-ins", textContent: "added" }), " ", Object.assign(document.createElement("del"), { className: "fa-sg-del", textContent: "removed" })] : [])]);
+        items.push(li);
+      } else if (text !== surface.base) items.push(el("li", { textContent: "Changed. Switch to Visual to see the changes marked." }));
+      for (const k of variablesIn(text)) { const v = valueOf(k); items.push(el("li", { textContent: k + (v === undefined ? (values ? " \u2014 not a published variable" : " \u2014 value not published") : " = " + v) })); }
+      for (const b of syntaxErrors(text)) items.push(el("li", { className: "bad", textContent: "Not well-formed: " + b.slice(0, 80) }));
+      for (const f of findings(text)) items.push(findingItem(f));
+      vars.replaceChildren(...items);
+    };
+    timer = setInterval(refresh, 800);
+    refresh();
+    send.disabled = false;
+    send.onclick = async () => {
+      const now = surface.get();
+      if (now === surface.base) { status.textContent = "Nothing has changed yet."; return; }
+      const errs = syntaxErrors(now).concat(findings(now).filter((f) => f.severity === "error").map((f) => f.message));
+      if (errs.length) { status.textContent = "Fix the syntax first: " + errs.map((e) => e.slice(0, 60)).join(" \u00b7 "); return; }
+      const how = surface.name === "raw" ? "in the raw editor" : "in the visual editor (the diff is against the editor's rendering of the source)";
+      const issue = facts.concat(["", "**Suggested change**, made " + how + ":", "", "\u0060\u0060\u0060diff", lineDiff(surface.base, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
+      if (await openIssue(c.repo || repo, "Suggested edit: " + s.label, issue, undefined, status)) close.onclick();
+    };
+  };
+  const SUGGEST_TITLE = "Suggest a change in a visual editor (opens a GitHub issue)";
+  const addSuggest = (root) => {
+    // Only over a real DOM: the runtime is also evaluated against stubs (a
+    // viewer's own tests), where there is nothing to add a link to.
+    const r = root || document;
+    if (!r || typeof r.querySelectorAll !== "function") return;
+    for (const a of r.querySelectorAll('a[data-fa-link="edit"], a.ba-edit')) {
+      if (a.nextElementSibling && a.nextElementSibling.dataset.faLink === "suggest") continue;
+      const s = sourceOf(a);
+      if (!s || !suggestable(config(), s)) continue;
+      const b = el("a", { className: "ba-suggest", href: a.getAttribute("href") || "#", title: SUGGEST_TITLE, textContent: "✍ suggest", tabIndex: 0 });
+      b.dataset.faLink = "suggest";
+      a.after(b);
+    }
+  };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest('a[data-fa-link="suggest"]');
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault();
+    suggest(a);
+  });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => addSuggest());
+  else addSuggest();
+  window.faEditLinks = { urls: faBlockUrls, fill: fill, configure: configure };
+  // Both the link reached and the host it sits in: a pointer that lands
+  // straight on a compact host's link (no gap crossed) or keyboard focus on it
+  // matches the bare link first, which carries no facts of its own.
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => {
+      if (!e.target.closest) return;
+      const a = e.target.closest("a[data-fa-link]"), h = e.target.closest("[data-src]");
+      if (a) ready(a);
+      if (h && h !== a) ready(h);
+      if (a && a.dataset.faLink === "suggest") editorBundle().catch(() => {});
+    }, { passive: true });
+})();
+</script>
+<script>
+(() => {
+  const REPO = "litlfred/dth-hrh";
+  // [edit]/[feedback]: fill a row's links when the row is reached. The shared
+  // runtime fills on reaching the links' host, but a pointer that lands
+  // straight on a link (no gap crossed) or keyboard focus never reaches it, as
+  // an <a> without an href is not focusable.
+  for (const ev of ["pointerover", "focusin", "touchstart"])
+    document.addEventListener(ev, (e) => {
+      const tr = e.target.closest && e.target.closest("#comments tbody tr");
+      if (tr && window.faEditLinks && !tr.dataset.faFilled) { tr.dataset.faFilled = "1"; window.faEditLinks.fill(tr); }
+    }, { passive: true });
+  const $ = (id) => document.getElementById(id);
+  const rows = [...document.querySelectorAll("#comments tbody tr")];
+  const csTrs = [...document.querySelectorAll("#change-sets tbody tr")];
+  const tiles = [...document.querySelectorAll(".tile[data-tile]")];
+
+  // Pre-index DOM dataset attributes into memory once on load to eliminate
+  // thousands of live DOMStringMap reflections and layout invalidations during filtering.
+  const commentItems = rows.map((r) => ({
+    el: r,
+    id: r.id,
+    phase: r.dataset.phase,
+    status: r.dataset.status,
+    type: r.dataset.type,
+    committee: r.dataset.committee,
+    section: r.dataset.section,
+    text: r.dataset.text,
+    placed: r.dataset.placed,
+    incs: r.dataset.incs,
+  }));
+
+  const csItems = csTrs.map((tr) => {
+    const a = tr.querySelector("a.show-cs");
+    const countEl = tr.querySelector(".cs-n");
+    const refs = a && a.dataset.refs ? a.dataset.refs.split(" ") : [];
+    return {
+      el: tr,
+      committee: tr.dataset.committee,
+      refs,
+      countEl,
+      total: refs.length,
+    };
+  });
+
+  // Tiles that ARE a Status value set the select; the other two are extra filters.
+  const PHASE_TILES = ["open", "editing", "decided"];
+  let extra = null; // "unplaced" | "incorporated" | "noissue" | null
+  let only = null; // a change-set's comments, from "show its comments"
+  const active = () => extra ?? ($("f-phase").value || "all");
+  const apply = () => {
+    const ph = $("f-phase").value, ty = $("f-type").value, co = $("f-committee").value, se = $("f-section").value, tx = $("f-text").value.trim().toLowerCase();
+    let n = 0;
+    const shown = new Set();
+    for (let i = 0; i < commentItems.length; i++) {
+      const it = commentItems[i];
+      const s = it.section;
+      const ok = (!ph || it.phase === ph) && (!ty || it.type === ty) && (!co || it.committee === co)
+        && (!se || s === se || s.startsWith(se + ".")) && (!tx || it.text.includes(tx))
+        && (extra !== "unplaced" || it.placed === "0")
+        && (extra !== "incorporated" || it.status === "incorporated")
+        && (extra !== "noissue" || (it.incs === "0" && it.phase === "open"))
+        && (!only || only.has(it.id));
+      if (it.el.hidden !== !ok) it.el.hidden = !ok;
+      if (ok) {
+        n++;
+        shown.add(it.id);
+      }
+    }
+    $("f-count").textContent = n + " of " + commentItems.length + " shown";
+
+    // Change-sets: update visibility and match counts from the in-memory index
+    let m = 0;
+    for (let j = 0; j < csItems.length; j++) {
+      const cs = csItems[j];
+      let k = 0;
+      for (let r = 0; r < cs.refs.length; r++) {
+        if (shown.has(cs.refs[r])) k++;
+      }
+      // Under a committee filter a change-set shows when it is that
+      // committee's, even if only some of its comments are routed there.
+      const csOk = co ? cs.committee === co : k > 0;
+      if (cs.el.hidden !== !csOk) cs.el.hidden = !csOk;
+      if (csOk) m++;
+      if (cs.countEl) {
+        const text = k === cs.total ? String(k) : k + " of " + cs.total;
+        if (cs.countEl.textContent !== text) cs.countEl.textContent = text;
+      }
+    }
+    if ($("cs-count")) $("cs-count").textContent = "Showing " + m + " of " + csItems.length + ", by the filters below.";
+    const on = active();
+    for (const t of tiles) t.setAttribute("aria-pressed", String(t.dataset.tile === on));
+  };
+  // BACK WORKS (D-3 of the 2026-10-06 walkthrough): every filter change is a
+  // history entry whose query string holds the filters, so Back restores the
+  // previous view instead of leaving the page. Typing in Search replaces the
+  // entry rather than adding one per keystroke.
+  const save = (push = true) => {
+    const q = new URLSearchParams();
+    const put = (k, v) => { if (v) q.set(k, v); };
+    q.set("status", $("f-phase").value);
+    put("type", $("f-type").value); put("committee", $("f-committee").value); put("section", $("f-section").value); put("q", $("f-text").value);
+    put("tile", extra); put("only", only ? [...only].join(" ") : "");
+    const url = "?" + q + location.hash;
+    if (url !== location.search + location.hash) history[push ? "pushState" : "replaceState"](null, "", url);
+  };
+  function load() {
+    const q = new URLSearchParams(location.search);
+    if (!q.has("status")) return;
+    $("f-phase").value = q.get("status"); $("f-type").value = q.get("type") ?? ""; $("f-committee").value = q.get("committee") ?? "";
+    $("f-section").value = q.get("section") ?? ""; $("f-text").value = q.get("q") ?? "";
+    extra = q.get("tile"); only = q.get("only") ? new Set(q.get("only").split(" ")) : null;
+    apply();
+  }
+  for (const t of tiles) t.addEventListener("click", () => {
+    const key = t.dataset.tile;
+    // Pressing the tile that is on clears it: back to every comment.
+    const clear = key === active() || key === "all";
+    extra = !clear && !PHASE_TILES.includes(key) ? key : null;
+    $("f-phase").value = !clear && PHASE_TILES.includes(key) ? key : "";
+    only = null;
+    apply(); save();
+  });
+  $("f-phase").addEventListener("input", () => { extra = null; });
+  for (const a of document.querySelectorAll("a.show-cs")) a.addEventListener("click", (e) => {
+    e.preventDefault();
+    only = new Set(a.dataset.refs.split(" "));
+    // Every one of its comments, whatever was filtered before.
+    extra = null; for (const id of ["f-phase", "f-type", "f-committee", "f-section", "f-text"]) $(id).value = "";
+    apply(); save();
+    document.getElementById("comments").scrollIntoView();
+  });
+  // A CHANGE-SET'S COMMENTS IN FULL, IN PLACE (owner, 2026-10-06: "in addition
+  // to jumping to comment from CS you can expand panel to see original PC
+  // details (who, what..)", and "that can be dynamic JS load of KG"). The
+  // records are LOADED when a panel is first opened, from "comments.json"
+  // (the comment store as published), which stays at the dashboard's route
+  // while the page is under the locale (issue #2527). Opened from file://,
+  // where fetch fails, it falls back to the comment rows already on the page.
+  let records = null;
+  const loadRecords = () => (records ??= fetch("../../../../../folio-assistant-core/public-comments/folio/dth-hrh/comments.json")
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((list) => new Map(list.map((x) => [x.ref, x])))
+    .catch(() => null));
+  const h = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const fromRecord = (x) => "<li class=\"cs-pc\"><a href=\"#" + h(x.ref) + "\">" + h(x.ref) + "</a> · " + h(x.status) + (x.type ? " · " + h(x.type) : "") + " · " + h(x.committee ? (x.committee.group || x.committee.raw) : "not routed") +
+    "<div class=\"muted\">" + (x.target ? h(x.section + " " + x.sectionTitle) : "<em>unplaced</em>") + (x.citation ? " — " + h(x.citation) : "") + "</div>" +
+    "<p>" + h(x.text) + "</p>" + (x.suggestion ? "<p><b>Suggested revision:</b> " + h(x.suggestion) + "</p>" : "") +
+    "<p class=\"muted\">" + h(x.reviewer) + "</p>" +
+    (x.recommendations && x.recommendations.length ? "<p>" + x.recommendations.map((r) => "<span class=\"chip\" title=\"" + h(r.rationale) + "\">" + h(r.by) + ": " + h(r.code) + "</span>").join("") + "</p>" : "") +
+    "<div class=\"cs-pc-decision\">" + (x.decision ? "<b>" + h(x.decision.label) + "</b>" + (x.decision.reason ? " — " + h(x.decision.reason) : "") : "<span class=\"muted\">not decided yet</span>") + "</div></li>";
+  const fromRow = (ref) => {
+    const tr = document.getElementById(ref);
+    if (!tr) return "<li>" + h(ref) + " <span class=\"muted\">(not on this page)</span></li>";
+    const c = tr.cells;
+    // Cells: pick, ref, status, type, committee, where, comment, recommendations, decision.
+    const body = [...(c[6].querySelector("details")?.children || [])].filter((x) => x.tagName !== "SUMMARY").map((x) => x.outerHTML).join("");
+    return "<li class=\"cs-pc\"><a href=\"#" + h(ref) + "\">" + h(ref) + "</a> · " + h(c[2].textContent) + (c[3].textContent ? " · " + h(c[3].textContent) : "") + " · " + h(tr.dataset.committee) +
+      "<div class=\"muted\">" + c[5].innerHTML + "</div>" + body + "<div class=\"cs-pc-decision\">" + c[8].innerHTML + "</div></li>";
+  };
+  document.addEventListener("toggle", async (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains("cs-pcs") || !d.open || d.dataset.built) return;
+    d.dataset.built = "1";
+    const ul = document.createElement("ul");
+    ul.className = "cs-pc-list";
+    ul.innerHTML = "<li class=\"muted\">Loading…</li>";
+    d.append(ul);
+    const byRef = await loadRecords();
+    ul.innerHTML = d.dataset.refs.split(" ").map((ref) => (byRef && byRef.get(ref) ? fromRecord(byRef.get(ref)) : fromRow(ref))).join("");
+  }, true);
+  // GROUPING (issue #2183): tick comments, open the "new change-set" issue
+  // form prefilled with them. The repository's workflow records the change-set
+  // from the form and adopts that issue as its own.
+  const picker = $("open-issue");
+  if (picker) {
+    const picked = () => [...document.querySelectorAll("input.pick:checked")].map((x) => x.value);
+    const sync = () => {
+      const n = picked().length;
+      picker.disabled = n === 0;
+      $("pick-count").textContent = n ? n + " selected" : "Tick comments to group them.";
+    };
+    document.getElementById("comments").addEventListener("change", (e) => { if (e.target.classList.contains("pick")) sync(); });
+    picker.addEventListener("click", () => {
+      const refs = picked();
+      if (!refs.length) return;
+      const q = new URLSearchParams({ template: "change-set-new.yml", title: "New change-set: ", comments: refs.join(", ") });
+      const url = "https://github.com/" + REPO + "/issues/new?" + q;
+      window.open(url, "_blank", "noopener");
+    });
+    sync();
+  }
+  // A link to #PC-0042 shows that comment whatever the filters say; a link to
+  // #CS-012 opens the change-sets list there.
+  if (location.hash.startsWith("#PC-")) $("f-phase").value = "";
+  if (location.hash.startsWith("#CS-") && $("change-sets")) { $("change-sets").open = true; document.getElementById(location.hash.slice(1))?.scrollIntoView(); }
+  // A select replaces "show its comments" (it used to stay on, hidden, and
+  // made every later filter look broken: D-2 of the 2026-10-06 walkthrough);
+  // the search box narrows within it.
+  for (const id of ["f-phase", "f-type", "f-committee", "f-section"]) $(id).addEventListener("input", () => { only = null; apply(); save(); });
+  let searchDebounceTimer = null;
+  $("f-text").addEventListener("input", () => {
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => { apply(); save(false); }, 75);
+  });
+  addEventListener("popstate", load);
+  addEventListener("hashchange", () => { if (location.hash.startsWith("#PC-")) { $("f-phase").value = ""; only = null; extra = null; apply(); } });
+  load();
+  apply();
+})();
+</script>
+</body>
+</html>

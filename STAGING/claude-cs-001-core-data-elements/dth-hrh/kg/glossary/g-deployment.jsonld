@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-deployment",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-deployment",
+  "kind": "prose",
+  "title": "Deployment",
+  "text": "g-deployment.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "deployment"
+    }
+  },
+  "provenance": "authored"
+}

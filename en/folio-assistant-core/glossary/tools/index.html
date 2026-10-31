@@ -434,7 +434,7 @@
   instance's `glassStrip` declaration by `sync-docs-harness.ts`; absent when
   nothing declared one. Replica pages read `assets/harness/glass-strip.json`.
 -->
-<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;,&quot;library&quot;]">
+<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]">
 
 <!--
   THE SITE'S BASEURL, for the tiles above.
@@ -969,10 +969,10 @@ Build an IG repository's own site from its cached AST, with no instance declarat
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="folio-assistant-core--kg-tools--review-sheet-sync" data-fa-state="extracted" data-fa-gloss="">
-Build the review sheet's Apps Script <span class="fa-gloss-status">candidate, extracted</span>
+Build the review sheet's Apps Script and a document's Config tab <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Builds <code>Code.gs</code>, the Google Apps Script that keeps a public-comment review sheet's links and joins current: each comment No. links to its comment page, Sections, Page and Line no(s) link to the page of the frozen review draft, Review Change Sets joins its comments, suggested revisions, feedback and dispositions with each <code>No. n</code> linking to its row, and on both tabs Agentic status lists each pull request of the change-set, linked, with its status and what it changed, from the Agent tab. The script is the same for every review (<code>review-sheet.gs</code>); this Tool fills in one folio's data from its <code>review/public-comment/sheet-sync.json</code>, its review anchors and the draft's <code>pdf-line-map.json</code>. A person pastes the output into the sheet once (Extensions &gt; Apps Script) and runs <code>installTriggers</code>; from then on the sheet rebuilds itself within five minutes of an edit, with no agent. With <code>&quot;mode&quot;: &quot;drafting&quot;</code> in the config it builds the simpler drafting sheet instead: one Contributor Feedback tab where each row is a change set (ids assigned by the script), Sections picked from the document's table of contents and linked to it, and Issue and Agentic status from the Agent tab.</p>
+<p>Builds <code>Code.gs</code> (one generic script for every document, <code>--script</code>) and one document's Config tab rows (<code>--config</code>): the Google Apps Script that keeps a public-comment review sheet's links and joins current: each comment No. links to its comment page, Sections, Page and Line no(s) link to the page of the frozen review draft, Review Change Sets joins its comments, suggested revisions, feedback and dispositions with each <code>No. n</code> linking to its row, and on both tabs Agentic status lists each pull request of the change-set, linked, with its status and what it changed, from the Agent tab. The script is the same for every review (<code>review-sheet.gs</code>); this Tool fills in one folio's data from its <code>review/public-comment/sheet-sync.json</code>, its review anchors and the draft's <code>pdf-line-map.json</code>. The script reads the document's URLs, tab and column names and data from the sheet's Config tab (visible, locked to the owner), which the agent writes from these rows. A person pastes the script (one file) into the sheet once (Extensions &gt; Apps Script) and runs <code>installTriggers</code>; from then on the sheet rebuilds itself within five minutes of an edit, with no agent. With <code>&quot;mode&quot;: &quot;drafting&quot;</code> in the config it builds the simpler drafting sheet instead: one Contributor Feedback tab where each row is a change set (ids assigned by the script), Sections picked from the document's table of contents and linked to it, and Issue and Agentic status from the Agent tab.</p>
 <p class="fa-gloss-meta">Tools of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/tools/review-sheet-sync/review-sheet-sync.ts"><code>folio-assistant-core/tools/review-sheet-sync/review-sheet-sync.ts#review-sheet-sync</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>

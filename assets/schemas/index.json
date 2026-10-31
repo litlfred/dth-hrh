@@ -91493,11 +91493,11 @@
     {
       "id": "folio-extraction/v1",
       "source": "family",
-      "instance": "cat-harness",
+      "decl": "cat-harness-tools/schemas/content/extraction.ts#ExtractionSchema",
+      "instance": "cat-harness-tools",
       "typologies": [
         "uploads"
-      ],
-      "note": "its validator schemas/extraction.ts#ExtractionSchema could not be resolved"
+      ]
     },
     {
       "id": "folio-fhir-artifact-index/v2",
@@ -91603,11 +91603,11 @@
     {
       "id": "folio-intake/v1",
       "source": "family",
-      "instance": "cat-harness",
+      "decl": "cat-harness-tools/schemas/library/intake.ts#IntakeSchema",
+      "instance": "cat-harness-tools",
       "typologies": [
         "uploads"
-      ],
-      "note": "its validator schemas/intake.ts#IntakeSchema could not be resolved"
+      ]
     },
     {
       "id": "folio-interaction/v1",

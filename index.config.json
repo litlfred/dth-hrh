@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+          "ref": "1ea546d8550146aead7202ba82f1045f1ecf817b",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
-              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged; main tip be4e571 (BCP 47 #257, CI #267 #270, schemas move #265). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "on": "2026-10-31",
+              "ref": "1ea546d8550146aead7202ba82f1045f1ecf817b",
+              "evidence": "litlfred, 2026-10-31 01:19:51Z, card 'A. Merge and switch' on 'Merge core#309 and smart-ra#138, then switch dth-hrh to the core builder?' (thread Align smart-ra and DTH handbook pipelines)"
             }
           }
         }

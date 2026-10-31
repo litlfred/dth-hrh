@@ -7,9 +7,7 @@
     "cat-harness-tools/archimate/schemas",
     "cat-harness-tools/openapi/schemas",
     "cat-harness-tools/schemas",
-    "cat-harness/archimate/schemas",
     "cat-harness/ns",
-    "cat-harness/openapi/schemas",
     "cat-harness/schemas",
     "fhir-harness/schemas",
     "folio-assistant-core/schemas",
@@ -9827,27 +9825,27 @@
           "doc": "File existence checker."
         },
         {
-          "name": "lakeTreeContainsBasename",
-          "type": "(lakeRoot: string, basename: string) => boolean",
-          "optional": true,
-          "array": false,
-          "doc": "Basename lookup under a Lake package root (for lean.ref fallback)."
-        },
-        {
           "name": "mdContent",
           "type": "string",
           "optional": true,
           "array": false,
           "doc": "Markdown content of the companion .md file (for cross-ref scanning)."
-        },
-        {
-          "name": "leanContent",
-          "type": "string",
-          "optional": true,
-          "array": false,
-          "doc": "Lean sibling stub content (for §3b-cond kind-check), if the file exists."
         }
       ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/constraints.ts#ConstraintContextContributor",
+      "name": "ConstraintContextContributor",
+      "module": "cat-harness-tools/schemas/constraints.ts",
+      "kind": "type-alias",
+      "doc": "A vocabulary module's contribution to every block's {@link ConstraintContext}:",
+      "fields": [],
       "extendsNames": [],
       "values": [],
       "refs": [],
@@ -18990,6 +18988,12 @@
           "array": false
         },
         {
+          "name": "constraintContext",
+          "type": "ConstraintContextContributor",
+          "optional": true,
+          "array": false
+        },
+        {
           "name": "builders",
           "type": "Readonly<Record<string, (...args: never[]) => unknown>>",
           "optional": false,
@@ -18999,6 +19003,7 @@
       "extendsNames": [],
       "values": [],
       "refs": [
+        "cat-harness-tools/schemas/constraints.ts#ConstraintContextContributor",
         "cat-harness-tools/schemas/constraints.ts#ConstraintRule",
         "cat-harness-tools/schemas/content/vocabulary-modules.ts#KindSchema"
       ],
@@ -19040,6 +19045,12 @@
           "array": false
         },
         {
+          "name": "constraintContext",
+          "type": "ConstraintContextContributor",
+          "optional": true,
+          "array": false
+        },
+        {
           "name": "builders",
           "type": "Readonly<Record<string, (...args: never[]) => unknown>>",
           "optional": true,
@@ -19049,6 +19060,7 @@
       "extendsNames": [],
       "values": [],
       "refs": [
+        "cat-harness-tools/schemas/constraints.ts#ConstraintContextContributor",
         "cat-harness-tools/schemas/constraints.ts#ConstraintRule",
         "cat-harness-tools/schemas/content/vocabulary-modules.ts#KindSchema"
       ],
@@ -58951,6 +58963,24 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/tools/tool-types.ts#ProvActivitySchema",
+      "name": "ProvActivitySchema",
+      "module": "cat-harness-tools/schemas/tools/tool-types.ts",
+      "kind": "zod-object",
+      "doc": "One PROV-O activity, as a Tool returns it and `workflow_complete` keeps it.",
+      "fields": [],
+      "extendsNames": [
+        "ProvActivityRecordSchema"
+      ],
+      "values": [],
+      "refs": [],
+      "unresolved": [
+        "ProvActivityRecordSchema"
+      ],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/tools/tool-types.ts#ReadmeSectionSchema",
       "name": "ReadmeSectionSchema",
       "module": "cat-harness-tools/schemas/tools/tool-types.ts",
@@ -81414,6 +81444,14 @@
     },
     {
       "from": "cat-harness-tools/schemas/content/vocabulary-modules.ts#LoadedVocabulary",
+      "to": "cat-harness-tools/schemas/constraints.ts#ConstraintContextContributor",
+      "via": "constraintContext",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/vocabulary-modules.ts#LoadedVocabulary",
       "to": "cat-harness-tools/schemas/constraints.ts#ConstraintRule",
       "via": "constraintRules",
       "kind": "field",
@@ -81426,6 +81464,14 @@
       "via": "schemas",
       "kind": "field",
       "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/vocabulary-modules.ts#VocabularyModule",
+      "to": "cat-harness-tools/schemas/constraints.ts#ConstraintContextContributor",
+      "via": "constraintContext",
+      "kind": "field",
+      "optional": true,
       "array": false
     },
     {
@@ -91191,7 +91237,8 @@
     {
       "id": "cat-archimate-config/v1",
       "source": "family",
-      "instance": "cat-harness",
+      "decl": "cat-harness-tools/archimate/schemas/archimate.ts#ArchimateConfigSchema",
+      "instance": "cat-harness-tools",
       "typologies": [
         "archimate"
       ]
@@ -91234,7 +91281,8 @@
     {
       "id": "cat-openapi-config/v1",
       "source": "family",
-      "instance": "cat-harness",
+      "decl": "cat-harness-tools/openapi/schemas/openapi.ts#OpenApiConfigSchema",
+      "instance": "cat-harness-tools",
       "typologies": [
         "openapi"
       ]
@@ -91629,7 +91677,8 @@
     {
       "id": "folio-openapi-source/v1",
       "source": "family",
-      "instance": "cat-harness",
+      "decl": "cat-harness-tools/openapi/schemas/openapi.ts#OpenApiProvenanceSchema",
+      "instance": "cat-harness-tools",
       "typologies": [
         "openapi"
       ]

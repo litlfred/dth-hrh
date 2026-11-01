@@ -1,0 +1,13 @@
+{
+  "$schema": "cat-archimate-config/v1",
+  "directory": "archimate",
+  "models": [
+    {
+      "id": "0.1.0-draft.1",
+      "file": "0.1.0-draft.1/dth-hrh-overlay.archimate",
+      "title": "DTH-HRH overlay 0.1.0-draft.1",
+      "description": "The dth-hrh overlay on the smart-ra (DPI-H RA) ArchiMate model 0.2.0: the health workforce registry with the National Health Workforce Accounts (NHWA) work, which dth-hrh owns (owner, 2026-11-01 20:32Z: NHWA does not belong in smart-ra). Elements tagged overlay:base copy a smart-ra element and name it by IRI; elements tagged overlay:owner=dth-hrh are this DTH's own."
+    }
+  ],
+  "figures": []
+}

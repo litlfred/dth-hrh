@@ -64,7 +64,28 @@ the element's IRI in its manifest's `meta.archimate`:
 IRIs use Archi's own ids, which stay stable across model versions. Then
 `bun run kg:blocks` so the block JSON-LD carries the links.
 
-## 5. Check
+## 5. ArchiMate overlay for what smart-ra does not hold
+
+A DTH never adds elements to smart-ra (owner, 2026-11-01 08:13Z). What the
+DTH needs beyond smart-ra goes in its own overlay, `archimate/`, as in
+dth-phc and dth-hrh (`archimate/README.md` in each):
+
+- `archimate/cat-archimate.config.json` names one model per SemVer folder,
+  and `<dth>.json` declares the `archimate/` directory (served, with the
+  `archimate` typology) so the site draws its pages.
+- Each element is tagged `overlay:base` (a reference copy of a smart-ra
+  element, same id and name, the smart-ra IRI as the value) or
+  `overlay:owner` = `<dth>` (the DTH's own).
+- Blocks link owned elements with
+  `https://litlfred.github.io/<dth>/archimate/<version>/elements/<id>.jsonld`,
+  and keep smart-ra IRIs for everything smart-ra holds.
+- `bun run cat-harness-tools/archimate/scripts/check-archimate.ts --instance .`
+  checks the model parses and resolves.
+
+dth-hrh's overlay owns the NHWA work, which the owner ruled is not part of
+smart-ra (2026-11-01 20:32Z).
+
+## 6. Check
 
 `bun run check:dth-glossary` checks the glossary schema, every `related`
 link, every SKOS match into dpi-h-ra, and every `meta.archimate` IRI against

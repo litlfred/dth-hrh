@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-gloss-continuing-professional-development",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:gloss-continuing-professional-development",
+  "kind": "prose",
+  "title": "Continuing professional development (CPD)",
+  "text": "g-continuing-professional-development.md",
+  "meta": {
+    "glossary": {
+      "scheme": "dth-hrh",
+      "term": "continuing-professional-development"
+    }
+  },
+  "provenance": "authored"
+}

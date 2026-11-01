@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/freq-FR-AN-03",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:FR-AN-03",
+  "kind": "functional-requirement",
+  "title": "Data quality reports for registry managers.",
+  "text": "fr-an-03.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "FR-AN-03",
+    "priority": "to-be-prioritized",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-c794022993b0421f995b6f273a3ba252.jsonld",
+          "name": "Registry Maintenance and Data Quality"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

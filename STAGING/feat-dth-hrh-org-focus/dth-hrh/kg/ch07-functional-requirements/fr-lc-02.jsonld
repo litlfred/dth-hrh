@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/freq-FR-LC-02",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:FR-LC-02",
+  "kind": "functional-requirement",
+  "title": "Support renewals, recording of continuing professional development, and…",
+  "text": "fr-lc-02.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "FR-LC-02",
+    "priority": "to-be-prioritized",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-60fef4bb58954bcba6ff516b47ccdbc3.jsonld",
+          "name": "Credential Maintenance and Renewal (CPD Compliance)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

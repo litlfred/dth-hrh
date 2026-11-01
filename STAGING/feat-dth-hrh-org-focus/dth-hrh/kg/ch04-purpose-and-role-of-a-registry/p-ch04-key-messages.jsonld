@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/prose-ch04-key-messages",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:ch04-key-messages",
+  "kind": "prose",
+  "text": "p-ch04-key-messages.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "title": "Key messages",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld",
+          "name": "DPI-H Health Workforce Registry (HWR)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-702c24bbd73341be9afc11c7e11e9810.jsonld",
+          "name": "Health Worker"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

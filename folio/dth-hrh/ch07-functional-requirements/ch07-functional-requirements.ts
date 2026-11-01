@@ -15,7 +15,7 @@ export default chapter({
     section({
       title: "7.1 Identity management",
       label: "sec:7-1",
-      blocks: ["p-ch07-identity-management", "fr-id-01", "fr-id-02", "fr-id-03"],
+      blocks: ["p-ch07-identity-management", "fr-id-01", "fr-id-02", "fr-id-03", "dt-hrh-dt-01-registration-eligibility"],
     }),
     section({
       title: "7.2 Records",
@@ -25,12 +25,12 @@ export default chapter({
     section({
       title: "7.3 Lifecycle management",
       label: "sec:7-3",
-      blocks: ["p-ch07-lifecycle-management", "fr-lc-01", "fr-lc-02", "fr-lc-03"],
+      blocks: ["p-ch07-lifecycle-management", "fr-lc-01", "fr-lc-02", "fr-lc-03", "dt-hrh-dt-02-lifecycle-status-transition"],
     }),
     section({
       title: "7.4 Verification services",
       label: "sec:7-4",
-      blocks: ["p-ch07-verification-services", "fr-ver-01", "fr-ver-02", "fr-ver-03"],
+      blocks: ["p-ch07-verification-services", "fr-ver-01", "fr-ver-02", "fr-ver-03", "dt-hrh-dt-03-verification-and-access-response"],
     }),
     section({
       title: "7.5 Analytics",

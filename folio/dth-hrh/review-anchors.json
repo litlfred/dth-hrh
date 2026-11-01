@@ -2068,6 +2068,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "dt:hrh-dt-01-registration-eligibility",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-01-registration-eligibility",
+   "sections": [
+    "sec:7-1"
+   ],
+   "hash": "3dfab5a39136",
+   "excerpt": "Decision table HRH-DT-01 ( Decision HRH DT 01 , hit policy FIRST ) formalizes the rules in Section 7.1 (Identity management) and Section 7.2 (Records) governing",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch07-records",
    "kind": "prose",
    "chapter": "ch07-functional-requirements",
@@ -2164,6 +2176,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "dt:hrh-dt-02-lifecycle-status-transition",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-02-lifecycle-status-transition",
+   "sections": [
+    "sec:7-3"
+   ],
+   "hash": "54c7ef7ccbee",
+   "excerpt": "Decision table HRH-DT-02 ( Decision HRH DT 02 , hit policy FIRST ) formalizes the rules in Section 7.3 (Lifecycle management) and Section 4.3 (Health worker lif",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch07-verification-services",
    "kind": "prose",
    "chapter": "ch07-functional-requirements",
@@ -2209,6 +2233,18 @@
    ],
    "hash": "bb3cf766c50c",
    "excerpt": "FR-VER-03. Respond to verification requests from other countries. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:hrh-dt-03-verification-and-access-response",
+   "kind": "decision-table",
+   "chapter": "ch07-functional-requirements",
+   "root": "dt-hrh-dt-03-verification-and-access-response",
+   "sections": [
+    "sec:7-4"
+   ],
+   "hash": "fae6eba78c7f",
+   "excerpt": "Decision table HRH-DT-03 ( Decision HRH DT 03 , hit policy FIRST ) formalizes the rules in Section 7.4 (Verification services) , Section 7.5 (Analytics) , Secti",
    "method": "folio-snapshot"
   },
   {

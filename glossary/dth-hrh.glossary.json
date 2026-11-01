@@ -618,7 +618,7 @@
         "WPR"
       ],
       "notation": "WHO",
-      "scopeNote": "Named throughout the handbook outline and glossary workbook, including its six regional offices (AFRO, WPRO, AFR, AMR, EUR, SEAR, WPR). A candidate: no definition has been written.",
+      "scopeNote": "Named throughout the handbook outline and glossary workbook, including its six regional offices (AFRO, WPRO, AFR, AMR, EUR, SEAR, WPR). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -629,7 +629,7 @@
         "DPI-H"
       ],
       "notation": "DPI-H",
-      "scopeNote": "Expanded in Chapter 1 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in Chapter 1 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -640,7 +640,7 @@
         "BPMN"
       ],
       "notation": "BPMN",
-      "scopeNote": "Used in Chapters 4 and 5 for business process workflows; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapters 4 and 5 for business process workflows; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -651,7 +651,7 @@
         "DIIG"
       ],
       "notation": "DIIG",
-      "scopeNote": "Expanded in Chapter 3 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in Chapter 3 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -662,7 +662,7 @@
         "EMR"
       ],
       "notation": "EMR",
-      "scopeNote": "Used in Chapter 5 and Chapter 10 for point-of-care clinical systems; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 5 and Chapter 10 for point-of-care clinical systems; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -674,7 +674,7 @@
         "SMART Guidelines"
       ],
       "notation": "SMART",
-      "scopeNote": "Used in Chapter 3 of the handbook outline; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 3 of the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -685,7 +685,7 @@
         "TWG"
       ],
       "notation": "TWG",
-      "scopeNote": "Expanded in the handbook front matter and glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the handbook front matter and glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -696,7 +696,7 @@
         "ITU"
       ],
       "notation": "ITU",
-      "scopeNote": "Named in Chapter 1 (WHO/ITU DPI-H reference architecture); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 1 (WHO/ITU DPI-H reference architecture); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -707,7 +707,7 @@
         "MDS"
       ],
       "notation": "MDS",
-      "scopeNote": "Expanded in Chapter 11 and the glossary workbook (WHO Minimum Data Set for Health Workforce Registry), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in Chapter 11 and the glossary workbook (WHO Minimum Data Set for Health Workforce Registry), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -718,7 +718,7 @@
         "OpenHIE"
       ],
       "notation": "OpenHIE",
-      "scopeNote": "Named in Chapter 10 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 10 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -729,7 +729,7 @@
         "HIS"
       ],
       "notation": "HIS",
-      "scopeNote": "Expanded in the glossary workbook and Chapter 10, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook and Chapter 10, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -740,7 +740,7 @@
         "DMN"
       ],
       "notation": "DMN",
-      "scopeNote": "Used in Chapter 7 for decision-support logic tables; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 7 for decision-support logic tables; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -751,7 +751,7 @@
         "EHR"
       ],
       "notation": "EHR",
-      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -762,7 +762,7 @@
         "API"
       ],
       "notation": "API",
-      "scopeNote": "Used in the handbook outline and Chapter 10; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the handbook outline and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -773,7 +773,7 @@
         "EMIS"
       ],
       "notation": "EMIS",
-      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -784,7 +784,7 @@
         "GDHCN"
       ],
       "notation": "GDHCN",
-      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -795,7 +795,7 @@
         "HL7"
       ],
       "notation": "HL7",
-      "scopeNote": "Named in Chapter 10 (HL7 FHIR); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 10 (HL7 FHIR); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -806,7 +806,7 @@
         "HMIS"
       ],
       "notation": "HMIS",
-      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -817,7 +817,7 @@
         "HPD"
       ],
       "notation": "HPD",
-      "scopeNote": "Expanded in the glossary workbook (IHE Healthcare Provider Directory), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook (IHE Healthcare Provider Directory), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -828,7 +828,7 @@
         "IHE"
       ],
       "notation": "IHE",
-      "scopeNote": "Named in Chapter 10 (IHE mCSD and HPD profiles); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 10 (IHE mCSD and HPD profiles); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -839,7 +839,7 @@
         "iHRIS"
       ],
       "notation": "iHRIS",
-      "scopeNote": "Named in the glossary workbook (open-source human resources for health information system software). A candidate: no definition has been written.",
+      "scopeNote": "Named in the glossary workbook (open-source human resources for health information system software). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -850,7 +850,7 @@
         "ISCED"
       ],
       "notation": "ISCED",
-      "scopeNote": "Expanded in Chapter 11, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in Chapter 11, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -861,7 +861,7 @@
         "ISO"
       ],
       "notation": "ISO",
-      "scopeNote": "Named in Chapter 11; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 11; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -872,7 +872,7 @@
         "LMS"
       ],
       "notation": "LMS",
-      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -883,7 +883,7 @@
         "mCSD"
       ],
       "notation": "mCSD",
-      "scopeNote": "Expanded in Chapter 10 (IHE mCSD profile), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in Chapter 10 (IHE mCSD profile), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -894,7 +894,7 @@
         "TIIS"
       ],
       "notation": "TIIS",
-      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -905,7 +905,7 @@
         "ZHRIS"
       ],
       "notation": "ZHRIS",
-      "scopeNote": "Expanded in the glossary workbook (HRHIS candidates), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook (HRHIS candidates), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -916,7 +916,7 @@
         "AI"
       ],
       "notation": "AI",
-      "scopeNote": "Used in Chapter 3 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 3 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -927,7 +927,7 @@
         "ILO"
       ],
       "notation": "ILO",
-      "scopeNote": "Named in Chapter 11 and references (ISCO-08 custodian); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 11 and references (ISCO-08 custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -939,7 +939,7 @@
         "KPIs"
       ],
       "notation": "KPI",
-      "scopeNote": "Used in the handbook outline; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -950,7 +950,7 @@
         "M&E"
       ],
       "notation": "M&E",
-      "scopeNote": "Used in Chapter 3 (DIIG mapping); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 3 (DIIG mapping); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -962,7 +962,7 @@
         "MOH"
       ],
       "notation": "MoH",
-      "scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -973,7 +973,7 @@
         "OECD"
       ],
       "notation": "OECD",
-      "scopeNote": "Named in the glossary workbook (Joint Questionnaire on non-monetary health care statistics); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in the glossary workbook (Joint Questionnaire on non-monetary health care statistics); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -984,7 +984,7 @@
         "SOA"
       ],
       "notation": "SOA",
-      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -995,7 +995,7 @@
         "SSO"
       ],
       "notation": "SSO",
-      "scopeNote": "Used in the glossary workbook; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -1006,7 +1006,7 @@
         "UN"
       ],
       "notation": "UN",
-      "scopeNote": "Used in Chapter 3; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in Chapter 3; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -1017,7 +1017,7 @@
         "UNESCO"
       ],
       "notation": "UNESCO",
-      "scopeNote": "Named in Chapter 11 and references (ISCED custodian); expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Named in Chapter 11 and references (ISCED custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "status": "candidate"
     },
@@ -1028,7 +1028,7 @@
         "SKOS"
       ],
       "notation": "SKOS",
-      "scopeNote": "Used in the glossary introduction; expansion supplied for review. A candidate: no definition has been written.",
+      "scopeNote": "Used in the glossary introduction; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     },
@@ -1043,7 +1043,7 @@
         "LHV"
       ],
       "notation": "RN",
-      "scopeNote": "Expanded in the professional council examples sheet (RN, RPN, APN, LHV nursing cadres), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "scopeNote": "Expanded in the professional council examples sheet (RN, RPN, APN, LHV nursing cadres), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     }

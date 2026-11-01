@@ -50,12 +50,12 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-3"
   },
   "pers:emergency-coordinator": {
-    "hash": "009dd5ecde19ccf97609e40297a4026eb7d7b5d63f43f439e28ddb5fe86f1f31",
+    "hash": "62cbbd9bdea9948d1db55076548b428885eec97fe4f54323f8759052ec7920eb",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:system-facility-registry": {
-    "hash": "33713d1b5e7456910ec2e55a8c05200646959fff54879f880fd996ecef0b9031",
+    "hash": "3fa1ade4fb7f198d5eb104d15918c92b8588d42a0935db4a4d3e1747cbbb2f10",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -70,12 +70,12 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
   "pers:workforce-planner": {
-    "hash": "a4771bc802c18dadb7426b56af2800e11dc5d5930a62adcf30dae92c13776828",
+    "hash": "e8d8a44b2c4bcd8df284189ff51f239645ec916295e95a745030c7e8d641e31a",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:health-worker": {
-    "hash": "7f7b523c1794cdc5a29337111e797add4ae3f97baeceb365a2e38bdfb1b3a7e9",
+    "hash": "b9d069fb465e0bdb6ac22628e5d905c27bb03fe9441a8fe8845d24d061e2a0ea",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -100,7 +100,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
   },
   "pers:system-hris": {
-    "hash": "ef4e1e8f07af159d85dbb62cbb95a2710538fa8ae1c7f235838a14e71da60f78",
+    "hash": "f9ef0c463c66d15319f01295bca5a64e8a099cca8013b0ad3e64fe16fd925eee",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -110,27 +110,27 @@
     "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
   },
   "pers:system-national-id": {
-    "hash": "e93237adb64413663394a9a40536e20cbb8be572be23c7c06b27609ff958e866",
+    "hash": "c1311086aa31f61a2a636c1fe66c8da33896e21b1df36e860b13f510559659c4",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:employer-hr-manager": {
-    "hash": "20ef93aa5b1c18d745c1c8de06906a3846103a212e8ccf12e0aae46502427620",
+    "hash": "f55af167ec83c368b3339fd3c91ad757ca8ea8833dfe53f4786f6587710f8030",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:member-of-public": {
-    "hash": "b064116bbe944a64f4e9ffe8c1f63d3d9fb1d7d1027a2c4b9f6f3c39d38b16d4",
+    "hash": "aaaef2b348567cd6d0f7032e8bcecd64e772b5de4aad45a93af282559f9579f5",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:training-institution-registrar": {
-    "hash": "c01aa7654741e8c4ba5b62fb4b4025ec08d7f77b7a8c58a9ba1104352733d9b1",
+    "hash": "5a0cab8f4c98fa523144e71f9ddb49ec0df7fa1bd5f8bfd880cac192c257a2e8",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:registration-officer": {
-    "hash": "5521711a7b9959487efd302f49409b37ceac3a5e53a2d8ecf5018d51b758234a",
+    "hash": "a4144db2d9e0007e11a2e592398661b4f79c7eb82e0a7d2c8f2c2f2ddfb53e4d",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -140,7 +140,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
   "pers:system-emr": {
-    "hash": "ade7c39ae20011ce6b5613c545c1f54641043c0e3ae1980c22e7d2071f6d567c",
+    "hash": "7f0eef77dfc5f16ccbeefd1332678abe0750119b80e7beed668f953dbe198df0",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -160,7 +160,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
   "pers:system-nhwa-platform": {
-    "hash": "542b9617632acbd9d71b61c9df70707d775f6a603d273f7a5393046cf425ad9b",
+    "hash": "84f5ff2651d198bb946e330ab992fb5f2215e479ef5d28b6676783fb0772ffe7",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -170,7 +170,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "pers:system-payroll": {
-    "hash": "7e2951b58d04df74d96ebbb908fad903b5739b8dd574584973336e48ffc7234d",
+    "hash": "2cec260e39e5571fa24640519e1bfff2ca99e49ebdd9c63f1983d328391ce92c",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
@@ -885,7 +885,7 @@
     "section": "ch06-governance-and-stewardship::sec:6-3"
   },
   "pers:registry-custodian": {
-    "hash": "7c0ba4b6e033135255f71a8d15cee82ff589d4327da73c5d53ba4d33eeea118d",
+    "hash": "4a66465fd2fa96998508fa82d496d1a759ff0781ce80bf640f88000a6716a187",
     "renamedFrom": [],
     "section": "ch06-governance-and-stewardship::sec:6-3"
   },
@@ -895,7 +895,7 @@
     "section": "ch06-governance-and-stewardship::sec:ch06-planned"
   },
   "pers:registry-governance-body": {
-    "hash": "a458f4d8a8ac8c1287cd781b0ebe1ced437fc420061e730732bd3a5638bba3ae",
+    "hash": "5cc42ebc639ba9cb8a9d0dec3719f1cf6e031dc3968c721bcfef2449d7e61abb",
     "renamedFrom": [],
     "section": "ch06-governance-and-stewardship::sec:6-1"
   },

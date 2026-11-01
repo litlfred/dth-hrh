@@ -1,0 +1,297 @@
+{
+  "$schema": "archimate-metamodel/v1",
+  "model": "0.1.0-draft.1",
+  "name": "DTH-HRH overlay on the DPI-H reference architecture",
+  "archimateVersion": "3.2",
+  "types": [
+    {
+      "type": "Outcome",
+      "layer": "Motivation",
+      "elements": 9,
+      "ids": [
+        "id-57355ace4e704cf49bfd82e616a617ac",
+        "id-49168f20ee2d46f2b1a991051ab5a02d",
+        "id-87a3589d681c4d8e9b2ada5d72db9eb0",
+        "id-f3da9bf103a341d28717012ddfb83ae2",
+        "id-4cb8cc587d6c4764837e79518dfa2049",
+        "id-a423086366604d2a9ea403aa8f19f264",
+        "id-d1b556b9ac4940eeb49f44f9a78b825a",
+        "id-558aba849cc54d659ef1a5473d9aa2f1",
+        "id-3463482224324a95a77b808562828a38"
+      ]
+    },
+    {
+      "type": "Capability",
+      "layer": "Strategy",
+      "elements": 7,
+      "ids": [
+        "id-3d0c2c2525ed4131ae533eed8893d4d0",
+        "id-788f660553e14f0283b93c2dda3ae441",
+        "id-88a90dfa38904fba930a49add401e660",
+        "id-34c4ebbdf32b4062b7fe81718c599d83",
+        "id-4d0a6161789f4a4ca8b13c7b2d542544",
+        "id-02200ff02be649ada1bf34a0a4d8e594",
+        "id-d4539867eb074f9383ede25c9318a5eb"
+      ]
+    },
+    {
+      "type": "Stakeholder",
+      "layer": "Motivation",
+      "elements": 6,
+      "ids": [
+        "id-515be0d38c564767bc2b1ee5fcb0adb6",
+        "id-afa7abb5039f46ae8f7f3f1ff15b77a2",
+        "id-8d3dd8b68d504c2a9fe8cf414b16c127",
+        "id-1c5c0bc9234e4282b654dbc71b9da706",
+        "id-10058e61afa048128fdb46dc0bcb884c",
+        "id-a2320dbc07e6450b94f3f0f3e03bb877"
+      ]
+    },
+    {
+      "type": "ApplicationComponent",
+      "layer": "Application",
+      "elements": 5,
+      "ids": [
+        "id-3c5d846710034c4595e206e748d65e36",
+        "id-d79aa0eec0584b0792b44bca408afeb6",
+        "id-350840520ae44f658b6ad3b3762e382e",
+        "id-4e0767822dcf46409554156a133fbc67",
+        "id-bbd18f65be45490fbbaf02346511ae5e"
+      ]
+    },
+    {
+      "type": "DataObject",
+      "layer": "Application",
+      "elements": 5,
+      "ids": [
+        "id-e162b2223da4440983514be5854b654d",
+        "id-145e885489634e469e8a6734f56b7df5",
+        "id-ad969289cb774307aa678037c56fdd3f",
+        "id-702c24bbd73341be9afc11c7e11e9810",
+        "id-301912f3fcaf4648b0ebc3cbbfc3b447"
+      ]
+    },
+    {
+      "type": "Value",
+      "layer": "Motivation",
+      "elements": 5,
+      "ids": [
+        "id-cf479a7ce6df4865833f1d16912988d3",
+        "id-4a4c7257f8ec4ee98f3f418bc034a165",
+        "id-6225b7e834b24c6fab4c6994f1a10c05",
+        "id-3d0ed563d57a4ef5830b6f42379c580d",
+        "id-9616e1e203db4a20beb0385e094a05a1"
+      ]
+    },
+    {
+      "type": "ApplicationFunction",
+      "layer": "Application",
+      "elements": 4,
+      "ids": [
+        "id-58e4795bc57845649434ec98dfb53fa4",
+        "id-b3a5209e0e88419382a678964bed91f9",
+        "id-70448b30ed3b43a1bbfea442a3f32388",
+        "id-7a7f13e6c56d4c4fa3c37ca598a8be1c"
+      ]
+    },
+    {
+      "type": "ApplicationService",
+      "layer": "Application",
+      "elements": 4,
+      "ids": [
+        "id-1c8c036d817d47d89af422dc49cc9620",
+        "id-646c18afcfc54f4fb33ae93110e02c2c",
+        "id-2dbeabd4fadb4f4ca856fcab56c79ce6",
+        "id-067f3a0e91b2452ba1786d129e309017"
+      ]
+    },
+    {
+      "type": "Goal",
+      "layer": "Motivation",
+      "elements": 1,
+      "ids": [
+        "id-0f846746da49424ca22381bd80bfc409"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Flow",
+      "target": "ApplicationComponent",
+      "count": 7,
+      "allowed": true,
+      "relationships": [
+        "id-477600ecd7224ee5ac009dbca111e5b0",
+        "id-48e997e7f08e45babaadd7c552057a22",
+        "id-50329fe8597d46f6a4d491ff05452bd4",
+        "id-7f2ce188187f4d8a8691bf5ff2f9f667",
+        "id-b486315e0923437cb776b4234739136e",
+        "id-bb7f9716a2674341a2b93e31fc597849",
+        "id-ddd4756be0a340b892e9b2b436fbe5be"
+      ]
+    },
+    {
+      "source": "Stakeholder",
+      "relationship": "Association",
+      "target": "Value",
+      "count": 7,
+      "allowed": true,
+      "relationships": [
+        "id-129509ba50094bf598c45909e03028a1",
+        "id-3e73475ab54b4cf1b28ac3b54c742560",
+        "id-cc65670da4d74301a17360ac03bfeffb",
+        "id-e15649393fd7472688e24c5469ece6d6",
+        "id-f2081843c0e0424c8fc1b35b56450cf4",
+        "id-f5659f20014c438fb8a128859617e06b",
+        "id-f9eccf37ea3d4a1e84218fdcd0e920c4"
+      ]
+    },
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Access",
+      "target": "DataObject",
+      "count": 6,
+      "allowed": true,
+      "relationships": [
+        "id-82a19dce8ad94edead787664c3af59f6",
+        "id-d0f759a25e8242a8b7a00cd526fa6ecd",
+        "id-1a95e061e76a4a16a6b921d503b281d6",
+        "id-1ac9ba1451ae4d41a98f0e024640c5ee",
+        "id-ba37954c9c86400a8b71c5cdb1058441",
+        "id-c4a4adb63b16424ea40b2762a0598b0b"
+      ]
+    },
+    {
+      "source": "Capability",
+      "relationship": "Realization",
+      "target": "Outcome",
+      "count": 6,
+      "allowed": true,
+      "relationships": [
+        "id-40ed92f0179d4ec5a52d8fafffe746ba",
+        "id-4e17f7d791d64629a9a59541c7cb4eb2",
+        "id-538373b3662f4b4c974d2a0ec52eb1ce",
+        "id-65c5cc40af014d13ba417e7867f09e3b",
+        "id-b8cb6668655447f6843a2e6d89c27836",
+        "id-eb0cc63917d34b07850d9da6a6ef9f7c"
+      ]
+    },
+    {
+      "source": "Value",
+      "relationship": "Influence",
+      "target": "Outcome",
+      "count": 5,
+      "allowed": true,
+      "relationships": [
+        "id-01ff839ed3944cdfa2fc6b3dc56078fb",
+        "id-10abc5c5de7b4f9baf653a94419c176a",
+        "id-3e7c4b09f0284eb789d9cb6a5a7fced1",
+        "id-e68330fc32bb47da9cbdc5bc2ace5529",
+        "id-ed43e8be110148959808f0ed2b01e60c"
+      ]
+    },
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Assignment",
+      "target": "ApplicationFunction",
+      "count": 4,
+      "allowed": true,
+      "relationships": [
+        "id-59a82ffe721d42f6a931282cecef1f6d",
+        "id-9a7ce077e95240b9841dfbf912fc1945",
+        "id-f301955a909b4202a741b9d99522a843",
+        "id-fd7b0d820bc74a4a9c3c1e96e95d264f"
+      ]
+    },
+    {
+      "source": "ApplicationFunction",
+      "relationship": "Realization",
+      "target": "ApplicationService",
+      "count": 4,
+      "allowed": true,
+      "relationships": [
+        "id-89bfc298d13d465ebd02705b91d11aaa",
+        "id-abb5a87efa7f4d4198f23e2867312f27",
+        "id-c330a67c3a514678b99ed33c0223ecd1",
+        "id-ce4112185cc449cbad26778fa59b0f71"
+      ]
+    },
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Realization",
+      "target": "Outcome",
+      "count": 3,
+      "allowed": true,
+      "relationships": [
+        "id-39faa92fef56478eb6edf0d8f9d3c363",
+        "id-53551a84a33145b7856a833b0ac6595b",
+        "id-85a8bbb9c55747b39ad59180d8ec16e9"
+      ]
+    },
+    {
+      "source": "DataObject",
+      "relationship": "Association",
+      "target": "DataObject",
+      "count": 2,
+      "allowed": true,
+      "relationships": [
+        "id-0c20303182ab4dc7b0e35b0a2f9c9c78",
+        "id-bee6e6eb9b854e50afe423e0a675f18f"
+      ]
+    },
+    {
+      "source": "ApplicationFunction",
+      "relationship": "Access",
+      "target": "DataObject",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-015bb6e20381471c883cf5603a767283"
+      ]
+    },
+    {
+      "source": "ApplicationService",
+      "relationship": "Realization",
+      "target": "Capability",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-655098fccb5b4a50bc4ca410ed7827e4"
+      ]
+    },
+    {
+      "source": "DataObject",
+      "relationship": "Aggregation",
+      "target": "DataObject",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-b94bbb2900d345b3bef61810ecd7e3fe"
+      ]
+    },
+    {
+      "source": "DataObject",
+      "relationship": "Association",
+      "target": "Outcome",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-d90b8e058eaa41a4ab40620f738ba2c5"
+      ]
+    },
+    {
+      "source": "Outcome",
+      "relationship": "Association",
+      "target": "Capability",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-b253eb2e7f61456b879020c1038f65d8"
+      ]
+    }
+  ],
+  "placeholders": [],
+  "placeholderRelationships": [],
+  "notAllowed": 0
+}

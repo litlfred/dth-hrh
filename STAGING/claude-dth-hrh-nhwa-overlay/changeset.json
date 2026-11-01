@@ -1,0 +1,167 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "ea40122848fe69fd04a219c413a548ff6aee2266"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 1,
+    "removed": 0,
+    "changed": 7,
+    "unchanged": 315,
+    "renamed": 0,
+    "prose": 1,
+    "manifest": 6,
+    "moved": 0
+  },
+  "changes": [
+    {
+      "change": "changed",
+      "label": "tbl:handbook-at-a-glance",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
+        "kind": "table",
+        "section": "dth-hrh/about-this-draft::sec:about-glance",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
+        "kind": "table",
+        "section": "dth-hrh/about-this-draft::sec:about-glance",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch04-key-messages",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch04-purpose-and-role-of-a-registry/p-ch04-key-messages.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch04-purpose-and-role-of-a-registry::sec:ch04-lead",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch04-purpose-and-role-of-a-registry/p-ch04-key-messages.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch04-purpose-and-role-of-a-registry::sec:ch04-lead",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch05-priority-use-cases",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/p-ch05-priority-use-cases.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/p-ch05-priority-use-cases.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch07-records",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-records.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-records.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-REC-01",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-rec-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-rec-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch07-analytics",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-analytics.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-analytics.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "fig:nhwa-poster",
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/f-nhwa-poster.ts",
+        "kind": "figure",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-AN-02",
+      "aspects": [
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 3
+      }
+    }
+  ]
+}

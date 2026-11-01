@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-nhwa-poster.jsonld",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-dthhrh-view-nhwa-poster",
+  "schema:name": "NHWA on the health workforce registry (poster, dth-hrh)",
+  "schema:description": "The NHWA work dth-hrh owns, as bands of cards: the four NHWA modules and the subnational indicators, the data they draw on (CDE-HWR and the NHWA Dataset, beside smart-ra's Health Worker and Facility), and the smart-ra applications that hold and move that data. Drawn from the same items as view \"Health workforce registry and NHWA (dth-hrh)\"; its relationships are in that view.",
+  "schema:image": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-nhwa-poster.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-49168f20ee2d46f2b1a991051ab5a02d.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-87a3589d681c4d8e9b2ada5d72db9eb0.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-f3da9bf103a341d28717012ddfb83ae2.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-4cb8cc587d6c4764837e79518dfa2049.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-57355ace4e704cf49bfd82e616a617ac.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-e162b2223da4440983514be5854b654d.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-145e885489634e469e8a6734f56b7df5.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-702c24bbd73341be9afc11c7e11e9810.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-ad969289cb774307aa678037c56fdd3f.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-4e0767822dcf46409554156a133fbc67.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-bbd18f65be45490fbbaf02346511ae5e.jsonld"
+    }
+  ],
+  "schema:subjectOf": [
+    {
+      "schema:name": "fig:nhwa-poster",
+      "schema:url": "https://litlfred.github.io/dth-hrh/folio/dth-hrh/ch07-functional-requirements/f-nhwa-poster.md"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1.jsonld"
+}

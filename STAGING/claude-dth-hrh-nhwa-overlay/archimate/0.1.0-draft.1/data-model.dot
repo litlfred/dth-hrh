@@ -1,0 +1,12 @@
+digraph "DTH-HRH overlay on the DPI-H reference architecture — data model" {
+  graph [rankdir=LR, fontname="Helvetica", fontsize=11, nodesep=0.5, ranksep=1.1];
+  node [shape=box, style="filled", fontname="Helvetica", fontsize=10, margin="0.14,0.08"];
+  edge [fontname="Helvetica", fontsize=9, color="#555555", fontcolor="#333333"];
+  "id-e162b2223da4440983514be5854b654d" [label="«Data Object»\nCDE-HWR: Core Data Elements for the Health Workforce Registry\n—\n• Named demographics\n• Identifier and index\n• Licensure\n• Registration\n• Educational credential\n• Organizational affiliation\n• Facility association", fillcolor="#b5ffff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/elements/cde-hwr-core-data-elements-for-the-health-workforce-registry/", target="_top", tooltip="CDE-HWR: Core Data Elements for the Health Workforce Registry (Data Object)"];
+  "id-ad969289cb774307aa678037c56fdd3f" [label="«Data Object»\nFacility", fillcolor="#b5ffff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/elements/facility/", target="_top", tooltip="Facility (Data Object)"];
+  "id-702c24bbd73341be9afc11c7e11e9810" [label="«Data Object»\nHealth Worker", fillcolor="#b5ffff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/elements/health-worker/", target="_top", tooltip="Health Worker (Data Object)"];
+  "id-145e885489634e469e8a6734f56b7df5" [label="«Data Object»\nNHWA Dataset (linking and indexing, built on CDE-HWR)", fillcolor="#b5ffff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/elements/nhwa-dataset-linking-and-indexing-built-on-cde-hwr/", target="_top", tooltip="NHWA Dataset (linking and indexing, built on CDE-HWR) (Data Object)"];
+  "id-145e885489634e469e8a6734f56b7df5" -> "id-e162b2223da4440983514be5854b654d" [label="builds on", dir=both, arrowtail=odiamond, arrowhead=vee, URL="../../en/dth-hrh/archimate/0.1.0-draft.1/relationships/id-b94bbb2900d345b3bef61810ecd7e3fe/", target="_top", tooltip="builds on"];
+  "id-e162b2223da4440983514be5854b654d" -> "id-702c24bbd73341be9afc11c7e11e9810" [label="core of", arrowhead=vee, URL="../../en/dth-hrh/archimate/0.1.0-draft.1/relationships/id-0c20303182ab4dc7b0e35b0a2f9c9c78/", target="_top", tooltip="core of"];
+  "id-e162b2223da4440983514be5854b654d" -> "id-ad969289cb774307aa678037c56fdd3f" [label="facility association", arrowhead=vee, URL="../../en/dth-hrh/archimate/0.1.0-draft.1/relationships/id-bee6e6eb9b854e50afe423e0a675f18f/", target="_top", tooltip="facility association"];
+}

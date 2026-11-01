@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/freq-FR-ID-01",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:FR-ID-01",
+  "kind": "functional-requirement",
+  "title": "Assign a unique, persistent health worker identifier, linked to the national…",
+  "text": "fr-id-01.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "FR-ID-01",
+    "priority": "to-be-prioritized",
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-dcb4ea610e32444899cc9aa0697c7ce9.jsonld",
+          "name": "Assignment of Unique Health Worker ID)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

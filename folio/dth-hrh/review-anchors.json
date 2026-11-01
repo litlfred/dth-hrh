@@ -2039,7 +2039,7 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "fe99be5372de",
+   "hash": "fee5bde9eae4",
    "excerpt": "FR-ID-01. Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. Priority: to be set (must / s",
    "method": "folio-snapshot"
   },
@@ -2051,8 +2051,8 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "1fc2d908bb51",
-   "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "11aeb33d19df",
+   "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced. Inspirat",
    "method": "folio-snapshot"
   },
   {
@@ -2087,7 +2087,7 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "b8da7271111a",
+   "hash": "38bb112b2639",
    "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the minimum data set. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
@@ -2135,7 +2135,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "8b210acabfaf",
+   "hash": "1ac3122ceda5",
    "excerpt": "FR-LC-01. Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
@@ -2147,7 +2147,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "84a922dbe60c",
+   "hash": "615bdf45609c",
    "excerpt": "FR-LC-02. Support renewals, recording of continuing professional development, and reminders. Priority: to be set (must / should / could). Linked use cases: to b",
    "method": "folio-snapshot"
   },
@@ -2183,7 +2183,7 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "9ffed6ce482b",
+   "hash": "9d20eabfca22",
    "excerpt": "FR-VER-01. Confirm registration and licence status in real time for employers, the public and other systems. Priority: to be set (must / should / could). Linked",
    "method": "folio-snapshot"
   },
@@ -2257,7 +2257,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "bcea931ab830",
+   "hash": "e32df303cfe2",
    "excerpt": "FR-AN-01. Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Priority: to be set (must / should / could). Linked use cases",
    "method": "folio-snapshot"
   },
@@ -2269,7 +2269,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "721bee3f2d42",
+   "hash": "bbe30bbabb71",
    "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced. NHWA indicators: 1-01, 1-02",
    "method": "folio-snapshot"
   },
@@ -2281,8 +2281,8 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "8915f80e6f2e",
-   "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "a9b1db46ab05",
+   "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced. Inspirational reference (not ",
    "method": "folio-snapshot"
   },
   {

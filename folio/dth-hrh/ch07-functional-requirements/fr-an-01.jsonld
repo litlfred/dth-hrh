@@ -22,6 +22,28 @@
     },
     "requirementId": "FR-AN-01",
     "priority": "to-be-prioritized",
+    "inspirationalReferences": {
+      "source": "who-iris library/9789241549226-eng (WHO, Human resources for health information system: minimum data set for health workforce registry, 2015), system functional requirements only (who-iris#167)",
+      "role": "inspirational, non-definitional: contributes to a definition, does not define it; the data set itself is not used (owner, 2026-11-01 23:42Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "references": [
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-006-04",
+          "item": "sec-006-04",
+          "text": "A health workforce registry allows aggregation of health workforce data in several combinations and assists both national and sub-national ministries of health in producing essential indicator-based reports, as needed."
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-037-02",
+          "item": "sec-037-02",
+          "text": "Based on stakeholder input, a standardized list of reports must be programmed as part of the software design to generate accurate and timely reports."
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-038-05",
+          "item": "sec-038-05",
+          "text": "Illustration depicting a web-enabled electronic Health Workforce Registry with person-centric data entry screen and analytics display abilities"
+        }
+      ]
+    },
     "nhwaIndicators": {
       "source": "who-iris library/9789240081291-eng (National health workforce accounts: a handbook, 2nd ed., 2023)",
       "basis": "agent-proposed: the NHWA indicators on stock and distribution by age, sex and facility that this requirement's reports cover, for working-group review (dth-hrh#47)",

@@ -83,7 +83,7 @@
   },
   {
    "dir": "ch11-data-standards-and-minimum-dataset",
-   "title": "Chapter 11. Data Standards and Core Data Elements",
+   "title": "Chapter 11. Data Standards and Minimum Dataset",
    "number": 11,
    "label": "chap:ch11-data-standards-and-minimum-dataset"
   },
@@ -902,7 +902,7 @@
   },
   {
    "label": "sec:annex-1",
-   "title": "Annex 1. Core Data Elements (CDE-HRH)",
+   "title": "Annex 1. Minimum Data Set",
    "chapter": "annexes"
   },
   {
@@ -1028,8 +1028,8 @@
    "sections": [
     "sec:about-discussion"
    ],
-   "hash": "89e2afd0afd8",
-   "excerpt": "The draft proposes core data elements for a health workforce registry (CDE-HRH) within this handbook, taking inspiration from the WHO 2015 minimum data set. The",
+   "hash": "afdc3441c2e8",
+   "excerpt": "The draft proposes updating the 2015 minimum data set within this handbook. The TWG should confirm whether the update belongs here or in a separate product.",
    "method": "folio-snapshot"
   },
   {
@@ -1101,7 +1101,7 @@
     "sec:about-glance"
    ],
    "caption": "Handbook at a glance: parts, chapters and sections",
-   "hash": "5aa6e026240c",
+   "hash": "c7105c582bbb",
    "excerpt": "Part Chapter Sections :---- :---- :---- Part 0. Introduction [1. Why Digital Health Workforce Registries Matter]( chap:ch01-why-digital-health-workforce-registr",
    "method": "folio-snapshot"
   },
@@ -1257,8 +1257,8 @@
    "sections": [
     "sec:2-1"
    ],
-   "hash": "5a4e58b0661c",
-   "excerpt": "- Purpose, governance, core data elements, functional requirements and architecture options for a registry. - Interoperability with regulators, employers, train",
+   "hash": "98860f896cb8",
+   "excerpt": "- Purpose, governance, minimum data set, functional requirements and architecture options for a registry. - Interoperability with regulators, employers, trainin",
    "method": "folio-snapshot"
   },
   {
@@ -1379,7 +1379,7 @@
     "sec:3-1"
    ],
    "caption": "Handbook chapters mapped to the DIIG chapters (proposed, for TWG review)",
-   "hash": "abf6add7d10b",
+   "hash": "b697b112f804",
    "excerpt": "DIIG chapter What the DIIG step produces Where this handbook covers it for registries --- --- --- 2. Form the team and establish goals Roles and responsibilitie",
    "method": "folio-snapshot"
   },
@@ -2075,8 +2075,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "0f920c0e515b",
-   "excerpt": "- Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH). - Hold supporting evidence, such as certificates, or ",
+   "hash": "29b9f1040cd1",
+   "excerpt": "- Create, view, update and archive the health worker record in line with the minimum data set. - Hold supporting evidence, such as certificates, or links to it.",
    "method": "folio-snapshot"
   },
   {
@@ -2087,8 +2087,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "d801e71dbf2d",
-   "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH). Priority: to be set (must / should / could).",
+   "hash": "b8da7271111a",
+   "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the minimum data set. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
   {
@@ -2699,8 +2699,8 @@
    "sections": [
     "sec:ch11-lead"
    ],
-   "hash": "6224aebd67b5",
-   "excerpt": "Chapter objectives. This chapter will help readers to: - Present the core data elements for a health workforce registry (CDE-HRH) and the reason for each elemen",
+   "hash": "98481845dcbb",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Present a minimum data set for a health workforce registry and the reason for each element. - Identify ",
    "method": "folio-snapshot"
   },
   {
@@ -2711,8 +2711,8 @@
    "sections": [
     "sec:ch11-lead"
    ],
-   "hash": "d0180a7890b5",
-   "excerpt": "Key messages - Collect only what is needed, define it precisely, and keep it up to date. - The core data elements are a floor, not a ceiling. Countries can exte",
+   "hash": "722710594492",
+   "excerpt": "Key messages - Collect only what is needed, define it precisely, and keep it up to date. - The minimum data set is a floor, not a ceiling. Countries can extend ",
    "method": "folio-snapshot"
   },
   {
@@ -2723,8 +2723,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "f38a643fcb49",
-   "excerpt": "- The WHO 2015 minimum data set as a source of inspiration: identification number, name, birth history, citizenship and language, address, contact information, ",
+   "hash": "07fc0e6b3583",
+   "excerpt": "- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, profe",
    "method": "folio-snapshot"
   },
   {
@@ -2891,8 +2891,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "a4f33c357489",
-   "excerpt": "Suggested figures and tables - Table: core data elements (CDE-HRH). - Figure: logical data model (health worker, qualification, licence, role, facility). - Tabl",
+   "hash": "fdbdb3e50862",
+   "excerpt": "Suggested figures and tables - Table: minimum data set. - Figure: logical data model (health worker, qualification, licence, role, facility). - Table: registry ",
    "method": "folio-snapshot"
   },
   {
@@ -2903,8 +2903,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "10f0fd02afd5",
-   "excerpt": "Implementation tools and checklists - Core data elements (annex) and data dictionary (annex). - Template for mapping national occupational titles to ISCO-08. - ",
+   "hash": "a8392ac0bac5",
+   "excerpt": "Implementation tools and checklists - Minimum data set (annex) and data dictionary (annex). - Template for mapping national occupational titles to ISCO-08. - NH",
    "method": "folio-snapshot"
   },
   {
@@ -2915,8 +2915,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "82fde2f688d2",
-   "excerpt": "Expected outputs for countries - A national set of core data elements and a data dictionary. - National occupational titles mapped to ISCO-08. - A list of the N",
+   "hash": "852220d257cf",
+   "excerpt": "Expected outputs for countries - A national minimum data set and data dictionary. - National occupational titles mapped to ISCO-08. - A list of the NHWA indicat",
    "method": "folio-snapshot"
   },
   {
@@ -4079,8 +4079,8 @@
    "sections": [
     "sec:annex-1"
    ],
-   "hash": "b0bfce747a5d",
-   "excerpt": "Proposed core and optional data elements with definitions: the core data elements for a health workforce registry (CDE-HRH). CDE-HRH takes inspiration from the ",
+   "hash": "fba6384806b5",
+   "excerpt": "Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set. The 2015 elements are drafted as structured data-element ",
    "method": "folio-snapshot"
   },
   {
@@ -4839,8 +4839,8 @@
    "sections": [
     "sec:references-lead"
    ],
-   "hash": "21ee88f7d25a",
-   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. <https://www.who.int/publications/i/item/97892415492",
+   "hash": "4b85faaad1af",
+   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. - WHO. Global strategy on human resources for health",
    "method": "folio-snapshot"
   }
  ]

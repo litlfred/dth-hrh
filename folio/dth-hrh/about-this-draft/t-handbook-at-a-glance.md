@@ -10,7 +10,7 @@
 |  | [8. Digital Architecture Principles](#chap:ch08-digital-architecture-principles) | [Architecture patterns](#sec:8-1); [Federation](#sec:8-2); [Scalability](#sec:8-3); [Technology neutrality](#sec:8-4) |
 | Part 2. Technical Design | [9. Registry within Ecosystem](#chap:ch09-registry-within-ecosystem) | [System landscape](#sec:9-1); [Data flows](#sec:9-2); [Architecture examples](#sec:9-3) |
 |  | [10. Interoperability](#chap:ch10-interoperability) | [Standards](#sec:10-1); [APIs](#sec:10-2); [Data exchange patterns](#sec:10-3); [Governance](#sec:10-4) |
-|  | [11. Data Standards and Core Data Elements](#chap:ch11-data-standards-and-minimum-dataset) | [Core dataset](#sec:11-1); [Classifications](#sec:11-2); [Metadata](#sec:11-3); [NHWA mapping](#sec:11-4) |
+|  | [11. Data Standards and Minimum Dataset](#chap:ch11-data-standards-and-minimum-dataset) | [Core dataset](#sec:11-1); [Classifications](#sec:11-2); [Metadata](#sec:11-3); [NHWA mapping](#sec:11-4) |
 |  | [12. Privacy, Security and Trust](#chap:ch12-privacy-security-and-trust) | [Privacy by design](#sec:12-1); [Cybersecurity](#sec:12-2); [Access control](#sec:12-3); [Audit trails](#sec:12-4) |
 |  | [13. Data Quality Management](#chap:ch13-data-quality-management) | [Quality dimensions](#sec:13-1); [Validation](#sec:13-2); [Monitoring](#sec:13-3) |
 | Part 3.  Country Implementation | [14. Preparing for Transformation](#chap:ch14-preparing-for-transformation) | [Leadership](#sec:14-1); [Teams](#sec:14-2); [Readiness](#sec:14-3); [Stakeholder engagement](#sec:14-4) |
@@ -22,4 +22,4 @@
 | Part 4. Examples and Resources | [20. Illustrative Use Cases](#chap:ch20-illustrative-use-cases) | [Licensing](#sec:20-1); [Verification](#sec:20-2); [Emergency response](#sec:20-3); [Mobility](#sec:20-4) |
 |  | [21. Country Case Studies](#chap:ch21-country-case-studies) | [Centralized](#sec:21-1); [Federated](#sec:21-2); [Fragile settings](#sec:21-3); [Lessons learned](#sec:21-4) |
 |  | [22. Tools and Templates](#chap:ch22-tools-and-templates) | [Checklists](#sec:22-1); [Roadmaps](#sec:22-2); [Assessment tools](#sec:22-3) |
-| [Annexes](#chap:annexes) | [Core Data Elements (CDE-HRH)](#sec:annex-1); [Data Dictionary](#sec:annex-2); [Governance Template](#sec:annex-3); [User Personas](#sec:annex-4); [Functional Requirements Catalogue](#sec:annex-5); [Interoperability Models](#sec:annex-6); [Readiness Assessment](#sec:annex-7); [Maturity Model](#sec:annex-8); [Glossary](#chap:glossary); [NHWA Mapping](#sec:annex-10) |  |
+| [Annexes](#chap:annexes) | [Minimum Data Set](#sec:annex-1); [Data Dictionary](#sec:annex-2); [Governance Template](#sec:annex-3); [User Personas](#sec:annex-4); [Functional Requirements Catalogue](#sec:annex-5); [Interoperability Models](#sec:annex-6); [Readiness Assessment](#sec:annex-7); [Maturity Model](#sec:annex-8); [Glossary](#chap:glossary); [NHWA Mapping](#sec:annex-10) |  |

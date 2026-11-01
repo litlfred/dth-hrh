@@ -155,6 +155,8 @@ Verification methods: `test`, `inspection`, `review`, `analysis`.
 
 **Q-L2P-1: how should the committee review #64 (change set #76)?**
 
+**Decided: A**, by the owner (litlfred), 2026-11-01 19:14Z, on the project decision card. Recorded on #76.
+
 - **A. Split #64 into three change sets under #76** (BPMN processes, roles, DMN tables), each its own PR and review-log row. Smaller reviews, and one can merge without the others. Costs one rebase and two new rows. *Recommended.*
 - **B. Keep #64 as one change set.** No extra work, but the committee must accept or reject all three kinds together.
 - **C. Hold #64 until typed fields land** (smart-base#246), then redo it on the typed kinds. Avoids reworking blocks twice, but the committee sees nothing for now.

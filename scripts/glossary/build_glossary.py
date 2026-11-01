@@ -301,36 +301,19 @@ def build(wb_path, out_dir):
         "terms": cand_terms,
     }
 
-    council_extra_alts = {
-        "united-kingdom-nursing-and-midwifery-council": ["NMC-UK"],
-        "brazil-federal-council-of-medicine": ["CRM"],
-        "brazil-federal-council-of-nursing": ["COREN"],
-        "canada-college-of-nurses-of-ontario": ["RNAO"],
-        "australia-nursing-and-midwifery-board-of-australia": ["ANMAC"],
-        "united-arab-emirates-dubai-health-authority": ["MOHAP", "DoH"],
-        "india-indian-nursing-council": ["NUID", "NRTS"],
-        "united-states-federation-of-state-medical-boards": ["USMLE"],
-        "united-states-national-council-of-state-boards-of-nursing": ["NCLEX-RN", "NCLEX-PN"],
-    }
     council_terms = []
     for k in councils:
         cid = slug(f"{k['country']}-{k['name']}", 80)
-        acrs = [x for pair in re.findall(r"\(([A-Za-z0-9&-]+)\)|\s-\s([A-Z]{2,10})\)", k["name"]) for x in pair if x]
-        for extra in council_extra_alts.get(cid, []):
-            if extra not in acrs:
-                acrs.append(extra)
-        ct = {
+        council_terms.append({
             "id": cid,
             "prefLabel": k["name"],
-            **({"altLabel": acrs} if acrs else {}),
             "notation": f"{k['region']} / {k['country']}",
             "definition": k["definition"] or k["mandate"] or "(none given)",
             "scopeNote": f"Regulates: {k['professions']}. Mandate: {k['mandate']} Reference: {k['ref']} {check_note(k)}",
             "source": f"{WORKBOOK_REF}#Professional council!row {k['row']}",
             "status": "candidate",
             "focus": {"type": "FormalOrganization"},
-        }
-        council_terms.append(ct)
+        })
     council = {
         "$schema": "folio-glossary/v1",
         "id": "twg-professional-council-examples",
@@ -353,29 +336,12 @@ def build(wb_path, out_dir):
     # SKOS matches to other schemes (such as smart-ra's dpi-h-ra glossary,
     # dth-hrh#47) are curated links, not workbook content: keep them too.
     MATCHES = ("exactMatch", "closeMatch", "broadMatch", "narrowMatch")
-    WORKBOOK_NOTATIONS = {
-        "continuing-professional-development": ("CPD", []),
-        "health-workers": ("HRH", []),
-        "health-workforce": ("HWF", ["HCWF"]),
-        "health-workforce-registry": ("HWR", ["HWR", "PR"]),
-        "human-resources-for-health-information-system": ("HRIS", ["ISHRH", "HWIS"]),
-        "international-standard-classification-of-occupations": ("ISCO", ["ISCO-08"]),
-        "national-health-workforce-accounts": ("NHWA", []),
-        "community-health-workers": ("CHW", ["CHW", "CHWs"]),
-        "health-labour-market": ("HLM", ["HLM", "HLMA"]),
-        "human-resources-management": ("HRM", ["HRM", "HR"]),
-    }
     prior_matches = {}
-    extra_terms = []
     prior_members = []
-    order_set = set(order)
     if main_path.exists():
         prior_doc = json.loads(main_path.read_text())
         prior_members = prior_doc.get("members", [])
         for t in prior_doc.get("terms", []):
-            if t["id"] not in order_set:
-                extra_terms.append(t)
-                continue
             if t.get("status") == "authored":
                 prior[t["id"]] = t
             kept = {m: t[m] for m in MATCHES if t.get(m)}
@@ -393,12 +359,6 @@ def build(wb_path, out_dir):
             "prefLabel": c["pref"],
         }
         alts = dedupe_alts(c["pref"], c["alts"])
-        if tid in WORKBOOK_NOTATIONS:
-            not_code, more_alts = WORKBOOK_NOTATIONS[tid]
-            t["notation"] = not_code
-            for a in more_alts:
-                if a not in alts:
-                    alts.append(a)
         if alts:
             t["altLabel"] = alts
         note = f"Open for working-group review: {n} candidate definition{'s' if n != 1 else ''}, none adopted."
@@ -416,7 +376,6 @@ def build(wb_path, out_dir):
         t["status"] = "candidate"
         t.update(prior_matches.get(tid, {}))
         terms.append(t)
-    terms.extend(extra_terms)
     main = {
         "$schema": "folio-glossary/v1",
         "id": "dth-hrh",

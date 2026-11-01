@@ -18,50 +18,9 @@
     "source": {
       "library": "twg-outline-2026-10-02",
       "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "method": "outline-seed",
-      "issue": "litlfred/dth-hrh#47"
+      "method": "outline-seed"
     },
-    "roleId": "HRH-R-04",
-    "personaType": "person",
-    "bpmnLanes": [
-      {
-        "process": "bp:hrh-bp-01-lifecycle-maintenance",
-        "processId": "HRH_BP_01",
-        "laneId": "Lane_BP01_TrainingRegistrar",
-        "bpmnFile": "folio/dth-hrh/ch04-purpose-and-role-of-a-registry/bp-hrh-bp-01-lifecycle-maintenance.bpmn"
-      },
-      {
-        "process": "bp:hrh-bp-02-register-and-license-graduate",
-        "processId": "HRH_BP_02",
-        "laneId": "Lane_BP02_TrainingRegistrar",
-        "bpmnFile": "folio/dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-02-register-and-license-graduate.bpmn"
-      }
-    ],
-    "archimate": {
-      "model": "smart-ra 0.2.0",
-      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
-      "elements": [
-        {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-82fc8a35ade94ff3a02acc9194490fc8.jsonld",
-          "name": "Academic & Training Institutions",
-          "type": "BusinessRole"
-        }
-      ],
-      "views": [
-        {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
-          "name": "ALL High Level - Health Workforce"
-        }
-      ]
-    },
-    "glossaryTerms": [
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education-and-training-institution",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/pre-service-education"
-    ],
-    "relatedBlocks": [
-      "bp:hrh-bp-01-lifecycle-maintenance",
-      "bp:hrh-bp-02-register-and-license-graduate"
-    ]
+    "personaType": "person"
   },
   "provenance": "authored"
 }

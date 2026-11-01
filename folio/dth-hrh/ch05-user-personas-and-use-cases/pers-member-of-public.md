@@ -9,5 +9,3 @@
 | **Difficulties** | Sees only what is decided to be public (tiered disclosure). | 12.1 |
 | **Digital skills** | *To confirm with country input.* | — |
 | **Connectivity** | *To confirm with country input.* | — |
-
-*Role ID:* `HRH-R-06` | *BPMN lane(s):* `Lane_BP03_Public` in `bp:hrh-bp-03-renew-licence-and-verify-status` (`HRH_BP_03`) | *ArchiMate (dpi-h-ra 0.2.0):* [Patients](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-a2320dbc07e6450b94f3f0f3e03bb877.jsonld) (`BusinessRole`); [User/Stakeholder](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-f3e8608ee0974e61bbad7d31de96990f.jsonld) (`BusinessRole`) | *Glossary:* [`dpi-h-ra:client`](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/client), [`dth-hrh:regulation`](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation).

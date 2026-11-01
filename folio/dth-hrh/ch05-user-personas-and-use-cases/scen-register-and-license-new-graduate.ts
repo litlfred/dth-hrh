@@ -5,5 +5,5 @@ export default userScenario({
   title: "Register and license a new graduate",
   personas: ["pers:health-worker", "pers:training-institution-registrar", "pers:registration-officer"],
   uses: [],
-  meta: {"source":{"library":"twg-outline-2026-10-02","file":"library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md","method":"outline-seed"},"relatedBlocks":["bp:hrh-bp-02-register-and-license-graduate","dt:hrh-dt-01-registration-eligibility"]},
+  meta: {"source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}},
 });

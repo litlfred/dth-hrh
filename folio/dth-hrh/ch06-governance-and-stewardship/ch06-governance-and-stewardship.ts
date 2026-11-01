@@ -15,7 +15,7 @@ export default chapter({
     section({
       title: "6.1 Institutions",
       label: "sec:6-1",
-      blocks: ["p-ch06-institutions", "pers-registry-governance-body"],
+      blocks: ["p-ch06-institutions"],
     }),
     section({
       title: "6.2 Legal foundations",
@@ -25,7 +25,7 @@ export default chapter({
     section({
       title: "6.3 Data stewardship",
       label: "sec:6-3",
-      blocks: ["p-ch06-data-stewardship", "pers-registry-custodian", "bp-hrh-bp-06-governance-and-stewardship-review"],
+      blocks: ["p-ch06-data-stewardship"],
     }),
     section({
       title: "6.4 Sustainability",

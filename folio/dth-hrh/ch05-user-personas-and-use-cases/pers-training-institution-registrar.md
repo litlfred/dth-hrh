@@ -7,5 +7,3 @@
 | **Difficulties** | Education data held in systems not connected to the regulator's. | 1.1 |
 | **Digital skills** | *To confirm with country input.* | — |
 | **Connectivity** | *To confirm with country input.* | — |
-
-*Role ID:* `HRH-R-04` | *BPMN lane(s):* `Lane_BP01_TrainingRegistrar` in `bp:hrh-bp-01-lifecycle-maintenance` (`HRH_BP_01`); `Lane_BP02_TrainingRegistrar` in `bp:hrh-bp-02-register-and-license-graduate` (`HRH_BP_02`) | *ArchiMate (dpi-h-ra 0.2.0):* [Academic & Training Institutions](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-82fc8a35ade94ff3a02acc9194490fc8.jsonld) (`BusinessRole`) | *Glossary:* [`dth-hrh:education-and-training-institution`](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education-and-training-institution), [`dth-hrh:pre-service-education`](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/pre-service-education).

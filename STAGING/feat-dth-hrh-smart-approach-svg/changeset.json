@@ -1,0 +1,34 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "746894dfebc8a59bf34bb287d7fa52b67d7c23ce"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 1,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 322,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 0
+  },
+  "changes": [
+    {
+      "change": "added",
+      "label": "fig:smart-guidelines-approach",
+      "head": {
+        "file": "dth-hrh/ch03-digital-transformation-approach/f-smart-guidelines-approach.ts",
+        "kind": "figure",
+        "section": "dth-hrh/ch03-digital-transformation-approach::sec:3-1",
+        "index": 2
+      }
+    }
+  ]
+}

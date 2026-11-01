@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/pers-system-nhwa-platform",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:system-nhwa-platform",
+  "kind": "persona",
+  "title": "NHWA platform",
+  "text": "pers-system-nhwa-platform.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "personaType": "system",
+    "smartBaseGenericPersona": "System.HMIS"
+  },
+  "provenance": "authored"
+}

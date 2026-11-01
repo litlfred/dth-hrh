@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/nfreq-NFR-02",
+  "@type": [
+    "smart-base:NonFunctionalRequirement"
+  ],
+  "label": "nfreq:NFR-02",
+  "kind": "non-functional-requirement",
+  "title": "Availability",
+  "text": "nfr-availability.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "requirementId": "NFR-02",
+    "priority": "must"
+  },
+  "provenance": "authored"
+}

@@ -1320,16 +1320,102 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p><strong>Purpose.</strong> This table decides what happens to a registration application: register and license, hold it for duplicate review or pending verification, or reject it. The registration officer at the regulatory body uses it when processing a new application (processes HRH-BP-01 and HRH-BP-02). It serves the identity and records requirements <code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code>, <code>freq:FR-REC-01</code> and <code>freq:FR-REC-02</code>.</p>
 <p>Decision table <strong>HRH-DT-01</strong> (<code>Decision_HRH_DT_01</code>, hit policy <code>FIRST</code>) formalizes the rules in <strong>Section 7.1 (Identity management)</strong> and <strong>Section 7.2 (Records)</strong> governing when a registration application creates a new persistent health worker identifier (<code>freq:FR-ID-01</code>), reuses an existing identifier across cadres or specialties, holds a candidate duplicate for manual adjudication (<code>freq:FR-ID-02</code>), or rejects an application lacking primary-source qualification attestation (<code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>).</p>
 <p><em>Source passages cited:</em> <code>prose:ch07-identity-management</code>, <code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code>, <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>, and <code>scen:register-and-license-new-graduate</code>. Qualitative states come strictly from the source text; no numeric matching scores or day thresholds are invented.</p>
-<p>| Rule | <code>identityStatus</code> (<code>freq:FR-ID-01</code>) | <code>qualificationAttestation</code> (<code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>) | <code>duplicateMatch</code> (<code>freq:FR-ID-02</code>) | <code>regulatoryStanding</code> (<code>freq:FR-REC-02</code>) | <code>registrationDecision</code> | <code>identifierAction</code> | Source basis |
-|---|---|---|---|---|---|---|
-| <code>Rule_DT01_01</code> | <code>-</code> | <code>-</code> | <code>-</code> | <code>"revoked", "disqualified"</code> | <code>"reject-disqualified"</code> | <code>"none"</code> | <code>freq:FR-REC-02</code> (7.2) |
-| <code>Rule_DT01_02</code> | <code>"rejected"</code> | <code>-</code> | <code>-</code> | <code>-</code> | <code>"reject-unverified-identity"</code> | <code>"none"</code> | <code>freq:FR-ID-01</code> (7.1) |
-| <code>Rule_DT01_03</code> | <code>-</code> | <code>"rejected"</code> | <code>-</code> | <code>-</code> | <code>"reject-unverified-qualification"</code> | <code>"none"</code> | <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (7.2) |
-| <code>Rule_DT01_04</code> | <code>"verified", "verified-without-national-id"</code> | <code>"attested"</code> | <code>"candidate-duplicate"</code> | <code>"good-standing", "new-graduate"</code> | <code>"hold-duplicate-review"</code> | <code>"review-candidate-match"</code> | <code>freq:FR-ID-02</code> (7.1, 13.3) |
-| <code>Rule_DT01_05</code> | <code>"verified", "verified-without-national-id"</code> | <code>"attested"</code> | <code>"existing-confirmed"</code> | <code>"good-standing", "new-graduate"</code> | <code>"register-and-license"</code> | <code>"reuse-existing-hwr-id"</code> | <code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code> (7.1) |
-| <code>Rule_DT01_06</code> | <code>"verified", "verified-without-national-id"</code> | <code>"attested"</code> | <code>"none"</code> | <code>"good-standing", "new-graduate"</code> | <code>"register-and-license"</code> | <code>"assign-new-hwr-id"</code> | <code>freq:FR-ID-01</code>, <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (5.2, 7.1, 7.2) |
-| <code>Rule_DT01_07</code> | <code>"pending", "unknown"</code> | <code>-</code> | <code>-</code> | <code>-</code> | <code>"hold-pending-verification"</code> | <code>"none"</code> | Third state: pending/unknown source check (<code>freq:FR-ID-01</code>) |
-| <code>Rule_DT01_08</code> | <code>-</code> | <code>-</code> | <code>-</code> | <code>-</code> | <code>"hold-pending-verification"</code> | <code>"none"</code> | Catch-all fallback (<code>freq:FR-ID-02</code>) |</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th><code>identityStatus</code> (<code>freq:FR-ID-01</code>)</th>
+<th><code>qualificationAttestation</code> (<code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>)</th>
+<th><code>duplicateMatch</code> (<code>freq:FR-ID-02</code>)</th>
+<th><code>regulatoryStanding</code> (<code>freq:FR-REC-02</code>)</th>
+<th><code>registrationDecision</code></th>
+<th><code>identifierAction</code></th>
+<th>Source basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Rule_DT01_01</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>"revoked", "disqualified"</code></td>
+<td><code>"reject-disqualified"</code></td>
+<td><code>"none"</code></td>
+<td><code>freq:FR-REC-02</code> (7.2)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_02</code></td>
+<td><code>"rejected"</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>"reject-unverified-identity"</code></td>
+<td><code>"none"</code></td>
+<td><code>freq:FR-ID-01</code> (7.1)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_03</code></td>
+<td><code>-</code></td>
+<td><code>"rejected"</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>"reject-unverified-qualification"</code></td>
+<td><code>"none"</code></td>
+<td><code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (7.2)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_04</code></td>
+<td><code>"verified", "verified-without-national-id"</code></td>
+<td><code>"attested"</code></td>
+<td><code>"candidate-duplicate"</code></td>
+<td><code>"good-standing", "new-graduate"</code></td>
+<td><code>"hold-duplicate-review"</code></td>
+<td><code>"review-candidate-match"</code></td>
+<td><code>freq:FR-ID-02</code> (7.1, 13.3)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_05</code></td>
+<td><code>"verified", "verified-without-national-id"</code></td>
+<td><code>"attested"</code></td>
+<td><code>"existing-confirmed"</code></td>
+<td><code>"good-standing", "new-graduate"</code></td>
+<td><code>"register-and-license"</code></td>
+<td><code>"reuse-existing-hwr-id"</code></td>
+<td><code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code> (7.1)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_06</code></td>
+<td><code>"verified", "verified-without-national-id"</code></td>
+<td><code>"attested"</code></td>
+<td><code>"none"</code></td>
+<td><code>"good-standing", "new-graduate"</code></td>
+<td><code>"register-and-license"</code></td>
+<td><code>"assign-new-hwr-id"</code></td>
+<td><code>freq:FR-ID-01</code>, <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (5.2, 7.1, 7.2)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_07</code></td>
+<td><code>"pending", "unknown"</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>"hold-pending-verification"</code></td>
+<td><code>"none"</code></td>
+<td>Third state: pending/unknown source check (<code>freq:FR-ID-01</code>)</td>
+</tr>
+<tr>
+<td><code>Rule_DT01_08</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td><code>"hold-pending-verification"</code></td>
+<td><code>"none"</code></td>
+<td>Catch-all fallback (<code>freq:FR-ID-02</code>)</td>
+</tr>
+</tbody>
+</table>
 <p><em>Companion DMN 1.3 file:</em> <code>dt-hrh-dt-01-registration-eligibility.dmn</code>.</p>
 <p><em>ArchiMate (dpi-h-ra 0.2.0):</em> <a href="https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-3bc59974bc1e4e5d8e795cdc1606587e.jsonld">Credential &#x26; License</a> (<code>ApplicationFunction</code>); <a href="https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-646c18afcfc54f4fb33ae93110e02c2c.jsonld">Identity Management Service</a> (<code>ApplicationService</code>); <a href="https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld">DPI-H Health Workforce Registry (HWR)</a> (<code>ApplicationComponent</code>); <a href="https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld">ALL High Level - Health Workforce</a> (<code>View</code>).</p>
 <p><em>Glossary terms:</em> <a href="https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/registration"><code>dth-hrh:registration</code></a>, <a href="https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/licensing"><code>dth-hrh:licensing</code></a>, <a href="https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/certification"><code>dth-hrh:certification</code></a>, <a href="https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/professional-council"><code>dth-hrh:professional-council</code></a>.</p>

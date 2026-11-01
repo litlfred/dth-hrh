@@ -84,8 +84,9 @@ for i in sorted(want, key=lambda i: (by_id[i].get(T), by_id[i].get("name") or ""
     is_base = i in base_by_id
     e = copy.deepcopy(base_by_id[i] if is_base else by_id[i])
     owned_f, base_f = folders[top_type[i]]
+    kind = "relationships" if "Relationship" in (e.get(T) or "") else "elements"
     tag(e, [ET.Element("property", {"key": "overlay:base", "value":
-            f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/elements/{i}.jsonld"})] if is_base
+            f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/{kind}/{i}.jsonld"})] if is_base
         else [ET.Element("property", {"key": "overlay:owner", "value": "dth-hrh"})])
     (base_f if is_base else owned_f).append(e)
     counts["base" if is_base else "owned"] += 1

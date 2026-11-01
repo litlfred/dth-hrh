@@ -2237,6 +2237,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "fig:nhwa-hwr",
+   "kind": "figure",
+   "chapter": "ch07-functional-requirements",
+   "root": "f-nhwa-hwr",
+   "sections": [
+    "sec:7-5"
+   ],
+   "caption": "The health workforce registry and the National Health Workforce Accounts (NHWA): the registry view of the reference architecture with the NHWA work this handbook adds",
+   "hash": "8009decbb4d3",
+   "excerpt": "Source: the dth-hrh ArchiMate overlay 0.1.0-draft.1 on the smart-ra (DPI-H RA) model 0.2.0, view \"Health workforce registry and NHWA (dth-hrh)\", a copy of smart",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "freq:FR-AN-01",
    "kind": "functional-requirement",
    "chapter": "ch07-functional-requirements",

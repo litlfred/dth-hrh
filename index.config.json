@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "da0599282fc0cb3f054e187fac5c80ddbf682999",
+          "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "da0599282fc0cb3f054e187fac5c80ddbf682999",
-              "evidence": "litlfred, 2026-10-31 21:01:15Z, decision card Q-IRIS1 in thread on dth-pc/dth-sc figures: 'A. Yes, merge on green' (merge who-iris#149, then re-pin dth-hrh#68 and dth-pc); window 20:59:38Z 'merge when green and ready +3hrs'. who-iris 7314adf = #149 (DIIG figure data); core, cat-harness and cat-harness-tools re-pinned to main together to avoid skew."
+              "on": "2026-11-01",
+              "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
+              "evidence": "folio-assistant-core moved to main d95399b = #462 (shared DTH checks: folio-l1-coverage.ts and glossary-validate.ts, bean cysv). litlfred, 2026-11-01 09:26Z, thread 'Share DTH scripts and add dth init': chose 'A. Merge it now' (then repin core in the 5 DTH pull requests). Window: litlfred, 2026-11-01 07:27Z, '+3hrs merge + repin'."
             }
           }
         }

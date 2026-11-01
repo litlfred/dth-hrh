@@ -1500,7 +1500,7 @@
     "section": "ch07-functional-requirements::sec:7-2"
   },
   "dt:hrh-dt-03-verification-and-access-response": {
-    "hash": "771cc106fbdd1121dab0919b4174d6d920b3f76d62719fe154dc96e846c2bf8a",
+    "hash": "8931f5c8e6dbb323d5472b8af55ac6c12ad8e4307484a08feb5bfa4b81dd62b6",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-4"
   },
@@ -1515,7 +1515,7 @@
     "section": "ch07-functional-requirements::sec:7-5"
   },
   "dt:hrh-dt-01-registration-eligibility": {
-    "hash": "894b8f462f04a3ca30988705b28f5a38434d6900d204b3825b47cc7f62958693",
+    "hash": "644605ada3959f65664fbc9644c65b1a151503beb5b3055130f3a86f0a65a179",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-1"
   },
@@ -1585,7 +1585,7 @@
     "section": "ch07-functional-requirements::sec:7-1"
   },
   "dt:hrh-dt-02-lifecycle-status-transition": {
-    "hash": "03cc57705b680841f466e63e171b416fca7cbb311edb2c795b13d53dac4b1053",
+    "hash": "04d51f550904468a42d8c8a224adc4f18a14ac5b4423e4f49b11156d9bad20c4",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-3"
   },

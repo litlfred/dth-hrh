@@ -1317,17 +1317,17 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
 <p><a id="dt:hrh-dt-01-registration-eligibility"></a><span class="block-actions" data-block="dt:hrh-dt-01-registration-eligibility"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-01-registration-eligibility.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-01-registration-eligibility.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.1+Identity+management+%E2%80%94+dt%3Ahrh-dt-01-registration-eligibility&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.1+Identity+management&amp;block=dt%3Ahrh-dt-01-registration-eligibility&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fdt-hrh-dt-01-registration-eligibility.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Decision-table.</strong> <em>Health worker registration eligibility and identifier assignment (HRH-DT-01)</em></p>
-<p><strong>Purpose.</strong> This table decides what happens to a registration application: register and license, hold it for duplicate review or pending verification, or reject it. The registration officer at the regulatory body uses it when processing a new application (processes HRH-BP-01 and HRH-BP-02). It serves the identity and records requirements <code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code>, <code>freq:FR-REC-01</code> and <code>freq:FR-REC-02</code>.</p>
-<p>Decision table <strong>HRH-DT-01</strong> (<code>Decision_HRH_DT_01</code>, hit policy <code>FIRST</code>) formalizes the rules in <strong>Section 7.1 (Identity management)</strong> and <strong>Section 7.2 (Records)</strong> governing when a registration application creates a new persistent health worker identifier (<code>freq:FR-ID-01</code>), reuses an existing identifier across cadres or specialties, holds a candidate duplicate for manual adjudication (<code>freq:FR-ID-02</code>), or rejects an application lacking primary-source qualification attestation (<code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>).</p>
-<p><em>Source passages cited:</em> <code>prose:ch07-identity-management</code>, <code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code>, <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>, and <code>scen:register-and-license-new-graduate</code>. Qualitative states come strictly from the source text; no numeric matching scores or day thresholds are invented.</p>
+<p><strong>Purpose.</strong> This table decides what happens to a registration application: register and license, hold it for duplicate review or pending verification, or reject it. The registration officer at the regulatory body uses it when processing a new application (processes HRH-BP-01 and HRH-BP-02). It serves the identity and records requirements <a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>, <a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a>, <a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a> and <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a>.</p>
+<p>Decision table <strong>HRH-DT-01</strong> (<code>Decision_HRH_DT_01</code>, hit policy <code>FIRST</code>) formalizes the rules in <a href="#sec:7-1"><strong>Section 7.1 (Identity management)</strong></a> and <a href="#sec:7-2"><strong>Section 7.2 (Records)</strong></a> governing when a registration application creates a new persistent health worker identifier (<a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>), reuses an existing identifier across cadres or specialties, holds a candidate duplicate for manual adjudication (<a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a>), or rejects an application lacking primary-source qualification attestation (<a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a>, <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a>).</p>
+<p><em>Source passages cited:</em> <a href="#prose:ch07-identity-management"><code>prose:ch07-identity-management</code></a>, <a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>, <a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a>, <a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a>, <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a>, and <a href="#scen:register-and-license-new-graduate"><code>scen:register-and-license-new-graduate</code></a>. Qualitative states come strictly from the source text; no numeric matching scores or day thresholds are invented.</p>
 <table>
 <thead>
 <tr>
 <th>Rule</th>
-<th><code>identityStatus</code> (<code>freq:FR-ID-01</code>)</th>
-<th><code>qualificationAttestation</code> (<code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code>)</th>
-<th><code>duplicateMatch</code> (<code>freq:FR-ID-02</code>)</th>
-<th><code>regulatoryStanding</code> (<code>freq:FR-REC-02</code>)</th>
+<th><code>identityStatus</code> (<a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>)</th>
+<th><code>qualificationAttestation</code> (<a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a>, <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a>)</th>
+<th><code>duplicateMatch</code> (<a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a>)</th>
+<th><code>regulatoryStanding</code> (<a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a>)</th>
 <th><code>registrationDecision</code></th>
 <th><code>identifierAction</code></th>
 <th>Source basis</th>
@@ -1342,7 +1342,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"revoked", "disqualified"</code></td>
 <td><code>"reject-disqualified"</code></td>
 <td><code>"none"</code></td>
-<td><code>freq:FR-REC-02</code> (7.2)</td>
+<td><a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a> (<a href="#sec:7-2">7.2</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_02</code></td>
@@ -1352,7 +1352,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"reject-unverified-identity"</code></td>
 <td><code>"none"</code></td>
-<td><code>freq:FR-ID-01</code> (7.1)</td>
+<td><a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a> (<a href="#sec:7-1">7.1</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_03</code></td>
@@ -1362,7 +1362,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"reject-unverified-qualification"</code></td>
 <td><code>"none"</code></td>
-<td><code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (7.2)</td>
+<td><a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a>, <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a> (<a href="#sec:7-2">7.2</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_04</code></td>
@@ -1372,7 +1372,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"good-standing", "new-graduate"</code></td>
 <td><code>"hold-duplicate-review"</code></td>
 <td><code>"review-candidate-match"</code></td>
-<td><code>freq:FR-ID-02</code> (7.1, 13.3)</td>
+<td><a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a> (<a href="#sec:7-1">7.1</a>, <a href="#sec:13-3">13.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_05</code></td>
@@ -1382,7 +1382,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"good-standing", "new-graduate"</code></td>
 <td><code>"register-and-license"</code></td>
 <td><code>"reuse-existing-hwr-id"</code></td>
-<td><code>freq:FR-ID-01</code>, <code>freq:FR-ID-02</code> (7.1)</td>
+<td><a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>, <a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a> (<a href="#sec:7-1">7.1</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_06</code></td>
@@ -1392,7 +1392,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"good-standing", "new-graduate"</code></td>
 <td><code>"register-and-license"</code></td>
 <td><code>"assign-new-hwr-id"</code></td>
-<td><code>freq:FR-ID-01</code>, <code>freq:FR-REC-01</code>, <code>freq:FR-REC-02</code> (5.2, 7.1, 7.2)</td>
+<td><a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>, <a href="#freq:FR-REC-01"><code>freq:FR-REC-01</code></a>, <a href="#freq:FR-REC-02"><code>freq:FR-REC-02</code></a> (<a href="#sec:5-2">5.2</a>, <a href="#sec:7-1">7.1</a>, <a href="#sec:7-2">7.2</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_07</code></td>
@@ -1402,7 +1402,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"hold-pending-verification"</code></td>
 <td><code>"none"</code></td>
-<td>Third state: pending/unknown source check (<code>freq:FR-ID-01</code>)</td>
+<td>Third state: pending/unknown source check (<a href="#freq:FR-ID-01"><code>freq:FR-ID-01</code></a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT01_08</code></td>
@@ -1412,7 +1412,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"hold-pending-verification"</code></td>
 <td><code>"none"</code></td>
-<td>Catch-all fallback (<code>freq:FR-ID-02</code>)</td>
+<td>Catch-all fallback (<a href="#freq:FR-ID-02"><code>freq:FR-ID-02</code></a>)</td>
 </tr>
 </tbody>
 </table>
@@ -1461,18 +1461,18 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
 <p><a id="dt:hrh-dt-02-lifecycle-status-transition"></a><span class="block-actions" data-block="dt:hrh-dt-02-lifecycle-status-transition"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-02-lifecycle-status-transition.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-02-lifecycle-status-transition.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.3+Lifecycle+management+%E2%80%94+dt%3Ahrh-dt-02-lifecycle-status-transition&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.3+Lifecycle+management&amp;block=dt%3Ahrh-dt-02-lifecycle-status-transition&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fdt-hrh-dt-02-lifecycle-status-transition.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Decision-table.</strong> <em>Health worker lifecycle and licence status transition (HRH-DT-02)</em></p>
-<p><strong>Purpose.</strong> This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement, employment update, retirement, emigration or death), always keeping the earlier states. The registration officer uses it when recording such an event (processes HRH-BP-01 and HRH-BP-03). It serves the lifecycle requirements <code>freq:FR-LC-01</code> and <code>freq:FR-LC-02</code>.</p>
-<p>Decision table <strong>HRH-DT-02</strong> (<code>Decision_HRH_DT_02</code>, hit policy <code>FIRST</code>) formalizes the rules in <strong>Section 7.3 (Lifecycle management)</strong> and <strong>Section 4.3 (Health worker lifecycle)</strong> for transitioning a practitioner's registration and licence status across renewal, employment updates, suspension, revocation, reinstatement, retirement/emigration and death (<code>freq:FR-LC-01</code>), while preserving all historical states without overwriting prior records (<code>freq:FR-LC-02</code>).</p>
-<p><em>Source passages cited:</em> <code>prose:ch07-lifecycle-management</code>, <code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code>, <code>scen:renew-licence</code>, <code>scen:update-employment</code>, and <code>prose:ch04-health-worker-lifecycle</code>. Only qualitative states named in the text are used; country-specific renewal intervals or CPD point thresholds are not hardcoded.</p>
+<p><strong>Purpose.</strong> This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement, employment update, retirement, emigration or death), always keeping the earlier states. The registration officer uses it when recording such an event (processes HRH-BP-01 and HRH-BP-03). It serves the lifecycle requirements <a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a> and <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>.</p>
+<p>Decision table <strong>HRH-DT-02</strong> (<code>Decision_HRH_DT_02</code>, hit policy <code>FIRST</code>) formalizes the rules in <a href="#sec:7-3"><strong>Section 7.3 (Lifecycle management)</strong></a> and <a href="#sec:4-3"><strong>Section 4.3 (Health worker lifecycle)</strong></a> for transitioning a practitioner's registration and licence status across renewal, employment updates, suspension, revocation, reinstatement, retirement/emigration and death (<a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>), while preserving all historical states without overwriting prior records (<a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>).</p>
+<p><em>Source passages cited:</em> <a href="#prose:ch07-lifecycle-management"><code>prose:ch07-lifecycle-management</code></a>, <a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>, <a href="#scen:renew-licence"><code>scen:renew-licence</code></a>, <a href="#scen:update-employment"><code>scen:update-employment</code></a>, and <a href="#prose:ch04-health-worker-lifecycle"><code>prose:ch04-health-worker-lifecycle</code></a>. Only qualitative states named in the text are used; country-specific renewal intervals or CPD point thresholds are not hardcoded.</p>
 <table>
 <thead>
 <tr>
 <th>Rule</th>
 <th><code>currentStatus</code></th>
-<th><code>lifecycleEvent</code> (<code>freq:FR-LC-01</code>)</th>
+<th><code>lifecycleEvent</code> (<a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>)</th>
 <th><code>evidenceStatus</code></th>
 <th><code>targetStatus</code></th>
-<th><code>historyAction</code> (<code>freq:FR-LC-02</code>)</th>
+<th><code>historyAction</code> (<a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>)</th>
 <th>Source basis</th>
 </tr>
 </thead>
@@ -1484,7 +1484,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"deceased"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (4.3, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:4-3">4.3</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_02</code></td>
@@ -1493,7 +1493,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"revoked"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_03</code></td>
@@ -1502,7 +1502,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"suspended"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (5.2, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:5-2">5.2</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_04</code></td>
@@ -1511,7 +1511,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"retired-or-exited"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (4.3, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:4-3">4.3</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_05</code></td>
@@ -1520,7 +1520,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"active"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>scen:renew-licence</code> (5.2, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#scen:renew-licence"><code>scen:renew-licence</code></a> (<a href="#sec:5-2">5.2</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_06</code></td>
@@ -1529,7 +1529,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"deficient", "expired"</code></td>
 <td><code>"lapsed"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_07</code></td>
@@ -1538,7 +1538,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"active"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code> (5.1, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a> (<a href="#sec:5-1">5.1</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_08</code></td>
@@ -1547,7 +1547,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"confirmed"</code></td>
 <td><code>"active"</code></td>
 <td><code>"append-state-preserve-history"</code></td>
-<td><code>freq:FR-LC-01</code>, <code>freq:FR-LC-02</code>, <code>scen:update-employment</code> (5.2, 7.3)</td>
+<td><a href="#freq:FR-LC-01"><code>freq:FR-LC-01</code></a>, <a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>, <a href="#scen:update-employment"><code>scen:update-employment</code></a> (<a href="#sec:5-2">5.2</a>, <a href="#sec:7-3">7.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_09</code></td>
@@ -1556,7 +1556,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"pending", "unknown"</code></td>
 <td><code>"hold-pending-verification"</code></td>
 <td><code>"log-pending-review-no-overwrite"</code></td>
-<td>Third state: unconfirmed evidence (<code>freq:FR-LC-02</code>)</td>
+<td>Third state: unconfirmed evidence (<a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT02_10</code></td>
@@ -1565,7 +1565,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"hold-pending-verification"</code></td>
 <td><code>"log-pending-review-no-overwrite"</code></td>
-<td>Catch-all fallback (<code>freq:FR-LC-02</code>)</td>
+<td>Catch-all fallback (<a href="#freq:FR-LC-02"><code>freq:FR-LC-02</code></a>)</td>
 </tr>
 </tbody>
 </table>
@@ -1594,9 +1594,9 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
 <p><a id="dt:hrh-dt-03-verification-and-access-response"></a><span class="block-actions" data-block="dt:hrh-dt-03-verification-and-access-response"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-03-verification-and-access-response.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/dt-hrh-dt-03-verification-and-access-response.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.4+Verification+services+%E2%80%94+dt%3Ahrh-dt-03-verification-and-access-response&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.4+Verification+services&amp;block=dt%3Ahrh-dt-03-verification-and-access-response&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fdt-hrh-dt-03-verification-and-access-response.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Decision-table.</strong> <em>Verification service and tiered disclosure response (HRH-DT-03)</em></p>
-<p><strong>Purpose.</strong> This table decides how much of a health worker's record to disclose when someone asks for it: public status only, an operational view for authorized employers and clinical systems, de-identified aggregates for planners, the full record for the health worker or the custodian, or nothing. The registration officer and the registry apply it to verification and data requests (processes HRH-BP-03 and HRH-BP-05), under the disclosure policy the governance body approves (HRH-BP-06). It serves the verification, analytics and access requirements <code>freq:FR-VER-01</code>, <code>freq:FR-VER-02</code>, <code>freq:FR-VER-03</code>, <code>freq:FR-AN-03</code>, <code>freq:FR-REC-03</code> and <code>nfreq:NFR-01</code>.</p>
-<p>Decision table <strong>HRH-DT-03</strong> (<code>Decision_HRH_DT_03</code>, hit policy <code>FIRST</code>) formalizes the rules in <strong>Section 7.4 (Verification services)</strong>, <strong>Section 7.5 (Analytics)</strong>, <strong>Section 6.2 (Legal foundations)</strong> and <strong>Section 6.3 (Data stewardship)</strong> for tiered disclosure when responding to status verification and data access requests across public lookup (<code>freq:FR-VER-01</code>), system-to-system clinical/HR verification (<code>freq:FR-VER-02</code>), online/offline verifiable credentials (<code>freq:FR-VER-03</code>), de-identified analytics extracts (<code>freq:FR-AN-03</code>), and self/stewardship record inspection (<code>freq:FR-REC-03</code>, <code>nfreq:NFR-01</code>).</p>
-<p><em>Source passages cited:</em> <code>prose:ch07-verification-services</code>, <code>freq:FR-VER-01</code>, <code>freq:FR-VER-02</code>, <code>freq:FR-VER-03</code>, <code>freq:FR-AN-03</code>, <code>freq:FR-REC-03</code>, <code>nfreq:NFR-01</code>, and <code>prose:ch06-legal-foundations</code>. All disclosure tiers come directly from the source narrative.</p>
+<p><strong>Purpose.</strong> This table decides how much of a health worker's record to disclose when someone asks for it: public status only, an operational view for authorized employers and clinical systems, de-identified aggregates for planners, the full record for the health worker or the custodian, or nothing. The registration officer and the registry apply it to verification and data requests (processes HRH-BP-03 and HRH-BP-05), under the disclosure policy the governance body approves (HRH-BP-06). It serves the verification, analytics and access requirements <a href="#freq:FR-VER-01"><code>freq:FR-VER-01</code></a>, <a href="#freq:FR-VER-02"><code>freq:FR-VER-02</code></a>, <a href="#freq:FR-VER-03"><code>freq:FR-VER-03</code></a>, <a href="#freq:FR-AN-03"><code>freq:FR-AN-03</code></a>, <a href="#freq:FR-REC-03"><code>freq:FR-REC-03</code></a> and <a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a>.</p>
+<p>Decision table <strong>HRH-DT-03</strong> (<code>Decision_HRH_DT_03</code>, hit policy <code>FIRST</code>) formalizes the rules in <a href="#sec:7-4"><strong>Section 7.4 (Verification services)</strong></a>, <a href="#sec:7-5"><strong>Section 7.5 (Analytics)</strong></a>, <a href="#sec:6-2"><strong>Section 6.2 (Legal foundations)</strong></a> and <a href="#sec:6-3"><strong>Section 6.3 (Data stewardship)</strong></a> for tiered disclosure when responding to status verification and data access requests across public lookup (<a href="#freq:FR-VER-01"><code>freq:FR-VER-01</code></a>), system-to-system clinical/HR verification (<a href="#freq:FR-VER-02"><code>freq:FR-VER-02</code></a>), online/offline verifiable credentials (<a href="#freq:FR-VER-03"><code>freq:FR-VER-03</code></a>), de-identified analytics extracts (<a href="#freq:FR-AN-03"><code>freq:FR-AN-03</code></a>), and self/stewardship record inspection (<a href="#freq:FR-REC-03"><code>freq:FR-REC-03</code></a>, <a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a>).</p>
+<p><em>Source passages cited:</em> <a href="#prose:ch07-verification-services"><code>prose:ch07-verification-services</code></a>, <a href="#freq:FR-VER-01"><code>freq:FR-VER-01</code></a>, <a href="#freq:FR-VER-02"><code>freq:FR-VER-02</code></a>, <a href="#freq:FR-VER-03"><code>freq:FR-VER-03</code></a>, <a href="#freq:FR-AN-03"><code>freq:FR-AN-03</code></a>, <a href="#freq:FR-REC-03"><code>freq:FR-REC-03</code></a>, <a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a>, and <a href="#prose:ch06-legal-foundations"><code>prose:ch06-legal-foundations</code></a>. All disclosure tiers come directly from the source narrative.</p>
 <table>
 <thead>
 <tr>
@@ -1617,7 +1617,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"anonymous", "authenticated-authorized"</code></td>
 <td><code>"tier-1-public"</code></td>
 <td><code>"public-status-and-cadre-only"</code></td>
-<td><code>freq:FR-VER-01</code> (6.2, 7.4, 12.1)</td>
+<td><a href="#freq:FR-VER-01"><code>freq:FR-VER-01</code></a> (<a href="#sec:6-2">6.2</a>, <a href="#sec:7-4">7.4</a>, <a href="#sec:12-1">12.1</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_02</code></td>
@@ -1626,7 +1626,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"valid-credential-signature"</code></td>
 <td><code>"tier-1-verifiable-credential"</code></td>
 <td><code>"signed-credential-status-and-scope"</code></td>
-<td><code>freq:FR-VER-03</code>, <code>nfreq:NFR-03</code> (7.4, 20.2)</td>
+<td><a href="#freq:FR-VER-03"><code>freq:FR-VER-03</code></a>, <a href="#nfreq:NFR-03"><code>nfreq:NFR-03</code></a> (<a href="#sec:7-4">7.4</a>, <a href="#sec:20-2">20.2</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_03</code></td>
@@ -1635,7 +1635,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"authenticated-authorized"</code></td>
 <td><code>"tier-2-authorized-operational"</code></td>
 <td><code>"identifier-status-scope-and-affiliation"</code></td>
-<td><code>freq:FR-VER-02</code>, <code>nfreq:NFR-01</code> (7.4, 20.2, 20.3)</td>
+<td><a href="#freq:FR-VER-02"><code>freq:FR-VER-02</code></a>, <a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a> (<a href="#sec:7-4">7.4</a>, <a href="#sec:20-2">20.2</a>, <a href="#sec:20-3">20.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_04</code></td>
@@ -1644,7 +1644,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"authenticated-authorized"</code></td>
 <td><code>"tier-2-deidentified-analytics"</code></td>
 <td><code>"deidentified-aggregate-indicators-only"</code></td>
-<td><code>freq:FR-AN-01</code>, <code>freq:FR-AN-02</code>, <code>freq:FR-AN-03</code> (7.5, 12.1)</td>
+<td><a href="#freq:FR-AN-01"><code>freq:FR-AN-01</code></a>, <a href="#freq:FR-AN-02"><code>freq:FR-AN-02</code></a>, <a href="#freq:FR-AN-03"><code>freq:FR-AN-03</code></a> (<a href="#sec:7-5">7.5</a>, <a href="#sec:12-1">12.1</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_05</code></td>
@@ -1653,7 +1653,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"authenticated-authorized"</code></td>
 <td><code>"tier-3-full-record"</code></td>
 <td><code>"full-record-with-provenance"</code></td>
-<td><code>prose:ch06-data-stewardship</code>, <code>freq:FR-REC-03</code>, <code>nfreq:NFR-01</code> (6.3, 7.2, 12.3)</td>
+<td><a href="#prose:ch06-data-stewardship"><code>prose:ch06-data-stewardship</code></a>, <a href="#freq:FR-REC-03"><code>freq:FR-REC-03</code></a>, <a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a> (<a href="#sec:6-3">6.3</a>, <a href="#sec:7-2">7.2</a>, <a href="#sec:12-3">12.3</a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_06</code></td>
@@ -1662,7 +1662,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>"unknown", "pending"</code></td>
 <td><code>"deny-unverified"</code></td>
 <td><code>"none-audit-logged"</code></td>
-<td>Third state: unverified authorization (<code>nfreq:NFR-01</code>)</td>
+<td>Third state: unverified authorization (<a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a>)</td>
 </tr>
 <tr>
 <td><code>Rule_DT03_07</code></td>
@@ -1671,7 +1671,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <td><code>-</code></td>
 <td><code>"deny-unauthorized"</code></td>
 <td><code>"none-audit-logged"</code></td>
-<td>Catch-all fallback (<code>nfreq:NFR-01</code>)</td>
+<td>Catch-all fallback (<a href="#nfreq:NFR-01"><code>nfreq:NFR-01</code></a>)</td>
 </tr>
 </tbody>
 </table>

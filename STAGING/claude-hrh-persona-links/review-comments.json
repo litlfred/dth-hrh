@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-review-comments/v1",
+  "repo": "litlfred/dth-hrh",
+  "pr": 82,
+  "commit": "d5bae75d591d2e9d054061ce3d245f27a7d81441",
+  "generatedAt": "2026-11-01T20:25:20.462Z",
+  "comments": [],
+  "malformed": [],
+  "untagged": 0,
+  "verdicts": []
+}

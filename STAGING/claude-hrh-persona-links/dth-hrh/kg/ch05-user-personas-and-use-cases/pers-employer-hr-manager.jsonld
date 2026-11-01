@@ -1,0 +1,73 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/pers-employer-hr-manager",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:employer-hr-manager",
+  "kind": "persona",
+  "title": "Employer or facility human resources manager",
+  "text": "pers-employer-hr-manager.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed",
+      "issue": "litlfred/dth-hrh#47"
+    },
+    "roleId": "HRH-R-03",
+    "personaType": "person",
+    "smartBaseGenericPersona": "HealthSystemManager",
+    "bpmnLanes": [
+      {
+        "process": "bp:hrh-bp-01-lifecycle-maintenance",
+        "processId": "HRH_BP_01",
+        "laneId": "Lane_BP01_EmployerHR",
+        "bpmnFile": "folio/dth-hrh/ch04-purpose-and-role-of-a-registry/bp-hrh-bp-01-lifecycle-maintenance.bpmn"
+      },
+      {
+        "process": "bp:hrh-bp-04-update-employment-and-deployment",
+        "processId": "HRH_BP_04",
+        "laneId": "Lane_BP04_EmployerHR",
+        "bpmnFile": "folio/dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-04-update-employment-and-deployment.bpmn"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-9cecae7a982548e1960a36ed41713a7c.jsonld",
+          "name": "Health Facility",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-515be0d38c564767bc2b1ee5fcb0adb6.jsonld",
+          "name": "Health Care Institutions",
+          "type": "BusinessRole"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "name": "ALL High Level - Health Workforce"
+        }
+      ]
+    },
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/human-resources-management",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/recruitment"
+    ],
+    "relatedBlocks": [
+      "bp:hrh-bp-01-lifecycle-maintenance",
+      "bp:hrh-bp-04-update-employment-and-deployment"
+    ]
+  },
+  "provenance": "authored"
+}

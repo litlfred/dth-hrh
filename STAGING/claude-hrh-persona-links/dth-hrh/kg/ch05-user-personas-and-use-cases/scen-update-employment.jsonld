@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/scen-update-employment",
+  "@type": [
+    "smart-base:UserScenario"
+  ],
+  "label": "scen:update-employment",
+  "kind": "user-scenario",
+  "title": "Update employment or place of practice",
+  "text": "scen-update-employment.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "relatedBlocks": [
+      "bp:hrh-bp-04-update-employment-and-deployment",
+      "dt:hrh-dt-02-lifecycle-status-transition"
+    ]
+  },
+  "provenance": "authored"
+}

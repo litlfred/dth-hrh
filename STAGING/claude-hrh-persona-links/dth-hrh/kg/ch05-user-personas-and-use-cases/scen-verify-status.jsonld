@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/scen-verify-status",
+  "@type": [
+    "smart-base:UserScenario"
+  ],
+  "label": "scen:verify-status",
+  "kind": "user-scenario",
+  "title": "Verify a health worker's status",
+  "text": "scen-verify-status.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "relatedBlocks": [
+      "bp:hrh-bp-03-renew-licence-and-verify-status",
+      "dt:hrh-dt-03-verification-and-access-response"
+    ]
+  },
+  "provenance": "authored"
+}

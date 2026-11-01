@@ -1,0 +1,1622 @@
+{
+  "prose:ch13-figures": {
+    "hash": "82965145659128bd968b00033e6d0b04a5b3922be63bd218bfa4c04ff3ea2ea9",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:ch13-planned"
+  },
+  "prose:ch13-quality-dimensions": {
+    "hash": "7d8eafe5944f8f24e3656947a053cd68de22f99173dc67db3653cba4fe92910b",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:13-1"
+  },
+  "prose:ch13-monitoring": {
+    "hash": "b23cd30b6dd9e18d6b6fa66092cd843018c385853846e999c6f15a43e6c0d769",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:13-3"
+  },
+  "prose:ch13-key-messages": {
+    "hash": "fbf1675969dac18d4ca5f5a791c2bf8f803d70ef250f1370757d141d683a2ddf",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:ch13-lead"
+  },
+  "prose:ch13-validation": {
+    "hash": "116db96f7bf7acfc75fc9f1ebc726981d075fc03b0c3fefcd5dc00248cba8660",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:13-2"
+  },
+  "prose:ch13-tools": {
+    "hash": "981e97cb538fe424d1a314b5a44a95e846c5e830c508bbab16ef0f6da0bbe041",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:ch13-planned"
+  },
+  "prose:ch13-outputs": {
+    "hash": "4c4c3631b6d78bd12b02c74106fdfd3cca5fa3a86877005073220d6521211f2e",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:ch13-planned"
+  },
+  "prose:ch13-objectives": {
+    "hash": "bee1827395e0a19246d2940cc1269826369288cb0fc53a311c5011a5f1699040",
+    "renamedFrom": [],
+    "section": "ch13-data-quality-management::sec:ch13-lead"
+  },
+  "prose:ch05-requirements-derivation": {
+    "hash": "cff2a3b9ac4c8b0b63ded4837eed1ed5aaedd5f0f07857690aa8a49f1b2080dd",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-4"
+  },
+  "prose:ch05-user-stories": {
+    "hash": "1f3e612f6063222e76004d38ba3dc95cb4b4d108ae66c991d2257a2cc067e209",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-3"
+  },
+  "pers:emergency-coordinator": {
+    "hash": "009dd5ecde19ccf97609e40297a4026eb7d7b5d63f43f439e28ddb5fe86f1f31",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:system-facility-registry": {
+    "hash": "33713d1b5e7456910ec2e55a8c05200646959fff54879f880fd996ecef0b9031",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "prose:ch05-key-messages": {
+    "hash": "95d3fd4ca452d297d4423d8c9e39f93268a2b3994a038b93df7eff7fdf6470bb",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:ch05-lead"
+  },
+  "scen:verify-status": {
+    "hash": "851a030b7d80fa1a542b2bda342344ea5d6e12d025007091524316a41e58fd2b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "pers:workforce-planner": {
+    "hash": "a4771bc802c18dadb7426b56af2800e11dc5d5930a62adcf30dae92c13776828",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:health-worker": {
+    "hash": "7f7b523c1794cdc5a29337111e797add4ae3f97baeceb365a2e38bdfb1b3a7e9",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "scen:update-employment": {
+    "hash": "e5c88ff87d29daccf66888f69d3d3e96f4a0f78ae748dc212784cc8cb4b5165b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "scen:workforce-counts-and-nhwa-reporting": {
+    "hash": "f556742613fee41104ddf0f741023f3a90869573ff3bf308479e3e7d7850d36b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "prose:ch05-objectives": {
+    "hash": "ab66d297dc823f8c4b7beeacc1738cf6daadf95c559a09be992fdc934285a1b4",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:ch05-lead"
+  },
+  "prose:ch05-tools": {
+    "hash": "aa4ccfc792c07b95d8422f5619fd407855ca2a0c13b36536a059622bbe66f817",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
+  },
+  "pers:system-hris": {
+    "hash": "ef4e1e8f07af159d85dbb62cbb95a2710538fa8ae1c7f235838a14e71da60f78",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "prose:ch05-outputs": {
+    "hash": "ff240c91f2a429e1f406d3b87001c9fddda35180f9ebe11cff3f2dbbbe79fb05",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
+  },
+  "pers:system-national-id": {
+    "hash": "e93237adb64413663394a9a40536e20cbb8be572be23c7c06b27609ff958e866",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:employer-hr-manager": {
+    "hash": "20ef93aa5b1c18d745c1c8de06906a3846103a212e8ccf12e0aae46502427620",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:member-of-public": {
+    "hash": "b064116bbe944a64f4e9ffe8c1f63d3d9fb1d7d1027a2c4b9f6f3c39d38b16d4",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:training-institution-registrar": {
+    "hash": "c01aa7654741e8c4ba5b62fb4b4025ec08d7f77b7a8c58a9ba1104352733d9b1",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:registration-officer": {
+    "hash": "5521711a7b9959487efd302f49409b37ceac3a5e53a2d8ecf5018d51b758234a",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "scen:register-and-license-new-graduate": {
+    "hash": "ba1028eb66a5e4f0a00d7dff0753229e46214093e80b72b136a9b8485c7457fa",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "pers:system-emr": {
+    "hash": "ade7c39ae20011ce6b5613c545c1f54641043c0e3ae1980c22e7d2071f6d567c",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "prose:ch05-figures": {
+    "hash": "628eddb00168e1285989da5c99eafdd582c1442721b72f30b0a8f1285463995c",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
+  },
+  "scen:renew-licence": {
+    "hash": "09b722fa0a9440453b3bad7e63a0ef74a22a0f03d77e16f136e83a440034904b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "prose:ch05-priority-use-cases": {
+    "hash": "06bcd5fcc24c320e2edabccb3054c44449de6e5f42f4820df4cfb7caf0e1f72b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-2"
+  },
+  "pers:system-nhwa-platform": {
+    "hash": "542b9617632acbd9d71b61c9df70707d775f6a603d273f7a5393046cf425ad9b",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "prose:ch05-personas": {
+    "hash": "3b2236b57dfb1768a6d0d925b6d6cfe7a8616e4712a016b7db58260e68a50734",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "pers:system-payroll": {
+    "hash": "7e2951b58d04df74d96ebbb908fad903b5739b8dd574584973336e48ffc7234d",
+    "renamedFrom": [],
+    "section": "ch05-user-personas-and-use-cases::sec:5-1"
+  },
+  "prose:ch15-requirements": {
+    "hash": "5329737dc2c7fca74560f6e71fee341c9ca32fa4f51aaee0e76ec63a71949335",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:15-3"
+  },
+  "prose:ch15-key-messages": {
+    "hash": "e4bcee3e0adf4659630ecea43c50c306e1eb71181b5945ba64a3f9dbe7caedec",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:ch15-lead"
+  },
+  "prose:ch15-current-state-mapping": {
+    "hash": "78145b368cf83a9ffed097dc3533c44af786df49c3de34ecf603b0a16aff94f2",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:15-1"
+  },
+  "prose:ch15-tools": {
+    "hash": "7f843980bae1fcbe36a077f05fade0582582aaa730a970ee080f5cd0423782df",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:ch15-planned"
+  },
+  "prose:ch15-objectives": {
+    "hash": "d602a66e1df4201d3f9da2a20a52487c06f55cb66176cd51328ebaf2e223258a",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:ch15-lead"
+  },
+  "prose:ch15-figures": {
+    "hash": "b9fec0872b88790ca49731c9135901639f8bc0180dfbc295b722ee4bc65041cd",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:ch15-planned"
+  },
+  "prose:ch15-future-workflows": {
+    "hash": "234ac20c250f3fe4e1e28c690df49f698ba5448dfa731f16d501794e496f460a",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:15-2"
+  },
+  "prose:ch15-outputs": {
+    "hash": "6438033cb70e88a44bbe73b53986e63e46ea7a83d2223a03ad1eb450b6a88b65",
+    "renamedFrom": [],
+    "section": "ch15-business-process-redesign::sec:ch15-planned"
+  },
+  "prose:ch02-key-messages": {
+    "hash": "9569383a366285d325b867d89fda06a7764b2eaf38fde0a91f8fac89e99fa591",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:ch02-lead"
+  },
+  "prose:ch02-excluded-topics": {
+    "hash": "86c751d25dde00ccbd2058a24858ba40f06ca673a843a1375547de34dbf88c14",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:2-2"
+  },
+  "prose:ch02-outputs": {
+    "hash": "061441168af8baf524f9424e0440a6812e4a19fdaa8f180141a798dc76a9b478",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:ch02-planned"
+  },
+  "prose:ch02-figures": {
+    "hash": "fee4acb5fe4bc6a42dc8e304f0c4f39c7e0855f67c27f20bd382271dde29fcf3",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:ch02-planned"
+  },
+  "prose:ch02-tools": {
+    "hash": "43ad22635a8e1ef151d6b8b737aa688c1e98beb5b6bb0feea755f7cd1a6404c8",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:ch02-planned"
+  },
+  "prose:ch02-included-topics": {
+    "hash": "f023e043297879bf3b99798e12353e4d6502a691d559c415f0db591f8889c791",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:2-1"
+  },
+  "prose:ch02-objectives": {
+    "hash": "5a70308f960065fe05d893bc01b31f3d5129c96a32280a2a16a4c7955e4fb45f",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:ch02-lead"
+  },
+  "prose:ch02-target-audiences": {
+    "hash": "ad373f236939206917fa93397fd90bd4562395169df2ad2e28e1c4122c567029",
+    "renamedFrom": [],
+    "section": "ch02-scope-and-boundaries::sec:2-3"
+  },
+  "prose:ch04-definitions": {
+    "hash": "c0e445830186592854a7dba5c683c7b5f22f2eb3052912fc0e37fb62e1c71f68",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:4-1"
+  },
+  "prose:ch04-tools": {
+    "hash": "6728465a38a1264f1ea6faddd934a8cb74096508f46b8c0fdc305b181466db04",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-planned"
+  },
+  "prose:ch04-part-purpose": {
+    "hash": "c99e98c65135372ad466f26eb47c1dcaa057302718b9f9990f25b7519a933b24",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-lead"
+  },
+  "prose:ch04-outputs": {
+    "hash": "42ffb2dec81f630b1c0d816cd22bc667096a0c4d21e718f6b98a55f3416c614e",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-planned"
+  },
+  "prose:ch04-key-messages": {
+    "hash": "8437e0908effa952b39bbe357a4f37066ae8306178a76117f8755ddaf51da43c",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-lead"
+  },
+  "prose:ch04-health-worker-lifecycle": {
+    "hash": "d16ea318d489622437b795821e3b0d7be128a5cebb1438cdbbac268ace4ad5aa",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:4-3"
+  },
+  "prose:ch04-figures": {
+    "hash": "14a5866198716dfcc1c29be79ea4f3c1dba00019a2132bec972a6d2487f233ec",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-planned"
+  },
+  "prose:ch04-strategic-uses": {
+    "hash": "29e83f0fae8123e27efefa80de1c9022f3c59c74132d62bfa9ceb0cbd51ca71b",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:4-4"
+  },
+  "prose:ch04-authoritative-source": {
+    "hash": "7c9ba3133de2bb28021fcda19b4d63b3b1c0f58172894962246eea03371ba737",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:4-2"
+  },
+  "prose:ch04-objectives": {
+    "hash": "9ff45c15134ed93d95c99345e884f85cc9ce3a9c62e7b9e774d7fe981d3bc73a",
+    "renamedFrom": [],
+    "section": "ch04-purpose-and-role-of-a-registry::sec:ch04-lead"
+  },
+  "prose:ch20-outputs": {
+    "hash": "737649abc31a359001b1e2da480ea131371cc7ca0863117a9f8e8c1aa5c0af7e",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-planned"
+  },
+  "scen:mobility": {
+    "hash": "4ab05a336f18f34314b68171345ed5d7e28f94074fa9f1193fc0521c20dc394c",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:20-4"
+  },
+  "prose:ch20-figures": {
+    "hash": "aafbc6bea68aced388d8c9a43f81a47441e6bb500bae261eb90ed8b731b7aef1",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-planned"
+  },
+  "prose:ch20-objectives": {
+    "hash": "cd8e812efb0bf6db1a9bd6fc1028aaa66e7227098bc147364e1b97641e33008e",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-lead"
+  },
+  "scen:licensing": {
+    "hash": "d7e469cf5ee19dab4d0ee244c2e90b257ecdd2632bb08bfb440cc52117c65e41",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:20-1"
+  },
+  "prose:ch20-part-purpose": {
+    "hash": "a6713300cf62e504ee977c419292806debb72243532da7de0585b6e13ceacda9",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-lead"
+  },
+  "scen:verification": {
+    "hash": "43345f0d5b07396f93ecb82e9f4c619a27e562c4b38076e684385a5d049781c2",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:20-2"
+  },
+  "prose:ch20-key-messages": {
+    "hash": "cca031c7008be0a1d03bead489e38e5e32adce680d0c10ec96180b76f7e8357a",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-lead"
+  },
+  "prose:ch20-tools": {
+    "hash": "30600be9191113b9f90adb32d160f569d56698bcbc1f9594f50a24c94f2a3a20",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:ch20-planned"
+  },
+  "scen:emergency-response": {
+    "hash": "71d511ec4a6135ea8c5d0c6d47f53bd7752b942d4d9f7509f0aba6e2b5b97830",
+    "renamedFrom": [],
+    "section": "ch20-illustrative-use-cases::sec:20-3"
+  },
+  "prose:ch10-objectives": {
+    "hash": "852df8805086f743a80fce07359d21dfd300b92fbecaeac26a192d08c1da20db",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:ch10-lead"
+  },
+  "prose:ch10-standards": {
+    "hash": "316ea5d641ae0e9e268fcb56ad5678cf91264c4eea209b98d381b62b7baa1d41",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:10-1"
+  },
+  "prose:ch10-outputs": {
+    "hash": "4263f036e221ac1910eba8f1a9401b1025deb93825fa431cf861be29fb786502",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:ch10-planned"
+  },
+  "prose:ch10-figures": {
+    "hash": "42250f6264d2c24125b0532f37d846382a7adb651ba736bc3ca5633b82d6dc87",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:ch10-planned"
+  },
+  "prose:ch10-tools": {
+    "hash": "27f79796c52cd60839c236855560dddf2a56a00425fa9e3a058254f2a23d3ce3",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:ch10-planned"
+  },
+  "prose:ch10-apis": {
+    "hash": "2dcc111aacb5306ef49eff3f8352b41e4a21ecf6c1cd9996521177abe8b1c422",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:10-2"
+  },
+  "prose:ch10-governance": {
+    "hash": "23d0a860580022d35f0b21a901d20bf51a6f5b02648ef399dc88d1633cca1a26",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:10-4"
+  },
+  "prose:ch10-data-exchange-patterns": {
+    "hash": "58b70ed2142c03800b54c36bfdf926e2b0b1499470e8263a6b59209500f05e4b",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:10-3"
+  },
+  "prose:ch10-key-messages": {
+    "hash": "6a0f6334c65952d02a0aa29c98a4093938cf1053bdc57bd15bbfa61391bcffc6",
+    "renamedFrom": [],
+    "section": "ch10-interoperability::sec:ch10-lead"
+  },
+  "prose:gloss-supply": {
+    "hash": "bc058128b98c8062726d6aeb5193151388f4121c49aa64bdcad03dfc95620a3f",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-professions-education-accreditation-agency": {
+    "hash": "d085ea4338d78044b88d3a800c475e385ebc2374fcf6f1f1ddd9f02c32f11ba3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-regulation": {
+    "hash": "c71db8c5ecc75de831b8d1e2da2e7e5f0d8c079653a24bc3b09d2ada446229dc",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-stock": {
+    "hash": "b84e1d7cb27efaf63f0d2b7cf6c56c47493e83789f3f4cb4087d62494d939948",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-active-health-worker": {
+    "hash": "465d9055c2bfeeb5b85e086f76ded7e97186ddbd1c28257c1d008cd1415425f9",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-human-resources-management": {
+    "hash": "82e419689b9bcd0a8fa08f9e735c089c85e5124d4d81d51b537c4c042e55bef3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-workers": {
+    "hash": "b2870abbfc13d19c8922d11f930368dd542481c64a87a78b406b31267c77c6f3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-deployment": {
+    "hash": "a489dd40af4712db8a47a5ddf5875b2e8dc29a6d4cd868ff05a5e598f2bc67dd",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-licensing": {
+    "hash": "33eb02288a77a8219fa3e6cd167851e885957e718d5b71b979f9406bbc3dc3be",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-labour-force-survey": {
+    "hash": "327b14d495b6ce40e9d69ede5a405e8c12f5c4c669f9f0c171ffb452c6deca87",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-certification": {
+    "hash": "ec706337bc8c0452dfcb894af88680e10c77d4db65d32931332950bad06d287a",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "tbl:compare-professional-council": {
+    "hash": "2d266e329f51fc1c9f8c5f71a429b7feca86ef10c7bc6210bd4f227e1a27ed10",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-competence": {
+    "hash": "7b26ec154897daa412fa538f8fe00daaaa4c4c4ff957eed31cdab0bd5b4b5180",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-professional-council": {
+    "hash": "2fdd91eee75b0e5081758b088c2f76ad7686542358e39ef30754ff368f1754d1",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-retention": {
+    "hash": "c07d1359c558a1c3552596b90c2b5ffac61488a218664744a4f3f8c48323a71c",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "tbl:professional-council-examples": {
+    "hash": "bba852d16d2224c7f482a8a57aed53ee45ce7f17a4aed22f4766835d40e25da8",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-councils"
+  },
+  "tbl:compare-human-resources-for-health-information-system": {
+    "hash": "74c9ba8bef75903f1ec7b4565dc5b35636d8d270cdc478e7b317be9a949d7ae7",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-contract-type": {
+    "hash": "7933b6135b53b7ec1da341d28018ec707d7c14f5b2f07b6499a86166622d50f9",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-continuing-professional-development": {
+    "hash": "0b3cc2bd3f9fb0cd3fdc555bebaa324921b0142b9e71ec217261133b299a3031",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-accreditation": {
+    "hash": "6fbb6607126785be204714a95b26bb728e4e847803312a3a36475560f1988366",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-stewardship": {
+    "hash": "aace2a56dea2cae1690c17701c9a3d5503e9a771739a9f20e3d8b30ab577e098",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-education-and-training-institution": {
+    "hash": "78eb8eb97d4a95cb52c320f2feffb4ebf05dae927884c4e05fabdcab8af24d6d",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-international-standard-classification-of-occupations": {
+    "hash": "50350cb5a5ccf929714d212e1d47376874234a404072d976f3277a7fe2e132c2",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-activity-level": {
+    "hash": "e39cbf52f2c77b08f8cb5a9e19edde2e3f2398d49cae3f68ebd754ab2d3e23ef",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-dual-practice": {
+    "hash": "87dc64c95c20eaa7f6ba75af2e189e571e73d8c2f3e482316d411590dab38fd5",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-national-health-workforce-accounts": {
+    "hash": "1268800fd09475f7a3df5ddc41aa2bbe269099b6e766ab4f3461d5f8387acdc3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-workforce": {
+    "hash": "546c498d8d5b2abdecb3592ce58af1e99aba92ebf301e8d72e711c8b4d95c5b0",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-labour-market": {
+    "hash": "d2efdd5dbc71ba1a1f238466be4fb5b40e49ee090446da7582796244d04b5e4a",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-services-licensing-agency": {
+    "hash": "b2988604e1e36afbb3cf805ea47621a8d72baa078e3956248a429f24c8185e55",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-migration": {
+    "hash": "c6b8bd1d13c2f853f539acbada19fbb812a22cf99d0bb320fe509dff39b98a53",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-attrition": {
+    "hash": "264e581543f32f6849e61d96b2dc23bfa0adb85a4ee6db594574f3acef6835ad",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-occupation": {
+    "hash": "5fc15e67ee1d430a7e9cc5fb8e1a7d2377128d994cad1c76e6b95ac0193737fa",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-educational-institution": {
+    "hash": "0dd6ac81edf2fc1d5ee05718b7769a262ab1d1b1748fb66ed79418fe90c64e5e",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-workforce-registry": {
+    "hash": "1f8c59fbbed160ed8440c1d29d6ab3e98d0ea3a933501e99d67501df68b880ae",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-community-health-workers": {
+    "hash": "2a227d2a7c34c76d09b6d577e62de47c1c6c0db90b09eb7c39eba7ac899f1816",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-recruitment": {
+    "hash": "bf4a8d5308b611ff8317b8ccaaa4621f3931dc396694e9a12ebbc43aefda33f4",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-scope-of-practice": {
+    "hash": "c5d5772ae5123f659f90c947bfd1599395c8c917dc2852bd22c3041d52cd98d3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-professional": {
+    "hash": "3e4d6be016d60d38996544b6d79c411bbf8bcf69a2f8e43797e618d1c958ce85",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "tbl:compare-health-workforce-registry": {
+    "hash": "d8b0e0d10feed771dec1a86ed2e3fc5f9d180ecb5d7f1f442e8028a80d8613c9",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-qualification": {
+    "hash": "8efcc2052ba8ea3f2f81a32af2ba19088cc4038f59b0f53350d7b744f49c129f",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-place-of-training": {
+    "hash": "9b4a5643bc7cb162488f825e4dc85f667ed03a7d9a6e3d05f1e17251a0e0e26b",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-employment-status-full-time-part-time-temporary-permanent": {
+    "hash": "a34c9566257afad9040a1c1c31c5ecfccc658888961658bf96d2f5dcac359673",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-human-resources-for-health-information-system": {
+    "hash": "fbba5c446acce7b8314d5f335cc5765e83f43a0009d6371a7299ef67e18e9098",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-priority"
+  },
+  "prose:gloss-mobility-flow": {
+    "hash": "6984581afebb8b6e85703c7a2a7dea8c3352af98bbb313c5ca0446fb0c70b9ea",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-education": {
+    "hash": "d68c6d8d57add3b100075e660e96427ce118b7e0ca6f95c90de69bd1ad135c2b",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-in-service-training": {
+    "hash": "0ce538e25b61323a063fd80d7a285af8edc71cf4c16a3fcf20fd469069fbf7bb",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-workforce-planning": {
+    "hash": "55911aaa62b6c5f80b596092f5414ac3118f10d031daef848d7c84b13963eeb3",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-pre-service-education": {
+    "hash": "229cc452c55048b6c62bd980f72d2fefd9eb3b686b8e7af0ea5daae9a31a838b",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-practitioner": {
+    "hash": "b550fd5afe9f4a66305cb6af5e84be8d5bf27204caf0bb4d9efb99a7493881c5",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-distribution": {
+    "hash": "206e8f151f6686cdff89152ddef7c0ef41e894cbd5019377f6778a2b69589297",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-competencies": {
+    "hash": "9e9bb988e4298da4419fd6f540affe849607f1f0d4ccedbcd453e23f35ab6302",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-registration": {
+    "hash": "bba209893ad64ec9fa4abc00bd03bc7d628ad1ab754bdbf5065cf37b6d75733a",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:gloss-health-workforce-observatory": {
+    "hash": "47dc29f473c795fead6576be3a28a08558e8bc94a094f578fba63b2c9e6a21c2",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-terms"
+  },
+  "prose:glossary-about": {
+    "hash": "33f608f9cac84a772afdcdb41e500b1eb47dce2104918118ae94f8b7dcbd9f5d",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-lead"
+  },
+  "prose:references": {
+    "hash": "921dc8c42a2384754d150e2c58a1978f9d1569de802e6527b0489c39f7a34a8e",
+    "renamedFrom": [],
+    "section": "references::sec:references-lead"
+  },
+  "prose:ch03-key-messages": {
+    "hash": "91275cef9c614fa8aef6a2f90e44de6554f999ac1e7ebb23371fb4a3ae9ca246",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:ch03-lead"
+  },
+  "prose:ch03-tools": {
+    "hash": "7e2f92ce27786fdd7fd284b62e694dcb2e9e5c5ca7f72bb75aef31aa6f99c966",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:ch03-planned"
+  },
+  "prose:ch03-transformation-principles": {
+    "hash": "c68cfbe84b99f93a010fe2ff04460ce03281e8f87e1c3c0cbcdfe2e10715c39d",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:3-2"
+  },
+  "prose:ch03-objectives": {
+    "hash": "6c39de32f77682550df5fa0e23042b0fa1f49c1f353512d1259a29eb49e26a85",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:ch03-lead"
+  },
+  "tbl:ch03-diig-mapping": {
+    "hash": "92f91654ecd10cd9f46fa6a2632bbbd82c640716ea67c39c8641360ab8bb8417",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:3-1"
+  },
+  "prose:ch03-country-pathway": {
+    "hash": "daa307963ad9b3812a0fbd9fb8fde61363e245751294f226dace5e8787b6284d",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:3-3"
+  },
+  "fig:diig-phases": {
+    "hash": "e1b9f404b7702be7e868e49fc988d06a35f083ad7dc1bc563143aedf6be4513c",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:3-1"
+  },
+  "prose:ch03-diig-alignment": {
+    "hash": "59acb547c22785704a6c0b380f1a5efe892438aa6c5babb314a6d94ecc6b48c5",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:3-1"
+  },
+  "prose:ch03-outputs": {
+    "hash": "28491ad7d95db7ca8990641c037dcb37705c8f575290dde1606f95dc58107ec7",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:ch03-planned"
+  },
+  "prose:ch03-figures": {
+    "hash": "4ce3495bebe4e4f40e98a83894d80f0eedcfbf040b68e6947bb42562cac3d257",
+    "renamedFrom": [],
+    "section": "ch03-digital-transformation-approach::sec:ch03-planned"
+  },
+  "prose:ch19-outputs": {
+    "hash": "0e53f5a1705546beeef19735c3f78e32e4939ea3faa31d946caffd8a77051ae7",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:ch19-planned"
+  },
+  "prose:ch19-key-messages": {
+    "hash": "1fa4498fe3b2a015d5f60d707bc190ba71aa926abfb5f696487165c30c3cef0a",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:ch19-lead"
+  },
+  "prose:ch19-evaluation": {
+    "hash": "45dccc505b8bff163d45f32e21ab440baca209c2a24cb376b85b75968ac59ad6",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:19-3"
+  },
+  "prose:ch19-maturity": {
+    "hash": "920944e9282ecad397fd14b15630b368707fa5e09f3f24373fd82aa1dbec1544",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:19-2"
+  },
+  "prose:ch19-figures": {
+    "hash": "0a3dbc2ec947273f82ef97e263c668315d3db0797e6930414a389a29b65401df",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:ch19-planned"
+  },
+  "prose:ch19-objectives": {
+    "hash": "38c4fea6786caca1ccf199bd97d02b4db22f7354ae93853aea0ea89c1928fdfa",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:ch19-lead"
+  },
+  "prose:ch19-tools": {
+    "hash": "b5a77acbebf61c1325a2ac23947ca9f8ef6c5e141940d099f8d86175326aad48",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:ch19-planned"
+  },
+  "prose:ch19-kpis": {
+    "hash": "671828095c9de9b645cb6a4fe5d65ea40adc6e881462cba0d4f3fcdd9e954baf",
+    "renamedFrom": [],
+    "section": "ch19-monitoring-and-continuous-improvement::sec:19-1"
+  },
+  "rem:discussion-overlap-between-chapters": {
+    "hash": "f26006bdbe2ba50ffbd6802fee807d39e00c1e448e12791d65cfbf09d9e91a77",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "rem:discussion-case-studies": {
+    "hash": "184e20811955b42530b1a72fb784a78ef6862517a0e4a4fa4eda39a28623d75d",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "rem:discussion-step-by-step-or-modular": {
+    "hash": "d36cf1debd550e12d87ccaebf96c6a06fe7635b3befb3456011e3f3f370f9469",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "rem:discussion-minimum-data-set": {
+    "hash": "14af51245a7d94655d9a875d1bf1ddbea429441cb7f576190923ea6dd91a5d72",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "rem:discussion-one-registry-or-one-set-of-information": {
+    "hash": "11bfcd4dcbe1045ecb38fe2f8a9510ed857de7b56828c0e030425712c0e72b59",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "rem:discussion-unique-health-worker-identification": {
+    "hash": "c50a02d90a9b0c2645b862a81fdeb39db0e61d65e2c9dc581cabf617cc76c54c",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "tbl:handbook-at-a-glance": {
+    "hash": "bad602887fe4dfe71b67bfe452ef6b82b3626cea4141495b14d52e91cb64993a",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-glance"
+  },
+  "rem:discussion-which-health-workers": {
+    "hash": "a9eed31d65b1a7977b96d9de731a01d8fb7fb323db00c671e3ba6c7424e18e41",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "prose:twg-questions": {
+    "hash": "5cb3de2f1a8bb7213748f697e1c708b665ff2dd7fee89c20947555bc191a186a",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-questions"
+  },
+  "prose:about-this-draft": {
+    "hash": "3ff4e0c2d7e2f2396e2cebd868f0b551698ce38d0b17f5412fcf8b771c90a880",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-lead"
+  },
+  "rem:discussion-boundary-with-hris": {
+    "hash": "6b2873888ec27b834ac349f8d23d02b075e4b6e5a2919deb51f70ab1bf9f227f",
+    "renamedFrom": [],
+    "section": "about-this-draft::sec:about-discussion"
+  },
+  "prose:annex-4": {
+    "hash": "871b2169ebcba9fe6a43e3a15b353ef70adc26a077fdbbd78ee23af758a5896e",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-4"
+  },
+  "prose:annex-5": {
+    "hash": "5873895d00b734a13180e863ca8b5580ea106e1b65965cd355ed79be42e07151",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-5"
+  },
+  "prose:annex-2": {
+    "hash": "781777e2b5b5968a62964735a14a8a1be7ceb7d52735909cc70c3a4b55792c10",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-2"
+  },
+  "prose:annex-3": {
+    "hash": "2a17dfa494c3665f5cf76cefba841d8949688e1324bed472cc2ba57f5162bd33",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-3"
+  },
+  "prose:annex-1": {
+    "hash": "6afac9f4325ec8a23986cb18a23545b1ca09f159e1a21c1a7a0be7a29a78ecad",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-1"
+  },
+  "prose:annex-6": {
+    "hash": "5f1dbb7123a23e9023f949124801f617932dd5aedf3e462579b5aec6f8f6fb3c",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-6"
+  },
+  "prose:annexes": {
+    "hash": "5855cbbb8e16e345b60ec3772eb666f4c59cc4fccfc01523a8c420971969595c",
+    "renamedFrom": [],
+    "section": "annexes::sec:annexes-lead"
+  },
+  "prose:annex-8": {
+    "hash": "1097fae164d50b01c8d4324447b8941cb14fd737159e048fe9fa8750fc18ed2a",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-8"
+  },
+  "prose:annex-10": {
+    "hash": "4e1ab64ec2459969b95bf40ee65cf37b81b74347ed90cd5e4b7e3b6929015feb",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-10"
+  },
+  "prose:annex-7": {
+    "hash": "67bad9173c08c1540e882bdf688d7a18e3fc4c8db9fbba8cb728bd5cd434d7c1",
+    "renamedFrom": [],
+    "section": "annexes::sec:annex-7"
+  },
+  "prose:ch06-tools": {
+    "hash": "4c1fa65035eaaa9b269db7528a3e45657fec416ba67171edc102be47ce611769",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:ch06-planned"
+  },
+  "prose:ch06-sustainability": {
+    "hash": "bc4bb316562f0a9582879a264e4ec1d4faa3560e12c314a634e38dd74e009cb8",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-4"
+  },
+  "prose:ch06-data-stewardship": {
+    "hash": "7ddb9315cc7676fce16f24efd69916b63acaa2b290c9974934973a5b196eb47a",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-3"
+  },
+  "pers:registry-custodian": {
+    "hash": "7c0ba4b6e033135255f71a8d15cee82ff589d4327da73c5d53ba4d33eeea118d",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-3"
+  },
+  "prose:ch06-outputs": {
+    "hash": "5b4573c76c3321e9c0fda859a3f5c377e259a71b4e0944ade1a7642e7aa4e8ea",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:ch06-planned"
+  },
+  "pers:registry-governance-body": {
+    "hash": "a458f4d8a8ac8c1287cd781b0ebe1ced437fc420061e730732bd3a5638bba3ae",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-1"
+  },
+  "prose:ch06-institutions": {
+    "hash": "9dfe5f5ae8d6535b5749cdb8e48dbe184e30a58e1dbaff33eb6fb33593a57a12",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-1"
+  },
+  "prose:ch06-figures": {
+    "hash": "97ef5188e68fe2ba3269ce8a792bc9b99f8993aa35b28822ed320a629ca9c02c",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:ch06-planned"
+  },
+  "prose:ch06-legal-foundations": {
+    "hash": "872e5800e59b8aafc128a5b4095f8854302aae1d256ea2a6b8bae479a9b95b45",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:6-2"
+  },
+  "prose:ch06-objectives": {
+    "hash": "7b5a386c618dd68398ac0bde8d4edffb2d97255d7c25cfb3b05ed3440278c73b",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:ch06-lead"
+  },
+  "prose:ch06-key-messages": {
+    "hash": "c5fb325fc40015b03ddd833fb6666d1c7fe2f1c5ec3e380b3fde861a82acce7d",
+    "renamedFrom": [],
+    "section": "ch06-governance-and-stewardship::sec:ch06-lead"
+  },
+  "prose:ch18-figures": {
+    "hash": "3a089d6440b93833c4119656208df87929cc8fbe82b919bf6d64f019118c36a9",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:ch18-planned"
+  },
+  "prose:ch18-communications": {
+    "hash": "9baca2bcaf4082147130fc9814199f7471eb18e94368f56ef81ab3e8508a9edc",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:18-1"
+  },
+  "prose:ch18-capacity-strengthening": {
+    "hash": "8f0938156ed412cf7f04098adc8545459dede6168bdf7d2dd3b3c8e644f7ca77",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:18-3"
+  },
+  "prose:ch18-tools": {
+    "hash": "4a5d4d2722fc0eee1be3e39f2acb6b9132ce5380ef59b00b9c8d89bd65448216",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:ch18-planned"
+  },
+  "prose:ch18-objectives": {
+    "hash": "bcd14feb730131f71eddeb78d165d9a7b9dddb08e3ef30450fac815baf2d48f2",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:ch18-lead"
+  },
+  "prose:ch18-key-messages": {
+    "hash": "5a58830c08e3873f48ae1deae39579290eac2936b9b51b73c53591c789673017",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:ch18-lead"
+  },
+  "prose:ch18-outputs": {
+    "hash": "0b9aaecd941912aa9a4afbbf3dc3c6d7bf18bb53e76b922e0251750f4afc4a8c",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:ch18-planned"
+  },
+  "prose:ch18-adoption": {
+    "hash": "c8e3180576ff459fe31d643d8f3e5a701fd2a9e899e00c7c1c82f6e2c2b3c6c9",
+    "renamedFrom": [],
+    "section": "ch18-change-management::sec:18-2"
+  },
+  "prose:ch14-tools": {
+    "hash": "7c150154fc25fecfe7e64bfa10dc0073496f3464f955d756e96d10e9f205e9ea",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-planned"
+  },
+  "prose:ch14-part-purpose": {
+    "hash": "a54b403824e17f5fd236f6f2c453f2658b9498af2dc2954daf607fc7fda5e537",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-lead"
+  },
+  "prose:ch14-key-messages": {
+    "hash": "b9887b04af9f553e33e89cebe68ec0b5fbfd14cfef641168dd0e3e13e65d85b7",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-lead"
+  },
+  "prose:ch14-teams": {
+    "hash": "a413da93b035ebd28643b1af28545ff2b0117d313c5937ae00c9fea6dc46fdd7",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:14-2"
+  },
+  "prose:ch14-stakeholder-engagement": {
+    "hash": "3af430e38270dd2e3bf121d5f538ca2a5ad33d410435e4304b6b20eebddfc1f9",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:14-4"
+  },
+  "prose:ch14-leadership": {
+    "hash": "c162ebecee2bc16ad8ba367e4de47084abbbccad0ebc116c7b6b7b27f0720ac4",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:14-1"
+  },
+  "prose:ch14-outputs": {
+    "hash": "54b3a3bd5face421f2e345ca136bec01482dc3b5e2bb476562ccdd84b29a83f3",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-planned"
+  },
+  "prose:ch14-readiness": {
+    "hash": "859023a91c7687f64da93b2bb7f5463b9355b42833725640e8c85d9b4e2cfe1a",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:14-3"
+  },
+  "prose:ch14-figures": {
+    "hash": "1725f0434e26519d6e58f9bb9ef5e0335373f4ee12b07646dcb577d8600ac933",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-planned"
+  },
+  "prose:ch14-objectives": {
+    "hash": "593e7d642cb986da51970864ed17b1c1aeb5e416780f78bbf2f85340827138b0",
+    "renamedFrom": [],
+    "section": "ch14-preparing-for-transformation::sec:ch14-lead"
+  },
+  "prose:ch12-tools": {
+    "hash": "b7936430b1a80dfad3bdce98f19a26e98dff9434327b98174ca5b664ac14ce6e",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:ch12-planned"
+  },
+  "prose:ch12-access-control": {
+    "hash": "7372d8b96576cb4c335688c746b70bcf86c5c35b49ed6f7cd765f0fe481d7d5b",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:12-3"
+  },
+  "prose:ch12-audit-trails": {
+    "hash": "34489f836a7f2ae5b148d2288a221baeeef25dd595920d85f0373ab70507722d",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:12-4"
+  },
+  "prose:ch12-figures": {
+    "hash": "ecb3c7a600e60b234167bdee6cf49f759ca643bb6d19ef92c94016e52f01b9aa",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:ch12-planned"
+  },
+  "prose:ch12-outputs": {
+    "hash": "31d873dc59548792a6cc2aa11b0e0f88fe011ea54b15dcc6c60f2563a1249cc6",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:ch12-planned"
+  },
+  "prose:ch12-objectives": {
+    "hash": "4da66a2522e1a1e03b8375fe22c31672878b2162e8035771afa567c9e3fcad5b",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:ch12-lead"
+  },
+  "prose:ch12-key-messages": {
+    "hash": "0487c28421d6f3c5cf60a87a4b712a1a965e247a98e55a720d0b4ee36c4bf076",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:ch12-lead"
+  },
+  "prose:ch12-cybersecurity": {
+    "hash": "315ae07bcb197eefc874963a3a9db45b8876f58fd2c23625c50d59693c1372df",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:12-2"
+  },
+  "prose:ch12-privacy-by-design": {
+    "hash": "4b4c9442577cfd1d3ec210d23bcab384c9d0962e413601c737bf43833874d9d6",
+    "renamedFrom": [],
+    "section": "ch12-privacy-security-and-trust::sec:12-1"
+  },
+  "prose:ch08-tools": {
+    "hash": "944999576ec442723ee46b30656a45f2cd8a7ae4e4ce98152a1edb3586f94bb7",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:ch08-planned"
+  },
+  "prose:ch08-technology-neutrality": {
+    "hash": "4f31d698fd38655263cea1ddd0cdbaa57f9f7389a27ad2dcda458d0fa2dabc42",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:8-4"
+  },
+  "prose:ch08-scalability": {
+    "hash": "867c72ba9d54190a383b7cb9634736fff3d4e2256f097773ca318f13ea28be00",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:8-3"
+  },
+  "prose:ch08-architecture-patterns": {
+    "hash": "b741911b9d635bf1d0f0d78257fdf1495a074f3e865029fcfe772186efab348f",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:8-1"
+  },
+  "prose:ch08-figures": {
+    "hash": "e8e464644b6fac8a35019612036a1082eaff9f05d95ef586cf4e8c454e3ef115",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:ch08-planned"
+  },
+  "prose:ch08-outputs": {
+    "hash": "491cb877c6c6d7cae43b75f14a81e708cd94f979d1ac6aa45438b06b679bbb5c",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:ch08-planned"
+  },
+  "prose:ch08-key-messages": {
+    "hash": "d4844787372176b294f8b2329bee811333a324677ea92957548b09c55ebe2e88",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:ch08-lead"
+  },
+  "prose:ch08-federation": {
+    "hash": "67e930b49017df0ba78f49ff27a535abcc1638cac6da2e65598468585a940ad1",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:8-2"
+  },
+  "prose:ch08-objectives": {
+    "hash": "b3596c87eb9c4b845aed7d4901518a734e7785bf33981787567203f8b12a09bd",
+    "renamedFrom": [],
+    "section": "ch08-digital-architecture-principles::sec:ch08-lead"
+  },
+  "prose:ch01-key-messages": {
+    "hash": "2ab8e032ae07f2546d5f2d0194eb62ae46c50b24c5250b02b3793a62e635499b",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-lead"
+  },
+  "prose:ch01-global-challenges": {
+    "hash": "26fb62fc81d477449d83620dec9cacefd91ef8c7950f307eaa7c183a8d538e4d",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:1-1"
+  },
+  "prose:ch01-tools": {
+    "hash": "21437438258955b4cec6e996cebf1278bed5da3d9b1e3f167eb6b3f6f5285b2e",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-planned"
+  },
+  "prose:ch01-value-proposition": {
+    "hash": "fca1860a67e7cc3bd65caaa56832206483cfa99f3ff1ef101ca1bad241d71c69",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:1-2"
+  },
+  "prose:ch01-part-purpose": {
+    "hash": "6e3a98fffbd84e8db710b5092a9dcf50d97bfbb1b1e01643d8039b60797830fc",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-lead"
+  },
+  "prose:ch01-figures": {
+    "hash": "49569f45e7ecb64ed6977d0b6560e89ce7ab7e5d74cd0cb6a7b4e100971ad516",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-planned"
+  },
+  "prose:ch01-registry-as-digital-public-infrastructur": {
+    "hash": "2c7b3d124770af4661b82e49a42a566d3631888a75e7285d9bb07b96369c0b2a",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:1-3"
+  },
+  "prose:ch01-outputs": {
+    "hash": "e168c63d0c5ca364c882f506ddb6239471816f3dac8a8b2ee7f7efaf4f927d4b",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-planned"
+  },
+  "prose:ch01-benefits-and-outcomes": {
+    "hash": "735a90718490c13ddf94c6fa7343c3eaaeb9cd8bf7a52dc2bcd69b42833bc7b8",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:1-4"
+  },
+  "prose:ch01-objectives": {
+    "hash": "6066d78dcfffd289e228b093ed290ca1c11dcfcfe28ee30826bff4d60096bd20",
+    "renamedFrom": [],
+    "section": "ch01-why-digital-health-workforce-registries::sec:ch01-lead"
+  },
+  "prose:ch17-migration": {
+    "hash": "f9e9bc7e99612967a959c1b154e8e70d74ab536548d44af9c6bd609842070407",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:17-1"
+  },
+  "prose:ch17-objectives": {
+    "hash": "fe1ee97baf3b6b8499e3e40c975ab22275a80bd739f8a0559f8c8b3573902b27",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:ch17-lead"
+  },
+  "prose:ch17-operations": {
+    "hash": "f8706b9de424222cc61065b05d26f17138c51420aa5196e158d14cd782d7266a",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:17-4"
+  },
+  "prose:ch17-outputs": {
+    "hash": "f5280e2d2170550a414fa6878039590effe55e5b6afb4d93890770ce333f2eea",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:ch17-planned"
+  },
+  "prose:ch17-key-messages": {
+    "hash": "6e58cb8f555de2fa2877a3ce8b7b455d9088780fffefd50eaf09590a2b1d246e",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:ch17-lead"
+  },
+  "prose:ch17-figures": {
+    "hash": "6768a8becea655e6322193edf7967993d0bfbfb428485d0999f1306dbdd636fd",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:ch17-planned"
+  },
+  "prose:ch17-rollout": {
+    "hash": "e037b687dd723812e4ea3ee0cc7570f5ad131f1e99839e791c3b6a0c48854b55",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:17-3"
+  },
+  "prose:ch17-testing": {
+    "hash": "081aed91724051cc96812a642e071dd62f6a68f7fd47d947af3db7eb65b6a372",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:17-2"
+  },
+  "prose:ch17-tools": {
+    "hash": "731c7880f5519d9926568010772b7829bc9a72de1c0b15d2f4fea6ce87098d6a",
+    "renamedFrom": [],
+    "section": "ch17-implementation-and-deployment::sec:ch17-planned"
+  },
+  "de:mds-employment-status": {
+    "hash": "cfa9920e7c34938ef34cccb1c2d47d8386122fc0b353aa2a9f2615a885d4ca53",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "de:mds-contact-information": {
+    "hash": "7809cfda95e70d50d3c25bbf5461ee005ebba3f512f2932e487a63cd03c38563",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-tools": {
+    "hash": "88c7176f60ee7eb246dfd337d9116071d6945cd3776167bd4958450eaff53492",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
+  },
+  "de:mds-data-submission-institution": {
+    "hash": "affbd741eb84cbecd6971ca8c40cf3188e8d8de271482ba85abfe4e9a8a32c19",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-classifications": {
+    "hash": "f0476940a5b97f2de2cce642461680da46652ca01616cd0f217467affb03a673",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-2"
+  },
+  "prose:ch11-key-messages": {
+    "hash": "02936ab0ea3e936ad9bc661a92a936ebda02c3eca4abc877b89bda5691e8abe3",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-lead"
+  },
+  "de:mds-citizenship-and-language": {
+    "hash": "e65acaed39c78e933c4dfc36c6ff11520bca8fd0b6071b17617b372312f3ac5d",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "de:mds-professional-licence-and-certification": {
+    "hash": "7b8bfd94a80f6316e520c8b39abdd455adbd0b93567f44e7e6265391cff8804f",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-objectives": {
+    "hash": "99c710c7b7289203e2472c0b494b0d5a676faa16cebd2c501afe801b9cbd5dd2",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-lead"
+  },
+  "de:mds-employment-address": {
+    "hash": "d83e854bb0edc7dafe0ecd24253601c7c87c33ceca5e4437a30e27133f7e22f3",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-figures": {
+    "hash": "a7a6d4926fd91d194dfbcb9bcc8204a2723ff6f68618ece7be6e7d06a1e3b94a",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
+  },
+  "prose:ch11-metadata": {
+    "hash": "0630484c745021cc57aee7b2204be8a8a0bbbbc7014710a9677f45321e5639cb",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-3"
+  },
+  "de:mds-identification-number": {
+    "hash": "b1c32efdd2c8a8a79e211b376ff992c5681fa60a877f4d391abb282d3f9d1a27",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-core-dataset": {
+    "hash": "32f669bc2b7dc33eaee6dfc9d4d93076652d4ae187c840900ab9318f00552827",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "de:mds-address": {
+    "hash": "7a4c1b2112783afdedeb1eb29ecf54e9fa9e65c627d918ec4508edf5c4a06b0c",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-nhwa-mapping": {
+    "hash": "fbd90373e3adb337c838dc48184252a412cdd7012496c63051dae03d70d6bc3a",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-4"
+  },
+  "de:mds-name": {
+    "hash": "3257ee88d26f4555f28ddc84e57a9f29197b32f34ea817dbe358080f90b694b3",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "de:mds-birth-history": {
+    "hash": "45408f4fa2319b80c436018e221ab41cb25a755dfe92ef0bd82af667ddf45eb7",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "prose:ch11-outputs": {
+    "hash": "98442cd16a7583c66d9d730a7470dc02fd1f367cf81ef5eb1b7eca03284f1056",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
+  },
+  "prose:ch16-objectives": {
+    "hash": "a21161ffbdf75f0293748b716960c904e0ca57803c95b1e744b2fedb1e361354",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:ch16-lead"
+  },
+  "prose:ch16-procurement-approaches": {
+    "hash": "b5a5ac78463d0c4b47990f179d4cddb8e3bd266e4291a7028c34b3f63fc9341e",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:16-2"
+  },
+  "prose:ch16-figures": {
+    "hash": "ea7b27e1d89df52ff2dc9faf798b84930f189eaeadaa9f57dab08d3179609844",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:ch16-planned"
+  },
+  "prose:ch16-outputs": {
+    "hash": "be7cd26c2afcd924f639ca94693321c173e7c3d5e39040d2f93e7d4856ed3bfb",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:ch16-planned"
+  },
+  "prose:ch16-risk-management": {
+    "hash": "6976e961faba802817752a7c8e145866fe69318f0adab9d44280fc5673e33648",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:16-3"
+  },
+  "prose:ch16-options-analysis": {
+    "hash": "e4df0ac0fa0132af66291c6b7e324c03f2de9d3c4b4a0b1351cdb2081348aa02",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:16-1"
+  },
+  "prose:ch16-key-messages": {
+    "hash": "acb7a6a557b3b60d4ce2dc35715cf25263587648820b2fb24cff8724bddfef50",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:ch16-lead"
+  },
+  "prose:ch16-tools": {
+    "hash": "7c20b216bbfa0cb30d185b5eae06cd203238860b1d15eea74745c5a92525aec4",
+    "renamedFrom": [],
+    "section": "ch16-planning-and-procurement::sec:ch16-planned"
+  },
+  "prose:ch21-centralized": {
+    "hash": "d5c7e840c9940f3f197321863729093eea047440cdcc9fe752532051c24b77b5",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:21-1"
+  },
+  "prose:ch21-key-messages": {
+    "hash": "549117c6555b190d7b129bb912562a143fd47b4826b0cabf173a99a6cdc13db0",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:ch21-lead"
+  },
+  "prose:ch21-outputs": {
+    "hash": "04687c17be808c1f9ef48168d1d366e8cbf3d9a28fe360b604a847d5eb1fed60",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:ch21-planned"
+  },
+  "prose:ch21-federated": {
+    "hash": "285c372ee2b1e0661e21fb321ffea62af676a1ae709234357f10b4abec236bf6",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:21-2"
+  },
+  "prose:ch21-fragile-settings": {
+    "hash": "c609aa549939b0669b119723afceeba1c2f13daa9801f12a88f4cc0fb90c78b6",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:21-3"
+  },
+  "prose:ch21-lessons-learned": {
+    "hash": "dfd2152748c619b554497f64851feebd36da380dfbc73381a5aca530c8d25779",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:21-4"
+  },
+  "prose:ch21-objectives": {
+    "hash": "4bbdc0c0acb907878046442e0bae643f0a9088da60ee1e3c8e355088d4b64d06",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:ch21-lead"
+  },
+  "prose:ch21-tools": {
+    "hash": "07a3f166f11a5cdbae9fc63d809517d6e20e72997f00fff8bda0101c0795193a",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:ch21-planned"
+  },
+  "prose:ch21-figures": {
+    "hash": "863c85fe26d70b8f561c4c466c0c202a90c758bca3fe81473a49e9cfc383bbaf",
+    "renamedFrom": [],
+    "section": "ch21-country-case-studies::sec:ch21-planned"
+  },
+  "prose:ch09-figures": {
+    "hash": "ae75ac313b7d54893ef219e3533ea24defa1f0d10b7365dd8fddcd42e35f9dec",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-planned"
+  },
+  "prose:ch09-tools": {
+    "hash": "6a72af7df94c150380a2b60ca2e135521d3e5e148e48d9ff6e5b0660bce55ae0",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-planned"
+  },
+  "prose:ch09-key-messages": {
+    "hash": "33f3b2ad35b5951da9915f4bf9d386ed3166a936b7ddd6990417146c4d42816b",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-lead"
+  },
+  "prose:ch09-system-landscape": {
+    "hash": "f0f90f1bcf29d7c100590db490fff7666a206058a208ceb5b54d76c7281effdb",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:9-1"
+  },
+  "prose:ch09-architecture-examples": {
+    "hash": "c85fdb59c4e701f0f834ab8304731caf7ccb1f623279bd0cbbc89377189ccbc9",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:9-3"
+  },
+  "prose:ch09-part-purpose": {
+    "hash": "9134a2dd92791c3d6548fdf3c35a3dc06155ece85f2be5816937232d06947b49",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-lead"
+  },
+  "prose:ch09-data-flows": {
+    "hash": "c1b29226e376a900e9ac956979190fafc80d7f6334f12d84158b29000115fe0a",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:9-2"
+  },
+  "prose:ch09-outputs": {
+    "hash": "a7abeeef0e3546b8b3c328eb4f12ee805a847fdaeda344243d2756d2dd2dd621",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-planned"
+  },
+  "prose:ch09-objectives": {
+    "hash": "9c8e625387075c0b6aeb4c7c3ea774de97eb6d752fdc6aeec564f562d4b3abeb",
+    "renamedFrom": [],
+    "section": "ch09-registry-within-ecosystem::sec:ch09-lead"
+  },
+  "prose:ch22-key-messages": {
+    "hash": "c710eb0b59ef0de3c3107e971db3f7e8b4d4bb0dd605d5a6185c780864ae4836",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:ch22-lead"
+  },
+  "prose:ch22-outputs": {
+    "hash": "b7e5687c65a11027bfe4e19da5e40efeda5ffa41e57411e32e6521ebb0ec21e1",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:ch22-planned"
+  },
+  "prose:ch22-objectives": {
+    "hash": "0f3c2cb3b3106aff7f227d1945c640c04ddbeea6a09674612ac6779591154ae9",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:ch22-lead"
+  },
+  "prose:ch22-checklists": {
+    "hash": "8fbeaf2ac87bfce9dc8df3ee7973d6f56aecfc7160dfc3eec81e9b06a5232369",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:22-1"
+  },
+  "prose:ch22-assessment-tools": {
+    "hash": "979060752b9a16dbdfc614a5e62d9007bcf309e948090809ed8157f2a5844db2",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:22-3"
+  },
+  "prose:ch22-tools": {
+    "hash": "8822ccf0585bf4ae3213d0cc36ab315d5ac4a1fcf6a4b0c9417ea71211f55685",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:ch22-planned"
+  },
+  "prose:ch22-figures": {
+    "hash": "f134d20232ec61946217a592bdf75cb1bc7d74a4e0f40802761e2d73256e1587",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:ch22-planned"
+  },
+  "prose:ch22-roadmaps": {
+    "hash": "37908f0c69ff8a7c184d58101a2f95e3b95194f43689031c6548f8c600e4d3bf",
+    "renamedFrom": [],
+    "section": "ch22-tools-and-templates::sec:22-2"
+  },
+  "freq:FR-AN-02": {
+    "hash": "0da6a11cbbba1adb8019320dea38eb14ce50315a812d6765a93203f9851bf2b9",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-5"
+  },
+  "nfreq:NFR-04": {
+    "hash": "564b0fc71bda37bb76973d38a168e9ab86ea75707a6299cb4aea31dd84e865d8",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "freq:FR-LC-01": {
+    "hash": "006335ef4621b50d060ecaf92123cc4ce8cf6b183e82a54c7c16b49fa6562742",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-3"
+  },
+  "freq:FR-VER-01": {
+    "hash": "52fa4da6204b65fc99af51dc6d8482faac7fe050d0b98dc8e98ad60ec3766e02",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-4"
+  },
+  "freq:FR-VER-03": {
+    "hash": "24ef420310331bbd551a33128254d503b2520839041e55ae0f7a378f050031c8",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-4"
+  },
+  "prose:ch07-nfr-intro": {
+    "hash": "478ff747c0753f6f6e6669341b33cd6a2776c813644eedeae89f25e2afa8a5f2",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "prose:ch07-records": {
+    "hash": "32a52c983e36715c8818e99fc0da1f86ac5dc9e541fe20e7a5b283c3a7c8eceb",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-2"
+  },
+  "prose:ch07-outputs": {
+    "hash": "6d9cf925771a0e34fdd08e8a6ac581ecef8579be1ee7e42f04ccc96e8ce234a3",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:ch07-planned"
+  },
+  "freq:FR-REC-01": {
+    "hash": "f1be00e1fb7dcddf33905400a09e60fb369471076fcd9816d28877fe6575b597",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-2"
+  },
+  "freq:FR-LC-02": {
+    "hash": "4697a0d514be8d4e274d86d5d453648ae604e6277e3098741c9e90863f34d1dc",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-3"
+  },
+  "freq:FR-AN-03": {
+    "hash": "aefee66d1da5bed2367afeafcc0110ac8cbcd23b8ff181d7d9dfb19d6a5e9d9d",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-5"
+  },
+  "nfreq:NFR-03": {
+    "hash": "71018cdf6297fbef4e066eb030040834b51af6089567ee3bf9ff3e9d48e0ea24",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "freq:FR-LC-03": {
+    "hash": "ff9dca918cc2efe467ac837205d9ccccdadf0fd95eae23adc19134f1b003d72f",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-3"
+  },
+  "nfreq:NFR-02": {
+    "hash": "1458349bc5e209b9e70ee630dd477a79c4199dd1cf01cbd126286d1819278646",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "prose:ch07-key-messages": {
+    "hash": "06449e2ffde21763c4a962f39f1124df0b55bc87f38a19cc70b7b676864023f9",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:ch07-lead"
+  },
+  "prose:ch07-figures": {
+    "hash": "3a7cfbe023381793845a886a5ac257db3df458f795a4e58364e0a09debc369f7",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:ch07-planned"
+  },
+  "freq:FR-REC-02": {
+    "hash": "e57b696551dc4170bc5f6642c8115630a466fbbb9e590c7d0a40d3c36a3cd4d4",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-2"
+  },
+  "nfreq:NFR-01": {
+    "hash": "d6615de4f404e0b9061eb1e73409f56618931a3b2ed9d50135357622602072fb",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "nfreq:NFR-05": {
+    "hash": "416a05f0265bb6873dbc509745ef34bb92aaf7f7c6c926db13bd83e9402bd9f0",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-nfr"
+  },
+  "prose:ch07-objectives": {
+    "hash": "baea4ce10616994bbb6a89d88f12c4e807063b4023df2649f009a9a8252b9f48",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:ch07-lead"
+  },
+  "prose:ch07-verification-services": {
+    "hash": "e32fd5c5f4d654ecc8a807e3a94c189e1ef0c1eb80613a963f2fed6ce6beb448",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-4"
+  },
+  "freq:FR-AN-01": {
+    "hash": "d1274dc496e9ae1f0fb20aa5f06c8a8b28ad8bea831a23a97a30e7fb26b37f4c",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-5"
+  },
+  "freq:FR-ID-02": {
+    "hash": "70709fe82d339bff24fe34454d19dfc03c9008fc6b98f5bd71a60dbe7dc4cb8d",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-1"
+  },
+  "freq:FR-ID-03": {
+    "hash": "6ff3c269a06f7549094fde83ea7875ecdb511e8e2af0a28ff9f7c4d04082ddc7",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-1"
+  },
+  "freq:FR-VER-02": {
+    "hash": "8bc754547add1379afb71fae97be59f30500e38cb7677c064a3f13deb0c56e3e",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-4"
+  },
+  "prose:ch07-analytics": {
+    "hash": "b8d22c1a47884c4760e7f182e4f55c23cb08e86990c16cd24255be7c96994795",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-5"
+  },
+  "prose:ch07-identity-management": {
+    "hash": "465e6e5735e791ca37d266174c6a4edf1816bcc95ceb4ee3f88b0e7df9e677c5",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-1"
+  },
+  "prose:ch07-tools": {
+    "hash": "2568fa2933b3383748753a028bc6107277a1011e0afbf8cb59b209613f6e8925",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:ch07-planned"
+  },
+  "freq:FR-REC-03": {
+    "hash": "59913dd36f8cfd181982806f3d013afd3aba89c4f53b87d94578f0a981bc90f6",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-2"
+  },
+  "freq:FR-ID-01": {
+    "hash": "b1f3e0ecabef01dfdaeff579b760bed9230f249e63aa6e43f62146fd672d3a6a",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-1"
+  },
+  "prose:ch07-lifecycle-management": {
+    "hash": "a75b1d605ea01de83a27c36fd59b8330bca1f66ae5fc07382d1a01c6e0ba772c",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-mds-professional-licence-and-certification",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:mds-professional-licence-and-certification",
+  "kind": "data-element",
+  "title": "Professional licence and certification",
+  "text": "de-professional-licence-and-certification.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "minimumDataSet": "WHO 2015",
+    "position": 7
+  },
+  "provenance": "authored"
+}

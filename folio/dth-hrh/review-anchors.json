@@ -1523,7 +1523,7 @@
    "sections": [
     "sec:4-3"
    ],
-   "hash": "90d988a3a52f",
+   "hash": "e4a60e849ea6",
    "excerpt": "Maintains a single authoritative registry record for a health worker from pre-service education through registration, active employment, payroll reconciliation ",
    "method": "folio-snapshot"
   },
@@ -1799,7 +1799,7 @@
    "sections": [
     "sec:5-2"
    ],
-   "hash": "35b34f39172c",
+   "hash": "c8d864ba157a",
    "excerpt": "Registers and licenses a newly graduated health worker by verifying pre-service qualification with the training institution, checking foundational identity and ",
    "method": "folio-snapshot"
   },
@@ -1835,7 +1835,7 @@
    "sections": [
     "sec:5-2"
    ],
-   "hash": "ee849e305642",
+   "hash": "78fe6b9e65a3",
    "excerpt": "Renews a health worker's licence to practise based on continuing professional development and good-standing rules, and serves tiered status verification respons",
    "method": "folio-snapshot"
   },
@@ -1859,7 +1859,7 @@
    "sections": [
     "sec:5-2"
    ],
-   "hash": "ae7b976b2492",
+   "hash": "2860f4a63fd1",
    "excerpt": "Updates a health worker's employer, position, facility affiliation and emergency surge deployment in the registry while validating facility identifiers against ",
    "method": "folio-snapshot"
   },
@@ -1883,7 +1883,7 @@
    "sections": [
     "sec:5-2"
    ],
-   "hash": "6a875c74033b",
+   "hash": "dfdf9cb1ca89",
    "excerpt": "Produces de-identified workforce stock, distribution, skill-mix, attrition and migration indicators from the registry and submits validated aggregate extracts t",
    "method": "folio-snapshot"
   },
@@ -2015,7 +2015,7 @@
    "sections": [
     "sec:6-3"
    ],
-   "hash": "da6c13dfd923",
+   "hash": "b4c9d0907d92",
    "excerpt": "Governs inter-institutional data-sharing agreements and access tiers through the multi-stakeholder steering committee, enforces routine data quality and dedupli",
    "method": "folio-snapshot"
   },

@@ -232,7 +232,7 @@
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "da0599282fc0cb3f054e187fac5c80ddbf682999",
+      "sha": "d95399b3940d71bc09e396b62878d25d0e2de265",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
@@ -246,15 +246,15 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "e9b04a6ac1aa091762393d5bdde035d52412fae46e739145658f43a351dc1fa8",
-          "files": 6265
+          "treeDigest": "cb18240394924fbe963a22ca6179034fc61471fe7a78af1eb31e1d814acf4220",
+          "files": 6276
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-10-31",
-        "ref": "da0599282fc0cb3f054e187fac5c80ddbf682999",
+        "on": "2026-11-01",
+        "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
         "approver": "unverified"
       }
     },

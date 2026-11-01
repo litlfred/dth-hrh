@@ -1,21 +1,21 @@
-**Purpose.** This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement, employment update, retirement, emigration or death), always keeping the earlier states. The registration officer uses it when recording such an event (processes HRH-BP-01 and HRH-BP-03). It serves the lifecycle requirements `freq:FR-LC-01` and `freq:FR-LC-02`.
+**Purpose.** This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement, employment update, retirement, emigration or death), always keeping the earlier states. The registration officer uses it when recording such an event (processes HRH-BP-01 and HRH-BP-03). It serves the lifecycle requirements [`freq:FR-LC-01`](#freq:FR-LC-01) and [`freq:FR-LC-02`](#freq:FR-LC-02).
 
-Decision table **HRH-DT-02** (`Decision_HRH_DT_02`, hit policy `FIRST`) formalizes the rules in **Section 7.3 (Lifecycle management)** and **Section 4.3 (Health worker lifecycle)** for transitioning a practitioner's registration and licence status across renewal, employment updates, suspension, revocation, reinstatement, retirement/emigration and death (`freq:FR-LC-01`), while preserving all historical states without overwriting prior records (`freq:FR-LC-02`).
+Decision table **HRH-DT-02** (`Decision_HRH_DT_02`, hit policy `FIRST`) formalizes the rules in [**Section 7.3 (Lifecycle management)**](#sec:7-3) and [**Section 4.3 (Health worker lifecycle)**](#sec:4-3) for transitioning a practitioner's registration and licence status across renewal, employment updates, suspension, revocation, reinstatement, retirement/emigration and death ([`freq:FR-LC-01`](#freq:FR-LC-01)), while preserving all historical states without overwriting prior records ([`freq:FR-LC-02`](#freq:FR-LC-02)).
 
-*Source passages cited:* `prose:ch07-lifecycle-management`, `freq:FR-LC-01`, `freq:FR-LC-02`, `scen:renew-licence`, `scen:update-employment`, and `prose:ch04-health-worker-lifecycle`. Only qualitative states named in the text are used; country-specific renewal intervals or CPD point thresholds are not hardcoded.
+*Source passages cited:* [`prose:ch07-lifecycle-management`](#prose:ch07-lifecycle-management), [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02), [`scen:renew-licence`](#scen:renew-licence), [`scen:update-employment`](#scen:update-employment), and [`prose:ch04-health-worker-lifecycle`](#prose:ch04-health-worker-lifecycle). Only qualitative states named in the text are used; country-specific renewal intervals or CPD point thresholds are not hardcoded.
 
-| Rule | `currentStatus` | `lifecycleEvent` (`freq:FR-LC-01`) | `evidenceStatus` | `targetStatus` | `historyAction` (`freq:FR-LC-02`) | Source basis |
+| Rule | `currentStatus` | `lifecycleEvent` ([`freq:FR-LC-01`](#freq:FR-LC-01)) | `evidenceStatus` | `targetStatus` | `historyAction` ([`freq:FR-LC-02`](#freq:FR-LC-02)) | Source basis |
 |---|---|---|---|---|---|---|
-| `Rule_DT02_01` | `-` | `"death"` | `"confirmed"` | `"deceased"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (4.3, 7.3) |
-| `Rule_DT02_02` | `-` | `"revocation"` | `"confirmed"` | `"revoked"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (7.3) |
-| `Rule_DT02_03` | `"active", "lapsed"` | `"suspension"` | `"confirmed"` | `"suspended"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (5.2, 7.3) |
-| `Rule_DT02_04` | `"active", "lapsed"` | `"retirement", "emigration"` | `"confirmed"` | `"retired-or-exited"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (4.3, 7.3) |
-| `Rule_DT02_05` | `"active", "lapsed"` | `"licence-renewal"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `scen:renew-licence` (5.2, 7.3) |
-| `Rule_DT02_06` | `"active"` | `"licence-expiry", "licence-renewal"` | `"deficient", "expired"` | `"lapsed"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (7.3) |
-| `Rule_DT02_07` | `"suspended"` | `"reinstatement"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02` (5.1, 7.3) |
-| `Rule_DT02_08` | `"active"` | `"employment-update", "emergency-deployment"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | `freq:FR-LC-01`, `freq:FR-LC-02`, `scen:update-employment` (5.2, 7.3) |
-| `Rule_DT02_09` | `-` | `-` | `"pending", "unknown"` | `"hold-pending-verification"` | `"log-pending-review-no-overwrite"` | Third state: unconfirmed evidence (`freq:FR-LC-02`) |
-| `Rule_DT02_10` | `-` | `-` | `-` | `"hold-pending-verification"` | `"log-pending-review-no-overwrite"` | Catch-all fallback (`freq:FR-LC-02`) |
+| `Rule_DT02_01` | `-` | `"death"` | `"confirmed"` | `"deceased"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([4.3](#sec:4-3), [7.3](#sec:7-3)) |
+| `Rule_DT02_02` | `-` | `"revocation"` | `"confirmed"` | `"revoked"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([7.3](#sec:7-3)) |
+| `Rule_DT02_03` | `"active", "lapsed"` | `"suspension"` | `"confirmed"` | `"suspended"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([5.2](#sec:5-2), [7.3](#sec:7-3)) |
+| `Rule_DT02_04` | `"active", "lapsed"` | `"retirement", "emigration"` | `"confirmed"` | `"retired-or-exited"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([4.3](#sec:4-3), [7.3](#sec:7-3)) |
+| `Rule_DT02_05` | `"active", "lapsed"` | `"licence-renewal"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`scen:renew-licence`](#scen:renew-licence) ([5.2](#sec:5-2), [7.3](#sec:7-3)) |
+| `Rule_DT02_06` | `"active"` | `"licence-expiry", "licence-renewal"` | `"deficient", "expired"` | `"lapsed"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([7.3](#sec:7-3)) |
+| `Rule_DT02_07` | `"suspended"` | `"reinstatement"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02) ([5.1](#sec:5-1), [7.3](#sec:7-3)) |
+| `Rule_DT02_08` | `"active"` | `"employment-update", "emergency-deployment"` | `"confirmed"` | `"active"` | `"append-state-preserve-history"` | [`freq:FR-LC-01`](#freq:FR-LC-01), [`freq:FR-LC-02`](#freq:FR-LC-02), [`scen:update-employment`](#scen:update-employment) ([5.2](#sec:5-2), [7.3](#sec:7-3)) |
+| `Rule_DT02_09` | `-` | `-` | `"pending", "unknown"` | `"hold-pending-verification"` | `"log-pending-review-no-overwrite"` | Third state: unconfirmed evidence ([`freq:FR-LC-02`](#freq:FR-LC-02)) |
+| `Rule_DT02_10` | `-` | `-` | `-` | `"hold-pending-verification"` | `"log-pending-review-no-overwrite"` | Catch-all fallback ([`freq:FR-LC-02`](#freq:FR-LC-02)) |
 
 *Companion DMN 1.3 file:* `dt-hrh-dt-02-lifecycle-status-transition.dmn`.
 

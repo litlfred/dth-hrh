@@ -2075,7 +2075,7 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "82adccf0d9f2",
+   "hash": "c57ae82398bc",
    "excerpt": "Purpose. This table decides what happens to a registration application: register and license, hold it for duplicate review or pending verification, or reject it",
    "method": "folio-snapshot"
   },
@@ -2183,7 +2183,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "b21ade6b1310",
+   "hash": "1bc360446484",
    "excerpt": "Purpose. This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement",
    "method": "folio-snapshot"
   },
@@ -2243,7 +2243,7 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "c3dfb0694c71",
+   "hash": "3b5690bf2828",
    "excerpt": "Purpose. This table decides how much of a health worker's record to disclose when someone asks for it: public status only, an operational view for authorized em",
    "method": "folio-snapshot"
   },

@@ -5,7 +5,7 @@ Decision table **HRH-DT-01** (`Decision_HRH_DT_01`, hit policy `FIRST`) formaliz
 *Source passages cited:* `prose:ch07-identity-management`, `freq:FR-ID-01`, `freq:FR-ID-02`, `freq:FR-REC-01`, `freq:FR-REC-02`, and `scen:register-and-license-new-graduate`. Qualitative states come strictly from the source text; no numeric matching scores or day thresholds are invented.
 
 | Rule | `identityStatus` (`freq:FR-ID-01`) | `qualificationAttestation` (`freq:FR-REC-01`, `freq:FR-REC-02`) | `duplicateMatch` (`freq:FR-ID-02`) | `regulatoryStanding` (`freq:FR-REC-02`) | `registrationDecision` | `identifierAction` | Source basis |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | `Rule_DT01_01` | `-` | `-` | `-` | `"revoked", "disqualified"` | `"reject-disqualified"` | `"none"` | `freq:FR-REC-02` (7.2) |
 | `Rule_DT01_02` | `"rejected"` | `-` | `-` | `-` | `"reject-unverified-identity"` | `"none"` | `freq:FR-ID-01` (7.1) |
 | `Rule_DT01_03` | `-` | `"rejected"` | `-` | `-` | `"reject-unverified-qualification"` | `"none"` | `freq:FR-REC-01`, `freq:FR-REC-02` (7.2) |

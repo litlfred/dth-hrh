@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/main",
-    "commit": "746894dfebc8a59bf34bb287d7fa52b67d7c23ce"
+    "commit": "ea40122848fe69fd04a219c413a548ff6aee2266"
   },
   "head": {
     "ref": "worktree",
@@ -12,14 +12,111 @@
   "summary": {
     "added": 6,
     "removed": 0,
-    "changed": 1,
-    "unchanged": 321,
+    "changed": 15,
+    "unchanged": 307,
     "renamed": 0,
-    "prose": 0,
-    "manifest": 0,
+    "prose": 14,
+    "manifest": 2,
     "moved": 1
   },
   "changes": [
+    {
+      "change": "changed",
+      "label": "rem:discussion-minimum-data-set",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/about-this-draft/r-discussion-minimum-data-set.ts",
+        "kind": "remark",
+        "section": "dth-hrh/about-this-draft::sec:about-discussion",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/about-this-draft/r-discussion-minimum-data-set.ts",
+        "kind": "remark",
+        "section": "dth-hrh/about-this-draft::sec:about-discussion",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "tbl:handbook-at-a-glance",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
+        "kind": "table",
+        "section": "dth-hrh/about-this-draft::sec:about-glance",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
+        "kind": "table",
+        "section": "dth-hrh/about-this-draft::sec:about-glance",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:annex-1",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/annexes/p-annex-1.ts",
+        "kind": "prose",
+        "section": "dth-hrh/annexes::sec:annex-1",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/annexes/p-annex-1.ts",
+        "kind": "prose",
+        "section": "dth-hrh/annexes::sec:annex-1",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch02-included-topics",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch02-scope-and-boundaries/p-ch02-included-topics.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch02-scope-and-boundaries::sec:2-1",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch02-scope-and-boundaries/p-ch02-included-topics.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch02-scope-and-boundaries::sec:2-1",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "tbl:ch03-diig-mapping",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch03-digital-transformation-approach::sec:3-1",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch03-digital-transformation-approach::sec:3-1",
+        "index": 2
+      }
+    },
     {
       "change": "added",
       "label": "bp:hrh-bp-01-lifecycle-maintenance",
@@ -97,6 +194,177 @@
         "kind": "business-process",
         "section": "dth-hrh/ch06-governance-and-stewardship::sec:6-3",
         "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch07-records",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-records.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/p-ch07-records.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-REC-01",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-rec-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-rec-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-core-dataset",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-objectives",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-objectives.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-lead",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-objectives.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-lead",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-key-messages",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-key-messages.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-lead",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-key-messages.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-lead",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-figures",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-figures.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-figures.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-tools",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-tools.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-tools.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-outputs",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-outputs.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-outputs.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:ch11-planned",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:references",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/references/p-references.ts",
+        "kind": "prose",
+        "section": "dth-hrh/references::sec:references-lead",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/references/p-references.ts",
+        "kind": "prose",
+        "section": "dth-hrh/references::sec:references-lead",
+        "index": 0
       }
     }
   ]

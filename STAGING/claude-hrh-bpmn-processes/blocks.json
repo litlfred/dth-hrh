@@ -90,7 +90,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
   "bp:hrh-bp-04-update-employment-and-deployment": {
-    "hash": "88a3bd752eaa33a1263a414c44fdb95a0f7b11eea95eb1a337e98938018737f7",
+    "hash": "e569fdfa028975314242367d4b04fb8698fb0ef6d40f88724fabba01c311a182",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
@@ -105,7 +105,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:ch05-planned"
   },
   "bp:hrh-bp-03-renew-licence-and-verify-status": {
-    "hash": "9d7f9a0f8ded39bc2ee381ace8570edc57294bf8ba1f72165cabf8936fda7872",
+    "hash": "3770360803d4df9fb9a04a5d58ffae46d767952de9c0c68ede285482127f8fff",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
@@ -130,7 +130,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting": {
-    "hash": "f478179e1ab459956fe30ab6719075451189c28bd8ef7e853ef17a23c329b37b",
+    "hash": "c13fd6f432521fb213387ffb31c7723ca08f3d9e5ffeeef57917b2fd5238ccbb",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
@@ -180,7 +180,7 @@
     "section": "ch05-user-personas-and-use-cases::sec:5-1"
   },
   "bp:hrh-bp-02-register-and-license-graduate": {
-    "hash": "5126a0ea52802cfddaee88c97411b8b0d43f94d322dcf2ccc5fa7d772be95441",
+    "hash": "3b7ad17a473a0ab63846719e7f834a1b8e233b59cba0e4be95cf48fc2170aaf1",
     "renamedFrom": [],
     "section": "ch05-user-personas-and-use-cases::sec:5-2"
   },
@@ -280,7 +280,7 @@
     "section": "ch04-purpose-and-role-of-a-registry::sec:4-1"
   },
   "bp:hrh-bp-01-lifecycle-maintenance": {
-    "hash": "2eea567b1d4e5f2b5cedcf9e43d0c9b84cb2a7fb7959ee3aab225b7b5f412926",
+    "hash": "d589363b4ef86b7f5a29059e2ef2216f07d9cb7bafaa039528399170371639cf",
     "renamedFrom": [],
     "section": "ch04-purpose-and-role-of-a-registry::sec:4-3"
   },
@@ -935,7 +935,7 @@
     "section": "ch06-governance-and-stewardship::sec:ch06-lead"
   },
   "bp:hrh-bp-06-governance-and-stewardship-review": {
-    "hash": "26f25fcb100b9dc3a19f207b0689c907ce17936efdaafc36090f8004ce6cf781",
+    "hash": "af30f3a248e10112b531e1bef6f044f6b941c5771a04bc2f055caccc50a3463b",
     "renamedFrom": [],
     "section": "ch06-governance-and-stewardship::sec:6-3"
   },

@@ -25,7 +25,7 @@ export default chapter({
     section({
       title: "6.3 Data stewardship",
       label: "sec:6-3",
-      blocks: ["p-ch06-data-stewardship"],
+      blocks: ["p-ch06-data-stewardship", "bp-hrh-bp-06-governance-and-stewardship-review"],
     }),
     section({
       title: "6.4 Sustainability",

@@ -1516,6 +1516,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-01-lifecycle-maintenance",
+   "kind": "business-process",
+   "chapter": "ch04-purpose-and-role-of-a-registry",
+   "root": "bp-hrh-bp-01-lifecycle-maintenance",
+   "sections": [
+    "sec:4-3"
+   ],
+   "hash": "8039be3a6cb3",
+   "excerpt": "Maintains a single authoritative registry record for a health worker from pre-service education through registration, active employment, payroll reconciliation ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch04-strategic-uses",
    "kind": "prose",
    "chapter": "ch04-purpose-and-role-of-a-registry",
@@ -1780,6 +1792,18 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-02-register-and-license-graduate",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-02-register-and-license-graduate",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "92e9f5f689f7",
+   "excerpt": "Registers and licenses a newly graduated health worker by verifying pre-service qualification with the training institution, checking foundational identity and ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "scen:renew-licence",
    "kind": "user-scenario",
    "chapter": "ch05-user-personas-and-use-cases",
@@ -1789,18 +1813,6 @@
    ],
    "hash": "b1bce667c993",
    "excerpt": "A health worker renews a time-limited licence, with continuing professional development recorded; the registry updates licence status and validity. Personas: He",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "scen:update-employment",
-   "kind": "user-scenario",
-   "chapter": "ch05-user-personas-and-use-cases",
-   "root": "scen-update-employment",
-   "sections": [
-    "sec:5-2"
-   ],
-   "hash": "aaaf1a301d4f",
-   "excerpt": "An employer or the health worker records a change of employment or place of practice, linked to the facility registry. Personas: Health worker, Employer or faci",
    "method": "folio-snapshot"
   },
   {
@@ -1816,6 +1828,42 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "bp:hrh-bp-03-renew-licence-and-verify-status",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-03-renew-licence-and-verify-status",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "02950f4d3da2",
+   "excerpt": "Renews a health worker's licence to practise based on continuing professional development and good-standing rules, and serves tiered status verification respons",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:update-employment",
+   "kind": "user-scenario",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "scen-update-employment",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "aaaf1a301d4f",
+   "excerpt": "An employer or the health worker records a change of employment or place of practice, linked to the facility registry. Personas: Health worker, Employer or faci",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-04-update-employment-and-deployment",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-04-update-employment-and-deployment",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "f228f842e38b",
+   "excerpt": "Updates a health worker's employer, position, facility affiliation and emergency surge deployment in the registry while validating facility identifiers against ",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "scen:workforce-counts-and-nhwa-reporting",
    "kind": "user-scenario",
    "chapter": "ch05-user-personas-and-use-cases",
@@ -1825,6 +1873,18 @@
    ],
    "hash": "f5f9d31b3611",
    "excerpt": "Workforce counts and distribution are produced from the registry for national planning and for reporting to the National Health Workforce Accounts. Personas: Wo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+   "kind": "business-process",
+   "chapter": "ch05-user-personas-and-use-cases",
+   "root": "bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+   "sections": [
+    "sec:5-2"
+   ],
+   "hash": "e9688643ec25",
+   "excerpt": "Produces de-identified workforce stock, distribution, skill-mix, attrition and migration indicators from the registry and submits validated aggregate extracts t",
    "method": "folio-snapshot"
   },
   {
@@ -1945,6 +2005,18 @@
    ],
    "hash": "7f54f091f11b",
    "excerpt": "- Named data owners, stewards and custodians for each group of data. - Policies for data access, use, retention, correction and release. - Health workers' right",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:hrh-bp-06-governance-and-stewardship-review",
+   "kind": "business-process",
+   "chapter": "ch06-governance-and-stewardship",
+   "root": "bp-hrh-bp-06-governance-and-stewardship-review",
+   "sections": [
+    "sec:6-3"
+   ],
+   "hash": "ea3cf5058626",
+   "excerpt": "Governs inter-institutional data-sharing agreements and access tiers through the multi-stakeholder steering committee, enforces routine data quality and dedupli",
    "method": "folio-snapshot"
   },
   {

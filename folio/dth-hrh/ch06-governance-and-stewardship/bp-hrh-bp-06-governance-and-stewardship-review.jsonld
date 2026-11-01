@@ -1,0 +1,106 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/bp-hrh-bp-06-governance-and-stewardship-review",
+  "@type": [
+    "smart-base:BusinessProcess",
+    "doco:Figure"
+  ],
+  "label": "bp:hrh-bp-06-governance-and-stewardship-review",
+  "kind": "business-process",
+  "title": "Registry governance, data-sharing approval and record correction (HRH-BP-06)",
+  "uses": [
+    "papers/dth-hrh/blocks/prose-ch06-institutions",
+    "papers/dth-hrh/blocks/prose-ch06-legal-foundations",
+    "papers/dth-hrh/blocks/prose-ch06-data-stewardship"
+  ],
+  "text": "bp-hrh-bp-06-governance-and-stewardship-review.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed",
+      "outlineBasis": "6.1, 6.2, 6.3, 7.2, 12.1, 12.3",
+      "issue": "litlfred/dth-hrh#47"
+    },
+    "code": "HRH-BP-06",
+    "bpmnFile": "bp-hrh-bp-06-governance-and-stewardship-review.bpmn",
+    "svgFile": "media/bp-hrh-bp-06-governance-and-stewardship-review.svg",
+    "lanes": [
+      {
+        "laneId": "Lane_BP06_GovernanceBody",
+        "persona": "pers:registry-governance-body",
+        "name": "Registry governance body (steering committee)"
+      },
+      {
+        "laneId": "Lane_BP06_HealthWorker",
+        "persona": "pers:health-worker",
+        "name": "Health worker"
+      },
+      {
+        "laneId": "Lane_BP06_Custodian",
+        "persona": "pers:registry-custodian",
+        "name": "Registry operator and data custodian"
+      },
+      {
+        "laneId": "Lane_BP06_RegistrationOfficer",
+        "persona": "pers:registration-officer",
+        "name": "Registration officer (regulatory body)"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-99b92fe529e94fcd8ceac04cb16aefd7.jsonld",
+          "name": "Owner",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-8b80d28cdd48418480cee878af495ac3.jsonld",
+          "name": "Logical Information Model Maintainer",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-1c5c0bc9234e4282b654dbc71b9da706.jsonld",
+          "name": "Ministry of Health",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-63c448813aea4067bb68281f7926fd2b.jsonld",
+          "name": "Licensing Bodies",
+          "type": "BusinessRole"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-f7a5524bbac84f1a9cf424754750819d.jsonld",
+          "name": "Metadata Registry Governance"
+        }
+      ]
+    },
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/stewardship",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository"
+    ],
+    "relatedBlocks": [
+      "pers:registry-governance-body",
+      "pers:registry-custodian",
+      "pers:health-worker",
+      "pers:registration-officer",
+      "freq:FR-ID-02",
+      "freq:FR-REC-03",
+      "nfreq:NFR-01",
+      "dt:hrh-dt-03-verification-and-access-response"
+    ]
+  },
+  "provenance": "authored"
+}

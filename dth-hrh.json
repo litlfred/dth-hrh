@@ -128,6 +128,26 @@
         "keyedBy": "tip"
       },
       "description": "The trashcan that is kept: deprecated and removed content, each node declaring itself `folio-fsh-guts/v1` with where it came from. Where a cutover deposits the directory it removes from main. Never rendered."
+    },
+    {
+      "id": "archimate",
+      "path": "archimate/",
+      "graphTypologies": [
+        "archimate"
+      ],
+      "served": true,
+      "description": "The dth-hrh ArchiMate overlay on the smart-ra (DPI-H RA) model, one folder per SemVer version, named by archimate/cat-archimate.config.json. A DTH builds an overlay and does not add to smart-ra (owner, 2026-11-01, Q-RA1 A). The NHWA work lives here, not in smart-ra (owner, 2026-11-01 20:32Z): elements tagged overlay:base copy a smart-ra element, elements tagged overlay:owner=dth-hrh are this DTH's own. scripts/archimate/extract_overlay.py built 0.1.0-draft.1 from smart-ra#188's staged model.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/dth-hrh/archimate/index.html",
+            "title": "ArchiMate overlay",
+            "writer": [
+              "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+            ]
+          }
+        ]
+      }
     }
   ],
   "description": "WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.",
@@ -135,5 +155,14 @@
     "smart-base",
     "dpi-h-ra"
   ],
-  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14)."
+  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14).",
+  "visualisers": [
+    {
+      "id": "archimate",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ]
+    }
+  ]
 }

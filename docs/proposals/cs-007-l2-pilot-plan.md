@@ -158,7 +158,7 @@ Verification methods: `test`, `inspection`, `review`, `analysis`.
 
 ## 5. Work plan (beans)
 
-Beans are in `beans/defs/` on this branch. Each `## Done when` is copied from
+The bean files are in `docs/proposals/cs-007-beans/` on this branch, because `beans/` is a state mount that git ignores here. They move into the bean store when the plan is signed off. Each `## Done when` is copied from
 the criteria above. Order: 1, then 2 to 4 in parallel; 5 to 7 any time; 8 and
 9 wait for smart-base.
 

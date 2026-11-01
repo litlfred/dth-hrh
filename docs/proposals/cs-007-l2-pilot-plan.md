@@ -22,6 +22,9 @@ dth-sc, dth-pc, dth-sfp) copy its wiring.
   personas, three DMN decision tables, W3C ORG organizations in the glossary,
   and the SMART Guidelines approach figure. All three change content, so each
   is a committee decision and stays unmerged until the committee decides.
+  By the owner's decision Q-CS7-1 A (2026-11-01 19:10Z) the content now has
+  its own change sets: **#76** (BPMN, personas, DMN; PR #64) and **#77**
+  (SMART approach figure; PR #70). CS-007 keeps the wiring and #69.
 - **Still to do:** bring the drafts up to date with `main`, add a dth-hrh
   ArchiMate overlay, propose the remaining glossary matches, update the
   template, and, once smart-base lands the L2 document kind, switch the folio
@@ -75,7 +78,7 @@ Points the committee should know when it reviews them:
   Workers" and "Health Worker". smart-ra also has a "Health Worker"
   DataObject with the same name; the rename is in draft smart-ra#203.
 - #64 puts three kinds of change (processes, roles, decision tables) in one
-  PR. Section 4 asks whether to split it into three change sets.
+  PR. Section 4 asks whether to split it, under #76, into three change sets.
 
 ## 3. Requirements
 
@@ -99,15 +102,15 @@ Verification methods: `test`, `inspection`, `review`, `analysis`.
 - [ ] **REQ-005** (SHALL) Each business process in the narrative has a BPMN diagram with one lane per role.
   - _Source:_ #47 Structured content; owner, 2026-10-31 01:36Z.
   - _Success criteria:_ `SC-1` (test) every `.bpmn` passes `dak-bpmn-has-process` and every lane names a persona; `SC-2` (review) the committee accepts the process list and each diagram's steps against its cited sections.
-  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64.
+  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64, change set #76.
 - [ ] **REQ-006** (SHALL) Every role in the narrative is a persona block linked to its BPMN lane, a smart-ra ArchiMate role, actor or component, and a glossary term.
   - _Source:_ #47 Structured content.
   - _Success criteria:_ `SC-1` (test) each persona's lane, ArchiMate and glossary links resolve; `SC-2` (review) the committee accepts each link and the two new ch06 personas.
-  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64.
+  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64, change set #76.
 - [ ] **REQ-007** (SHALL) Rules in the narrative are DMN decision tables that cite their source, with thresholds from the source only.
   - _Source:_ #47 Structured content; cat-harness `dmn-authoring`.
   - _Success criteria:_ `SC-1` (test) `dak-dmn-has-decision-table` passes and no FEEL expression is unreadable; `SC-2` (review) the committee checks each rule against its cited passage.
-  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64.
+  - _Sign-off owner:_ Authoring Committee. _Draft:_ #64, change set #76.
 - [ ] **REQ-009** (SHOULD) Organizations in the glossary use W3C ORG and share smart-ra's organizations scheme.
   - _Source:_ owner choice of option B for glossary organizations (SKOS + W3C ORG, smart-ra#198).
   - _Success criteria:_ `SC-1` (test) `check:dth-glossary` passes with core and smart-ra pinned at or past core#412 and smart-ra#198; `SC-2` (review) the committee accepts the members list.
@@ -115,7 +118,7 @@ Verification methods: `test`, `inspection`, `review`, `analysis`.
 - [ ] **REQ-010** (MAY) Chapter 3 shows the SMART Guidelines approach as a figure generated from shared who-iris data.
   - _Source:_ owner choice on 2026-10-31 to hold each shared chart once as data in who-iris (who-iris#149).
   - _Success criteria:_ `SC-1` (test) `site:document` builds and the SVG regenerates byte-identical from the data; `SC-2` (review) the committee agrees the figure belongs in 3.1.
-  - _Sign-off owner:_ Authoring Committee. _Draft:_ #70.
+  - _Sign-off owner:_ Authoring Committee. _Draft:_ #70, change set #77.
 
 ### Not started
 
@@ -150,9 +153,9 @@ Verification methods: `test`, `inspection`, `review`, `analysis`.
 
 ## 4. Open question for sign-off
 
-**Q-L2P-1: how should the committee review #64?**
+**Q-L2P-1: how should the committee review #64 (change set #76)?**
 
-- **A. Split #64 into three change sets** (BPMN processes, roles, DMN tables), each its own PR and review-log row. Smaller reviews, and one can merge without the others. Costs one rebase and two new rows. *Recommended.*
+- **A. Split #64 into three change sets under #76** (BPMN processes, roles, DMN tables), each its own PR and review-log row. Smaller reviews, and one can merge without the others. Costs one rebase and two new rows. *Recommended.*
 - **B. Keep #64 as one change set.** No extra work, but the committee must accept or reject all three kinds together.
 - **C. Hold #64 until typed fields land** (smart-base#246), then redo it on the typed kinds. Avoids reworking blocks twice, but the committee sees nothing for now.
 

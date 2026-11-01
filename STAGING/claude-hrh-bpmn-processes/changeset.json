@@ -1,0 +1,103 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "746894dfebc8a59bf34bb287d7fa52b67d7c23ce"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 6,
+    "removed": 0,
+    "changed": 1,
+    "unchanged": 321,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 1
+  },
+  "changes": [
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-01-lifecycle-maintenance",
+      "head": {
+        "file": "dth-hrh/ch04-purpose-and-role-of-a-registry/bp-hrh-bp-01-lifecycle-maintenance.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch04-purpose-and-role-of-a-registry::sec:4-3",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-02-register-and-license-graduate",
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-02-register-and-license-graduate.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-03-renew-licence-and-verify-status",
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-03-renew-licence-and-verify-status.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 5
+      }
+    },
+    {
+      "change": "changed",
+      "label": "scen:update-employment",
+      "aspects": [
+        "moved"
+      ],
+      "base": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/scen-update-employment.ts",
+        "kind": "user-scenario",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 3
+      },
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/scen-update-employment.ts",
+        "kind": "user-scenario",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 6
+      }
+    },
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-04-update-employment-and-deployment",
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-04-update-employment-and-deployment.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 7
+      }
+    },
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting",
+      "head": {
+        "file": "dth-hrh/ch05-user-personas-and-use-cases/bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch05-user-personas-and-use-cases::sec:5-2",
+        "index": 9
+      }
+    },
+    {
+      "change": "added",
+      "label": "bp:hrh-bp-06-governance-and-stewardship-review",
+      "head": {
+        "file": "dth-hrh/ch06-governance-and-stewardship/bp-hrh-bp-06-governance-and-stewardship-review.ts",
+        "kind": "business-process",
+        "section": "dth-hrh/ch06-governance-and-stewardship::sec:6-3",
+        "index": 1
+      }
+    }
+  ]
+}

@@ -150,5 +150,11 @@
       "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-0f846746da49424ca22381bd80bfc409.jsonld"
     }
   ],
+  "schema:subjectOf": [
+    {
+      "schema:name": "fig:nhwa-hwr",
+      "schema:url": "https://litlfred.github.io/dth-hrh/folio/dth-hrh/ch07-functional-requirements/f-nhwa-hwr.md"
+    }
+  ],
   "dcterms:isPartOf": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1.jsonld"
 }

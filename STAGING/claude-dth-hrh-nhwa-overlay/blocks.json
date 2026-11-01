@@ -249,6 +249,11 @@
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
+  "fig:nhwa-hwr": {
+    "hash": "9818ad2c320cd2af3115d3df4c702713d1e0a22c07aedf8448aeda33070fa89f",
+    "renamedFrom": [],
+    "section": "ch07-functional-requirements::sec:7-5"
+  },
   "prose:references": {
     "hash": "fc14e8432f9d95935cb236d4a547a3bcd7eeed37533eab5e76e6887546b4abd0",
     "renamedFrom": [],

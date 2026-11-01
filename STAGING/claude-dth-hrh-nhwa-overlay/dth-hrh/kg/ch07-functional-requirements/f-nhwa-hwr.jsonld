@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/fig-nhwa-hwr",
+  "@type": [
+    "folio-assistant-core:Figure",
+    "doco:Figure"
+  ],
+  "label": "fig:nhwa-hwr",
+  "kind": "figure",
+  "text": "f-nhwa-hwr.md",
+  "meta": {
+    "source": {
+      "method": "generated",
+      "issue": "litlfred/dth-hrh#47",
+      "generated": {
+        "tool": "archimate-blocks",
+        "model": "archimate/0.1.0-draft.1/dth-hrh-overlay.archimate",
+        "view": "id-dthhrh-view-hwr-nhwa",
+        "output": "nhwa-hwr.svg"
+      }
+    },
+    "archimate": {
+      "model": "dth-hrh 0.1.0-draft.1",
+      "basis": "the figure is the overlay view itself",
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-hwr-nhwa.jsonld",
+          "name": "Health workforce registry and NHWA (dth-hrh)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

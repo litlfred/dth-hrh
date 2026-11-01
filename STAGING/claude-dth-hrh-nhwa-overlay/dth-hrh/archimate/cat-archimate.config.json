@@ -17,6 +17,14 @@
       "view": "id-dthhrh-view-nhwa-poster",
       "basis": "same-elements",
       "svg": "folio/dth-hrh/media/nhwa-poster.svg"
+    },
+    {
+      "block": "folio/dth-hrh/ch07-functional-requirements/f-nhwa-hwr.md",
+      "label": "fig:nhwa-hwr",
+      "model": "0.1.0-draft.1",
+      "view": "id-dthhrh-view-hwr-nhwa",
+      "basis": "same-elements",
+      "svg": "folio/dth-hrh/media/nhwa-hwr.svg"
     }
   ]
 }

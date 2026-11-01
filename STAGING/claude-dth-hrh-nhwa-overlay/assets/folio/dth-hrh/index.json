@@ -1479,8 +1479,23 @@
         },
         {
           "path": "dth-hrh/ch07-functional-requirements/ch07-functional-requirements.ts",
-          "bytes": 1647,
+          "bytes": 1661,
           "size": "1.6 KB"
+        },
+        {
+          "path": "dth-hrh/ch07-functional-requirements/f-nhwa-hwr.jsonld",
+          "bytes": 1123,
+          "size": "1.1 KB"
+        },
+        {
+          "path": "dth-hrh/ch07-functional-requirements/f-nhwa-hwr.md",
+          "bytes": 609,
+          "size": "609 B"
+        },
+        {
+          "path": "dth-hrh/ch07-functional-requirements/f-nhwa-hwr.ts",
+          "bytes": 830,
+          "size": "830 B"
         },
         {
           "path": "dth-hrh/ch07-functional-requirements/f-nhwa-poster.jsonld",
@@ -4978,6 +4993,11 @@
           "size": "34.6 KB"
         },
         {
+          "path": "dth-hrh/media/nhwa-hwr.svg",
+          "bytes": 41425,
+          "size": "40.5 KB"
+        },
+        {
           "path": "dth-hrh/media/nhwa-poster.svg",
           "bytes": 5453,
           "size": "5.3 KB"
@@ -5004,8 +5024,8 @@
         },
         {
           "path": "dth-hrh/review-anchors.json",
-          "bytes": 159474,
-          "size": "155.7 KB"
+          "bytes": 160061,
+          "size": "156.3 KB"
         },
         {
           "path": "schema/builders.ts",

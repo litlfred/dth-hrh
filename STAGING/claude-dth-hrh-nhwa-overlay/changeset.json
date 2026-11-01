@@ -10,7 +10,7 @@
     "commit": null
   },
   "summary": {
-    "added": 1,
+    "added": 2,
     "removed": 0,
     "changed": 7,
     "unchanged": 315,
@@ -145,6 +145,16 @@
       }
     },
     {
+      "change": "added",
+      "label": "fig:nhwa-hwr",
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/f-nhwa-hwr.ts",
+        "kind": "figure",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 2
+      }
+    },
+    {
       "change": "changed",
       "label": "freq:FR-AN-02",
       "aspects": [
@@ -160,7 +170,7 @@
         "file": "dth-hrh/ch07-functional-requirements/fr-an-02.ts",
         "kind": "functional-requirement",
         "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
-        "index": 3
+        "index": 4
       }
     }
   ]

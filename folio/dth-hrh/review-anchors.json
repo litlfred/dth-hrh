@@ -2257,7 +2257,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "b44e6ba2d65b",
+   "hash": "bcea931ab830",
    "excerpt": "FR-AN-01. Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Priority: to be set (must / should / could). Linked use cases",
    "method": "folio-snapshot"
   },
@@ -2269,8 +2269,8 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "a5ea763422d3",
-   "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "721bee3f2d42",
+   "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced. NHWA indicators: 1-01, 1-02",
    "method": "folio-snapshot"
   },
   {

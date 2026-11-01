@@ -11,7 +11,9 @@ Each element carries one of two tags:
 - `overlay:base`: a reference copy of a smart-ra element, under the same id and with smart-ra's name, with its smart-ra IRI as the value. It is there only so the overlay's view can draw it.
 - `overlay:owner` = `dth-hrh`: an element this DTH adds: CDE-HWR (the registry's core data elements), the NHWA Dataset, the four NHWA modules, the subnational density indicators, and their relationships. The folio links them with `https://litlfred.github.io/dth-hrh/archimate/<version>/elements/<id>.jsonld` IRIs.
 
-The one view, "Health workforce registry and NHWA (dth-hrh)", is smart-ra 0.2.0's view "1. Central Health Workforce Registry" as smart-ra#188 drew it, with the NHWA work. It has its own id, and `overlay:derived-from` names the smart-ra view.
+The view "Health workforce registry and NHWA (dth-hrh)" is smart-ra 0.2.0's view "1. Central Health Workforce Registry" as smart-ra#188 drew it, with the NHWA work. It has its own id, and `overlay:derived-from` names the smart-ra view.
+
+A second view, "NHWA on the health workforce registry (poster, dth-hrh)", shows the same NHWA items as bands of cards with no lines: NHWA modules and indicators, data, and applications. `archimate-blocks` draws it as a poster into `folio/dth-hrh/media/nhwa-poster.svg`, which is figure `fig:nhwa-poster` in 7.5 Analytics (`figures` in `cat-archimate.config.json`). Rebuild with `bun run cat archimate:blocks --instance .`.
 
 `scripts/archimate/extract_overlay.py` builds 0.1.0-draft.1 from the model on smart-ra branch `claude/nhwa-committee-review` (#188) and smart-ra's 0.2.0 model:
 

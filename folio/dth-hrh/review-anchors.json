@@ -2224,6 +2224,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "fig:nhwa-poster",
+   "kind": "figure",
+   "chapter": "ch07-functional-requirements",
+   "root": "f-nhwa-poster",
+   "sections": [
+    "sec:7-5"
+   ],
+   "caption": "National Health Workforce Accounts (NHWA) on the health workforce registry: the four NHWA modules and the subnational indicators, the data they draw on, and the applications that hold and move it",
+   "hash": "efda0c8ae342",
+   "excerpt": "Source: the dth-hrh ArchiMate overlay 0.1.0-draft.1 on the smart-ra (DPI-H RA) model 0.2.0, view \"NHWA on the health workforce registry (poster, dth-hrh)\", draw",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "freq:FR-AN-01",
    "kind": "functional-requirement",
    "chapter": "ch07-functional-requirements",

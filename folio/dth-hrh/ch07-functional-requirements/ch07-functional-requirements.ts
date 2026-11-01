@@ -35,7 +35,7 @@ export default chapter({
     section({
       title: "7.5 Analytics",
       label: "sec:7-5",
-      blocks: ["p-ch07-analytics", "fr-an-01", "fr-an-02", "fr-an-03"],
+      blocks: ["p-ch07-analytics", "f-nhwa-poster", "fr-an-01", "fr-an-02", "fr-an-03"],
     }),
     section({
       title: "Non-functional requirements",

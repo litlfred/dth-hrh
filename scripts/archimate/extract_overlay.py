@@ -104,6 +104,46 @@ tag(v, [ET.Element("property", {"key": "overlay:owner", "value": "dth-hrh"}),
         ET.Element("property", {"key": "overlay:derived-from", "value":
                    f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/views/{view.get('id')}.jsonld"})])
 folders["diagrams"][0].append(v)
+# A second, banded view of the same items, drawn as a poster for the handbook's
+# figure (owner, 2026-11-01 20:32Z: "make view poster from model of the nhwa and
+# put into paper"). Bands top to bottom, every card inside a band, no lines:
+# render-poster.ts draws such a view as bands of cards.
+POSTER_ID = "id-dthhrh-view-nhwa-poster"
+POSTER_NAME = "NHWA on the health workforce registry (poster, dth-hrh)"
+BANDS = [
+    ("National Health Workforce Accounts (NHWA)", ["NHWA Module 1: Stock and flow", "NHWA Module 2: Education",
+        "NHWA Module 3: Finance and expenditures", "NHWA Module 4: Working conditions, governance and leadership",
+        "Health worker density at subnational level; distribution by facility ownership and by facility type (1-02, 1-05, 1-06)"]),
+    ("Data", ["CDE-HWR: Core Data Elements for the Health Workforce Registry",
+        "NHWA Dataset (linking and indexing, built on CDE-HWR)", "Health Worker", "Facility"]),
+    ("Applications", ["DPI-H National Health Workforce Directory/Registry", "DPI-H: Facility Registry",
+        "DPI-F Information Mediator", "Reporting Module"]),
+]
+in_model = {}
+for f in model.iter("element"):
+    if f.get("name"):
+        in_model.setdefault(f.get("name"), f.get("id"))
+pv = ET.Element("element", {T: "archimate:ArchimateDiagramModel", "name": POSTER_NAME, "id": POSTER_ID})
+pd = ET.SubElement(pv, "documentation")
+pd.text = ("The NHWA work dth-hrh owns, as bands of cards: the four NHWA modules and the subnational indicators, "
+           "the data they draw on (CDE-HWR and the NHWA Dataset, beside smart-ra's Health Worker and Facility), "
+           "and the smart-ra applications that hold and move that data. Drawn from the same items as view "
+           f"\"{VIEW_NAME}\"; its relationships are in that view.")
+for p_ in (("overlay:owner", "dth-hrh"),):
+    ET.SubElement(pv, "property", {"key": p_[0], "value": p_[1]})
+CW, CH, GAP, PAD, TOP = 230, 90, 20, 20, 30
+y = 20
+for b, (band, names) in enumerate(BANDS):
+    w = PAD * 2 + len(names) * CW + (len(names) - 1) * GAP
+    g = ET.SubElement(pv, "child", {T: "archimate:Group", "id": f"{POSTER_ID}-band-{b + 1}", "name": band})
+    ET.SubElement(g, "bounds", {"x": "20", "y": str(y), "width": str(w), "height": str(TOP + CH + PAD)})
+    for k, n in enumerate(names):
+        assert n in in_model, n
+        c = ET.SubElement(g, "child", {T: "archimate:DiagramObject", "id": f"{POSTER_ID}-b{b + 1}-c{k + 1}",
+                                       "archimateElement": in_model[n]})
+        ET.SubElement(c, "bounds", {"x": str(PAD + k * (CW + GAP)), "y": str(TOP), "width": str(CW), "height": str(CH)})
+    y += TOP + CH + PAD + 20
+folders["diagrams"][0].append(pv)
 for f, b in folders.values():
     if len(b) == 0:
         f.remove(b)
@@ -113,4 +153,4 @@ with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as z:
     zi = zipfile.ZipInfo("model.xml", date_time=(1980, 1, 1, 0, 0, 0))
     zi.compress_type = zipfile.ZIP_DEFLATED
     z.writestr(zi, xml)
-print(f"{out_path}: {counts['owned']} owned, {counts['base']} smart-ra reference copies, view '{VIEW_NAME}'")
+print(f"{out_path}: {counts['owned']} owned, {counts['base']} smart-ra reference copies, views '{VIEW_NAME}', '{POSTER_NAME}'")

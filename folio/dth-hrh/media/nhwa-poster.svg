@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="410" viewBox="0 0 1800 410" font-family='Inter, "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif' role="img" aria-label="NHWA on the health workforce registry (poster, dth-hrh)">
+<rect width="1800" height="410" fill="#f8f9fb"/>
+<rect width="1800" height="72" fill="#14213d"/>
+<text x="36" y="42" font-size="26" font-weight="800" fill="#ffffff">NHWA on the health workforce registry (poster, dth-hrh)</text>
+<text x="36" y="61" font-size="11" fill="#c9d6e6" font-style="italic">Drawn from the ArchiMate model “DTH-HRH overlay on the DPI-H reference architecture”, view “NHWA on the health workforce registry (poster, dth-hrh)”</text>
+<rect x="36.0" y="82.0" width="1728.0" height="107.0" rx="8" fill="#e0e0ff" stroke="#7e7e9e" stroke-width="1.4"/>
+<path d="M36 90 a8 8 0 0 1 8 -8 h1712 a8 8 0 0 1 8 8 v16 h-1728 z" fill="#56566b"/>
+<text x="50.0" y="100.0" font-size="11" font-weight="700" fill="#ffffff" text-anchor="start">NATIONAL HEALTH WORKFORCE ACCOUNTS (NHWA)</text>
+<rect x="48.0" y="110.0" width="332.8" height="67.0" rx="6" fill="#ccccff" stroke="#70708c" stroke-width="1.3"/>
+<text x="57.0" y="127.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">NHWA Module 1: Stock and flow</text>
+<rect x="390.8" y="110.0" width="332.8" height="67.0" rx="6" fill="#ccccff" stroke="#70708c" stroke-width="1.3"/>
+<text x="399.8" y="127.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">NHWA Module 2: Education</text>
+<rect x="733.6" y="110.0" width="332.8" height="67.0" rx="6" fill="#ccccff" stroke="#70708c" stroke-width="1.3"/>
+<text x="742.6" y="127.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">NHWA Module 3: Finance and expenditures</text>
+<rect x="1076.4" y="110.0" width="332.8" height="67.0" rx="6" fill="#ccccff" stroke="#70708c" stroke-width="1.3"/>
+<text x="1085.4" y="127.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">NHWA Module 4: Working conditions,</text>
+<text x="1085.4" y="142.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">governance and leadership</text>
+<rect x="1419.2" y="110.0" width="332.8" height="67.0" rx="6" fill="#ccccff" stroke="#70708c" stroke-width="1.3"/>
+<text x="1428.2" y="127.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">Health worker density at subnational level;</text>
+<text x="1428.2" y="142.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">distribution by facility ownership and by</text>
+<text x="1428.2" y="157.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">facility type (1-02, 1-05, 1-06)</text>
+<rect x="36.0" y="201.0" width="1728.0" height="92.0" rx="8" fill="#d3ffff" stroke="#709e9e" stroke-width="1.4"/>
+<path d="M36 209 a8 8 0 0 1 8 -8 h1712 a8 8 0 0 1 8 8 v16 h-1728 z" fill="#4c6b6b"/>
+<text x="50.0" y="219.0" font-size="11" font-weight="700" fill="#ffffff" text-anchor="start">DATA</text>
+<rect x="48.0" y="229.0" width="418.5" height="52.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="57.0" y="246.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">CDE-HWR: Core Data Elements for the Health Workforce</text>
+<text x="57.0" y="261.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">Registry</text>
+<rect x="476.5" y="229.0" width="418.5" height="52.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="485.5" y="246.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">NHWA Dataset (linking and indexing, built on CDE-HWR)</text>
+<rect x="905.0" y="229.0" width="418.5" height="52.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="914.0" y="246.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">Health Worker</text>
+<rect x="1333.5" y="229.0" width="418.5" height="52.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="1342.5" y="246.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">Facility</text>
+<rect x="36.0" y="305.0" width="1728.0" height="77.0" rx="8" fill="#d3ffff" stroke="#709e9e" stroke-width="1.4"/>
+<path d="M36 313 a8 8 0 0 1 8 -8 h1712 a8 8 0 0 1 8 8 v16 h-1728 z" fill="#4c6b6b"/>
+<text x="50.0" y="323.0" font-size="11" font-weight="700" fill="#ffffff" text-anchor="start">APPLICATIONS</text>
+<rect x="48.0" y="333.0" width="418.5" height="37.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="57.0" y="350.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">DPI-H National Health Workforce Directory/Registry</text>
+<rect x="476.5" y="333.0" width="418.5" height="37.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="485.5" y="350.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">DPI-H: Facility Registry</text>
+<rect x="905.0" y="333.0" width="418.5" height="37.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="914.0" y="350.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">DPI-F Information Mediator</text>
+<rect x="1333.5" y="333.0" width="418.5" height="37.0" rx="6" fill="#b5ffff" stroke="#648c8c" stroke-width="1.3"/>
+<text x="1342.5" y="350.0" font-size="11.5" font-weight="700" fill="#14213d" text-anchor="start">Reporting Module</text>
+</svg>

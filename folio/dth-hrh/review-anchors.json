@@ -2075,8 +2075,8 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "3dfab5a39136",
-   "excerpt": "Decision table HRH-DT-01 ( Decision HRH DT 01 , hit policy FIRST ) formalizes the rules in Section 7.1 (Identity management) and Section 7.2 (Records) governing",
+   "hash": "82adccf0d9f2",
+   "excerpt": "Purpose. This table decides what happens to a registration application: register and license, hold it for duplicate review or pending verification, or reject it",
    "method": "folio-snapshot"
   },
   {
@@ -2183,8 +2183,8 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "54c7ef7ccbee",
-   "excerpt": "Decision table HRH-DT-02 ( Decision HRH DT 02 , hit policy FIRST ) formalizes the rules in Section 7.3 (Lifecycle management) and Section 4.3 (Health worker lif",
+   "hash": "b21ade6b1310",
+   "excerpt": "Purpose. This table decides a practitioner's new registration and licence status after a lifecycle event (renewal, expiry, suspension, revocation, reinstatement",
    "method": "folio-snapshot"
   },
   {
@@ -2243,8 +2243,8 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "fae6eba78c7f",
-   "excerpt": "Decision table HRH-DT-03 ( Decision HRH DT 03 , hit policy FIRST ) formalizes the rules in Section 7.4 (Verification services) , Section 7.5 (Analytics) , Secti",
+   "hash": "c3dfb0694c71",
+   "excerpt": "Purpose. This table decides how much of a health worker's record to disclose when someone asks for it: public status only, an operational view for authorized em",
    "method": "folio-snapshot"
   },
   {

@@ -1,3 +1,3 @@
-- The WHO 2015 minimum data set as a source of inspiration: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.
-- Further elements to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.
+- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.
+- Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.
 - For each element: definition, format, whether mandatory, source and sensitivity.

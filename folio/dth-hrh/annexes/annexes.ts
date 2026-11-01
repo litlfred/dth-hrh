@@ -12,7 +12,7 @@ export default chapter({
       blocks: ["p-annexes"],
     }),
     section({
-      title: "Annex 1. Core Data Elements (CDE-HRH)",
+      title: "Annex 1. Minimum Data Set",
       label: "sec:annex-1",
       blocks: ["p-annex-1"],
     }),

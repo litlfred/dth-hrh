@@ -10,7 +10,7 @@
 |  | 8. Digital Architecture Principles | Architecture patterns; Federation; Scalability; Technology neutrality  |
 | Part 2. Technical Design | 9. Registry within Ecosystem | System landscape; Data flows; Architecture examples |
 |  | 10. Interoperability | Standards; APIs; Data exchange patterns; Governance |
-|  | 11. Data Standards and Core Data Elements | Core dataset; Classifications; Metadata; NHWA mapping |
+|  | 11. Data Standards and Minimum Dataset | Core dataset; Classifications; Metadata; NHWA mapping |
 |  | 12. Privacy, Security and Trust | Privacy by design; Cybersecurity; Access control; Audit trails |
 |  | 13. Data Quality Management  | Quality dimensions; Validation; Monitoring  |
 | Part 3.  Country Implementation | 14. Preparing for Transformation | Leadership; Teams; Readiness; Stakeholder engagement |
@@ -22,4 +22,4 @@
 | Part 4. Examples and Resources | 20. Illustrative Use Cases | Licensing; Verification; Emergency response; Mobility |
 |  | 21. Country Case Studies | Centralized; Federated; Fragile settings; Lessons learned |
 |  | 22. Tools and Templates | Checklists; Roadmaps; Assessment tools  |
-| Annexes | Core Data Elements (CDE-HRH); Data Dictionary; Governance Template; User Personas;  Functional Requirements Catalogue; Interoperability Models; Readiness Assessment; Maturity Model; Glossary; NHWA Mapping |  |
+| Annexes | Minimum Data Set; Data Dictionary; Governance Template; User Personas;  Functional Requirements Catalogue; Interoperability Models; Readiness Assessment; Maturity Model; Glossary; NHWA Mapping |  |

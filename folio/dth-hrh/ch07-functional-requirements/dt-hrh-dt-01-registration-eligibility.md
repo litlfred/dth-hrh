@@ -4,18 +4,7 @@ Decision table **HRH-DT-01** (the first matching rule applies) formalizes the ru
 
 *Source passages cited:* [Identity management](#prose:ch07-identity-management), [Assign a unique, persistent health worker identifier](#freq:FR-ID-01), [Search, match and merge duplicate records across source systems](#freq:FR-ID-02), [Create, view, update and archive the health worker record…](#freq:FR-REC-01), [Hold supporting evidence, such as certificates](#freq:FR-REC-02), and [Register and license a new graduate](#scen:register-and-license-new-graduate). Qualitative states come strictly from the source text; no numeric matching scores or day thresholds are invented.
 
-| Rule | `identityStatus` ([FR-ID-01](#freq:FR-ID-01)) | `qualificationAttestation` ([FR-REC-01](#freq:FR-REC-01), [FR-REC-02](#freq:FR-REC-02)) | `duplicateMatch` ([FR-ID-02](#freq:FR-ID-02)) | `regulatoryStanding` ([FR-REC-02](#freq:FR-REC-02)) | `registrationDecision` | `identifierAction` | Source basis |
-|---|---|---|---|---|---|---|---|
-| `Rule_DT01_01` | `-` | `-` | `-` | `"revoked", "disqualified"` | `"reject-disqualified"` | `"none"` | [FR-REC-02](#freq:FR-REC-02) ([7.2](#sec:7-2)) |
-| `Rule_DT01_02` | `"rejected"` | `-` | `-` | `-` | `"reject-unverified-identity"` | `"none"` | [FR-ID-01](#freq:FR-ID-01) ([7.1](#sec:7-1)) |
-| `Rule_DT01_03` | `-` | `"rejected"` | `-` | `-` | `"reject-unverified-qualification"` | `"none"` | [FR-REC-01](#freq:FR-REC-01), [FR-REC-02](#freq:FR-REC-02) ([7.2](#sec:7-2)) |
-| `Rule_DT01_04` | `"verified", "verified-without-national-id"` | `"attested"` | `"candidate-duplicate"` | `"good-standing", "new-graduate"` | `"hold-duplicate-review"` | `"review-candidate-match"` | [FR-ID-02](#freq:FR-ID-02) ([7.1](#sec:7-1), [13.3](#sec:13-3)) |
-| `Rule_DT01_05` | `"verified", "verified-without-national-id"` | `"attested"` | `"existing-confirmed"` | `"good-standing", "new-graduate"` | `"register-and-license"` | `"reuse-existing-hwr-id"` | [FR-ID-01](#freq:FR-ID-01), [FR-ID-02](#freq:FR-ID-02) ([7.1](#sec:7-1)) |
-| `Rule_DT01_06` | `"verified", "verified-without-national-id"` | `"attested"` | `"none"` | `"good-standing", "new-graduate"` | `"register-and-license"` | `"assign-new-hwr-id"` | [FR-ID-01](#freq:FR-ID-01), [FR-REC-01](#freq:FR-REC-01), [FR-REC-02](#freq:FR-REC-02) ([5.2](#sec:5-2), [7.1](#sec:7-1), [7.2](#sec:7-2)) |
-| `Rule_DT01_07` | `"pending", "unknown"` | `-` | `-` | `-` | `"hold-pending-verification"` | `"none"` | Third state: pending/unknown source check ([FR-ID-01](#freq:FR-ID-01)) |
-| `Rule_DT01_08` | `-` | `-` | `-` | `-` | `"hold-pending-verification"` | `"none"` | Catch-all fallback ([FR-ID-02](#freq:FR-ID-02)) |
-
-*Companion DMN 1.3 file:* `dt-hrh-dt-01-registration-eligibility.dmn`.
+<!-- dmn:table -->
 
 *ArchiMate (dpi-h-ra 0.2.0):* [Credential & License](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-3bc59974bc1e4e5d8e795cdc1606587e.jsonld) (application function); [Identity Management Service](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-646c18afcfc54f4fb33ae93110e02c2c.jsonld) (application service); [DPI-H Health Workforce Registry (HWR)](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld) (application component); [ALL High Level - Health Workforce](https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld) (view).
 

@@ -4,17 +4,7 @@ Decision table **HRH-DT-03** (the first matching rule applies) formalizes the ru
 
 *Source passages cited:* [Verification services](#prose:ch07-verification-services), [Confirm registration and licence status in real time for…](#freq:FR-VER-01), [Issue digital, verifiable credentials or certificates (for example a…](#freq:FR-VER-02), [Respond to verification requests from other countries](#freq:FR-VER-03), [Data quality reports for registry managers](#freq:FR-AN-03), [Record the source and date of each data item](#freq:FR-REC-03), [Security](#nfreq:NFR-01), and [Legal foundations](#prose:ch06-legal-foundations). All disclosure tiers come directly from the source narrative.
 
-| Rule | `requesterRole` | `channel` | `authorizationState` | `disclosureTier` | `responsePayload` | Source basis |
-|---|---|---|---|---|---|---|
-| `Rule_DT03_01` | `"public"` | `"public-web-lookup"` | `"anonymous", "authenticated-authorized"` | `"tier-1-public"` | `"public-status-and-cadre-only"` | [FR-VER-01](#freq:FR-VER-01) ([6.2](#sec:6-2), [7.4](#sec:7-4), [12.1](#sec:12-1)) |
-| `Rule_DT03_02` | `"public", "employer-or-facility", "point-of-care-system", "emergency-coordinator"` | `"verifiable-credential"` | `"valid-credential-signature"` | `"tier-1-verifiable-credential"` | `"signed-credential-status-and-scope"` | [FR-VER-03](#freq:FR-VER-03), [NFR-03](#nfreq:NFR-03) ([7.4](#sec:7-4), [20.2](#sec:20-2)) |
-| `Rule_DT03_03` | `"employer-or-facility", "point-of-care-system", "emergency-coordinator"` | `"system-api", "portal"` | `"authenticated-authorized"` | `"tier-2-authorized-operational"` | `"identifier-status-scope-and-affiliation"` | [FR-VER-02](#freq:FR-VER-02), [NFR-01](#nfreq:NFR-01) ([7.4](#sec:7-4), [20.2](#sec:20-2), [20.3](#sec:20-3)) |
-| `Rule_DT03_04` | `"workforce-planner", "nhwa-platform"` | `"analytics-export", "system-api"` | `"authenticated-authorized"` | `"tier-2-deidentified-analytics"` | `"deidentified-aggregate-indicators-only"` | [FR-AN-01](#freq:FR-AN-01), [FR-AN-02](#freq:FR-AN-02), [FR-AN-03](#freq:FR-AN-03) ([7.5](#sec:7-5), [12.1](#sec:12-1)) |
-| `Rule_DT03_05` | `"self-health-worker", "regulator-or-custodian"` | `"portal", "system-api"` | `"authenticated-authorized"` | `"tier-3-full-record"` | `"full-record-with-provenance"` | [Data stewardship](#prose:ch06-data-stewardship), [FR-REC-03](#freq:FR-REC-03), [NFR-01](#nfreq:NFR-01) ([6.3](#sec:6-3), [7.2](#sec:7-2), [12.3](#sec:12-3)) |
-| `Rule_DT03_06` | `-` | `-` | `"unknown", "pending"` | `"deny-unverified"` | `"none-audit-logged"` | Third state: unverified authorization ([NFR-01](#nfreq:NFR-01)) |
-| `Rule_DT03_07` | `-` | `-` | `-` | `"deny-unauthorized"` | `"none-audit-logged"` | Catch-all fallback ([NFR-01](#nfreq:NFR-01)) |
-
-*Companion DMN 1.3 file:* `dt-hrh-dt-03-verification-and-access-response.dmn`.
+<!-- dmn:table -->
 
 *ArchiMate (dpi-h-ra 0.2.0):* [DPI-H Health Workforce Registry (HWR)](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld) (application component); [Vendor EHR Product](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-3bd1011d76c843fa860255f00a6aa68f.jsonld) (application component); [Workforce Data Analytics](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-8852987c90c84071ae92ad3621548adf.jsonld) (application function); [ALL High Level - Health Workforce](https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-19be800d18a34a618d6e1955cf58e956.jsonld) (view); [Metadata Registry Governance](https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-f7a5524bbac84f1a9cf424754750819d.jsonld) (view).
 

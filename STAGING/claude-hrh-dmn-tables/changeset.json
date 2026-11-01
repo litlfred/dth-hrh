@@ -1,0 +1,54 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "746894dfebc8a59bf34bb287d7fa52b67d7c23ce"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 3,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 322,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 0
+  },
+  "changes": [
+    {
+      "change": "added",
+      "label": "dt:hrh-dt-01-registration-eligibility",
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/dt-hrh-dt-01-registration-eligibility.ts",
+        "kind": "decision-table",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-1",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "dt:hrh-dt-02-lifecycle-status-transition",
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/dt-hrh-dt-02-lifecycle-status-transition.ts",
+        "kind": "decision-table",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-3",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "dt:hrh-dt-03-verification-and-access-response",
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/dt-hrh-dt-03-verification-and-access-response.ts",
+        "kind": "decision-table",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-4",
+        "index": 4
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 | Change set | CS-007 in the DTH-HRH review log |
 | Issue | [dth-hrh#47](https://github.com/litlfred/dth-hrh/issues/47), "Pilot: make dth-hrh an L2 DTH that depends on smart-ra" |
 | Asked for | Committee feedback (CL), 2026-11-01: "Need plan of changes to make" |
-| Stage | `proposed`: waiting for sign-off on #47. Nothing below is implemented by this plan. |
+| Stage | `approved`: signed off by the owner (litlfred), 2026-11-01 19:58Z, as written (project decision Q-L2P-3, option A); recorded on #47. This PR stays draft and is not merged. |
 | Method | CRDM (a stakeholder-facing content question), through the `plan-request-gate` skill |
 | Written | 2026-11-01, from `main` at a27f97b |
 
@@ -185,3 +185,13 @@ they go to the committee as they are.
 Every bean that touches content stops at a draft PR plus a staging preview,
 and the committee's decision is recorded in the review log before any merge
 (REQ-014).
+
+## 6. Sign-off
+
+| When | Who | Outcome | Evidence |
+|---|---|---|---|
+| 2026-11-01 19:14Z | owner (litlfred) | Q-L2P-1 decided A (split #64 under #76) | project decision card; recorded on #76 |
+| 2026-11-01 19:58Z | owner (litlfred) | approve the plan as written; stage `proposed` to `approved` | project decision Q-L2P-3, option A ("A"); recorded on #47 |
+
+Content items (#69, #76, #77) still need the Authoring Committee's decision
+in the review log before any merge (REQ-014).

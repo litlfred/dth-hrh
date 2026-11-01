@@ -27,8 +27,8 @@
       "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-e36012bae13d43879d3ca92a4e403f8d.jsonld",
-          "name": "Workforce Analytics"
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-145e885489634e469e8a6734f56b7df5.jsonld",
+          "name": "NHWA Dataset (linking and indexing, built on CDE-HWR)"
         }
       ]
     }

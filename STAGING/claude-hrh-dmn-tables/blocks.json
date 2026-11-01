@@ -240,7 +240,7 @@
     "section": "ch02-scope-and-boundaries::sec:ch02-planned"
   },
   "prose:ch02-included-topics": {
-    "hash": "f023e043297879bf3b99798e12353e4d6502a691d559c415f0db591f8889c791",
+    "hash": "b4af4392117949c0ea8b0c2ca072e388cdaa87ab473438c221ff4bc0bb083d4d",
     "renamedFrom": [],
     "section": "ch02-scope-and-boundaries::sec:2-1"
   },
@@ -670,7 +670,7 @@
     "section": "glossary::sec:glossary-lead"
   },
   "prose:references": {
-    "hash": "921dc8c42a2384754d150e2c58a1978f9d1569de802e6527b0489c39f7a34a8e",
+    "hash": "fc14e8432f9d95935cb236d4a547a3bcd7eeed37533eab5e76e6887546b4abd0",
     "renamedFrom": [],
     "section": "references::sec:references-lead"
   },
@@ -695,7 +695,7 @@
     "section": "ch03-digital-transformation-approach::sec:ch03-lead"
   },
   "tbl:ch03-diig-mapping": {
-    "hash": "92f91654ecd10cd9f46fa6a2632bbbd82c640716ea67c39c8641360ab8bb8417",
+    "hash": "2ca13c31e15e9fc9531cccc1aa08170fd060b23feca8eaffadf65359ca65f568",
     "renamedFrom": [],
     "section": "ch03-digital-transformation-approach::sec:3-1"
   },
@@ -780,7 +780,7 @@
     "section": "about-this-draft::sec:about-discussion"
   },
   "rem:discussion-minimum-data-set": {
-    "hash": "14af51245a7d94655d9a875d1bf1ddbea429441cb7f576190923ea6dd91a5d72",
+    "hash": "61ad61f6c0009268d5fd29ae7ad07621953f90f5216f14fff72dc40e8e7c1cc8",
     "renamedFrom": [],
     "section": "about-this-draft::sec:about-discussion"
   },
@@ -795,7 +795,7 @@
     "section": "about-this-draft::sec:about-discussion"
   },
   "tbl:handbook-at-a-glance": {
-    "hash": "bad602887fe4dfe71b67bfe452ef6b82b3626cea4141495b14d52e91cb64993a",
+    "hash": "f6e32e26fc1df0bb7ffc82ccf5227d628ab215c38ae3b1ba6bee0cbce7a3850f",
     "renamedFrom": [],
     "section": "about-this-draft::sec:about-glance"
   },
@@ -840,7 +840,7 @@
     "section": "annexes::sec:annex-3"
   },
   "prose:annex-1": {
-    "hash": "6afac9f4325ec8a23986cb18a23545b1ca09f159e1a21c1a7a0be7a29a78ecad",
+    "hash": "8b6cd075692f4848df375e965e6cb5687970d823ea5ceda757f419e865c7c197",
     "renamedFrom": [],
     "section": "annexes::sec:annex-1"
   },
@@ -1200,7 +1200,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
   "prose:ch11-tools": {
-    "hash": "88c7176f60ee7eb246dfd337d9116071d6945cd3776167bd4958450eaff53492",
+    "hash": "bee434fc00de5463c2e55125c7989ca505cbd5bd3b6f36750b0e1c785100485c",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
   },
@@ -1215,7 +1215,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-2"
   },
   "prose:ch11-key-messages": {
-    "hash": "02936ab0ea3e936ad9bc661a92a936ebda02c3eca4abc877b89bda5691e8abe3",
+    "hash": "582e80133f56d57bb282f0968f6b9e38dc223803d8c949e9ae1f958df2f25311",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-lead"
   },
@@ -1230,7 +1230,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
   "prose:ch11-objectives": {
-    "hash": "99c710c7b7289203e2472c0b494b0d5a676faa16cebd2c501afe801b9cbd5dd2",
+    "hash": "0545311a32d7c295cb6e950d2a3fbb774efad93a3bc51009882e6ba9d4aa2d2b",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-lead"
   },
@@ -1240,7 +1240,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
   "prose:ch11-figures": {
-    "hash": "a7a6d4926fd91d194dfbcb9bcc8204a2723ff6f68618ece7be6e7d06a1e3b94a",
+    "hash": "b5022cfa4f51714cabd04a24e47da682b7e34a13f403178bfe471e5b9e79c1b7",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
   },
@@ -1255,7 +1255,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
   "prose:ch11-core-dataset": {
-    "hash": "32f669bc2b7dc33eaee6dfc9d4d93076652d4ae187c840900ab9318f00552827",
+    "hash": "10e0a5b854cab47d075f1303fdb92912233dcb92f4c3c4cf08f48c61e030d6f0",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
@@ -1280,7 +1280,7 @@
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
   },
   "prose:ch11-outputs": {
-    "hash": "98442cd16a7583c66d9d730a7470dc02fd1f367cf81ef5eb1b7eca03284f1056",
+    "hash": "54f2143c51977003cf3de737a9f19c6186d2c2df9fec459d549725e34ab6efa0",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:ch11-planned"
   },
@@ -1485,7 +1485,7 @@
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
   "prose:ch07-records": {
-    "hash": "32a52c983e36715c8818e99fc0da1f86ac5dc9e541fe20e7a5b283c3a7c8eceb",
+    "hash": "3f1289175b80d1a68905f6a1b81ed23ab28a6df961e466cf43aa18bf3a8cbec9",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-2"
   },
@@ -1495,12 +1495,12 @@
     "section": "ch07-functional-requirements::sec:ch07-planned"
   },
   "freq:FR-REC-01": {
-    "hash": "f1be00e1fb7dcddf33905400a09e60fb369471076fcd9816d28877fe6575b597",
+    "hash": "7fcba173ebbd738c2c6fd866b63d44fab62b644e965a416fb89d653411eb600d",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-2"
   },
   "dt:hrh-dt-03-verification-and-access-response": {
-    "hash": "06fe8310e5d6ab194b2839570e46d41e903c4309e072d1b8fcfa7097e2bf09f0",
+    "hash": "886661eb8f0299d321b4161f5697838fd76db7472154573a0379e95eee7f446c",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-4"
   },
@@ -1515,7 +1515,7 @@
     "section": "ch07-functional-requirements::sec:7-5"
   },
   "dt:hrh-dt-01-registration-eligibility": {
-    "hash": "75f3c4f06b6472d152ddbb858a6db82f41df58c01768526c13f13d80dc6f9283",
+    "hash": "6778a0587c78744f996553d3db7f95fbb85da30a00bce6ba7c28c09991fc1dad",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-1"
   },
@@ -1585,7 +1585,7 @@
     "section": "ch07-functional-requirements::sec:7-1"
   },
   "dt:hrh-dt-02-lifecycle-status-transition": {
-    "hash": "09cfd194b7303895390619c032ae4984b68a4705db6e9770f5231cdc4cc052bd",
+    "hash": "0eac7d007bf08360d6ccc1251cf010c236a4595528878b2bd8b9d74023b8f22f",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-3"
   },

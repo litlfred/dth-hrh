@@ -13,6 +13,7 @@
     "wg:changesets:check": "bun run folio-assistant-core/scripts/public-comment-changesets.ts check --store review/wg-comment",
     "review:anchors": "bun run folio-assistant-core/scripts/review-anchors-from-folio.ts --document dth-hrh --library twg-outline-2026-10-02 --source library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md --source-label \"the TWG manuscript outline it was seeded from\"",
     "check:review-anchors": "bun run folio-assistant-core/scripts/review-anchors-from-folio.ts --document dth-hrh --library twg-outline-2026-10-02 --source library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md --source-label \"the TWG manuscript outline it was seeded from\" --check",
+    "site:archimate": "bun run cat-harness-tools/archimate/scripts/gen-archimate-pages.ts --instance . --out",
     "site:glossary": "bun run folio-assistant-core/scripts/glossary-page.ts --instance dth-hrh --site",
     "kg:blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh",
     "check:kg-blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",

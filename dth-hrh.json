@@ -155,5 +155,14 @@
     "smart-base",
     "dpi-h-ra"
   ],
-  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14)."
+  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14).",
+  "visualisers": [
+    {
+      "id": "archimate",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ]
+    }
+  ]
 }

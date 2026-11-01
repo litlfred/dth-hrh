@@ -9,3 +9,5 @@
 | **Difficulties** | Weak planning evidence and difficulty reporting to NHWA; incomplete coverage, especially of the private sector. | 1.1, 13.1 |
 | **Digital skills** | *To confirm with country input.* | — |
 | **Connectivity** | *To confirm with country input.* | — |
+
+*Role ID:* `HRH-R-05` | *Processes:* Workforce counts and NHWA reporting (HRH-BP-05) | *ArchiMate (dpi-h-ra 0.2.0):* [Ministry of Health](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-1c5c0bc9234e4282b654dbc71b9da706.jsonld) (business role); [Workforce Data Analytics](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-8852987c90c84071ae92ad3621548adf.jsonld) (application function) | *Glossary:* [Health workforce planning](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-planning), [National Health Workforce Accounts (NHWA)](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/national-health-workforce-accounts).

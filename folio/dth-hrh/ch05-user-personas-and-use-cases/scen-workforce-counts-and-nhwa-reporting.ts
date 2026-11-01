@@ -5,5 +5,5 @@ export default userScenario({
   title: "Produce workforce counts and distribution for planning and NHWA reporting",
   personas: ["pers:workforce-planner", "pers:system-nhwa-platform"],
   uses: [],
-  meta: {"source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}},
+  meta: {"source":{"library":"twg-outline-2026-10-02","file":"library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md","method":"outline-seed"},"relatedBlocks":["bp:hrh-bp-05-workforce-analytics-and-nhwa-reporting","dt:hrh-dt-03-verification-and-access-response"]},
 });

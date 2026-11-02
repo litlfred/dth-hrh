@@ -2752,6 +2752,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:ch11-cde",
+   "kind": "table",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "t-ch11-cde",
+   "sections": [
+    "sec:11-1"
+   ],
+   "caption": "Core data elements (CDE-HRH), at a glance",
+   "hash": "afb4966b9434",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Identification number]( de:cde-identification-number) — — to draft 2 [",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:cde-identification-number",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -2908,6 +2921,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:ch11-nhwa-m1",
+   "kind": "table",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "t-ch11-nhwa-m1",
+   "sections": [
+    "sec:11-2"
+   ],
+   "caption": "NHWA Module 1 (stock and flow) extension data elements, at a glance",
+   "hash": "0973ef655800",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Activity level]( de:nhwa-m1-activity-level) 1-01 practising, professio",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m1-activity-level",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3016,6 +3042,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:ch11-nhwa-m2",
+   "kind": "table",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "t-ch11-nhwa-m2",
+   "sections": [
+    "sec:11-3"
+   ],
+   "caption": "NHWA Module 2 (education) extension data elements, at a glance",
+   "hash": "33a89004356f",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Qualification and education programme]( de:nhwa-m2-qualification) 2-04",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m2-qualification",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3052,6 +3091,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "tbl:ch11-nhwa-m3",
+   "kind": "table",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "t-ch11-nhwa-m3",
+   "sections": [
+    "sec:11-4"
+   ],
+   "caption": "NHWA Module 3 (finance and expenditures) extension data elements, at a glance",
+   "hash": "c4e2e83b6ad6",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Employer sector]( de:nhwa-m3-employer-sector) 3-01, 3-02 public, priva",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m3-employer-sector",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3085,6 +3137,19 @@
    ],
    "hash": "cf2a83622bb5",
    "excerpt": "- Extension data elements a registry can hold to support NHWA Module 4 (working conditions, governance and leadership). They are optional. - Indicators 4-01, 4-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch11-nhwa-m4",
+   "kind": "table",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "t-ch11-nhwa-m4",
+   "sections": [
+    "sec:11-5"
+   ],
+   "caption": "NHWA Module 4 (working conditions, governance and leadership) extension data elements, at a glance",
+   "hash": "bf1ddf9eb382",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Leadership position]( de:nhwa-m4-leadership-position) 4-03 — to draft",
    "method": "folio-snapshot"
   },
   {

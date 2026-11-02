@@ -1,4 +1,4 @@
-**Professional licence and certification** — element 7 of the WHO 2015 minimum data set for a health workforce registry.
+**Professional licence and certification**: working definition, for working-group review.
 
 | Definition | Format | Mandatory | Source | Sensitivity | FHIR mapping |
 |---|---|---|---|---|---|

@@ -1,4 +1,4 @@
-- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. <https://www.who.int/publications/i/item/9789241549226>
+- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015.
 - WHO. Global strategy on human resources for health: Workforce 2030. 2016.
 - WHO. National health workforce accounts: a handbook, second edition. 2023.
 - WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010.

@@ -1,0 +1,3 @@
+- Extension data elements a registry needs to report NHWA Module 1 (stock and flow), on top of the core data elements.
+- Indicators 1-01 to 1-10 and 1-12 name a health workforce registry or database as a data source.
+- Indicator 1-11 (vacancy rate) counts posts, not health workers, and comes from other sources.

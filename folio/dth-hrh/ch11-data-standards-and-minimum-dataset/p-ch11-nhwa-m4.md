@@ -1,0 +1,2 @@
+- Extension data elements a registry can hold to support NHWA Module 4 (working conditions, governance and leadership). They are optional.
+- Indicators 4-01, 4-02 and 4-05 describe policies and national capacity, not individual health workers.

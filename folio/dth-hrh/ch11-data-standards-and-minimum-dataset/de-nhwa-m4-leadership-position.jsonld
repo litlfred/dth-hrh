@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m4-leadership-position",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m4-leadership-position",
+  "kind": "data-element",
+  "title": "Leadership position",
+  "text": "de-nhwa-m4-leadership-position.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-052-4-03-share-of-women-in-leadership-role"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m4",
+    "supportsIndicators": [
+      "4-03"
+    ]
+  },
+  "provenance": "authored"
+}

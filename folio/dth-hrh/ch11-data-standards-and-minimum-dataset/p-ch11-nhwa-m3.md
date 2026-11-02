@@ -1,0 +1,2 @@
+- Extension data elements a registry can hold to support NHWA Module 3 (finance and expenditures). They are optional.
+- The module's indicators are mostly expenditure totals from finance and health ministry records, not registry data.

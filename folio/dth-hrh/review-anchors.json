@@ -83,7 +83,7 @@
   },
   {
    "dir": "ch11-data-standards-and-minimum-dataset",
-   "title": "Chapter 11. Data Standards and Core Data Elements",
+   "title": "Chapter 11. Data Standards and Minimum Dataset",
    "number": 11,
    "label": "chap:ch11-data-standards-and-minimum-dataset"
   },
@@ -902,7 +902,7 @@
   },
   {
    "label": "sec:annex-1",
-   "title": "Annex 1. Core Data Elements (CDE-HRH)",
+   "title": "Annex 1. Minimum Data Set",
    "chapter": "annexes"
   },
   {
@@ -1028,8 +1028,8 @@
    "sections": [
     "sec:about-discussion"
    ],
-   "hash": "89e2afd0afd8",
-   "excerpt": "The draft proposes core data elements for a health workforce registry (CDE-HRH) within this handbook, taking inspiration from the WHO 2015 minimum data set. The",
+   "hash": "afdc3441c2e8",
+   "excerpt": "The draft proposes updating the 2015 minimum data set within this handbook. The TWG should confirm whether the update belongs here or in a separate product.",
    "method": "folio-snapshot"
   },
   {
@@ -1101,8 +1101,8 @@
     "sec:about-glance"
    ],
    "caption": "Handbook at a glance: parts, chapters and sections",
-   "hash": "24027b86e858",
-   "excerpt": "Part Chapter Sections :---- :---- :---- Part 0. Introduction 1. Why Digital Health Workforce Registries Matter Global challenges; Value proposition; Registry as",
+   "hash": "c7105c582bbb",
+   "excerpt": "Part Chapter Sections :---- :---- :---- Part 0. Introduction [1. Why Digital Health Workforce Registries Matter]( chap:ch01-why-digital-health-workforce-registr",
    "method": "folio-snapshot"
   },
   {
@@ -1257,8 +1257,8 @@
    "sections": [
     "sec:2-1"
    ],
-   "hash": "5a4e58b0661c",
-   "excerpt": "- Purpose, governance, core data elements, functional requirements and architecture options for a registry. - Interoperability with regulators, employers, train",
+   "hash": "98860f896cb8",
+   "excerpt": "- Purpose, governance, minimum data set, functional requirements and architecture options for a registry. - Interoperability with regulators, employers, trainin",
    "method": "folio-snapshot"
   },
   {
@@ -1379,7 +1379,7 @@
     "sec:3-1"
    ],
    "caption": "Handbook chapters mapped to the DIIG chapters (proposed, for TWG review)",
-   "hash": "abf6add7d10b",
+   "hash": "b697b112f804",
    "excerpt": "DIIG chapter What the DIIG step produces Where this handbook covers it for registries --- --- --- 2. Form the team and establish goals Roles and responsibilitie",
    "method": "folio-snapshot"
   },
@@ -2063,7 +2063,7 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "fe99be5372de",
+   "hash": "e5e785b9d94d",
    "excerpt": "FR-ID-01. Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. Priority: to be set (must / s",
    "method": "folio-snapshot"
   },
@@ -2075,8 +2075,8 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "1fc2d908bb51",
-   "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "607f781d5cb6",
+   "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: ",
    "method": "folio-snapshot"
   },
   {
@@ -2087,8 +2087,8 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "f0918ed42f22",
-   "excerpt": "FR-ID-03. Manage changes of name and other identity details over a career. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "2a08404f9370",
+   "excerpt": "FR-ID-03. Manage changes of name and other identity details over a career. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: ",
    "method": "folio-snapshot"
   },
   {
@@ -2099,8 +2099,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "0f920c0e515b",
-   "excerpt": "- Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH). - Hold supporting evidence, such as certificates, or ",
+   "hash": "29b9f1040cd1",
+   "excerpt": "- Create, view, update and archive the health worker record in line with the minimum data set. - Hold supporting evidence, such as certificates, or links to it.",
    "method": "folio-snapshot"
   },
   {
@@ -2111,8 +2111,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "d801e71dbf2d",
-   "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH). Priority: to be set (must / should / could).",
+   "hash": "208f1834303c",
+   "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the minimum data set. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
   {
@@ -2123,8 +2123,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "0a55a1b84670",
-   "excerpt": "FR-REC-02. Hold supporting evidence, such as certificates, or links to it. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "043ce4a96a60",
+   "excerpt": "FR-REC-02. Hold supporting evidence, such as certificates, or links to it. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: ",
    "method": "folio-snapshot"
   },
   {
@@ -2135,8 +2135,8 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "63bb13d5a0fb",
-   "excerpt": "FR-REC-03. Record the source and date of each data item. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "213624809e60",
+   "excerpt": "FR-REC-03. Record the source and date of each data item. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG outline (L",
    "method": "folio-snapshot"
   },
   {
@@ -2159,7 +2159,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "8b210acabfaf",
+   "hash": "344abb87e521",
    "excerpt": "FR-LC-01. Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
@@ -2171,7 +2171,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "84a922dbe60c",
+   "hash": "aecfb1099b91",
    "excerpt": "FR-LC-02. Support renewals, recording of continuing professional development, and reminders. Priority: to be set (must / should / could). Linked use cases: to b",
    "method": "folio-snapshot"
   },
@@ -2183,8 +2183,8 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "f9674e639669",
-   "excerpt": "FR-LC-03. Record changes of employment and place of practice over time. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "20dd4e3519e3",
+   "excerpt": "FR-LC-03. Record changes of employment and place of practice over time. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the",
    "method": "folio-snapshot"
   },
   {
@@ -2207,7 +2207,7 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "9ffed6ce482b",
+   "hash": "2a2599b22e79",
    "excerpt": "FR-VER-01. Confirm registration and licence status in real time for employers, the public and other systems. Priority: to be set (must / should / could). Linked",
    "method": "folio-snapshot"
   },
@@ -2219,7 +2219,7 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "4c977f5bc8e8",
+   "hash": "3e46ce3dda92",
    "excerpt": "FR-VER-02. Issue digital, verifiable credentials or certificates (for example a certificate of good standing). Priority: to be set (must / should / could). Link",
    "method": "folio-snapshot"
   },
@@ -2231,8 +2231,8 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "bb3cf766c50c",
-   "excerpt": "FR-VER-03. Respond to verification requests from other countries. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "d9125398fdc5",
+   "excerpt": "FR-VER-03. Respond to verification requests from other countries. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG o",
    "method": "folio-snapshot"
   },
   {
@@ -2255,7 +2255,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "b44e6ba2d65b",
+   "hash": "a8318dd4e9a1",
    "excerpt": "FR-AN-01. Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Priority: to be set (must / should / could). Linked use cases",
    "method": "folio-snapshot"
   },
@@ -2267,8 +2267,8 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "a5ea763422d3",
-   "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "4621a9dfc6d3",
+   "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG outline (L1",
    "method": "folio-snapshot"
   },
   {
@@ -2279,8 +2279,8 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "8915f80e6f2e",
-   "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced.",
+   "hash": "0d25fbfcd192",
+   "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG outline (L1, ",
    "method": "folio-snapshot"
   },
   {
@@ -2723,8 +2723,8 @@
    "sections": [
     "sec:ch11-lead"
    ],
-   "hash": "6224aebd67b5",
-   "excerpt": "Chapter objectives. This chapter will help readers to: - Present the core data elements for a health workforce registry (CDE-HRH) and the reason for each elemen",
+   "hash": "98481845dcbb",
+   "excerpt": "Chapter objectives. This chapter will help readers to: - Present a minimum data set for a health workforce registry and the reason for each element. - Identify ",
    "method": "folio-snapshot"
   },
   {
@@ -2735,8 +2735,8 @@
    "sections": [
     "sec:ch11-lead"
    ],
-   "hash": "d0180a7890b5",
-   "excerpt": "Key messages - Collect only what is needed, define it precisely, and keep it up to date. - The core data elements are a floor, not a ceiling. Countries can exte",
+   "hash": "722710594492",
+   "excerpt": "Key messages - Collect only what is needed, define it precisely, and keep it up to date. - The minimum data set is a floor, not a ceiling. Countries can extend ",
    "method": "folio-snapshot"
   },
   {
@@ -2747,8 +2747,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "f38a643fcb49",
-   "excerpt": "- The WHO 2015 minimum data set as a source of inspiration: identification number, name, birth history, citizenship and language, address, contact information, ",
+   "hash": "07fc0e6b3583",
+   "excerpt": "- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, profe",
    "method": "folio-snapshot"
   },
   {
@@ -2915,8 +2915,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "a4f33c357489",
-   "excerpt": "Suggested figures and tables - Table: core data elements (CDE-HRH). - Figure: logical data model (health worker, qualification, licence, role, facility). - Tabl",
+   "hash": "fdbdb3e50862",
+   "excerpt": "Suggested figures and tables - Table: minimum data set. - Figure: logical data model (health worker, qualification, licence, role, facility). - Table: registry ",
    "method": "folio-snapshot"
   },
   {
@@ -2927,8 +2927,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "10f0fd02afd5",
-   "excerpt": "Implementation tools and checklists - Core data elements (annex) and data dictionary (annex). - Template for mapping national occupational titles to ISCO-08. - ",
+   "hash": "a8392ac0bac5",
+   "excerpt": "Implementation tools and checklists - Minimum data set (annex) and data dictionary (annex). - Template for mapping national occupational titles to ISCO-08. - NH",
    "method": "folio-snapshot"
   },
   {
@@ -2939,8 +2939,8 @@
    "sections": [
     "sec:ch11-planned"
    ],
-   "hash": "82fde2f688d2",
-   "excerpt": "Expected outputs for countries - A national set of core data elements and a data dictionary. - National occupational titles mapped to ISCO-08. - A list of the N",
+   "hash": "852220d257cf",
+   "excerpt": "Expected outputs for countries - A national minimum data set and data dictionary. - National occupational titles mapped to ISCO-08. - A list of the NHWA indicat",
    "method": "folio-snapshot"
   },
   {
@@ -4103,8 +4103,8 @@
    "sections": [
     "sec:annex-1"
    ],
-   "hash": "b0bfce747a5d",
-   "excerpt": "Proposed core and optional data elements with definitions: the core data elements for a health workforce registry (CDE-HRH). CDE-HRH takes inspiration from the ",
+   "hash": "fba6384806b5",
+   "excerpt": "Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set. The 2015 elements are drafted as structured data-element ",
    "method": "folio-snapshot"
   },
   {
@@ -4863,8 +4863,8 @@
    "sections": [
     "sec:references-lead"
    ],
-   "hash": "21ee88f7d25a",
-   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. <https://www.who.int/publications/i/item/97892415492",
+   "hash": "4b85faaad1af",
+   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. - WHO. Global strategy on human resources for health",
    "method": "folio-snapshot"
   }
  ]

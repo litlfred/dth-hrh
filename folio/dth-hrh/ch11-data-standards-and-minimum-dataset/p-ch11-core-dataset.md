@@ -1,4 +1,6 @@
-- Working data elements, each with a working definition for working-group review: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.
+- Core data elements (CDE-HRH), held by every registry, each with a working definition for working-group review: identification number, name, birth history, sex, citizenship and language, address, contact information, occupation, professional licence and certification, employment status, employment address, and data submission institution.
+- Sex and occupation are core because NHWA indicators are broken down by occupation, and many by sex.
+- Sections 11.2 to 11.5 add extension data elements for each NHWA module (National health workforce accounts handbook, 2nd edition).
 - Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.
 - For each element: definition, format, whether mandatory, source and sensitivity.
 - Terms and definitions follow the TWG glossary (draft, 2026-09-29), the external source this handbook uses for agreed terms.

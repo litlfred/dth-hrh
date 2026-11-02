@@ -1,0 +1,3 @@
+- Extension data elements a registry needs to report NHWA Module 2 (education).
+- Of the module's indicators, 2-04 (ratio of graduates to stock) names a health workforce registry or database as a data source.
+- Indicators 2-01 to 2-03 and 2-05 to 2-07 describe education places, applications and programmes, and come from ministries of education and training institutions.

@@ -531,25 +531,49 @@
   {
    "label": "sec:11-1",
    "number": "11.1",
-   "title": "11.1 Core dataset",
+   "title": "11.1 Core data elements (CDE-HRH)",
    "chapter": "ch11-data-standards-and-minimum-dataset"
   },
   {
    "label": "sec:11-2",
    "number": "11.2",
-   "title": "11.2 Classifications",
+   "title": "11.2 NHWA Module 1: Stock and flow",
    "chapter": "ch11-data-standards-and-minimum-dataset"
   },
   {
    "label": "sec:11-3",
    "number": "11.3",
-   "title": "11.3 Metadata",
+   "title": "11.3 NHWA Module 2: Education",
    "chapter": "ch11-data-standards-and-minimum-dataset"
   },
   {
    "label": "sec:11-4",
    "number": "11.4",
-   "title": "11.4 NHWA mapping",
+   "title": "11.4 NHWA Module 3: Finance and expenditures",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-5",
+   "number": "11.5",
+   "title": "11.5 NHWA Module 4: Working conditions, governance and leadership",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-6",
+   "number": "11.6",
+   "title": "11.6 Classifications",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-7",
+   "number": "11.7",
+   "title": "11.7 Metadata",
+   "chapter": "ch11-data-standards-and-minimum-dataset"
+  },
+  {
+   "label": "sec:11-8",
+   "number": "11.8",
+   "title": "11.8 NHWA mapping",
    "chapter": "ch11-data-standards-and-minimum-dataset"
   },
   {
@@ -2723,12 +2747,12 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "f6cab80ebe65",
-   "excerpt": "- Working data elements, each with a working definition for working-group review: identification number, name, birth history, citizenship and language, address,",
+   "hash": "e5aecbce05c8",
+   "excerpt": "- Core data elements (CDE-HRH), held by every registry, each with a working definition for working-group review: identification number, name, birth history, sex",
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-identification-number",
+   "label": "de:cde-identification-number",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-identification-number",
@@ -2740,7 +2764,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-name",
+   "label": "de:cde-name",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-name",
@@ -2752,7 +2776,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-birth-history",
+   "label": "de:cde-birth-history",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-birth-history",
@@ -2764,7 +2788,19 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-citizenship-and-language",
+   "label": "de:cde-sex",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-cde-sex",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "14ab5d269a10",
+   "excerpt": "Sex : working definition, for working-group review. NHWA indicators: 1-03, 1-04, 1-09, 1-10, 2-04. Definition Format Mandatory Source Sensitivity FHIR mapping -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:cde-citizenship-and-language",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-citizenship-and-language",
@@ -2776,7 +2812,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-address",
+   "label": "de:cde-address",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-address",
@@ -2788,7 +2824,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-contact-information",
+   "label": "de:cde-contact-information",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-contact-information",
@@ -2800,7 +2836,19 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-professional-licence-and-certification",
+   "label": "de:cde-occupation",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-cde-occupation",
+   "sections": [
+    "sec:11-1"
+   ],
+   "hash": "68b10e76f7d6",
+   "excerpt": "Occupation : working definition, for working-group review. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 3-02. Definition F",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:cde-professional-licence-and-certification",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-professional-licence-and-certification",
@@ -2812,7 +2860,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-employment-status",
+   "label": "de:cde-employment-status",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-employment-status",
@@ -2824,7 +2872,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-employment-address",
+   "label": "de:cde-employment-address",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-employment-address",
@@ -2836,7 +2884,7 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "de:mds-data-submission-institution",
+   "label": "de:cde-data-submission-institution",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "de-data-submission-institution",
@@ -2848,12 +2896,216 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "prose:ch11-nhwa-m1",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-nhwa-m1",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "c689e6fb80e3",
+   "excerpt": "- Extension data elements a registry needs to report NHWA Module 1 (stock and flow), on top of the core data elements. - Indicators 1-01 to 1-10 and 1-12 name a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-activity-level",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-activity-level",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "b11b21afc4fc",
+   "excerpt": "Activity level : working definition, for working-group review. NHWA indicators: 1-01. Categories named in the NHWA handbook: practising, professionally active, ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-subnational-unit",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-subnational-unit",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "bffa23fe3ef6",
+   "excerpt": "Subnational unit of practice : working definition, for working-group review. NHWA indicators: 1-02. Categories named in the NHWA handbook: level 1 subnational a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-facility-ownership",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-facility-ownership",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "f3c90b53bfd7",
+   "excerpt": "Facility ownership : working definition, for working-group review. NHWA indicators: 1-05. Categories named in the NHWA handbook: public, private not-for-profit,",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-facility-type",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-facility-type",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "29ab3894b3cd",
+   "excerpt": "Facility type : working definition, for working-group review. NHWA indicators: 1-06. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-place-of-training",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-place-of-training",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "a6e14078447e",
+   "excerpt": "Place of training : working definition, for working-group review. NHWA indicators: 1-08, 1-09. Definition Format Mandatory Source Sensitivity FHIR mapping --- -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-entry-date",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-entry-date",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "68e6169a5175",
+   "excerpt": "Date of entry into the active workforce : working definition, for working-group review. NHWA indicators: 1-09. Definition Format Mandatory Source Sensitivity FH",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-exit",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-exit",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "56676c7455c7",
+   "excerpt": "Date and type of exit from the active workforce : working definition, for working-group review. NHWA indicators: 1-10. Categories named in the NHWA handbook: vo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m1-type-of-contract",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m1-type-of-contract",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "6c208baa1322",
+   "excerpt": "Type of contract : working definition, for working-group review. NHWA indicators: 1-12. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-nhwa-m2",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-nhwa-m2",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "1ce855a9f5fd",
+   "excerpt": "- Extension data elements a registry needs to report NHWA Module 2 (education). - Of the module's indicators, 2-04 (ratio of graduates to stock) names a health ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m2-qualification",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m2-qualification",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "28e09153e2de",
+   "excerpt": "Qualification and education programme : working definition, for working-group review. NHWA indicators: 2-04. Definition Format Mandatory Source Sensitivity FHIR",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m2-training-institution",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m2-training-institution",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "a6d967b1539b",
+   "excerpt": "Training institution and year of graduation : working definition, for working-group review. NHWA indicators: 2-04. Definition Format Mandatory Source Sensitivit",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-nhwa-m3",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-nhwa-m3",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "b99273b62909",
+   "excerpt": "- Extension data elements a registry can hold to support NHWA Module 3 (finance and expenditures). They are optional. - The module's indicators are mostly expen",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m3-employer-sector",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m3-employer-sector",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "f20cb50507d8",
+   "excerpt": "Employer sector : working definition, for working-group review. NHWA indicators: 3-01, 3-02. Categories named in the NHWA handbook: public, private. Definition ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m3-entry-salary-grade",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m3-entry-salary-grade",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "f789daa12635",
+   "excerpt": "Salary grade at entry : working definition, for working-group review. NHWA indicators: 3-02. Definition Format Mandatory Source Sensitivity FHIR mapping --- ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch11-nhwa-m4",
+   "kind": "prose",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "p-ch11-nhwa-m4",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "cf2a83622bb5",
+   "excerpt": "- Extension data elements a registry can hold to support NHWA Module 4 (working conditions, governance and leadership). They are optional. - Indicators 4-01, 4-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:nhwa-m4-leadership-position",
+   "kind": "data-element",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "de-nhwa-m4-leadership-position",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "93d94aceae9d",
+   "excerpt": "Leadership position : working definition, for working-group review. NHWA indicators: 4-03. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- -",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "prose:ch11-classifications",
    "kind": "prose",
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "p-ch11-classifications",
    "sections": [
-    "sec:11-2"
+    "sec:11-6"
    ],
    "hash": "38476963b878",
    "excerpt": "- Occupations: International Standard Classification of Occupations (ISCO-08), with mapping from national occupational titles. - Education levels and fields (IS",
@@ -2865,7 +3117,7 @@
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "p-ch11-metadata",
    "sections": [
-    "sec:11-3"
+    "sec:11-7"
    ],
    "hash": "1f81853d8d5e",
    "excerpt": "- Data dictionary structure: element name, definition, data type, permitted values and mapping to FHIR. - Information about each data item's origin: source, dat",
@@ -2877,7 +3129,7 @@
    "chapter": "ch11-data-standards-and-minimum-dataset",
    "root": "p-ch11-nhwa-mapping",
    "sections": [
-    "sec:11-4"
+    "sec:11-8"
    ],
    "hash": "cacac1e4f734",
    "excerpt": "- NHWA indicators that can be derived from registry data, such as stock, density, distribution, age and sex, and place of training. - Indicators that need other",

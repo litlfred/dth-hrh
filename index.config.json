@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "d9223fb780333c7dd179e0ad50734a0b144c3955",
+          "ref": "2d34569b653861e145292d573eaa5a0dcb5b9fe6",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -163,9 +163,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "d9223fb780333c7dd179e0ad50734a0b144c3955",
-              "evidence": "litlfred, 2026-10-31 21:01:15Z, decision card Q-IRIS1 in thread on dth-pc/dth-sc figures: 'A. Yes, merge on green' (merge who-iris#149, then re-pin dth-hrh#68 and dth-pc); window 20:59:38Z 'merge when green and ready +3hrs'. who-iris 7314adf = #149 (DIIG figure data); core, cat-harness and cat-harness-tools re-pinned to main together to avoid skew."
+              "on": "2026-11-02",
+              "ref": "2d34569b653861e145292d573eaa5a0dcb5b9fe6",
+              "evidence": "Owner litlfred merge window (to 2026-11-03 02:40Z, 'window +12hrs'). Re-pin to main tips carrying the review page (cat-harness-tools#1383 7237894, #1388 67df948; cat-harness#957 b9fe9f7) so the dth-hrh#88 preview shows it."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
+          "ref": "72378945042d23502b71a79bd0d7616dcd39e95e",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -188,9 +188,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
-              "evidence": "litlfred, 2026-11-01 16:08Z merge and re-pin window (extended to 01:36Z). cat-harness-tools 3aeaeed = #1319 (pdf.js 6.5.438), so check:upstream-pins passes; needed to merge the CS-001 revert the owner asked for (dth-hrh#74)."
+              "on": "2026-11-02",
+              "ref": "72378945042d23502b71a79bd0d7616dcd39e95e",
+              "evidence": "Owner litlfred merge window (to 2026-11-03 02:40Z, 'window +12hrs'). Re-pin to main tips carrying the review page (cat-harness-tools#1383 7237894, #1388 67df948; cat-harness#957 b9fe9f7) so the dth-hrh#88 preview shows it."
             }
           }
         }

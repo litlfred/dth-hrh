@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "cfef1bf4ab459a700fb3f9fbfa4111ab85fac78c",
+          "ref": "b6356bf02539e8eeff4429f7fa16ddeb8ed2bc04",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "cfef1bf4ab459a700fb3f9fbfa4111ab85fac78c",
-              "evidence": "folio-assistant-core moved to main cfef1bf: #523 (the glossary check accepts iHRIS), so dth-hrh#85's preview builds, and #584 (stale BPMN translation templates). Window: litlfred, 2026-11-01 20:40:15Z, 'merge all green and ready (not content) + 6hrs', extended 22:34:09Z 'window +12hrs'."
+              "on": "2026-11-02",
+              "ref": "b6356bf02539e8eeff4429f7fa16ddeb8ed2bc04",
+              "evidence": "litlfred asked in Claude Code session session_01EucfRmwpKymG3j2sPLyroL (2026-11-02): 'yes, publish a dth-hrh staging preview' of litlfred/folio-assistant-core#625"
             }
           }
         }

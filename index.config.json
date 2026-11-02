@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
+          "ref": "186c946eb2aadec266d58651de5bad5af898402a",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
-              "evidence": "folio-assistant-core moved to main d95399b = #462 (shared DTH checks: folio-l1-coverage.ts and glossary-validate.ts, bean cysv). litlfred, 2026-11-01 09:26Z, thread 'Share DTH scripts and add dth init': chose 'A. Merge it now' (then repin core in the 5 DTH pull requests). Window: litlfred, 2026-11-01 07:27Z, '+3hrs merge + repin'."
+              "on": "2026-11-02",
+              "ref": "186c946eb2aadec266d58651de5bad5af898402a",
+              "evidence": "litlfred, 2026-11-01 22:34Z, 'window +12hrs' (merge and repin window to 2026-11-02 14:40Z): re-pin folio-assistant-core to main 186c946 on draft dth-hrh#88 for core#570 (overlay checks) and core#577 (figure links land on target)."
             }
           }
         }

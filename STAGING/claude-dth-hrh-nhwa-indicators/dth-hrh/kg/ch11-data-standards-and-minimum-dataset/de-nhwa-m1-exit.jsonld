@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m1-exit",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m1-exit",
+  "kind": "data-element",
+  "title": "Date and type of exit from the active workforce",
+  "text": "de-nhwa-m1-exit.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-032-1-10-annual-outflows-of-health-workers"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m1",
+    "supportsIndicators": [
+      "1-10"
+    ]
+  },
+  "provenance": "authored"
+}

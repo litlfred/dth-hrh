@@ -1,0 +1,314 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/claude/dth-hrh-cde-nhwa",
+    "commit": "c648c092dc6dcbaacab2a10846c1b8459f4b67d2"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 29,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 341,
+    "renamed": 0,
+    "prose": 0,
+    "manifest": 0,
+    "moved": 0
+  },
+  "changes": [
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-01",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-01.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-02",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-02.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-03",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-03.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-04",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-04.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-05",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-05.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 5
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-06",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-06.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 6
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-07",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-07.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 7
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-08",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-08.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 8
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-09",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-09.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 9
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-10",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-10.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 10
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-11",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-11.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 11
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-1-12",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-1-12.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 12
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-01",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-01.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-02",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-02.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-03",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-03.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-04",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-04.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-05",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-05.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 5
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-06",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-06.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 6
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-2-07",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-2-07.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 7
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-3-01",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-3-01.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-3-02",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-3-02.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-3-03",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-3-03.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-3-04",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-3-04.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-3-05",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-3-05.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 5
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-4-01",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-4-01.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-4-02",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-4-02.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-4-03",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-4-03.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-4-04",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-4-04.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "ind:nhwa-4-05",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/ind-nhwa-4-05.ts",
+        "kind": "indicator",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 5
+      }
+    }
+  ]
+}

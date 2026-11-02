@@ -424,6 +424,13 @@
           "upstreamPath": "smart-base/validators",
           "treeDigest": "063a478d90aba2e56d4a8c49874394aab2b446d26c0dfb5433535f849654bd09",
           "files": 2
+        },
+        {
+          "id": "l1-extraction-9789240116191-eng",
+          "path": "smart-base/l1-extractions/9789240116191-eng",
+          "upstreamPath": "smart-base/l1-extractions/9789240116191-eng",
+          "treeDigest": "f2a8bcf4667c138d2bf7edc32cc42d36dc10f47b57742ca69211eebf4d126174",
+          "files": 11
         }
       ],
       "assets": [

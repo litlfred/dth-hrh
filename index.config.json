@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
+          "ref": "f5c959d288b9a9fc5a38b447b5dea9f3596166b6",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
-              "evidence": "litlfred, 2026-11-01 16:08Z merge and re-pin window (extended to 01:36Z). cat-harness-tools 3aeaeed = #1319 (pdf.js 6.5.438), so check:upstream-pins passes; needed to merge the CS-001 revert the owner asked for (dth-hrh#74)."
+              "ref": "f5c959d288b9a9fc5a38b447b5dea9f3596166b6",
+              "evidence": "litlfred, 2026-11-01 19:36Z '+6hr window' (to 2026-11-02 01:36Z). cat-harness-tools f5c959d = #1324 (decision tables drawn from their .dmn files; owner choice Q-DMN-1 A)."
             }
           }
         }

@@ -1,0 +1,10 @@
+{
+  "fetchedAt": "2026-11-02T14:55:44Z",
+  "pr": {
+    "number": 81,
+    "title": "BPMN business processes for the HRH handbook (split from #64)",
+    "body": "<!-- claude-projects-attribution: {\"github_login\":\"litlfred\"} -->\n_Requested by **litlfred** · [project thread](https://claude.ai/code/project/chan_017WNUkNK8kdDziPK58Pv6G9?thread=cmsg_017WNUkNK8kdDziPK58Pv6G9P2GGAjGMvE2u8HqJwVqJE8)_\n\nChange set for #78 (part 1 of 3 split from #76 / #64).\n\n**Committee content change: do not merge.** This stays a draft until the Authoring Committee decides.\n\n## What it carries\n\nThe BPMN part of #64, file for file unchanged, rebased onto current main:\n- `bp-hrh-bp-01-lifecycle-maintenance` in Ch 4 §4.3\n- `bp-hrh-bp-02` to `bp-hrh-bp-05` in Ch 5 §5.2, each placed after its user scenario (this moves `scen-verify-status` next to `scen-renew-licence`, as #64 did)\n- `bp-hrh-bp-06-governance-and-stewardship-review` in Ch 6 §6.3\n- each block's `.ts`, `.md`, `.bpmn`, `.jsonld`, and its SVG in `folio/dth-hrh/media/`\n- `review-anchors.json`: only the six new BPMN entries\n\n## Depends on\n\n- #82 (persona change set, #79) adds the two Ch 6 personas named by BP-06's lanes.\n- Step tables and related-block links name the DMN tables of #83 (#80); those resolve once it lands.\n\n## Checks\n\nNot run locally (the platform mounts could not be set up in this session); CI runs `check:kg-blocks`, `check:review-anchors` and the others. The block files are byte-identical to #64, where they passed.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01Qmmkt6VzsrgxhunF8MdW5g",
+    "url": "https://github.com/litlfred/dth-hrh/pull/81"
+  },
+  "issue": null
+}

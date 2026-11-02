@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</title>
+<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</title>
 <style>
   :root { color-scheme: light dark; --fg: #1b1b1b; --bg: #fdfdfb; --muted: #5b5b5b; --link: #0b5cad; }
   @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg: #e8e8e6; --bg: #161616; --muted: #a8a8a4; --link: #7db4ff; } }
@@ -21,13 +21,24 @@
   a { color: var(--link); }
   a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
   h1, h2, h3 { line-height: 1.25; }
-  table { border-collapse: collapse; } th, td { border: 1px solid var(--muted); padding: .3rem .5rem; }
+
+  table { display: block; box-sizing: border-box; width: max-content; max-width: min(100%, 100vw - 7rem); overflow-x: auto; margin: 1.5rem 0; border-collapse: collapse;
+    background: #fff; color: #2d3748; border: 1px solid #14213d; border-radius: 6px; box-shadow: 0 1px 4px rgba(20, 33, 61, .18); font-size: .92em; }
+  th, td { border: 1px solid #c9cfd8; padding: .4rem .65rem; text-align: left; vertical-align: top; }
+  thead th { background: #14213d; color: #fff; font-weight: 600; border-color: #14213d; }
+  tbody tr:nth-child(even) > td { background: #f3f4f6; }
+  table a { color: #0b5cad; }
+  table code { color: inherit; background: none; padding: 0; }
+  /* A table wider than the reading column grows past it, centred on it, up to the window; only then does it scroll. */
+  @media (min-width: 50rem) { table { max-width: calc(100vw - 7rem); position: relative; left: 50%; transform: translateX(-50%); } }
   :target { scroll-margin-top: 1rem; }
   .katex-display { overflow-x: auto; overflow-y: hidden; }
   dfn.defterm { font-style: normal; font-weight: 600; }
   .cite { color: var(--muted); }
   .fa-blk:empty { min-height: 3rem; }
   .fa-one-page { font-size: .85rem; color: var(--muted); }
+  .fa-live-figure img { max-width: 100%; height: auto; }
+  .fa-live-figure-note { display: block; font-size: .85rem; color: var(--muted); }
 </style>
 <style>
 .block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
@@ -126,7 +137,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 })();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-7jnivcyk1b","here":"/en/dth-hrh/index.hydrated.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <main>
 
-<h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</h1>
+<h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</h1>
 <p><a id="chap:about-this-draft"></a></p>
 <h2>About this draft</h2>
 <p><a id="sec:about-lead"></a>
@@ -151,8 +162,8 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <strong>Remark.</strong> <em>Boundary with HRIS:</em></p>
 <p>The draft treats human resource management functions as out of scope. The TWG should confirm where the line is drawn, since many countries run the registry inside an HRIS.</p>
 <p><a id="rem:discussion-minimum-data-set"></a><span class="block-actions" data-block="rem:discussion-minimum-data-set"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/about-this-draft/r-discussion-minimum-data-set.md" title="Edit this block's source on GitHub (folio/dth-hrh/about-this-draft/r-discussion-minimum-data-set.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Points+for+discussion+%E2%80%94+rem%3Adiscussion-minimum-data-set&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Points+for+discussion&amp;block=rem%3Adiscussion-minimum-data-set&amp;source=folio%2Fdth-hrh%2Fabout-this-draft%2Fr-discussion-minimum-data-set.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Remark.</strong> <em>Core data elements (CDE-HRH):</em></p>
-<p>The draft proposes core data elements for a health workforce registry (CDE-HRH) within this handbook, taking inspiration from the WHO 2015 minimum data set. The TWG should confirm whether they belong here or in a separate product.</p>
+<strong>Remark.</strong> <em>Minimum data set:</em></p>
+<p>The draft proposes updating the 2015 minimum data set within this handbook. The TWG should confirm whether the update belongs here or in a separate product.</p>
 <p><a id="rem:discussion-unique-health-worker-identification"></a><span class="block-actions" data-block="rem:discussion-unique-health-worker-identification"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/about-this-draft/r-discussion-unique-health-worker-identification.md" title="Edit this block's source on GitHub (folio/dth-hrh/about-this-draft/r-discussion-unique-health-worker-identification.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Points+for+discussion+%E2%80%94+rem%3Adiscussion-unique-health-worker-identification&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Points+for+discussion&amp;block=rem%3Adiscussion-unique-health-worker-identification&amp;source=folio%2Fdth-hrh%2Fabout-this-draft%2Fr-discussion-unique-health-worker-identification.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Remark.</strong> <em>Unique health worker identification:</em></p>
 <p>Should this topic have a dedicated chapter?</p>
@@ -170,6 +181,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p>No countries have been selected yet. The TWG should nominate cases.</p>
 <p><a id="sec:about-glance"></a></p>
 <h3>Handbook at a glance</h3>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:handbook-at-a-glance"></a><span class="block-actions" data-block="tbl:handbook-at-a-glance"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/about-this-draft/t-handbook-at-a-glance.md" title="Edit this block's source on GitHub (folio/dth-hrh/about-this-draft/t-handbook-at-a-glance.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Handbook+at+a+glance+%E2%80%94+tbl%3Ahandbook-at-a-glance&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Handbook+at+a+glance&amp;block=tbl%3Ahandbook-at-a-glance&amp;source=folio%2Fdth-hrh%2Fabout-this-draft%2Ft-handbook-at-a-glance.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:handbook-at-a-glance" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -183,122 +195,123 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <tbody>
 <tr>
 <td align="left">Part 0. Introduction</td>
-<td align="left">1. Why Digital Health Workforce Registries Matter</td>
-<td align="left">Global challenges; Value proposition; Registry as digital public infrastructure; Benefits and outcomes</td>
+<td align="left"><a href="#chap:ch01-why-digital-health-workforce-registries">1. Why Digital Health Workforce Registries Matter</a></td>
+<td align="left"><a href="#sec:1-1">Global challenges</a>; <a href="#sec:1-2">Value proposition</a>; <a href="#sec:1-3">Registry as digital public infrastructure</a>; <a href="#sec:1-4">Benefits and outcomes</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">2. Scope and Boundaries</td>
-<td align="left">Included topics; Excluded topics; Target audiences</td>
+<td align="left"><a href="#chap:ch02-scope-and-boundaries">2. Scope and Boundaries</a></td>
+<td align="left"><a href="#sec:2-1">Included topics</a>; <a href="#sec:2-2">Excluded topics</a>; <a href="#sec:2-3">Target audiences</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">3. Digital Transformation Approach</td>
-<td align="left">DIIG alignment; Transformation principles; Country pathway</td>
+<td align="left"><a href="#chap:ch03-digital-transformation-approach">3. Digital Transformation Approach</a></td>
+<td align="left"><a href="#sec:3-1">DIIG alignment</a>; <a href="#sec:3-2">Transformation principles</a>; <a href="#sec:3-3">Country pathway</a></td>
 </tr>
 <tr>
 <td align="left">Part 1. Foundations</td>
-<td align="left">4. Purpose and Role of a Registry</td>
-<td align="left">Definitions; Authoritative source; Health worker lifecycle; Strategic uses</td>
+<td align="left"><a href="#chap:ch04-purpose-and-role-of-a-registry">4. Purpose and Role of a Registry</a></td>
+<td align="left"><a href="#sec:4-1">Definitions</a>; <a href="#sec:4-2">Authoritative source</a>; <a href="#sec:4-3">Health worker lifecycle</a>; <a href="#sec:4-4">Strategic uses</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">5. User Personas and Use Cases</td>
-<td align="left">Personas; Priority use cases; User stories; Requirements derivation</td>
+<td align="left"><a href="#chap:ch05-user-personas-and-use-cases">5. User Personas and Use Cases</a></td>
+<td align="left"><a href="#sec:5-1">Personas</a>; <a href="#sec:5-2">Priority use cases</a>; <a href="#sec:5-3">User stories</a>; <a href="#sec:5-4">Requirements derivation</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">6. Governance and Stewardship</td>
-<td align="left">Institutions; Legal foundations; Data stewardship; Sustainability</td>
+<td align="left"><a href="#chap:ch06-governance-and-stewardship">6. Governance and Stewardship</a></td>
+<td align="left"><a href="#sec:6-1">Institutions</a>; <a href="#sec:6-2">Legal foundations</a>; <a href="#sec:6-3">Data stewardship</a>; <a href="#sec:6-4">Sustainability</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">7. Functional Requirements</td>
-<td align="left">Identity management; Records; Lifecycle management; Verification services; Analytics</td>
+<td align="left"><a href="#chap:ch07-functional-requirements">7. Functional Requirements</a></td>
+<td align="left"><a href="#sec:7-1">Identity management</a>; <a href="#sec:7-2">Records</a>; <a href="#sec:7-3">Lifecycle management</a>; <a href="#sec:7-4">Verification services</a>; <a href="#sec:7-5">Analytics</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">8. Digital Architecture Principles</td>
-<td align="left">Architecture patterns; Federation; Scalability; Technology neutrality</td>
+<td align="left"><a href="#chap:ch08-digital-architecture-principles">8. Digital Architecture Principles</a></td>
+<td align="left"><a href="#sec:8-1">Architecture patterns</a>; <a href="#sec:8-2">Federation</a>; <a href="#sec:8-3">Scalability</a>; <a href="#sec:8-4">Technology neutrality</a></td>
 </tr>
 <tr>
 <td align="left">Part 2. Technical Design</td>
-<td align="left">9. Registry within Ecosystem</td>
-<td align="left">System landscape; Data flows; Architecture examples</td>
+<td align="left"><a href="#chap:ch09-registry-within-ecosystem">9. Registry within Ecosystem</a></td>
+<td align="left"><a href="#sec:9-1">System landscape</a>; <a href="#sec:9-2">Data flows</a>; <a href="#sec:9-3">Architecture examples</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">10. Interoperability</td>
-<td align="left">Standards; APIs; Data exchange patterns; Governance</td>
+<td align="left"><a href="#chap:ch10-interoperability">10. Interoperability</a></td>
+<td align="left"><a href="#sec:10-1">Standards</a>; <a href="#sec:10-2">APIs</a>; <a href="#sec:10-3">Data exchange patterns</a>; <a href="#sec:10-4">Governance</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">11. Data Standards and Core Data Elements</td>
-<td align="left">Core dataset; Classifications; Metadata; NHWA mapping</td>
+<td align="left"><a href="#chap:ch11-data-standards-and-minimum-dataset">11. Data Standards and Minimum Dataset</a></td>
+<td align="left"><a href="#sec:11-1">Core dataset</a>; <a href="#sec:11-2">Classifications</a>; <a href="#sec:11-3">Metadata</a>; <a href="#sec:11-4">NHWA mapping</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">12. Privacy, Security and Trust</td>
-<td align="left">Privacy by design; Cybersecurity; Access control; Audit trails</td>
+<td align="left"><a href="#chap:ch12-privacy-security-and-trust">12. Privacy, Security and Trust</a></td>
+<td align="left"><a href="#sec:12-1">Privacy by design</a>; <a href="#sec:12-2">Cybersecurity</a>; <a href="#sec:12-3">Access control</a>; <a href="#sec:12-4">Audit trails</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">13. Data Quality Management</td>
-<td align="left">Quality dimensions; Validation; Monitoring</td>
+<td align="left"><a href="#chap:ch13-data-quality-management">13. Data Quality Management</a></td>
+<td align="left"><a href="#sec:13-1">Quality dimensions</a>; <a href="#sec:13-2">Validation</a>; <a href="#sec:13-3">Monitoring</a></td>
 </tr>
 <tr>
 <td align="left">Part 3.  Country Implementation</td>
-<td align="left">14. Preparing for Transformation</td>
-<td align="left">Leadership; Teams; Readiness; Stakeholder engagement</td>
+<td align="left"><a href="#chap:ch14-preparing-for-transformation">14. Preparing for Transformation</a></td>
+<td align="left"><a href="#sec:14-1">Leadership</a>; <a href="#sec:14-2">Teams</a>; <a href="#sec:14-3">Readiness</a>; <a href="#sec:14-4">Stakeholder engagement</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">15. Business Process Redesign</td>
-<td align="left">Current state mapping; Future workflows; Requirements</td>
+<td align="left"><a href="#chap:ch15-business-process-redesign">15. Business Process Redesign</a></td>
+<td align="left"><a href="#sec:15-1">Current state mapping</a>; <a href="#sec:15-2">Future workflows</a>; <a href="#sec:15-3">Requirements</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">16. Planning and Procurement</td>
-<td align="left">Options analysis; Procurement approaches; Risk management</td>
+<td align="left"><a href="#chap:ch16-planning-and-procurement">16. Planning and Procurement</a></td>
+<td align="left"><a href="#sec:16-1">Options analysis</a>; <a href="#sec:16-2">Procurement approaches</a>; <a href="#sec:16-3">Risk management</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">17. Implementation and Deployment</td>
-<td align="left">Migration; Testing; Rollout; Operations</td>
+<td align="left"><a href="#chap:ch17-implementation-and-deployment">17. Implementation and Deployment</a></td>
+<td align="left"><a href="#sec:17-1">Migration</a>; <a href="#sec:17-2">Testing</a>; <a href="#sec:17-3">Rollout</a>; <a href="#sec:17-4">Operations</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">18. Change Management</td>
-<td align="left">Communications; Adoption; Capacity strengthening</td>
+<td align="left"><a href="#chap:ch18-change-management">18. Change Management</a></td>
+<td align="left"><a href="#sec:18-1">Communications</a>; <a href="#sec:18-2">Adoption</a>; <a href="#sec:18-3">Capacity strengthening</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">19. Monitoring and Continuous Improvement</td>
-<td align="left">KPIs; Maturity; Evaluation</td>
+<td align="left"><a href="#chap:ch19-monitoring-and-continuous-improvement">19. Monitoring and Continuous Improvement</a></td>
+<td align="left"><a href="#sec:19-1">KPIs</a>; <a href="#sec:19-2">Maturity</a>; <a href="#sec:19-3">Evaluation</a></td>
 </tr>
 <tr>
 <td align="left">Part 4. Examples and Resources</td>
-<td align="left">20. Illustrative Use Cases</td>
-<td align="left">Licensing; Verification; Emergency response; Mobility</td>
+<td align="left"><a href="#chap:ch20-illustrative-use-cases">20. Illustrative Use Cases</a></td>
+<td align="left"><a href="#sec:20-1">Licensing</a>; <a href="#sec:20-2">Verification</a>; <a href="#sec:20-3">Emergency response</a>; <a href="#sec:20-4">Mobility</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">21. Country Case Studies</td>
-<td align="left">Centralized; Federated; Fragile settings; Lessons learned</td>
+<td align="left"><a href="#chap:ch21-country-case-studies">21. Country Case Studies</a></td>
+<td align="left"><a href="#sec:21-1">Centralized</a>; <a href="#sec:21-2">Federated</a>; <a href="#sec:21-3">Fragile settings</a>; <a href="#sec:21-4">Lessons learned</a></td>
 </tr>
 <tr>
 <td align="left"></td>
-<td align="left">22. Tools and Templates</td>
-<td align="left">Checklists; Roadmaps; Assessment tools</td>
+<td align="left"><a href="#chap:ch22-tools-and-templates">22. Tools and Templates</a></td>
+<td align="left"><a href="#sec:22-1">Checklists</a>; <a href="#sec:22-2">Roadmaps</a>; <a href="#sec:22-3">Assessment tools</a></td>
 </tr>
 <tr>
-<td align="left">Annexes</td>
-<td align="left">Core Data Elements (CDE-HRH); Data Dictionary; Governance Template; User Personas;  Functional Requirements Catalogue; Interoperability Models; Readiness Assessment; Maturity Model; Glossary; NHWA Mapping</td>
+<td align="left"><a href="#chap:annexes">Annexes</a></td>
+<td align="left"><a href="#sec:annex-1">Minimum Data Set</a>; <a href="#sec:annex-2">Data Dictionary</a>; <a href="#sec:annex-3">Governance Template</a>; <a href="#sec:annex-4">User Personas</a>; <a href="#sec:annex-5">Functional Requirements Catalogue</a>; <a href="#sec:annex-6">Interoperability Models</a>; <a href="#sec:annex-7">Readiness Assessment</a>; <a href="#sec:annex-8">Maturity Model</a>; <a href="#chap:glossary">Glossary</a>; <a href="#sec:annex-10">NHWA Mapping</a></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 <p><em>Handbook at a glance: parts, chapters and sections</em></p>
+</div>
 <p><a id="chap:ch01-why-digital-health-workforce-registries"></a></p>
 <h2>Chapter 1. Why Digital Health Workforce Registries Matter</h2>
 <p><a id="sec:ch01-lead"></a>
@@ -393,7 +406,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <h3>2.1 Included topics</h3>
 <p><a id="prose:ch02-included-topics"></a><span class="block-actions" data-block="prose:ch02-included-topics"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch02-scope-and-boundaries/p-ch02-included-topics.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch02-scope-and-boundaries/p-ch02-included-topics.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+2.1+Included+topics+%E2%80%94+prose%3Ach02-included-topics&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=2.1+Included+topics&amp;block=prose%3Ach02-included-topics&amp;source=folio%2Fdth-hrh%2Fch02-scope-and-boundaries%2Fp-ch02-included-topics.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
 <ul>
-<li>Purpose, governance, core data elements, functional requirements and architecture options for a registry.</li>
+<li>Purpose, governance, minimum data set, functional requirements and architecture options for a registry.</li>
 <li>Interoperability with regulators, employers, training institutions, the facility registry, identity systems and NHWA reporting.</li>
 <li>A phased country pathway from assessment to routine operation, for paper-based, partly digital and fully digital starting points.</li>
 </ul>
@@ -458,11 +471,14 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <li>It sits alongside the other WHO digital transformation handbooks (primary health care, health supply chain architecture, health product catalogue) and the SMART Guidelines approach.</li>
 <li>It gives the health workforce detail that the DPI-H reference architecture does not go into.</li>
 </ul>
+<div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:diig-phases"></a><span class="block-actions" data-block="fig:diig-phases"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch03-digital-transformation-approach/f-diig-phases.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch03-digital-transformation-approach/f-diig-phases.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+3.1+DIIG+alignment+%E2%80%94+fig%3Adiig-phases&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=3.1+DIIG+alignment&amp;block=fig%3Adiig-phases&amp;source=folio%2Fdth-hrh%2Fch03-digital-transformation-approach%2Ff-diig-phases.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Figure.</strong> <a href="#fig:diig-phases" class="block-anchor" aria-label="Link to Figure" title="Link to Figure"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/diig-phases-hrh.svg" alt="Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04"></p>
 <p><em>Source: adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, itself adapted from the 2020 WHO Digital implementation investment guide (DIIG), Fig. 1.1.1. Generated by the <code>diig-phases-svg</code> tool from the who-iris data for the product catalogue figure and this handbook's adaptation file; this handbook is added across phases 02–04 and marked "(this document)" in place of the product catalogue handbook.</em></p>
 <p><em>Planning and implementing a digital health enterprise: phases, steps and resources, with this handbook in phases 02–04 (adapted from the product catalogue handbook, Fig. 4, and DIIG Fig. 1.1.1)</em></p>
+</div>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:ch03-diig-mapping"></a><span class="block-actions" data-block="tbl:ch03-diig-mapping"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch03-digital-transformation-approach/t-ch03-diig-mapping.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+3.1+DIIG+alignment+%E2%80%94+tbl%3Ach03-diig-mapping&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=3.1+DIIG+alignment&amp;block=tbl%3Ach03-diig-mapping&amp;source=folio%2Fdth-hrh%2Fch03-digital-transformation-approach%2Ft-ch03-diig-mapping.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:ch03-diig-mapping" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -497,7 +513,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <tr>
 <td>6. Link to the enterprise architecture</td>
 <td>Assessment of the architecture; common and enabling components; investment linked to both</td>
-<td>Ch. 8 Digital architecture principles; Ch. 9 Registry within the ecosystem; Ch. 10 Interoperability; Ch. 11 Data standards and core data elements</td>
+<td>Ch. 8 Digital architecture principles; Ch. 9 Registry within the ecosystem; Ch. 10 Interoperability; Ch. 11 Data standards and minimum data set</td>
 </tr>
 <tr>
 <td>7. Develop a budget</td>
@@ -519,6 +535,7 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <p>DIIG chapter 1 (Introduction) corresponds to Part 0 of this handbook. Part 4 (Chapters 20–22: illustrative use cases, country case studies, tools and templates) supports every step. In the figure above (adapted from DIIG Fig. 1.1.1 by way of the product catalogue handbook), the DIIG spans phases 02–05, and this handbook sits across phases 02–04, adding the registry-specific detail within that span.</p>
 <p><em>Source for the DIIG chapters and their outputs: WHO, ITU and UN Foundation, Digital implementation investment guide (DIIG), 2020, as summarized in <code>smart-base/methodologies/diig.md</code>. The mapping is a proposal for the TWG.</em></p>
 <p><em>Handbook chapters mapped to the DIIG chapters (proposed, for TWG review)</em></p>
+</div>
 <p><a id="sec:3-2"></a></p>
 <h3>3.2 Transformation principles</h3>
 <p><a id="prose:ch03-transformation-principles"></a><span class="block-actions" data-block="prose:ch03-transformation-principles"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch03-digital-transformation-approach/p-ch03-transformation-principles.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch03-digital-transformation-approach/p-ch03-transformation-principles.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+3.2+Transformation+principles+%E2%80%94+prose%3Ach03-transformation-principles&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=3.2+Transformation+principles&amp;block=prose%3Ach03-transformation-principles&amp;source=folio%2Fdth-hrh%2Fch03-digital-transformation-approach%2Fp-ch03-transformation-principles.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
@@ -1707,34 +1724,40 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <strong>Functional-requirement.</strong> <em>Assign a unique, persistent health worker identifier, linked to the national…</em></p>
 <p><strong>FR-ID-01.</strong> Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.1 Identity management, word for word. The identifier FR-ID-01 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-ID-02"></a><span class="block-actions" data-block="freq:FR-ID-02"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-id-02.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-id-02.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.1+Identity+management+%E2%80%94+freq%3AFR-ID-02&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.1+Identity+management&amp;block=freq%3AFR-ID-02&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-id-02.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Search, match and merge duplicate records across source systems.</em></p>
 <p><strong>FR-ID-02.</strong> Search, match and merge duplicate records across source systems.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.1 Identity management, word for word. The identifier FR-ID-02 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-ID-03"></a><span class="block-actions" data-block="freq:FR-ID-03"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-id-03.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-id-03.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.1+Identity+management+%E2%80%94+freq%3AFR-ID-03&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.1+Identity+management&amp;block=freq%3AFR-ID-03&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-id-03.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Manage changes of name and other identity details over a career.</em></p>
 <p><strong>FR-ID-03.</strong> Manage changes of name and other identity details over a career.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.1 Identity management, word for word. The identifier FR-ID-03 was assigned by an agent and is not in the source.</p>
 <p><a id="sec:7-2"></a></p>
 <h3>7.2 Records</h3>
 <p><a id="prose:ch07-records"></a><span class="block-actions" data-block="prose:ch07-records"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/p-ch07-records.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/p-ch07-records.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.2+Records+%E2%80%94+prose%3Ach07-records&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.2+Records&amp;block=prose%3Ach07-records&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fp-ch07-records.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
 <ul>
-<li>Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH).</li>
+<li>Create, view, update and archive the health worker record in line with the minimum data set.</li>
 <li>Hold supporting evidence, such as certificates, or links to it.</li>
 <li>Record the source and date of each data item.</li>
 </ul>
 <p><a id="freq:FR-REC-01"></a><span class="block-actions" data-block="freq:FR-REC-01"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-rec-01.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-rec-01.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.2+Records+%E2%80%94+freq%3AFR-REC-01&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.2+Records&amp;block=freq%3AFR-REC-01&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-rec-01.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Create, view, update and archive the health worker record in line with the…</em></p>
-<p><strong>FR-REC-01.</strong> Create, view, update and archive the health worker record in line with the core data elements (CDE-HRH).</p>
+<p><strong>FR-REC-01.</strong> Create, view, update and archive the health worker record in line with the minimum data set.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.2 Records, word for word. The identifier FR-REC-01 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-REC-02"></a><span class="block-actions" data-block="freq:FR-REC-02"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-rec-02.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-rec-02.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.2+Records+%E2%80%94+freq%3AFR-REC-02&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.2+Records&amp;block=freq%3AFR-REC-02&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-rec-02.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Hold supporting evidence, such as certificates, or links to it.</em></p>
 <p><strong>FR-REC-02.</strong> Hold supporting evidence, such as certificates, or links to it.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.2 Records, word for word. The identifier FR-REC-02 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-REC-03"></a><span class="block-actions" data-block="freq:FR-REC-03"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-rec-03.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-rec-03.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.2+Records+%E2%80%94+freq%3AFR-REC-03&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.2+Records&amp;block=freq%3AFR-REC-03&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-rec-03.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Record the source and date of each data item.</em></p>
 <p><strong>FR-REC-03.</strong> Record the source and date of each data item.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.2 Records, word for word. The identifier FR-REC-03 was assigned by an agent and is not in the source.</p>
 <p><a id="sec:7-3"></a></p>
 <h3>7.3 Lifecycle management</h3>
 <p><a id="prose:ch07-lifecycle-management"></a><span class="block-actions" data-block="prose:ch07-lifecycle-management"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/p-ch07-lifecycle-management.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/p-ch07-lifecycle-management.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.3+Lifecycle+management+%E2%80%94+prose%3Ach07-lifecycle-management&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.3+Lifecycle+management&amp;block=prose%3Ach07-lifecycle-management&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fp-ch07-lifecycle-management.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
@@ -1747,14 +1770,17 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <strong>Functional-requirement.</strong> <em>Manage status changes: registered, licensed, suspended, lapsed, retired,…</em></p>
 <p><strong>FR-LC-01.</strong> Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.3 Lifecycle management, word for word. The identifier FR-LC-01 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-LC-02"></a><span class="block-actions" data-block="freq:FR-LC-02"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-lc-02.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-lc-02.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.3+Lifecycle+management+%E2%80%94+freq%3AFR-LC-02&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.3+Lifecycle+management&amp;block=freq%3AFR-LC-02&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-lc-02.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Support renewals, recording of continuing professional development, and…</em></p>
 <p><strong>FR-LC-02.</strong> Support renewals, recording of continuing professional development, and reminders.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.3 Lifecycle management, word for word. The identifier FR-LC-02 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-LC-03"></a><span class="block-actions" data-block="freq:FR-LC-03"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-lc-03.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-lc-03.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.3+Lifecycle+management+%E2%80%94+freq%3AFR-LC-03&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.3+Lifecycle+management&amp;block=freq%3AFR-LC-03&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-lc-03.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Record changes of employment and place of practice over time.</em></p>
 <p><strong>FR-LC-03.</strong> Record changes of employment and place of practice over time.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.3 Lifecycle management, word for word. The identifier FR-LC-03 was assigned by an agent and is not in the source.</p>
 <p><a id="sec:7-4"></a></p>
 <h3>7.4 Verification services</h3>
 <p><a id="prose:ch07-verification-services"></a><span class="block-actions" data-block="prose:ch07-verification-services"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/p-ch07-verification-services.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/p-ch07-verification-services.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.4+Verification+services+%E2%80%94+prose%3Ach07-verification-services&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.4+Verification+services&amp;block=prose%3Ach07-verification-services&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fp-ch07-verification-services.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
@@ -1767,14 +1793,17 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <strong>Functional-requirement.</strong> <em>Confirm registration and licence status in real time for employers, the…</em></p>
 <p><strong>FR-VER-01.</strong> Confirm registration and licence status in real time for employers, the public and other systems.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.4 Verification services, word for word. The identifier FR-VER-01 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-VER-02"></a><span class="block-actions" data-block="freq:FR-VER-02"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-ver-02.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-ver-02.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.4+Verification+services+%E2%80%94+freq%3AFR-VER-02&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.4+Verification+services&amp;block=freq%3AFR-VER-02&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-ver-02.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Issue digital, verifiable credentials or certificates (for example a…</em></p>
 <p><strong>FR-VER-02.</strong> Issue digital, verifiable credentials or certificates (for example a certificate of good standing).</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.4 Verification services, word for word. The identifier FR-VER-02 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-VER-03"></a><span class="block-actions" data-block="freq:FR-VER-03"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-ver-03.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-ver-03.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.4+Verification+services+%E2%80%94+freq%3AFR-VER-03&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.4+Verification+services&amp;block=freq%3AFR-VER-03&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-ver-03.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Respond to verification requests from other countries.</em></p>
 <p><strong>FR-VER-03.</strong> Respond to verification requests from other countries.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.4 Verification services, word for word. The identifier FR-VER-03 was assigned by an agent and is not in the source.</p>
 <p><a id="sec:7-5"></a></p>
 <h3>7.5 Analytics</h3>
 <p><a id="prose:ch07-analytics"></a><span class="block-actions" data-block="prose:ch07-analytics"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/p-ch07-analytics.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/p-ch07-analytics.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.5+Analytics+%E2%80%94+prose%3Ach07-analytics&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.5+Analytics&amp;block=prose%3Ach07-analytics&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fp-ch07-analytics.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
@@ -1787,14 +1816,17 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <strong>Functional-requirement.</strong> <em>Standard reports and dashboards on stock, distribution, age, sex, occupation…</em></p>
 <p><strong>FR-AN-01.</strong> Standard reports and dashboards on stock, distribution, age, sex, occupation and status.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.5 Analytics, word for word. The identifier FR-AN-01 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-AN-02"></a><span class="block-actions" data-block="freq:FR-AN-02"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-an-02.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-an-02.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.5+Analytics+%E2%80%94+freq%3AFR-AN-02&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.5+Analytics&amp;block=freq%3AFR-AN-02&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-an-02.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Data extracts for NHWA and national planning.</em></p>
 <p><strong>FR-AN-02.</strong> Data extracts for NHWA and national planning.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.5 Analytics, word for word. The identifier FR-AN-02 was assigned by an agent and is not in the source.</p>
 <p><a id="freq:FR-AN-03"></a><span class="block-actions" data-block="freq:FR-AN-03"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/fr-an-03.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/fr-an-03.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.5+Analytics+%E2%80%94+freq%3AFR-AN-03&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.5+Analytics&amp;block=freq%3AFR-AN-03&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ffr-an-03.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Functional-requirement.</strong> <em>Data quality reports for registry managers.</em></p>
 <p><strong>FR-AN-03.</strong> Data quality reports for registry managers.</p>
 <p><em>Priority:</em> to be set (must / should / could). <em>Linked use cases:</em> to be traced.</p>
+<p><em>Source:</em> the TWG outline (L1, twg-outline-2026-10-02), section 7.5 Analytics, word for word. The identifier FR-AN-03 was assigned by an agent and is not in the source.</p>
 <p><a id="sec:7-nfr"></a></p>
 <h3>Non-functional requirements</h3>
 <p><a id="prose:ch07-nfr-intro"></a><span class="block-actions" data-block="prose:ch07-nfr-intro"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/p-ch07-nfr-intro.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/p-ch07-nfr-intro.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Non-functional+requirements+%E2%80%94+prose%3Ach07-nfr-intro&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Non-functional+requirements&amp;block=prose%3Ach07-nfr-intro&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Fp-ch07-nfr-intro.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
@@ -2043,12 +2075,12 @@ Non-functional requirements matter as much as functions. The initial set, from t
 <li>A procedure for connecting new systems.</li>
 </ul>
 <p><a id="chap:ch11-data-standards-and-minimum-dataset"></a></p>
-<h2>Chapter 11. Data Standards and Core Data Elements</h2>
+<h2>Chapter 11. Data Standards and Minimum Dataset</h2>
 <p><a id="sec:ch11-lead"></a>
 <a id="prose:ch11-objectives"></a><span class="block-actions" data-block="prose:ch11-objectives"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-objectives.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-objectives.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Objectives+and+key+messages+%E2%80%94+prose%3Ach11-objectives&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Objectives+and+key+messages&amp;block=prose%3Ach11-objectives&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fp-ch11-objectives.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Chapter objectives.</strong> This chapter will help readers to:</p>
 <ul>
-<li>Present the core data elements for a health workforce registry (CDE-HRH) and the reason for each element.</li>
+<li>Present a minimum data set for a health workforce registry and the reason for each element.</li>
 <li>Identify the classifications and code lists that make data comparable.</li>
 <li>Show how registry data map to NHWA indicators.</li>
 </ul>
@@ -2056,7 +2088,7 @@ Non-functional requirements matter as much as functions. The initial set, from t
 <strong>Key messages</strong></p>
 <ul>
 <li>Collect only what is needed, define it precisely, and keep it up to date.</li>
-<li>The core data elements are a floor, not a ceiling. Countries can extend them.</li>
+<li>The minimum data set is a floor, not a ceiling. Countries can extend it.</li>
 <li>International classifications allow comparison across institutions and countries.</li>
 <li>A well-designed registry can produce many NHWA indicators as a by-product of routine operation.</li>
 </ul>
@@ -2064,8 +2096,8 @@ Non-functional requirements matter as much as functions. The initial set, from t
 <h3>11.1 Core dataset</h3>
 <p><a id="prose:ch11-core-dataset"></a><span class="block-actions" data-block="prose:ch11-core-dataset"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+11.1+Core+dataset+%E2%80%94+prose%3Ach11-core-dataset&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=11.1+Core+dataset&amp;block=prose%3Ach11-core-dataset&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fp-ch11-core-dataset.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
 <ul>
-<li>The WHO 2015 minimum data set as a source of inspiration: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.</li>
-<li>Further elements to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.</li>
+<li>The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.</li>
+<li>Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.</li>
 <li>For each element: definition, format, whether mandatory, source and sensitivity.</li>
 </ul>
 <p><a id="de:mds-identification-number"></a><span class="block-actions" data-block="de:mds-identification-number"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/de-identification-number.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/de-identification-number.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+11.1+Core+dataset+%E2%80%94+de%3Amds-identification-number&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=11.1+Core+dataset&amp;block=de%3Amds-identification-number&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fde-identification-number.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
@@ -2347,21 +2379,21 @@ Non-functional requirements matter as much as functions. The initial set, from t
 <p><a id="prose:ch11-figures"></a><span class="block-actions" data-block="prose:ch11-figures"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-figures.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-figures.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Figures%2C+tools+and+expected+outputs+%E2%80%94+prose%3Ach11-figures&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Figures%2C+tools+and+expected+outputs&amp;block=prose%3Ach11-figures&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fp-ch11-figures.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Suggested figures and tables</strong></p>
 <ul>
-<li>Table: core data elements (CDE-HRH).</li>
+<li>Table: minimum data set.</li>
 <li>Figure: logical data model (health worker, qualification, licence, role, facility).</li>
 <li>Table: registry data elements mapped to NHWA indicators.</li>
 </ul>
 <p><a id="prose:ch11-tools"></a><span class="block-actions" data-block="prose:ch11-tools"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-tools.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-tools.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Figures%2C+tools+and+expected+outputs+%E2%80%94+prose%3Ach11-tools&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Figures%2C+tools+and+expected+outputs&amp;block=prose%3Ach11-tools&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fp-ch11-tools.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Implementation tools and checklists</strong></p>
 <ul>
-<li>Core data elements (annex) and data dictionary (annex).</li>
+<li>Minimum data set (annex) and data dictionary (annex).</li>
 <li>Template for mapping national occupational titles to ISCO-08.</li>
 <li>NHWA mapping (annex).</li>
 </ul>
 <p><a id="prose:ch11-outputs"></a><span class="block-actions" data-block="prose:ch11-outputs"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-outputs.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-outputs.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Figures%2C+tools+and+expected+outputs+%E2%80%94+prose%3Ach11-outputs&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Figures%2C+tools+and+expected+outputs&amp;block=prose%3Ach11-outputs&amp;source=folio%2Fdth-hrh%2Fch11-data-standards-and-minimum-dataset%2Fp-ch11-outputs.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Expected outputs for countries</strong></p>
 <ul>
-<li>A national set of core data elements and a data dictionary.</li>
+<li>A national minimum data set and data dictionary.</li>
 <li>National occupational titles mapped to ISCO-08.</li>
 <li>A list of the NHWA indicators that the registry will supply.</li>
 </ul>
@@ -3120,10 +3152,9 @@ Non-functional requirements matter as much as functions. The initial set, from t
 <a id="prose:annexes"></a><span class="block-actions" data-block="prose:annexes"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/annexes/p-annexes.md" title="Edit this block's source on GitHub (folio/dth-hrh/annexes/p-annexes.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Annexes+%E2%80%94+prose%3Aannexes&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Annexes&amp;block=prose%3Aannexes&amp;source=folio%2Fdth-hrh%2Fannexes%2Fp-annexes.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 The annexes hold the full versions of the tools, templates and reference material the chapters point to. Annex 9 (Glossary) is its own chapter.</p>
 <p><a id="sec:annex-1"></a></p>
-<h3>Annex 1. Core Data Elements (CDE-HRH)</h3>
-<p><a id="prose:annex-1"></a><span class="block-actions" data-block="prose:annex-1"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/annexes/p-annex-1.md" title="Edit this block's source on GitHub (folio/dth-hrh/annexes/p-annex-1.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Annex+1.+Core+Data+Elements+%28CDE-HRH%29+%E2%80%94+prose%3Aannex-1&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Annex+1.+Core+Data+Elements+%28CDE-HRH%29&amp;block=prose%3Aannex-1&amp;source=folio%2Fdth-hrh%2Fannexes%2Fp-annex-1.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-Proposed core and optional data elements with definitions: the core data elements for a health workforce registry (CDE-HRH). CDE-HRH takes inspiration from the WHO 2015 minimum data set.</p>
-<p>This handbook uses "core data elements" and CDE-HRH rather than "minimum data set" or MDS-HRH, because the older term has caused confusion and is not precise. The title of the WHO 2015 publication is cited as published.</p>
+<h3>Annex 1. Minimum Data Set</h3>
+<p><a id="prose:annex-1"></a><span class="block-actions" data-block="prose:annex-1"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/annexes/p-annex-1.md" title="Edit this block's source on GitHub (folio/dth-hrh/annexes/p-annex-1.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Annex+1.+Minimum+Data+Set+%E2%80%94+prose%3Aannex-1&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Annex+1.+Minimum+Data+Set&amp;block=prose%3Aannex-1&amp;source=folio%2Fdth-hrh%2Fannexes%2Fp-annex-1.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
+Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set.</p>
 <p>The 2015 elements are drafted as structured data-element blocks in section 11.1.</p>
 <p><a id="sec:annex-2"></a></p>
 <h3>Annex 2. Data Dictionary</h3>
@@ -3237,6 +3268,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <blockquote>
 <p>"A health worker registry is a centralized listing of health workers within a country. Information contained within a health worker registry most often comes from different health management information systems (HMIS), such as iHRIS, used, for example, by independent organizations, health clinics run by non-state actors or regulatory bodies. These client systems are often organized around specific workflows revolving around human resources (hiring a new health worker, providing a salary bonus, transferring a health worker to a new location), but the health worker registry may contain only specific information about health workers."</p>
 </blockquote>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:compare-health-workforce-registry"></a><span class="block-actions" data-block="tbl:compare-health-workforce-registry"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-health-workforce-registry.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-health-workforce-registry.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-health-workforce-registry&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-health-workforce-registry&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-health-workforce-registry.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:compare-health-workforce-registry" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -3324,6 +3356,7 @@ Table linking registry data elements to NHWA indicators.</p>
 </tbody>
 </table>
 <p><em>Health workforce registry: candidate definitions side by side (opening sentence of each)</em></p>
+</div>
 <p><a id="prose:gloss-human-resources-for-health-information-system"></a><span class="block-actions" data-block="prose:gloss-human-resources-for-health-information-system"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/g-human-resources-for-health-information-system.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/g-human-resources-for-health-information-system.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+prose%3Agloss-human-resources-for-health-information-system&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=prose%3Agloss-human-resources-for-health-information-system&amp;source=folio%2Fdth-hrh%2Fglossary%2Fg-human-resources-for-health-information-system.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Human resources for health information system.</strong></p>
 <p><em>Also:</em> HRH-IS, Health workforce information system, human resources information systems for health, HRIS, HRHIS, Information Systems for Human Resources for Health (ISHRH).</p>
@@ -3376,6 +3409,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <blockquote>
 <p>A human resource for health information system (HRHIS), also known as human resource information system (HRIS) — is a system for collecting, processing, managing and disseminating data and information on human resource for health (HRH). Depending on the level of development of a country's health care system and the organization of its workforce, an HRHIS can be computerized or paper-based, including information on numbers and distribution of health workers and track their career information.[1]</p>
 </blockquote>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:compare-human-resources-for-health-information-system"></a><span class="block-actions" data-block="tbl:compare-human-resources-for-health-information-system"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-human-resources-for-health-information-system.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-human-resources-for-health-information-system.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-human-resources-for-health-information-system&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-human-resources-for-health-information-system&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-human-resources-for-health-information-system.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:compare-human-resources-for-health-information-system" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -3463,6 +3497,7 @@ Table linking registry data elements to NHWA indicators.</p>
 </tbody>
 </table>
 <p><em>Human resources for health information system: candidate definitions side by side (opening sentence of each)</em></p>
+</div>
 <p><a id="prose:gloss-professional-council"></a><span class="block-actions" data-block="prose:gloss-professional-council"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/g-professional-council.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/g-professional-council.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+prose%3Agloss-professional-council&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=prose%3Agloss-professional-council&amp;source=folio%2Fdth-hrh%2Fglossary%2Fg-professional-council.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Professional council.</strong></p>
 <p><em>Also:</em> professional regulatory/licensing authority/body, medical council/board, nursing council/board.</p>
@@ -3476,6 +3511,7 @@ Table linking registry data elements to NHWA indicators.</p>
 <p>A national, legislatively mandated entity that certifies one or more cadres of health workers as meeting predetermined professional requirements and standards of practice.</p>
 </blockquote>
 <p>Country examples are listed in the section <em>Professional councils: country examples</em>.</p>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:compare-professional-council"></a><span class="block-actions" data-block="tbl:compare-professional-council"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-compare-professional-council.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-compare-professional-council.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Priority+terms+for+TWG+agreement+%E2%80%94+tbl%3Acompare-professional-council&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Priority+terms+for+TWG+agreement&amp;block=tbl%3Acompare-professional-council&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-compare-professional-council.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:compare-professional-council" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -3503,6 +3539,7 @@ Table linking registry data elements to NHWA indicators.</p>
 </tbody>
 </table>
 <p><em>Professional council: candidate definitions side by side (opening sentence of each)</em></p>
+</div>
 <p><a id="sec:glossary-terms"></a></p>
 <h3>Health workforce terms</h3>
 <p><a id="prose:gloss-accreditation"></a><span class="block-actions" data-block="prose:gloss-accreditation"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/g-accreditation.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/g-accreditation.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Health+workforce+terms+%E2%80%94+prose%3Agloss-accreditation&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Health+workforce+terms&amp;block=prose%3Agloss-accreditation&amp;source=folio%2Fdth-hrh%2Fglossary%2Fg-accreditation.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
@@ -3939,6 +3976,7 @@ Table linking registry data elements to NHWA indicators.</p>
 </blockquote>
 <p><a id="sec:glossary-councils"></a></p>
 <h3>Professional councils: country examples</h3>
+<div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:professional-council-examples"></a><span class="block-actions" data-block="tbl:professional-council-examples"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/glossary/t-professional-council-examples.md" title="Edit this block's source on GitHub (folio/dth-hrh/glossary/t-professional-council-examples.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+Professional+councils%3A+country+examples+%E2%80%94+tbl%3Aprofessional-council-examples&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=Professional+councils%3A+country+examples&amp;block=tbl%3Aprofessional-council-examples&amp;source=folio%2Fdth-hrh%2Fglossary%2Ft-professional-council-examples.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Table.</strong> <a href="#tbl:professional-council-examples" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <table>
@@ -4368,12 +4406,13 @@ Table linking registry data elements to NHWA indicators.</p>
 </tbody>
 </table>
 <p><em>Professional councils and boards: statutory definitions and mandates (AI generated in the workbook, then fact-checked; see the Checked column)</em></p>
+</div>
 <p><a id="chap:references"></a></p>
 <h2>References</h2>
 <p><a id="sec:references-lead"></a>
 <a id="prose:references"></a><span class="block-actions" data-block="prose:references"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/references/p-references.md" title="Edit this block's source on GitHub (folio/dth-hrh/references/p-references.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+References+%E2%80%94+prose%3Areferences&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=References&amp;block=prose%3Areferences&amp;source=folio%2Fdth-hrh%2Freferences%2Fp-references.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span></p>
 <ul>
-<li>WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. <a href="https://www.who.int/publications/i/item/9789241549226">https://www.who.int/publications/i/item/9789241549226</a></li>
+<li>WHO. Human resources for health information system: minimum data set for health workforce registry. 2015.</li>
 <li>WHO. Global strategy on human resources for health: Workforce 2030. 2016.</li>
 <li>WHO. National health workforce accounts: a handbook, second edition. 2023.</li>
 <li>WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010.</li>
@@ -5135,9 +5174,21 @@ Table linking registry data elements to NHWA indicators.</p>
 })();
 </script>
 <style>
-  .pc-note { border-left:4px solid var(--link,#0b5cad); margin:.4rem 0 .8rem; padding:.2rem .7rem; font-size:.9rem; background:color-mix(in srgb, currentColor 4%, transparent); }
-  .pc-note summary { cursor:pointer; font-weight:600; }
-  .pc-note ul { margin:.3rem 0; padding-left:1.1rem; }
+  /* Owner, 2026-11-01 (Q-STY-2): a block's comments are a 💬 icon among its
+     controls (cat-harness-tools' block panel), its list a pane that slides
+     out from the right. Without the panel runtime the note pops over the
+     text from the same right-hand box instead. */
+  .block-actions { position:relative; float:right; margin-left:.6rem; font-size:.75rem; white-space:nowrap; opacity:.55; }
+  .block-actions:hover, .block-actions:focus-within, .block-actions:has(.pc-note[open]) { opacity:1; }
+  .pc-note { display:inline-block; position:relative; margin:0; padding:0; font-size:inherit; }
+  .pc-note > summary { cursor:pointer; list-style:none; padding:0 .3rem; border-radius:4px; }
+  .pc-note > summary::-webkit-details-marker { display:none; }
+  .pc-note[open] > summary { background:var(--link,#0b5cad); color:#fff; }
+  .pc-note > ul { position:absolute; right:0; top:1.7em; z-index:20; width:min(24rem,80vw); margin:0; padding:.5rem .8rem .5rem 1.8rem;
+    white-space:normal; text-align:left; font-size:.85rem; line-height:1.45; background:var(--bg,#fff); color:var(--fg,inherit);
+    border:1px solid #8886; border-radius:8px; box-shadow:0 8px 24px #0003; }
+  .fa-block-panel .pc-list { margin:0; padding-left:1.1rem; }
+  .fa-block-panel .pc-list li { margin:.45rem 0; }
   .pc-bar { position:sticky; top:0; z-index:1; padding:.4rem 0; background:var(--bg,#fdfdfb); border-bottom:1px solid #8884; margin-bottom:1rem; }
 </style>
 <script type="application/json" id="pc-data">{"head":{"prose:gloss-health-workforce-registry":{"n":1,"o":1,"s":["CS-001"]},"prose:gloss-human-resources-for-health-information-system":{"n":1,"o":1,"s":["CS-002"]},"prose:gloss-professional-council":{"n":1,"o":1,"s":["CS-003"]}},"lists":{"prose:gloss-health-workforce-registry":[{"ref":"PC-0001","status":"triaged","phase":"open","type":"technical","summary":"We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…","sets":["CS-001"]}],"prose:gloss-human-resources-for-health-information-system":[{"ref":"PC-0002","status":"triaged","phase":"open","type":"technical","summary":"Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…","sets":["CS-002"]}],"prose:gloss-professional-council":[{"ref":"PC-0003","status":"triaged","phase":"open","type":"technical","summary":"Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …","sets":["CS-003"]}]},"url":null}</script>
@@ -5165,11 +5216,24 @@ Table linking registry data elements to NHWA indicators.</p>
     const a = document.getElementById(label);
     if (!a) return;
     const host = a.parentElement && a.parentElement.tagName === "P" && a.parentElement.textContent.trim() === "" ? a.parentElement : a;
+    // Into the block's control box first; a block with no box gets one, so
+    // every block's controls look the same.
+    let acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    if (!acts) {
+      acts = document.createElement("span");
+      acts.className = "block-actions";
+      acts.dataset.block = label;
+      host.after(acts);
+    }
+    discussed(acts, h);
+    const bp = panel();
+    if (bp) { bp.icon(acts, "comments", h.n); return; }
     const d = document.createElement("details");
     d.className = "pc-note";
     const n = h.o;
     const sum = document.createElement("summary");
-    sum.textContent = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? " (" + n + " open)" : "");
+    sum.textContent = "💬 " + h.n + (n ? " (" + n + " open)" : "");
+    sum.title = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? ", " + n + " open" : "");
     d.append(sum);
     d.addEventListener("toggle", () => {
       if (!d.open || d.dataset.built) return;
@@ -5179,10 +5243,11 @@ Table linking registry data elements to NHWA indicators.</p>
       d.append(ul);
       listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
     });
-    host.after(d);
-    // Beside the block's [feedback]: the issues where its change-sets are
-    // already being discussed, so a reader joins rather than duplicates.
-    const acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    acts.prepend(d);
+  };
+  // Beside the block's [feedback]: the issues where its change-sets are
+  // already being discussed, so a reader joins rather than duplicates.
+  const discussed = (acts, h) => {
     const nums = [...new Set(h.s.map((id) => meta.issues[id]).filter(Boolean))];
     if (acts && meta.repo && nums.length) {
       const s = document.createElement("span");
@@ -5191,6 +5256,28 @@ Table linking registry data elements to NHWA indicators.</p>
       acts.append(s);
     }
   };
+  // The block panel's comments pane, registered once the runtime is there.
+  let bpReady = false;
+  const panel = () => {
+    const bp = window.faBlockPanel;
+    if (!bp || bpReady) return bp;
+    bpReady = true;
+    bp.pane("comments", { icon: "💬", title: "Public comments", render: (label, body) => {
+      const h = data[label] || { n: 0, o: 0 };
+      const sum = document.createElement("p");
+      sum.innerHTML = h.n + " comment" + (h.n === 1 ? "" : "s") + (h.o ? ", " + h.o + " open" : "") + " \u00b7 <a href=\"" + esc(meta.dashboard) + "\">all public comments</a>";
+      const ul = document.createElement("ul");
+      ul.className = "pc-list";
+      ul.innerHTML = "<li>Loading…</li>";
+      body.append(sum, ul);
+      listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
+    } });
+    return bp;
+  };
+  // A popped-over list closes on a click elsewhere or on Escape.
+  const shut = (keep) => document.querySelectorAll(".pc-note[open]").forEach((d) => { if (d !== keep) d.open = false; });
+  document.addEventListener("click", (e) => shut(e.target.closest && e.target.closest(".pc-note")));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") shut(null); });
   const entries = Object.entries(data);
   let total = 0, open = 0;
   for (const [, h] of entries) { total += h.n; open += h.o; }
@@ -5199,7 +5286,7 @@ Table linking registry data elements to NHWA indicators.</p>
   const batch = (deadline) => {
     do { if (i >= entries.length) break; note(entries[i][0], entries[i][1]); i++; } while (deadline.timeRemaining() > 2 || i % 40 !== 0);
     if (i < entries.length) idle(batch);
-    else if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    else if (location.hash.length > 1) { try { document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({ behavior: "instant" }); } catch {} }
   };
   idle(batch);
   const bar = document.createElement("div");

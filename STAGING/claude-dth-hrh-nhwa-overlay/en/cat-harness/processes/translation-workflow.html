@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=efc3ff00381f">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -640,12 +640,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=4ad730d1fc0c" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../assets/js/edit-links.js?v=77765b74438b" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="cat-harness">
+  /* Grumpy cyborg agents, the theme of cat-harness. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../assets/img/harness/landing-grumpy-cyborg-agents-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -941,17 +1027,17 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="translation-workflow.tasks.json">
 <img src="../../../assets/img/workflows/translation-workflow.svg" alt="BPMN diagram: Translation Workflow" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_PotExtract" style="left:11.33%;top:53.54%" aria-expanded="false" aria-label="About step: Extract translatable strings (POT generation)" title="About: Extract translatable strings (POT generation)">i</button>
-<button type="button" class="pt-mark" data-task="Task_Translate" style="left:20.04%;top:53.54%" aria-expanded="false" aria-label="About step: Produce translation (PO file)" title="About: Produce translation (PO file)">i</button>
-<button type="button" class="pt-mark" data-task="Task_PoInject" style="left:28.76%;top:53.54%" aria-expanded="false" aria-label="About step: Inject translations (PO → Markdown)" title="About: Inject translations (PO → Markdown)">i</button>
-<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:37.47%;top:53.54%" aria-expanded="false" aria-label="About step: Round-trip translation QA (back-translate)" title="About: Round-trip translation QA (back-translate)">i</button>
-<a class="pt-go" href="adjudication.html" style="left:44.88%;top:25.25%;width:6.1%;height:16.16%" aria-label="Open subprocess: Adjudicate flagged passage (human reviewer)" title="Open subprocess: Adjudicate flagged passage (human reviewer)"></a>
-<button type="button" class="pt-mark" data-task="Task_Adjudicate" style="left:50.98%;top:25.25%" aria-expanded="false" aria-label="About step: Adjudicate flagged passage (human reviewer)" title="About: Adjudicate flagged passage (human reviewer)">i</button>
-<button type="button" class="pt-mark" data-task="Task_EditTranslation" style="left:57.3%;top:1.01%" aria-expanded="false" aria-label="About step: Edit the flagged passage and re-inject" title="About: Edit the flagged passage and re-inject">i</button>
-<button type="button" class="pt-mark" data-task="Task_WriteUnofficial" style="left:64.05%;top:53.54%" aria-expanded="false" aria-label="About step: Write status.json (unofficial)" title="About: Write status.json (unofficial)">i</button>
-<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:77.56%;top:53.54%" aria-expanded="false" aria-label="About step: Sign off translation (human adjudicator)" title="About: Sign off translation (human adjudicator)">i</button>
-<button type="button" class="pt-mark" data-task="Task_WriteOfficial" style="left:86.27%;top:53.54%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
-<button type="button" class="pt-mark" data-task="Task_StalenessCheck" style="left:94.99%;top:53.54%" aria-expanded="false" aria-label="About step: Check staleness (source hash)" title="About: Check staleness (source hash)">i</button>
+<button type="button" class="pt-mark" data-task="Task_PotExtract" style="left:11.4%;top:54.38%" aria-expanded="false" aria-label="About step: Extract translatable strings (POT generation)" title="About: Extract translatable strings (POT generation)">i</button>
+<button type="button" class="pt-mark" data-task="Task_Translate" style="left:18.92%;top:56.62%" aria-expanded="false" aria-label="About step: Produce translation (PO file)" title="About: Produce translation (PO file)">i</button>
+<button type="button" class="pt-mark" data-task="Task_PoInject" style="left:28.11%;top:56.62%" aria-expanded="false" aria-label="About step: Inject translations (PO → Markdown)" title="About: Inject translations (PO → Markdown)">i</button>
+<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:37.3%;top:54.38%" aria-expanded="false" aria-label="About step: Round-trip translation QA (back-translate)" title="About: Round-trip translation QA (back-translate)">i</button>
+<a class="pt-go" href="adjudication.html" style="left:42.73%;top:25.32%;width:7.52%;height:19.87%" aria-label="Open subprocess: Adjudicate flagged passage (human reviewer)" title="Open subprocess: Adjudicate flagged passage (human reviewer)"></a>
+<button type="button" class="pt-mark" data-task="Task_Adjudicate" style="left:50.25%;top:25.32%" aria-expanded="false" aria-label="About step: Adjudicate flagged passage (human reviewer)" title="About: Adjudicate flagged passage (human reviewer)">i</button>
+<button type="button" class="pt-mark" data-task="Task_EditTranslation" style="left:57.98%;top:1.07%" aria-expanded="false" aria-label="About step: Edit the flagged passage and re-inject" title="About: Edit the flagged passage and re-inject">i</button>
+<button type="button" class="pt-mark" data-task="Task_WriteUnofficial" style="left:66.12%;top:56.62%" aria-expanded="false" aria-label="About step: Write status.json (unofficial)" title="About: Write status.json (unofficial)">i</button>
+<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:78.24%;top:56.62%" aria-expanded="false" aria-label="About step: Sign off translation (human adjudicator)" title="About: Sign off translation (human adjudicator)">i</button>
+<button type="button" class="pt-mark" data-task="Task_WriteOfficial" style="left:87.43%;top:56.62%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
+<button type="button" class="pt-mark" data-task="Task_StalenessCheck" style="left:96.62%;top:56.62%" aria-expanded="false" aria-label="About step: Check staleness (source hash)" title="About: Check staleness (source hash)">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>
@@ -1182,8 +1268,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Extract translatable strings (POT generation)</strong><br /><code class="language-plaintext highlighter-rouge">Task_PotExtract</code></td>
       <td>Agent / platform (automated)</td>
-      <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
-      <td>Scans content nodes and extracts translatable strings<br />to .pot files. Excludes math, labels, code, and Lean companions.<br />Tool: translation_extract MCP tool or bun run content/pipeline/pot-extract.ts</td>
+      <td>shared step <code class="language-plaintext highlighter-rouge">GT_ExtractPot</code><br /><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
+      <td>Scan the source content and write the translatable strings to .pot files at the configured granularity: segment prose by paragraph, shield what must not be translated (math, code, labels, Lean companions) as placeholders, normalise whitespace, and extract metadata such as titles, alt text and captions. Tool: the translation_extract MCP tool, or bun run content/pipeline/pot-extract.ts.</td>
     </tr>
     <tr>
       <td><strong>Produce translation (PO file)</strong><br /><code class="language-plaintext highlighter-rouge">Task_Translate</code></td>
@@ -1194,14 +1280,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Inject translations (PO → Markdown)</strong><br /><code class="language-plaintext highlighter-rouge">Task_PoInject</code></td>
       <td>Agent / platform (automated)</td>
-      <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
-      <td>Reads .po file and source .md, substitutes msgstr for<br />msgid, preserves non-translatable elements, writes translated .md to<br />translations/&lt;locale&gt;/block.md.<br />Tool: translation_inject MCP tool or bun run content/pipeline/po-inject.ts</td>
+      <td>shared step <code class="language-plaintext highlighter-rouge">GT_InjectPo</code><br /><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
+      <td>Read the .po file and the source .md, substitute msgstr for msgid, unshield the placeholders, and write the translated .md to translations/&lt;locale&gt;/. Check structure (paragraph count, heading levels) and completeness (no empty msgstr), and lint (doubled punctuation, orphaned placeholders). Tool: the translation_inject MCP tool, or bun run content/pipeline/po-inject.ts.</td>
     </tr>
     <tr>
       <td><strong>Round-trip translation QA (back-translate)</strong><br /><code class="language-plaintext highlighter-rouge">Task_RoundTripQA</code></td>
       <td>Agent / platform (automated)</td>
-      <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
-      <td>Bean: folio-assistant-ktt2<br />Back-translates the target-language .md into the source language and<br />compares meaning with the original. Detects semantic drift and<br />terminology misses that a forward-only fluency check cannot see.<br />Tool: translation_validate MCP tool</td>
+      <td>shared step <code class="language-plaintext highlighter-rouge">GT_RoundTripQa</code><br /><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
+      <td>Back-translate the target-language .md into the source language and compare the meaning with the original (bean folio-assistant-ktt2). It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool.</td>
     </tr>
     <tr>
       <td><strong>Adjudicate flagged passage (human reviewer)</strong><br /><code class="language-plaintext highlighter-rouge">Task_Adjudicate</code></td>
@@ -1218,8 +1304,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Write status.json (unofficial)</strong><br /><code class="language-plaintext highlighter-rouge">Task_WriteUnofficial</code></td>
       <td>Agent / platform (automated)</td>
-      <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
-      <td>Records the translation as unofficial in<br />translations/&lt;locale&gt;/status.json:<br />{ official: false, generatedBy: “…”, generatedAt: “…” }<br />The translation is usable but carries a visible warning badge.</td>
+      <td>shared step <code class="language-plaintext highlighter-rouge">GT_WriteTranslationStatus</code> (official = <code class="language-plaintext highlighter-rouge">false</code>)<br /><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
+      <td>Record the translation’s standing in translations/&lt;locale&gt;/status.json. The <code class="language-plaintext highlighter-rouge">official</code> input says which: <code class="language-plaintext highlighter-rouge">false</code> records it as unofficial ({ official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code class="language-plaintext highlighter-rouge">true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</td>
     </tr>
     <tr>
       <td><strong>Sign off translation (human adjudicator)</strong><br /><code class="language-plaintext highlighter-rouge">Task_Signoff</code></td>
@@ -1230,8 +1316,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Write status.json (official)</strong><br /><code class="language-plaintext highlighter-rouge">Task_WriteOfficial</code></td>
       <td>Agent / platform (automated)</td>
-      <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
-      <td>Records the sign-off with the SHA-256 of the source<br />.md, enabling staleness detection on future source changes.</td>
+      <td>shared step <code class="language-plaintext highlighter-rouge">GT_WriteTranslationStatus</code> (official = <code class="language-plaintext highlighter-rouge">true</code>)<br /><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
+      <td>Record the translation’s standing in translations/&lt;locale&gt;/status.json. The <code class="language-plaintext highlighter-rouge">official</code> input says which: <code class="language-plaintext highlighter-rouge">false</code> records it as unofficial ({ official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code class="language-plaintext highlighter-rouge">true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</td>
     </tr>
     <tr>
       <td><strong>Check staleness (source hash)</strong><br /><code class="language-plaintext highlighter-rouge">Task_StalenessCheck</code></td>

@@ -13953,7 +13953,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Block kinds this renderer is the DEFAULT for, from `BLOCK_KINDS`. `*` is the fallback, and exactly one renderer carries it. {@link STRUCTURED} is any block with structured sides, and comes before its kind. Two renderers may list the same kind: order is preference, and the page takes the first one that can run on the block. A test holds every other entry to a kind that exists, so a renamed kind cannot silently lose its default."
+          "@value": "Block kinds this renderer is the DEFAULT for, from `BLOCK_KINDS`. `*` is the fallback, and exactly one renderer carries it. {@link STRUCTURED} is any block with structured sides, and comes after its kind and `*`: it is chosen only when those cannot run on the block. Two renderers may list the same kind: order is preference, and the page takes the first one that can run on the block. A test holds every other entry to a kind that exists, so a renamed kind cannot silently lose its default."
         }
       ],
       "dcterms:source": "cat-harness-tools/schemas/ui/diff-renderers.ts#DiffRendererSchema.defaultFor",
@@ -20686,6 +20686,44 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/ingest-candidates.ingestcandidateschema.aspect",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "IngestCandidateSchema.aspect"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The aspect that proposed it; absent for a class extractor's or a hand-written candidate."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/library/ingest-candidates.ts#IngestCandidateSchema.aspect",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/ingest-candidates.ingestcandidateschema.number",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "IngestCandidateSchema.number"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The source's OWN number for the item, or null. Never one an agent made up."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/library/ingest-candidates.ts#IngestCandidateSchema.number",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/instance-repositories.instancerepository.livesat",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -25474,6 +25512,25 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/pdf-structure.pdfdiagnosticsschema.furniture_lines_stripped",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "PdfDiagnosticsSchema.furniture_lines_stripped"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Running heads, footers, folios and side tabs `strip_furniture` took out before the split."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/ui/pdf-structure.ts#PdfDiagnosticsSchema.furniture_lines_stripped",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/pdf-structure.pdfdiagnosticsschema.latex_overlay",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -25490,6 +25547,25 @@
         }
       ],
       "dcterms:source": "cat-harness-tools/schemas/ui/pdf-structure.ts#PdfDiagnosticsSchema.latex_overlay",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/pdf-structure.pdfdiagnosticsschema.outline_reordered",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "PdfDiagnosticsSchema.outline_reordered"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The flat outline ran against its own pages and `repair_outline` put it in page order. Absent when not."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/ui/pdf-structure.ts#PdfDiagnosticsSchema.outline_reordered",
       "skos:note": "candidate"
     },
     {

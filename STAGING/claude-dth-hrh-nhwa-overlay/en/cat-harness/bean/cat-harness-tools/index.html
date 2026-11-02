@@ -122,6 +122,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -143,6 +144,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -232,7 +254,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-p4tr--mcp-tool-paths-not-contained/">beans/defs/cat-tools-p4tr--mcp-tool-paths-not-contained</a></td><td class="s"></td><td class="t">MCP TOOL PATHS NOT CONTAINED: translation, workflow, folio_init and nquads tools joined argument values into paths without safe-path</td><td class="s">completed</td><td class="s">high</td><td class="t">bug</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-q8gk--security-gate-cannot-pass-from-a-layer-checkout/">beans/defs/cat-tools-q8gk--security-gate-cannot-pass-from-a-layer-checkout</a></td><td class="s"></td><td class="t">SECURITY GATE ALWAYS REFUSES OUTSIDE THE COMPOSED ROOT: materialized-fixity is pinned to a folio-assistant-core script, and four checks cra…</td><td class="s">completed</td><td class="s">normal</td><td class="t">bug</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-rt0l--todosindexhtml-serves-zero-notes-without-javascrip/">beans/defs/cat-tools-rt0l--todosindexhtml-serves-zero-notes-without-javascrip</a></td><td class="s"></td><td class="t">todos/index.html serves ZERO notes without JavaScript — the one page most about notes is the only one with no linear floor</td><td class="s">completed</td><td class="s">normal</td><td class="t">task</td></tr>
-<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-sr31--security-review-2026-10-31-every-harnessed-layer/">beans/defs/cat-tools-sr31--security-review-2026-10-31-every-harnessed-layer</a></td><td class="s"></td><td class="t">SECURITY REVIEW 2026-10-31: every harnessed layer, against the security sub-KG and the secure-code-authoring voice</td><td class="s">in-progress</td><td class="s">high</td><td class="t">epic</td></tr>
+<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-sr31--security-review-2026-10-31-every-harnessed-layer/">beans/defs/cat-tools-sr31--security-review-2026-10-31-every-harnessed-layer</a></td><td class="s"></td><td class="t">SECURITY REVIEW 2026-10-31: every harnessed layer, against the security sub-KG and the secure-code-authoring voice</td><td class="s">completed</td><td class="s">high</td><td class="t">epic</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-sthf--url-space-rendered-assets-mirror-the-instantiation/">beans/defs/cat-tools-sthf--url-space-rendered-assets-mirror-the-instantiation</a></td><td class="s"></td><td class="t">URL SPACE: rendered assets mirror the instantiation structure — &lt;baseurl&gt;/ for the root, &lt;baseurl&gt;/&lt;instance&gt;/&lt;path&gt; for every enabled harn…</td><td class="s">completed</td><td class="s"></td><td class="t">feature</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-tk99--programme-progress-an-epic-burn-down-and-a-math-pr/">beans/defs/cat-tools-tk99--programme-progress-an-epic-burn-down-and-a-math-pr</a></td><td class="s"></td><td class="t">PROGRAMME PROGRESS: an epic burn-down and a math-progress heat map as a board feed</td><td class="s">completed</td><td class="s">normal</td><td class="t">feature</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/cat-tools-v8wg--library-titles-for-non-pdf-entries-pptx-deck-codat/">beans/defs/cat-tools-v8wg--library-titles-for-non-pdf-entries-pptx-deck-codat</a></td><td class="s"></td><td class="t">Library titles for non-PDF entries (pptx deck, CODATA table)</td><td class="s">completed</td><td class="s">normal</td><td class="t">task</td></tr>
@@ -299,7 +321,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-52dz--folio-workflows-live-in-the-platform-repo-do-they/">beans/defs/folio-assistant-52dz--folio-workflows-live-in-the-platform-repo-do-they</a></td><td class="s"></td><td class="t">FOLIO WORKFLOWS live in the PLATFORM repo — do they belong here? them
 
 `AGENTS.md` already states the shape for two of them — &#39;qa-sweep and…</td><td class="s">completed</td><td class="s">normal</td><td class="t">task</td></tr>
-<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-5a3l--deployment-topologies-and-operating-modes-are-two/">beans/defs/folio-assistant-5a3l--deployment-topologies-and-operating-modes-are-two</a></td><td class="s"></td><td class="t">DEPLOYMENT: topologies and operating modes are two axes, not one list of modes</td><td class="s">in-progress</td><td class="s">high</td><td class="t">epic</td></tr>
+<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-5a3l--deployment-topologies-and-operating-modes-are-two/">beans/defs/folio-assistant-5a3l--deployment-topologies-and-operating-modes-are-two</a></td><td class="s"></td><td class="t">DEPLOYMENT: topologies and operating modes are two axes, not one list of modes</td><td class="s">completed</td><td class="s">high</td><td class="t">epic</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-5gqn--merge-friction-beans-indexjson-should-join-oxka-me/">beans/defs/folio-assistant-5gqn--merge-friction-beans-indexjson-should-join-oxka-me</a></td><td class="s"></td><td class="t">MERGE FRICTION: beans index.json should join oxka -merge set; harness.json must NOT</td><td class="s">completed</td><td class="s"></td><td class="t">task</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-5hox--remove-moved-qa-files-from-main-only-on-the-owners/">beans/defs/folio-assistant-5hox--remove-moved-qa-files-from-main-only-on-the-owners</a></td><td class="s"></td><td class="t">REMOVE moved QA files from main — only on the owner&#39;s explicit go, after the branch holds a hash-verified copy</td><td class="s">completed</td><td class="s">normal</td><td class="t">task</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-5p4m--ci-remove-the-two-1-s-roll-up-jobs-typescript-e2e/">beans/defs/folio-assistant-5p4m--ci-remove-the-two-1-s-roll-up-jobs-typescript-e2e</a></td><td class="s"></td><td class="t">CI: remove the two 1-s roll-up jobs (typescript, e2e) — 7fu5 leftover, owner swaps required checks</td><td class="s">completed</td><td class="s">normal</td><td class="t">task</td></tr>
@@ -391,7 +413,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-fmdl--speed-up-resolution-across-needstestts-spawns-each/">beans/defs/folio-assistant-fmdl--speed-up-resolution-across-needstestts-spawns-each</a></td><td class="s"></td><td class="t">SPEED-UP: resolution-across-needs.test.ts spawns each kg-audit twice, serially — 92 s of the slowest shard</td><td class="s">completed</td><td class="s"></td><td class="t">task</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-foaq--fsh-gutsviz-renders-untracked-local-mount-files-so/">beans/defs/folio-assistant-foaq--fsh-gutsviz-renders-untracked-local-mount-files-so</a></td><td class="s"></td><td class="t">fsh-guts:viz renders untracked local mount files, so a regen from a dirty mount stales CI</td><td class="s">completed</td><td class="s">normal</td><td class="t">bug</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-fq5u--downstream-tools-in-qa-a-run-record-per-downstream/">beans/defs/folio-assistant-fq5u--downstream-tools-in-qa-a-run-record-per-downstream</a></td><td class="s"></td><td class="t">DOWNSTREAM TOOLS IN QA: a run record per downstream tool, and QA goes stale when its inputs change — LSI first</td><td class="s">completed</td><td class="s">high</td><td class="t">feature</td></tr>
-<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-fs43--arc-state-graphs-on-a-declared-state-branch-beans/">beans/defs/folio-assistant-fs43--arc-state-graphs-on-a-declared-state-branch-beans</a></td><td class="s"></td><td class="t">ARC: state graphs on a declared &#39;state&#39; branch — beans, workflow instances, todos, issue-marks off main; &#39;which ref holds this graph&#39; becom…</td><td class="s">in-progress</td><td class="s">normal</td><td class="t">epic</td></tr>
+<tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-fs43--arc-state-graphs-on-a-declared-state-branch-beans/">beans/defs/folio-assistant-fs43--arc-state-graphs-on-a-declared-state-branch-beans</a></td><td class="s"></td><td class="t">ARC: state graphs on a declared &#39;state&#39; branch — beans, workflow instances, todos, issue-marks off main; &#39;which ref holds this graph&#39; becom…</td><td class="s">completed</td><td class="s">normal</td><td class="t">epic</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-fx5r--the-pr-endpoint-keeps-serving-a-merged-prs-pre-mer/">beans/defs/folio-assistant-fx5r--the-pr-endpoint-keeps-serving-a-merged-prs-pre-mer</a></td><td class="s"></td><td class="t">The PR endpoint keeps serving a merged PR&#39;s pre-merge view, and merge_pull_request reports success on it</td><td class="s">completed</td><td class="s">high</td><td class="t">bug</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-g196--every-preview-stores-a-full-copy-of-the-site-becau/">beans/defs/folio-assistant-g196--every-preview-stores-a-full-copy-of-the-site-becau</a></td><td class="s"></td><td class="t">Every preview stores a full copy of the site because per-preview facts are baked into every page</td><td class="s">in-progress</td><td class="s">normal</td><td class="t">feature</td></tr>
 <tr data-kind="bean" data-harness="cat-harness-tools"><td class="p"><a href="beans/defs/folio-assistant-g43f--worktree-contaminated-sweeps-two-more-root-walking/">beans/defs/folio-assistant-g43f--worktree-contaminated-sweeps-two-more-root-walking</a></td><td class="s"></td><td class="t">WORKTREE-CONTAMINATED SWEEPS: two more root-walking checks descend into .claude/worktrees and redden bun test for every concurrent session …</td><td class="s">completed</td><td class="s">high</td><td class="t">bug</td></tr>

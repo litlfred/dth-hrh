@@ -3,7 +3,7 @@ digraph "DTH-HRH overlay on the DPI-H reference architecture — metamodel in us
   node [shape=box, style="filled", fontname="Helvetica", fontsize=11, margin="0.14,0.08"];
   edge [fontname="Helvetica", fontsize=9, color="#555555", fontcolor="#333333"];
   subgraph cluster_0 {
-    label="Motivation"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    label="Motivation"; class="mm-layer-motivation"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
     rank=same;
     "Goal" [label="Goal
 1 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/metamodel/#type-Goal", target="_top", tooltip="Goal: its elements"];
@@ -15,13 +15,13 @@ digraph "DTH-HRH overlay on the DPI-H reference architecture — metamodel in us
 5 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/metamodel/#type-Value", target="_top", tooltip="Value: its elements"];
   }
   subgraph cluster_1 {
-    label="Strategy"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    label="Strategy"; class="mm-layer-strategy"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
     rank=same;
     "Capability" [label="Capability
 7 element(s)", class="mm-layer-strategy", fillcolor="#f5deaa", URL="../../en/dth-hrh/archimate/0.1.0-draft.1/metamodel/#type-Capability", target="_top", tooltip="Capability: its elements"];
   }
   subgraph cluster_2 {
-    label="Application"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    label="Application"; class="mm-layer-application"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
     rank=same;
     "ApplicationComponent" [label="Application Component
 5 element(s)

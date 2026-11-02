@@ -227,7 +227,7 @@
   },
   "Task_Ask": {
    "id": "Task_Ask",
-   "name": "Put the merge to the owner, evidence first",
+   "name": "Put the merge to the owner",
    "type": "bpmn:CallActivity",
    "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_MergeToMain/node/Task_Ask",
    "lane": "Merging session",

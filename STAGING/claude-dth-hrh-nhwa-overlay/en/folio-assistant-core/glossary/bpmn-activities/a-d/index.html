@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=efc3ff00381f">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -640,12 +640,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="../../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=4ad730d1fc0c" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../../../assets/js/edit-links.js?v=77765b74438b" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="folio-assistant-core">
+  /* Grumpy cat, the theme of folio-assistant-core. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../../../assets/img/harness/landing-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -937,11 +1023,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every BPMN task and call activity: <code class="language-plaintext highlighter-rouge">name</code> as the label, its own <code class="language-plaintext highlighter-rouge">&lt;documentation&gt;</code> as the definition, the element id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 590 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 45 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 240 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 117 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 587 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 45 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 240 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 117 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 3 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 363 terms and is 336 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 360 terms and is 336 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
@@ -952,11 +1038,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 363 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 360 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">363</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">360</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-0-9">0–9</a> <a href="#letter-A">A</a> <a href="#letter-B">B</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a></nav>
 <h2 id="letter-0-9">
@@ -1539,7 +1625,7 @@ Agree the release date and comment period <span class="fa-gloss-status">candidat
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_docssite.call_alert" data-fa-state="extracted" data-fa-gloss="">
-Alert the publication manager [publish-verification] <span class="fa-gloss-status">candidate, extracted</span>
+Alert the publication manager <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_PublishAlert — the ONE alert every failing step after the publish button goes through, whichever step it was.</p>
@@ -1552,6 +1638,14 @@ Announce the branch on the issue <span class="fa-gloss-status">candidate, extrac
 <dd>
 <p>On CREATING the feature branch, comment on the issue: the branch name, the process and phase, and the beans claimed. Visibility is the whole point — without it a sibling session or a human cannot tell that work has begun, only that it has finished. Deliberately on this edge and not inside Phase 6. The three loops back into A_Implement (increment rejected, MVP not ready, feedback translated) re-enter implementation on the SAME branch, and re-announcing on each would be noise. Announce once, when the branch is created. Before announcing, run the collision review that starts any new unit of work (coordinate, &quot;Starting new work&quot;): open PRs and in-progress beans checked against the branch's files and subject, scaled to the blast radius, and the result recorded in the bean before the first edit.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/crdm-signoff.bpmn"><code>cat-harness/processes/process/crdm-signoff.bpmn#A_AnnounceBranch</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_answergates" data-fa-state="extracted" data-fa-gloss="">
+Answer the other four gates <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Restrictions, copyright, retention and source loss, each answered permitted, refused or unknown. They were four steps in a row; they are four answers to one decision (shared block G10 of the BPMN guidance review, 2026-11-01), and Gateway_Gates reads them with size through decisions/materialization-gate.dmn. RESTRICTIONS. The owner's phrase is 'no restrictions known in context', and that is a STATE, not a green light. GateVerdict is three-valued for this reason alone, and <code>unknown</code> is never rendered as <code>permitted</code>. COPYRIGHT. What the licence permits for THIS bitstream, and separately whether it permits the derivation. LICENSE-CONTENT.md exists in this repository and the ingestion pipeline does not read it. RETENTION. A copy with no expiry cannot be told from an abandoned one — the same argument bean-blocking makes about a block with no expiry. An ARCHIVAL copy is the exception and it is a specification rather than an omission: freshness() reports it <code>permanent</code>, not <code>no-expiry</code>. SOURCE LOSS. Not hypothetical. The one IRIS record this repository holds carries a handle on iris.wpro.who.int, a regional instance merged into the global one. Only an ARCHIVAL copy of the original bytes discharges this; a working copy cannot, because the derived sections are not the publication.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/materialize-remote.bpmn"><code>cat-harness/processes/library/materialize-remote.bpmn#Task_AnswerGates</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="bootstrap--kg-bpmn-activities--process_humanagentdiscussion.a_answer" data-fa-state="extracted" data-fa-gloss="">
@@ -1738,6 +1832,14 @@ Ask first about what could not be determined <span class="fa-gloss-status">candi
 <p class="fa-gloss-meta">BPMN activities of bootstrap · source <a href="https://github.com/litlfred/bootstrap/blob/main/processes/human-agent-discussion.bpmn"><code>bootstrap/processes/human-agent-discussion.bpmn#A_AskUndeterminedFirst</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_contentacquisition.a_ask" data-fa-state="extracted" data-fa-gloss="">
+Ask for a link or a description <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Both forms, named together. A person who cannot find the file often knows exactly what it is, and a description in their own words is an acquired resource rather than a consolation prize. Asking for the upload first demands the one thing they may not have, before the cheaper answers have been offered. Say what happens if they do nothing.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/content-acquisition.bpmn"><code>cat-harness/processes/library/content-acquisition.bpmn#A_Ask</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="fhir-harness--kg-bpmn-activities--process_questionnairewireframereview.task_askreview" data-fa-state="extracted" data-fa-gloss="">
 Ask for review with deep links [staging-review] <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1794,20 +1896,20 @@ Ask the Requestor: which harness, and where? <span class="fa-gloss-status">candi
 <p class="fa-gloss-meta">BPMN activities of bootstrap · source <a href="https://github.com/litlfred/bootstrap/blob/main/processes/discussion.bpmn"><code>bootstrap/processes/discussion.bpmn#A_AskRequestor</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_prcheckspresent.task_sweep" data-fa-state="extracted" data-fa-gloss="">
+Ask whether each open PR head has a run <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Run check:prs-have-runs --min-age-minutes 15, writing the report file first. A head younger than 15 minutes legitimately has no run yet and is skipped. Exit 0 clean, 1 findings, 2 could not determine; an exit 1 with no report file is a crash and is treated as could-not-determine. Where its verdict comes from: Asked of the <code>verdict</code> output of the <code>Sweep</code> step in .github/workflows/pr-checks-present.yml, which runs <code>check:prs-have-runs --min-age-minutes 15</code>. Exit 0 is clean, 1 findings, 2 could not determine; an exit 1 with no report file is a crash and is reclassified as could-not-determine, as is any other code. <code>no</code> is verdict == 'unknown': 'Refuse to report success on an unchecked repository' runs <code>exit 1</code> and the tracking issue is left untouched. <code>yes</code> is verdict != 'unknown', the guard on ensuring the <code>pr-no-checks</code> label.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/pr-checks-present.bpmn"><code>cat-harness/processes/sdlc/pr-checks-present.bpmn#Task_Sweep</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_sessionstatemachine.a_askwhoisacting" data-fa-state="extracted" data-fa-gloss="">
 Ask who is acting <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>The one step that needs a person. Asked ONCE and recorded, never re-asked: <code>cat-harness/memory/interaction.json</code> and the record exist so that a preference stated once is not requested again, which is WCAG 2.2 SC 3.3.7.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/session-state-machine.bpmn"><code>cat-harness/processes/process/session-state-machine.bpmn#A_AskWhoIsActing</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_prcheckspresent.task_sweep" data-fa-state="extracted" data-fa-gloss="">
-Ask, per open PR, whether its HEAD has a run — skipping heads younger than 15 min <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Run check:prs-have-runs --min-age-minutes 15, writing the report file first. A head younger than 15 minutes legitimately has no run yet and is skipped. Exit 0 clean, 1 findings, 2 could not determine; an exit 1 with no report file is a crash and is treated as could-not-determine.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/pr-checks-present.bpmn"><code>cat-harness/processes/sdlc/pr-checks-present.bpmn#Task_Sweep</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="smart-base--kg-bpmn-activities--process_l2dak.task_assembledak" data-fa-state="extracted" data-fa-gloss="">
@@ -1891,11 +1993,19 @@ Audit the code nodes the increment adds <span class="fa-gloss-status">candidate,
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_actorroleadministration.task_runkgaudit" data-fa-state="extracted" data-fa-gloss="">
-Audit the graph [kg:audit] <span class="fa-gloss-status">candidate, extracted</span>
+Audit the graph <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>AFTER the change, not before. Every criterion here is a join — role to lane, actor to role, activity to skill — so what an administrative edit breaks is not in the file it edited. The sidecars under <code>test/results/kg-qa/</code> are committed for the reason a printed verdict is not: without them, &quot;unbound since it was drawn&quot; and &quot;broken by this change&quot; are indistinguishable.</p>
+<p>AFTER the change, not before. Every criterion here is a join — role to lane, actor to role, activity to skill — so what an administrative edit breaks is not in the file it edited. The sidecars under <code>test/results/kg-qa/</code> are committed for the reason a printed verdict is not: without them, &quot;unbound since it was drawn&quot; and &quot;broken by this change&quot; are indistinguishable. Runs <code>kg:audit</code>.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/actor-role-administration.bpmn"><code>cat-harness/processes/process/actor-role-administration.bpmn#Task_RunKgAudit</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_nquadsdistribution.a_gatecheck" data-fa-state="extracted" data-fa-gloss="">
+Audit the manifest and schemas <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Validate that subgraph-manifest.json conforms to NQuadsDistributionManifestSchema, all referenced partitions exist, and external schema w3c-n-quads is satisfied.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/nquads-distribution.bpmn"><code>cat-harness/processes/kg/nquads-distribution.bpmn#A_GateCheck</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="smart-base--kg-bpmn-activities--process_planning.task_authoractors" data-fa-state="extracted" data-fa-gloss="">
@@ -1946,14 +2056,6 @@ Author FHIR profiles <span class="fa-gloss-status">candidate, extracted</span>
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn"><code>smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn#Task_AuthorProfiles</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>fhir</code> · <code>skos</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>skos</code></p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_testdatacuration.task_curatefixed" data-fa-state="extracted" data-fa-gloss="">
-Author fixed set in test-data-fixed/ with $schema test-data-fixed/1.0.0 <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Write the curated <code>records</code> and optional <code>citations</code> with <code>$schema: &quot;test-data-fixed/1.0.0&quot;</code> and <code>kind: &quot;fixed&quot;</code> into the instance's declared <code>test-data-fixed</code> directory (<code>schemas/sdlc/test-data.ts</code>). Recipe fields (<code>template</code>, <code>params</code>, <code>seed</code>) are refused by the strict schema.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Task_CurateFixed</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="fhir-harness--kg-bpmn-activities--process_l3fhir.task_authorfsh" data-fa-state="extracted" data-fa-gloss="">
 Author FSH profiles [l3-fhir-authoring] <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2002,6 +2104,14 @@ Author questionnaires and structure maps <span class="fa-gloss-status">candidate
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn"><code>smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn#Task_AuthorQuestionnaires</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>fhir</code> · <code>skos</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>skos</code></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_testdatacuration.task_curatefixed" data-fa-state="extracted" data-fa-gloss="">
+Author the fixed test data set <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Write the curated <code>records</code> and optional <code>citations</code> with <code>$schema: &quot;test-data-fixed/1.0.0&quot;</code> and <code>kind: &quot;fixed&quot;</code> into the instance's declared <code>test-data-fixed</code> directory (<code>schemas/sdlc/test-data.ts</code>). Recipe fields (<code>template</code>, <code>params</code>, <code>seed</code>) are refused by the strict schema.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Task_CurateFixed</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="smart-base--kg-bpmn-activities--process_planning.task_authorscenarios" data-fa-state="extracted" data-fa-gloss="">
 Author user scenarios (Component 3) <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2045,7 +2155,7 @@ Available to cite as an L1 source <span class="fa-gloss-status">candidate, extra
     
 <dl class="fa-gloss">
 <dt id="cat-harness--kg-bpmn-activities--process_qapublish.task_backoff" data-fa-state="extracted" data-fa-gloss="">
-Back off [backoff-sleep] <span class="fa-gloss-status">candidate, extracted</span>
+Back off <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Wait the same intervals <code>backoff-sleep.ts</code> uses, then go round again: fetch the new tip and splice onto it. Three attempts in all.</p>
@@ -2077,7 +2187,7 @@ Bind the folder name to the bibliography slug <span class="fa-gloss-status">cand
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_testplanexecution.a_binddata" data-fa-state="extracted" data-fa-gloss="">
-Bind the test data [fixed or generated] <span class="fa-gloss-status">candidate, extracted</span>
+Bind the test data <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Per bean <code>vm6m</code>: a fixed set is a committed path and counts as evidence only once reviewed; a generated set is template + params + seed and is never materialised. Both feed the run's data hash, and nothing that feeds the process hash may feed it too.</p>
@@ -2117,7 +2227,7 @@ Branch, and announce it <span class="fa-gloss-status">candidate, extracted</span
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_actorroleadministration.callactivity_codechangereview" data-fa-state="extracted" data-fa-gloss="">
-Branch, gates, PR and review [code-change-review] <span class="fa-gloss-status">candidate, extracted</span>
+Branch, gates, PR and review <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Called rather than restated. The mechanics of getting an edit reviewed and merged are not specific to the role graph, and a second description of them is a second thing free to disagree with the first.</p>
@@ -2165,7 +2275,7 @@ Brief the work <span class="fa-gloss-status">candidate, extracted</span>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_copyintofolio.task_inspectreadonly" data-fa-state="extracted" data-fa-gloss="">
-Browse in place and emit KgAsset snippet (read-only) <span class="fa-gloss-status">candidate, extracted</span>
+Browse in place, emit a KgAsset snippet <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Clean degradation when no write capability (<code>git-push</code>, <code>github-api</code>, <code>github-connector</code>) is present: inspect the asset in place through the zero-write <code>browse</code> affordance and output the ready-to-paste <code>KgAsset</code> entry (with <code>source: &#123; instance, path, ref }</code> populated) so the author can apply it where they have write access.</p>
@@ -2213,10 +2323,10 @@ Build staging site <span class="fa-gloss-status">candidate, extracted</span>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_featurestaging.task_build" data-fa-state="extracted" data-fa-gloss="">
-Build the docs site Jekyll · TypeDoc · KG export <span class="fa-gloss-status">candidate, extracted</span>
+Build the docs site <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Build the preview from the PR's head: regenerate the generated docs, trim what this preview does not need, render the BPMN diagrams, then Jekyll, TypeDoc and the knowledge-graph export, with the staging banner and SEO identity claims stripped.</p>
+<p>Build the preview from the PR's head: regenerate the generated docs, trim what this preview does not need, render the BPMN diagrams, then Jekyll, TypeDoc and the knowledge-graph export, with the staging banner and SEO identity claims stripped. It is a PREVIEW build (CAT_BUILD_TYPE=preview, owner 2026-11-01): only what the change reaches, and every whole-corpus index (builtAtPublish entries marked index: true, and the search index) is main's copy, put back rather than rebuilt. A branch frozen for public comment is dispatched with build_type: full instead. Skill feature-staging, section Build types. A PREVIEW REBUILDS ONLY ITS DEPENDENCY CONE (owner cards Q-CONE-1 C and Q-CONE-2 B, 2026-11-01): main's writer records say what each derive:publish writer and each step of the QA working copy READ. A writer or QA step whose recorded reads all match is not run, and main's outputs for it are put back. Every other one runs. QA is not left out of a preview, only narrowed to what the change can reach. Inside a preview's QA build, <code>skill:register</code> also leaves to derive:publish the two pages that derive:publish builds anyway and that no later QA step reads (<code>skills:docs</code> and <code>lsi:viz</code>), so they are built once.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/feature-staging.bpmn"><code>cat-harness/processes/sdlc/feature-staging.bpmn#Task_Build</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2229,7 +2339,7 @@ Build the draft publication [content-publish] <span class="fa-gloss-status">cand
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_qapublish.task_buildentry" data-fa-state="extracted" data-fa-gloss="">
-Build the entry [tree + manifest] <span class="fa-gloss-status">candidate, extracted</span>
+Build the entry <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>First the working copy is produced (<code>qa:refresh</code>, bean <code>3hk4</code>): while the checkout still tracks <code>test/results/</code>, the commit's own copy is the record and nothing runs; once it does not, every declared QA writer runs into the empty tree, because the gates are in judge mode and wrote nothing a publish could carry. A refresh that leaves a writer failed, a family empty or a file unclaimed is INCOMPLETE: the job goes red and <code>qa:publish --completeness</code> refuses, so a partial tree is never stored as the commit's record — the &quot;Not stored&quot; outcome, reached before any push. Then it hashes the working copy of every declared <code>qa</code> directory (<code>&lt;instance&gt;/test/results/**</code>, byte-identical to the checkout's layout) into a tree through a private index, and writes <code>manifest.json</code> (<code>qa-reports-manifest/v1</code>): inputs, producers, verdict counts and the gates' result. Identical JSON is the same blob, so an unchanged family costs nothing to store again. Its git objects live in a private bare repository, never in the checkout's own store.</p>
@@ -2256,7 +2366,7 @@ Build the IG with the Publisher AST exporter [ig-publisher-fork] <span class="fa
 Build the Jekyll site and the API reference <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Compose the docs layers, build the Jekyll site, mount instance-rendered content, and generate the TypeScript API reference with TypeDoc.</p>
+<p>Compose the docs layers, build the Jekyll site, mount instance-rendered content, and generate the TypeScript API reference with TypeDoc. The main deploy is a FULL build (owner 2026-11-01): every index is rebuilt from the tree being published, never borrowed. Skill feature-staging, section Build types.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/docs-site-publish.bpmn"><code>cat-harness/processes/sdlc/docs-site-publish.bpmn#Task_Build</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2293,10 +2403,10 @@ Build the queue, grouped by owner <span class="fa-gloss-status">candidate, extra
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_qareportsigning.task_buildrun" data-fa-state="extracted" data-fa-gloss="">
-Build the test run [folio-test-run/v1] <span class="fa-gloss-status">candidate, extracted</span>
+Build the test run <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Assemble the run record the signature will cover: the data hash and the process hash, each all-or-nothing. An UNKNOWN_HASH never reproduces another unknown, so a run that could not be hashed is signable only as what it is — unverifiable.</p>
+<p>Assemble the run record the signature will cover: the data hash and the process hash, each all-or-nothing. An UNKNOWN_HASH never reproduces another unknown, so a run that could not be hashed is signable only as what it is — unverifiable. Builds a <code>folio-test-run/v1</code>.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/qa-report-signing.bpmn"><code>cat-harness/processes/sdlc/qa-report-signing.bpmn#Task_BuildRun</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2382,6 +2492,14 @@ Check staleness (source hash) <span class="fa-gloss-status">candidate, extracted
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-workflow.bpmn"><code>cat-harness/processes/library/translation-workflow.bpmn#Task_StalenessCheck</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_jsonlddrift.call_drift" data-fa-state="extracted" data-fa-gloss="">
+Check the .jsonld siblings are in sync <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Run the five --check generators in one job — the JSON-LD context, block siblings, library nodes, site graph, then the label-resolution and emitter tests. Any committed .jsonld that differs from what its generator now produces fails the PR, because a stale generated file is still consulted.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/jsonld-drift-check.bpmn"><code>cat-harness/processes/sdlc/jsonld-drift-check.bpmn#Call_Drift</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="fhir-harness--kg-bpmn-activities--process_igastdeltareview.task_validity" data-fa-state="extracted" data-fa-gloss="">
 Check the base AST against the IG's inputs [ig-ast-delta] <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2423,7 +2541,7 @@ Check the selected methodology's evidence base <span class="fa-gloss-status">can
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_featurestaging.task_validate" data-fa-state="extracted" data-fa-gloss="">
-Check the slug's SHAPE and that the confirmation repeats it <span class="fa-gloss-status">candidate, extracted</span>
+Check the slug and its confirmation <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Guarded three ways because a dispatch input is a DELETION TRIGGER. <code>workflow_dispatch</code> is available only to an actor with write access; the slug must match exactly the characters the sed pipeline can produce, with <code>.</code> and <code>..</code> refused by name; and the confirmation must repeat the slug, so a confirmation cannot be carried over from an earlier run against a different preview.</p>
@@ -2470,14 +2588,6 @@ Choose a destination, or none <span class="fa-gloss-status">candidate, extracted
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/crdm-signoff.bpmn"><code>cat-harness/processes/process/crdm-signoff.bpmn#BA_ChooseKg</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_asktheperson.u_choose" data-fa-state="extracted" data-fa-gloss="">
-Choose an option <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>One tap on the card, or any answer the person prefers to give. Free text is always available and never required.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/ask-the-person.bpmn"><code>cat-harness/processes/process/ask-the-person.bpmn#U_Choose</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_gettingstarted.task_askintent" data-fa-state="extracted" data-fa-gloss="">
 Choose from the offered options <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2500,14 +2610,6 @@ Choose what the harness reads <span class="fa-gloss-status">candidate, extracted
 <dd>
 <p>The person picks which of the content markers the scan found the harness declares in index.config.json, and nothing is declared unpicked. A PERSON'S STEP: the scan's <code>markers</code> that are not yet declared are offered as selectable options — one per marker, each with its paths and what declaring it means, plus &quot;none of these&quot; — and the person picks which parts of the repository to load into the KG. A tap card where the host has one; otherwise a numbered pick-list with a stated default. Never a typed reply. The default declares NOTHING: a harness that declared every marker it found would be slurping the repository, which is what this step exists to prevent. Only the picks reach Task_Scaffold, which declares exactly those in index.config.json. With no undeclared marker found, nothing is asked. The same question is put after setup by running the scan with <code>--markers</code> (repo-conversion §2a).</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/conduct/getting-started.bpmn"><code>folio-assistant-core/processes/conduct/getting-started.bpmn#Task_ChooseHarnessed</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_nquadsdistribution.a_gatecheck" data-fa-state="extracted" data-fa-gloss="">
-CI Gate Verification: Audit Manifest &amp; Schemas <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Validate that subgraph-manifest.json conforms to NQuadsDistributionManifestSchema, all referenced partitions exist, and external schema w3c-n-quads is satisfied.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/nquads-distribution.bpmn"><code>cat-harness/processes/kg/nquads-distribution.bpmn#A_GateCheck</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_publication.task_circulatedraft" data-fa-state="extracted" data-fa-gloss="">
@@ -2546,7 +2648,7 @@ Classify data set: fixed (curated) or generated (recipe) <span class="fa-gloss-s
 Classify every conflicted path against the declared patterns <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>The first matching pattern decides: take-base, generated-regions, qa-sidecar, or refuse. A path no pattern names refuses.</p>
+<p>The first matching pattern decides: take-base, owned-tree, generated-regions, or refuse. A path no pattern names refuses.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-base.bpmn"><code>cat-harness/processes/sdlc/merge-base.bpmn#Task_Classify</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2590,16 +2692,8 @@ Close issue ONLY on BA authorisation <span class="fa-gloss-status">candidate, ex
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/crdm-close.bpmn"><code>cat-harness/processes/process/crdm-close.bpmn#A_Close</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="folio-assistant-core--kg-bpmn-activities--process_documentauthoring.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>folio-assistant-core/processes/content/authoring-a-document.bpmn#Call_BeanClose</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_beandrain.drain_close" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose on the bean just worked: complete and archive it on evidence, scrap it with its reasons, or record its blocker and hand it back to <code>todo</code>. On every bean copy. More of the drain follows, so on the drain's own bean the engine notes rather than resolves (see the process comment); then the drainer takes the next bean.</p>
@@ -2607,7 +2701,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_beanlifecycle.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>End the bean in a state that says why: done is completed and archived, not wanted is scrapped with its reasons and archived, blocked records what it waits on and goes back to <code>todo</code>. Process_BeanClose is the one place resolve and archive are drawn.</p>
@@ -2615,7 +2709,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_codechangereview.task_archivebean" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2623,7 +2717,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_crdm.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2631,7 +2725,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_graphdetanglement.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2639,7 +2733,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_graphdetanglement.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2647,7 +2741,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_graphdetanglement.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2655,7 +2749,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2663,7 +2757,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2671,7 +2765,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2679,7 +2773,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose_4" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2687,7 +2781,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose_5" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2695,63 +2789,31 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.call_beanclose_6" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/kg-separation.bpmn"><code>cat-harness/processes/kg/kg-separation.bpmn#Call_BeanClose_6</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_mergerefusal.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-refusal.bpmn"><code>cat-harness/processes/sdlc/merge-refusal.bpmn#Call_BeanClose</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergerefusal.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-refusal.bpmn"><code>cat-harness/processes/sdlc/merge-refusal.bpmn#Call_BeanClose_2</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_mergerefusal.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-refusal.bpmn"><code>cat-harness/processes/sdlc/merge-refusal.bpmn#Call_BeanClose_3</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_slicesqlitepublish.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/slice-sqlite-publish.bpmn"><code>cat-harness/processes/kg/slice-sqlite-publish.bpmn#Call_BeanClose</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_slicesqlitepublish.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/slice-sqlite-publish.bpmn"><code>cat-harness/processes/kg/slice-sqlite-publish.bpmn#Call_BeanClose_2</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_slicesqlitepublish.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/slice-sqlite-publish.bpmn"><code>cat-harness/processes/kg/slice-sqlite-publish.bpmn#Call_BeanClose_3</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2759,7 +2821,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2767,7 +2829,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2775,7 +2837,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_4" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2783,7 +2845,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_5" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2791,7 +2853,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_6" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2799,7 +2861,7 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subkglifecycle.call_beanclose_7" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2807,23 +2869,15 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_subscribekg.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/subscribe-kg.bpmn"><code>cat-harness/processes/library/subscribe-kg.bpmn#Call_BeanClose</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_subscribekg.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/subscribe-kg.bpmn"><code>cat-harness/processes/library/subscribe-kg.bpmn#Call_BeanClose_2</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_testdatacuration.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn; placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2831,31 +2885,15 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_testplanexecution.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-plan-execution.bpmn"><code>cat-harness/processes/sdlc/test-plan-execution.bpmn#Call_BeanClose</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_testplanexecution.call_beanclose_2" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-plan-execution.bpmn"><code>cat-harness/processes/sdlc/test-plan-execution.bpmn#Call_BeanClose_2</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_testplanexecution.call_beanclose_3" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-plan-execution.bpmn"><code>cat-harness/processes/sdlc/test-plan-execution.bpmn#Call_BeanClose_3</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_upstreamadoption.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
@@ -2863,11 +2901,19 @@ Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_upstreampinwatch.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
-Close the bean [bean-close] <span class="fa-gloss-status">candidate, extracted</span>
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/upstream-pin-watch.bpmn"><code>cat-harness/processes/sdlc/upstream-pin-watch.bpmn#Call_BeanClose</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="folio-assistant-core--kg-bpmn-activities--process_documentauthoring.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
+Close the bean <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Process_BeanClose: end the bean in a state that says why — complete and archive it, scrap it with its reasons and archive it, or record the blocker and hand it back. The one place resolve and archive are drawn (bean m8gz, owner 2026-10-24); placed straight before the end so the engine's resolve sees nothing left but the archive step.</p>
+<p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>folio-assistant-core/processes/content/authoring-a-document.bpmn#Call_BeanClose</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_contentchangereview.call_beanclose" data-fa-state="extracted" data-fa-gloss="">
@@ -2998,28 +3044,12 @@ Close the tracking issue <span class="fa-gloss-status">candidate, extracted</spa
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/global-tasks.bpmn"><code>cat-harness/processes/global-tasks.bpmn#GT_CloseTrackingIssue</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_cihealth.task_close" data-fa-state="extracted" data-fa-gloss="">
+<dt id="cat-harness--kg-bpmn-activities--process_trackedwatch.task_close" data-fa-state="extracted" data-fa-gloss="">
 Close the tracking issue <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Clean: close the open issue carrying the tracking label (the <code>label</code> input), if any, saying why the verdict is clean. Runs only on a clean verdict — on unknown the issue is left untouched and the job fails instead, because could-not-check is never rendered as clean. Clean here means main is clean.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/ci-health-watch.bpmn"><code>cat-harness/processes/sdlc/ci-health-watch.bpmn#Task_Close</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_prcheckspresent.task_close" data-fa-state="extracted" data-fa-gloss="">
-Close the tracking issue <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Clean: close the open issue carrying the tracking label (the <code>label</code> input), if any, saying why the verdict is clean. Runs only on a clean verdict — on unknown the issue is left untouched and the job fails instead, because could-not-check is never rendered as clean. Clean here means every open pull request's head now has a CI run.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/pr-checks-present.bpmn"><code>cat-harness/processes/sdlc/pr-checks-present.bpmn#Task_Close</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_repohealth.task_close" data-fa-state="extracted" data-fa-gloss="">
-Close the tracking issue <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Clean: close the open issue carrying the tracking label (the <code>label</code> input), if any, saying why the verdict is clean. Runs only on a clean verdict — on unknown the issue is left untouched and the job fails instead, because could-not-check is never rendered as clean. Clean here means every check ran and none had anything to report.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/repository-health-watch.bpmn"><code>cat-harness/processes/sdlc/repository-health-watch.bpmn#Task_Close</code></a></p>
+<p>Clean: close the open issue carrying the tracking label (the <code>label</code> input), if any, saying why the verdict is clean. Runs only on a clean verdict — on unknown the issue is left untouched and the job fails instead, because could-not-check is never rendered as clean.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/tracked-watch.bpmn"><code>cat-harness/processes/sdlc/tracked-watch.bpmn#Task_Close</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_upstreampinwatch.task_closeissue" data-fa-state="extracted" data-fa-gloss="">
@@ -3087,7 +3117,7 @@ Comment on the PR once, linking the bean <span class="fa-gloss-status">candidate
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_prcheckspresent.task_comment" data-fa-state="extracted" data-fa-gloss="">
-Comment ONCE per (PR, head sha) <span class="fa-gloss-status">candidate, extracted</span>
+Comment once per PR and head <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>Comment on each affected open PR once per (PR, head sha): a hidden marker carrying the sha is checked first, so a re-run on the same head stays silent and a new push can be reported again. A PR that is no longer open is skipped.</p>
@@ -3214,6 +3244,14 @@ Complete (no unchecked todos left) <span class="fa-gloss-status">candidate, extr
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/bean-close.bpmn"><code>cat-harness/processes/sdlc/bean-close.bpmn#Close_Complete</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_harnessrendering.a_tiles" data-fa-state="extracted" data-fa-gloss="">
+Compose each harness's nav and tile <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>One themed section per instance in dependency order, from its declaration: its docs, its declared subgraphs (a graph with no viewer is shown inert and labelled), and its theme. Written to <code>_data/harness.json</code> by <code>sync-docs-harness.ts</code>.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/harness-default-rendering.bpmn"><code>cat-harness/processes/ui/harness-default-rendering.bpmn#A_Tiles</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_asktheperson.a_compose" data-fa-state="extracted" data-fa-gloss="">
 Compose the full question <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3324,14 +3362,6 @@ Copy asset into target folio and declare in assets[] <span class="fa-gloss-statu
 <dd>
 <p>Write the asset bytes into a declared path inside the target folio and add the <code>KgAsset</code> entry to the target folio's <code>&lt;name&gt;.json</code> <code>assets[]</code> list (<code>directory-conventions</code>). Never drop the copy into an undeclared scratch directory.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/copy-into-folio.bpmn"><code>cat-harness/processes/kg/copy-into-folio.bpmn#Task_CopyAndDeclareAsset</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_copyright" data-fa-state="extracted" data-fa-gloss="">
-COPYRIGHT per bitstream, and for the derived work <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>What the licence permits for THIS bitstream, and separately whether it permits the derivation. LICENSE-CONTENT.md exists in this repository and the ingestion pipeline does not read it.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/materialize-remote.bpmn"><code>cat-harness/processes/library/materialize-remote.bpmn#Task_Copyright</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="smart-base--kg-bpmn-activities--process_planning.task_translateexamples" data-fa-state="extracted" data-fa-gloss="">
@@ -3505,7 +3535,7 @@ Declare the mount: harness, repository, pin <span class="fa-gloss-status">candid
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_declare" data-fa-state="extracted" data-fa-gloss="">
-Declare the node <code>materialized</code> <span class="fa-gloss-status">candidate, extracted</span>
+Declare the node materialized <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>The node's state moves from <code>referenced</code> to <code>materialized</code>, carrying purpose, localPath, gates and (archival) fixity. There is NO default state: a node that has not said is invalid, because 'the author did not say' and 'the author said they could not tell' are different facts.</p>
@@ -3601,10 +3631,10 @@ Derive content from the assets [document-intake] <span class="fa-gloss-status">c
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_qapublish.task_derivekey" data-fa-state="extracted" data-fa-gloss="">
-Derive the key [main/&lt;sha&gt; or pr/&lt;n&gt;/&lt;sha&gt;] <span class="fa-gloss-status">candidate, extracted</span>
+Derive the key <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p><code>qa:publish --github</code> reads the event: a push to main publishes under <code>main/&lt;sha&gt;/</code>, a pull request under <code>pr/&lt;n&gt;/&lt;head-sha&gt;/</code> — the head that was tested, not the merge ref. It also reads whether the token can write, which the gateway after it routes on.</p>
+<p><code>qa:publish --github</code> reads the event: a push to main publishes under <code>main/&lt;sha&gt;/</code>, a pull request under <code>pr/&lt;n&gt;/&lt;head-sha&gt;/</code> — the head that was tested, not the merge ref. It also reads whether the token can write, which the gateway after it routes on. The key is <code>main/&lt;sha&gt;</code> or <code>pr/&lt;n&gt;/&lt;sha&gt;</code>.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/qa-publish.bpmn"><code>cat-harness/processes/sdlc/qa-publish.bpmn#Task_DeriveKey</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -3696,6 +3726,14 @@ Determine appropriate digital health interventions <span class="fa-gloss-status"
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/methodologies/processes/diig-investment-path.bpmn"><code>smart-base/methodologies/processes/diig-investment-path.bpmn#A_DetermineInterventions</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>fhir</code> · <code>skos</code> cannot be told from the committed result: no row for scheme <code>kg-bpmn-activities</code> of <code>smart-base</code> on <code>skos</code></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_testdatacuration.task_determinespecialisation" data-fa-state="extracted" data-fa-gloss="">
+Determine the content type and its specialisation <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Read the folio's <code>contentType</code> and the <code>specialisation</code> registered for it (<code>TestDataSpecialisationSchema</code> in <code>schemas/sdlc/test-data.ts</code>): <code>fhir-templating</code> for FHIR IG and DAK content, <code>markdown-fixture</code> for document folios, <code>lean-counterexample</code> for proof folios, <code>tabular-cohort</code> for aggregate indicator tables. None registered stops here and says so, rather than guessing one.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Task_DetermineSpecialisation</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="bootstrap--kg-bpmn-activities--process_humanagentdiscussion.a_determinecontext" data-fa-state="extracted" data-fa-gloss="">
 Determine the context: what is known, and already decided <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3726,6 +3764,14 @@ Determine where you are: process, roles, context <span class="fa-gloss-status">c
 <dd>
 <p>Before narrowing, say where this is happening, in the words you will use in the question. PROCESS: Initialize a harness, at its first step, inside Determine the harness and repositories — the only place a Bootstrapping Agent can be (FR-2). If you cannot say that (you were started some other way, or a step you believed done is not), you are out of process: do not infer your way back in. ROLES: you act as the Bootstrapping Agent because you were told so; the person you will ask is the Requestor — the one who asked for the harness, and the only one who may choose it. A request relayed by somebody else leaves the Requestor undetermined. CONTEXT: what the request said, and what the checkout holds — a declaration at its root, a harness named in the request. Whatever cannot be determined is handed to the called discussion as undetermined, and asked about first; it is never filled with a default.</p>
 <p class="fa-gloss-meta">BPMN activities of bootstrap · source <a href="https://github.com/litlfred/bootstrap/blob/main/processes/discussion.bpmn"><code>bootstrap/processes/discussion.bpmn#A_DetermineWhere</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_renderkgtocdn.task_resolve" data-fa-state="extracted" data-fa-gloss="">
+Determine which CDN, the root URL and the Subgraphs <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Every Subgraph id asked for must be one the declaration lists; none means the whole graph. The root URL is the one given. The target's Tool is the one that <code>satisfies: [&quot;render-kg-to-cdn&quot;]</code> for that CDN — <code>gh-pages</code> for GitHub Pages. A caller that already rendered and verified its tree hands the tree over instead of the graph, and the Tool pushes it without rendering again.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/render-kg-to-cdn.bpmn"><code>cat-harness/processes/process/render-kg-to-cdn.bpmn#Task_Resolve</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="bootstrap--kg-bpmn-activities--process_initializeharness.a_determineharness" data-fa-state="extracted" data-fa-gloss="">
@@ -3790,6 +3836,14 @@ Discard one entry by id <span class="fa-gloss-status">candidate, extracted</span
 <dd>
 <p>Remove one entry by its stable id, with emptyLog(&#123; id }). Logs are the one exception to the never-delete rule because an entry records no decision; the exception covers files that declare folio-log/v1, not the directory.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/activity-log.bpmn"><code>cat-harness/processes/sdlc/activity-log.bpmn#A_EmptyOne</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_asktheperson.call_discuss" data-fa-state="extracted" data-fa-gloss="">
+Discuss it with the person <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Bootstrap's human-agent discussion, given the composed question. Its <code>Ask ONE question</code> step is where this harness's delivery rule applies: Post the whole composed question as ordinary chat text BEFORE any card. This is the copy that survives: a card, once answered, shows only the chosen option, and a dismissed card shows nothing. Never &quot;see the card&quot;, never a request for a typed reply such as &quot;1y 2n&quot;. Then the card: Whatever the host calls its selection tool (<code>AskUserQuestion</code>, <code>request_decision</code>, a button card): the same letters and labels as the chat text, the recommended option marked. No host card tool: say so in the chat and keep each answer to one short choice. Its answer step: One tap on the card, or any answer the person prefers to give. Free text is always available and never required. A dismissal is NOT an answer and never selects the default as a choice; the question stays open in the chat. On an answer: Hand the answer back to the calling step, quoted. If it settles how a kind of thing is decided, it is a rule: write it into the governing skill in the same turn. On no answer: Do what the question said would happen with no answer, and say so. Nothing irreversible proceeds on a default: such a step waits for the person.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/ask-the-person.bpmn"><code>cat-harness/processes/process/ask-the-person.bpmn#Call_Discuss</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergerefusal.task_dispatch" data-fa-state="extracted" data-fa-gloss="">
@@ -3894,6 +3948,14 @@ Drain: land, close or re-target the open PRs <span class="fa-gloss-status">candi
 <dd>
 <p>Work the PRs <code>seed:ready</code> named until the source settles: land or close the heavy movers and the next layer's PRs, bring the layer's open PRs to five or fewer, and finish any move in flight. Fix a red rehearsal or a discovery miss where it is. Nothing is seeded from here; it goes back to the gateway, which re-asks.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/sub-kg-lifecycle.bpmn"><code>cat-harness/processes/kg/sub-kg-lifecycle.bpmn#Task_Drain</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_harnessrendering.a_board" data-fa-state="extracted" data-fa-gloss="">
+Draw the board of todos and beans <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The todo board mounts inside the landing board, so harness cards and todo stickies share one surface. Each card carries an edit link only when the build composed one.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/harness-default-rendering.bpmn"><code>cat-harness/processes/ui/harness-default-rendering.bpmn#A_Board</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_boardrelocate.a_updatelayer" data-fa-state="extracted" data-fa-gloss="">

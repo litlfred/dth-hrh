@@ -45,7 +45,7 @@
           "heading": false
         },
         {
-          "term": "design",
+          "term": "resources",
           "heading": false
         }
       ],
@@ -166,7 +166,7 @@
       "heading": false
     },
     {
-      "term": "enhance",
+      "term": "cookies",
       "heading": false
     },
     {
@@ -174,11 +174,11 @@
       "heading": false
     },
     {
-      "term": "cookies",
+      "term": "freedom",
       "heading": false
     },
     {
-      "term": "freedom",
+      "term": "enhance",
       "heading": false
     },
     {
@@ -189,6 +189,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/agent-skill-best-practices---gemini-cli"
+    "dir": "library/conduct/agent-skill-best-practices---gemini-cli"
   }
 }

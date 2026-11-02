@@ -9,17 +9,17 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 437.76)">
 <title>DTH&#45;HRH overlay on the DPI&#45;H reference architecture — metamodel in use</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-437.76 778,-437.76 778,4 -4,4"/>
-<g id="clust1" class="cluster">
+<g id="clust1" class="cluster mm&#45;layer&#45;motivation">
 <title>cluster_0</title>
 <path fill="#f7f7f7" stroke="#bbbbbb" d="M203,-329.44C203,-329.44 702,-329.44 702,-329.44 708,-329.44 714,-335.44 714,-341.44 714,-341.44 714,-413.76 714,-413.76 714,-419.76 708,-425.76 702,-425.76 702,-425.76 203,-425.76 203,-425.76 197,-425.76 191,-419.76 191,-413.76 191,-413.76 191,-341.44 191,-341.44 191,-335.44 197,-329.44 203,-329.44"/>
 <text text-anchor="middle" x="224.07" y="-411.86" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#666666">Motivation</text>
 </g>
-<g id="clust2" class="cluster">
+<g id="clust2" class="cluster mm&#45;layer&#45;strategy">
 <title>cluster_1</title>
 <path fill="#f7f7f7" stroke="#bbbbbb" d="M203,-175.32C203,-175.32 277,-175.32 277,-175.32 283,-175.32 289,-181.32 289,-187.32 289,-187.32 289,-259.64 289,-259.64 289,-265.64 283,-271.64 277,-271.64 277,-271.64 203,-271.64 203,-271.64 197,-271.64 191,-265.64 191,-259.64 191,-259.64 191,-187.32 191,-187.32 191,-181.32 197,-175.32 203,-175.32"/>
 <text text-anchor="middle" x="219.48" y="-257.74" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#666666">Strategy</text>
 </g>
-<g id="clust3" class="cluster">
+<g id="clust3" class="cluster mm&#45;layer&#45;application">
 <title>cluster_2</title>
 <path fill="#f7f7f7" stroke="#bbbbbb" d="M20,-8C20,-8 754,-8 754,-8 760,-8 766,-14 766,-20 766,-20 766,-105.52 766,-105.52 766,-111.52 760,-117.52 754,-117.52 754,-117.52 20,-117.52 20,-117.52 14,-117.52 8,-111.52 8,-105.52 8,-105.52 8,-20 8,-20 8,-14 14,-8 20,-8"/>
 <text text-anchor="middle" x="42.91" y="-103.62" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#666666">Application</text>

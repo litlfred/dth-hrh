@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=efc3ff00381f">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -640,12 +640,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=4ad730d1fc0c" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../assets/js/edit-links.js?v=77765b74438b" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="cat-harness">
+  /* Grumpy cyborg agents, the theme of cat-harness. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../assets/img/harness/landing-grumpy-cyborg-agents-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -937,13 +1023,13 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="crdm-close.tasks.json">
 <img src="../../../assets/img/workflows/crdm-close.svg" alt="BPMN diagram: CRDM close-out" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="S_FeatureSignoff" style="left:29.19%;top:69.64%" aria-expanded="false" aria-label="About step: Feature sign-off on issue" title="About: Feature sign-off on issue">i</button>
-<a class="pt-go" href="adjudication.html" style="left:32.72%;top:8.93%;width:8.25%;height:14.29%" aria-label="Open subprocess: Confirm all criteria met" title="Open subprocess: Confirm all criteria met"></a>
-<button type="button" class="pt-mark" data-task="BA_Confirm" style="left:40.98%;top:8.93%" aria-expanded="false" aria-label="About step: Confirm all criteria met" title="About: Confirm all criteria met">i</button>
-<button type="button" class="pt-mark" data-task="A_RecordSignoff" style="left:40.98%;top:39.29%" aria-expanded="false" aria-label="About step: Record the sign-off as a requirement-signoff attestation" title="About: Record the sign-off as a requirement-signoff attestation">i</button>
-<a class="pt-go" href="merge-to-main.html" style="left:51.59%;top:39.29%;width:8.25%;height:14.29%" aria-label="Open subprocess: Land the feature's PRs" title="Open subprocess: Land the feature's PRs"></a>
-<button type="button" class="pt-mark" data-task="Call_MergeToMain" style="left:59.85%;top:39.29%" aria-expanded="false" aria-label="About step: Land the feature's PRs" title="About: Land the feature's PRs">i</button>
-<button type="button" class="pt-mark" data-task="A_Close" style="left:72.82%;top:39.29%" aria-expanded="false" aria-label="About step: Close issue ONLY on BA authorisation" title="About: Close issue ONLY on BA authorisation">i</button>
+<button type="button" class="pt-mark" data-task="S_FeatureSignoff" style="left:28.6%;top:66.07%" aria-expanded="false" aria-label="About step: Feature sign-off on issue" title="About: Feature sign-off on issue">i</button>
+<a class="pt-go" href="adjudication.html" style="left:33.31%;top:35.71%;width:7.08%;height:21.43%" aria-label="Open subprocess: Confirm all criteria met" title="Open subprocess: Confirm all criteria met"></a>
+<button type="button" class="pt-mark" data-task="BA_Confirm" style="left:40.39%;top:35.71%" aria-expanded="false" aria-label="About step: Confirm all criteria met" title="About: Confirm all criteria met">i</button>
+<button type="button" class="pt-mark" data-task="A_RecordSignoff" style="left:40.39%;top:5.36%" aria-expanded="false" aria-label="About step: Record the sign-off attestation" title="About: Record the sign-off attestation">i</button>
+<a class="pt-go" href="merge-to-main.html" style="left:52.18%;top:5.36%;width:7.08%;height:21.43%" aria-label="Open subprocess: Land the feature's PRs" title="Open subprocess: Land the feature's PRs"></a>
+<button type="button" class="pt-mark" data-task="Call_MergeToMain" style="left:59.26%;top:5.36%" aria-expanded="false" aria-label="About step: Land the feature's PRs" title="About: Land the feature's PRs">i</button>
+<button type="button" class="pt-mark" data-task="A_Close" style="left:72.23%;top:5.36%" aria-expanded="false" aria-label="About step: Close issue ONLY on BA authorisation" title="About: Close issue ONLY on BA authorisation">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>
@@ -1184,7 +1270,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>The business analyst confirms every acceptance criterion from the requirements is met. The issue closes only on their authorisation — an agent never closes an issue on its own say-so. Since issue #2405 (FR-013) it IS an adjudication with the requirement-set answers: an approval here moves the set to <code class="language-plaintext highlighter-rouge">accepted</code>, which <code class="language-plaintext highlighter-rouge">check:requirements</code> refuses unless it is a human’s and every approved member is <code class="language-plaintext highlighter-rouge">in-force</code>.</td>
     </tr>
     <tr>
-      <td><strong>Record the sign-off as a requirement-signoff attestation</strong><br /><code class="language-plaintext highlighter-rouge">A_RecordSignoff</code></td>
+      <td><strong>Record the sign-off attestation</strong><br /><code class="language-plaintext highlighter-rouge">A_RecordSignoff</code></td>
       <td>Agent</td>
       <td>shared step <code class="language-plaintext highlighter-rouge">GT_RecordSignoff</code><br /><code class="language-plaintext highlighter-rouge">adjudication</code></td>
       <td>THE RECORD, and not relaxable: a judgement nobody wrote down is indistinguishable from one never made (<code class="language-plaintext highlighter-rouge">adjudication</code>, A_RecordEntry). Append one <code class="language-plaintext highlighter-rouge">requirement-signoff</code> record to <code class="language-plaintext highlighter-rouge">test/attestations/requirement-signoff/&lt;set slug&gt;.attestations.json</code> — who (kind, id, actor), at, scope (the set or one member), the outcome from the requirement-set code list, the stage it moves the set to, the reason, and the permalink to the issue comment where it was decided — and set the set’s <code class="language-plaintext highlighter-rouge">stage</code> to match. Issue #2405 FR-011 / FR-012.<br />GW_SignoffRecorded after this reads the record back, so this step cannot be skipped by completing it: a sign-off that left no attestation loops here again.</td>
@@ -1226,7 +1312,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Sign-off on the record?</strong><br /><code class="language-plaintext highlighter-rouge">GW_SignoffRecorded</code></td>
       <td>Computed, never chosen: <code class="language-plaintext highlighter-rouge">decisions/requirement-signoff-recorded.dmn</code> reads <code class="language-plaintext highlighter-rouge">signoffRecorded</code> and <code class="language-plaintext highlighter-rouge">signoffOutcome</code>, which <code class="language-plaintext highlighter-rouge">check:requirements</code> prints from the set’s recorded sign-offs (its signoff-facts flag). <code class="language-plaintext highlighter-rouge">missing</code> loops back to the record; <code class="language-plaintext highlighter-rouge">proceed</code> is an approval (as written or amended); <code class="language-plaintext highlighter-rouge">stop</code> is a recorded reject, defer or cancel.</td>
-      <td><strong>proceed</strong> → Land the feature’s PRs<br /><strong>stop</strong> → Not accepted — recorded, with its reason<br /><strong>missing</strong> → Record the sign-off as a requirement-signoff attestation</td>
+      <td><strong>proceed</strong> → Land the feature’s PRs<br /><strong>stop</strong> → Not accepted — recorded, with its reason<br /><strong>missing</strong> → Record the sign-off attestation</td>
     </tr>
   </tbody>
 </table></div>

@@ -10214,7 +10214,7 @@
   },"1459": {
     "doc": "Health Worker Distribution by Facility Ownership",
     "title": "In the narrative",
-    "content": "Used in: . | 7.5 Analytics (dth-hrh)… be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), where they name … | 7.5 Analytics (dth-hrh)… be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a handbook , 2nd … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-05 · SKOS . ",
+    "content": "Used in: . | 7.5 Analytics (dth-hrh)… source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), where they name … | 7.5 Analytics (dth-hrh)… source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a handbook , 2nd … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-05 · SKOS . ",
     "url": "/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-05/",
     
     "relUrl": "/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-05/"
@@ -10564,7 +10564,7 @@
   },"1509": {
     "doc": "Health Worker Distribution by Age Group",
     "title": "In the narrative",
-    "content": "Used in: . | 7.5 Analytics (dth-hrh)… cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), … | 7.5 Analytics (dth-hrh)… cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-03 · SKOS . ",
+    "content": "Used in: . | 7.5 Analytics (dth-hrh)… is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), … | 7.5 Analytics (dth-hrh)… is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-03 · SKOS . ",
     "url": "/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-03/",
     
     "relUrl": "/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-03/"
@@ -10886,7 +10886,7 @@
   },"1555": {
     "doc": "Health Worker Density",
     "title": "In the narrative",
-    "content": "Used in: . | 7.5 Analytics (dth-hrh)… Linked use cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition … | 7.5 Analytics (dth-hrh)… Linked use cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-01 · SKOS . ",
+    "content": "Used in: . | 7.5 Analytics (dth-hrh)… an agent and is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition … | 7.5 Analytics (dth-hrh)… an agent and is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-01 · SKOS . ",
     "url": "/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-01/",
     
     "relUrl": "/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-01/"
@@ -11348,7 +11348,7 @@
   },"1621": {
     "doc": "Health Worker Distribution by Sex",
     "title": "In the narrative",
-    "content": "Used in: . | 7.5 Analytics (dth-hrh)… to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), where … | 7.5 Analytics (dth-hrh)… to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a handbook … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-04 · SKOS . ",
+    "content": "Used in: . | 7.5 Analytics (dth-hrh)… in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, 2023), where … | 7.5 Analytics (dth-hrh)… in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: a handbook … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-04 · SKOS . ",
     "url": "/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-04/",
     
     "relUrl": "/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-04/"
@@ -12090,7 +12090,7 @@
   },"1727": {
     "doc": "Health Worker Density at Subnational Level",
     "title": "In the narrative",
-    "content": "Used in: . | 7.5 Analytics (dth-hrh)… use cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, … | 7.5 Analytics (dth-hrh)… use cases: to be traced. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-02 · SKOS . ",
+    "content": "Used in: . | 7.5 Analytics (dth-hrh)… and is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from National health workforce accounts: a handbook , 2nd edition (WHO, … | 7.5 Analytics (dth-hrh)… and is not in the source. NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 2-04, from National health workforce accounts: … | . IRI https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/indicator-1-02 · SKOS . ",
     "url": "/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-02/",
     
     "relUrl": "/en/folio-assistant-core/glossary/instance/who-iris/nhwa-2023/indicator-1-02/"

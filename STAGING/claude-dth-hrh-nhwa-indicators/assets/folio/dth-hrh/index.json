@@ -2369,8 +2369,8 @@
         },
         {
           "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/ch11-data-standards-and-minimum-dataset.ts",
-          "bytes": 2864,
-          "size": "2.8 KB"
+          "bytes": 2950,
+          "size": "2.9 KB"
         },
         {
           "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-address.jsonld",
@@ -3376,6 +3376,81 @@
           "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-tools.ts",
           "bytes": 319,
           "size": "319 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-cde.jsonld",
+          "bytes": 455,
+          "size": "455 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-cde.md",
+          "bytes": 1163,
+          "size": "1.1 KB"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-cde.ts",
+          "bytes": 156,
+          "size": "156 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m1.jsonld",
+          "bytes": 467,
+          "size": "467 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m1.md",
+          "bytes": 956,
+          "size": "956 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m1.ts",
+          "bytes": 186,
+          "size": "186 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m2.jsonld",
+          "bytes": 467,
+          "size": "467 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m2.md",
+          "bytes": 314,
+          "size": "314 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m2.ts",
+          "bytes": 181,
+          "size": "181 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m3.jsonld",
+          "bytes": 467,
+          "size": "467 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m3.md",
+          "bytes": 288,
+          "size": "288 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m3.ts",
+          "bytes": 196,
+          "size": "196 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m4.jsonld",
+          "bytes": 467,
+          "size": "467 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m4.md",
+          "bytes": 190,
+          "size": "190 B"
+        },
+        {
+          "path": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m4.ts",
+          "bytes": 217,
+          "size": "217 B"
         },
         {
           "path": "dth-hrh/ch12-privacy-security-and-trust/ch12-privacy-security-and-trust.ts",
@@ -5704,8 +5779,8 @@
         },
         {
           "path": "dth-hrh/review-anchors.json",
-          "bytes": 180197,
-          "size": "176.0 KB"
+          "bytes": 182729,
+          "size": "178.4 KB"
         },
         {
           "path": "schema/builders.ts",

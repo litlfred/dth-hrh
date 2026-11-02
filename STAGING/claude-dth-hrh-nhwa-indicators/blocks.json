@@ -1279,6 +1279,11 @@
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-8"
   },
+  "tbl:ch11-nhwa-m2": {
+    "hash": "a8b2e455093cc2e11fc8096743739377816a7381ac6ac45bb1a54a830456a6ac",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-3"
+  },
   "ind:nhwa-1-04": {
     "hash": "664b048d8ae1c8f41f22efa876ff9d137d4157450b796e4b3d987fb28f45afcc",
     "renamedFrom": [],
@@ -1298,6 +1303,11 @@
     "hash": "3a54bf3ebf7ec9300085c46fb8a7aa4399a266248a92b1c6e6d4312b90131580",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-3"
+  },
+  "tbl:ch11-nhwa-m1": {
+    "hash": "d856fa3f5145a6b79d05d3f9e064e47ad6953127a5cfdf1ee072959949ac8994",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-2"
   },
   "ind:nhwa-2-07": {
     "hash": "0808e1044e787433c5f88c7dafa9ac511d95798b709c9d6e227c9f62aa13722c",
@@ -1364,6 +1374,11 @@
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-4"
   },
+  "tbl:ch11-cde": {
+    "hash": "a671e397bf4d37e97e50b4ae0a7ce2fa3d7f4232e65cb30e076f904666a9258a",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
   "ind:nhwa-2-05": {
     "hash": "c58e38b783b4f4713225102ace5eed74ba202e2d7b816a046a5a5142659ccfc3",
     "renamedFrom": [],
@@ -1413,6 +1428,11 @@
     "hash": "80c40db3f761baf031f0c3ba1e1e059160ffaf9707efc569a21a5e95a5cf6ac6",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-2"
+  },
+  "tbl:ch11-nhwa-m4": {
+    "hash": "aa4507819988abefc8cd277a14af4876dc96109e2710ee51207201e4bc8ad6dc",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-5"
   },
   "ind:nhwa-1-02": {
     "hash": "7c3b8b119cdf41507a9eedbce319206878d22accbf50933d0cfddc4ff8ee06a4",
@@ -1488,6 +1508,11 @@
     "hash": "276b0e9bc4c389e414c77db605f14eb38fa10154167255e142ee91492381eb51",
     "renamedFrom": [],
     "section": "ch11-data-standards-and-minimum-dataset::sec:11-1"
+  },
+  "tbl:ch11-nhwa-m3": {
+    "hash": "02555aabc2dea569bf5d547efa60997822f17d3350b11846890b91e5b0bad415",
+    "renamedFrom": [],
+    "section": "ch11-data-standards-and-minimum-dataset::sec:11-4"
   },
   "prose:ch11-outputs": {
     "hash": "54f2143c51977003cf3de737a9f19c6186d2c2df9fec459d549725e34ab6efa0",

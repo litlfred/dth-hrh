@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
+          "ref": "cfef1bf4ab459a700fb3f9fbfa4111ab85fac78c",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,8 +136,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-01",
-              "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
-              "evidence": "folio-assistant-core moved to main d95399b = #462 (shared DTH checks: folio-l1-coverage.ts and glossary-validate.ts, bean cysv). litlfred, 2026-11-01 09:26Z, thread 'Share DTH scripts and add dth init': chose 'A. Merge it now' (then repin core in the 5 DTH pull requests). Window: litlfred, 2026-11-01 07:27Z, '+3hrs merge + repin'."
+              "ref": "cfef1bf4ab459a700fb3f9fbfa4111ab85fac78c",
+              "evidence": "folio-assistant-core moved to main cfef1bf: #523 (the glossary check accepts iHRIS), so dth-hrh#85's preview builds, and #584 (stale BPMN translation templates). Window: litlfred, 2026-11-01 20:40:15Z, 'merge all green and ready (not content) + 6hrs', extended 22:34:09Z 'window +12hrs'."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6417b9dab87fdebf27775f79f31a59e1c79e43b8",
+          "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "6417b9dab87fdebf27775f79f31a59e1c79e43b8",
-              "evidence": "litlfred, 2026-10-31 21:43:07Z: '+3hrs merge+repin' (merge when green and re-pin until 00:43Z). cat-harness-tools 6417b9d = #1198 (kg:audit:check computes mounted test runs; fixes #1191)."
+              "ref": "3aeaeed710f8c85e311641baa54ca914f34c7e6d",
+              "evidence": "litlfred, 2026-11-01 16:08Z merge and re-pin window (extended to 01:36Z). cat-harness-tools 3aeaeed = #1319 (pdf.js 6.5.438), so check:upstream-pins passes; needed to merge the CS-001 revert the owner asked for (dth-hrh#74)."
             }
           }
         }

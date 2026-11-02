@@ -4,4 +4,4 @@
 
 *Source:* the TWG outline (L1, twg-outline-2026-10-02), section 7.3 Lifecycle management, word for word. The identifier FR-LC-02 was assigned by an agent and is not in the source.
 
-*Inspirational reference (not definitional):* WHO 2015 health workforce registry guide, functional requirement item(s) 009-05. Agent-proposed, for working-group review.
+*External glossary reference (not definitional):* who-iris glossary `hrhis-registry-2015`, concept(s) fr-sec-009-05; system type(s) hrh-information-system. Agent-proposed, for working-group review.

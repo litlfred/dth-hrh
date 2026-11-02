@@ -4,4 +4,4 @@
 
 *Source:* the TWG outline (L1, twg-outline-2026-10-02), section 7.4 Verification services, word for word. The identifier FR-VER-01 was assigned by an agent and is not in the source.
 
-*Inspirational reference (not definitional):* WHO 2015 health workforce registry guide, functional requirement item(s) 006-02, 031-02. Agent-proposed, for working-group review.
+*External glossary reference (not definitional):* who-iris glossary `hrhis-registry-2015`, concept(s) fr-sec-006-02, fr-sec-031-02; system type(s) health-workforce-registry. Agent-proposed, for working-group review.

@@ -6,4 +6,4 @@
 
 *NHWA indicators:* 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, from *National health workforce accounts: a handbook*, 2nd edition (WHO, 2023), where they name a health workforce registry as a data source. Agent-proposed link, for working-group review.
 
-*Inspirational reference (not definitional):* WHO 2015 health workforce registry guide, functional requirement item(s) 006-04, 037-02, 038-05. Agent-proposed, for working-group review.
+*External glossary reference (not definitional):* who-iris glossary `hrhis-registry-2015`, concept(s) fr-sec-006-04, fr-sec-037-02, fr-sec-038-05; system type(s) health-workforce-registry. Agent-proposed, for working-group review.

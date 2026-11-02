@@ -4,6 +4,7 @@ export default prose({
   label: "prose:references",
   uses: [],
   // The References chapter's entries, in chapter order, as KG reference nodes (references/<key>.json).
+  // The chapter's .md is generated from them: `bun run cat references:render --instance .` (meta.referenceList).
   cites: [
     "who-hrhis-mds-2015",
     "who-workforce-2030-2016",
@@ -21,5 +22,5 @@ export default prose({
     "hl7-fhir-ihe-mcsd",
     "ilo-isco-08-unesco-isced",
   ],
-  meta: {"source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}, "title": "References"},
+  meta: {"referenceList": {"style": "short", "list": "bullet"}, "source": {"library": "twg-outline-2026-10-02", "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md", "method": "outline-seed"}, "title": "References"},
 });

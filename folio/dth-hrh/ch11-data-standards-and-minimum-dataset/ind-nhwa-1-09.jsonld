@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/ind-nhwa-1-09",
+  "@type": [
+    "smart-base:Indicator"
+  ],
+  "label": "ind:nhwa-1-09",
+  "kind": "indicator",
+  "title": "1-09 Annual inflows of health workers",
+  "text": "ind-nhwa-1-09.md",
+  "meta": {
+    "indicatorId": "1-09",
+    "module": "Module 1: Stock and flow",
+    "abbreviatedName": "Annual inflows of health workers",
+    "name": "Ratio of newly active health workers to the total stock of active health workers",
+    "numerator": "Number of newly active health workers",
+    "denominator": "Total number of active health workers, defined in headcounts",
+    "disaggregation": "By occupation, by occupation and place of training, by occupation, place of training and sex",
+    "definition": "Newly active health workers are those who started their activity in the given profession. In case data\nare available only for newly licensed health workers, the total number of licensed health workers\nshould be used as denominator regardless of availability of data on active health workers. For total\nnumber of active health workers, data at the middle or the end of the reference year should be used.\nDisaggregation by place of training (domestic-trained vs foreign-trained) enables to capture the\nhealth labour market dynamics of migration.",
+    "glossary": "Active health worker; Newly active health worker; Activity level; Place of training; Sex; Occupation",
+    "reportingFrequency": "Annual",
+    "reportingFrameworks": "Global Strategic Directions for Nursing and Midwifery (SDNM), SCORE for Health Data Technical Package (SCORE)",
+    "dataSources": "Ministry of Health database; Health workforce registry or database; Professional council/chamber/association registers; Aggregate data from health facilities (routine administrative records, Health Management Information System, District Health Information System census and/or survey)",
+    "furtherInformation": "(45, 49-51)",
+    "dataElements": "de:cde-occupation; de:cde-sex; de:cde-employment-status; de:nhwa-m1-entry-date; de:nhwa-m1-place-of-training",
+    "programIndicatorId": "NHWA.1-09",
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "node": "library/9789240081291-eng/blocks/indicator-sec-031-01",
+      "pages": "60",
+      "method": "indicator-extraction",
+      "verbatim": true
+    },
+    "status": "draft"
+  },
+  "provenance": "authored"
+}

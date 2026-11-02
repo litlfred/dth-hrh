@@ -1,0 +1,8 @@
+import { indicator } from "../../schema/dak";
+
+export default indicator({
+  label: "ind:nhwa-2-01",
+  title: "2-01 Health workforce education and training capacity",
+  uses: [],
+  meta: {"indicatorId": "2-01", "module": "Module 2: Education", "abbreviatedName": "Health workforce education and training capacity", "name": "Ratio of health workforce education and training capacity per 10 000 population", "numerator": "Number of places in health education and training institutions", "denominator": "Total population", "disaggregation": "By health workforce education and training programme", "definition": "The health workforce education and training capacity refers to the number of places or seats.\nThis indicator enables to estimate the availability of the training capacity and express it per\n10 000 population.\nTotal population as estimated in the World Population Prospects by the United Nations Population\nDivision. In case of other methodology used, WHO recalculates densities according to the UN\npopulation estimates in order to harmonize the densities and ensure comparability.", "glossary": "Health workforce education and training capacity; Health workforce education and training programme; Health workforce education and training institution", "reportingFrequency": "Annual", "dataSources": "Ministry of Education; Data on education and training statistics; Education and training institutions; United Nations Population Division", "furtherInformation": "(68)", "programIndicatorId": "NHWA.2-01", "source": {"library": "who-iris:9789240081291-eng", "node": "library/9789240081291-eng/blocks/indicator-sec-036-01", "pages": "66", "method": "indicator-extraction", "verbatim": true}, "status": "draft"},
+});

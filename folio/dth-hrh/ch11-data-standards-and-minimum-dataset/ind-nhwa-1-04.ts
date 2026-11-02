@@ -1,0 +1,8 @@
+import { indicator } from "../../schema/dak";
+
+export default indicator({
+  label: "ind:nhwa-1-04",
+  title: "1-04 Health worker distribution by sex",
+  uses: [],
+  meta: {"indicatorId": "1-04", "module": "Module 1: Stock and flow", "abbreviatedName": "Health worker distribution by sex", "name": "Percentage of active health workers by sex", "numerator": "Number of active health workers in sex categories", "denominator": "Total number of active male and female health workers, defined in headcounts", "disaggregation": "By occupation", "definition": "Percentage of active health workers in the given sex category.\nSex group corresponds to male or female health workers.", "glossary": "Active health worker; Occupation; Sex", "reportingFrequency": "Annual", "reportingFrameworks": "UN SDG 3.c.1, Global Strategic Directions for Nursing and Midwifery (SDNM), SCORE for Health Data Technical Package (SCORE)", "dataSources": "Health workforce registry or database; Aggregate data from health facilities (routine administrative records, Health Management Information System, District Health Information System census and/or survey); Labour force surveys; Population census data", "furtherInformation": "(6, 45, 48-51, 54)", "dataElements": "de:cde-occupation; de:cde-sex", "programIndicatorId": "NHWA.1-04", "source": {"library": "who-iris:9789240081291-eng", "node": "library/9789240081291-eng/blocks/indicator-sec-026-01", "pages": "55", "method": "indicator-extraction", "verbatim": true}, "status": "draft"},
+});

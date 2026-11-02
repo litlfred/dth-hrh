@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/ind-nhwa-2-06",
+  "@type": [
+    "smart-base:Indicator"
+  ],
+  "label": "ind:nhwa-2-06",
+  "kind": "indicator",
+  "title": "2-06 Accreditation mechanisms for education and training institutions and their programmes",
+  "text": "ind-nhwa-2-06.md",
+  "meta": {
+    "indicatorId": "2-06",
+    "module": "Module 2: Education",
+    "abbreviatedName": "Accreditation mechanisms for education and training institutions and their programmes",
+    "name": "Existence of national and/or subnational mechanisms for accreditation of health workforce education and training institutions and their programmes (Yes/Partial/No)",
+    "disaggregation": "By health workforce education and training programme",
+    "definition": "The following questions should guide a response to this indicator:\n• Have national and/or subnational mechanisms for accreditation of health workforce education\nand training institutions and their programmes been established?\n• Are national and/or subnational mechanisms for accreditation of health workforce education\nand training institutions and their programmes compulsory?\n• Are there national and/or subnational mechanisms for accreditation of health workforce\neducation and training institutions and their programmes that are not compulsory?\n• If established, do national and/or subnational mechanisms for accreditation of health workforce\neducation and training institutions and their programmes take into account national education\nplans for the health workforce?",
+    "glossary": "Accreditation; Health workforce education and training programme; Health workforce education and training institution",
+    "reportingFrequency": "Every three years",
+    "reportingFrameworks": "Global Strategy for Human Resources for Health: Workforce 2030 (GSHRH), Working for Health programme, Global Strategic Directions for Nursing and Midwifery (SDNM), Primary Health Care (PHC) Measurement Framework",
+    "dataSources": "Ministry of Health; Ministries of Education, Higher Education or similar; National accreditation authorities; Legitimate bodies, statutory corporations; Professional council/chamber/association registers",
+    "furtherInformation": "(6, 9, 69, 71-73)",
+    "gaps": "numerator; denominator",
+    "programIndicatorId": "NHWA.2-06",
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "node": "library/9789240081291-eng/blocks/indicator-sec-041-01",
+      "pages": "71",
+      "method": "indicator-extraction",
+      "verbatim": true
+    },
+    "status": "draft"
+  },
+  "provenance": "authored"
+}

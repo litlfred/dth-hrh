@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/ind-nhwa-1-05",
+  "@type": [
+    "smart-base:Indicator"
+  ],
+  "label": "ind:nhwa-1-05",
+  "kind": "indicator",
+  "title": "1-05 Health worker distribution by facility ownership",
+  "text": "ind-nhwa-1-05.md",
+  "meta": {
+    "indicatorId": "1-05",
+    "module": "Module 1: Stock and flow",
+    "abbreviatedName": "Health worker distribution by facility ownership",
+    "name": "Percentage of active health workers employed by facility ownership",
+    "numerator": "Number of active health workers, defined in headcounts, working in facilities owned by the given institutional sector (public or private not-for-profit or private for-profit)",
+    "denominator": "Total number of active health workers, defined in headcounts",
+    "disaggregation": "By occupation",
+    "definition": "Percentage of active health workers employed by facility ownership (public, private not-for-profit,\nprivate for-profit).\nThe categories of facility ownership can be aligned to institutional sector definitions of the\nSystem of National Accounts (SNA 2008).",
+    "glossary": "Active health worker; Facility/institution ownership type; Institutional sector",
+    "reportingFrequency": "Annual",
+    "reportingFrameworks": "SCORE for Health Data Technical Package (SCORE)",
+    "dataSources": "Health workforce registry or database; Aggregate data from health facilities (routine administrative records, Health Management Information System, District Health Information System census and/or survey); Labour force surveys; Census",
+    "furtherInformation": "(45, 49, 50, 54, 57)",
+    "dataElements": "de:cde-occupation; de:cde-employment-address; de:nhwa-m1-facility-ownership",
+    "programIndicatorId": "NHWA.1-05",
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "node": "library/9789240081291-eng/blocks/indicator-sec-027-01",
+      "pages": "56",
+      "method": "indicator-extraction",
+      "verbatim": true
+    },
+    "status": "draft"
+  },
+  "provenance": "authored"
+}

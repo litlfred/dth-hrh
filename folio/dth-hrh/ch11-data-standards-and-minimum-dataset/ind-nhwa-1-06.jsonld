@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/ind-nhwa-1-06",
+  "@type": [
+    "smart-base:Indicator"
+  ],
+  "label": "ind:nhwa-1-06",
+  "kind": "indicator",
+  "title": "1-06 Health worker distribution by facility type",
+  "text": "ind-nhwa-1-06.md",
+  "meta": {
+    "indicatorId": "1-06",
+    "module": "Module 1: Stock and flow",
+    "abbreviatedName": "Health worker distribution by facility type",
+    "name": "Percentage of active health workers employed by facility type",
+    "numerator": "Number of active health workers, defined in headcounts, working in a specific facility type",
+    "denominator": "Total number of active health workers, defined in headcounts",
+    "disaggregation": "By occupation",
+    "definition": "Percentage of active health workers employed in the given facility type. Health facility\ntypes are based on the classification of System of Health Accounts:\n• Hospitals (HP.1)\n• Residential long-term care facilities (HP.2)\n• Providers of ambulatory health care (HP.3)\n• Ancillary services (HP.4, including transportation, emergency rescue, laboratories and others)\n• Retailers (HP.5, including pharmacies)\n• Providers of preventive care (HP.6)",
+    "glossary": "Active health worker; Facility type; Occupation",
+    "reportingFrequency": "Annual",
+    "dataSources": "Health workforce registry or database; Aggregate data from health facilities (routine administrative records, Health Management Information System, District Health Information System census and/or survey); Labour Force Surveys; Census",
+    "furtherInformation": "(51, 53, 58)",
+    "dataElements": "de:cde-occupation; de:cde-employment-address; de:nhwa-m1-facility-type",
+    "programIndicatorId": "NHWA.1-06",
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "node": "library/9789240081291-eng/blocks/indicator-sec-028-01",
+      "pages": "57",
+      "method": "indicator-extraction",
+      "verbatim": true
+    },
+    "status": "draft"
+  },
+  "provenance": "authored"
+}

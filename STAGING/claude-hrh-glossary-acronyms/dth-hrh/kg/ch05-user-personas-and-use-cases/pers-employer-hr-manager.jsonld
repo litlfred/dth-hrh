@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/pers-employer-hr-manager",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:employer-hr-manager",
+  "kind": "persona",
+  "title": "Employer or facility human resources manager",
+  "text": "pers-employer-hr-manager.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed"
+    },
+    "personaType": "person",
+    "smartBaseGenericPersona": "HealthSystemManager"
+  },
+  "provenance": "authored"
+}

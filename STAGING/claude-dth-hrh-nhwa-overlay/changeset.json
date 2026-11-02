@@ -12,11 +12,11 @@
   "summary": {
     "added": 2,
     "removed": 0,
-    "changed": 7,
-    "unchanged": 315,
+    "changed": 14,
+    "unchanged": 308,
     "renamed": 0,
-    "prose": 1,
-    "manifest": 6,
+    "prose": 10,
+    "manifest": 13,
     "moved": 0
   },
   "changes": [
@@ -79,6 +79,46 @@
     },
     {
       "change": "changed",
+      "label": "freq:FR-ID-01",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-id-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-1",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-id-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-1",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-ID-02",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-id-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-1",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-id-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-1",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
       "label": "prose:ch07-records",
       "aspects": [
         "manifest"
@@ -100,6 +140,7 @@
       "change": "changed",
       "label": "freq:FR-REC-01",
       "aspects": [
+        "prose",
         "manifest"
       ],
       "base": {
@@ -112,6 +153,66 @@
         "file": "dth-hrh/ch07-functional-requirements/fr-rec-01.ts",
         "kind": "functional-requirement",
         "section": "dth-hrh/ch07-functional-requirements::sec:7-2",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-LC-01",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-lc-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-3",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-lc-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-3",
+        "index": 1
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-LC-02",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-lc-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-3",
+        "index": 2
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-lc-02.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-3",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-VER-01",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-ver-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-4",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-ver-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-4",
         "index": 1
       }
     },
@@ -156,8 +257,29 @@
     },
     {
       "change": "changed",
+      "label": "freq:FR-AN-01",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 1
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-01.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 3
+      }
+    },
+    {
+      "change": "changed",
       "label": "freq:FR-AN-02",
       "aspects": [
+        "prose",
         "manifest"
       ],
       "base": {
@@ -171,6 +293,26 @@
         "kind": "functional-requirement",
         "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
         "index": 4
+      }
+    },
+    {
+      "change": "changed",
+      "label": "freq:FR-AN-03",
+      "aspects": [
+        "prose",
+        "manifest"
+      ],
+      "base": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-03.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 3
+      },
+      "head": {
+        "file": "dth-hrh/ch07-functional-requirements/fr-an-03.ts",
+        "kind": "functional-requirement",
+        "section": "dth-hrh/ch07-functional-requirements::sec:7-5",
+        "index": 5
       }
     }
   ]

@@ -21,7 +21,65 @@
       "method": "outline-seed"
     },
     "requirementId": "FR-AN-01",
-    "priority": "to-be-prioritized"
+    "priority": "to-be-prioritized",
+    "inspirationalReferences": {
+      "source": "who-iris library/9789241549226-eng (WHO, Human resources for health information system: minimum data set for health workforce registry, 2015), system functional requirements only (who-iris#167)",
+      "role": "inspirational, non-definitional: contributes to a definition, does not define it; the data set itself is not used (owner, 2026-11-01 23:42Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "references": [
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-006-04",
+          "item": "sec-006-04",
+          "text": "A health workforce registry allows aggregation of health workforce data in several combinations and assists both national and sub-national ministries of health in producing essential indicator-based reports, as needed."
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-037-02",
+          "item": "sec-037-02",
+          "text": "Based on stakeholder input, a standardized list of reports must be programmed as part of the software design to generate accurate and timely reports."
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-038-05",
+          "item": "sec-038-05",
+          "text": "Illustration depicting a web-enabled electronic Health Workforce Registry with person-centric data entry screen and analytics display abilities"
+        }
+      ]
+    },
+    "nhwaIndicators": {
+      "source": "who-iris library/9789240081291-eng (National health workforce accounts: a handbook, 2nd ed., 2023)",
+      "basis": "agent-proposed: the NHWA indicators on stock and distribution by age, sex and facility that this requirement's reports cover, for working-group review (dth-hrh#47)",
+      "indicators": [
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-023-01",
+          "number": "1-01",
+          "name": "Density of health workers per 10 000 population"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-024-01",
+          "number": "1-02",
+          "name": "Density of active health workers per 10 000 population at subnational level"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-025-01",
+          "number": "1-03",
+          "name": "Percentage of active health workers in different age groups"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-026-01",
+          "number": "1-04",
+          "name": "Percentage of active health workers by sex"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-027-01",
+          "number": "1-05",
+          "name": "Percentage of active health workers employed by facility ownership"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-028-01",
+          "number": "1-06",
+          "name": "Percentage of active health workers employed by facility type"
+        }
+      ]
+    }
   },
   "provenance": "authored"
 }

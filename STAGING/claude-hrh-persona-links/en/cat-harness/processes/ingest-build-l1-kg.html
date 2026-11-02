@@ -917,7 +917,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
         <main>
           
             <blockquote class="note">
-  <p>Generated from <code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn</code> by <code class="language-plaintext highlighter-rouge">gen-processes-viz.ts</code> — do not edit here. <a href="index.html">All processes</a></p>
+  <p>Generated from <code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn</code> by <code class="language-plaintext highlighter-rouge">gen-processes-viz.ts</code> — do not edit here. <a href="index.html">All processes</a> · <a href="folio-assistant-core/">folio-assistant-core processes</a></p>
 </blockquote>
 <h1 id="ingestion-subprocess--build-the-l1-knowledge-graph">
   
@@ -928,7 +928,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h1>
     
 
-<p><code class="language-plaintext highlighter-rouge">Process_BuildL1Kg</code> · advisory · 5 step(s)</p>
+<p><code class="language-plaintext highlighter-rouge">Process_BuildL1Kg</code> · advisory · 6 step(s)</p>
 
 <p>Build the L1 knowledge graph from what ingestion derived: Dublin Core, the manifest, the assets, their binding and their links. folio-assistant — Ingestion subprocess — build the L1 knowledge graph.</p>
 
@@ -995,7 +995,7 @@ work plan in beans/.</p>
 </h2>
     
 
-<p>Every one of the 5 step(s) is documented.</p>
+<p>Every one of the 6 step(s) is documented.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -1030,6 +1030,12 @@ work plan in beans/.</p>
       <td>Ingestion Engine (agent, runs unattended)</td>
       <td><code class="language-plaintext highlighter-rouge">document-intake</code></td>
       <td>Bind the folder name to the document’s bibliography slug, so library/&lt;bib-slug&gt;/ and its citation key are the same string: a citation resolves to a directory without a lookup table between them.</td>
+    </tr>
+    <tr>
+      <td><strong>Read glossary and abbreviations into candidate terms</strong><br /><code class="language-plaintext highlighter-rouge">Task_Glossary</code></td>
+      <td>Ingestion Engine (agent, runs unattended)</td>
+      <td><code class="language-plaintext highlighter-rouge">glossary-terms</code></td>
+      <td>Owner, 2026-11-01 (folio-assistant-core#498, Q-GLO-1 C): the source’s glossary and abbreviations sections become candidate terms of a folio-glossary/v1 scheme with the Tool glossary-from-source, verbatim, each with source file#line, and an acronym as the notation of the term it expands. Terms a person owns are never changed, and only a person moves a term to authored. A source with no such section skips this step with nothing written.</td>
     </tr>
     <tr>
       <td><strong>Link L1 nodes into the corpus graph</strong><br /><code class="language-plaintext highlighter-rouge">Task_Link</code></td>

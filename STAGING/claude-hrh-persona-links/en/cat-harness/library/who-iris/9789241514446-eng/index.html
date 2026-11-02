@@ -958,7 +958,7 @@ var f=document.currentScript.parentNode.querySelector("iframe[data-src]");
 if(!f)return;
 var v="../../../../../assets/vendor/pdfjs/web/viewer.html";
 var lm=Date.parse(document.lastModified);
-var url=v+"?src="+encodeURIComponent(f.getAttribute("data-src"))+"&v="+"f7d672e0d6"+"."+(lm>0?lm.toString(36):"0")+f.getAttribute("data-hash");
+var url=v+"?src="+encodeURIComponent(f.getAttribute("data-src"))+"&v="+"d9bac61a04"+"."+(lm>0?lm.toString(36):"0")+f.getAttribute("data-hash");
 var d=f.closest?f.closest("details"):null;
 if(d&&!d.open){d.addEventListener("toggle",function h(){if(d.open){d.removeEventListener("toggle",h);f.src=url;}});return;}
 if(!("IntersectionObserver" in window)){f.src=url;return;}

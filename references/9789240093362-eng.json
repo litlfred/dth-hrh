@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "9789240093362-eng",
+  "type": "book",
+  "title": "Digital transformation handbook for primary health care: optimizing person-centred point of service systems",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "ISBN": "9789240093362",
+  "URL": "https://iris.who.int/handle/10665/379452",
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 7 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Digital transformation handbook for primary health care: optimizing person-centred point of service systems. 2024. ISBN and URL added from the who-iris catalogue record who-iris/catalogue/records/9789240093362-eng.dc.json; the chapter text is unchanged."
+}

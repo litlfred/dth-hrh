@@ -1,0 +1,21 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-hrhis-mds-2015",
+  "type": "report",
+  "title": "Human resources for health information system: minimum data set for health workforce registry",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2015
+      ]
+    ]
+  },
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 1 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. Flagged for owner review: the owner rule is that the 2015 HRHIS minimum data set is not authoritative for DTH-HRH and is not to be referenced in DTH-HRH. This entry is existing committee content, kept exactly as printed."
+}

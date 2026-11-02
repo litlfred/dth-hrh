@@ -1,0 +1,22 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "9789240116191-eng",
+  "type": "book",
+  "title": "Digital transformation handbook for health product catalogue",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2025
+      ]
+    ]
+  },
+  "URL": "https://iris.who.int/handle/10665/383309",
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 9 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Digital transformation handbook for health product catalogue. 2025. ISBN and URL added from the who-iris catalogue record who-iris/catalogue/records/9789240116191-eng.dc.json; the chapter text is unchanged."
+}

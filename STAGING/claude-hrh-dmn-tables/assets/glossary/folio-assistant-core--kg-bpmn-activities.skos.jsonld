@@ -394,6 +394,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_buildl1kg.task_glossary",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Read glossary and abbreviations into candidate terms"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Owner, 2026-11-01 (folio-assistant-core#498, Q-GLO-1 C): the source's glossary and abbreviations sections become candidate terms of a folio-glossary/v1 scheme with the Tool glossary-from-source, verbatim, each with source file#line, and an acronym as the notation of the term it expands. Terms a person owns are never changed, and only a person moves a term to authored. A source with no such section skips this step with nothing written."
+        }
+      ],
+      "skos:notation": "Task_Glossary",
+      "dcterms:source": "folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn#Task_Glossary",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_buildl1kg.task_link",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -1521,7 +1541,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Close the bean [bean-close]"
+          "@value": "Close the bean"
         }
       ],
       "skos:definition": [
@@ -1541,7 +1561,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Open the bean [bean-open]"
+          "@value": "Open the bean"
         }
       ],
       "skos:definition": [
@@ -1554,23 +1574,23 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.call_contributorfeedback",
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.call_reviewpublish",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
       },
       "skos:prefLabel": [
         {
-          "@value": "Contributor feedback [review-sheet-script]"
+          "@value": "Review and publish"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Process_ContributorFeedback: while the document is a working draft, the Authoring Committee gives feedback through the Contributor Feedback sheet, and each change set is edited and merged in its own pull request. When its changes are merged, the document is validated and rendered again (owner, 2026-10-31)."
+          "@value": "Core's shared review-and-publish process (Process_FolioReviewPublish): the reviewer reads the rendered folio and approves it, asks for changes, or sends a working draft to the Authoring Committee. Before 2026-11-01 each authoring process drew these steps itself (shared block G6, owner Q-BR-7 A)."
         }
       ],
-      "skos:notation": "Call_ContributorFeedback",
-      "dcterms:source": "folio-assistant-core/processes/content/authoring-a-document.bpmn#Call_ContributorFeedback",
+      "skos:notation": "Call_ReviewPublish",
+      "dcterms:source": "folio-assistant-core/processes/content/authoring-a-document.bpmn#Call_ReviewPublish",
       "skos:note": "candidate"
     },
     {
@@ -1581,7 +1601,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "4 · Author blocks [document-authoring]"
+          "@value": "Author blocks"
         }
       ],
       "skos:definition": [
@@ -1601,7 +1621,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "1 · Plan the document [content-plan]"
+          "@value": "Plan the document"
         }
       ],
       "skos:definition": [
@@ -1621,7 +1641,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "5 · Check the profile [content-validate]"
+          "@value": "Check the profile"
         }
       ],
       "skos:definition": [
@@ -1634,26 +1654,6 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.task_publish",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
-      },
-      "skos:prefLabel": [
-        {
-          "@value": "9 · Publish [content-publish]"
-        }
-      ],
-      "skos:definition": [
-        {
-          "@value": "See draft-to-publication.bpmn for the review and release path this expands into. Release authorisation is not relaxable."
-        }
-      ],
-      "skos:notation": "Task_Publish",
-      "dcterms:source": "folio-assistant-core/processes/content/authoring-a-document.bpmn#Task_Publish",
-      "skos:note": "candidate"
-    },
-    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.task_render",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -1661,7 +1661,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "7 · Render MD / HTML / PDF [document-publishing]"
+          "@value": "Render MD, HTML and PDF"
         }
       ],
       "skos:definition": [
@@ -1674,26 +1674,6 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.task_review",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
-      },
-      "skos:prefLabel": [
-        {
-          "@value": "8 · Review and feedback [content-review]"
-        }
-      ],
-      "skos:definition": [
-        {
-          "@value": "The reviewer this folio binds. authoring-document relaxes the base SME step precisely because no single lane fits every document."
-        }
-      ],
-      "skos:notation": "Task_Review",
-      "dcterms:source": "folio-assistant-core/processes/content/authoring-a-document.bpmn#Task_Review",
-      "skos:note": "candidate"
-    },
-    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_documentauthoring.task_scaffold",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -1701,7 +1681,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "3 · Scaffold the folio [folio_init]"
+          "@value": "Scaffold the folio"
         }
       ],
       "skos:definition": [
@@ -1721,7 +1701,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "2 · Seed the work plan [todo-manager]"
+          "@value": "Seed the work plan"
         }
       ],
       "skos:definition": [
@@ -1741,7 +1721,7 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "6 · Validate [content-validate]"
+          "@value": "Validate"
         }
       ],
       "skos:definition": [
@@ -2346,7 +2326,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Before anything is drafted: the author reads the guidance ALREADY in this content, frames the question as PICO, retrieves candidates across the three evidence classes, and has each candidate's authority resolved against its publisher's own API. A recommendation reaches the drafting step with its evidence attached, or with the gap recorded. This step has nothing to do for content that carries no recommendations -- a mathematics folio has none -- and is skipped there rather than satisfied vacuously."
+          "@value": "Before anything is drafted: the author reads the guidance ALREADY in this content, frames the question as PICO, retrieves candidates across the three evidence classes, and has each candidate's authority resolved against its publisher's own API. A recommendation reaches the drafting step with its evidence attached, or with the gap recorded. This step has nothing to do for content that carries no recommendations -- a mathematics folio has none, and a figure redrawn from its own source adds none -- and the subprocess's first gateway (Gateway_RecommendationInPlay) ends it there at its own event, recording the answer, rather than satisfying the search vacuously."
         }
       ],
       "skos:notation": "CallActivity_Evidence",
@@ -2954,6 +2934,66 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_folioreviewpublish.call_contributorfeedback",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Contributor feedback"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Process_ContributorFeedback: while the document is a working draft, the Authoring Committee gives feedback through the Contributor Feedback sheet, and each change set is edited and merged in its own pull request. When its changes are merged, the document is validated and rendered again (owner, 2026-10-31)."
+        }
+      ],
+      "skos:notation": "Call_ContributorFeedback",
+      "dcterms:source": "folio-assistant-core/processes/content/folio-review-publish.bpmn#Call_ContributorFeedback",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_folioreviewpublish.task_publish",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Publish"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "See draft-to-publication.bpmn for the review and release path this expands into. Release authorisation is not relaxable."
+        }
+      ],
+      "skos:notation": "Task_Publish",
+      "dcterms:source": "folio-assistant-core/processes/content/folio-review-publish.bpmn#Task_Publish",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_folioreviewpublish.task_review",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Review and record feedback"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The reviewer this folio binds. authoring-document relaxes the base SME step precisely because no single lane fits every document. Review the rendered paper, not a description of it, and record the feedback. The outcome is iterate — back to authoring — or approved for the publication path."
+        }
+      ],
+      "skos:notation": "Task_Review",
+      "dcterms:source": "folio-assistant-core/processes/content/folio-review-publish.bpmn#Task_Review",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_gettingstarted.call_beanclose",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3271,6 +3311,166 @@
       ],
       "skos:notation": "Task_SeedPlan",
       "dcterms:source": "folio-assistant-core/processes/conduct/getting-started.bpmn#Task_SeedPlan",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_changenotes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Publish the version with its change notes"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The publisher states what changed, what was added and what was withdrawn, and why, in words a country team can act on. The notes go with the release, so the comparison below starts from the publisher's own account rather than only from a diff."
+        }
+      ],
+      "skos:notation": "Task_ChangeNotes",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_ChangeNotes",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_decide",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Decide each adaptation: keep, revise or retire"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "One recorded decision per affected adaptation, with its reason: keep it as is, revise it to the new version, or retire it because the new version now covers it. A decision to diverge from the new version is recorded as such."
+        }
+      ],
+      "skos:notation": "Task_Decide",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_Decide",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_impact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Compare old, new and our adaptations"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Attach the impact report to the re-pin: the changes that reach this site (only what it mounts), and its own files that look like adaptations of a changed file. The team adds what a diff cannot see: which policies, local decisions and translations rest on the changed text."
+        }
+      ],
+      "skos:notation": "Task_Impact",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_Impact",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_mapcone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Map the affected layers in order"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Run the re-pin planner (mount:repin:cone) with the fleet and the changed repository. It lists every site downstream in waves, so a site moves only after the layers it takes from have moved, and marks which sites are ready now."
+        }
+      ],
+      "skos:notation": "Task_MapCone",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_MapCone",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_merge",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Merge the re-pin with its decided revisions"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The re-pin merges when its checks are green and every decision it needs is recorded. Its pull request cites the decisions, which become the release notes for this site's update."
+        }
+      ],
+      "skos:notation": "Task_Merge",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_Merge",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_openrepin",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Open the re-pin for the next ready layer"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "For each site that is ready now, open one re-pin pull request that moves its pins from the old version to the new one. Its staging preview is a full build with QA. A site's standing consent may let its own workflow open this pull request."
+        }
+      ],
+      "skos:notation": "Task_OpenRepin",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_OpenRepin",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_review",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Review the impact with stakeholders"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The committee reads the old version, the new version and each affected adaptation side by side on the staging preview, and hears the adaptation team's account of what rests on them."
+        }
+      ],
+      "skos:notation": "Task_Review",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_Review",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_guidelineupdates.task_revise",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Revise the adaptations as decided"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Each revision is an ordinary content change, reviewed on its staging preview through content change review, on the re-pin's branch or a branch that merges with it."
+        }
+      ],
+      "skos:notation": "Task_Revise",
+      "dcterms:source": "folio-assistant-core/processes/content/guideline-updates.bpmn#Task_Revise",
       "skos:note": "candidate"
     },
     {
@@ -4446,7 +4646,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Freeze the draft as \"Draft for Public Comment Release vX\": a PDF with fixed line numbers and a site copy under a permanent PC/<version>/ path (not STAGING, never deleted on merge). Every channel cites this release's pages, lines and block ids. Line numbers run continuously through the document. Run `bun run cat pc:pdf` for the line-numbered PDF and its line map, then `bun run cat pc:release freeze` for the write-once copy under PC/<version>/. Skill: document-publishing."
+          "@value": "Freeze the draft as \"Draft for Public Comment Release vX\": a PDF with fixed line numbers and a site copy under a permanent PC/<version>/ path (not STAGING, never deleted on merge). Every channel cites this release's pages, lines and block ids. Line numbers run continuously through the document. Freeze from a FULL build (owner, 2026-11-01): dispatch the preview workflow for the branch with build_type: full first, because a preview borrows main's search index and slices; pc:release freeze refuses a preview build. Run `bun run cat pc:pdf` for the line-numbered PDF and its line map, then `bun run cat pc:release freeze` for the write-once copy under PC/<version>/. Skill: document-publishing."
         }
       ],
       "skos:notation": "Task_BuildPcRelease",
@@ -4511,6 +4711,106 @@
       ],
       "skos:notation": "Task_WriteAnnouncement",
       "dcterms:source": "folio-assistant-core/processes/content/public-comment-release.bpmn#Task_WriteAnnouncement",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_reviewlogwatch.task_accept",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Accept the new state"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Runs the check again with --accept, so the state file holds what was just handled and the next poll compares against it. A row the pass could not finish stays changed and is picked up on the next poll."
+        }
+      ],
+      "skos:notation": "Task_Accept",
+      "dcterms:source": "folio-assistant-core/processes/content/review-log-watch.bpmn#Task_Accept",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_reviewlogwatch.task_agentpass",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Agent pass on the changed rows"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "For each changed row, the agent pass of Contributor feedback on a working draft: a new or edited row gets a proposal, Ready for agent = Yes gets its edit, Ready for merge = Yes its merge, and a Blue answer to a Decision needed question is taken up. The agent records its step on the Agent tab at once, with the real time."
+        }
+      ],
+      "skos:notation": "Task_AgentPass",
+      "dcterms:source": "folio-assistant-core/processes/content/review-log-watch.bpmn#Task_AgentPass",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_reviewlogwatch.task_appendrows",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Append rows for new issues; hide closed ones"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "For each row in the tool's append list (one per issue that no row's Issue cell links yet; owner, Q-WATCH2 B), appends it below the last row of Contributor Feedback: Title is the issue's title, the first Contributor Feedback column @login (#N): the issue's first paragraph, Issue its URL. The script gives each new row its Change-set id. No other writer adds issue rows. Then each row linking a closed issue (the tool's closedRows, and the rows just appended as closed) is hidden and its text struck through (owner, 2026-11-01 10:18Z)."
+        }
+      ],
+      "skos:notation": "Task_AppendRows",
+      "dcterms:source": "folio-assistant-core/processes/content/review-log-watch.bpmn#Task_AppendRows",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_reviewlogwatch.task_readsheet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Read the Contributor Feedback tab"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Reads Watch!F1:I1, the hash of the person-set cells that the sheet script writes on every refresh (Q-WATCH4 A), and Contributor Feedback's header row and Issue column, and saves them as JSON for the check. A sheet without the Watch hash yet is read whole. Reading is not agent work: it changes nothing."
+        }
+      ],
+      "skos:notation": "Task_ReadSheet",
+      "dcterms:source": "folio-assistant-core/processes/content/review-log-watch.bpmn#Task_ReadSheet",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities/process_reviewlogwatch.task_runcheck",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Run the review-log-watch check"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Runs Tool review-log-watch with the folio repository, the saved values and the log's state file. The tool reads the repository's open and closed issues (no pull requests, no issue labelled no-sheet) and compares a digest of them and of the cells people set (Title, Selected Sections, Contributor Feedback, Disposition, Ready for agent, Ready for merge, Dispositions confirmed) with the last check's. It writes nothing."
+        }
+      ],
+      "skos:notation": "Task_RunCheck",
+      "dcterms:source": "folio-assistant-core/processes/content/review-log-watch.bpmn#Task_RunCheck",
       "skos:note": "candidate"
     }
   ]

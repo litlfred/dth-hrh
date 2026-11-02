@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/main",
-    "commit": "ea40122848fe69fd04a219c413a548ff6aee2266"
+    "commit": "6748b4bb3e818b8f11ba4b5b24c4c27a761b66f8"
   },
   "head": {
     "ref": "worktree",
@@ -12,33 +12,14 @@
   "summary": {
     "added": 3,
     "removed": 0,
-    "changed": 1,
-    "unchanged": 321,
+    "changed": 0,
+    "unchanged": 322,
     "renamed": 0,
-    "prose": 1,
+    "prose": 0,
     "manifest": 0,
     "moved": 0
   },
   "changes": [
-    {
-      "change": "changed",
-      "label": "tbl:handbook-at-a-glance",
-      "aspects": [
-        "prose"
-      ],
-      "base": {
-        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
-        "kind": "table",
-        "section": "dth-hrh/about-this-draft::sec:about-glance",
-        "index": 0
-      },
-      "head": {
-        "file": "dth-hrh/about-this-draft/t-handbook-at-a-glance.ts",
-        "kind": "table",
-        "section": "dth-hrh/about-this-draft::sec:about-glance",
-        "index": 0
-      }
-    },
     {
       "change": "added",
       "label": "dt:hrh-dt-01-registration-eligibility",

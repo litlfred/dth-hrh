@@ -7,3 +7,5 @@
 | **Difficulties** | Education data held in systems not connected to the regulator's. | 1.1 |
 | **Digital skills** | *To confirm with country input.* | — |
 | **Connectivity** | *To confirm with country input.* | — |
+
+*Role ID:* `HRH-R-04` | *Processes:* Health worker lifecycle and registry record maintenance (HRH-BP-01); Register and license a new graduate (HRH-BP-02) | *ArchiMate (dpi-h-ra 0.2.0):* [Academic & Training Institutions](https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-82fc8a35ade94ff3a02acc9194490fc8.jsonld) (business role) | *Glossary:* [Education and training institution (Health workforce)](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/education-and-training-institution), [Pre-service education](https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/pre-service-education).

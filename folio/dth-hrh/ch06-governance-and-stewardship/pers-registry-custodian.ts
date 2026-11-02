@@ -1,0 +1,8 @@
+import { persona } from "../../schema/dak";
+
+export default persona({
+  label: "pers:registry-custodian",
+  title: "Registry operator and data custodian",
+  uses: [],
+  meta: {"source":{"library":"twg-outline-2026-10-02","file":"library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md","method":"outline-seed","issue":"litlfred/dth-hrh#47"},"roleId":"HRH-R-15","personaType":"person","smartBaseGenericPersona":"DataManager","bpmnLanes":[{"process":"bp:hrh-bp-06-governance-and-stewardship-review","processId":"HRH_BP_06","laneId":"Lane_BP06_Custodian","bpmnFile":"folio/dth-hrh/ch06-governance-and-stewardship/bp-hrh-bp-06-governance-and-stewardship-review.bpmn"}],"archimate":{"model":"smart-ra 0.2.0","basis":"agent-proposed by name, for working-group review (dth-hrh#47)","elements":[{"iri":"https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-8b80d28cdd48418480cee878af495ac3.jsonld","name":"Logical Information Model Maintainer","type":"BusinessRole"},{"iri":"https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld","name":"DPI-H Health Workforce Registry (HWR)","type":"ApplicationComponent"}],"views":[{"iri":"https://litlfred.github.io/smart-ra/archimate/0.2.0/views/id-f7a5524bbac84f1a9cf424754750819d.jsonld","name":"Metadata Registry Governance"}]},"glossaryTerms":["https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry","https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"],"relatedBlocks":["bp:hrh-bp-06-governance-and-stewardship-review"]},
+});

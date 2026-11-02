@@ -248,7 +248,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "da2d90cbb578374b9d612e22c61ea848429e6a07",
+          "ref": "6c60711bf241a9fe04755e29f2c00e0c2d58e46a",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -285,8 +285,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-02",
-              "ref": "da2d90cbb578374b9d612e22c61ea848429e6a07",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread cmsg_017WNUkNK8kdDziPK58Pv6G991qa3xg86ZCWdyH2spZ7FS): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.'"
+              "ref": "6c60711bf241a9fe04755e29f2c00e0c2d58e46a",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }

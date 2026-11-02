@@ -1021,7 +1021,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>Authoring a document</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn</span></td>
-  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 12</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan — beans (shared by humans and agents) · Authoring agent (system) · Build pipeline — validate · render · publish · Reviewer / subject-matter expert · Authoring Committee</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-publish, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, review-sheet-script, staging-review, todo-manager</div></td>
+  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan (beans) · Authoring agent (system) · Build pipeline</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn"><code>Committee review of a content change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn</span></td>
@@ -1065,7 +1065,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/evidence-retrieval.bpmn"><code>Evidence for a recommendation</code></a><br><span class="p">folio-assistant-core/processes/content/evidence-retrieval.bpmn</span></td>
-  <td>Frame a question for a recommendation, retrieve and appraise evidence from trusted sources, and either attach it or record the gap.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author / guideline developer (person) · Evidence agent (system) · Trusted registries and observatories (external) · Work plan — beans (shared)</div><div class="f"><span class="k">skills</span> content-author, content-review, document-intake, evidence-appraisal, registry-authority-contract, todo-manager</div></td>
+  <td>Frame a question for a recommendation, retrieve and appraise evidence from trusted sources, and either attach it or record the gap; a change that states or alters no recommendation ends at its own event before any searc…<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author / guideline developer (person) · Evidence agent (system) · Trusted registries and observatories (external) · Work plan — beans (shared)</div><div class="f"><span class="k">skills</span> content-author, content-review, document-intake, evidence-appraisal, registry-authority-contract, todo-manager</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/folio-review-publish.bpmn"><code>Review and publish a folio</code></a><br><span class="p">folio-assistant-core/processes/content/folio-review-publish.bpmn</span></td>
+  <td>Review a rendered folio and publish it, or send it back with changes.<div class="f"><span class="k">activities</span> 3</div><div class="f"><span class="k">lanes</span> Build pipeline · Reviewer · Authoring Committee</div><div class="f"><span class="k">skills</span> content-publish, content-review, review-sheet-script, staging-review</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/guideline-updates.bpmn"><code>Guideline Updates</code></a><br><span class="p">folio-assistant-core/processes/content/guideline-updates.bpmn</span></td>
+  <td>Taking up a new version of a guideline, or a changed lower layer, is a re-pin and a review at once.<div class="f"><span class="k">activities</span> 8</div><div class="f"><span class="k">lanes</span> Guideline publisher · Re-pin steward and build pipeline · Adaptation team (human or agentic) · Adaptation committee (policy, clinical, programme)</div><div class="f"><span class="k">skills</span> content-publish, content-review, decision-audit, prepare-merge, remote-mount, rendered-impact</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-change.bpmn"><code>Make a decided public comment change</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-change.bpmn</span></td>
@@ -1080,6 +1088,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td>A frozen, line-numbered draft went out for public review.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Public commenter · Intake agent · Review coordinator · Review committee · Editor</div><div class="f"><span class="k">skills</span> block-actions, public-comment</div></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/review-log-watch.bpmn"><code>Review-log watch</code></a><br><span class="p">folio-assistant-core/processes/content/review-log-watch.bpmn</span></td>
+  <td>One poll of one drafting review log (a Contributor Feedback sheet) and its folio repository.<div class="f"><span class="k">activities</span> 5</div><div class="f"><span class="k">lanes</span> Log watcher (authoring agent)</div><div class="f"><span class="k">skills</span> review-log-watch, review-sheet-script</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/global-tasks.bpmn"><code>Shared steps (folio-assistant-core)</code></a><br><span class="p">folio-assistant-core/processes/global-tasks.bpmn</span></td>
   <td>1 global task(s) that this layer's processes call by id.<div class="f"><span class="k">activities</span> 0</div><div class="f"><span class="k">global tasks</span> 1</div><div class="f"><span class="k">skills</span> todo-manager</div></td>
 </tr>
@@ -1089,7 +1101,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-build-l1-kg.bpmn"><code>Ingestion subprocess — build the L1 knowledge graph</code></a><br><span class="p">folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn</span></td>
-  <td>Build the L1 knowledge graph from what ingestion derived: Dublin Core, the manifest, the assets, their binding and their links.<div class="f"><span class="k">activities</span> 5</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended) · Corpus — L1 source knowledge graph</div><div class="f"><span class="k">skills</span> document-intake</div></td>
+  <td>Build the L1 knowledge graph from what ingestion derived: Dublin Core, the manifest, the assets, their binding and their links.<div class="f"><span class="k">activities</span> 6</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended) · Corpus — L1 source knowledge graph</div><div class="f"><span class="k">skills</span> document-intake, glossary-terms</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-derive-content.bpmn"><code>Ingestion subprocess — derive content from the assets</code></a><br><span class="p">folio-assistant-core/processes/library/ingest-derive-content.bpmn</span></td>

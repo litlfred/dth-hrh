@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</title>
+<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</title>
 <style>
   :root { color-scheme: light dark; --fg: #1b1b1b; --bg: #fdfdfb; --muted: #5b5b5b; --link: #0b5cad; }
   @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg: #e8e8e6; --bg: #161616; --muted: #a8a8a4; --link: #7db4ff; } }
@@ -21,13 +21,24 @@
   a { color: var(--link); }
   a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
   h1, h2, h3 { line-height: 1.25; }
-  table { border-collapse: collapse; } th, td { border: 1px solid var(--muted); padding: .3rem .5rem; }
+
+  table { display: block; box-sizing: border-box; width: max-content; max-width: min(100%, 100vw - 7rem); overflow-x: auto; margin: 1.5rem 0; border-collapse: collapse;
+    background: #fff; color: #2d3748; border: 1px solid #14213d; border-radius: 6px; box-shadow: 0 1px 4px rgba(20, 33, 61, .18); font-size: .92em; }
+  th, td { border: 1px solid #c9cfd8; padding: .4rem .65rem; text-align: left; vertical-align: top; }
+  thead th { background: #14213d; color: #fff; font-weight: 600; border-color: #14213d; }
+  tbody tr:nth-child(even) > td { background: #f3f4f6; }
+  table a { color: #0b5cad; }
+  table code { color: inherit; background: none; padding: 0; }
+  /* A table wider than the reading column grows past it, centred on it, up to the window; only then does it scroll. */
+  @media (min-width: 50rem) { table { max-width: calc(100vw - 7rem); position: relative; left: 50%; transform: translateX(-50%); } }
   :target { scroll-margin-top: 1rem; }
   .katex-display { overflow-x: auto; overflow-y: hidden; }
   dfn.defterm { font-style: normal; font-weight: 600; }
   .cite { color: var(--muted); }
   .fa-blk:empty { min-height: 3rem; }
   .fa-one-page { font-size: .85rem; color: var(--muted); }
+  .fa-live-figure img { max-width: 100%; height: auto; }
+  .fa-live-figure-note { display: block; font-size: .85rem; color: var(--muted); }
 </style>
 <style>
 .block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
@@ -126,7 +137,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 })();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-7jnivcyk1b","here":"/en/dth-hrh/index.hydrated.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <main>
 
-<h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</h1>
+<h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</h1>
 <p><a id="chap:about-this-draft"></a></p>
 <h2>About this draft</h2>
 <p><a id="sec:about-lead"></a>
@@ -1398,14 +1409,14 @@ Each chapter gives objectives, key messages, proposed sections with the main poi
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:nhwa-poster"></a><span class="block-actions" data-block="fig:nhwa-poster"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/f-nhwa-poster.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/f-nhwa-poster.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.5+Analytics+%E2%80%94+fig%3Anhwa-poster&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.5+Analytics&amp;block=fig%3Anhwa-poster&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ff-nhwa-poster.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Figure.</strong> <a href="#fig:nhwa-poster" class="block-anchor" aria-label="Link to Figure" title="Link to Figure"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><img src="media/nhwa-poster.svg" alt="National Health Workforce Accounts (NHWA) on the health workforce registry: the four NHWA modules and the subnational indicators, the data they draw on, and the applications that hold and move it"></p>
+<p><a class="fa-live-figure" href="archimate/0.1.0-draft.1/views/nhwa-on-the-health-workforce-registry-poster-dth-hrh/"><img src="../../archimate/0.1.0-draft.1/views/id-dthhrh-view-nhwa-poster.svg" alt="fig:nhwa-poster: view &quot;NHWA on the health workforce registry (poster, dth-hrh)&quot; of ArchiMate model 0.1.0-draft.1, drawn from the model" loading="lazy" onerror="this.onerror=null;this.src=&quot;media/nhwa-poster.svg&quot;"></a><span class="fa-live-figure-note">Drawn from the ArchiMate model: <a href="archimate/0.1.0-draft.1/views/nhwa-on-the-health-workforce-registry-poster-dth-hrh/">view &ldquo;NHWA on the health workforce registry (poster, dth-hrh)&rdquo;</a> (0.1.0-draft.1)</span></p>
 <p><em>Source: the dth-hrh ArchiMate overlay 0.1.0-draft.1 on the smart-ra (DPI-H RA) model 0.2.0, view "NHWA on the health workforce registry (poster, dth-hrh)", drawn from the model by the <code>archimate-blocks</code> tool. The NHWA elements belong to this handbook's overlay, not to smart-ra. Agent-proposed, for working-group review (dth-hrh#47).</em></p>
 <p><em>National Health Workforce Accounts (NHWA) on the health workforce registry: the four NHWA modules and the subnational indicators, the data they draw on, and the applications that hold and move it</em></p>
 </div>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:nhwa-hwr"></a><span class="block-actions" data-block="fig:nhwa-hwr"><a class="ba-edit" href="https://github.com/litlfred/dth-hrh/edit/main/folio/dth-hrh/ch07-functional-requirements/f-nhwa-hwr.md" title="Edit this block's source on GitHub (folio/dth-hrh/ch07-functional-requirements/f-nhwa-hwr.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-hrh/issues/new?title=Feedback+%5Bdth-hrh%5D%3A+7.5+Analytics+%E2%80%94+fig%3Anhwa-hwr&amp;template=block-feedback.yml&amp;content=dth-hrh&amp;section=7.5+Analytics&amp;block=fig%3Anhwa-hwr&amp;source=folio%2Fdth-hrh%2Fch07-functional-requirements%2Ff-nhwa-hwr.md" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Figure.</strong> <a href="#fig:nhwa-hwr" class="block-anchor" aria-label="Link to Figure" title="Link to Figure"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><img src="media/nhwa-hwr.svg" alt="The health workforce registry and the National Health Workforce Accounts (NHWA): the registry view of the reference architecture with the NHWA work this handbook adds"></p>
+<p><a class="fa-live-figure" href="archimate/0.1.0-draft.1/views/health-workforce-registry-and-nhwa-dth-hrh/"><img src="../../archimate/0.1.0-draft.1/views/id-dthhrh-view-hwr-nhwa.svg" alt="fig:nhwa-hwr: view &quot;Health workforce registry and NHWA (dth-hrh)&quot; of ArchiMate model 0.1.0-draft.1, drawn from the model" loading="lazy" onerror="this.onerror=null;this.src=&quot;media/nhwa-hwr.svg&quot;"></a><span class="fa-live-figure-note">Drawn from the ArchiMate model: <a href="archimate/0.1.0-draft.1/views/health-workforce-registry-and-nhwa-dth-hrh/">view &ldquo;Health workforce registry and NHWA (dth-hrh)&rdquo;</a> (0.1.0-draft.1)</span></p>
 <p><em>Source: the dth-hrh ArchiMate overlay 0.1.0-draft.1 on the smart-ra (DPI-H RA) model 0.2.0, view "Health workforce registry and NHWA (dth-hrh)", a copy of smart-ra view "1. Central Health Workforce Registry" with the NHWA elements added, drawn from the model by the <code>archimate-blocks</code> tool. The NHWA elements belong to this handbook's overlay, not to smart-ra. Agent-proposed, for working-group review (dth-hrh#47).</em></p>
 <p><em>The health workforce registry and the National Health Workforce Accounts (NHWA): the registry view of the reference architecture with the NHWA work this handbook adds</em></p>
 </div>
@@ -4773,9 +4784,21 @@ Table linking registry data elements to NHWA indicators.</p>
 })();
 </script>
 <style>
-  .pc-note { border-left:4px solid var(--link,#0b5cad); margin:.4rem 0 .8rem; padding:.2rem .7rem; font-size:.9rem; background:color-mix(in srgb, currentColor 4%, transparent); }
-  .pc-note summary { cursor:pointer; font-weight:600; }
-  .pc-note ul { margin:.3rem 0; padding-left:1.1rem; }
+  /* Owner, 2026-11-01 (Q-STY-2): a block's comments are a 💬 icon among its
+     controls (cat-harness-tools' block panel), its list a pane that slides
+     out from the right. Without the panel runtime the note pops over the
+     text from the same right-hand box instead. */
+  .block-actions { position:relative; float:right; margin-left:.6rem; font-size:.75rem; white-space:nowrap; opacity:.55; }
+  .block-actions:hover, .block-actions:focus-within, .block-actions:has(.pc-note[open]) { opacity:1; }
+  .pc-note { display:inline-block; position:relative; margin:0; padding:0; font-size:inherit; }
+  .pc-note > summary { cursor:pointer; list-style:none; padding:0 .3rem; border-radius:4px; }
+  .pc-note > summary::-webkit-details-marker { display:none; }
+  .pc-note[open] > summary { background:var(--link,#0b5cad); color:#fff; }
+  .pc-note > ul { position:absolute; right:0; top:1.7em; z-index:20; width:min(24rem,80vw); margin:0; padding:.5rem .8rem .5rem 1.8rem;
+    white-space:normal; text-align:left; font-size:.85rem; line-height:1.45; background:var(--bg,#fff); color:var(--fg,inherit);
+    border:1px solid #8886; border-radius:8px; box-shadow:0 8px 24px #0003; }
+  .fa-block-panel .pc-list { margin:0; padding-left:1.1rem; }
+  .fa-block-panel .pc-list li { margin:.45rem 0; }
   .pc-bar { position:sticky; top:0; z-index:1; padding:.4rem 0; background:var(--bg,#fdfdfb); border-bottom:1px solid #8884; margin-bottom:1rem; }
 </style>
 <script type="application/json" id="pc-data">{"head":{"prose:gloss-health-workforce-registry":{"n":1,"o":1,"s":["CS-001"]},"prose:gloss-human-resources-for-health-information-system":{"n":1,"o":1,"s":["CS-002"]},"prose:gloss-professional-council":{"n":1,"o":1,"s":["CS-003"]}},"lists":{"prose:gloss-health-workforce-registry":[{"ref":"PC-0001","status":"triaged","phase":"open","type":"technical","summary":"We need agreement on the health workforce registry definition soon, to ensure consistency with the WHO/ITU Reference Ar…","sets":["CS-001"]}],"prose:gloss-human-resources-for-health-information-system":[{"ref":"PC-0002","status":"triaged","phase":"open","type":"technical","summary":"Please review the definitions of human resources for health information system (HRIS, HRHIS, HRH-IS) and comment on the…","sets":["CS-002"]}],"prose:gloss-professional-council":[{"ref":"PC-0003","status":"triaged","phase":"open","type":"technical","summary":"Please review the definitions of professional council (professional regulatory or licensing authority or body, medical …","sets":["CS-003"]}]},"url":null}</script>
@@ -4803,11 +4826,24 @@ Table linking registry data elements to NHWA indicators.</p>
     const a = document.getElementById(label);
     if (!a) return;
     const host = a.parentElement && a.parentElement.tagName === "P" && a.parentElement.textContent.trim() === "" ? a.parentElement : a;
+    // Into the block's control box first; a block with no box gets one, so
+    // every block's controls look the same.
+    let acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    if (!acts) {
+      acts = document.createElement("span");
+      acts.className = "block-actions";
+      acts.dataset.block = label;
+      host.after(acts);
+    }
+    discussed(acts, h);
+    const bp = panel();
+    if (bp) { bp.icon(acts, "comments", h.n); return; }
     const d = document.createElement("details");
     d.className = "pc-note";
     const n = h.o;
     const sum = document.createElement("summary");
-    sum.textContent = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? " (" + n + " open)" : "");
+    sum.textContent = "💬 " + h.n + (n ? " (" + n + " open)" : "");
+    sum.title = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? ", " + n + " open" : "");
     d.append(sum);
     d.addEventListener("toggle", () => {
       if (!d.open || d.dataset.built) return;
@@ -4817,10 +4853,11 @@ Table linking registry data elements to NHWA indicators.</p>
       d.append(ul);
       listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
     });
-    host.after(d);
-    // Beside the block's [feedback]: the issues where its change-sets are
-    // already being discussed, so a reader joins rather than duplicates.
-    const acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    acts.prepend(d);
+  };
+  // Beside the block's [feedback]: the issues where its change-sets are
+  // already being discussed, so a reader joins rather than duplicates.
+  const discussed = (acts, h) => {
     const nums = [...new Set(h.s.map((id) => meta.issues[id]).filter(Boolean))];
     if (acts && meta.repo && nums.length) {
       const s = document.createElement("span");
@@ -4829,6 +4866,28 @@ Table linking registry data elements to NHWA indicators.</p>
       acts.append(s);
     }
   };
+  // The block panel's comments pane, registered once the runtime is there.
+  let bpReady = false;
+  const panel = () => {
+    const bp = window.faBlockPanel;
+    if (!bp || bpReady) return bp;
+    bpReady = true;
+    bp.pane("comments", { icon: "💬", title: "Public comments", render: (label, body) => {
+      const h = data[label] || { n: 0, o: 0 };
+      const sum = document.createElement("p");
+      sum.innerHTML = h.n + " comment" + (h.n === 1 ? "" : "s") + (h.o ? ", " + h.o + " open" : "") + " \u00b7 <a href=\"" + esc(meta.dashboard) + "\">all public comments</a>";
+      const ul = document.createElement("ul");
+      ul.className = "pc-list";
+      ul.innerHTML = "<li>Loading…</li>";
+      body.append(sum, ul);
+      listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
+    } });
+    return bp;
+  };
+  // A popped-over list closes on a click elsewhere or on Escape.
+  const shut = (keep) => document.querySelectorAll(".pc-note[open]").forEach((d) => { if (d !== keep) d.open = false; });
+  document.addEventListener("click", (e) => shut(e.target.closest && e.target.closest(".pc-note")));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") shut(null); });
   const entries = Object.entries(data);
   let total = 0, open = 0;
   for (const [, h] of entries) { total += h.n; open += h.o; }
@@ -4837,7 +4896,7 @@ Table linking registry data elements to NHWA indicators.</p>
   const batch = (deadline) => {
     do { if (i >= entries.length) break; note(entries[i][0], entries[i][1]); i++; } while (deadline.timeRemaining() > 2 || i % 40 !== 0);
     if (i < entries.length) idle(batch);
-    else if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    else if (location.hash.length > 1) { try { document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({ behavior: "instant" }); } catch {} }
   };
   idle(batch);
   const bar = document.createElement("div");

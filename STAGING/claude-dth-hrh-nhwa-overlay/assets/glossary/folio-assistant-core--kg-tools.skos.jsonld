@@ -14,6 +14,26 @@
       "dcterms:source": "Tools of folio-assistant-core"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/archimate-from-glossary",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "ArchiMate model from the glossary"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Make an ArchiMate model agree with the instance's folio-glossary/v1 terms whose `focus` is an ArchiMate element: elements matched by their `skosConcept` property (never by name) take the term's prefLabel and definition, a term with no element gets one on no view, and the relationships the terms list are added. A type that disagrees is reported, never changed. A relationship between two linked elements that no term lists is reported, and removed with `--prune` along with the lines that draw it. No box or line is moved. Without `--write` it only reports; `--check` fails when anything would change."
+        }
+      ],
+      "skos:notation": "archimate-from-glossary",
+      "dcterms:source": "folio-assistant-core/tools/archimate-from-glossary/archimate-from-glossary.ts#archimate-from-glossary",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/bibliography-page",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -294,6 +314,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/glossary-from-source",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Glossary candidates from a source"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Read a source's glossary and abbreviations sections (an L1 entry's sections/, or a folio block) into `candidate` terms of a folio-glossary/v1 scheme, verbatim, each with `source: <file>#L<line>`. Acronyms fold into the term they expand as `notation`. The scheme is merged: terms a person owns are never changed. `--check` writes nothing and fails when the scheme would change."
+        }
+      ],
+      "skos:notation": "glossary-from-source",
+      "dcterms:source": "folio-assistant-core/tools/glossary-from-source/glossary-from-source.ts#glossary-from-source",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/glossary-page",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -314,6 +354,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/glossary-table",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Glossary and acronyms tables"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Rewrite the glossary and acronyms tables of a document from its folio-glossary/v1 schemes, as `glossary/glossary-tables.json` (folio-glossary-tables/v1) lists them: terms with their altLabels, definitions and editorial notes, or acronyms (notation and prefLabel). The block's caption and footnotes are left alone. `--check` writes nothing and fails when a table is stale."
+        }
+      ],
+      "skos:notation": "glossary-table",
+      "dcterms:source": "folio-assistant-core/tools/glossary-table/glossary-table.ts#glossary-table",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/l1-coverage",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -331,6 +391,26 @@
       ],
       "skos:notation": "l1-coverage",
       "dcterms:source": "folio-assistant-core/tools/l1-coverage/l1-coverage.ts#l1-coverage",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools/review-log-watch",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Check a review log and its repository's issues for changes"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The mechanical check a review-log watcher runs on every poll (owner, 2026-11-01; Q-WATCH1 B). Given a drafting sheet's Contributor Feedback values and the folio repository, it reads the repository's open and closed issues (pull requests, issues labelled `no-sheet` and, with `--author`, issues someone else opened left out) and compares a digest of them and of the cells people set (Title, Selected Sections, Contributor Feedback, Disposition, Ready for agent, Ready for merge, Dispositions confirmed) with the last check's. Unchanged: it prints `{\"status\":\"unchanged\"}` and exits 0, and the watcher does nothing more. Changed: it lists what changed (issue opened, updated or closed; a cell's old and new text), the Contributor Feedback rows to append, one per issue that no row's Issue cell links yet (Q-WATCH2 B; a closed issue's row marked `closed`), and `closedRows`, the rows linking a closed issue, which the watcher hides with their text struck through (owner, 10:18Z): Title is the issue's title, the first Contributor Feedback column `@login (#N): first paragraph`, Issue the issue's URL. It exits 10. It writes no sheet and no issue: the watcher appends the rows and does the agent pass. With `--accept` it stores the new state, so the next poll compares against it."
+        }
+      ],
+      "skos:notation": "review-log-watch",
+      "dcterms:source": "folio-assistant-core/tools/review-log-watch/review-log-watch.ts#review-log-watch",
       "skos:note": "candidate"
     },
     {

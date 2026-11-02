@@ -26,9 +26,9 @@
 
 
   <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries | WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind dth in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.</title>
+<title>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage) | Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries" />
+<meta property="og:title" content="Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind dth in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record." />
 <meta name="twitter:description" property="og:description" content="WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind dth in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record." />
@@ -37,9 +37,9 @@
 <meta property="og:site_name" content="Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries" />
+<meta name="twitter:title" content="Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind dth in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.","headline":"Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries","url":"https://litlfred.github.io/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/dth-hrh/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind dth in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.","headline":"Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)","url":"https://litlfred.github.io/dth-hrh/STAGING/claude-dth-hrh-nhwa-overlay/en/dth-hrh/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -925,6 +925,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 .fa-doc .fa-blk:empty { min-height: 3rem; }
 .fa-doc .fa-one-page { font-size: .85rem; opacity: .72; }
 .fa-doc .pc-bar { position: static; background: none; }
+
+  .fa-doc table { display: block; box-sizing: border-box; width: max-content; max-width: min(100%, 100vw - 7rem); overflow-x: auto; margin: 1.5rem 0; border-collapse: collapse;
+    background: #fff; color: #2d3748; border: 1px solid #14213d; border-radius: 6px; box-shadow: 0 1px 4px rgba(20, 33, 61, .18); font-size: .92em; }
+  .fa-doc th, .fa-doc td { border: 1px solid #c9cfd8; padding: .4rem .65rem; text-align: left; vertical-align: top; }
+  .fa-doc thead th { background: #14213d; color: #fff; font-weight: 600; border-color: #14213d; }
+  .fa-doc tbody tr:nth-child(even) > td { background: #f3f4f6; }
+  .fa-doc table a { color: #0b5cad; }
+  .fa-doc table code { color: inherit; background: none; padding: 0; }
+  /* A table wider than the reading column grows past it, centred on it, up to the window; only then does it scroll. */
+  @media (min-width: 50rem) { .fa-doc table { max-width: calc(100vw - 7rem); position: relative; left: 50%; transform: translateX(-50%); } }
 .fa-doc .block-actions { float:right; font-size:.75rem; margin-left:.6rem; opacity:.55; white-space:nowrap; }
 .fa-doc .block-actions:hover, .fa-doc .block-actions:focus-within { opacity:1; }
 .fa-doc .block-actions a { text-decoration:none; margin-left:.5rem; }
@@ -936,7 +946,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <h1>
   
   
-    Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries
+    Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)
   
   
 </h1>
@@ -2943,12 +2953,37 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     for (const e of entries) if (e.isIntersecting) { io.unobserve(e.target); load(ix.of[e.target.dataset.blk]); }
   }, { rootMargin: "2000px 0px" });
   for (const ph of document.querySelectorAll(".fa-blk")) io.observe(ph);
+  // Blocks above the target fill in after it is reached (and figures and
+  // math render), pushing it down the page. So jump (not the theme's smooth
+  // scroll, which a growing page outruns) and hold the target where it
+  // landed, each frame, until the reader scrolls, clicks or types, or the
+  // page has kept still for a few seconds.
+  let unpin = () => {};
+  const pin = (el) => {
+    unpin();
+    el.scrollIntoView({ behavior: "instant" });
+    const top = el.getBoundingClientRect().top;
+    let still = performance.now(), frame;
+    const hold = (now) => {
+      const d = el.getBoundingClientRect().top - top;
+      if (Math.abs(d) > 1) { scrollBy({ top: d, behavior: "instant" }); still = now; }
+      if (now - still > 4000) unpin(); else frame = requestAnimationFrame(hold);
+    };
+    const stop = ["wheel", "touchstart", "pointerdown", "keydown"];
+    const off = () => { cancelAnimationFrame(frame); for (const t of stop) removeEventListener(t, off, true); };
+    unpin = off;
+    for (const t of stop) addEventListener(t, off, { capture: true, passive: true });
+    frame = requestAnimationFrame(hold);
+  };
   // A link to a block, or to a term inside one, loads its chunk and lands on it.
   const go = () => {
-    const id = decodeURIComponent(location.hash.slice(1));
-    const n = id ? (ix.of[id] ?? ix.ids[id]) : undefined;
-    if (n === undefined) return;
-    load(n).then(() => document.getElementById(id)?.scrollIntoView());
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { id = location.hash.slice(1); }
+    if (!id) return;
+    const n = ix.of[id] ?? ix.ids[id];
+    const land = () => { const el = document.getElementById(id); if (el) pin(el); };
+    if (n === undefined) land();
+    else load(n).then(land);
   };
   addEventListener("hashchange", go);
   go();
@@ -3705,9 +3740,17 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </script>
 
 <style>
-.fa-doc .pc-note { border-left:4px solid var(--link,#0b5cad); margin:.4rem 0 .8rem; padding:.2rem .7rem; font-size:.9rem; background:color-mix(in srgb, currentColor 4%, transparent); }
-.fa-doc .pc-note summary { cursor:pointer; font-weight:600; }
-.fa-doc .pc-note ul { margin:.3rem 0; padding-left:1.1rem; }
+.fa-doc .block-actions { position:relative; float:right; margin-left:.6rem; font-size:.75rem; white-space:nowrap; opacity:.55; }
+.fa-doc .block-actions:hover, .fa-doc .block-actions:focus-within, .fa-doc .block-actions:has(.pc-note[open]) { opacity:1; }
+.fa-doc .pc-note { display:inline-block; position:relative; margin:0; padding:0; font-size:inherit; }
+.fa-doc .pc-note > summary { cursor:pointer; list-style:none; padding:0 .3rem; border-radius:4px; }
+.fa-doc .pc-note > summary::-webkit-details-marker { display:none; }
+.fa-doc .pc-note[open] > summary { background:var(--link,#0b5cad); color:#fff; }
+.fa-doc .pc-note > ul { position:absolute; right:0; top:1.7em; z-index:20; width:min(24rem,80vw); margin:0; padding:.5rem .8rem .5rem 1.8rem;
+    white-space:normal; text-align:left; font-size:.85rem; line-height:1.45; background:var(--bg,#fff); color:var(--fg,inherit);
+    border:1px solid #8886; border-radius:8px; box-shadow:0 8px 24px #0003; }
+.fa-doc .fa-block-panel .pc-list { margin:0; padding-left:1.1rem; }
+.fa-doc .fa-block-panel .pc-list li { margin:.45rem 0; }
 .fa-doc .pc-bar { position:sticky; top:0; z-index:1; padding:.4rem 0; background:var(--bg,#fdfdfb); border-bottom:1px solid #8884; margin-bottom:1rem; }
 </style>
 <script type="application/json" id="pc-data">{"head":{"prose:gloss-health-workforce-registry":{"n":1,"o":1,"s":["CS-001"]},"prose:gloss-human-resources-for-health-information-system":{"n":1,"o":1,"s":["CS-002"]},"prose:gloss-professional-council":{"n":1,"o":1,"s":["CS-003"]}},"lists":null,"url":"../../dth-hrh/pc-notes.json"}</script>
@@ -3735,11 +3778,24 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     const a = document.getElementById(label);
     if (!a) return;
     const host = a.parentElement && a.parentElement.tagName === "P" && a.parentElement.textContent.trim() === "" ? a.parentElement : a;
+    // Into the block's control box first; a block with no box gets one, so
+    // every block's controls look the same.
+    let acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    if (!acts) {
+      acts = document.createElement("span");
+      acts.className = "block-actions";
+      acts.dataset.block = label;
+      host.after(acts);
+    }
+    discussed(acts, h);
+    const bp = panel();
+    if (bp) { bp.icon(acts, "comments", h.n); return; }
     const d = document.createElement("details");
     d.className = "pc-note";
     const n = h.o;
     const sum = document.createElement("summary");
-    sum.textContent = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? " (" + n + " open)" : "");
+    sum.textContent = "💬 " + h.n + (n ? " (" + n + " open)" : "");
+    sum.title = h.n + " public comment" + (h.n > 1 ? "s" : "") + (n ? ", " + n + " open" : "");
     d.append(sum);
     d.addEventListener("toggle", () => {
       if (!d.open || d.dataset.built) return;
@@ -3749,10 +3805,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       d.append(ul);
       listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
     });
-    host.after(d);
-    // Beside the block's [feedback]: the issues where its change-sets are
-    // already being discussed, so a reader joins rather than duplicates.
-    const acts = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]');
+    acts.prepend(d);
+  };
+  // Beside the block's [feedback]: the issues where its change-sets are
+  // already being discussed, so a reader joins rather than duplicates.
+  const discussed = (acts, h) => {
     const nums = [...new Set(h.s.map((id) => meta.issues[id]).filter(Boolean))];
     if (acts && meta.repo && nums.length) {
       const s = document.createElement("span");
@@ -3761,6 +3818,28 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       acts.append(s);
     }
   };
+  // The block panel's comments pane, registered once the runtime is there.
+  let bpReady = false;
+  const panel = () => {
+    const bp = window.faBlockPanel;
+    if (!bp || bpReady) return bp;
+    bpReady = true;
+    bp.pane("comments", { icon: "💬", title: "Public comments", render: (label, body) => {
+      const h = data[label] || { n: 0, o: 0 };
+      const sum = document.createElement("p");
+      sum.innerHTML = h.n + " comment" + (h.n === 1 ? "" : "s") + (h.o ? ", " + h.o + " open" : "") + " \u00b7 <a href=\"" + esc(meta.dashboard) + "\">all public comments</a>";
+      const ul = document.createElement("ul");
+      ul.className = "pc-list";
+      ul.innerHTML = "<li>Loading…</li>";
+      body.append(sum, ul);
+      listOf(label).then((list) => { ul.innerHTML = list.map(item).join("") || "<li>Could not load the comments.</li>"; });
+    } });
+    return bp;
+  };
+  // A popped-over list closes on a click elsewhere or on Escape.
+  const shut = (keep) => document.querySelectorAll(".pc-note[open]").forEach((d) => { if (d !== keep) d.open = false; });
+  document.addEventListener("click", (e) => shut(e.target.closest && e.target.closest(".pc-note")));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") shut(null); });
   const entries = Object.entries(data);
   let total = 0, open = 0;
   for (const [, h] of entries) { total += h.n; open += h.o; }
@@ -3769,7 +3848,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   const batch = (deadline) => {
     do { if (i >= entries.length) break; note(entries[i][0], entries[i][1]); i++; } while (deadline.timeRemaining() > 2 || i % 40 !== 0);
     if (i < entries.length) idle(batch);
-    else if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    else if (location.hash.length > 1) { try { document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({ behavior: "instant" }); } catch {} }
   };
   idle(batch);
   const bar = document.createElement("div");

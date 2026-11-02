@@ -976,9 +976,9 @@ is <code class="language-plaintext highlighter-rouge">satisfies</code>, and it r
 to do that</em>, never <em>this skill is a tool</em>.</p>
 
 <div class="tg-grid">
-<a class="tg-stat" href="#every-tool"><b>20</b><span>Tool nodes</span></a>
-<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>18</b><span>skills satisfied</span></a>
-<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>20</b><span>invoked as a shell command</span></a>
+<a class="tg-stat" href="#every-tool"><b>24</b><span>Tool nodes</span></a>
+<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>20</b><span>skills satisfied</span></a>
+<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>24</b><span>invoked as a shell command</span></a>
 <a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>0</b><span>reachable over MCP</span></a>
 </div>
 
@@ -1003,7 +1003,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><span class="tg-tag tg-shell">shell</span></td>
-      <td>20</td>
+      <td>24</td>
     </tr>
   </tbody>
 </table></div>
@@ -1018,7 +1018,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">none</code></td>
-      <td>19</td>
+      <td>23</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">service</code></td>
@@ -1035,7 +1035,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
 </h2>
     
 
-<p>Yes — all <strong>18</strong> skills named across <strong>20</strong> tools resolve to a
+<p>Yes — all <strong>20</strong> skills named across <strong>24</strong> tools resolve to a
 skill document in this checkout. A <code class="language-plaintext highlighter-rouge">satisfies</code> pointing at nothing would be a
 tool advertising a capability the graph cannot locate.</p>
 <h2 id="every-tool">
@@ -1060,6 +1060,14 @@ tool advertising a capability the graph cannot locate.</p>
   </thead>
   <tbody>
     <tr>
+      <td><a id="archimate-from-glossary"></a><a href="#archimate-from-glossary"><code class="language-plaintext highlighter-rouge">archimate-from-glossary</code></a><br />ArchiMate model from the glossary</td>
+      <td>Make an ArchiMate model agree with the instance’s folio-glossary/v1 terms whose <code class="language-plaintext highlighter-rouge">focus</code> is an ArchiMate element: elements matched by their <code class="language-plaintext highlighter-rouge">skosConcept</code> property (never by name) take the term’s prefLabel and definition, a term with no element gets one on no view, and the relationships the terms list are added. A type that disagrees is reported, never changed. A relationship between two linked elements that no term lists is reported, and removed with <code class="language-plaintext highlighter-rouge">--prune</code> along with the lines that draw it. No box or line is moved. Without <code class="language-plaintext highlighter-rouge">--write</code> it only reports; <code class="language-plaintext highlighter-rouge">--check</code> fails when anything would change.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">graph-rendering</code></td>
+      <td>5 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
       <td><a id="bibliography-page"></a><a href="#bibliography-page"><code class="language-plaintext highlighter-rouge">bibliography-page</code></a><br />Bibliography page</td>
       <td>Render every reference in the checkout (each declared <code class="language-plaintext highlighter-rouge">references</code> directory’s folio-reference/v1 nodes and each <code class="language-plaintext highlighter-rouge">catalogue</code> directory’s Dublin Core records) as the bibliography page and one page per sub-graph, each with its BibTeX, CSL-JSON, RIS and Dublin Core JSON-LD exports and a per-reference export, at the route of the visualiser core declares for it.</td>
       <td><span class="tg-tag tg-shell">shell</span></td>
@@ -1073,7 +1081,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">block-actions</code></td>
       <td>5 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="catalogue-from-references"></a><a href="#catalogue-from-references"><code class="language-plaintext highlighter-rouge">catalogue-from-references</code></a><br />Catalogue a library from its bibliography</td>
@@ -1089,7 +1097,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">dsa-catalogue-status</code><br /><code class="language-plaintext highlighter-rouge">dsa-checksum</code><br /><code class="language-plaintext highlighter-rouge">dsa-dcat-record</code><br /><code class="language-plaintext highlighter-rouge">dsa-odrl-source</code></td>
       <td>1 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="diig-phases-svg"></a><a href="#diig-phases-svg"><code class="language-plaintext highlighter-rouge">diig-phases-svg</code></a><br />DIIG phases, steps and resources chart</td>
@@ -1105,7 +1113,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">dublin-core-renderings</code></td>
       <td>2 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="figure-coverage"></a><a href="#figure-coverage"><code class="language-plaintext highlighter-rouge">figure-coverage</code></a><br />Figure coverage and computability</td>
@@ -1121,7 +1129,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">review-heatmap</code></td>
       <td>3 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="folio-block-screenshots"></a><a href="#folio-block-screenshots"><code class="language-plaintext highlighter-rouge">folio-block-screenshots</code></a><br />Folio block screenshots</td>
@@ -1129,7 +1137,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">visual-diff</code></td>
       <td>5 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="folio-changeset"></a><a href="#folio-changeset"><code class="language-plaintext highlighter-rouge">folio-changeset</code></a><br />Folio ChangeSet</td>
@@ -1137,7 +1145,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">diff</code><br /><code class="language-plaintext highlighter-rouge">staging-review</code></td>
       <td>5 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="folio-review-comment-move"></a><a href="#folio-review-comment-move"><code class="language-plaintext highlighter-rouge">folio-review-comment-move</code></a><br />Move a review comment’s status</td>
@@ -1145,7 +1153,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">review-comments</code></td>
       <td>9 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="folio-review-comments"></a><a href="#folio-review-comments"><code class="language-plaintext highlighter-rouge">folio-review-comments</code></a><br />Folio review comments</td>
@@ -1153,7 +1161,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">review-comments</code></td>
       <td>10 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="folio-review-coverage"></a><a href="#folio-review-coverage"><code class="language-plaintext highlighter-rouge">folio-review-coverage</code></a><br />Folio review coverage</td>
@@ -1161,7 +1169,7 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">review-comments</code></td>
       <td>7 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="glossary-build"></a><a href="#glossary-build"><code class="language-plaintext highlighter-rouge">glossary-build</code></a><br />Glossary build</td>
@@ -1169,11 +1177,27 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">document-intake</code></td>
       <td>2 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="glossary-from-source"></a><a href="#glossary-from-source"><code class="language-plaintext highlighter-rouge">glossary-from-source</code></a><br />Glossary candidates from a source</td>
+      <td>Read a source’s glossary and abbreviations sections (an L1 entry’s sections/, or a folio block) into <code class="language-plaintext highlighter-rouge">candidate</code> terms of a folio-glossary/v1 scheme, verbatim, each with <code class="language-plaintext highlighter-rouge">source: &lt;file&gt;#L&lt;line&gt;</code>. Acronyms fold into the term they expand as <code class="language-plaintext highlighter-rouge">notation</code>. The scheme is merged: terms a person owns are never changed. <code class="language-plaintext highlighter-rouge">--check</code> writes nothing and fails when the scheme would change.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">glossary-terms</code></td>
+      <td>7 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="glossary-page"></a><a href="#glossary-page"><code class="language-plaintext highlighter-rouge">glossary-page</code></a><br />Glossary page</td>
       <td>Render every declared glossary — authored SKOS schemes, the swimlane ledger and the terms extracted from knowledge-graph assets — as the glossary page and one page per asset type, at the route of the visualiser core declares for it.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">graph-rendering</code></td>
+      <td>2 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="glossary-table"></a><a href="#glossary-table"><code class="language-plaintext highlighter-rouge">glossary-table</code></a><br />Glossary and acronyms tables</td>
+      <td>Rewrite the glossary and acronyms tables of a document from its folio-glossary/v1 schemes, as <code class="language-plaintext highlighter-rouge">glossary/glossary-tables.json</code> (folio-glossary-tables/v1) lists them: terms with their altLabels, definitions and editorial notes, or acronyms (notation and prefLabel). The block’s caption and footnotes are left alone. <code class="language-plaintext highlighter-rouge">--check</code> writes nothing and fails when a table is stale.</td>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">graph-rendering</code></td>
       <td>2 in / 1 out</td>
@@ -1185,7 +1209,15 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">l1-coverage</code></td>
       <td>4 in / 1 out</td>
-      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="review-log-watch"></a><a href="#review-log-watch"><code class="language-plaintext highlighter-rouge">review-log-watch</code></a><br />Check a review log and its repository’s issues for changes</td>
+      <td>The mechanical check a review-log watcher runs on every poll (owner, 2026-11-01; Q-WATCH1 B). Given a drafting sheet’s Contributor Feedback values and the folio repository, it reads the repository’s open and closed issues (pull requests, issues labelled <code class="language-plaintext highlighter-rouge">no-sheet</code> and, with <code class="language-plaintext highlighter-rouge">--author</code>, issues someone else opened left out) and compares a digest of them and of the cells people set (Title, Selected Sections, Contributor Feedback, Disposition, Ready for agent, Ready for merge, Dispositions confirmed) with the last check’s. Unchanged: it prints <code class="language-plaintext highlighter-rouge">{"status":"unchanged"}</code> and exits 0, and the watcher does nothing more. Changed: it lists what changed (issue opened, updated or closed; a cell’s old and new text), the Contributor Feedback rows to append, one per issue that no row’s Issue cell links yet (Q-WATCH2 B; a closed issue’s row marked <code class="language-plaintext highlighter-rouge">closed</code>), and <code class="language-plaintext highlighter-rouge">closedRows</code>, the rows linking a closed issue, which the watcher hides with their text struck through (owner, 10:18Z): Title is the issue’s title, the first Contributor Feedback column <code class="language-plaintext highlighter-rouge">@login (#N): first paragraph</code>, Issue the issue’s URL. It exits 10. It writes no sheet and no issue: the watcher appends the rows and does the agent pass. With <code class="language-plaintext highlighter-rouge">--accept</code> it stores the new state, so the next poll compares against it.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">review-log-watch</code></td>
+      <td>7 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/dth-hrh/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>
       <td><a id="review-sheet-sync"></a><a href="#review-sheet-sync"><code class="language-plaintext highlighter-rouge">review-sheet-sync</code></a><br />Build the review sheet’s Apps Script and a document’s Config tab</td>

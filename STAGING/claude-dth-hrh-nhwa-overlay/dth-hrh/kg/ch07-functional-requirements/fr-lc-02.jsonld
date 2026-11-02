@@ -26,15 +26,22 @@
     },
     "requirementId": "FR-LC-02",
     "priority": "to-be-prioritized",
-    "inspirationalReferences": {
-      "source": "who-iris library/9789241549226-eng (WHO, Human resources for health information system: minimum data set for health workforce registry, 2015), system functional requirements only (who-iris#167)",
-      "role": "inspirational, non-definitional: contributes to a definition, does not define it; the data set itself is not used (owner, 2026-11-01 23:42Z)",
+    "externalGlossaryReferences": {
+      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
+      "schemeId": "hrhis-registry-2015",
+      "publisher": "who-iris glossary (who-iris#167)",
+      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
       "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
-      "references": [
+      "concepts": [
         {
-          "iri": "https://litlfred.github.io/folio/library/9789241549226-eng/blocks/functional-requirement-sec-009-05",
-          "item": "sec-009-05",
-          "text": "Functional domain: Entry (Preparing Workforce) Primary function: Regulation - Registration and Licensing"
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-009-05",
+          "id": "fr-sec-009-05"
+        }
+      ],
+      "systemTypes": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/hrh-information-system",
+          "id": "hrh-information-system"
         }
       ]
     },

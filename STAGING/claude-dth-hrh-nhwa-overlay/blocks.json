@@ -115,12 +115,12 @@
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
   "freq:FR-LC-02": {
-    "hash": "43b024139ee7edb4836364ceb5194e7f575ab0aa55a126feb24e3ac67ed8fc7e",
+    "hash": "070d67eb8e01cd4c94e06620c87502c96c89432f4b57a0bd1096e5042cae0548",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-3"
   },
   "freq:FR-ID-01": {
-    "hash": "033ac17d9346370f79419e3e80c4976a34483af5a7c3de7c5f7145e19fe925f0",
+    "hash": "df47b664b606e6c60e1717ed12904d10165baba2cc55e2d71801d293ad697404",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-1"
   },
@@ -130,7 +130,7 @@
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
   "freq:FR-AN-01": {
-    "hash": "794d2c2d5ccb285081a558d3f75834a8f3750c7623fe3bb40473fd4c92315e90",
+    "hash": "b3edec519ee2de3d522bd7cd17e6552f85a61c3ff4310187c6c81f32db6502a8",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-5"
   },
@@ -140,7 +140,7 @@
     "section": "ch07-functional-requirements::sec:7-1"
   },
   "freq:FR-REC-01": {
-    "hash": "8cd4f8d3ffb0ac58b2f4a51f956b1e5917249c5119a9bf1bdcf2e516233c2903",
+    "hash": "5cbe50d27b934268a229798e6d2a0037e4ba56562b65d1fb5d33d9ea53b6d85c",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-2"
   },
@@ -160,7 +160,7 @@
     "section": "ch07-functional-requirements::sec:7-2"
   },
   "freq:FR-AN-02": {
-    "hash": "cfb78abeee6beae31892d771d09b371cf05cb70469d584547afc393831685b46",
+    "hash": "c2f7e88f5f8731823249c74ef4305a7c3ff4831e8ac59cfa7c0b468d81d3f257",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-5"
   },
@@ -170,7 +170,7 @@
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
   "freq:FR-LC-01": {
-    "hash": "de631c899800e8dedac4266a56d6a00fbe9ab759a3eb2442df5ae35f99632802",
+    "hash": "382880b99689d3956689e16159fe4cf9e0548cf1fc3566d197491d296d7312ea",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-3"
   },
@@ -180,7 +180,7 @@
     "section": "ch07-functional-requirements::sec:7-nfr"
   },
   "freq:FR-VER-01": {
-    "hash": "7f72fef9ed92c11ba15fffd4b4690f6398aaa3d8125913b0e4a301215772799a",
+    "hash": "2bbc70da8e472ca05c735f99eb25253620efbd7ed385b6383f0c897b020367c9",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-4"
   },
@@ -200,7 +200,7 @@
     "section": "ch07-functional-requirements::sec:ch07-planned"
   },
   "freq:FR-ID-02": {
-    "hash": "b38abcac4c0f5d2977c2c25edd35a5a298491413bcef1bcaa19990ff51599ca5",
+    "hash": "576c0163b8bbed9a29bdd2282e5217316a3be4e4a414a1e4ac5adeafd6ed3a8e",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-1"
   },
@@ -215,7 +215,7 @@
     "section": "ch07-functional-requirements::sec:7-3"
   },
   "freq:FR-AN-03": {
-    "hash": "117f33218e10dc93f5112d0e0ad8b5615ce496cbbe01414754b7c2404994006e",
+    "hash": "c0fe5d1c0c0680433d7e6491865a30525c7e6da72ea7ac8824af6c8880799303",
     "renamedFrom": [],
     "section": "ch07-functional-requirements::sec:7-5"
   },

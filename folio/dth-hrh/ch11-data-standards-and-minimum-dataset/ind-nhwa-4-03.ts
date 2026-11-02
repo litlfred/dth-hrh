@@ -1,0 +1,8 @@
+import { indicator } from "../../schema/dak";
+
+export default indicator({
+  label: "ind:nhwa-4-03",
+  title: "4-03 Share of women in leadership role",
+  uses: [],
+  meta: {"indicatorId": "4-03", "module": "Module 4: Working conditions, governance and leadership", "abbreviatedName": "Share of women in leadership role", "name": "Share of women in senior management positions in the Ministry of Health", "numerator": "Number of women in leadership roles in the Ministry of Health, defined in headcounts", "denominator": "Total number of men and women in leadership roles in the Ministry of Health, defined in headcounts", "definition": "Share of women, expressed as a percentage, of women in senior management positions in\nthe Ministry of Health.\nTo monitor and report on this indicator, it is advised to count all individuals at director-level\nor equivalent positions within the Ministry of Health. Using the organigram of the Ministry of\nHealth, focusing on the senior positions, should be sufficient to estimate this indicator. Alternative\napproaches could be based on the count of men and women in delegations participating to the\nannual World Health Assemblies.", "glossary": "Active health worker; Leadership role; Gender", "reportingFrequency": "Every three years", "dataSources": "Ministry of Health organigram or official documents", "furtherInformation": "(21, 95, 96)", "dataElements": "de:nhwa-m4-leadership-position", "gaps": "disaggregation", "programIndicatorId": "NHWA.4-03", "source": {"library": "who-iris:9789240081291-eng", "node": "library/9789240081291-eng/blocks/indicator-sec-052-01", "pages": "87", "method": "indicator-extraction", "verbatim": true}, "status": "draft"},
+});

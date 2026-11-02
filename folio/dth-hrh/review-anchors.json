@@ -2934,6 +2934,150 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "ind:nhwa-1-01",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-01",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "d1db309b4b8b",
+   "excerpt": "NHWA indicator 1-01: Health worker density. Density of health workers per 10 000 population Numerator Denominator Disaggregation --- --- --- Number of active he",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-02",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-02",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "55e11dd9cf98",
+   "excerpt": "NHWA indicator 1-02: Health worker density at subnational level. Density of active health workers per 10 000 population at subnational level Numerator Denominat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-03",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-03",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "10bc73d06828",
+   "excerpt": "NHWA indicator 1-03: Health worker distribution by age group. Percentage of active health workers in different age groups Numerator Denominator Disaggregation -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-04",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-04",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "032f49dda242",
+   "excerpt": "NHWA indicator 1-04: Health worker distribution by sex. Percentage of active health workers by sex Numerator Denominator Disaggregation --- --- --- Number of ac",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-05",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-05",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "e26307a24f6f",
+   "excerpt": "NHWA indicator 1-05: Health worker distribution by facility ownership. Percentage of active health workers employed by facility ownership Numerator Denominator ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-06",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-06",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "64c0ced9e053",
+   "excerpt": "NHWA indicator 1-06: Health worker distribution by facility type. Percentage of active health workers employed by facility type Numerator Denominator Disaggrega",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-07",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-07",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "6e413c1fe202",
+   "excerpt": "NHWA indicator 1-07: Health worker distribution by place of birth. Percentage of active health workers by their place of birth Numerator Denominator Disaggregat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-08",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-08",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "4e570b49760b",
+   "excerpt": "NHWA indicator 1-08: Health worker distribution by place of training. Percentage of active health workers by their place of training Numerator Denominator Disag",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-09",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-09",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "8f4131a2fa3e",
+   "excerpt": "NHWA indicator 1-09: Annual inflows of health workers. Ratio of newly active health workers to the total stock of active health workers Numerator Denominator Di",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-10",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-10",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "692fb193d5d5",
+   "excerpt": "NHWA indicator 1-10: Annual outflows of health workers. Ratio of active health workers leaving the health labour market to the total stock of active health work",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-11",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-11",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "fa8ab63889e2",
+   "excerpt": "NHWA indicator 1-11: Vacancy rate. Ratio of unfilled posts to total number of funded posts Numerator Denominator Disaggregation --- --- --- Number of funded ful",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-1-12",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-1-12",
+   "sections": [
+    "sec:11-2"
+   ],
+   "hash": "6d120101b6c9",
+   "excerpt": "NHWA indicator 1-12: Health worker distribution by type of contract. Percentage of active health workers by their type of contract Numerator Denominator Disaggr",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m1-activity-level",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3055,6 +3199,90 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "ind:nhwa-2-01",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-01",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "a879f52fdcd2",
+   "excerpt": "NHWA indicator 2-01: Health workforce education and training capacity. Ratio of health workforce education and training capacity per 10 000 population Numerator",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-02",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-02",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "c6f73403e4fe",
+   "excerpt": "NHWA indicator 2-02: Ratio of applications to education and training capacity. Ratio of applications for health workforce education and training to the training",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-03",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-03",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "829b2b08b32a",
+   "excerpt": "NHWA indicator 2-03: Ratio of enrolments to application. Ratio of students enrolled in the first year of health workforce education and training programmes to a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-04",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-04",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "a85f637437f0",
+   "excerpt": "NHWA indicator 2-04: Ratio of graduates to stock. Ratio of graduates of health workforce education and training programmes to the stock of active health workers",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-05",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-05",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "9ee804d8444f",
+   "excerpt": "NHWA indicator 2-05: Duration of education and training. Duration of health workforce education and training programmes, in years Numerator Denominator Disaggre",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-06",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-06",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "bc86768b1c13",
+   "excerpt": "NHWA indicator 2-06: Accreditation mechanisms for education and training institutions and their programmes. Existence of national and/or subnational mechanisms ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-2-07",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-2-07",
+   "sections": [
+    "sec:11-3"
+   ],
+   "hash": "4cb899cce87e",
+   "excerpt": "NHWA indicator 2-07: Standards for education and training programmes. Existence of standards for education and training programmes Numerator Denominator Disaggr",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m2-qualification",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3104,6 +3332,66 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "ind:nhwa-3-01",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-3-01",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "51b284f4a368",
+   "excerpt": "NHWA indicator 3-01: Expenditure on compensation of health workers. Total expenditure on compensation of health workers Numerator Denominator Disaggregation ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-3-02",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-3-02",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "02aa4c0c7b3d",
+   "excerpt": "NHWA indicator 3-02: Entry-level wages and salaries. Average entry-level wage and salary excluding social contributions Numerator Denominator Disaggregation ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-3-03",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-3-03",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "7db8b75149dc",
+   "excerpt": "NHWA indicator 3-03: Total expenditure on health workforce education. Total expenditure on health workforce pre-service education (current and capital) Numerato",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-3-04",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-3-04",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "6b059c8b1385",
+   "excerpt": "NHWA indicator 3-04: Expenditure per graduate on health workforce education. Expenditure per graduate of health workforce education and training programme Numer",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-3-05",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-3-05",
+   "sections": [
+    "sec:11-4"
+   ],
+   "hash": "8aa3b3e049bd",
+   "excerpt": "NHWA indicator 3-05: Average tuition fee per student. Average annual tuition fee per student enrolled in health workforce education and training Numerator Denom",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "de:nhwa-m3-employer-sector",
    "kind": "data-element",
    "chapter": "ch11-data-standards-and-minimum-dataset",
@@ -3150,6 +3438,66 @@
    "caption": "NHWA Module 4 (working conditions, governance and leadership) extension data elements, at a glance",
    "hash": "bf1ddf9eb382",
    "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Leadership position]( de:nhwa-m4-leadership-position) 4-03 — to draft",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-4-01",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-4-01",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "ee6fd4d1b846",
+   "excerpt": "NHWA indicator 4-01: Labour regulations and policies for health workforce. Existence of labour regulations and policies on the employment characteristics, prote",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-4-02",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-4-02",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "b1aa31949c12",
+   "excerpt": "NHWA indicator 4-02: Health workforce governance and leadership capacity. Existence of health workforce governance and leadership capacity at national and/or su",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-4-03",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-4-03",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "99f14bde4617",
+   "excerpt": "NHWA indicator 4-03: Share of women in leadership role. Share of women in senior management positions in the Ministry of Health Numerator Denominator Disaggrega",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-4-04",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-4-04",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "cd4eef711ffc",
+   "excerpt": "NHWA indicator 4-04: International Health Regulations implementation capacity. Availability of human resources to implement International Health Regulations cor",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:nhwa-4-05",
+   "kind": "indicator",
+   "chapter": "ch11-data-standards-and-minimum-dataset",
+   "root": "ind-nhwa-4-05",
+   "sections": [
+    "sec:11-5"
+   ],
+   "hash": "cd6e7eeb70f6",
+   "excerpt": "NHWA indicator 4-05: National capacity to monitor key metrics for health workforce planning and global monitoring frameworks. Capacity of national human resourc",
    "method": "folio-snapshot"
   },
   {

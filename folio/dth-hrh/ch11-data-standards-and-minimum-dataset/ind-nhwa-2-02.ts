@@ -1,0 +1,8 @@
+import { indicator } from "../../schema/dak";
+
+export default indicator({
+  label: "ind:nhwa-2-02",
+  title: "2-02 Ratio of applications to education and training capacity",
+  uses: [],
+  meta: {"indicatorId": "2-02", "module": "Module 2: Education", "abbreviatedName": "Ratio of applications to education and training capacity", "name": "Ratio of applications for health workforce education and training to the training capacity", "numerator": "Number of applications for the first year of a health workforce education and training programme", "denominator": "Total number of places available in the first year of a health workforce education and training programme", "disaggregation": "By health workforce education and training programme, by health workforce education and training programme and sex", "definition": "Applications for the first year of a health workforce education and training programme divided\nby the number of training places for this first year.", "glossary": "Health workforce education and training place; Health workforce education and training programme; Applications; Sex", "reportingFrequency": "Annual", "reportingFrameworks": "Global Strategic Directions for Nursing and Midwifery (SDNM)", "dataSources": "Ministry of Education; Ministry of Higher Education; Databases on education and training statistics; education and training institutions", "furtherInformation": "(51, 52, 68, 69)", "programIndicatorId": "NHWA.2-02", "source": {"library": "who-iris:9789240081291-eng", "node": "library/9789240081291-eng/blocks/indicator-sec-037-01", "pages": "67", "method": "indicator-extraction", "verbatim": true}, "status": "draft"},
+});

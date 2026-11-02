@@ -20,22 +20,22 @@ export default chapter({
     section({
       title: "11.2 NHWA Module 1: Stock and flow",
       label: "sec:11-2",
-      blocks: ["p-ch11-nhwa-m1", "t-ch11-nhwa-m1", "de-nhwa-m1-activity-level", "de-nhwa-m1-subnational-unit", "de-nhwa-m1-facility-ownership", "de-nhwa-m1-facility-type", "de-nhwa-m1-place-of-training", "de-nhwa-m1-entry-date", "de-nhwa-m1-exit", "de-nhwa-m1-type-of-contract"],
+      blocks: ["p-ch11-nhwa-m1", "t-ch11-nhwa-m1", "ind-nhwa-1-01", "ind-nhwa-1-02", "ind-nhwa-1-03", "ind-nhwa-1-04", "ind-nhwa-1-05", "ind-nhwa-1-06", "ind-nhwa-1-07", "ind-nhwa-1-08", "ind-nhwa-1-09", "ind-nhwa-1-10", "ind-nhwa-1-11", "ind-nhwa-1-12", "de-nhwa-m1-activity-level", "de-nhwa-m1-subnational-unit", "de-nhwa-m1-facility-ownership", "de-nhwa-m1-facility-type", "de-nhwa-m1-place-of-training", "de-nhwa-m1-entry-date", "de-nhwa-m1-exit", "de-nhwa-m1-type-of-contract"],
     }),
     section({
       title: "11.3 NHWA Module 2: Education",
       label: "sec:11-3",
-      blocks: ["p-ch11-nhwa-m2", "t-ch11-nhwa-m2", "de-nhwa-m2-qualification", "de-nhwa-m2-training-institution"],
+      blocks: ["p-ch11-nhwa-m2", "t-ch11-nhwa-m2", "ind-nhwa-2-01", "ind-nhwa-2-02", "ind-nhwa-2-03", "ind-nhwa-2-04", "ind-nhwa-2-05", "ind-nhwa-2-06", "ind-nhwa-2-07", "de-nhwa-m2-qualification", "de-nhwa-m2-training-institution"],
     }),
     section({
       title: "11.4 NHWA Module 3: Finance and expenditures",
       label: "sec:11-4",
-      blocks: ["p-ch11-nhwa-m3", "t-ch11-nhwa-m3", "de-nhwa-m3-employer-sector", "de-nhwa-m3-entry-salary-grade"],
+      blocks: ["p-ch11-nhwa-m3", "t-ch11-nhwa-m3", "ind-nhwa-3-01", "ind-nhwa-3-02", "ind-nhwa-3-03", "ind-nhwa-3-04", "ind-nhwa-3-05", "de-nhwa-m3-employer-sector", "de-nhwa-m3-entry-salary-grade"],
     }),
     section({
       title: "11.5 NHWA Module 4: Working conditions, governance and leadership",
       label: "sec:11-5",
-      blocks: ["p-ch11-nhwa-m4", "t-ch11-nhwa-m4", "de-nhwa-m4-leadership-position"],
+      blocks: ["p-ch11-nhwa-m4", "t-ch11-nhwa-m4", "ind-nhwa-4-01", "ind-nhwa-4-02", "ind-nhwa-4-03", "ind-nhwa-4-04", "ind-nhwa-4-05", "de-nhwa-m4-leadership-position"],
     }),
     section({
       title: "11.6 Classifications",

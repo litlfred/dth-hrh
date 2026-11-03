@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "d62f528c9434cbb9ae8030d5e8efc8eb1ffb455a",
+          "ref": "cd5d1df72d44268730640703f89a934f72113558",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -87,8 +87,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "d62f528c9434cbb9ae8030d5e8efc8eb1ffb455a",
-              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
+              "ref": "cd5d1df72d44268730640703f89a934f72113558",
+              "evidence": "litlfred, 2026-11-03 ~07:55Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (smart-base main after smart-base#299, the workplan link that check:subgraphs reported)."
             }
           }
         }

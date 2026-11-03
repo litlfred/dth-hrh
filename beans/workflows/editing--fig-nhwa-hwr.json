@@ -1,0 +1,92 @@
+{
+  "$schema": "folio-workflow-instance/v1",
+  "id": "editing--fig-nhwa-hwr",
+  "processId": "Process_Editing",
+  "source": "folio-assistant-core/processes/content/editing-hci-validation.bpmn",
+  "subject": "fig:nhwa-hwr",
+  "tokens": [],
+  "arrivals": {},
+  "status": "completed",
+  "startedAt": "2026-11-03T06:15:17.000Z",
+  "updatedAt": "2026-11-03T07:14:17.000Z",
+  "history": [
+    {
+      "at": "2026-11-03T06:15:17.000Z",
+      "node": "Task_DescribeChange",
+      "actor": "litlfred",
+      "note": "NHWA overlay: dth-hrh owns the NHWA work (dth-hrh#88, CS-007)."
+    },
+    {
+      "at": "2026-11-03T06:16:17.000Z",
+      "node": "Task_DraftEdit",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:03:17.000Z",
+      "node": "Task_SchemaValidate",
+      "actor": "claude",
+      "note": "dth-hrh#88 at 361278a: review-anchors, kg-blocks, dth-glossary, library-kg, page-furniture pass locally."
+    },
+    {
+      "at": "2026-11-03T07:03:17.000Z",
+      "node": "Task_SyntaxSpell",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:03:17.000Z",
+      "node": "Task_BuildGates",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:04:17.000Z",
+      "node": "Gateway_ReviewerKind",
+      "outcome": "no",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:05:17.000Z",
+      "node": "Task_AgentReview",
+      "actor": "claude",
+      "note": "New figure block: a view of the dth-hrh ArchiMate overlay 0.1.0-draft.1 on smart-ra 0.2.0, with its source line."
+    },
+    {
+      "at": "2026-11-03T07:06:17.000Z",
+      "node": "Task_CollateFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:06:17.000Z",
+      "node": "Task_LogFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T07:10:17.000Z",
+      "node": "Task_ReviewFindings",
+      "actor": "litlfred",
+      "note": "Shown a summary of the six changes in a decision card."
+    },
+    {
+      "at": "2026-11-03T07:10:17.000Z",
+      "node": "Task_RecordDecision",
+      "actor": "litlfred",
+      "note": "Accepted: card answer 'Accept all 6, record it' (Claude Code session session_01EucfRmwpKymG3j2sPLyroL, 2026-11-03)."
+    },
+    {
+      "at": "2026-11-03T07:11:17.000Z",
+      "node": "Gateway_EditorDecision",
+      "outcome": "accept",
+      "actor": "litlfred"
+    },
+    {
+      "at": "2026-11-03T07:13:17.000Z",
+      "node": "Task_Commit",
+      "actor": "claude",
+      "note": "Merged with dth-hrh#88 when green."
+    },
+    {
+      "at": "2026-11-03T07:14:17.000Z",
+      "node": "Task_ResolveBean",
+      "actor": "claude"
+    }
+  ]
+}

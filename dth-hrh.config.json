@@ -31,7 +31,8 @@
         "site:wg-comment",
         "site:library",
         "site:review-sheet",
-        "site:glossary"
+        "site:glossary",
+        "site:archimate"
       ],
       "siteSteps": [
         "site:node-kinds"

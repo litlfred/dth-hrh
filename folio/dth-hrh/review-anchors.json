@@ -2723,8 +2723,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "07fc0e6b3583",
-   "excerpt": "- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, profe",
+   "hash": "f6cab80ebe65",
+   "excerpt": "- Working data elements, each with a working definition for working-group review: identification number, name, birth history, citizenship and language, address,",
    "method": "folio-snapshot"
   },
   {
@@ -2735,8 +2735,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "3e076c66fa5b",
-   "excerpt": "Identification number — element 1 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping ",
+   "hash": "25a18f2a8b1c",
+   "excerpt": "Identification number : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to dra",
    "method": "folio-snapshot"
   },
   {
@@ -2747,8 +2747,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "d94230429d7f",
-   "excerpt": "Name — element 2 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- -",
+   "hash": "1049a34481e6",
+   "excerpt": "Name : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft to draft to dr",
    "method": "folio-snapshot"
   },
   {
@@ -2759,8 +2759,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "ad51c728dc5c",
-   "excerpt": "Birth history — element 3 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- ",
+   "hash": "0358dc709f5f",
+   "excerpt": "Birth history : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft to dr",
    "method": "folio-snapshot"
   },
   {
@@ -2771,8 +2771,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "46c5be2939d5",
-   "excerpt": "Citizenship and language — element 4 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mappi",
+   "hash": "6e59ccf31514",
+   "excerpt": "Citizenship and language : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to ",
    "method": "folio-snapshot"
   },
   {
@@ -2783,8 +2783,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "ad5b324f3e5f",
-   "excerpt": "Address — element 5 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --",
+   "hash": "c781c7b8e349",
+   "excerpt": "Address : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft to draft to",
    "method": "folio-snapshot"
   },
   {
@@ -2795,8 +2795,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "b832503eba51",
-   "excerpt": "Contact information — element 6 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --",
+   "hash": "fbad9eb8d883",
+   "excerpt": "Contact information : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft",
    "method": "folio-snapshot"
   },
   {
@@ -2807,8 +2807,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "7f0fb363818e",
-   "excerpt": "Professional licence and certification — element 7 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitiv",
+   "hash": "78f6a7a0d6f2",
+   "excerpt": "Professional licence and certification : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- -",
    "method": "folio-snapshot"
   },
   {
@@ -2819,8 +2819,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "ba27c60688b0",
-   "excerpt": "Employment status — element 8 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping --- ",
+   "hash": "fd09a6e0d199",
+   "excerpt": "Employment status : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft t",
    "method": "folio-snapshot"
   },
   {
@@ -2831,8 +2831,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "c4b94c9066d0",
-   "excerpt": "Employment address — element 9 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR mapping ---",
+   "hash": "026367bce977",
+   "excerpt": "Employment address : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- to draft ",
    "method": "folio-snapshot"
   },
   {
@@ -2843,8 +2843,8 @@
    "sections": [
     "sec:11-1"
    ],
-   "hash": "5f2d0b001d62",
-   "excerpt": "Data submission institution — element 10 of the WHO 2015 minimum data set for a health workforce registry. Definition Format Mandatory Source Sensitivity FHIR m",
+   "hash": "1cbeca0c768b",
+   "excerpt": "Data submission institution : working definition, for working-group review. Definition Format Mandatory Source Sensitivity FHIR mapping --- --- --- --- --- --- ",
    "method": "folio-snapshot"
   },
   {
@@ -4079,8 +4079,8 @@
    "sections": [
     "sec:annex-1"
    ],
-   "hash": "fba6384806b5",
-   "excerpt": "Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set. The 2015 elements are drafted as structured data-element ",
+   "hash": "4467dbb77b51",
+   "excerpt": "Proposed core and optional data elements with working definitions. The elements are drafted as structured data-element blocks in section 11.1.",
    "method": "folio-snapshot"
   },
   {

@@ -135,5 +135,16 @@
     "smart-base",
     "dpi-h-ra"
   ],
-  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14)."
+  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14).",
+  "remoteGraphs": [
+    {
+      "id": "hrhis-registry-2015-glossary",
+      "url": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "title": "HRHIS registry glossary (WHO, 2015; who-iris)",
+      "description": "External reference only, not definitional (owner, 2026-11-02). The handbook's terms are its own working definitions; this ingested who-iris SKOS glossary is linked from the glossary as an external source."
+    }
+  ]
 }

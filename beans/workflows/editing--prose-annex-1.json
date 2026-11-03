@@ -1,0 +1,92 @@
+{
+  "$schema": "folio-workflow-instance/v1",
+  "id": "editing--prose-annex-1",
+  "processId": "Process_Editing",
+  "source": "folio-assistant-core/processes/content/editing-hci-validation.bpmn",
+  "subject": "prose:annex-1",
+  "tokens": [],
+  "arrivals": {},
+  "status": "completed",
+  "startedAt": "2026-11-03T04:03:05.000Z",
+  "updatedAt": "2026-11-03T05:02:05.000Z",
+  "history": [
+    {
+      "at": "2026-11-03T04:03:05.000Z",
+      "node": "Task_DescribeChange",
+      "actor": "litlfred",
+      "note": "Annex 1 drops 'an update of the WHO 2015 minimum data set'; elements are working definitions (dth-hrh#93)."
+    },
+    {
+      "at": "2026-11-03T04:04:05.000Z",
+      "node": "Task_DraftEdit",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:55:05.000Z",
+      "node": "Task_SchemaValidate",
+      "actor": "claude",
+      "note": "dth-hrh#93 CI: tests, typecheck and every gate but corpus-gate pass."
+    },
+    {
+      "at": "2026-11-03T04:55:05.000Z",
+      "node": "Task_SyntaxSpell",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:55:05.000Z",
+      "node": "Task_BuildGates",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:56:05.000Z",
+      "node": "Gateway_ReviewerKind",
+      "outcome": "no",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:57:05.000Z",
+      "node": "Task_AgentReview",
+      "actor": "claude",
+      "note": "Two sentences; consistent with #93's intent (no 2015 MDS citation). No findings."
+    },
+    {
+      "at": "2026-11-03T04:58:05.000Z",
+      "node": "Task_CollateFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:58:05.000Z",
+      "node": "Task_LogFindings",
+      "actor": "claude"
+    },
+    {
+      "at": "2026-11-03T04:59:05.000Z",
+      "node": "Task_ReviewFindings",
+      "actor": "litlfred",
+      "note": "Decided in a decision card before the findings were posted."
+    },
+    {
+      "at": "2026-11-03T04:59:05.000Z",
+      "node": "Task_RecordDecision",
+      "actor": "litlfred",
+      "note": "Accepted: card answer 'I accept both, record it' (Claude Code session session_01EucfRmwpKymG3j2sPLyroL, 2026-11-03)."
+    },
+    {
+      "at": "2026-11-03T05:00:05.000Z",
+      "node": "Gateway_EditorDecision",
+      "outcome": "accept",
+      "actor": "litlfred"
+    },
+    {
+      "at": "2026-11-03T05:01:05.000Z",
+      "node": "Task_Commit",
+      "actor": "claude",
+      "note": "Merged with dth-hrh#93 when green."
+    },
+    {
+      "at": "2026-11-03T05:02:05.000Z",
+      "node": "Task_ResolveBean",
+      "actor": "claude"
+    }
+  ]
+}

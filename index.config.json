@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b6356bf02539e8eeff4429f7fa16ddeb8ed2bc04",
+          "ref": "d6bff4857770a26b82de6bc922de30d952029e85",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +135,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "b6356bf02539e8eeff4429f7fa16ddeb8ed2bc04",
-              "evidence": "litlfred asked in Claude Code session session_01EucfRmwpKymG3j2sPLyroL (2026-11-02): 'yes, publish a dth-hrh staging preview' of litlfred/folio-assistant-core#625"
+              "on": "2026-11-03",
+              "ref": "d6bff4857770a26b82de6bc922de30d952029e85",
+              "evidence": "litlfred, 2026-11-03 ~05:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card: 'Repin + open PR' (re-pin folio-assistant-core to main d6bff48, which merged litlfred/folio-assistant-core#625 document-export, so dth-hrh's site publishes the public-comment PDF and offline .docx)."
             }
           }
         }

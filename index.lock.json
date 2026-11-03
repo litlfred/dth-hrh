@@ -190,13 +190,6 @@
           "upstreamPath": "archimate",
           "treeDigest": "4cd97c2af2d2d1331295a58801e1d497e10525e7244e50bd7a286038f8675581",
           "files": 7
-        },
-        {
-          "id": "references",
-          "path": "dpi-h-ra/references",
-          "upstreamPath": "references",
-          "treeDigest": "d6c861b3bcc20acf60bcd4b01b2dd55a8c38744675e5c8d668756eca366e1177",
-          "files": 92
         }
       ],
       "trust": {

@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "e7c296637f7c76189087fcabf48427d4f546f66b",
+          "ref": "e3f371e2206cbeacebe0c7961dee34e22a9fe3dd",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -165,8 +165,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "e7c296637f7c76189087fcabf48427d4f546f66b",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "ref": "e3f371e2206cbeacebe0c7961dee34e22a9fe3dd",
+              "evidence": "litlfred, 2026-11-03, dth-hrh#100 card 'Repin the lower layers in #100' and 'Yes, fix both upstream': re-pin cat-harness to main after cat-harness#1008 (ns/subgraph/v1.jsonld without the IRI tombstone terms)."
             }
           }
         }

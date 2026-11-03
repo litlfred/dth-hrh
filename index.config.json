@@ -78,7 +78,8 @@
                 "smart-base-scenarios",
                 "smart-base-code-lists",
                 "smart-base-typologies",
-                "smart-base-validators"
+                "smart-base-validators",
+                "l1-extraction-9789240116191-eng"
               ]
             }
           },
@@ -253,7 +254,8 @@
             "dpi-h-ra": {
               "directories": [
                 "glossary",
-                "archimate"
+                "archimate",
+                "references"
               ]
             },
             "who-iris": {

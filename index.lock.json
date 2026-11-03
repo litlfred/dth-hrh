@@ -190,6 +190,13 @@
           "upstreamPath": "archimate",
           "treeDigest": "4cd97c2af2d2d1331295a58801e1d497e10525e7244e50bd7a286038f8675581",
           "files": 7
+        },
+        {
+          "id": "references",
+          "path": "dpi-h-ra/references",
+          "upstreamPath": "references",
+          "treeDigest": "d6c861b3bcc20acf60bcd4b01b2dd55a8c38744675e5c8d668756eca366e1177",
+          "files": 92
         }
       ],
       "trust": {
@@ -424,6 +431,13 @@
           "upstreamPath": "smart-base/validators",
           "treeDigest": "063a478d90aba2e56d4a8c49874394aab2b446d26c0dfb5433535f849654bd09",
           "files": 2
+        },
+        {
+          "id": "l1-extraction-9789240116191-eng",
+          "path": "smart-base/l1-extractions/9789240116191-eng",
+          "upstreamPath": "smart-base/l1-extractions/9789240116191-eng",
+          "treeDigest": "f2a8bcf4667c138d2bf7edc32cc42d36dc10f47b57742ca69211eebf4d126174",
+          "files": 11
         }
       ],
       "assets": [

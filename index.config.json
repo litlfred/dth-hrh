@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "5f377c56e4027f8d94018bea016ff5fabca79c9b",
+          "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "5f377c56e4027f8d94018bea016ff5fabca79c9b",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "db7f311e92ef254ae665dfbbc81d0e3f0959175e",
+          "ref": "d62f528c9434cbb9ae8030d5e8efc8eb1ffb455a",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -87,8 +87,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "db7f311e92ef254ae665dfbbc81d0e3f0959175e",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "ref": "d62f528c9434cbb9ae8030d5e8efc8eb1ffb455a",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "c702c345824ce1e883609be8e9b9533e90b51d53",
+          "ref": "01b7edb92e7119d5a34d6754788a4abdeb5d0ae8",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -109,8 +109,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "c702c345824ce1e883609be8e9b9533e90b51d53",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "ref": "01b7edb92e7119d5a34d6754788a4abdeb5d0ae8",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "d6bff4857770a26b82de6bc922de30d952029e85",
+          "ref": "ccb599723c72a134f5bb24101a411679de0edba3",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -137,8 +137,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "d6bff4857770a26b82de6bc922de30d952029e85",
-              "evidence": "litlfred, 2026-11-03 ~05:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card: 'Repin + open PR' (re-pin folio-assistant-core to main d6bff48, which merged litlfred/folio-assistant-core#625 document-export, so dth-hrh's site publishes the public-comment PDF and offline .docx)."
+              "ref": "ccb599723c72a134f5bb24101a411679de0edba3",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "e3f371e2206cbeacebe0c7961dee34e22a9fe3dd",
+          "ref": "9d2a99beb50090fc073d827de754d923cdde8f66",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -165,8 +165,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "e3f371e2206cbeacebe0c7961dee34e22a9fe3dd",
-              "evidence": "litlfred, 2026-11-03, dth-hrh#100 card 'Repin the lower layers in #100' and 'Yes, fix both upstream': re-pin cat-harness to main after cat-harness#1008 (ns/subgraph/v1.jsonld without the IRI tombstone terms)."
+              "ref": "9d2a99beb50090fc073d827de754d923cdde8f66",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "4c9daf5594ce0f7fdbd7b2c64a74e628daec40b9",
+          "ref": "9f872d3c9c959539364617c6feb4de3074707488",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-03",
-              "ref": "4c9daf5594ce0f7fdbd7b2c64a74e628daec40b9",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "ref": "9f872d3c9c959539364617c6feb4de3074707488",
+              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
             }
           }
         }
@@ -254,8 +254,7 @@
             "dpi-h-ra": {
               "directories": [
                 "glossary",
-                "archimate",
-                "references"
+                "archimate"
               ]
             },
             "who-iris": {

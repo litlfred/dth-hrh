@@ -26,6 +26,25 @@
     },
     "requirementId": "FR-ID-01",
     "priority": "to-be-prioritized",
+    "externalGlossaryReferences": {
+      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
+      "schemeId": "hrhis-registry-2015",
+      "publisher": "who-iris glossary (who-iris#167)",
+      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "concepts": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-02",
+          "id": "fr-sec-006-02"
+        }
+      ],
+      "systemTypes": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/health-workforce-registry",
+          "id": "health-workforce-registry"
+        }
+      ]
+    },
     "archimate": {
       "model": "smart-ra 0.2.0",
       "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",

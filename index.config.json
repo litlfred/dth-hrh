@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "5e1644e48561b44832c00b089205a4ff869c3a9d",
+          "ref": "9b62dbfd2555beba872c79d848e254addc3dfa17",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-04",
-              "ref": "5e1644e48561b44832c00b089205a4ff869c3a9d",
-              "evidence": "litlfred, 2026-11-04 ~12:15Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'Try again' on 'Fix the workflow links. Push and merge' (cat-harness-tools main with bc4d213, hub link only when a store has an instance, and #1462, an empty fsh-guts store gets its index)."
+              "ref": "9b62dbfd2555beba872c79d848e254addc3dfa17",
+              "evidence": "litlfred, 2026-11-04 ~13:20Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card: 'Backport only the link fix' (cat-harness-tools 9f872d3 plus bc4d213 and #1462 cherry-picked, branch claude/backport-hub-link-9f872d3: no dead ../workflows/ links, empty fsh-guts store gets its index)."
             }
           }
         }

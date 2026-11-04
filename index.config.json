@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "9d2a99beb50090fc073d827de754d923cdde8f66",
+          "ref": "febffc697f44096afc2c676f1e2afe64e252e927",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "9d2a99beb50090fc073d827de754d923cdde8f66",
-              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
+              "on": "2026-11-04",
+              "ref": "febffc697f44096afc2c676f1e2afe64e252e927",
+              "evidence": "litlfred, 2026-11-04 ~20:35Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'Try again' on dth-hrh#101 (backport approach): cat-harness 9d2a99b plus the archimate-check wording fix (cat-harness#1033) on claude/backport-archimate-wording-9d2a99b, so check:declaration-claims no longer reads the tool text as a declaration claim."
             }
           }
         }

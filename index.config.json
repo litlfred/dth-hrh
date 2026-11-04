@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9f872d3c9c959539364617c6feb4de3074707488",
+          "ref": "5e1644e48561b44832c00b089205a4ff869c3a9d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "9f872d3c9c959539364617c6feb4de3074707488",
-              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
+              "on": "2026-11-04",
+              "ref": "5e1644e48561b44832c00b089205a4ff869c3a9d",
+              "evidence": "litlfred, 2026-11-04 ~12:15Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'Try again' on 'Fix the workflow links. Push and merge' (cat-harness-tools main with bc4d213, hub link only when a store has an instance, and #1462, an empty fsh-guts store gets its index)."
             }
           }
         }

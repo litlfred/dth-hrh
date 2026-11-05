@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "21da85ca969281e64dc06d8d544a1005145b7a2f",
+          "ref": "974958cd6978c7f69ae16a3895fcd610e9f99b8f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -137,8 +137,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-05",
-              "ref": "21da85ca969281e64dc06d8d544a1005145b7a2f",
-              "evidence": "litlfred, 2026-11-05, Claude Code session session_01VQDpPfQjS6Ah9hRnot9HUp: 'Do them and merge' / 'ok, merge when green' / 'ok, then republish and send screenshots' (core main 21da85c = folio-assistant-core#645, Export page + latest copies)."
+              "ref": "974958cd6978c7f69ae16a3895fcd610e9f99b8f",
+              "evidence": "litlfred, 2026-11-05, Claude Code session session_01VQDpPfQjS6Ah9hRnot9HUp on dth-hrh#103: '1. Narrow pin' — core c938217 plus only folio-assistant-core#645 (Export page + latest copies), on branch claude/export-page-on-c938217, because core main 21da85c also carries the cat-harness sdlc/work-plan relocation that dth-hrh's other pins have not followed."
             }
           }
         }

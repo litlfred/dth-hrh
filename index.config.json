@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "c938217f327eea8528114aceb278bbd9bbfef1d7",
+          "ref": "21da85ca969281e64dc06d8d544a1005145b7a2f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "c938217f327eea8528114aceb278bbd9bbfef1d7",
-              "evidence": "litlfred, 2026-11-03 ~07:32Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (core main c938217 = folio-assistant-core#629, glossary-tables validator)."
+              "on": "2026-11-05",
+              "ref": "21da85ca969281e64dc06d8d544a1005145b7a2f",
+              "evidence": "litlfred, 2026-11-05, Claude Code session session_01VQDpPfQjS6Ah9hRnot9HUp: 'Do them and merge' / 'ok, merge when green' / 'ok, then republish and send screenshots' (core main 21da85c = folio-assistant-core#645, Export page + latest copies)."
             }
           }
         }

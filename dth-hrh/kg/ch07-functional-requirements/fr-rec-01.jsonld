@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/freq-FR-REC-01",
@@ -18,10 +18,51 @@
     "source": {
       "library": "twg-outline-2026-10-02",
       "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
-      "method": "outline-seed"
+      "method": "outline-seed",
+      "section": "library/twg-outline-2026-10-02/sections/s036-7-2-records.md",
+      "sectionTitle": "7.2 Records",
+      "verbatim": true,
+      "requirementIdAssigned": "agent, when dth-hrh was set up from the outline (85a6ea7, 2026-10-14); not in the source"
     },
     "requirementId": "FR-REC-01",
-    "priority": "to-be-prioritized"
+    "priority": "to-be-prioritized",
+    "externalGlossaryReferences": {
+      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
+      "schemeId": "hrhis-registry-2015",
+      "publisher": "who-iris glossary (who-iris#167)",
+      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "concepts": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-01",
+          "id": "fr-sec-006-01"
+        },
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-05",
+          "id": "fr-sec-006-05"
+        }
+      ],
+      "systemTypes": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/health-workforce-registry",
+          "id": "health-workforce-registry"
+        }
+      ]
+    },
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.2.0/elements/id-58e4795bc57845649434ec98dfb53fa4.jsonld",
+          "name": "CRUD Health Workforce Record"
+        },
+        {
+          "iri": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-e162b2223da4440983514be5854b654d.jsonld",
+          "name": "CDE-HWR: Core Data Elements for the Health Workforce Registry"
+        }
+      ]
+    }
   },
   "provenance": "authored"
 }

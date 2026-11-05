@@ -1,0 +1,38 @@
+{
+  "$schema": "document-export/v1",
+  "document": "dth-hrh",
+  "title": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
+  "commit": "0e155c33e42477bec664de4ddee8bea4b9710a77",
+  "dirty": false,
+  "commitDate": "2026-11-04",
+  "date": "2026-11-04",
+  "blocks": 324,
+  "tools": {
+    "pandoc": "pandoc 3.1.3",
+    "soffice": "LibreOffice 24.2.7.2 420(Build:2)"
+  },
+  "files": [
+    {
+      "kind": "review-docx",
+      "file": "dth-hrh-public-comment-0e155c3-2026-11-04.docx",
+      "sha256": "ed34ffdc8ae50f0c239c558761ed7d292b6afdd09745d5073cdbd31f7a655c10",
+      "bytes": 1265439,
+      "bookmarks": 494
+    },
+    {
+      "kind": "pdf",
+      "file": "dth-hrh-public-comment-0e155c3-2026-11-04.pdf",
+      "sha256": "cd8f9bf9d1c3fa7e226248ef740da4b1f3585c67ef052972a1751514810e6848",
+      "bytes": 2515508,
+      "pages": 143,
+      "lines": 2162
+    },
+    {
+      "kind": "offline-docx",
+      "file": "dth-hrh-offline-0e155c3.docx",
+      "sha256": "f76ff64461aa7178ebb2041c26ccbc9edd5c10b0d1ad97c067c5f7dd3da83195",
+      "bytes": 1265505,
+      "bookmarks": 494
+    }
+  ]
+}

@@ -2,19 +2,19 @@
   "$schema": "document-export/v1",
   "document": "dth-hrh",
   "title": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
-  "commit": "01db7a7209d87c257facb5d6fbc5118cbaab4fd4",
+  "commit": "e0a28883fac377297e5c6b25651399de37703228",
   "dirty": false,
-  "commitDate": "2026-11-05",
-  "date": "2026-11-05",
+  "commitDate": "2026-11-06",
+  "date": "2026-11-06",
   "blocks": 324,
   "tools": {
-    "pandoc": "pandoc 3.1.3",
-    "soffice": "LibreOffice 24.2.7.2 420(Build:2)"
+    "pandoc": "pandoc 3.7.0.2",
+    "soffice": "LibreOffice 26.2.6.3 620(Build:3)"
   },
   "files": [
     {
       "kind": "review-docx",
-      "file": "dth-hrh-public-comment-01db7a7-2026-11-05.docx",
+      "file": "dth-hrh-public-comment-e0a2888-2026-11-06.docx",
       "latest": "dth-hrh-public-comment-latest.docx",
       "format": "Word (.docx)",
       "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -23,23 +23,24 @@
         "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
         "3 SVG figure(s) rasterised to PNG at 2×",
         "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
         "Word line numbering"
       ],
       "parameters": {
         "document": "dth-hrh",
         "export kind": "release",
-        "source commit": "01db7a7",
-        "date": "2026-11-05",
+        "source commit": "e0a2888",
+        "date": "2026-11-06",
         "line numbers": "on",
         "track changes": "off"
       },
-      "sha256": "7fc8bf0daebdc029c0e726be801c5bb3604dc7da03bd56b2b2591011981c7468",
-      "bytes": 1265439,
+      "sha256": "11b08fd3a0c0d178d371ecd513a720b412f4fbdc8e40dd224798d29164151421",
+      "bytes": 1175413,
       "bookmarks": 494
     },
     {
       "kind": "pdf",
-      "file": "dth-hrh-public-comment-01db7a7-2026-11-05.pdf",
+      "file": "dth-hrh-public-comment-e0a2888-2026-11-06.pdf",
       "latest": "dth-hrh-public-comment-latest.pdf",
       "format": "PDF",
       "mediaType": "application/pdf",
@@ -48,25 +49,26 @@
         "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
         "3 SVG figure(s) rasterised to PNG at 2×",
         "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
         "Word line numbering",
         "LibreOffice: .docx laid out as PDF"
       ],
       "parameters": {
         "document": "dth-hrh",
         "export kind": "release",
-        "source commit": "01db7a7",
-        "date": "2026-11-05",
+        "source commit": "e0a2888",
+        "date": "2026-11-06",
         "line numbers": "on",
-        "laid out from": "dth-hrh-public-comment-01db7a7-2026-11-05.docx"
+        "laid out from": "dth-hrh-public-comment-e0a2888-2026-11-06.docx"
       },
-      "sha256": "c3def7b1a6b43441065c890d033e0c366eed56a3e1d0127c0f005998e8a88403",
-      "bytes": 2515716,
+      "sha256": "4c1e9576a1623d458698add6788acbfc5addb54167c7e7622e9afa7c9292e3b9",
+      "bytes": 2518184,
       "pages": 143,
-      "lines": 2162
+      "lines": 2161
     },
     {
       "kind": "offline-docx",
-      "file": "dth-hrh-offline-01db7a7.docx",
+      "file": "dth-hrh-offline-e0a2888.docx",
       "latest": "dth-hrh-offline-latest.docx",
       "format": "Word (.docx)",
       "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -75,19 +77,20 @@
         "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
         "3 SVG figure(s) rasterised to PNG at 2×",
         "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
         "Word line numbering",
         "Track Changes switched on"
       ],
       "parameters": {
         "document": "dth-hrh",
         "export kind": "release",
-        "source commit": "01db7a7",
-        "date": "2026-11-05",
+        "source commit": "e0a2888",
+        "date": "2026-11-06",
         "line numbers": "on",
         "track changes": "on"
       },
-      "sha256": "9a2624e5262210263b213bf5371651e53a5fa22dac75a74bb73e5df192b7fd4b",
-      "bytes": 1265506,
+      "sha256": "e155683605791a8d97fec175c364aefb77f88f1be3212eb556b275ca4fbdca41",
+      "bytes": 1175437,
       "bookmarks": 494
     }
   ]

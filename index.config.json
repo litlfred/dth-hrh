@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "5f86f0dca62673ef9583764d59980335fe82c6d1",
+          "ref": "9e15c1d8616de27d869526f1d795781937393091",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,7 +190,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-06",
-              "ref": "5f86f0dca62673ef9583764d59980335fe82c6d1",
+              "ref": "9e15c1d8616de27d869526f1d795781937393091",
               "evidence": "Both.   Merge nd repins.as needed for  green and ready (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp)"
             }
           }

@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "974958cd6978c7f69ae16a3895fcd610e9f99b8f",
+          "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-05",
-              "ref": "974958cd6978c7f69ae16a3895fcd610e9f99b8f",
-              "evidence": "litlfred, 2026-11-05, Claude Code session session_01VQDpPfQjS6Ah9hRnot9HUp on dth-hrh#103: '1. Narrow pin' — core c938217 plus only folio-assistant-core#645 (Export page + latest copies), on branch claude/export-page-on-c938217, because core main 21da85c also carries the cat-harness sdlc/work-plan relocation that dth-hrh's other pins have not followed."
+              "on": "2026-11-06",
+              "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
+              "evidence": "also do the reference.docx fix (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp; earlier: 'Both. Merge nd repins.as needed for green and ready')"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9b62dbfd2555beba872c79d848e254addc3dfa17",
+          "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-04",
-              "ref": "9b62dbfd2555beba872c79d848e254addc3dfa17",
-              "evidence": "litlfred, 2026-11-04 ~13:20Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card: 'Backport only the link fix' (cat-harness-tools 9f872d3 plus bc4d213 and #1462 cherry-picked, branch claude/backport-hub-link-9f872d3: no dead ../workflows/ links, empty fsh-guts store gets its index)."
+              "on": "2026-11-06",
+              "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
+              "evidence": "Both.   Merge nd repins.as needed for  green and ready (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp)"
             }
           }
         }

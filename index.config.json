@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "68974d47cd8bdb0676ccc6a95ab4a2a8ef3c3e55",
+          "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -137,8 +137,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-06",
-              "ref": "68974d47cd8bdb0676ccc6a95ab4a2a8ef3c3e55",
-              "evidence": "Both.   Merge nd repins.as needed for  green and ready (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
+              "evidence": "also do the reference.docx fix (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp; earlier: 'Both. Merge nd repins.as needed for green and ready')"
             }
           }
         }

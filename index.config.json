@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d39119489628b9aa0d960cd15cf4630a9d0fdcac",
+          "ref": "b76f2a8919a244af0618bfd36620ebdd62a6ab14",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-06",
-              "ref": "d39119489628b9aa0d960cd15cf4630a9d0fdcac",
-              "evidence": "2 — move dth-hrh's pins to each layer's main (owner, 2026-11-06 ~08:40Z, session_01VQDpPfQjS6Ah9hRnot9HUp; standing: 'repin as needed. merge when green and ready for all your PRs within 6hr window')"
+              "ref": "b76f2a8919a244af0618bfd36620ebdd62a6ab14",
+              "evidence": "2 — layers to main; cat-harness-tools at main + viz copy fix b76f2a8 (owner chose option 2 'Fix links in tools', 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp)"
             }
           }
         }

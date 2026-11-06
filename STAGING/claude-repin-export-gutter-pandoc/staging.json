@@ -1,0 +1,16 @@
+{
+  "branch": "claude/repin-export-gutter-pandoc",
+  "sha": "1b424dc",
+  "built": "2026-11-06T05:04:31Z (built locally by an agent)",
+  "pr": "104",
+  "prUrl": "https://github.com/litlfred/dth-hrh/pull/104",
+  "branchUrl": "https://github.com/litlfred/dth-hrh/tree/claude/repin-export-gutter-pandoc",
+  "issue": null,
+  "issueUrl": null,
+  "runUrl": "https://github.com/litlfred/dth-hrh/commit/1b424dcb7fcefc37a668f964c24eb8f902e486f8",
+  "checksUrl": null,
+  "mainSite": "https://litlfred.github.io/dth-hrh",
+  "beforeRef": "main",
+  "mainPagesKnown": true,
+  "newPages": []
+}

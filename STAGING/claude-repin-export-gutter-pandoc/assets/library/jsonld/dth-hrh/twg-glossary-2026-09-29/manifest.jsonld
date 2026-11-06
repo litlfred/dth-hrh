@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "twg-glossary-2026-09-29",
+  "contains": [
+    "library/twg-glossary-2026-09-29/sheets/sheet-001",
+    "library/twg-glossary-2026-09-29/sheets/sheet-002",
+    "library/twg-glossary-2026-09-29/sheets/sheet-003",
+    "library/twg-glossary-2026-09-29/sheets/sheet-004",
+    "library/twg-glossary-2026-09-29/sheets/sheet-005",
+    "library/twg-glossary-2026-09-29/sheets/sheet-006"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/dth-hrh/directory/library",
+  "meta": {
+    "title_source": "slug",
+    "tabular_record": "folio-tabular-records/v1",
+    "tabular_depth": "sheet"
+  }
+}

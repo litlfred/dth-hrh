@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Export — Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</title>
+<style>
+:root{--fg:#1b1f24;--muted:#57606a;--line:#d0d7de;--bg:#fff;--head:#f6f8fa;--link:#0969da}
+@media (prefers-color-scheme: dark){:root{--fg:#e6edf3;--muted:#9da7b3;--line:#30363d;--bg:#0d1117;--head:#161b22;--link:#4493f8}}
+body{font:16px/1.5 system-ui,sans-serif;color:var(--fg);background:var(--bg);margin:0}
+main.export{box-sizing:border-box;max-width:72rem;margin:0 auto;padding:1rem 32px}@media (max-width:700px){main.export{padding:1rem 16px}}
+a{color:var(--link)}.muted{color:var(--muted);font-size:.9em}.num{text-align:right;white-space:nowrap}.nowrap{white-space:nowrap}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:.5rem;vertical-align:top;text-align:left}
+th{background:var(--head)}
+@media (max-width:700px){thead{display:none}table,tbody,tr,td{display:block;width:auto}tr{border:1px solid var(--line);margin:0 0 1rem}td{border:0;border-top:1px solid var(--line)}td:first-child{border-top:0}td::before{content:attr(data-label);display:block;font-weight:600;color:var(--muted);font-size:.8em}.num{text-align:left}}ol,ul{margin:0;padding-left:1.2rem}code{font-size:.9em}.sha{font-family:ui-monospace,monospace;font-size:.8em}
+</style><link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><script src="../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../assets/css/navbar-row.css"><script src="../../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../.."></head><body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
+function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
+function chip(text){return el('span',{style:"font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:3px"},text);}
+function sep(){return document.createTextNode(' \u00b7 ');}
+function root(){var m=location.pathname.match(/^(.*\/STAGING\/[^/]+\/)/);return m?m[1]:null;}
+function measure(){var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');}
+function fill(d,f,r){
+  while(d.firstChild)d.removeChild(d.firstChild);
+  d.appendChild(document.createTextNode('\u2014 '));
+  var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
+  d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
+  d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
+  d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
+  if(f.issue){d.appendChild(sep());d.appendChild(link(f.issueUrl,'issue #'+f.issue));}
+  d.appendChild(sep());
+  var rel=location.pathname.slice(r.length);
+  if(rel===''||rel.charAt(rel.length-1)==='/')rel+='index.html';
+  if(!f.mainPagesKnown){
+    d.appendChild(link(f.mainSite+'/','compare with '+(f.beforeRef||'main')+' \u2197'));
+  }else if(f.newPages.indexOf(rel)>=0){
+    d.appendChild(link(f.mainSite+'/',(f.beforeRef||'main')+' \u2197'));
+    d.appendChild(document.createTextNode(' '));
+    d.appendChild(el('span',{style:'opacity:.85'},'(new page)'));
+  }else{
+    d.appendChild(link(f.mainSite+'/'+rel,'compare with '+(f.beforeRef||'main')+' \u2197'));
+  }
+  d.appendChild(sep());d.appendChild(link(f.runUrl,'build log'));
+  if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
+  stamp(f);
+  measure();
+  fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
+}
+// Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
+// head now and say so when it has moved past the commit this preview was
+// built from. Unauthenticated, one request per page view; on any failure
+// (rate limit, offline, a deleted branch) it says nothing rather than guess.
+function fresh(d,f){
+  var m=String(f.branchUrl||'').match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\//);
+  if(!m||!f.branch||!f.sha||typeof fetch!=='function')return;
+  fetch('https://api.github.com/repos/'+m[1]+'/'+m[2]+'/commits/'+encodeURIComponent(f.branch),
+    {headers:{Accept:'application/vnd.github.sha'},cache:'no-store'})
+    .then(function(x){if(!x.ok)throw 0;return x.text();})
+    .then(function(head){
+      head=String(head).trim();
+      if(!/^[0-9a-f]{7,40}$/.test(head)||head.indexOf(f.sha)===0)return;
+      d.appendChild(sep());
+      var w=el('strong',{'data-fa-staging-stale':'',style:'background:#b00020;padding:0 .4em;border-radius:3px'},'\u26a0 stale: the branch is now at ');
+      w.appendChild(chip(head.slice(0,7)));
+      w.appendChild(document.createTextNode(', newer than this preview'));
+      d.appendChild(w);measure();
+    }).catch(function(){});
+}
+function stamp(f){
+  var p=document.querySelector('.fa-build-stamp');if(!p)return;
+  while(p.firstChild)p.removeChild(p.firstChild);
+  p.appendChild(document.createTextNode('deployed '));
+  var a=link(f.runUrl,'');a.appendChild(el('code',null,f.sha));p.appendChild(a);
+  p.appendChild(document.createTextNode(' · '+f.built));
+}
+function go(){
+  measure();
+  var d=document.querySelector('[data-fa-staging-detail]');if(!d)return;
+  var r=root();
+  if(!r){d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+  fetch(r+'staging.json',{cache:'no-store'}).then(function(x){if(!x.ok)throw 0;return x.json();})
+    .then(function(f){fill(d,f,r);})
+    .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
+}
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(show);
+}
+measure();share();
+if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
+window.addEventListener('resize',measure);window.addEventListener('load',measure);
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-158mycfjxen","here":"/en/dth-hrh/export/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div><main class="export">
+<h1 id="export">Export</h1>
+<p><b>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</b> (<code>dth-hrh</code>), 324 blocks, exported 2026-11-06 from commit <code>1b424dc</code>.</p>
+<p>Each file below can be downloaded in two ways. <b>Latest</b> is a stable link that always gives the newest export — use it to bookmark or share. <b>This export</b> is the file from this commit only; cite it when a comment must point at an exact page and line.</p>
+<div class="wrap"><table>
+<thead><tr><th>File</th><th>Filters (in order)</th><th>Parameters</th><th>Size</th><th>Date</th><th>Download</th></tr></thead>
+<tbody>
+<tr>
+<td data-label="File"><b>Word (.docx)</b><br><span class="muted">The public-comment draft as Word, with the same pages and line numbers as the PDF.</span><br><span class="muted">494 bookmarks</span></td>
+<td data-label="Filters"><ol><li>assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)</li><li>3 SVG figure(s) rasterised to PNG at 2×</li><li>pandoc with document-export.lua: one Word bookmark per chapter, section and block</li><li>Word line numbering</li></ol></td>
+<td data-label="Parameters"><ul><li><b>document</b>: dth-hrh</li><li><b>export kind</b>: release</li><li><b>source commit</b>: 1b424dc</li><li><b>date</b>: 2026-11-06</li><li><b>line numbers</b>: on</li><li><b>track changes</b>: off</li></ul></td>
+<td data-label="Size" class="num">1.1 MB</td>
+<td data-label="Date" class="nowrap">2026-11-06<br><span class="muted">commit <code>1b424dc</code></span></td>
+<td data-label="Download"><a href="dth-hrh-public-comment-latest.docx" download>Latest</a><br><a href="dth-hrh-public-comment-1b424dc-2026-11-06.docx" download class="muted">This export</a><br><span class="muted sha" title="sha256 2646da6993d4f5873972239c8c65a5a894b7193bde4c046038462885dfde40d5">sha256 2646da6993d4…</span></td>
+</tr>
+<tr>
+<td data-label="File"><b>PDF</b><br><span class="muted">The frozen, line-numbered draft for public comment. Cite page and line.</span><br><span class="muted">169 pages · 2514 numbered lines</span></td>
+<td data-label="Filters"><ol><li>assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)</li><li>3 SVG figure(s) rasterised to PNG at 2×</li><li>pandoc with document-export.lua: one Word bookmark per chapter, section and block</li><li>Word line numbering</li><li>LibreOffice: .docx laid out as PDF</li></ol></td>
+<td data-label="Parameters"><ul><li><b>document</b>: dth-hrh</li><li><b>export kind</b>: release</li><li><b>source commit</b>: 1b424dc</li><li><b>date</b>: 2026-11-06</li><li><b>line numbers</b>: on</li><li><b>laid out from</b>: dth-hrh-public-comment-1b424dc-2026-11-06.docx</li></ul></td>
+<td data-label="Size" class="num">2.5 MB</td>
+<td data-label="Date" class="nowrap">2026-11-06<br><span class="muted">commit <code>1b424dc</code></span></td>
+<td data-label="Download"><a href="dth-hrh-public-comment-latest.pdf" download>Latest</a><br><a href="dth-hrh-public-comment-1b424dc-2026-11-06.pdf" download class="muted">This export</a><br><span class="muted sha" title="sha256 80fc8d6816b74506c9b8d5cf6e8a117ed2e47c27e8fdfd918590142e81d7c0dc">sha256 80fc8d6816b7…</span></td>
+</tr>
+<tr>
+<td data-label="File"><b>Word (.docx)</b><br><span class="muted">The offline editing copy. Edit with Track Changes on and send it back; the changes merge into the source.</span><br><span class="muted">494 bookmarks</span></td>
+<td data-label="Filters"><ol><li>assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)</li><li>3 SVG figure(s) rasterised to PNG at 2×</li><li>pandoc with document-export.lua: one Word bookmark per chapter, section and block</li><li>Word line numbering</li><li>Track Changes switched on</li></ol></td>
+<td data-label="Parameters"><ul><li><b>document</b>: dth-hrh</li><li><b>export kind</b>: release</li><li><b>source commit</b>: 1b424dc</li><li><b>date</b>: 2026-11-06</li><li><b>line numbers</b>: on</li><li><b>track changes</b>: on</li></ul></td>
+<td data-label="Size" class="num">1.1 MB</td>
+<td data-label="Date" class="nowrap">2026-11-06<br><span class="muted">commit <code>1b424dc</code></span></td>
+<td data-label="Download"><a href="dth-hrh-offline-latest.docx" download>Latest</a><br><a href="dth-hrh-offline-1b424dc.docx" download class="muted">This export</a><br><span class="muted sha" title="sha256 55019b479326c8077d8b277f938e6e161e53ddf73559c956cf49b50bf8702c4b">sha256 55019b479326…</span></td>
+</tr>
+</tbody></table></div>
+<h2 id="details">Details</h2>
+<ul>
+<li>Machine-readable list of these files: <a href="dth-hrh-export-latest.json">dth-hrh-export-latest.json</a> (<code>document-export/v1</code>).</li>
+<li>Every file carries the custom properties <code>folio-source-commit</code>, <code>folio-document</code> and <code>folio-export-date</code>, so an edited copy can be merged back.</li>
+<li>Tools: <ul><li><b>pandoc</b>: pandoc 3.7.0.2</li><li><b>soffice</b>: LibreOffice 26.2.6.3 620(Build:3)</li></ul></li>
+</ul>
+</main></body></html>

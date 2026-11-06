@@ -80,8 +80,7 @@
                 "smart-base-typologies",
                 "smart-base-validators",
                 "l1-extraction-9789240116191-eng"
-              ],
-              "whole": true
+              ]
             }
           },
           "trust": {
@@ -256,8 +255,7 @@
               "directories": [
                 "glossary",
                 "archimate"
-              ],
-              "whole": true
+              ]
             },
             "who-iris": {
               "skip": true

@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
+          "ref": "e5416e571db7c05cc9d531071aa85ae2977f6e27",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -87,8 +87,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): every layer to main"
+              "ref": "e5416e571db7c05cc9d531071aa85ae2977f6e27",
+              "evidence": "Owner consent on the merge manager's card ~07:28Z (session_01VQDpPffYARDQ8juksAZScf): 'A. Yes, pin smart-base' — smart-base main ≥ e5416e5 (#309)"
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc",
+          "ref": "ea548f0006ad0e5c40656f0fbb499ca7a19dc43e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -165,8 +165,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): every layer to main"
+              "ref": "ea548f0006ad0e5c40656f0fbb499ca7a19dc43e",
+              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): cat-harness main (incl. #1110)"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9c68b123062382f44a27522ee29f6b1956f23431",
+          "ref": "30b8b276e5d56fb5df0e4a78d4fb0dfe90aee409",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "9c68b123062382f44a27522ee29f6b1956f23431",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): cat-harness-tools at main + node-kind link fix 9c68b12"
+              "ref": "30b8b276e5d56fb5df0e4a78d4fb0dfe90aee409",
+              "evidence": "Stack for dth-hrh#105 (owner via merge manager ~08:25Z: 'They can stack'; standing 'repin + merge open 12 hrs', 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): tools main + #1613 #1614 #1615 #1616, re-pinned to merge commits before ready"
             }
           }
         }

@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "30b8b276e5d56fb5df0e4a78d4fb0dfe90aee409",
+          "ref": "4ef9fdcb5d2ebb503070aac98650739980a22b7d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "30b8b276e5d56fb5df0e4a78d4fb0dfe90aee409",
-              "evidence": "Stack for dth-hrh#105 (owner via merge manager ~08:25Z: 'They can stack'; standing 'repin + merge open 12 hrs', 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): tools main + #1613 #1614 #1615 #1616, re-pinned to merge commits before ready"
+              "ref": "4ef9fdcb5d2ebb503070aac98650739980a22b7d",
+              "evidence": "Stack for dth-hrh#105 (owner via merge manager ~08:25Z: 'They can stack'; standing 'repin + merge open 12 hrs', 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): tools main 8965555 + #1613 #1614 #1615 (rebuilt as claude/stack-dth-hrh-105-v2), re-pinned to merge commits before ready"
             }
           }
         }

@@ -28317,7 +28317,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Repo-relative paths of the block's files."
+          "@value": "Repo-relative paths of the subject's files: a block's or page's `.md` (and `.ts`), or — for a catalogue measured against its template, which has no page of its own here (an IG page, a glossary) — the `.pot`."
         }
       ],
       "dcterms:source": "cat-harness-tools/schemas/kg/qa-record-shapes.ts#TranslationBlockQaReport.paths",
@@ -32618,6 +32618,25 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns/glossary/kg-schema-fields/site-indexes.beanindexschema.planfindings",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns/glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "BeanIndexSchema.planFindings"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Work plans filed wrong: an item naming a process that is not an epic or a milestone, or a proposal naming no process (`workPlanFindings`, `schemas/sdlc/work-plan.ts`). Written by `gen-docs-pages.ts` since 089be6f8, which left this schema rejecting the index it wrote (check:kind-validators, dth-hrh run 42343581318). OPTIONAL, as `plan` is: an index written before the field is still valid."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/ui/site-indexes.ts#BeanIndexSchema.planFindings",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns/glossary/kg-schema-fields/site-indexes.librarydocumentviewschema.links",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -36582,7 +36601,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "Optional Gherkin `.feature` file the case is written in."
+          "@value": "The Gherkin `.feature` file the case is written in. Required under `test-plan/v1.1` — enforced on the plan, since a case does not know its plan's version — and optional only in a `test-plan/v1` plan."
         }
       ],
       "dcterms:source": "cat-harness-tools/schemas/sdlc/test-plan.ts#TestPlanCaseSchema.feature",

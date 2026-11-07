@@ -35352,10 +35352,10 @@
         },
         {
           "name": "paths",
-          "type": "{ md: string; ts?: string }",
+          "type": "{ md?: string; ts?: string; pot?: string }",
           "optional": false,
           "array": false,
-          "doc": "Repo-relative paths of the block's files."
+          "doc": "Repo-relative paths of the subject's files: a block's or page's `.md` (and"
         },
         {
           "name": "po",
@@ -48959,6 +48959,75 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakLink",
+      "name": "DakLink",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "name": "DakLinkSchema",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "zod-object",
+      "doc": "One DAK asset a step uses, by its key in the instance's",
+      "fields": [
+        {
+          "name": "key",
+          "type": "ExampleKey",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "rel",
+          "type": "DakRelSchema.optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+        "cat-harness-tools/schemas/process/user-scenario.ts#ExampleKey"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakRel",
+      "name": "DakRel",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+      "name": "DakRelSchema",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#ExampleKey",
       "name": "ExampleKey",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
@@ -49665,6 +49734,20 @@
       "exported": false
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#StepV03",
+      "name": "StepV03",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "undetermined",
+      "note": "{ ...StepV02, /** The DAK assets the step uses: its data sets, the decision tables that decide it, the indicators that measure it. */ dak: z.array(DakLinkSchem…",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#Text",
       "name": "Text",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
@@ -49696,7 +49779,7 @@
       "name": "UserScenarioKind",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "zod-object",
-      "doc": "`user-scenario/0.2.0`, as a node kind: 0.1.0 plus grouping, views,",
+      "doc": "`user-scenario/0.3.0`, as a node kind: 0.1.0 plus grouping, views,",
       "fields": [],
       "extendsNames": [
         "nodeKind"
@@ -62438,7 +62521,7 @@
           "type": "z .string() .regex(/\\.feature$/, \"a Gherkin link names a `.feature` file\") .optional()",
           "optional": true,
           "array": false,
-          "doc": "Optional Gherkin `.feature` file the case is written in."
+          "doc": "The Gherkin `.feature` file the case is written in. Required under"
         },
         {
           "name": "dependsOn",
@@ -62545,7 +62628,7 @@
       "fields": [
         {
           "name": "$schema",
-          "type": "z.literal(TEST_PLAN_SCHEMA_ID)",
+          "type": "z.enum(TEST_PLAN_SCHEMA_IDS)",
           "optional": false,
           "array": false
         },
@@ -62625,9 +62708,22 @@
       "unresolved": [],
       "external": [
         "RequirementRefSchema",
-        "TEST_PLAN_SCHEMA_ID",
+        "TEST_PLAN_SCHEMA_IDS",
         "z"
       ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/test-plan.ts#TestPlanSchemaId",
+      "name": "TestPlanSchemaId",
+      "module": "cat-harness-tools/schemas/sdlc/test-plan.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "exported": true
     },
     {
@@ -72100,6 +72196,13 @@
           "type": "z.array( z .object({ kind: z.enum([\"blocked-without-expiry\", \"blocker-closed\", \"blocking-unknown\"]), bean: BeanIdSchema…",
           "optional": false,
           "array": true
+        },
+        {
+          "name": "planFindings",
+          "type": "z.array(z.object({ id: z.string(), problem: z.string() }).strict()).optional()",
+          "optional": true,
+          "array": true,
+          "doc": "Work plans filed wrong: an item naming a process that is not an epic or"
         },
         {
           "name": "plan",
@@ -96276,6 +96379,22 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "to": "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+      "via": "rel",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "to": "cat-harness-tools/schemas/process/user-scenario.ts#ExampleKey",
+      "via": "key",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
       "from": "cat-harness-tools/schemas/process/user-scenario.ts#ExperienceSchema",
       "to": "cat-harness-tools/schemas/process/user-scenario.ts#Id",
       "via": "actor",
@@ -104439,7 +104558,7 @@
       "source": "node-kind",
       "instance": "cat-harness-tools",
       "decl": "cat-harness-tools/schemas/process/user-scenario.ts#UserScenarioKind",
-      "tag": "user-scenario/0.2.0",
+      "tag": "user-scenario/0.3.0",
       "parents": [],
       "subclasses": [],
       "typologies": [

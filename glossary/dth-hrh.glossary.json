@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-hrh",
   "title": "Glossary of the Digital Transformation Handbook for Human Resources for Health and Health Worker Registries",
-  "description": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms.",
+  "description": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms. Organizations several handbooks name live once in smart-ra's organizations scheme (litlfred/smart-ra#198) and are listed under members; organization terms here carry a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
   "modified": "2026-10-14",
   "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -576,5 +576,13 @@
       "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "status": "candidate"
     }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie"
   ]
 }

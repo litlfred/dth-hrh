@@ -14,6 +14,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -35,6 +36,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -91,6 +113,6 @@ function share(){
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
-})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-2csmavndw30","here":"/en/dpi-h-ra/archimate/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div><main class="am"><h1>ArchiMate models</h1><ul><li><a href="0.2.0/">WHO Reference Architecture 0.2.0</a> <code>0.2.0</code> — 20 view(s), 258 element(s)</li><li><a href="0.3.0-draft.1/">WHO Reference Architecture 0.3.0-draft.1</a> <code>0.3.0-draft.1</code> — 25 view(s), 317 element(s)</li><li><a href="0.2.0-draft.3/">WHO Reference Architecture 0.2.0-draft.3</a> <code>0.2.0-draft.3</code> — 33 view(s), 1132 element(s)</li><li><a href="0.2.0-draft.2/">WHO Reference Architecture 0.2.0-draft.2</a> <code>0.2.0-draft.2</code> — 32 view(s), 535 element(s)</li><li><a href="0.2.0-draft.1/">WHO Reference Architecture 0.2.0-draft.1</a> <code>0.2.0-draft.1</code> — 46 view(s), 611 element(s)</li></ul></main>
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-2csmavndw30","here":"/en/dpi-h-ra/archimate/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div><main class="am"><h1>ArchiMate models</h1><ul><li><a href="0.2.0/">WHO Reference Architecture 0.2.0</a> <code>0.2.0</code> — 20 view(s), 258 element(s)</li><li><a href="0.3.0-draft.1/">WHO Reference Architecture 0.3.0-draft.1</a> <code>0.3.0-draft.1</code> — 27 view(s), 374 element(s)</li><li><a href="0.2.0-draft.3/">WHO Reference Architecture 0.2.0-draft.3</a> <code>0.2.0-draft.3</code> — 33 view(s), 1132 element(s)</li><li><a href="0.2.0-draft.2/">WHO Reference Architecture 0.2.0-draft.2</a> <code>0.2.0-draft.2</code> — 32 view(s), 535 element(s)</li><li><a href="0.2.0-draft.1/">WHO Reference Architecture 0.2.0-draft.1</a> <code>0.2.0-draft.1</code> — 46 view(s), 611 element(s)</li></ul></main>
 
 </body></html>

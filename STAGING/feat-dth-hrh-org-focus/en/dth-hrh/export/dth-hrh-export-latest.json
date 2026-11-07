@@ -1,0 +1,97 @@
+{
+  "$schema": "document-export/v1",
+  "document": "dth-hrh",
+  "title": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
+  "commit": "354fbeafed6d1dd1ce7412254736afffee1e0881",
+  "dirty": false,
+  "commitDate": "2026-11-07",
+  "date": "2026-11-07",
+  "blocks": 324,
+  "tools": {
+    "pandoc": "pandoc 3.7.0.2",
+    "soffice": "LibreOffice 26.2.6.3 620(Build:3)"
+  },
+  "files": [
+    {
+      "kind": "review-docx",
+      "file": "dth-hrh-public-comment-354fbea-2026-11-07.docx",
+      "latest": "dth-hrh-public-comment-latest.docx",
+      "format": "Word (.docx)",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "purpose": "The public-comment draft as Word, with the same pages and line numbers as the PDF.",
+      "filters": [
+        "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
+        "3 SVG figure(s) rasterised to PNG at 2×",
+        "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
+        "Word line numbering"
+      ],
+      "parameters": {
+        "document": "dth-hrh",
+        "export kind": "release",
+        "source commit": "354fbea",
+        "date": "2026-11-07",
+        "line numbers": "on",
+        "track changes": "off"
+      },
+      "sha256": "f77e404035e7c0306c6100e334b452be8b1bd450c0a281757d8fba0d4d076704",
+      "bytes": 1175414,
+      "bookmarks": 494
+    },
+    {
+      "kind": "pdf",
+      "file": "dth-hrh-public-comment-354fbea-2026-11-07.pdf",
+      "latest": "dth-hrh-public-comment-latest.pdf",
+      "format": "PDF",
+      "mediaType": "application/pdf",
+      "purpose": "The frozen, line-numbered draft for public comment. Cite page and line.",
+      "filters": [
+        "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
+        "3 SVG figure(s) rasterised to PNG at 2×",
+        "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
+        "Word line numbering",
+        "LibreOffice: .docx laid out as PDF"
+      ],
+      "parameters": {
+        "document": "dth-hrh",
+        "export kind": "release",
+        "source commit": "354fbea",
+        "date": "2026-11-07",
+        "line numbers": "on",
+        "laid out from": "dth-hrh-public-comment-354fbea-2026-11-07.docx"
+      },
+      "sha256": "ce6b877b1a33a7885e52a952bb8d9e2419d3cec80277de59a44b1ed7e0f8e2a4",
+      "bytes": 2518874,
+      "pages": 143,
+      "lines": 2161
+    },
+    {
+      "kind": "offline-docx",
+      "file": "dth-hrh-offline-354fbea.docx",
+      "latest": "dth-hrh-offline-latest.docx",
+      "format": "Word (.docx)",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "purpose": "The offline editing copy. Edit with Track Changes on and send it back; the changes merge into the source.",
+      "filters": [
+        "assembled from folio/dth-hrh (one Markdown, as document_render_md writes it)",
+        "3 SVG figure(s) rasterised to PNG at 2×",
+        "pandoc with document-export.lua: one Word bookmark per chapter, section and block",
+        "styled from document-export-reference.docx (sha256 cdd45966a6ec…: Cambria body, Calibri headings)",
+        "Word line numbering",
+        "Track Changes switched on"
+      ],
+      "parameters": {
+        "document": "dth-hrh",
+        "export kind": "release",
+        "source commit": "354fbea",
+        "date": "2026-11-07",
+        "line numbers": "on",
+        "track changes": "on"
+      },
+      "sha256": "24cdbffe27604fec1e04369d427cfc396128fcdeb73251ce167f731aeaf7261c",
+      "bytes": 1175437,
+      "bookmarks": 494
+    }
+  ]
+}

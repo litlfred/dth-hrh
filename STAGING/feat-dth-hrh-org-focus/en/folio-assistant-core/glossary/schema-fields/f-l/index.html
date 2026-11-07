@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=b4497e8e1c4a">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -622,7 +622,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["beans","folio","fsh-guts","glossary","library","public-comments","todo-items","todos","uploads"]</script>
+<script type="application/json" id="fa-declared-kinds">["archimate","beans","folio","fsh-guts","glossary","library","public-comments","todo-items","todos","uploads"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -640,12 +640,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="../../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=69d9894b0281" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../../../assets/js/edit-links.js?v=23ca1803a02a" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="folio-assistant-core">
+  /* Grumpy cat, the theme of folio-assistant-core. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../../../assets/img/harness/landing-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -937,26 +1023,26 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 44 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2251 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 100 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 182 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2298 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 184 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 7 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 497 terms and is 339 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 537 terms and is 365 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>2537</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2537</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>2672</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2672</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 497 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 537 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">497</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">537</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-H">H</a> <a href="#letter-I">I</a> <a href="#letter-J">J</a> <a href="#letter-K">K</a> <a href="#letter-L">L</a></nav>
 <h2 id="letter-F">
@@ -1546,6 +1632,62 @@ GateSchema.decidedAt <span class="fa-gloss-status">candidate, extracted</span>
 <p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/materialization.ts"><code>folio-assistant-core/schemas/materialization.ts#GateSchema.decidedAt</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.gates" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.gates <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>How many gates the set holds, and how many declared writers ran after them.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.gates</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.mutatedby" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.mutatedBy <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Gates that changed the tree while it was being judged.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.mutatedBy</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.set" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.set <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p><code>fast</code> (no browser jobs) or <code>whole</code> (<code>--all</code>).</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.set</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.skipped" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.skipped <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Not asked: inputs unchanged since each last passed. Never counted as a pass.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.skipped</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.unclassified" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.unclassified <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Steps CI runs that the local set does not.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.unclassified</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.undetermined" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.undetermined <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Lines saying what could not be read, when anything could not.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.undetermined</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--gates-report.gatesreportschema.unrun" data-fa-state="extracted" data-fa-gloss="">
+GatesReportSchema.unrun <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Check scripts no workflow runs.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/gates-report.ts"><code>cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.unrun</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness-tools--kg-schema-fields--test-plan.generatedtestdataschema.generator" data-fa-state="extracted" data-fa-gloss="">
 GeneratedTestDataSchema.generator <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1776,6 +1918,14 @@ GlossarySchema.source <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p>dcterms:source: what the terms were drawn from.</p>
 <p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/glossary.ts"><code>folio-assistant-core/schemas/glossary.ts#GlossarySchema.source</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="bootstrap-tools--kg-schema-fields--graph-export.graphexportschema.at-graph" data-fa-state="extracted" data-fa-gloss="">
+GraphExportSchema.@graph <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Subjects, and for one release a tombstone per pre-path <code>#fragment</code> (https://github.com/litlfred/cat-harness-tools/issues/958).</p>
+<p class="fa-gloss-meta">Schema fields of bootstrap-tools · source <a href="https://github.com/litlfred/bootstrap-tools/blob/main/schemas/graph-export.ts"><code>bootstrap-tools/schemas/graph-export.ts#GraphExportSchema.@graph</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="bootstrap-tools--kg-schema-fields--graph-export.graphexportschema.comment" data-fa-state="extracted" data-fa-gloss="">
@@ -2502,6 +2652,46 @@ IgArtifactEncodingSchema.dcterms:source <span class="fa-gloss-status">candidate,
 <p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-artifact-jsonld.ts"><code>fhir-harness/schemas/ig-artifact-jsonld.ts#IgArtifactEncodingSchema.dcterms:source</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="fhir-harness--kg-schema-fields--ig-ast-lock.igastpinschema.branch" data-fa-state="extracted" data-fa-gloss="">
+IgAstPinSchema.branch <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The cache branch the commit was read from, for the reader; the commit is what is fetched.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-ast-lock.ts"><code>fhir-harness/schemas/ig-ast-lock.ts#IgAstPinSchema.branch</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--ig-ast-lock.igastpinschema.instance" data-fa-state="extracted" data-fa-gloss="">
+IgAstPinSchema.instance <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The IG instance, as <code>index.lock.json</code> names it.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-ast-lock.ts"><code>fhir-harness/schemas/ig-ast-lock.ts#IgAstPinSchema.instance</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--ig-ast-lock.igastpinschema.repository" data-fa-state="extracted" data-fa-gloss="">
+IgAstPinSchema.repository <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The repository the cache branch lives in: the IG's own.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-ast-lock.ts"><code>fhir-harness/schemas/ig-ast-lock.ts#IgAstPinSchema.repository</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--ig-ast-lock.igastpinschema.sha" data-fa-state="extracted" data-fa-gloss="">
+IgAstPinSchema.sha <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The pinned cache commit.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-ast-lock.ts"><code>fhir-harness/schemas/ig-ast-lock.ts#IgAstPinSchema.sha</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--ig-ast-lock.igastpinschema.sourcerevision" data-fa-state="extracted" data-fa-gloss="">
+IgAstPinSchema.sourceRevision <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The IG commit the AST says it was compiled from (<code>manifest.json</code> <code>inputs.sourceRevision</code>), when it says.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/ig-ast-lock.ts"><code>fhir-harness/schemas/ig-ast-lock.ts#IgAstPinSchema.sourceRevision</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="fhir-harness--kg-schema-fields--ig-chrome.igchromeconflictschema.kind" data-fa-state="extracted" data-fa-gloss="">
 IgChromeConflictSchema.kind <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3102,6 +3292,22 @@ IndicatorCohortCaseSchema.summary <span class="fa-gloss-status">candidate, extra
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/test-data.ts"><code>cat-harness-tools/schemas/sdlc/test-data.ts#IndicatorCohortCaseSchema.summary</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness-tools--kg-schema-fields--ingest-candidates.ingestcandidateschema.aspect" data-fa-state="extracted" data-fa-gloss="">
+IngestCandidateSchema.aspect <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The aspect that proposed it; absent for a class extractor's or a hand-written candidate.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/library/ingest-candidates.ts"><code>cat-harness-tools/schemas/library/ingest-candidates.ts#IngestCandidateSchema.aspect</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--ingest-candidates.ingestcandidateschema.number" data-fa-state="extracted" data-fa-gloss="">
+IngestCandidateSchema.number <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The source's OWN number for the item, or null. Never one an agent made up.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/library/ingest-candidates.ts"><code>cat-harness-tools/schemas/library/ingest-candidates.ts#IngestCandidateSchema.number</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="folio-assistant-core--kg-schema-fields--review-comment.ingestresult.malformed" data-fa-state="extracted" data-fa-gloss="">
 IngestResult.malformed <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3500,6 +3706,206 @@ InvocationContextSchema.task <span class="fa-gloss-status">candidate, extracted<
 <dd>
 <p>BPMN node id — which task.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/tools/tool-invocation.ts"><code>cat-harness-tools/schemas/tools/tool-invocation.ts#InvocationContextSchema.task</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108cacheoptions.clock" data-fa-state="extracted" data-fa-gloss="">
+Iti108CacheOptions.clock <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Clock for expiry, in epoch milliseconds (tests). Defaults to <code>Date.now</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108CacheOptions.clock</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108cacheoptions.ttlms" data-fa-state="extracted" data-fa-gloss="">
+Iti108CacheOptions.ttlMs <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>How long a determined result may be reused, in milliseconds.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108CacheOptions.ttlMs</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108determinedresult.bundletotal" data-fa-state="extracted" data-fa-gloss="">
+Iti108DeterminedResult.bundleTotal <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Total reported by the first Bundle page, if present.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108DeterminedResult.bundleTotal</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108determinedresult.consents" data-fa-state="extracted" data-fa-gloss="">
+Iti108DeterminedResult.consents <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Active, non-expired FHIR R4 <code>Consent</code> resources returned by the registry.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108DeterminedResult.consents</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108determinedresult.evaluatedat" data-fa-state="extracted" data-fa-gloss="">
+Iti108DeterminedResult.evaluatedAt <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>ISO-8601 timestamp against which <code>provision.period</code> validity was evaluated.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108DeterminedResult.evaluatedAt</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108determinedresult.ignored" data-fa-state="extracted" data-fa-gloss="">
+Iti108DeterminedResult.ignored <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Entries in the searchset <code>Bundle</code> that were filtered out (inactive, expired, not-yet-valid, informational <code>OperationOutcome</code>, etc.).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108DeterminedResult.ignored</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108determinedresult.requesturl" data-fa-state="extracted" data-fa-gloss="">
+Iti108DeterminedResult.requestUrl <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The initial ITI-108 search URL issued to the Consent Registry.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108DeterminedResult.requestUrl</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.action" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.action <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Action token(s).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.action</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.actor" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.actor <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Actor reference(s) (e.g. <code>&quot;Practitioner/prac-1&quot;</code> or <code>&quot;Organization/org-1&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.actor</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.baseurl" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.baseUrl <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Base URL of the FHIR R4 Consent Registry (e.g. <code>&quot;https://registry.example.org/fhir&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.baseUrl</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.category" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.category <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Category token(s) (e.g. <code>&quot;http://loinc.org|59284-0&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.category</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.date" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.date <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Date filter(s), e.g. <code>&quot;ge2026-01-01&quot;</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.date</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.fetchimpl" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.fetchImpl <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Custom <code>fetch</code> implementation (defaults to <code>globalThis.fetch</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.fetchImpl</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.follownext" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.followNext <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Follow <code>Bundle.link[relation=&quot;next&quot;]</code> pagination links (defaults to <code>true</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.followNext</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.headers" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.headers <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Optional HTTP headers (e.g. <code>&#123; Authorization: &quot;Bearer ...&quot; }</code>); no IUA claim is required.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.headers</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.maxpages" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.maxPages <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Maximum number of Bundle pages to fetch when <code>followNext</code> is <code>true</code> (defaults to <code>10</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.maxPages</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.now" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.now <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Reference timestamp (<code>ISO-8601</code> string or <code>Date</code>) used to evaluate <code>provision.period</code> expiry (defaults to <code>new Date()</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.now</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.patient" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.patient <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Patient reference (e.g. <code>&quot;Patient/pat-1&quot;</code> or <code>&quot;pat-1&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.patient</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.patientidentifier" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.patientIdentifier <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Patient business identifier token (e.g. <code>&quot;urn:oid:1.2.3|12345&quot;</code>), sent as <code>patient.identifier</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.patientIdentifier</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.profile" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.profile <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Profile canonical URL filter(s), sent as <code>_profile</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.profile</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.purpose" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.purpose <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>PurposeOfUse token(s) (e.g. <code>&quot;TREAT&quot;</code>, <code>&quot;HRESCH&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.purpose</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.securitylabel" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.securityLabel <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Security label token(s), sent as <code>security-label</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.securityLabel</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.sourcereference" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.sourceReference <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Source reference filter, sent as <code>source-reference</code>.</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.sourceReference</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.status" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.status <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Status parameter sent on the query (defaults to <code>&quot;active&quot;</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.status</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="fhir-harness--kg-schema-fields--iti-108-consent-client.iti108query.timeoutms" data-fa-state="extracted" data-fa-gloss="">
+Iti108Query.timeoutMs <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Request timeout in milliseconds (defaults to <code>10_000</code>).</p>
+<p class="fa-gloss-meta">Schema fields of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/schemas/iti-108-consent-client.ts"><code>fhir-harness/schemas/iti-108-consent-client.ts#Iti108Query.timeoutMs</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 </dl>

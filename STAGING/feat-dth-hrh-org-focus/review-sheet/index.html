@@ -18,10 +18,10 @@
       "schema:name": "Review sheet Apps Script (generic)",
       "schema:programmingLanguage": "Google Apps Script",
       "schema:codeRepository": "https://github.com/litlfred/folio-assistant-core/tree/main/tools/review-sheet-sync",
-      "schema:version": "d256eeebfe844aeccbb13ba803237cf5a336f5c4",
+      "schema:version": "354fbeafed6d1dd1ce7412254736afffee1e0881",
       "spdx:checksum": {
         "spdx:algorithm": "SHA-256",
-        "spdx:checksumValue": "3e89402c9dddd0d4590e97b5fbefb74d794f3aee7cd548051f90e23bce735cb8"
+        "spdx:checksumValue": "d40a21e5a8f417958270f392c1fa05ed8e736cc410c1c919789e8757ccda12fc"
       },
       "schema:permissions": [
         "https://www.googleapis.com/auth/spreadsheets.currentonly",
@@ -60,6 +60,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -81,6 +82,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -142,7 +164,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <p>One Google Apps Script runs every review sheet of this document. What is particular to the document is in the sheet's <b>Config</b> tab, which the agent writes and only the sheet's owner can edit.</p>
 <h2>Files</h2>
 <ul>
-<li><a href="Code.gs">Code.gs</a>: the script. SHA-256 <code>3e89402c9dddd0d4590e97b5fbefb74d794f3aee7cd548051f90e23bce735cb8</code>, built from folio-assistant-core at <code>d256eeebfe844aeccbb13ba803237cf5a336f5c4</code>. It reads and writes only the sheet it is installed in.</li>
+<li><a href="Code.gs">Code.gs</a>: the script. SHA-256 <code>d40a21e5a8f417958270f392c1fa05ed8e736cc410c1c919789e8757ccda12fc</code>, built from folio-assistant-core at <code>354fbeafed6d1dd1ce7412254736afffee1e0881</code>. It reads and writes only the sheet it is installed in.</li>
 <li><a href="review-sheet.jsonld">review-sheet.jsonld</a>: these files as linked data.</li>
 </ul>
 <h2>Settings for this document</h2>

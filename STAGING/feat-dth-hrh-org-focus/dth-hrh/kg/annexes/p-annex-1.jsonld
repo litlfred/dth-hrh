@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/prose-annex-1",
@@ -20,7 +20,7 @@
       "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
       "method": "outline-seed"
     },
-    "title": "Annex 1. Core Data Elements (CDE-HRH)"
+    "title": "Annex 1. Minimum Data Set"
   },
   "provenance": "authored"
 }

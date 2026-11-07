@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-01",
+  "changedAt": "2026-11-07",
   "scope": "cat-harness/translations",
   "tile": {},
   "page": "en/cat-harness/translation-status/index.md",
@@ -122,7 +122,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 95,
+      "templates": 100,
       "catalogues": 15,
       "entries": 804,
       "translated": 755,
@@ -246,7 +246,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 96,
+      "templates": 101,
       "catalogues": 15,
       "entries": 808,
       "translated": 759,
@@ -376,7 +376,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 98,
+      "templates": 103,
       "catalogues": 16,
       "entries": 807,
       "translated": 729,
@@ -499,7 +499,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 95,
+      "templates": 100,
       "catalogues": 15,
       "entries": 804,
       "translated": 755,
@@ -624,7 +624,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 96,
+      "templates": 101,
       "catalogues": 15,
       "entries": 809,
       "translated": 760,
@@ -646,7 +646,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 5,
+          "templates": 6,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -662,7 +662,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 5,
+          "templates": 6,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -678,7 +678,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 5,
+          "templates": 6,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -694,7 +694,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 5,
+          "templates": 6,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -710,7 +710,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 5,
+          "templates": 6,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -776,7 +776,7 @@
               "official": "no"
             }
           ],
-          "templates": 33,
+          "templates": 36,
           "catalogues": 6,
           "entries": 361,
           "translated": 361,
@@ -835,7 +835,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 33,
+          "templates": 36,
           "catalogues": 6,
           "entries": 346,
           "translated": 346,
@@ -894,7 +894,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 33,
+          "templates": 36,
           "catalogues": 6,
           "entries": 346,
           "translated": 346,
@@ -953,7 +953,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 33,
+          "templates": 36,
           "catalogues": 6,
           "entries": 346,
           "translated": 346,
@@ -1013,7 +1013,7 @@
               "official": "no"
             }
           ],
-          "templates": 33,
+          "templates": 36,
           "catalogues": 6,
           "entries": 361,
           "translated": 359,
@@ -1035,7 +1035,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 7,
+          "templates": 8,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1051,7 +1051,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 7,
+          "templates": 8,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1067,7 +1067,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 7,
+          "templates": 8,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1083,7 +1083,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 7,
+          "templates": 8,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1099,7 +1099,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 7,
+          "templates": 8,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,

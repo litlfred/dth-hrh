@@ -122,6 +122,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -143,6 +144,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -335,6 +357,26 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       &quot;keyedBy&quot;: &quot;tip&quot;
     },
     &quot;description&quot;: &quot;The trashcan that is kept: deprecated and removed content, each node declaring itself `folio-fsh-guts/v1` with where it came from. Where a cutover deposits the directory it removes from main. Never rendered.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;archimate&quot;,
+    &quot;path&quot;: &quot;archimate/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;archimate&quot;
+    ],
+    &quot;served&quot;: true,
+    &quot;description&quot;: &quot;The dth-hrh ArchiMate overlay on the smart-ra (DPI-H RA) model, one folder per SemVer version, named by archimate/cat-archimate.config.json. A DTH builds an overlay and does not add to smart-ra (owner, 2026-11-01, Q-RA1 A). The NHWA work lives here, not in smart-ra (owner, 2026-11-01 20:32Z): elements tagged overlay:base copy a smart-ra element, elements tagged overlay:owner=dth-hrh are this DTH&#39;s own. scripts/archimate/extract_overlay.py built 0.1.0-draft.1 from smart-ra#188&#39;s staged model.&quot;,
+    &quot;coverage&quot;: {
+      &quot;visualiser&quot;: [
+        {
+          &quot;ref&quot;: &quot;en/dth-hrh/archimate/index.html&quot;,
+          &quot;title&quot;: &quot;ArchiMate overlay&quot;,
+          &quot;writer&quot;: [
+            &quot;cat-harness-tools/archimate/scripts/gen-archimate-pages.ts&quot;
+          ]
+        }
+      ]
+    }
   }
 ]</pre></dd>
 <dt>description</dt><dd>WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.</dd>
@@ -343,6 +385,26 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   &quot;dpi-h-ra&quot;
 ]</pre></dd>
 <dt>_needs_comment</dt><dd>An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14).</dd>
+<dt>visualisers</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;archimate&quot;,
+    &quot;renderedBy&quot;: &quot;archimate-pages&quot;,
+    &quot;covers&quot;: [
+      &quot;archimate&quot;
+    ]
+  }
+]</pre></dd>
+<dt>remoteGraphs</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;hrhis-registry-2015-glossary&quot;,
+    &quot;url&quot;: &quot;https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;glossary&quot;
+    ],
+    &quot;title&quot;: &quot;HRHIS registry glossary (WHO, 2015; who-iris)&quot;,
+    &quot;description&quot;: &quot;External reference only, not definitional (owner, 2026-11-02). The handbook&#39;s terms are its own working definitions; this ingested who-iris SKOS glossary is linked from the glossary as an external source.&quot;
+  }
+]</pre></dd>
 </dl>
 </main>
 </body>

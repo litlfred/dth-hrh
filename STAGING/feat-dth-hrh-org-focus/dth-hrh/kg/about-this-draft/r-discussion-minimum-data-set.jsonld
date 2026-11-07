@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/rem-discussion-minimum-data-set",
@@ -13,7 +13,7 @@
   ],
   "label": "rem:discussion-minimum-data-set",
   "kind": "remark",
-  "title": "Core data elements (CDE-HRH):",
+  "title": "Minimum data set:",
   "text": "r-discussion-minimum-data-set.md",
   "meta": {
     "source": {

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1.jsonld",
+  "@type": "archimate:Model",
+  "schema:identifier": "0.1.0-draft.1",
+  "schema:name": "DTH-HRH overlay 0.1.0-draft.1",
+  "schema:description": "The dth-hrh overlay on the smart-ra (DPI-H RA) ArchiMate model 0.2.0: the health workforce registry with the National Health Workforce Accounts (NHWA) work, which dth-hrh owns (owner, 2026-11-01 20:32Z: NHWA does not belong in smart-ra). Elements tagged overlay:base copy a smart-ra element and name it by IRI; elements tagged overlay:owner=dth-hrh are this DTH's own.",
+  "dcterms:identifier": "id-dthhrh-overlay-0-1-0-draft-1",
+  "schema:contentUrl": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/dth-hrh-overlay.archimate",
+  "schema:hasPart": [
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-hwr-nhwa.jsonld",
+      "@type": "archimate:Diagram",
+      "schema:name": "Health workforce registry and NHWA (dth-hrh)"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-nhwa-poster.jsonld",
+      "@type": "archimate:Diagram",
+      "schema:name": "NHWA on the health workforce registry (poster, dth-hrh)"
+    }
+  ]
+}

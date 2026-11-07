@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=b4497e8e1c4a">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -622,7 +622,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["beans","folio","fsh-guts","glossary","library","public-comments","todo-items","todos","uploads"]</script>
+<script type="application/json" id="fa-declared-kinds">["archimate","beans","folio","fsh-guts","glossary","library","public-comments","todo-items","todos","uploads"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -640,12 +640,12 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=69d9894b0281" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../assets/js/edit-links.js?v=23ca1803a02a" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="cat-harness">
+  /* Grumpy cyborg agents, the theme of cat-harness. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../assets/img/harness/landing-grumpy-cyborg-agents-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../assets/img/harness/landing-grumpy-cyborg-agents-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -820,7 +906,7 @@ function share(){
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
-})();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-158mycfjxen","here":"/en/cat-harness/processes/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#every-process--one-page-each","label":"Every process — one page each"},{"href":"#what-runs-this-skill","label":"What runs this skill?"},{"href":"#who-appears-in-a-process","label":"Who appears in a process?"},{"href":"#which-steps-touch-the-work-plan","label":"Which steps touch the work plan?"},{"href":"#strict-advisory--and-nobody-said","label":"Strict, advisory — and nobody said"},{"href":"#findings","label":"Findings","children":[{"href":"#activities-carrying-no-bootstrapprocessesskill-ref--a-census-not-a-gap-list","label":"Activities carrying no \u003cbootstrap.processes:skill ref> — a census, not a gap list","depth":1}],"fold":"1 sub-section"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
+})();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-158mycfjxen","here":"/en/cat-harness/processes/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#by-subgraph","label":"By subgraph"},{"href":"#every-process--one-page-each","label":"Every process — one page each"},{"href":"#what-runs-this-skill","label":"What runs this skill?"},{"href":"#who-appears-in-a-process","label":"Who appears in a process?"},{"href":"#which-steps-touch-the-work-plan","label":"Which steps touch the work plan?"},{"href":"#strict-advisory--and-nobody-said","label":"Strict, advisory — and nobody said"},{"href":"#findings","label":"Findings","children":[{"href":"#activities-carrying-no-bootstrapprocessesskill-ref--a-census-not-a-gap-list","label":"Activities carrying no \u003cbootstrap.processes:skill ref> — a census, not a gap list","depth":1}],"fold":"1 sub-section"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="svg-link" viewBox="0 0 24 24">
@@ -927,7 +1013,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Generated by <code class="language-plaintext highlighter-rouge">cat-harness-tools/scripts/gen-processes-viz.ts</code>. <strong>Every number here is counted from the directory</strong>, never carried in prose — <code class="language-plaintext highlighter-rouge">bpmn-processes</code>’ own rule, and the bean that asked for this page had two different counts in its title and its body.</p>
 
-<p><strong>124</strong> diagram(s), <strong>124</strong> parsed, <strong>0</strong> that would not load.</p>
+<p><strong>134</strong> diagram(s), <strong>134</strong> parsed, <strong>0</strong> that would not load.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -939,14 +1025,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/sdlc/</code></td>
-      <td>33</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/</code></td>
-      <td>15</td>
+      <td>37</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/</code></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/</code></td>
       <td>15</td>
     </tr>
     <tr>
@@ -958,19 +1044,19 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>10</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">smart-base/processes/content/</code></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/</code></td>
+      <td>6</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/</code></td>
       <td>6</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">smart-base/processes/content/</code></td>
-      <td>6</td>
-    </tr>
-    <tr>
       <td><code class="language-plaintext highlighter-rouge">bootstrap/processes/</code></td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/</code></td>
       <td>5</td>
     </tr>
     <tr>
@@ -994,12 +1080,65 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir-harness/processes/tools/</code></td>
+      <td>1</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/conduct/</code></td>
       <td>1</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">smart-base/methodologies/processes/</code></td>
       <td>1</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2 id="by-subgraph">
+  
+  
+    <a href="#by-subgraph" class="anchor-heading" aria-labelledby="by-subgraph"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> By subgraph
+  
+  
+</h2>
+    
+
+<p>Each instance that holds diagrams has its own page, listing only its processes.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>subgraph</th>
+      <th>diagrams</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="bootstrap/">bootstrap</a></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><a href="bootstrap-tools/">bootstrap-tools</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="cat-harness/">cat-harness</a></td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td><a href="fhir-harness/">fhir-harness</a></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><a href="folio-assistant-core/">folio-assistant-core</a></td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td><a href="smart-base/">smart-base</a></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><a href="who-iris/">who-iris</a></td>
+      <td>4</td>
     </tr>
   </tbody>
 </table></div>
@@ -1136,7 +1275,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="slice-sqlite-publish.html">Build and publish a per-slice SQLite file</a></td>
-      <td>11</td>
+      <td>9</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1171,8 +1310,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>none recorded</td>
     </tr>
     <tr>
-      <td><a href="materialize-remote.html">Materialize remote content — the shared subprocess</a></td>
-      <td>10</td>
+      <td><a href="materialize-remote.html">Materialize remote content: the shared subprocess</a></td>
+      <td>7</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1196,7 +1335,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="subscribe-kg.html">Subscribe to an external knowledge graph</a></td>
-      <td>14</td>
+      <td>13</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1214,7 +1353,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="ask-the-person.html">Ask the person</a></td>
-      <td>7</td>
+      <td>3</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1274,7 +1413,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="render-kg-to-cdn.html">Render a Knowledge Graph to a CDN</a></td>
-      <td>3</td>
+      <td>4</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1334,7 +1473,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="ci-health-watch.html">Is CI actually working on the default branch?</a></td>
-      <td>4</td>
+      <td>2</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1369,6 +1508,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>none recorded</td>
     </tr>
     <tr>
+      <td><a href="generated-file-drift.html">Check a generated file still matches its source</a></td>
+      <td>1</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
       <td><a href="jsonld-drift-check.html">Are the .jsonld siblings still in sync with their .ts manifests?</a></td>
       <td>1</td>
       <td>—</td>
@@ -1381,8 +1526,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>none recorded</td>
     </tr>
     <tr>
+      <td><a href="merge-manager-watch.html">Merge manager watch: wake, read the queue live, route</a></td>
+      <td>4</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
       <td><a href="merge-refusal.html">A refused merge-train member</a></td>
-      <td>14</td>
+      <td>12</td>
       <td>2</td>
       <td>none recorded</td>
     </tr>
@@ -1412,7 +1563,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="pr-checks-present.html">Which open pull requests have no CI run on their head?</a></td>
-      <td>5</td>
+      <td>3</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1448,12 +1599,18 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="repository-health-watch.html">Is the repository itself healthy?</a></td>
-      <td>4</td>
+      <td>2</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
     <tr>
       <td><a href="requirements-filing.html">Requirements filing: promote, organise, trace, supersede, or retire</a></td>
+      <td>8</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
+      <td><a href="saturation-meta-merge.html">Saturation meta-merge: land the ready PRs when the runners are full</a></td>
       <td>8</td>
       <td>—</td>
       <td>none recorded</td>
@@ -1472,15 +1629,21 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="test-data-curation.html">Test Data Curation — Fixed Sets and Generated Recipes</a></td>
-      <td>8</td>
+      <td>9</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
     <tr>
       <td><a href="test-plan-execution.html">Test-plan execution</a></td>
-      <td>15</td>
+      <td>13</td>
       <td>—</td>
       <td><a href="../../../en/cat-harness/beans/cat-harness-tools/workflows/crdm-detect-evaluation-r-3554a15543fc-54762ece6646/"><code class="language-plaintext highlighter-rouge">crdm-detect-evaluation-r-3554a15543fc-54762ece6646</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="tracked-watch.html">Report a verdict on one tracking issue</a></td>
+      <td>3</td>
+      <td>—</td>
+      <td>none recorded</td>
     </tr>
     <tr>
       <td><a href="upstream-pin-watch.html">Watching a pinned upstream dependency</a></td>
@@ -1497,6 +1660,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><a href="archimate-publish.html">Publish an ArchiMate model — every picture derived from it</a></td>
       <td>4</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
+      <td><a href="harness-default-rendering.html">A harness’s default rendering</a></td>
+      <td>7</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1555,6 +1724,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>none recorded</td>
     </tr>
     <tr>
+      <td><a href="ig-docs-site-compose.html">Each IG, composed into a host docs site and rendered with just-the-docs</a></td>
+      <td>4</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
       <td><a href="getting-started.html">Getting started</a></td>
       <td>16</td>
       <td>—</td>
@@ -1562,7 +1737,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="authoring-a-document.html">Authoring a document</a></td>
-      <td>12</td>
+      <td>10</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1616,19 +1791,31 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="dsa-document-lifecycle.html">Data sharing agreement document life cycle</a></td>
-      <td>27</td>
+      <td>26</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
     <tr>
       <td><a href="editing-hci-validation.html">Editing and HCI validation</a></td>
-      <td>18</td>
+      <td>17</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
     <tr>
       <td><a href="evidence-retrieval.html">Evidence for a recommendation</a></td>
       <td>10</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
+      <td><a href="folio-review-publish.html">Review and publish a folio</a></td>
+      <td>3</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
+      <td><a href="guideline-updates.html">Guideline Updates</a></td>
+      <td>8</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1651,6 +1838,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>none recorded</td>
     </tr>
     <tr>
+      <td><a href="review-log-watch.html">Review-log watch</a></td>
+      <td>5</td>
+      <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
       <td><a href="deep-document-research.html">Deep document research</a></td>
       <td>4</td>
       <td>—</td>
@@ -1658,7 +1851,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><a href="ingest-build-l1-kg.html">Ingestion subprocess — build the L1 knowledge graph</a></td>
-      <td>5</td>
+      <td>6</td>
       <td>—</td>
       <td>none recorded</td>
     </tr>
@@ -1720,6 +1913,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><a href="dak-l3-ig.html">L2 DAK to L3 FHIR IG</a></td>
       <td>2</td>
       <td>—</td>
+      <td>none recorded</td>
+    </tr>
+    <tr>
+      <td><a href="dth-authoring.html">DTH authoring</a></td>
+      <td>36</td>
+      <td>2</td>
       <td>none recorded</td>
     </tr>
     <tr>
@@ -1785,7 +1984,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>The reverse of <code class="language-plaintext highlighter-rouge">&lt;bootstrap.processes:skill ref&gt;</code>, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it.</p>
 
-<p><strong>182</strong> distinct skill(s) are named by an activity.</p>
+<p><strong>189</strong> distinct skill(s) are named by an activity.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -1821,7 +2020,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">archimate-models</code></td>
-      <td><a href="archimate-publish.html"><code class="language-plaintext highlighter-rouge">archimate-publish.bpmn</code></a></td>
+      <td><a href="archimate-publish.html"><code class="language-plaintext highlighter-rouge">archimate-publish.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">artefact-reachability</code></td>
@@ -1829,7 +2028,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">ask-the-person</code></td>
-      <td><a href="ask-the-person.html"><code class="language-plaintext highlighter-rouge">ask-the-person.bpmn</code></a>, <a href="hand-back-to-discussion.html"><code class="language-plaintext highlighter-rouge">hand-back-to-discussion.bpmn</code></a></td>
+      <td><a href="ask-the-person.html"><code class="language-plaintext highlighter-rouge">ask-the-person.bpmn</code></a>, <a href="hand-back-to-discussion.html"><code class="language-plaintext highlighter-rouge">hand-back-to-discussion.bpmn</code></a>, <a href="saturation-meta-merge.html"><code class="language-plaintext highlighter-rouge">saturation-meta-merge.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">asset-extraction</code></td>
@@ -1861,11 +2060,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">bpmn-authoring</code></td>
-      <td><a href="crdm-requirements-definition.html"><code class="language-plaintext highlighter-rouge">crdm-requirements-definition.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
+      <td><a href="crdm-requirements-definition.html"><code class="language-plaintext highlighter-rouge">crdm-requirements-definition.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">ci-health</code></td>
-      <td><a href="mount-dependency.html"><code class="language-plaintext highlighter-rouge">mount-dependency.bpmn</code></a>, <a href="ci-health-watch.html"><code class="language-plaintext highlighter-rouge">ci-health-watch.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-base.html"><code class="language-plaintext highlighter-rouge">merge-base.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a>, <a href="pr-checks-present.html"><code class="language-plaintext highlighter-rouge">pr-checks-present.bpmn</code></a>, <a href="repository-health-watch.html"><code class="language-plaintext highlighter-rouge">repository-health-watch.bpmn</code></a></td>
+      <td><a href="mount-dependency.html"><code class="language-plaintext highlighter-rouge">mount-dependency.bpmn</code></a>, <a href="ci-health-watch.html"><code class="language-plaintext highlighter-rouge">ci-health-watch.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-base.html"><code class="language-plaintext highlighter-rouge">merge-base.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a>, <a href="pr-checks-present.html"><code class="language-plaintext highlighter-rouge">pr-checks-present.bpmn</code></a>, <a href="tracked-watch.html"><code class="language-plaintext highlighter-rouge">tracked-watch.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">classify-and-code-content</code></td>
@@ -1893,7 +2092,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-feedback</code></td>
-      <td><a href="review-narrative.html"><code class="language-plaintext highlighter-rouge">review-narrative.bpmn</code></a>, <a href="adjudication.html"><code class="language-plaintext highlighter-rouge">adjudication.bpmn</code></a>, <a href="narrative-code-review.html"><code class="language-plaintext highlighter-rouge">narrative-code-review.bpmn</code></a>, <a href="questionnaire-wireframe-review.html"><code class="language-plaintext highlighter-rouge">questionnaire-wireframe-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a></td>
+      <td><a href="review-narrative.html"><code class="language-plaintext highlighter-rouge">review-narrative.bpmn</code></a>, <a href="adjudication.html"><code class="language-plaintext highlighter-rouge">adjudication.bpmn</code></a>, <a href="narrative-code-review.html"><code class="language-plaintext highlighter-rouge">narrative-code-review.bpmn</code></a>, <a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a>, <a href="questionnaire-wireframe-review.html"><code class="language-plaintext highlighter-rouge">questionnaire-wireframe-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-graph</code></td>
@@ -1901,11 +2100,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-plan</code></td>
-      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="SGAuthoring.DAKLifecycle.html"><code class="language-plaintext highlighter-rouge">SGAuthoring.DAKLifecycle.bpmn</code></a></td>
+      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="SGAuthoring.DAKLifecycle.html"><code class="language-plaintext highlighter-rouge">SGAuthoring.DAKLifecycle.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-publish</code></td>
-      <td><a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+      <td><a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="folio-review-publish.html"><code class="language-plaintext highlighter-rouge">folio-review-publish.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-retire</code></td>
@@ -1913,7 +2112,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-review</code></td>
-      <td><a href="review-narrative.html"><code class="language-plaintext highlighter-rouge">review-narrative.bpmn</code></a>, <a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="evidence-retrieval.html"><code class="language-plaintext highlighter-rouge">evidence-retrieval.bpmn</code></a>, <a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
+      <td><a href="review-narrative.html"><code class="language-plaintext highlighter-rouge">review-narrative.bpmn</code></a>, <a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="evidence-retrieval.html"><code class="language-plaintext highlighter-rouge">evidence-retrieval.bpmn</code></a>, <a href="folio-review-publish.html"><code class="language-plaintext highlighter-rouge">folio-review-publish.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a>, <a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-test</code></td>
@@ -1921,7 +2120,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content-validate</code></td>
-      <td><a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
+      <td><a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">continual-progress</code></td>
@@ -1973,7 +2172,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">decision-audit</code></td>
-      <td><a href="kg-to-portal.html"><code class="language-plaintext highlighter-rouge">kg-to-portal.bpmn</code></a>, <a href="options-analysis.html"><code class="language-plaintext highlighter-rouge">options-analysis.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
+      <td><a href="kg-to-portal.html"><code class="language-plaintext highlighter-rouge">kg-to-portal.bpmn</code></a>, <a href="options-analysis.html"><code class="language-plaintext highlighter-rouge">options-analysis.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">decision-comparison</code></td>
@@ -2005,11 +2204,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dmn-authoring</code></td>
-      <td><a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
+      <td><a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document-authoring</code></td>
-      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document-intake</code></td>
@@ -2017,11 +2216,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document-publishing</code></td>
-      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a></td>
+      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document-structure</code></td>
-      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a></td>
+      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dsa-catalogue-status</code></td>
@@ -2061,7 +2260,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">glossary-terms</code></td>
-      <td><a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a></td>
+      <td><a href="ingest-build-l1-kg.html"><code class="language-plaintext highlighter-rouge">ingest-build-l1-kg.bpmn</code></a>, <a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">graph-detanglement</code></td>
@@ -2084,6 +2283,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><a href="merge-to-main.html"><code class="language-plaintext highlighter-rouge">merge-to-main.bpmn</code></a></td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">harness-tiles</code></td>
+      <td><a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">human-agent-discussion</code></td>
       <td><a href="complete-initialization.html"><code class="language-plaintext highlighter-rouge">complete-initialization.bpmn</code></a>, <a href="discussion.html"><code class="language-plaintext highlighter-rouge">discussion.bpmn</code></a>, <a href="human-agent-discussion.html"><code class="language-plaintext highlighter-rouge">human-agent-discussion.bpmn</code></a></td>
     </tr>
@@ -2101,7 +2304,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">ig-build-pipeline</code></td>
-      <td><a href="ig-ast-cache.html"><code class="language-plaintext highlighter-rouge">ig-ast-cache.bpmn</code></a></td>
+      <td><a href="ig-ast-cache.html"><code class="language-plaintext highlighter-rouge">ig-ast-cache.bpmn</code></a>, <a href="ig-docs-site-compose.html"><code class="language-plaintext highlighter-rouge">ig-docs-site-compose.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">ig-publication</code></td>
@@ -2113,11 +2316,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">ig-render-jekyll</code></td>
-      <td><a href="ig-ast-cache.html"><code class="language-plaintext highlighter-rouge">ig-ast-cache.bpmn</code></a></td>
+      <td><a href="ig-ast-cache.html"><code class="language-plaintext highlighter-rouge">ig-ast-cache.bpmn</code></a>, <a href="ig-docs-site-compose.html"><code class="language-plaintext highlighter-rouge">ig-docs-site-compose.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">index-config</code></td>
       <td><a href="mount-dependency.html"><code class="language-plaintext highlighter-rouge">mount-dependency.bpmn</code></a>, <a href="subscribe-kg.html"><code class="language-plaintext highlighter-rouge">subscribe-kg.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">indicator-extraction</code></td>
+      <td><a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">initialization-steps</code></td>
@@ -2153,11 +2360,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">issue-working</code></td>
-      <td><a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="pr-checks-present.html"><code class="language-plaintext highlighter-rouge">pr-checks-present.bpmn</code></a></td>
+      <td><a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">kg-affordances</code></td>
-      <td><a href="copy-into-folio.html"><code class="language-plaintext highlighter-rouge">copy-into-folio.bpmn</code></a></td>
+      <td><a href="copy-into-folio.html"><code class="language-plaintext highlighter-rouge">copy-into-folio.bpmn</code></a>, <a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">kg-contribution-offer</code></td>
@@ -2180,16 +2387,20 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><a href="kg-to-portal.html"><code class="language-plaintext highlighter-rouge">kg-to-portal.bpmn</code></a></td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">l1-coverage</code></td>
+      <td><a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">l1-document-ingestion</code></td>
-      <td><a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a></td>
+      <td><a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">l2-component-edit-review</code></td>
-      <td><a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
+      <td><a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">l2-dak-authoring</code></td>
-      <td><a href="dak-l3-ig.html"><code class="language-plaintext highlighter-rouge">dak-l3-ig.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
+      <td><a href="dak-l3-ig.html"><code class="language-plaintext highlighter-rouge">dak-l3-ig.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">l2-dependency-choice</code></td>
@@ -2217,7 +2428,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">library-ingestion</code></td>
-      <td><a href="content-acquisition.html"><code class="language-plaintext highlighter-rouge">content-acquisition.bpmn</code></a>, <a href="document-ingestion.html"><code class="language-plaintext highlighter-rouge">document-ingestion.bpmn</code></a>, <a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a></td>
+      <td><a href="content-acquisition.html"><code class="language-plaintext highlighter-rouge">content-acquisition.bpmn</code></a>, <a href="document-ingestion.html"><code class="language-plaintext highlighter-rouge">document-ingestion.bpmn</code></a>, <a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">liquid-templates</code></td>
+      <td><a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">literature-search</code></td>
@@ -2240,12 +2455,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><a href="merge-base.html"><code class="language-plaintext highlighter-rouge">merge-base.bpmn</code></a>, <a href="merge-refusal.html"><code class="language-plaintext highlighter-rouge">merge-refusal.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a></td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">merge-manager-watcher</code></td>
+      <td><a href="merge-manager-watch.html"><code class="language-plaintext highlighter-rouge">merge-manager-watch.bpmn</code></a>, <a href="saturation-meta-merge.html"><code class="language-plaintext highlighter-rouge">saturation-meta-merge.bpmn</code></a></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">merge-queue</code></td>
       <td><a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">merge-to-main</code></td>
-      <td><a href="crdm-close.html"><code class="language-plaintext highlighter-rouge">crdm-close.bpmn</code></a>, <a href="merge-to-main.html"><code class="language-plaintext highlighter-rouge">merge-to-main.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a></td>
+      <td><a href="crdm-close.html"><code class="language-plaintext highlighter-rouge">crdm-close.bpmn</code></a>, <a href="merge-to-main.html"><code class="language-plaintext highlighter-rouge">merge-to-main.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a>, <a href="saturation-meta-merge.html"><code class="language-plaintext highlighter-rouge">saturation-meta-merge.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">methodology-adoption</code></td>
@@ -2293,7 +2512,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">prepare-merge</code></td>
-      <td><a href="actor-role-administration.html"><code class="language-plaintext highlighter-rouge">actor-role-administration.bpmn</code></a>, <a href="crdm-deliver.html"><code class="language-plaintext highlighter-rouge">crdm-deliver.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-base.html"><code class="language-plaintext highlighter-rouge">merge-base.bpmn</code></a>, <a href="merge-refusal.html"><code class="language-plaintext highlighter-rouge">merge-refusal.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a></td>
+      <td><a href="actor-role-administration.html"><code class="language-plaintext highlighter-rouge">actor-role-administration.bpmn</code></a>, <a href="crdm-deliver.html"><code class="language-plaintext highlighter-rouge">crdm-deliver.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-base.html"><code class="language-plaintext highlighter-rouge">merge-base.bpmn</code></a>, <a href="merge-refusal.html"><code class="language-plaintext highlighter-rouge">merge-refusal.bpmn</code></a>, <a href="merge-train.html"><code class="language-plaintext highlighter-rouge">merge-train.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">prepare-merge-auto</code></td>
@@ -2301,7 +2520,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">public-comment</code></td>
-      <td><a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="public-comment-change.html"><code class="language-plaintext highlighter-rouge">public-comment-change.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a>, <a href="public-comment.html"><code class="language-plaintext highlighter-rouge">public-comment.bpmn</code></a></td>
+      <td><a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="public-comment-change.html"><code class="language-plaintext highlighter-rouge">public-comment-change.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a>, <a href="public-comment.html"><code class="language-plaintext highlighter-rouge">public-comment.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">public-comment-channels</code></td>
@@ -2329,7 +2548,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">quality-control</code></td>
-      <td><a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a></td>
+      <td><a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">raci</code></td>
@@ -2357,7 +2576,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">remote-mount</code></td>
-      <td><a href="mount-dependency.html"><code class="language-plaintext highlighter-rouge">mount-dependency.bpmn</code></a>, <a href="mount-subgraph.html"><code class="language-plaintext highlighter-rouge">mount-subgraph.bpmn</code></a></td>
+      <td><a href="mount-dependency.html"><code class="language-plaintext highlighter-rouge">mount-dependency.bpmn</code></a>, <a href="mount-subgraph.html"><code class="language-plaintext highlighter-rouge">mount-subgraph.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">render-kg-to-cdn</code></td>
@@ -2373,7 +2592,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">rendered-impact</code></td>
-      <td><a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review-stage.html"><code class="language-plaintext highlighter-rouge">content-change-review-stage.bpmn</code></a></td>
+      <td><a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review-stage.html"><code class="language-plaintext highlighter-rouge">content-change-review-stage.bpmn</code></a>, <a href="guideline-updates.html"><code class="language-plaintext highlighter-rouge">guideline-updates.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">rendered-verification</code></td>
@@ -2392,8 +2611,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a></td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">review-log-watch</code></td>
+      <td><a href="review-log-watch.html"><code class="language-plaintext highlighter-rouge">review-log-watch.bpmn</code></a></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">review-sheet-script</code></td>
-      <td><a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="contributor-feedback.html"><code class="language-plaintext highlighter-rouge">contributor-feedback.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a></td>
+      <td><a href="contributor-feedback.html"><code class="language-plaintext highlighter-rouge">contributor-feedback.bpmn</code></a>, <a href="folio-review-publish.html"><code class="language-plaintext highlighter-rouge">folio-review-publish.bpmn</code></a>, <a href="public-comment-release.html"><code class="language-plaintext highlighter-rouge">public-comment-release.bpmn</code></a>, <a href="review-log-watch.html"><code class="language-plaintext highlighter-rouge">review-log-watch.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">role-model</code></td>
@@ -2406,6 +2629,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><code class="language-plaintext highlighter-rouge">sample-import</code></td>
       <td><a href="sample-import.html"><code class="language-plaintext highlighter-rouge">sample-import.bpmn</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">saturation-meta-merge</code></td>
+      <td><a href="saturation-meta-merge.html"><code class="language-plaintext highlighter-rouge">saturation-meta-merge.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">security</code></td>
@@ -2433,7 +2660,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">staging-review</code></td>
-      <td><a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="crdm-deliver.html"><code class="language-plaintext highlighter-rouge">crdm-deliver.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="feature-staging.html"><code class="language-plaintext highlighter-rouge">feature-staging.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="questionnaire-wireframe-review.html"><code class="language-plaintext highlighter-rouge">questionnaire-wireframe-review.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="public-comment-change.html"><code class="language-plaintext highlighter-rouge">public-comment-change.bpmn</code></a>, <a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
+      <td><a href="review-task.html"><code class="language-plaintext highlighter-rouge">review-task.bpmn</code></a>, <a href="crdm-deliver.html"><code class="language-plaintext highlighter-rouge">crdm-deliver.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="feature-staging.html"><code class="language-plaintext highlighter-rouge">feature-staging.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="questionnaire-wireframe-review.html"><code class="language-plaintext highlighter-rouge">questionnaire-wireframe-review.bpmn</code></a>, <a href="content-change-review-committee.html"><code class="language-plaintext highlighter-rouge">content-change-review-committee.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="folio-review-publish.html"><code class="language-plaintext highlighter-rouge">folio-review-publish.bpmn</code></a>, <a href="public-comment-change.html"><code class="language-plaintext highlighter-rouge">public-comment-change.bpmn</code></a>, <a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="smart-guideline-end-to-end.html"><code class="language-plaintext highlighter-rouge">smart-guideline-end-to-end.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">stalled-agent-triage</code></td>
@@ -2453,7 +2680,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">terminology-management</code></td>
-      <td><a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
+      <td><a href="classify-and-code-content.html"><code class="language-plaintext highlighter-rouge">classify-and-code-content.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">test-data-sets</code></td>
@@ -2477,7 +2704,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">todo-manager</code></td>
-      <td><a href="copy-into-folio.html"><code class="language-plaintext highlighter-rouge">copy-into-folio.bpmn</code></a>, <a href="graph-detanglement.html"><code class="language-plaintext highlighter-rouge">graph-detanglement.bpmn</code></a>, <a href="kg-separation.html"><code class="language-plaintext highlighter-rouge">kg-separation.bpmn</code></a>, <a href="slice-sqlite-publish.html"><code class="language-plaintext highlighter-rouge">slice-sqlite-publish.bpmn</code></a>, <a href="sub-kg-lifecycle.html"><code class="language-plaintext highlighter-rouge">sub-kg-lifecycle.bpmn</code></a>, <a href="subscribe-kg.html"><code class="language-plaintext highlighter-rouge">subscribe-kg.bpmn</code></a>, <a href="crdm-requirements.html"><code class="language-plaintext highlighter-rouge">crdm-requirements.bpmn</code></a>, <a href="crdm-signoff.html"><code class="language-plaintext highlighter-rouge">crdm-signoff.bpmn</code></a>, <a href="bean-close.html"><code class="language-plaintext highlighter-rouge">bean-close.bpmn</code></a>, <a href="bean-drain.html"><code class="language-plaintext highlighter-rouge">bean-drain.bpmn</code></a>, <a href="bean-lifecycle.html"><code class="language-plaintext highlighter-rouge">bean-lifecycle.bpmn</code></a>, <a href="bean-open.html"><code class="language-plaintext highlighter-rouge">bean-open.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-refusal.html"><code class="language-plaintext highlighter-rouge">merge-refusal.bpmn</code></a>, <a href="test-data-curation.html"><code class="language-plaintext highlighter-rouge">test-data-curation.bpmn</code></a>, <a href="test-plan-execution.html"><code class="language-plaintext highlighter-rouge">test-plan-execution.bpmn</code></a>, <a href="upstream-pin-watch.html"><code class="language-plaintext highlighter-rouge">upstream-pin-watch.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="ig-ast-delta-review.html"><code class="language-plaintext highlighter-rouge">ig-ast-delta-review.bpmn</code></a>, <a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="getting-started.html"><code class="language-plaintext highlighter-rouge">getting-started.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-change-review-stage.html"><code class="language-plaintext highlighter-rouge">content-change-review-stage.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="evidence-retrieval.html"><code class="language-plaintext highlighter-rouge">evidence-retrieval.bpmn</code></a>, <a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a>, <a href="diig-investment-path.html"><code class="language-plaintext highlighter-rouge">diig-investment-path.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="SGAuthoring.DAKLifecycle.html"><code class="language-plaintext highlighter-rouge">SGAuthoring.DAKLifecycle.bpmn</code></a></td>
+      <td><a href="copy-into-folio.html"><code class="language-plaintext highlighter-rouge">copy-into-folio.bpmn</code></a>, <a href="graph-detanglement.html"><code class="language-plaintext highlighter-rouge">graph-detanglement.bpmn</code></a>, <a href="kg-separation.html"><code class="language-plaintext highlighter-rouge">kg-separation.bpmn</code></a>, <a href="slice-sqlite-publish.html"><code class="language-plaintext highlighter-rouge">slice-sqlite-publish.bpmn</code></a>, <a href="sub-kg-lifecycle.html"><code class="language-plaintext highlighter-rouge">sub-kg-lifecycle.bpmn</code></a>, <a href="subscribe-kg.html"><code class="language-plaintext highlighter-rouge">subscribe-kg.bpmn</code></a>, <a href="crdm-requirements.html"><code class="language-plaintext highlighter-rouge">crdm-requirements.bpmn</code></a>, <a href="crdm-signoff.html"><code class="language-plaintext highlighter-rouge">crdm-signoff.bpmn</code></a>, <a href="bean-close.html"><code class="language-plaintext highlighter-rouge">bean-close.bpmn</code></a>, <a href="bean-drain.html"><code class="language-plaintext highlighter-rouge">bean-drain.bpmn</code></a>, <a href="bean-lifecycle.html"><code class="language-plaintext highlighter-rouge">bean-lifecycle.bpmn</code></a>, <a href="bean-open.html"><code class="language-plaintext highlighter-rouge">bean-open.bpmn</code></a>, <a href="code-change-review.html"><code class="language-plaintext highlighter-rouge">code-change-review.bpmn</code></a>, <a href="merge-refusal.html"><code class="language-plaintext highlighter-rouge">merge-refusal.bpmn</code></a>, <a href="test-data-curation.html"><code class="language-plaintext highlighter-rouge">test-data-curation.bpmn</code></a>, <a href="test-plan-execution.html"><code class="language-plaintext highlighter-rouge">test-plan-execution.bpmn</code></a>, <a href="upstream-pin-watch.html"><code class="language-plaintext highlighter-rouge">upstream-pin-watch.bpmn</code></a>, <a href="upstream-version-adoption.html"><code class="language-plaintext highlighter-rouge">upstream-version-adoption.bpmn</code></a>, <a href="harness-default-rendering.html"><code class="language-plaintext highlighter-rouge">harness-default-rendering.bpmn</code></a>, <a href="ig-ast-delta-review.html"><code class="language-plaintext highlighter-rouge">ig-ast-delta-review.bpmn</code></a>, <a href="ig-incremental-build.html"><code class="language-plaintext highlighter-rouge">ig-incremental-build.bpmn</code></a>, <a href="l3-fhir-pipeline.html"><code class="language-plaintext highlighter-rouge">l3-fhir-pipeline.bpmn</code></a>, <a href="getting-started.html"><code class="language-plaintext highlighter-rouge">getting-started.bpmn</code></a>, <a href="authoring-a-document.html"><code class="language-plaintext highlighter-rouge">authoring-a-document.bpmn</code></a>, <a href="content-change-review-publish.html"><code class="language-plaintext highlighter-rouge">content-change-review-publish.bpmn</code></a>, <a href="content-change-review-stage.html"><code class="language-plaintext highlighter-rouge">content-change-review-stage.bpmn</code></a>, <a href="content-change-review.html"><code class="language-plaintext highlighter-rouge">content-change-review.bpmn</code></a>, <a href="content-lifecycle.html"><code class="language-plaintext highlighter-rouge">content-lifecycle.bpmn</code></a>, <a href="draft-to-publication.html"><code class="language-plaintext highlighter-rouge">draft-to-publication.bpmn</code></a>, <a href="dsa-document-lifecycle.html"><code class="language-plaintext highlighter-rouge">dsa-document-lifecycle.bpmn</code></a>, <a href="editing-hci-validation.html"><code class="language-plaintext highlighter-rouge">editing-hci-validation.bpmn</code></a>, <a href="evidence-retrieval.html"><code class="language-plaintext highlighter-rouge">evidence-retrieval.bpmn</code></a>, <a href="l1-document-ingestion.html"><code class="language-plaintext highlighter-rouge">l1-document-ingestion.bpmn</code></a>, <a href="diig-investment-path.html"><code class="language-plaintext highlighter-rouge">diig-investment-path.bpmn</code></a>, <a href="dth-authoring.html"><code class="language-plaintext highlighter-rouge">dth-authoring.bpmn</code></a>, <a href="l2-component-edit-review.html"><code class="language-plaintext highlighter-rouge">l2-component-edit-review.bpmn</code></a>, <a href="l2-dak-authoring.html"><code class="language-plaintext highlighter-rouge">l2-dak-authoring.bpmn</code></a>, <a href="SGAuthoring.DAKLifecycle.html"><code class="language-plaintext highlighter-rouge">SGAuthoring.DAKLifecycle.bpmn</code></a></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">translation-manager</code></td>
@@ -2536,7 +2763,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — <code class="language-plaintext highlighter-rouge">process-model.ts</code> notes that sixty lanes spell two dozen positions — so the lane’s <code class="language-plaintext highlighter-rouge">partitionElementRef</code> (or the legacy <code class="language-plaintext highlighter-rouge">&lt;bootstrap.processes:role ref&gt;</code>) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name.</p>
 
-<p><strong>171</strong> distinct lane name(s).</p>
+<p><strong>169</strong> distinct lane name(s).</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -2547,27 +2774,23 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   </thead>
   <tbody>
     <tr>
+      <td>Build pipeline</td>
+      <td>18</td>
+    </tr>
+    <tr>
       <td>Agent</td>
       <td>17</td>
     </tr>
     <tr>
       <td>CI/CD Pipeline</td>
-      <td>16</td>
+      <td>15</td>
     </tr>
     <tr>
       <td>Authoring agent</td>
       <td>12</td>
     </tr>
     <tr>
-      <td>Build pipeline</td>
-      <td>12</td>
-    </tr>
-    <tr>
       <td>Ingestion Engine (agent, runs unattended)</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Work plan — beans (shared by humans and agents)</td>
       <td>10</td>
     </tr>
     <tr>
@@ -2576,14 +2799,22 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Publication manager</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Corpus — L1 source knowledge graph</td>
-      <td>5</td>
+      <td>7</td>
     </tr>
     <tr>
       <td>Owner</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Business analyst</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Merge steward</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Scheduled log sweep</td>
       <td>5</td>
     </tr>
     <tr>
@@ -2595,15 +2826,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>4</td>
     </tr>
     <tr>
-      <td>Business analyst</td>
-      <td>4</td>
-    </tr>
-    <tr>
       <td>Contributor (human or agent)</td>
       <td>4</td>
     </tr>
     <tr>
-      <td>Scheduled log sweep</td>
+      <td>Editor</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Reviewer</td>
       <td>4</td>
     </tr>
     <tr>
@@ -2615,15 +2846,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>3</td>
     </tr>
     <tr>
+      <td>Board renderer</td>
+      <td>3</td>
+    </tr>
+    <tr>
       <td>Bootstrapping Agent</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Cloudflare git (Artifacts)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Editor</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2636,10 +2863,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>IRIS CDN Exporter (agent)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Merge steward</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2663,11 +2886,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>2</td>
     </tr>
     <tr>
-      <td>Board renderer</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Cloudflare R2 + CDN</td>
+      <td>Build pipeline (system)</td>
       <td>2</td>
     </tr>
     <tr>
@@ -2684,10 +2903,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Incremental build (system)</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Knowledge Graph Data Store</td>
       <td>2</td>
     </tr>
     <tr>
@@ -2715,11 +2930,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>2</td>
     </tr>
     <tr>
-      <td>Reviewer</td>
+      <td>Reviewer / SME</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>Reviewer / SME</td>
+      <td>Sibling session</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Terminologist</td>
       <td>2</td>
     </tr>
     <tr>
@@ -2731,11 +2950,19 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>2</td>
     </tr>
     <tr>
-      <td>Activity log</td>
-      <td>1</td>
+      <td>Work plan (beans)</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>Actor</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Adaptation committee (policy, clinical, programme)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Adaptation team (human or agentic)</td>
       <td>1</td>
     </tr>
     <tr>
@@ -2748,6 +2975,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Agent / platform (automated)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Architect group and handbook owners</td>
       <td>1</td>
     </tr>
     <tr>
@@ -2807,14 +3038,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Build pipeline — validate · render · publish</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Build pipeline (system)</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td>Business analyst — design review</td>
       <td>1</td>
     </tr>
@@ -2863,18 +3086,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Corpus — the subscriber’s declaration</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Corpus (versioned store)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Corpus + build pipeline (system)</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td>Deep researcher</td>
       <td>1</td>
     </tr>
@@ -2900,6 +3111,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Drainer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DTH lead (programme manager)</td>
       <td>1</td>
     </tr>
     <tr>
@@ -2939,7 +3154,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
+      <td>Guideline publisher</td>
+      <td>1</td>
+    </tr>
+    <tr>
       <td>HCI validation pipeline (system)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Host docs site build (CI runner)</td>
       <td>1</td>
     </tr>
     <tr>
@@ -2959,6 +3182,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
+      <td>Ingestion engine (agent, runs unattended)</td>
+      <td>1</td>
+    </tr>
+    <tr>
       <td>Intake agent</td>
       <td>1</td>
     </tr>
@@ -2975,7 +3202,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
+      <td>Librarian</td>
+      <td>1</td>
+    </tr>
+    <tr>
       <td>Log operator (human)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Log watcher (authoring agent)</td>
       <td>1</td>
     </tr>
     <tr>
@@ -3012,10 +3247,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Parties and signatories (provider, recipient)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Person</td>
       <td>1</td>
     </tr>
     <tr>
@@ -3075,6 +3306,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
+      <td>Re-pin steward and build pipeline</td>
+      <td>1</td>
+    </tr>
+    <tr>
       <td>Reader (any actor)</td>
       <td>1</td>
     </tr>
@@ -3131,19 +3366,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Reviewer / subject-matter expert</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Session record</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td>Sibling</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Sibling session</td>
       <td>1</td>
     </tr>
     <tr>
@@ -3179,10 +3402,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Terminologist</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td>Terminologist / ontologist reviewer (person)</td>
       <td>1</td>
     </tr>
@@ -3196,6 +3415,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     </tr>
     <tr>
       <td>Trusted registries and observatories (external)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>TWG and contributors</td>
       <td>1</td>
     </tr>
     <tr>
@@ -3223,11 +3446,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Work plan — beans (shared)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Work plan (beans)</td>
+      <td>Work plan — beans (shared by humans and agents)</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -3253,7 +3472,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">note</code></td>
-      <td>45</td>
+      <td>46</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">archive</code></td>
@@ -3278,7 +3497,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h2>
     
 
-<p>Three states, not two. <code class="language-plaintext highlighter-rouge">loadProcessModel</code> reads an undeclared policy as <code class="language-plaintext highlighter-rouge">strict</code>, which is right for the engine — <em>“a process that forgot to say is governed, not exempt”</em> — and hides a fact a reader wants. <strong>Somebody chose strict</strong> and <strong>nobody said, so the engine assumed strict</strong> are different, and the second is <strong>18</strong> of 124 here.</p>
+<p>Three states, not two. <code class="language-plaintext highlighter-rouge">loadProcessModel</code> reads an undeclared policy as <code class="language-plaintext highlighter-rouge">strict</code>, which is right for the engine — <em>“a process that forgot to say is governed, not exempt”</em> — and hides a fact a reader wants. <strong>Somebody chose strict</strong> and <strong>nobody said, so the engine assumed strict</strong> are different, and the second is <strong>21</strong> of 134 here.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -3291,12 +3510,12 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">strict</code></td>
-      <td>66</td>
-      <td>18</td>
+      <td>70</td>
+      <td>21</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">advisory</code></td>
-      <td>40</td>
+      <td>43</td>
       <td>0</td>
     </tr>
   </tbody>
@@ -3310,7 +3529,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h2>
     
 
-<p><strong>47 diagram(s) have no rendered SVG.</strong> <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</p>
+<p><strong>50 diagram(s) have no rendered SVG.</strong> <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">bootstrap-tools/processes/render-kg-to-github-pages.bpmn</code></li>
@@ -3324,6 +3543,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <li><code class="language-plaintext highlighter-rouge">fhir-harness/processes/content/ig-incremental-build.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">fhir-harness/processes/content/l3-fhir-pipeline.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">fhir-harness/processes/content/questionnaire-wireframe-review.bpmn</code></li>
+  <li><code class="language-plaintext highlighter-rouge">fhir-harness/processes/tools/ig-docs-site-compose.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/conduct/getting-started.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/authoring-a-document.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/content-change-review-committee.bpmn</code></li>
@@ -3340,6 +3560,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/public-comment-change.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/public-comment-release.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/public-comment.bpmn</code></li>
+  <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/review-log-watch.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/deep-document-research.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/library/ingest-derive-content.bpmn</code></li>
@@ -3352,6 +3573,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <li><code class="language-plaintext highlighter-rouge">smart-base/methodologies/processes/diig-investment-path.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/classify-and-code-content.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/dak-l3-ig.bpmn</code></li>
+  <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/dth-authoring.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/l2-component-edit-review.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/l2-dak-authoring.bpmn</code></li>
   <li><code class="language-plaintext highlighter-rouge">smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn</code></li>
@@ -3370,9 +3592,9 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h3>
     
 
-<p><strong>48</strong> across <strong>25</strong> diagram(s). This section reported them as defects in its first version, and that was wrong: beans <code class="language-plaintext highlighter-rouge">luke</code> and <code class="language-plaintext highlighter-rouge">uuhu</code> worked this corpus from 90 down to this remainder and settled what is left. <code class="language-plaintext highlighter-rouge">luke</code>: <em>“coverage is deliberately NOT gated — a human sign-off step has no skill”</em>. <code class="language-plaintext highlighter-rouge">uuhu</code> added the call-activity exemption and recorded that its own remainder <em>“are not gaps”</em>.</p>
+<p><strong>57</strong> across <strong>31</strong> diagram(s). This section reported them as defects in its first version, and that was wrong: beans <code class="language-plaintext highlighter-rouge">luke</code> and <code class="language-plaintext highlighter-rouge">uuhu</code> worked this corpus from 90 down to this remainder and settled what is left. <code class="language-plaintext highlighter-rouge">luke</code>: <em>“coverage is deliberately NOT gated — a human sign-off step has no skill”</em>. <code class="language-plaintext highlighter-rouge">uuhu</code> added the call-activity exemption and recorded that its own remainder <em>“are not gaps”</em>.</p>
 
-<p><strong>16</strong> are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other <strong>32</strong> are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run.</p>
+<p><strong>23</strong> are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other <strong>34</strong> are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -3384,7 +3606,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <tbody>
     <tr>
       <td>CI/CD Pipeline</td>
-      <td>8</td>
+      <td>7</td>
     </tr>
     <tr>
       <td>Parties and signatories (provider, recipient)</td>
@@ -3399,7 +3621,15 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>2</td>
     </tr>
     <tr>
+      <td>Build pipeline</td>
+      <td>2</td>
+    </tr>
+    <tr>
       <td>Contributor</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Owner</td>
       <td>2</td>
     </tr>
     <tr>
@@ -3431,10 +3661,6 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>1</td>
     </tr>
     <tr>
-      <td>Owner</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td>Requestor</td>
       <td>1</td>
     </tr>
@@ -3445,7 +3671,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   </tbody>
 </table></div>
 
-<p><strong>No verdict is offered on which of these is a gap</strong>, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — <code class="language-plaintext highlighter-rouge">process-model.ts</code> notes sixty lanes spell two dozen positions. The lane’s <code class="language-plaintext highlighter-rouge">partitionElementRef</code> is the join that would answer it, and it is present on <strong>32</strong> of these <strong>32</strong> steps — which is the measurement, not an impression. An earlier draft of this sentence said <em>few of these</em> and was counting whether the lane had a NAME, a different question with a different answer.</p>
+<p><strong>No verdict is offered on which of these is a gap</strong>, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — <code class="language-plaintext highlighter-rouge">process-model.ts</code> notes sixty lanes spell two dozen positions. The lane’s <code class="language-plaintext highlighter-rouge">partitionElementRef</code> is the join that would answer it, and it is present on <strong>34</strong> of these <strong>34</strong> steps — which is the measurement, not an impression. An earlier draft of this sentence said <em>few of these</em> and was counting whether the lane had a NAME, a different question with a different answer.</p>
 
           
 

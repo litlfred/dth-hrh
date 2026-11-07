@@ -13,11 +13,15 @@
     "wg:changesets:check": "bun run folio-assistant-core/scripts/public-comment-changesets.ts check --store review/wg-comment",
     "review:anchors": "bun run folio-assistant-core/scripts/review-anchors-from-folio.ts --document dth-hrh --library twg-outline-2026-10-02 --source library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md --source-label \"the TWG manuscript outline it was seeded from\"",
     "check:review-anchors": "bun run folio-assistant-core/scripts/review-anchors-from-folio.ts --document dth-hrh --library twg-outline-2026-10-02 --source library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md --source-label \"the TWG manuscript outline it was seeded from\" --check",
+    "site:archimate": "bun run cat-harness-tools/archimate/scripts/gen-archimate-pages.ts --instance . --out",
     "site:glossary": "bun run folio-assistant-core/scripts/glossary-page.ts --instance dth-hrh --site",
     "kg:blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh",
     "check:kg-blocks": "bun run cat-harness-tools/pipeline/gen-block-jsonld.ts --paper dth-hrh --check",
     "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check",
-    "check:page-furniture": "bun run scripts/folio/check_page_furniture.ts"
+    "check:page-furniture": "bun run scripts/folio/check_page_furniture.ts",
+    "export:release": "bun run folio-assistant-core/scripts/document-export.ts release --document dth-hrh --out build/export",
+    "site:export": "sh -c 'bun run folio-assistant-core/scripts/document-export.ts release --document dth-hrh --out \"$0/en/dth-hrh/export\"'",
+    "offline:changes": "python3 -I folio-assistant-core/scripts/docx-offline.py changes --repo . --document dth-hrh"
   },
   "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra and folio-assistant list them: they import each other by package name (@litlfred/cat-harness-tools, ...), and nothing publishes those packages, so a mount resolves them only through the ONE root node_modules that bunfig.toml's hoisted linker lays out. Without this, fhir-harness's scripts could not find @litlfred/cat-harness-tools and check:review-anchors, site:document and the CI publish failed (dth-hrh#41).",
   "workspaces": [

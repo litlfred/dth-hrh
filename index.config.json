@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9b3ca9b81d2c36bea95391292b837de969ad4f1f",
+          "ref": "cc67cd1700e59840490f0dc12a6a6febd6993fda",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "9b3ca9b81d2c36bea95391292b837de969ad4f1f",
-              "evidence": "dth-hrh#105 final repin: tools main 9b3ca9b (contains #1613 a62eac8, #1615 0696aef, #1614). Merge manager 09:24Z: '#105 is pre-approved: re-pin its stack to tools main ≥ 0696aef' (owner card, session_01VQDpPffYARDQ8juksAZScf); standing 'repin + merge open 12 hrs' (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "ref": "cc67cd1700e59840490f0dc12a6a6febd6993fda",
+              "evidence": "dth-hrh#105: tools main cc67cd1 (≥ 0696aef; incl. #1628 declaring translation:page-qa:check). Merge manager 09:24Z: '#105 is pre-approved: re-pin its stack to tools main ≥ 0696aef' (session_01VQDpPffYARDQ8juksAZScf); standing 'repin + merge open 12 hrs' (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
             }
           }
         }

@@ -19,6 +19,6 @@ permissions:
 
 jobs:
   qa-sweep:
-    uses: litlfred/cat-harness-tools/.github/workflows/folio-qa-sweep-nightly.yml@9b3ca9b81d2c36bea95391292b837de969ad4f1f # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/folio-qa-sweep-nightly.yml@cc67cd1700e59840490f0dc12a6a6febd6993fda # index.lock.json
     with:
       axes: ${{ inputs.axes }}

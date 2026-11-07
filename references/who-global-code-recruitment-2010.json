@@ -1,0 +1,21 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-global-code-recruitment-2010",
+  "type": "report",
+  "title": "Global Code of Practice on the International Recruitment of Health Personnel",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2010
+      ]
+    ]
+  },
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 4 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010."
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-dpi-h-reference-architecture-draft-v1",
+  "type": "report",
+  "title": "Reference architecture guidance for digital public infrastructure for health (DPI-H)",
+  "author": [
+    {
+      "literal": "WHO and ITU"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        7
+      ]
+    ]
+  },
+  "note": "Draft for public comment, July 2026.",
+  "printed": "WHO and ITU. Reference architecture guidance for digital public infrastructure for health (DPI-H). Draft for public comment, July 2026.",
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 10 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO and ITU. Reference architecture guidance for digital public infrastructure for health (DPI-H). Draft for public comment, July 2026."
+}

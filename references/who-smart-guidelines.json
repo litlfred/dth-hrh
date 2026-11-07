@@ -1,0 +1,16 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-guidelines",
+  "type": "webpage",
+  "title": "SMART Guidelines",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "URL": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+  "printed": "WHO SMART Guidelines.",
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 13 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO SMART Guidelines. URL added from smart-trust/references/who-smart-guidelines.json (same key there); the chapter text is unchanged."
+}

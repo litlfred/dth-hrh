@@ -1,0 +1,21 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-workforce-2030-2016",
+  "type": "report",
+  "title": "Global strategy on human resources for health: Workforce 2030",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2016
+      ]
+    ]
+  },
+  "provenance": "authored",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 2 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Global strategy on human resources for health: Workforce 2030. 2016."
+}

@@ -1,0 +1,126 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/freq-FR-AN-02",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:FR-AN-02",
+  "kind": "functional-requirement",
+  "title": "Data extracts for NHWA and national planning.",
+  "text": "fr-an-02.md",
+  "meta": {
+    "source": {
+      "library": "twg-outline-2026-10-02",
+      "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "method": "outline-seed",
+      "section": "library/twg-outline-2026-10-02/sections/s039-7-5-analytics.md",
+      "sectionTitle": "7.5 Analytics",
+      "verbatim": true,
+      "requirementIdAssigned": "agent, when dth-hrh was set up from the outline (85a6ea7, 2026-10-14); not in the source"
+    },
+    "requirementId": "FR-AN-02",
+    "priority": "to-be-prioritized",
+    "nhwaIndicators": {
+      "source": "who-iris library/9789240081291-eng (National health workforce accounts: a handbook, 2nd ed., 2023)",
+      "basis": "agent-proposed: every NHWA indicator whose potential data sources name a health workforce registry or database, for working-group review (dth-hrh#47)",
+      "indicators": [
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-023-01",
+          "number": "1-01",
+          "name": "Density of health workers per 10 000 population"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-024-01",
+          "number": "1-02",
+          "name": "Density of active health workers per 10 000 population at subnational level"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-025-01",
+          "number": "1-03",
+          "name": "Percentage of active health workers in different age groups"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-026-01",
+          "number": "1-04",
+          "name": "Percentage of active health workers by sex"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-027-01",
+          "number": "1-05",
+          "name": "Percentage of active health workers employed by facility ownership"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-028-01",
+          "number": "1-06",
+          "name": "Percentage of active health workers employed by facility type"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-029-01",
+          "number": "1-07",
+          "name": "Percentage of active health workers by their place of birth"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-030-01",
+          "number": "1-08",
+          "name": "Percentage of active health workers by their place of training"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-031-01",
+          "number": "1-09",
+          "name": "Ratio of newly active health workers to the total stock of active health workers"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-032-01",
+          "number": "1-10",
+          "name": "Ratio of active health workers leaving the health labour market to the total stock of active health workers"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-034-01",
+          "number": "1-12",
+          "name": "Percentage of active health workers by their type of contract"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-039-01",
+          "number": "2-04",
+          "name": "Ratio of graduates of health workforce education and training programmes to the stock of active health workers"
+        }
+      ]
+    },
+    "externalGlossaryReferences": {
+      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
+      "schemeId": "hrhis-registry-2015",
+      "publisher": "who-iris glossary (who-iris#167)",
+      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "concepts": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-04",
+          "id": "fr-sec-006-04"
+        }
+      ],
+      "systemTypes": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/health-workforce-registry",
+          "id": "health-workforce-registry"
+        }
+      ]
+    },
+    "archimate": {
+      "model": "smart-ra 0.2.0",
+      "basis": "agent-proposed by name, for working-group review (dth-hrh#47)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/elements/id-145e885489634e469e8a6734f56b7df5.jsonld",
+          "name": "NHWA Dataset (linking and indexing, built on CDE-HWR)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

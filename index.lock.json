@@ -9,27 +9,27 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "5fdcf6c60cf75c79d69a0bff3e1f3889c6e37dc6"
+      "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe"
     },
     {
       "harness": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "ref": "499a470f620155e693071de157763f58d9c24ef9"
+      "ref": "961679a369975afb6320647dde23d8e335bd84b5"
     },
     {
       "harness": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "ref": "344abb220126a667b10714f93a85b91a2ea304fe"
+      "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d"
     },
     {
       "harness": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "ref": "57a1428f63600c63ade2f289d28461e5fea7d358"
+      "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc"
     },
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "b76f2a8919a244af0618bfd36620ebdd62a6ab14"
+      "ref": "33a81d1cb60ed8a5a372c6c442175436be674b1c"
     },
     {
       "harness": "bootstrap",
@@ -109,7 +109,7 @@
     {
       "instance": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "sha": "57a1428f63600c63ade2f289d28461e5fea7d358",
+      "sha": "d5272c0185483c3d67a82cc0252f90eb802705cc",
       "upstreamRoot": "",
       "path": "cat-harness",
       "via": "cat-harness",
@@ -123,22 +123,22 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "b83db283dc41c577004fc856fc5bf7e4c138c751ba86684c019b615f6a7fdf73",
+          "treeDigest": "14b01f3058f673db88b9a96b65da508f3c62ef4dacefcb5c8efdd97a4f5fe2e8",
           "files": 12534
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "57a1428f63600c63ade2f289d28461e5fea7d358",
+        "on": "2026-11-07",
+        "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc",
         "approver": "unverified"
       }
     },
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "b76f2a8919a244af0618bfd36620ebdd62a6ab14",
+      "sha": "33a81d1cb60ed8a5a372c6c442175436be674b1c",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
@@ -152,15 +152,15 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "dba323a6bcd529657fa84158bdfaea04e532e4fcb70daf5111a20c24059cd826",
-          "files": 3314
+          "treeDigest": "e1a0c8b329352fa5fff43415eaccbfa6316307fb5db593e375d868d3eb095a8d",
+          "files": 3316
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "b76f2a8919a244af0618bfd36620ebdd62a6ab14",
+        "on": "2026-11-07",
+        "ref": "33a81d1cb60ed8a5a372c6c442175436be674b1c",
         "approver": "unverified"
       }
     },
@@ -203,7 +203,7 @@
     {
       "instance": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "sha": "499a470f620155e693071de157763f58d9c24ef9",
+      "sha": "961679a369975afb6320647dde23d8e335bd84b5",
       "upstreamRoot": "",
       "path": "fhir-harness",
       "via": "fhir-harness",
@@ -217,22 +217,22 @@
           "id": "*",
           "path": "fhir-harness",
           "upstreamPath": ".",
-          "treeDigest": "05d1422e60ae988c5b692fdd2eda247e639fe7463f1b31ecd467724f41e732b6",
+          "treeDigest": "86d6c5b30f7f9f1f178ac258ecf91fd33b209d82c9e8d080814d036ac42e4ebc",
           "files": 757
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "499a470f620155e693071de157763f58d9c24ef9",
+        "on": "2026-11-07",
+        "ref": "961679a369975afb6320647dde23d8e335bd84b5",
         "approver": "unverified"
       }
     },
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "344abb220126a667b10714f93a85b91a2ea304fe",
+      "sha": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
@@ -246,22 +246,22 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "f661f59614984c983555f80c5f47639d88751faf76ea0936375b3878e41f159f",
-          "files": 6191
+          "treeDigest": "766ec1b5652eb019dc5545b6477d364f3a1fd862244e4d8801a87a26c5c7589e",
+          "files": 6193
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "344abb220126a667b10714f93a85b91a2ea304fe",
+        "on": "2026-11-07",
+        "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
         "approver": "unverified"
       }
     },
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "5fdcf6c60cf75c79d69a0bff3e1f3889c6e37dc6",
+      "sha": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -387,7 +387,7 @@
           "id": "smart-base-scripts",
           "path": "smart-base/scripts",
           "upstreamPath": "smart-base/scripts",
-          "treeDigest": "e7cfd47fff38c8559817d067b652845447a88f5483e9e6d88f45d30aa9e9b2db",
+          "treeDigest": "3af3963b816f9501c32bd28a59f4edd713914bf3beb29c10cb2a335f01c14815",
           "files": 73
         },
         {
@@ -450,8 +450,8 @@
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "5fdcf6c60cf75c79d69a0bff3e1f3889c6e37dc6",
+        "on": "2026-11-07",
+        "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
         "approver": "unverified"
       }
     },

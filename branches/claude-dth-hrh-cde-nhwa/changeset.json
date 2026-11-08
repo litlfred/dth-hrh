@@ -1,0 +1,540 @@
+{
+  "$schema": "folio-changeset/v1",
+  "folio": "folio",
+  "base": {
+    "ref": "origin/main",
+    "commit": "170c44e9ec2571a6f10421b90296559c66561136"
+  },
+  "head": {
+    "ref": "worktree",
+    "commit": null
+  },
+  "summary": {
+    "added": 34,
+    "removed": 10,
+    "changed": 4,
+    "unchanged": 310,
+    "renamed": 0,
+    "prose": 1,
+    "manifest": 0,
+    "moved": 3
+  },
+  "changes": [
+    {
+      "change": "changed",
+      "label": "prose:ch11-core-dataset",
+      "aspects": [
+        "prose"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-core-dataset.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:ch11-cde",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-cde.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-identification-number",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-identification-number.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-name",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-name.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-birth-history",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-birth-history.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-sex",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-cde-sex.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 5
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-citizenship-and-language",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-citizenship-and-language.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 6
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-address",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-address.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 7
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-contact-information",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-contact-information.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 8
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-occupation",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-cde-occupation.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 9
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-professional-licence-and-certification",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-professional-licence-and-certification.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 10
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-employment-status",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-employment-status.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 11
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-employment-address",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-employment-address.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 12
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:cde-data-submission-institution",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-data-submission-institution.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 13
+      }
+    },
+    {
+      "change": "added",
+      "label": "prose:ch11-nhwa-m1",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-m1.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:ch11-nhwa-m1",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m1.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-activity-level",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-activity-level.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-subnational-unit",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-subnational-unit.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-facility-ownership",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-facility-ownership.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 4
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-facility-type",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-facility-type.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 5
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-place-of-training",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-place-of-training.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 6
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-entry-date",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-entry-date.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 7
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-exit",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-exit.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 8
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m1-type-of-contract",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m1-type-of-contract.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 9
+      }
+    },
+    {
+      "change": "added",
+      "label": "prose:ch11-nhwa-m2",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-m2.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:ch11-nhwa-m2",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m2.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m2-qualification",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m2-qualification.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m2-training-institution",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m2-training-institution.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "prose:ch11-nhwa-m3",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-m3.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:ch11-nhwa-m3",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m3.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m3-employer-sector",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m3-employer-sector.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 2
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m3-entry-salary-grade",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m3-entry-salary-grade.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 3
+      }
+    },
+    {
+      "change": "added",
+      "label": "prose:ch11-nhwa-m4",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-m4.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:ch11-nhwa-m4",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/t-ch11-nhwa-m4.ts",
+        "kind": "table",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 1
+      }
+    },
+    {
+      "change": "added",
+      "label": "de:nhwa-m4-leadership-position",
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-nhwa-m4-leadership-position.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-5",
+        "index": 2
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-classifications",
+      "aspects": [
+        "moved"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-classifications.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-2",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-classifications.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-6",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-metadata",
+      "aspects": [
+        "moved"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-metadata.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-3",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-metadata.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-7",
+        "index": 0
+      }
+    },
+    {
+      "change": "changed",
+      "label": "prose:ch11-nhwa-mapping",
+      "aspects": [
+        "moved"
+      ],
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-mapping.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-4",
+        "index": 0
+      },
+      "head": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-mapping.ts",
+        "kind": "prose",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-8",
+        "index": 0
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-address",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-address.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 5
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-birth-history",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-birth-history.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 3
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-citizenship-and-language",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-citizenship-and-language.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 4
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-contact-information",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-contact-information.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 6
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-data-submission-institution",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-data-submission-institution.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 10
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-employment-address",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-employment-address.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 9
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-employment-status",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-employment-status.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 8
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-identification-number",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-identification-number.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 1
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-name",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-name.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 2
+      }
+    },
+    {
+      "change": "removed",
+      "label": "de:mds-professional-licence-and-certification",
+      "base": {
+        "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/de-professional-licence-and-certification.ts",
+        "kind": "data-element",
+        "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-1",
+        "index": 7
+      }
+    }
+  ]
+}

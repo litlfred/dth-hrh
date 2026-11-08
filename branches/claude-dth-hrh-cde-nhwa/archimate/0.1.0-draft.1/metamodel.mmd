@@ -1,0 +1,34 @@
+classDiagram
+  %% DTH-HRH overlay on the DPI-H reference architecture: metamodel in use, derived by archimate-metamodel. Do not edit.
+  class Outcome["Outcome"]
+  <<Motivation>> Outcome
+  class Capability["Capability"]
+  <<Strategy>> Capability
+  class Stakeholder["Stakeholder"]
+  <<Motivation>> Stakeholder
+  class ApplicationComponent["Application Component"]
+  <<Application>> ApplicationComponent
+  class DataObject["Data Object"]
+  <<Application>> DataObject
+  class Value["Value"]
+  <<Motivation>> Value
+  class ApplicationFunction["Application Function"]
+  <<Application>> ApplicationFunction
+  class ApplicationService["Application Service"]
+  <<Application>> ApplicationService
+  class Goal["Goal"]
+  <<Motivation>> Goal
+  ApplicationComponent ..> ApplicationComponent : flows to ×7
+  Stakeholder -- Value : associated with ×7
+  ApplicationComponent ..> DataObject : accesses ×6
+  Capability ..|> Outcome : realises ×6
+  Value ..> Outcome : influences ×5
+  ApplicationComponent --> ApplicationFunction : assigned to ×4
+  ApplicationFunction ..|> ApplicationService : realises ×4
+  ApplicationComponent ..|> Outcome : realises ×3
+  DataObject -- DataObject : associated with ×2
+  ApplicationFunction ..> DataObject : accesses ×1
+  ApplicationService ..|> Capability : realises ×1
+  DataObject o-- DataObject : aggregates ×1
+  DataObject -- Outcome : associated with ×1
+  Outcome -- Capability : associated with ×1

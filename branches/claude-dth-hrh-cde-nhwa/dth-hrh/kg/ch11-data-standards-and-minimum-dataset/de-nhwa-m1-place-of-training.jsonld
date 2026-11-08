@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m1-place-of-training",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m1-place-of-training",
+  "kind": "data-element",
+  "title": "Place of training",
+  "text": "de-nhwa-m1-place-of-training.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-030-1-08-health-worker-distribution-by-place-of-trai",
+        "sec-031-1-09-annual-inflows-of-health-workers"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m1",
+    "supportsIndicators": [
+      "1-08",
+      "1-09"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/place-of-training",
+        "name": "Place of training"
+      }
+    ]
+  },
+  "provenance": "authored"
+}

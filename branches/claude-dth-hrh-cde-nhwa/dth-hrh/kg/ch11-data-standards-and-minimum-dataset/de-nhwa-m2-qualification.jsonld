@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m2-qualification",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m2-qualification",
+  "kind": "data-element",
+  "title": "Qualification and education programme",
+  "text": "de-nhwa-m2-qualification.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-039-2-04-ratio-of-graduates-to-stock"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m2",
+    "supportsIndicators": [
+      "2-04"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/qualification-and-education-programme",
+        "name": "Qualification and education programme"
+      }
+    ]
+  },
+  "provenance": "authored"
+}

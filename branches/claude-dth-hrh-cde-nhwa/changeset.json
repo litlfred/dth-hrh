@@ -10,7 +10,7 @@
     "commit": null
   },
   "summary": {
-    "added": 34,
+    "added": 35,
     "removed": 10,
     "changed": 4,
     "unchanged": 310,
@@ -433,6 +433,16 @@
         "file": "dth-hrh/ch11-data-standards-and-minimum-dataset/p-ch11-nhwa-mapping.ts",
         "kind": "prose",
         "section": "dth-hrh/ch11-data-standards-and-minimum-dataset::sec:11-8",
+        "index": 0
+      }
+    },
+    {
+      "change": "added",
+      "label": "tbl:glossary-data-element-terms",
+      "head": {
+        "file": "dth-hrh/glossary/t-data-element-terms.ts",
+        "kind": "table",
+        "section": "dth-hrh/glossary::sec:glossary-data-elements",
         "index": 0
       }
     },

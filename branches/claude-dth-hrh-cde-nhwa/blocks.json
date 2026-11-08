@@ -894,6 +894,11 @@
     "renamedFrom": [],
     "section": "glossary::sec:glossary-terms"
   },
+  "tbl:glossary-data-element-terms": {
+    "hash": "7905490be26bfb06bc0fbc1cb02197e10e5a156a300297940417ccc32f394ef8",
+    "renamedFrom": [],
+    "section": "glossary::sec:glossary-data-elements"
+  },
   "prose:gloss-health-practitioner": {
     "hash": "b550fd5afe9f4a66305cb6af5e84be8d5bf27204caf0bb4d9efb99a7493881c5",
     "renamedFrom": [],

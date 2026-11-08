@@ -5269,8 +5269,8 @@
         },
         {
           "path": "dth-hrh/glossary/glossary.ts",
-          "bytes": 2210,
-          "size": "2.2 KB"
+          "bytes": 2350,
+          "size": "2.3 KB"
         },
         {
           "path": "dth-hrh/glossary/p-glossary-about.jsonld",
@@ -5333,6 +5333,21 @@
           "size": "218 B"
         },
         {
+          "path": "dth-hrh/glossary/t-data-element-terms.jsonld",
+          "bytes": 503,
+          "size": "503 B"
+        },
+        {
+          "path": "dth-hrh/glossary/t-data-element-terms.md",
+          "bytes": 10093,
+          "size": "9.9 KB"
+        },
+        {
+          "path": "dth-hrh/glossary/t-data-element-terms.ts",
+          "bytes": 286,
+          "size": "286 B"
+        },
+        {
           "path": "dth-hrh/glossary/t-professional-council-examples.jsonld",
           "bytes": 518,
           "size": "518 B"
@@ -5384,8 +5399,8 @@
         },
         {
           "path": "dth-hrh/review-anchors.json",
-          "bytes": 171759,
-          "size": "167.7 KB"
+          "bytes": 172467,
+          "size": "168.4 KB"
         },
         {
           "path": "schema/builders.ts",

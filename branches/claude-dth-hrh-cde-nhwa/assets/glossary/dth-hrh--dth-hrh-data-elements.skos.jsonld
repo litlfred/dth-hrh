@@ -27,7 +27,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-identification-number: core data element (CDE-HRH, section 11.1).",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -42,7 +42,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-name: core data element (CDE-HRH, section 11.1).",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -57,7 +57,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-birth-history: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-07.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/place-of-birth"
@@ -82,7 +82,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-sex: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-04, 1-09, 1-10, 2-04.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Sex\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:closeMatch": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/sex"
@@ -103,7 +103,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-citizenship-and-language: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-07.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -118,7 +118,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-address: core data element (CDE-HRH, section 11.1).",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -133,7 +133,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-contact-information: core data element (CDE-HRH, section 11.1).",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -153,7 +153,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-occupation: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 3-02.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Occupation\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/occupation"
@@ -182,7 +182,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-professional-licence-and-certification: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/licensing"
@@ -208,7 +208,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-employment-status: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-09, 1-10.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/employment-status-full-time-part-time-temporary-permanent"
@@ -231,7 +231,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-employment-address: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-02, 1-05, 1-06.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -246,7 +246,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:cde-data-submission-institution: core data element (CDE-HRH, section 11.1).",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:note": "candidate"
     },
     {
@@ -266,7 +266,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-activity-level: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-01.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Activity Level\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/activity-level"
@@ -300,7 +300,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-subnational-unit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-02.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Subnational Level\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/distribution"
@@ -331,7 +331,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-facility-ownership: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-05.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Facility/Institution Ownership Type\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:closeMatch": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/facility-institution-ownership-type"
@@ -357,7 +357,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-facility-type: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-06.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Facility Type\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:closeMatch": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/facility-type"
@@ -383,7 +383,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-place-of-training: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-08, 1-09.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Place of Training\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/place-of-training"
@@ -409,7 +409,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-entry-date: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-09.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/mobility-flow"
@@ -432,7 +432,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-exit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-10.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/attrition"
@@ -460,7 +460,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m1-type-of-contract: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-12.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Contract Type\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/contract-type"
@@ -486,7 +486,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m2-qualification: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/qualification"
@@ -512,7 +512,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m2-training-institution: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/education-and-training-institution"
@@ -546,7 +546,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m3-employer-sector: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-01, 3-02.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Institutional Sector\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:closeMatch": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/institutional-sector"
@@ -567,7 +567,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m3-entry-salary-grade: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-02.",
-      "skos:editorialNote": "Definition to draft: no provisional definition yet. For working-group review.",
+      "skos:editorialNote": "Definition to draft",
       "skos:related": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/wage-and-salary"
@@ -592,7 +592,7 @@
         }
       ],
       "skos:scopeNote": "Data element de:nhwa-m4-leadership-position: NHWA Module 4 extension (section 11.5). NHWA indicators: 4-03.",
-      "skos:editorialNote": "Provisional definition: quoted from the NHWA handbook, 2nd edition (2023), Glossary, entry \"Leadership Role\". For working-group review; not adopted.",
+      "skos:editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "skos:closeMatch": [
         {
           "@id": "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/leadership-role"

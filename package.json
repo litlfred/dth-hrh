@@ -2,7 +2,7 @@
   "name": "dth-hrh",
   "private": true,
   "scripts": {
-    "cat": "bun cat-harness-tools/scripts/run-script.ts",
+    "cat": "bun .github/cat.ts",
     "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --out",
     "site:wg-comment": "bun run folio-assistant-core/scripts/public-comment-site.ts --store review/wg-comment --out",
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",

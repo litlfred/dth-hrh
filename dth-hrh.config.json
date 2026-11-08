@@ -43,8 +43,7 @@
         "check:review-anchors",
         "check:kg-blocks",
         "check:library-kg",
-        "check:page-furniture",
-        "check:glossary-table"
+        "check:page-furniture"
       ],
       "keep": [
         "ns"

@@ -335,7 +335,7 @@
 
   `relative_url` for the same reason every other path here uses it: the site is
   served from `/folio-assistant` on the canonical deploy and from
-  `/folio-assistant/STAGING/<branch>` on a preview, and an absolute literal
+  `/folio-assistant/branches/<branch>` on a preview, and an absolute literal
   404s on every deploy but one.
 
   A URL rather than inline JSON, unlike `fa-site-links` above, because the
@@ -409,14 +409,14 @@
   instance's `glassStrip` declaration by `sync-docs-harness.ts`; absent when
   nothing declared one. Replica pages read `assets/harness/glass-strip.json`.
 -->
-<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]">
+<meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;,&quot;library&quot;]">
 
 <!--
   THE SITE'S BASEURL, for the tiles above.
 
   Every other site-root path on this page is composed by Liquid: `relative_url`
   prepends `site.baseurl`, which is `/folio-assistant` on the canonical deploy
-  and `/folio-assistant/STAGING/<branch>` on a preview. The tiles cannot use
+  and `/folio-assistant/branches/<branch>` on a preview. The tiles cannot use
   it, because they reach the client as JSON and are composed in `docs-ui.js`
   after Liquid has finished — so the base has to travel with them.
 
@@ -447,7 +447,7 @@
 
   `feature-staging.yml` writes `staging_slug` into `_data/build.yml`;
   `docs-site.yml` writes the same file WITHOUT it. So a non-empty value here
-  means "a STAGING/<slug>/ preview", an empty one means the canonical deploy
+  means "a branches/<slug>/ preview", an empty one means the canonical deploy
   or a local build.
 
   It exists so a tile can vanish with its page. `compose-docs.ts` withholds a
@@ -563,7 +563,7 @@
 
   These five are served from stable paths with no hash in the name, so a
   browser that has the page cached keeps the old CSS and JS until its
-  `max-age` runs out. On the live site that is invisible. On a STAGING
+  `max-age` runs out. On the live site that is invisible. On a branches/
   preview it is the whole point of the deployment: the reviewer opens the URL
   they opened an hour ago, gets yesterday's stylesheet, and reports "i dont
   see changes" — which is indistinguishable from a deploy that never
@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=b4497e8e1c4a">
+<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=34ea92e5aa62">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -593,7 +593,7 @@
   `state-visualizer.ts` can inline exactly these bytes into the generated
   `<base>/<stub>/state-visualizer/` pages. One rule, two surfaces.
 -->
-<link rel="stylesheet" href="../../../../../assets/css/work-plan.css?v=ed3e33f033fe">
+<link rel="stylesheet" href="../../../../../assets/css/work-plan.css?v=bd8c73337b01">
 <!-- Sticky themes. GENERATED from the theme nodes in `schemas/ui/themes.ts` by
      `bun run cat themes:css`; `themes:css:check` fails the build when it is stale.
      Loaded AFTER docs-ui.css deliberately: it supplies the `--fa-sticky-*`
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=e905de88eeeb">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=05433996459b">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -641,11 +641,11 @@
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=69d9894b0281" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=cb9e7e1bb264" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../../../assets/js/edit-links.js?v=23ca1803a02a" defer></script>
+<script src="../../../../../assets/js/edit-links.js?v=04eadbe3cd70" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -978,9 +978,11 @@
 <li><a href="../bootstrap-tools-skills/">bootstrap-tools-skills</a> <span class="p">bootstrap-tools/skills</span> <span class="n" data-da-count="index/skills/bootstrap-tools-skills" data-da-count-state="pending">…</span></li>
 <li><a href="../core-skills/">core-skills</a> <span class="p">folio-assistant-core/skills</span> <span class="n" data-da-count="index/skills/core-skills" data-da-count-state="pending">…</span></li>
 <li><a href="../fhir-ig-skills/">fhir-ig-skills</a> <span class="p">fhir-harness/skills</span> <span class="n" data-da-count="index/skills/fhir-ig-skills" data-da-count-state="pending">…</span></li>
+<li><a href="../sdlc-skills/">sdlc-skills</a> <span class="p">cat-harness/sdlc/skills</span> <span class="n" data-da-count="index/skills/sdlc-skills" data-da-count-state="pending">…</span></li>
 <li><a href="../skills/">skills</a> <span class="p">cat-harness/skills</span> <span class="n" data-da-count="index/skills/skills" data-da-count-state="pending">…</span></li>
 <li><strong>smart-base-skills</strong> <span class="p">smart-base/skills</span> <span class="n" data-da-count="index/skills/smart-base-skills" data-da-count-state="pending">…</span></li>
 <li><a href="../who-iris-skills/">who-iris-skills</a> <span class="p">who-iris/skills</span> <span class="n" data-da-count="index/skills/who-iris-skills" data-da-count-state="pending">…</span></li>
+<li><a href="../work-plan-skills/">work-plan-skills</a> <span class="p">cat-harness/work-plan/skills</span> <span class="n" data-da-count="index/skills/work-plan-skills" data-da-count-state="pending">…</span></li>
 </ul>
 
 <div class="fa-table-filter">
@@ -992,8 +994,20 @@
 <thead><tr><th>Artefact</th><th>What it declares about itself</th></tr></thead>
 <tbody>
 <tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/activate-accepted-guidance.md"><code>activate-accepted-guidance</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/activate-accepted-guidance.md</span></td>
+  <td>The point-of-care system carries out the health worker's decisions on decision-support guidance: each accepted action's request becomes active (intent plan or order) and joins the client's CarePlan; a declined action is…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/apply-decision-support.md"><code>apply-decision-support</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/apply-decision-support.md</span></td>
+  <td>The point-of-care system applies a DAK decision table's PlanDefinition to one client ($apply) and gets the proposed actions back as a RequestGroup (R4; RequestOrchestration in R5), or as CDS Hooks cards when the guidanc…</td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/classify-and-code-content.md"><code>classify-and-code-content</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/classify-and-code-content.md</span></td>
   <td>Classify and code L1 narrative content (recommendations, implementation practices, remarks, and proposed coverage exclusions) and L2 DAK slots (personas, business processes, guideline domains, conditions, interventions,…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/complete-sdc-questionnaire.md"><code>complete-sdc-questionnaire</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/complete-sdc-questionnaire.md</span></td>
+  <td>A health worker (or a client, on their own device) completes a FHIR R4 Questionnaire conforming to Structured Data Capture as their device renders it, and the result is a QuestionnaireResponse.</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dak-l1-library.md"><code>dak-l1-library</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dak-l1-library.md</span></td>
@@ -1001,11 +1015,11 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dak-postprocessing.md"><code>dak-postprocessing</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dak-postprocessing.md</span></td>
-  <td>What the DAK post-processing phase accomplishes after the IG Publisher runs — the JSON/JSON-LD surface, the DAK API hub, and the metadata-to-Liquid bridge that is the seam the just-the-docs transition cuts at.</td>
+  <td>What the DAK post-processing phase produces after the IG Publisher runs — the JSON/JSON-LD surface, the DAK API hub, and the metadata-to-Liquid bridge — and how an IG repository's own site gets the same sidecars from th…</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dak-preprocessing.md"><code>dak-preprocessing</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dak-preprocessing.md</span></td>
-  <td>What the DAK pre-processing phase actually accomplishes, step by step, before the IG Publisher runs — and which of its steps exist only to satisfy the Publisher's own page index — and how it runs as the overlay on fhir-…</td>
+  <td>What each DAK pre-processing step does before the IG Publisher runs, which steps exist only to feed the Publisher's page index, and how the phase runs as the overlay on fhir-harness's AST cache refresh (`dak-pre-export.…</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dth-authoring.md"><code>dth-authoring</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dth-authoring.md</span></td>
@@ -1014,6 +1028,10 @@
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dth-l1-to-l2-ingest.md"><code>dth-l1-to-l2-ingest</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dth-l1-to-l2-ingest.md</span></td>
   <td>Turn a WHO Digital Transformation Handbook that exists only as an L1 publication (ingested in who-iris) into an L2 DTH in its own repository that depends on smart-ra: write the handbook's workplan first (what goes in it…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/extract-questionnaire-response.md"><code>extract-questionnaire-response</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/extract-questionnaire-response.md</span></td>
+  <td>The point-of-care system turns a completed QuestionnaireResponse into the FHIR resources it stands for, by the extraction its SDC Questionnaire declares (StructureMap-based, definition-based or observation-based $extrac…</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/grade.md"><code>grade</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/grade.md</span></td>
@@ -1030,6 +1048,10 @@
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/indicator-extraction.md"><code>indicator-extraction</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/indicator-extraction.md</span></td>
   <td>Extract the indicators an L1 source prints (indicator reference or metadata sheets: name, numerator, denominator, disaggregation, definition, data sources) as L1 <code>indicator</code> nodes with every printed field, then draft on…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/inform-client.md"><code>inform-client</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/inform-client.md</span></td>
+  <td>A health worker tells the client (or caregiver) what was decided and what happens next, in words and, where the DAK gives one, on a slip or card: a referral, a return date, a result.</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/l2-component-edit-review.md"><code>l2-component-edit-review</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/l2-component-edit-review.md</span></td>
@@ -1076,6 +1098,18 @@
   <td>Join each L1 recommendation to who acts on it and during which business process: one smart-kg L2 user-scenario candidate per recommendation, from the agent's mapping, reusing the target guide's personas and processes fi…</td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/record-decision-rationale.md"><code>record-decision-rationale</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/record-decision-rationale.md</span></td>
+  <td>OPTIONAL and never blocking: a health worker who chooses to may note why they accepted or declined decision-support guidance, in one tap plus an optional coded or free-text reason.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/review-client-history.md"><code>review-client-history</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/review-client-history.md</span></td>
+  <td>A health worker reads the client's history as their device shows it (an International Patient Summary, imported records, or a paper card and what the client reports) and takes into account what bears on today's care, we…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/review-decision-support-guidance.md"><code>review-decision-support-guidance</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/review-decision-support-guidance.md</span></td>
+  <td>A health worker sees the decision-support guidance for one client on their device (the proposed actions of a RequestGroup or CDS Hooks cards) and accepts or declines each action; modifies one only where the device offer…</td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/smart-base-tools.md"><code>smart-base-tools</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/smart-base-tools.md</span></td>
   <td><span class="none">no description in the artefact</span></td>
 </tr>
@@ -1093,7 +1127,7 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/toolchain-ownership.md"><code>toolchain-ownership</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/toolchain-ownership.md</span></td>
-  <td>Taking ownership of the WHO smart-base scripts in a litlfred fork, rewriting them to the Skill I/O contract, and the one gate that governs when a script may actually move.</td>
+  <td>Taking ownership of the WHO smart-base scripts in litlfred, rewriting them to the Skill I/O contract, and the one gate that governs when a script may actually move.</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/transcription-verbatim.md"><code>transcription-verbatim</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/transcription-verbatim.md</span></td>

@@ -14,6 +14,7 @@
       "dcterms:hasVersion": "2026-09-24",
       "dcterms:modified": "2026-09-30",
       "dcterms:source": "cat-harness/cat-harness.json",
+      "dcterms:subject": "harness-vocabulary",
       "dcterms:license": "CC-BY-4.0"
     },
     {
@@ -288,7 +289,7 @@
           "@language": "en"
         },
         {
-          "@value": "فاعل",
+          "@value": "الفاعل",
           "@language": "ar"
         },
         {
@@ -353,7 +354,7 @@
           "@language": "en"
         },
         {
-          "@value": "دور",
+          "@value": "الدور",
           "@language": "ar"
         },
         {
@@ -549,7 +550,7 @@
       "rdfs:isDefinedBy": {
         "@id": "https://github.com/hmans/beans"
       },
-      "dcterms:source": "cat-harness/skills/sdlc/sdlc-core/todo-manager.md"
+      "dcterms:source": "cat-harness/work-plan/skills/work-plan/todo-manager.md"
     },
     {
       "@id": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/json-schema",

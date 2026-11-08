@@ -28,7 +28,7 @@
  * so a pasted copy can be checked (skill review-sheet-script, "Trusting the
  * script").
  */
-// folio-assistant-core tools/review-sheet-sync at e0a28883fac377297e5c6b25651399de37703228.
+// folio-assistant-core tools/review-sheet-sync at 4b8cb5945744f44b8dae7783dbe955d5e4ff677c.
 
 /**
  * Run this one, once, from the editor (or Folio Assistant, then Install automatic
@@ -75,7 +75,7 @@ const CONFIG_TAB = 'Config';
 // Which build this is, and where the latest is published (owner, 2026-10-31:
 // "sheets likely to drift anyways ... they need to know where to see latest
 // published"). The build stamps SCRIPT_VERSION; the script never fetches.
-const SCRIPT_VERSION = 'e0a28883fac377297e5c6b25651399de37703228';
+const SCRIPT_VERSION = '4b8cb5945744f44b8dae7783dbe955d5e4ff677c';
 const LIBRARY_URL = 'https://script.google.com/home/projects/1us7_ApIq_XvDG-V1XtqdcyHucF0hSlST0qracv1Tw9KTb4-lAFvK1bMQ/edit';
 const COPY_PAGE_URL = 'https://claude.ai/artifact/MXNQcLMzLYqq5us5x6phGd';
 // The menu's name and the page it points to for more (owner, 2026-11-01:
@@ -439,6 +439,10 @@ function markDirty(e) {
     return refreshIfDirty();
   }
   props.setProperty('dirty', '1');
+  // The watch hash is written at once, before any rebuild, so a review-log
+  // watcher sees the edit even while a slow sheet waits for the timer
+  // (owner, 2026-11-05: "make the hash update on edit, not just refresh").
+  writeWatchHash(SpreadsheetApp.getActive());
   // Public-comment mode rebuilds the whole sheet, since a comment's row feeds
   // its change sets' rows. It does so at once while that is quick; once a
   // rebuild takes longer than FAST_MS (an 800-row log takes about 20 s),
@@ -527,7 +531,12 @@ function refreshIfDirty() {
       return a ? a.getRange(1, 1, Math.max(a.getLastRow(), 1), Math.max(a.getLastColumn(), 1)).getDisplayValues() : [];
     }).concat([agentColumnText()])));
     const moved = seen !== (props.getProperty('agentHash') || '');
-    if (props.getProperty('dirty') !== '1' && !moved) return;
+    if (props.getProperty('dirty') !== '1' && !moved) {
+      // Nothing to rebuild: still rewrite the watch hash, so Checked (UTC) is
+      // a heartbeat and an edit no trigger saw still changes the hash.
+      writeWatchHash(SpreadsheetApp.getActive());
+      return;
+    }
     // Cleared before the run, so an edit made during it marks it dirty
     // again; put back when the run could not start or failed, so the edit is
     // not lost but retried on the next tick.
@@ -697,6 +706,7 @@ function refreshLocked() {
       const id = String(r[rCs]).trim();
       if (stagingOf[id] || awaitsPreview(prOf[id])) rcs.sh.getRange(k + rcs.top, rSt + 1, 1, 1).setRichTextValues([[stagingCell(stagingOf[id], builtOf[id], prOf[id], readyAt[id], dispBlock[id])]]);
     });
+     writeWatchHash(ss);
   }
 }
 // ---------- sheet helpers ----------
@@ -1137,22 +1147,53 @@ function watchedHeader_(h) {
 }
 
 /**
- * Write a hash of every non-empty person-set cell of Contributor Feedback to
- * the hidden Watch tab, F1 "Cells hash" and G1 the hash, H1 "Checked (UTC)"
- * and I1 when. A review-log watcher reads Watch!F1:I1 and the Issue column
- * on each poll, instead of the whole log, and passes the hash to Tool
- * review-log-watch (`--sheet-hash`); a different hash means a person changed
- * something (owner, 2026-11-01, Q-WATCH4 A). Columns A to D are left to any
- * other Watch writer. Never stops the refresh.
+ * Public comment's person-set cells, one line each (owner, 2026-11-04): on
+ * Review Change Sets Title, TWG (CS), every Committee Feedback column, Ready
+ * for agent, Dispositions confirmed, Ready for merge and Change Set (human);
+ * on Review Public Comments every Committee Feedback column, Disposition,
+ * Change Set (human) and TWG (human). A line is keyed by its row's
+ * Change-set id or comment No., and the lines are sorted, so a row someone
+ * inserts changes nothing; a row with neither is keyed by its place.
+ */
+function pcWatchLines_(ss) {
+  const lines = [];
+  [[CFG.RCS, 'Change-set', ['Title', 'TWG (CS)', 'Ready for agent', CONFIRMED, 'Ready for merge', CS_HUMAN]],
+    [CFG.RPC, COLS.rpc.no, [COLS.rpc.disposition || 'Disposition', CS_HUMAN, 'TWG (human)']]].forEach(([name, key, heads]) => {
+    const s = readSheet(ss.getSheetByName(name));
+    const kc = col(s, key);
+    const cs = heads.map(h => col(s, h)).concat(colsLike(s, 'Committee Feedback')).filter((c, i, a) => c >= 0 && a.indexOf(c) === i);
+    s.rows.forEach((r, k) => {
+      const id = kc >= 0 ? String(r[kc]).trim() : '';
+      cs.forEach(c => {
+        const v = String(r[c] == null ? '' : r[c]).trim();
+        if (v) lines.push(name + '|' + (id || '#' + k) + ':' + s.header[c] + '=' + v);
+      });
+    });
+  });
+  return lines.sort();
+}
+
+/**
+ * Write a hash of every non-empty person-set cell to the hidden Watch tab, F1
+ * "Cells hash" and G1 the hash, H1 "Checked (UTC)" and I1 when: Contributor
+ * Feedback's on a drafting sheet, Review Change Sets' and Review Public
+ * Comments' on a public-comment one (pcWatchLines_). A review-log watcher
+ * reads Watch!F1:I1 and the Issue column on each poll, instead of the whole
+ * log, and passes the hash to Tool review-log-watch (`--sheet-hash`); a
+ * different hash means a person changed something (owner, 2026-11-01,
+ * Q-WATCH4 A). Columns A to D are left to any other Watch writer. Never stops
+ * the refresh.
  */
 function writeWatchHash(ss) {
   try {
-    const s = readSheet(ss.getSheetByName(CFG.FEEDBACK));
-    const lines = [];
-    s.rows.forEach((r, k) => s.header.forEach((h, c) => {
-      const v = String(r[c] == null ? '' : r[c]).trim();
-      if (v && watchedHeader_(String(h).trim())) lines.push(k + ':' + String(h).trim() + '=' + v);
-    }));
+    const lines = DRAFTING ? [] : pcWatchLines_(ss);
+    if (DRAFTING) {
+      const s = readSheet(ss.getSheetByName(CFG.FEEDBACK));
+      s.rows.forEach((r, k) => s.header.forEach((h, c) => {
+        const v = String(r[c] == null ? '' : r[c]).trim();
+        if (v && watchedHeader_(String(h).trim())) lines.push(k + ':' + String(h).trim() + '=' + v);
+      }));
+    }
     let sh = ss.getSheetByName('Watch');
     if (!sh) { sh = ss.insertSheet('Watch'); sh.hideSheet(); }
     const now = new Date().toISOString().slice(0, 16).replace('T', ' ') + 'Z';

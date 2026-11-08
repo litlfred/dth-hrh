@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "cat-harness": "https://litlfred.github.io/cat-harness/v0/ns/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doco": "http://purl.org/spar/doco/",
+    "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "$schema": {
+      "@id": "dcterms:conformsTo"
+    },
+    "contains": {
+      "@id": "dcterms:hasPart",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "derivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "format": {
+      "@id": "dcterms:format"
+    },
+    "header_vocabulary": {
+      "@id": "cat-harness:headerVocabulary",
+      "@container": "@set"
+    },
+    "headers": {
+      "@id": "cat-harness:headers",
+      "@container": "@list"
+    },
+    "inSubgraph": {
+      "@id": "cat-harness:inSubgraph",
+      "@type": "@id"
+    },
+    "kind": "cat-harness:kind",
+    "label": "cat-harness:label",
+    "meta": {
+      "@id": "cat-harness:blockMeta",
+      "@type": "@json"
+    },
+    "n_sheets": {
+      "@id": "cat-harness:sheetCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "narrative": {
+      "@id": "cat-harness:narrative",
+      "@type": "@json"
+    },
+    "provenance": "cat-harness:provenance",
+    "sheets": {
+      "@id": "cat-harness:sheets",
+      "@type": "@json"
+    },
+    "source": {
+      "@id": "cat-harness:sourceTechnicalMetadata",
+      "@type": "@json"
+    },
+    "sourceDocument": {
+      "@id": "cat-harness:sourceDocument",
+      "@type": "@id"
+    },
+    "text": {
+      "@id": "cat-harness:text"
+    },
+    "title": "dcterms:title",
+    "uses": {
+      "@id": "cat-harness:uses",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

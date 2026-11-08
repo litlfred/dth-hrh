@@ -654,6 +654,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/fhir-harness/v0/ns/glossary/kg-bpmn-activities/process_l3fhir.call_publishstatements",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/fhir-harness/v0/ns/glossary/kg-bpmn-activities"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Publish extracted statements"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The IG draws on library sources; every statement extracted from them is published as pages of the IG and in the shared extraction viewer, each linked to its library entry and section, before the IG Publisher builds the site. The sub-process is core's, the same for every content type: this IG supplies only the page look (its pages' table class) and registers the pages in its own menu. The generated pages are checked for staleness in CI."
+        }
+      ],
+      "skos:notation": "Call_PublishStatements",
+      "dcterms:source": "fhir-harness/processes/content/l3-fhir-pipeline.bpmn#Call_PublishStatements",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/fhir-harness/v0/ns/glossary/kg-bpmn-activities/process_l3fhir.task_authorfsh",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -966,7 +986,7 @@
       ],
       "skos:definition": [
         {
-          "@value": "The branch's wireframes and form pages published under STAGING/<slug>/ by feature-staging."
+          "@value": "The branch's wireframes and form pages published under branches/<slug>/ by feature-staging."
         }
       ],
       "skos:notation": "Task_Stage",

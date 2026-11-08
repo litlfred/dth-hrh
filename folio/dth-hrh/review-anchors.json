@@ -990,6 +990,11 @@
    "chapter": "glossary"
   },
   {
+   "label": "sec:glossary-data-elements",
+   "title": "Data element terms",
+   "chapter": "glossary"
+  },
+  {
    "label": "sec:references-lead",
    "title": "References",
    "chapter": "references"
@@ -5172,6 +5177,19 @@
    "caption": "Professional councils and boards: statutory definitions and mandates (AI generated in the workbook, then fact-checked; see the Checked column)",
    "hash": "62593fb56220",
    "excerpt": "WHO region Country Council Regulates Statutory definition Mandate Reference Checked --- --- --- --- --- --- --- --- AFR Ghana Medical and Dental Council (MDC) G",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:glossary-data-element-terms",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-data-element-terms",
+   "sections": [
+    "sec:glossary-data-elements"
+   ],
+   "caption": "Data element terms: one per data element in chapter 11. Provisional definitions are quoted from the NHWA handbook, 2nd edition, for working-group review",
+   "hash": "780f727e6d8e",
+   "excerpt": "Term Description --- --- Identification number [Definition to draft] Name [Definition to draft] Birth history [Definition to draft] Sex Male or Female, based on",
    "method": "folio-snapshot"
   },
   {

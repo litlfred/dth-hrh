@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/tbl-glossary-data-element-terms",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:glossary-data-element-terms",
+  "kind": "table",
+  "text": "t-data-element-terms.md",
+  "provenance": "authored"
+}

@@ -152,8 +152,8 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "dda65c770c7f2f0eb4a144f4b2c9c0a93aeb5b292c796b7ea74fca2a2c16dd07",
-          "files": 3609
+          "treeDigest": "a729988c957721e436c25a4d57a45e70b5eb4990c1527526978eb84dc3806e2d",
+          "files": 3635
         }
       ],
       "trust": {

@@ -25,6 +25,12 @@
     "elementSet": "cde",
     "supportsIndicators": [
       "1-07"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/citizenship-and-language",
+        "name": "Citizenship and language"
+      }
     ]
   },
   "provenance": "authored"

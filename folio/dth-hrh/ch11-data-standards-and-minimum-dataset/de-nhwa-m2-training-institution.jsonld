@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/de-nhwa-m2-training-institution",
@@ -27,6 +27,12 @@
     "elementSet": "nhwa-m2",
     "supportsIndicators": [
       "2-04"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/training-institution-and-year-of-graduation",
+        "name": "Training institution and year of graduation"
+      }
     ]
   },
   "provenance": "authored"

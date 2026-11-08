@@ -27,6 +27,12 @@
       "1-02",
       "1-05",
       "1-06"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/employment-address",
+        "name": "Employment address"
+      }
     ]
   },
   "provenance": "authored"

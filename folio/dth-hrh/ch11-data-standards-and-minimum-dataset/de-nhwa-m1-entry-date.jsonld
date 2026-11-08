@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/de-nhwa-m1-entry-date",
@@ -27,6 +27,12 @@
     "elementSet": "nhwa-m1",
     "supportsIndicators": [
       "1-09"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/date-of-entry-into-the-active-workforce",
+        "name": "Date of entry into the active workforce"
+      }
     ]
   },
   "provenance": "authored"

@@ -25,6 +25,12 @@
     "elementSet": "cde",
     "supportsIndicators": [
       "1-01"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/professional-licence-and-certification",
+        "name": "Professional licence and certification"
+      }
     ]
   },
   "provenance": "authored"

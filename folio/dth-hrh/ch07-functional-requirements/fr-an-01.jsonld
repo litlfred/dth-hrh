@@ -61,33 +61,6 @@
           "name": "Percentage of active health workers employed by facility type"
         }
       ]
-    },
-    "externalGlossaryReferences": {
-      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
-      "schemeId": "hrhis-registry-2015",
-      "publisher": "who-iris glossary (who-iris#167)",
-      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
-      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
-      "concepts": [
-        {
-          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-04",
-          "id": "fr-sec-006-04"
-        },
-        {
-          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-037-02",
-          "id": "fr-sec-037-02"
-        },
-        {
-          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-038-05",
-          "id": "fr-sec-038-05"
-        }
-      ],
-      "systemTypes": [
-        {
-          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/health-workforce-registry",
-          "id": "health-workforce-registry"
-        }
-      ]
     }
   },
   "provenance": "authored"

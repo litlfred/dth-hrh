@@ -4,177 +4,177 @@
     {
       "harness": "who-iris",
       "repository": "litlfred/who-iris",
-      "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634"
+      "ref": "091424083b9044732236c4fded1eb471d0740a82"
     },
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "cd5d1df72d44268730640703f89a934f72113558"
+      "ref": "f42752ac8e96cc2e2ee7e265aa331b02982b9e37"
     },
     {
       "harness": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "ref": "0953e31371536198f077f5907d71569b8393b65e"
+      "ref": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a"
     },
     {
       "harness": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165"
+      "ref": "35c942502a162e24b65669f8230f915da271b9bc"
     },
     {
       "harness": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "ref": "febffc697f44096afc2c676f1e2afe64e252e927"
+      "ref": "42d4f1560bc5b99ab20b473cdadb1d9fbe2e24d8"
     },
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf"
+      "ref": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd"
     },
     {
       "harness": "bootstrap",
       "repository": "litlfred/bootstrap",
-      "ref": "c90ef456067a874fd7017a370232908ba62e9fcd"
+      "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774"
     },
     {
       "harness": "bootstrap-tools",
       "repository": "litlfred/bootstrap-tools",
-      "ref": "aa25987a2e637838be02baf4ed239d58086551a3"
+      "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921"
     },
     {
       "harness": "dpi-h-ra",
       "repository": "litlfred/smart-ra",
-      "ref": "8257473ee8fc4a57d7e139a80d76e38f73a81b40"
+      "ref": "689463b27b5d20e6edbc64b14e09108e7da00695"
     }
   ],
   "instances": [
     {
       "instance": "bootstrap",
       "repository": "litlfred/bootstrap",
-      "sha": "c90ef456067a874fd7017a370232908ba62e9fcd",
+      "sha": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
       "upstreamRoot": "",
       "path": "bootstrap",
       "via": "bootstrap",
       "pinnedBy": "declared",
       "declaration": {
         "file": "bootstrap.json",
-        "sha256": "552302244e03debe8692429afc7c0385fbe8b2bed135be078ba3166970597ea3"
+        "sha256": "85a0e54d5709f473012df96705b04d7a3b2ac21cbe5291948b1c06b7d8c510bf"
       },
       "directories": [
         {
           "id": "*",
           "path": "bootstrap",
           "upstreamPath": ".",
-          "treeDigest": "653d1b56d8c9fcae798d2ff4ffcd9976fa018d2442b64d8a49bbc6238ae766a5",
+          "treeDigest": "6d0dd31e57f4c7f6e7de8243adf48a21737f5067669ada3e2b566ea577afd29d",
           "files": 49
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-03",
-        "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
+        "on": "2026-11-08",
+        "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
         "approver": "unverified"
       }
     },
     {
       "instance": "bootstrap-tools",
       "repository": "litlfred/bootstrap-tools",
-      "sha": "aa25987a2e637838be02baf4ed239d58086551a3",
+      "sha": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
       "upstreamRoot": "",
       "path": "bootstrap-tools",
       "via": "bootstrap-tools",
       "pinnedBy": "declared",
       "declaration": {
         "file": "bootstrap-tools.json",
-        "sha256": "775ba5102e9df50d840bb74ce15d941d9d38b5348781bf156c970310d278f861"
+        "sha256": "bb9f223b87a13659fa38e53faba86f71168e839d705e9ee801019199d7023a46"
       },
       "directories": [
         {
           "id": "*",
           "path": "bootstrap-tools",
           "upstreamPath": ".",
-          "treeDigest": "7e7a06ae955822db755def553232ad4e7feb64df3736f50f70cc59bee63e3709",
-          "files": 97
+          "treeDigest": "9a32d1ea0045141950c2ab016813c7c13e807a7a16e23f8b3bd43a49d71cf26d",
+          "files": 127
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-03",
-        "ref": "aa25987a2e637838be02baf4ed239d58086551a3",
+        "on": "2026-11-08",
+        "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
         "approver": "unverified"
       }
     },
     {
       "instance": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "sha": "febffc697f44096afc2c676f1e2afe64e252e927",
+      "sha": "42d4f1560bc5b99ab20b473cdadb1d9fbe2e24d8",
       "upstreamRoot": "",
       "path": "cat-harness",
       "via": "cat-harness",
       "pinnedBy": "declared",
       "declaration": {
         "file": "cat-harness.json",
-        "sha256": "f164b4e56edef857009906ddf58f2db44b3deb10cb068d3b12d8d826c1e78975"
+        "sha256": "34f2435c56dc2445722a0f46907b3ee1d09a75dcb428f6588f0fabfe54035d2c"
       },
       "directories": [
         {
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "9c68a58eddb2856b345fb07a7a092ba77a90d6a3dbfba73630452a7059015e78",
-          "files": 12006
+          "treeDigest": "0417ba368a4981fed32759610edcd57ee417a8f5f7386c7f1f02d0309108fbd0",
+          "files": 12572
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-04",
-        "ref": "febffc697f44096afc2c676f1e2afe64e252e927",
+        "on": "2026-11-08",
+        "ref": "42d4f1560bc5b99ab20b473cdadb1d9fbe2e24d8",
         "approver": "unverified"
       }
     },
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
+      "sha": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
       "pinnedBy": "declared",
       "declaration": {
         "file": "cat-harness-tools.json",
-        "sha256": "539f7f4511a634d47304d363499dc87edca3805629ed1cf3da50c2927cc9e206"
+        "sha256": "a2baa5b04b69a3063fd1bb043348233b854d2b83eea22a0520249b96e8b19c86"
       },
       "directories": [
         {
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "d786f38a73b53f3f9511b29d82e72977911d74dedd5c8cc0de34bcd7c9f37356",
-          "files": 3173
+          "treeDigest": "dda65c770c7f2f0eb4a144f4b2c9c0a93aeb5b292c796b7ea74fca2a2c16dd07",
+          "files": 3609
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
+        "on": "2026-11-08",
+        "ref": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd",
         "approver": "unverified"
       }
     },
     {
       "instance": "dpi-h-ra",
       "repository": "litlfred/smart-ra",
-      "sha": "8257473ee8fc4a57d7e139a80d76e38f73a81b40",
+      "sha": "689463b27b5d20e6edbc64b14e09108e7da00695",
       "upstreamRoot": "",
       "path": "dpi-h-ra",
       "via": "dpi-h-ra",
       "pinnedBy": "declared",
       "declaration": {
         "file": "dpi-h-ra.json",
-        "sha256": "31cda58d3a6ff3592cad500d5f153689de282d4ab6ac793c6d8c9ce6ea7fb276"
+        "sha256": "a4ba1a0be588695f290fc0558a793f67b1dbfb890cce278fe918c16e96f42a4c"
       },
       "directories": [
         {
@@ -195,15 +195,15 @@
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-03",
-        "ref": "8257473ee8fc4a57d7e139a80d76e38f73a81b40",
+        "on": "2026-11-06",
+        "ref": "689463b27b5d20e6edbc64b14e09108e7da00695",
         "approver": "unverified"
       }
     },
     {
       "instance": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "sha": "0953e31371536198f077f5907d71569b8393b65e",
+      "sha": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a",
       "upstreamRoot": "",
       "path": "fhir-harness",
       "via": "fhir-harness",
@@ -217,270 +217,270 @@
           "id": "*",
           "path": "fhir-harness",
           "upstreamPath": ".",
-          "treeDigest": "0ac1e3cf1bf45091de199c2e10a067da063ba696e49c831d3c4f5ca0e992a79e",
-          "files": 750
+          "treeDigest": "625a4a5cbf216b9f7b610597d806689573b39c9d6edeed9df47e31fd072a27c4",
+          "files": 832
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-04",
-        "ref": "0953e31371536198f077f5907d71569b8393b65e",
+        "on": "2026-11-08",
+        "ref": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a",
         "approver": "unverified"
       }
     },
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
+      "sha": "35c942502a162e24b65669f8230f915da271b9bc",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
       "pinnedBy": "declared",
       "declaration": {
         "file": "folio-assistant-core.json",
-        "sha256": "34daa307422897e558b295d9eaff06205ff2a68fe849ef32facde29c902d9ed0"
+        "sha256": "df87b672d9cb9a12fc1a4f224d91a35a12b43c07c3909503491c88fd33eba56a"
       },
       "directories": [
         {
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "b0c528c0354d36d65f979f3dfa91708c45a0cafaf8072e3648d3d8467c5c3f44",
-          "files": 6150
+          "treeDigest": "f1c67cd359f87d3f84f3e8fe12f9f7d45595c27f88c3a9e3db80735eb75da755",
+          "files": 6341
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-06",
-        "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
+        "on": "2026-11-08",
+        "ref": "35c942502a162e24b65669f8230f915da271b9bc",
         "approver": "unverified"
       }
     },
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "cd5d1df72d44268730640703f89a934f72113558",
+      "sha": "f42752ac8e96cc2e2ee7e265aa331b02982b9e37",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
       "pinnedBy": "declared",
       "declaration": {
         "file": "smart-base.json",
-        "sha256": "fb2db5fa05dc158e08a2054a538df2a9ba38bf091289dd526c7beb5d1bd5a8d0"
+        "sha256": "69722acad71a1142e8e386d010bbd7073b6bd57a3e1d30a06f277a5ab50d0e0d"
       },
       "directories": [
         {
           "id": "smart-base-qa-checkers",
           "path": "smart-base/qa-checkers",
           "upstreamPath": "smart-base/qa-checkers",
-          "treeDigest": "cca1b306fc68e1d4506d4dab2d541b3d1d6858f4b9838b03df820dac59578a02",
+          "treeDigest": "538e2c009586ac5403fb4d35651032402e0fdbe47f41686590a5b57149d09c27",
           "files": 6
         },
         {
           "id": "smart-base-block-kinds",
           "path": "smart-base/block-kinds",
           "upstreamPath": "smart-base/block-kinds",
-          "treeDigest": "80fc05939260cf5379d0fd22639d02ba7f14e8402e3519bdddfa9ae908b17cf4",
+          "treeDigest": "726048524706a267fa97d518d1f53054f1671101aaa077f2cea36c0419588da2",
           "files": 22
         },
         {
           "id": "smart-base-content-adapters",
           "path": "smart-base/content-adapters",
           "upstreamPath": "smart-base/content-adapters",
-          "treeDigest": "1ce4c0d58fd22960e4dfffa2804263215e020cf4a6c24a91404c2ee623ac7e6f",
+          "treeDigest": "4f5146423d6d841ad7e61c4bb82055087a3edacb164db07ae998175f0b47bca9",
           "files": 2
         },
         {
           "id": "smart-base-translations",
           "path": "smart-base/translations",
           "upstreamPath": "smart-base/translations",
-          "treeDigest": "43b89519d8b9f366c7dc6f499c8d0eab7a28e589c937f78830a63763847ce769",
-          "files": 41
+          "treeDigest": "df7764f140d056ac8238f7f31c0ceb887a75e98e720548d018c7c5837d1ddb49",
+          "files": 51
         },
         {
           "id": "library",
           "path": "smart-base/library",
           "upstreamPath": "smart-base/library",
-          "treeDigest": "be8d996ee386800acf39c0b6a373acbeefab7ce4d11dfb8d1ea2bacde230a409",
+          "treeDigest": "3ccdf666e424fefef9c4808d85c0b4af7ac9c6f9c0276e9e07c8dc6b59afef09",
           "files": 21
         },
         {
           "id": "methodologies",
           "path": "smart-base/methodologies",
           "upstreamPath": "smart-base/methodologies",
-          "treeDigest": "ada43a7b4050b6d907f06a63aac267aed25b685c4f7793ea085f597260ec9b25",
+          "treeDigest": "df51f01ef679f1fe4f397633d1ed9ddc3ea22beb8994220b50d20affc4de5142",
           "files": 7
         },
         {
           "id": "processes",
           "path": "smart-base/methodologies/processes",
           "upstreamPath": "smart-base/methodologies/processes",
-          "treeDigest": "8ae31bdbc7c966f0a73e05cc1ef2371f2a814756c64f2fa3bcc2d14f1be9d033",
+          "treeDigest": "11b5876d5588ce469e5bd0a122f0ebe83180ab99321a5129cad51994a0d60da6",
           "files": 4
         },
         {
           "id": "smart-base-house-processes",
           "path": "smart-base/processes",
           "upstreamPath": "smart-base/processes",
-          "treeDigest": "82ebd6472f7220a24632dcdc021756c63f9de7783fbee11b3b9f65dfe3f74062",
-          "files": 22
+          "treeDigest": "ed22effc818167daa18eea64c2bddbccfa6a834a0aba61cb5d02278adaeee6c2",
+          "files": 28
         },
         {
           "id": "smart-base-artifact-index",
           "path": "smart-base/fhir-artifact-index",
           "upstreamPath": "smart-base/fhir-artifact-index",
-          "treeDigest": "16348df8eefe7446525cc5d89564e0f2222109914aede90befcd7fda2e3ad1bb",
+          "treeDigest": "60d08017101d91db25262b4dad27fc12d4e8e77aec7822d908196211c3f6f1e3",
           "files": 2
         },
         {
           "id": "tools",
           "path": "smart-base/tools",
           "upstreamPath": "smart-base/tools",
-          "treeDigest": "81e1713b463d36cab3528362083a49d6e6e5df6aab1dd26a702713ed18cbdb32",
-          "files": 17
+          "treeDigest": "69a67a41b5d26461153d06b1311a99dce8195f5881dfe5241aeab4a82ebd36ef",
+          "files": 18
         },
         {
           "id": "smart-base-themes",
           "path": "smart-base/themes",
           "upstreamPath": "smart-base/themes",
-          "treeDigest": "5590ddd84bcdd27d81229cd5239f1c3485671d4febad3ccb946a3704609fbf96",
-          "files": 5
+          "treeDigest": "38aa162e566b2b06fdea4d15e0c502ee886c9ff4713cfd03eb2b6709c94d76fc",
+          "files": 6
         },
         {
           "id": "smart-base-document-kinds",
           "path": "smart-base/document-kinds",
           "upstreamPath": "smart-base/document-kinds",
-          "treeDigest": "c304fd274b9d18573d1df4162550fa6b033d0c39ddf7511d5d0d78ded2382522",
+          "treeDigest": "18b11fbe576b92f787ac62cccdaac4c74a2675b8c4d1e645bf6a6332af5e277e",
           "files": 6
         },
         {
           "id": "smart-base-findings",
           "path": "smart-base/findings",
           "upstreamPath": "smart-base/findings",
-          "treeDigest": "0da0aae2d1a897b950d4649eb50b633544522920aea7f2939e3dd921a6773d35",
+          "treeDigest": "94a74b110aa3841a1e06ac448b1b8bfa521e4db491099825b1ec99da53a02c7c",
           "files": 19
         },
         {
           "id": "smart-base-platform",
           "path": "smart-base/platform",
           "upstreamPath": "smart-base/platform",
-          "treeDigest": "835d9ab5ba3e8fb007bb0b2fd1f0289fc7678735795ccaa0f20e4377ddca62f9",
-          "files": 1
+          "treeDigest": "17f30153eaa31d6543a05da0df003c75f3fa3401836537e31c34c3923d40c797",
+          "files": 5
         },
         {
           "id": "smart-base-schemas",
           "path": "smart-base/schemas",
           "upstreamPath": "smart-base/schemas",
-          "treeDigest": "4747c84e3a58cd4bc704efc25b174d2490c7fde64f69d7f4df464b14c62f6bf5",
-          "files": 42
+          "treeDigest": "4dc819a698094ccc2fa79a1d354cf2d12938cce5df1f171d47524f5bc1586426",
+          "files": 64
         },
         {
           "id": "smart-base-pipeline",
           "path": "smart-base/pipeline",
           "upstreamPath": "smart-base/pipeline",
-          "treeDigest": "2cb30291ead7b0898de938af8eb85212f8bd173ba1301a77123aa4931c8428e2",
-          "files": 3
+          "treeDigest": "5235cf04c8b37cd665123aca2e1070f28eae3e74ae79f09924fb5ca03012f0b7",
+          "files": 6
         },
         {
           "id": "smart-base-scripts",
           "path": "smart-base/scripts",
           "upstreamPath": "smart-base/scripts",
-          "treeDigest": "e73ac89a50b31af0dba8d112d11de15f9ccd28b2006af270bd8eb2d5fcd69ba3",
-          "files": 72
+          "treeDigest": "cd7949c02ed6095919e0c3185071ecb7916c7746071364e82d01eae1b277e170",
+          "files": 104
         },
         {
           "id": "smart-base-skills",
           "path": "smart-base/skills",
           "upstreamPath": "smart-base/skills",
-          "treeDigest": "2d6ab6ccca8f90412a70e436b210215cbf0c320b0b3824b6ab43b546043d38c9",
-          "files": 38
+          "treeDigest": "c690c495e191ae00c6fdddc9d2b447d561d97dfde69038a3516c3e94d3a04d83",
+          "files": 47
         },
         {
           "id": "smart-base-scenarios",
           "path": "smart-base/scenarios",
           "upstreamPath": "smart-base/scenarios",
-          "treeDigest": "715af365a8fd5cccdb56418407a904a44986f20e8ded05a74e57d470b220d2df",
-          "files": 5
+          "treeDigest": "e43f4e2ef8127bf2a674aa17781243d7dd6d75deda2788045ac7b23eeee8d8c1",
+          "files": 9
         },
         {
           "id": "smart-base-code-lists",
           "path": "smart-base/code-lists",
           "upstreamPath": "smart-base/code-lists",
-          "treeDigest": "730481afa4d9735235d5d827fcca65cf5c57b860a467923852368cc0aa77ef7a",
-          "files": 8
+          "treeDigest": "949d61a5261b9726c0dc8759a84fa98ac3c06e9f25fda4307379d00b1353e0f8",
+          "files": 9
         },
         {
           "id": "smart-base-typologies",
           "path": "smart-base/typologies",
           "upstreamPath": "smart-base/typologies",
-          "treeDigest": "dba2c9123055d57e25052f6ea5c6848ed991fc29c0b3d1f2fa24bd70898f50ee",
-          "files": 2
+          "treeDigest": "d75a40e66beb08f475fddae06494e662e420f93a1c31e7e50e7e637a16a24daa",
+          "files": 3
         },
         {
           "id": "smart-base-validators",
           "path": "smart-base/validators",
           "upstreamPath": "smart-base/validators",
-          "treeDigest": "063a478d90aba2e56d4a8c49874394aab2b446d26c0dfb5433535f849654bd09",
-          "files": 2
+          "treeDigest": "7f32e9ab086ed0cae16960676dec8fe37a66841d3fa6e2c9f5d9b92ee9d1b8f3",
+          "files": 3
         },
         {
           "id": "l1-extraction-9789240116191-eng",
           "path": "smart-base/l1-extractions/9789240116191-eng",
           "upstreamPath": "smart-base/l1-extractions/9789240116191-eng",
-          "treeDigest": "f2a8bcf4667c138d2bf7edc32cc42d36dc10f47b57742ca69211eebf4d126174",
-          "files": 11
+          "treeDigest": "c6bfe022789dcc7227d4a8eff3c819c112387041a893fcc81c96b0eb7b91bc01",
+          "files": 12
         }
       ],
       "assets": [
         {
           "src": "AGENTS.md",
-          "sha256": "2fe8d74e9c668fe54b3021717d613bd9d713abee3114d9cdd57e2620640c1537"
+          "sha256": "6aab96655186e1a437f49ecce9016d06b343e78149f4076facda71d5152d7e10"
         },
         {
           "src": "README.md",
-          "sha256": "8bc49dcc13bc1b2a2bcfefb34b8ee3c0805e4202d70bdbd758de9ec5cc74a026"
+          "sha256": "e9fc588265bb481fde636dd6d7d0cc4b3dc31fe09fc07314db1ef9ab824a1043"
         },
         {
           "src": "package.json",
-          "sha256": "17f2c8abfe282d83c4eb79b562717fba4f9714b0d8ca856b77333bcf23bfa328"
+          "sha256": "172f057ad7b7d94ab8e46c173a2aab1c5530607d1bfdbe03a6b3e2ca9c46e6ec"
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-03",
-        "ref": "cd5d1df72d44268730640703f89a934f72113558",
+        "on": "2026-11-08",
+        "ref": "f42752ac8e96cc2e2ee7e265aa331b02982b9e37",
         "approver": "unverified"
       }
     },
     {
       "instance": "who-iris",
       "repository": "litlfred/who-iris",
-      "sha": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
+      "sha": "091424083b9044732236c4fded1eb471d0740a82",
       "upstreamRoot": "",
       "path": "who-iris",
       "via": "who-iris",
       "pinnedBy": "declared",
       "declaration": {
         "file": "who-iris.json",
-        "sha256": "1d4522a08435eb0bd85e3f939976724c4596f8dae81d28135db2dcb721b1c5bc"
+        "sha256": "c9c9e52d8acf6676e353aafefce3f1da62d4852bb99c59c222004b017a2deb9c"
       },
       "directories": [
         {
           "id": "*",
           "path": "who-iris",
           "upstreamPath": ".",
-          "treeDigest": "36e5f9dc6e651965a99184dd3aa321885cc202a4fffccd842fd98c7955c61944",
-          "files": 6682
+          "treeDigest": "60bb37068597dfd52dab548539d6c6b8dbc6bdb2a5e961b9de1488a2a034d6df",
+          "files": 6680
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-03",
-        "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
+        "on": "2026-11-08",
+        "ref": "091424083b9044732236c4fded1eb471d0740a82",
         "approver": "unverified"
       }
     }

@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "9929b1f49bdd761bf1d269e505ae354c045860df",
+          "ref": "091424083b9044732236c4fded1eb471d0740a82",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +38,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-06",
-              "ref": "9929b1f49bdd761bf1d269e505ae354c045860df",
-              "evidence": "2 — move dth-hrh's pins to each layer's main (owner, 2026-11-06 ~08:40Z, session_01VQDpPfQjS6Ah9hRnot9HUp; standing: 'repin as needed. merge when green and ready for all your PRs within 6hr window')"
+              "on": "2026-11-08",
+              "ref": "091424083b9044732236c4fded1eb471d0740a82",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "e5416e571db7c05cc9d531071aa85ae2977f6e27",
+          "ref": "f42752ac8e96cc2e2ee7e265aa331b02982b9e37",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -86,9 +86,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "e5416e571db7c05cc9d531071aa85ae2977f6e27",
-              "evidence": "Owner consent on the merge manager's card ~07:28Z (session_01VQDpPffYARDQ8juksAZScf): 'A. Yes, pin smart-base' — smart-base main ≥ e5416e5 (#309)"
+              "on": "2026-11-08",
+              "ref": "f42752ac8e96cc2e2ee7e265aa331b02982b9e37",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "961679a369975afb6320647dde23d8e335bd84b5",
+          "ref": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -108,9 +108,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "961679a369975afb6320647dde23d8e335bd84b5",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): every layer to main"
+              "on": "2026-11-08",
+              "ref": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
+          "ref": "35c942502a162e24b65669f8230f915da271b9bc",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): every layer to main"
+              "on": "2026-11-08",
+              "ref": "35c942502a162e24b65669f8230f915da271b9bc",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "ea548f0006ad0e5c40656f0fbb499ca7a19dc43e",
+          "ref": "42d4f1560bc5b99ab20b473cdadb1d9fbe2e24d8",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "ea548f0006ad0e5c40656f0fbb499ca7a19dc43e",
-              "evidence": "repin + merge open 12 hrs (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp): cat-harness main (incl. #1110)"
+              "on": "2026-11-08",
+              "ref": "42d4f1560bc5b99ab20b473cdadb1d9fbe2e24d8",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "cc67cd1700e59840490f0dc12a6a6febd6993fda",
+          "ref": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "cc67cd1700e59840490f0dc12a6a6febd6993fda",
-              "evidence": "dth-hrh#105: tools main cc67cd1 (≥ 0696aef; incl. #1628 declaring translation:page-qa:check). Merge manager 09:24Z: '#105 is pre-approved: re-pin its stack to tools main ≥ 0696aef' (session_01VQDpPffYARDQ8juksAZScf); standing 'repin + merge open 12 hrs' (owner, 2026-11-07 ~05:25Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "on": "2026-11-08",
+              "ref": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -202,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
+          "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -211,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-06",
-              "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
-              "evidence": "2 — move dth-hrh's pins to each layer's main (owner, 2026-11-06 ~08:40Z, session_01VQDpPfQjS6Ah9hRnot9HUp; standing: 'repin as needed. merge when green and ready for all your PRs within 6hr window')"
+              "on": "2026-11-08",
+              "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
+          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -236,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-06",
-              "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
-              "evidence": "2 — move dth-hrh's pins to each layer's main (owner, 2026-11-06 ~08:40Z, session_01VQDpPfQjS6Ah9hRnot9HUp; standing: 'repin as needed. merge when green and ready for all your PRs within 6hr window')"
+              "on": "2026-11-08",
+              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }

@@ -123,15 +123,19 @@
    }
   }
  ],
+ "processHref": "evidence-retrieval.html",
  "tasks": {
   "Task_ReviewExisting": {
    "id": "Task_ReviewExisting",
    "name": "Review the existing guidance",
    "type": "bpmn:UserTask",
+   "stepHref": "evidence-retrieval.html#step-Task_ReviewExisting",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -140,28 +144,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"
@@ -179,10 +182,13 @@
    "id": "Task_FramePico",
    "name": "Frame the question as PICO",
    "type": "bpmn:UserTask",
+   "stepHref": "evidence-retrieval.html#step-Task_FramePico",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "content-author"
+     "name": "content-author",
+     "href": "../../../en/cat-harness/processes/skills/content-author.html"
     }
    ],
    "role": {
@@ -191,28 +197,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"
@@ -230,10 +235,13 @@
    "id": "Task_L1Sources",
    "name": "Search trusted L1 sources",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_L1Sources",
    "lane": "Evidence agent (system)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Agent",
    "skills": [
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     }
    ],
    "role": {
@@ -242,7 +250,8 @@
     "title": "Evidence agent",
     "skills": [
      {
-      "name": "document-intake"
+      "name": "document-intake",
+      "href": "../../../en/cat-harness/processes/skills/document-intake.html"
      }
     ]
    }
@@ -251,16 +260,21 @@
    "id": "Task_L2L3Content",
    "name": "Search trusted L2 and L3 content",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_L2L3Content",
    "lane": "Evidence agent (system)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Agent",
    "skills": [
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     },
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     },
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     }
    ],
    "role": {
@@ -269,7 +283,8 @@
     "title": "Evidence agent",
     "skills": [
      {
-      "name": "document-intake"
+      "name": "document-intake",
+      "href": "../../../en/cat-harness/processes/skills/document-intake.html"
      }
     ]
    }
@@ -278,16 +293,21 @@
    "id": "Task_DataRepos",
    "name": "Query data repositories and statistical datasets",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_DataRepos",
    "lane": "Evidence agent (system)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Agent",
    "skills": [
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     },
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     },
     {
-     "name": "document-intake"
+     "name": "document-intake",
+     "href": "../../../en/cat-harness/processes/skills/document-intake.html"
     }
    ],
    "role": {
@@ -296,7 +316,8 @@
     "title": "Evidence agent",
     "skills": [
      {
-      "name": "document-intake"
+      "name": "document-intake",
+      "href": "../../../en/cat-harness/processes/skills/document-intake.html"
      }
     ]
    }
@@ -305,10 +326,13 @@
    "id": "Task_VerifyAuthority",
    "name": "Verify authority against the registry",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_VerifyAuthority",
    "lane": "Trusted registries and observatories (external)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Trusted",
    "skills": [
     {
-     "name": "registry-authority-contract"
+     "name": "registry-authority-contract",
+     "href": "../../../en/cat-harness/processes/skills/registry-authority-contract.html"
     }
    ],
    "role": {
@@ -317,7 +341,8 @@
     "title": "External registry",
     "skills": [
      {
-      "name": "external-registry-contract"
+      "name": "external-registry-contract",
+      "href": "../../../en/cat-harness/processes/skills/external-registry-contract.html"
      }
     ]
    }
@@ -326,7 +351,9 @@
    "id": "Task_RecordUnverified",
    "name": "Open a bean for the unverified citation",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_RecordUnverified",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
      "name": "todo-manager"
@@ -338,28 +365,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"
@@ -377,10 +403,13 @@
    "id": "Task_AppraiseGrade",
    "name": "Appraise and grade the body of evidence",
    "type": "bpmn:UserTask",
+   "stepHref": "evidence-retrieval.html#step-Task_AppraiseGrade",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "evidence-appraisal"
+     "name": "evidence-appraisal",
+     "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
     }
    ],
    "role": {
@@ -389,28 +418,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"
@@ -428,7 +456,9 @@
    "id": "Task_RecordGap",
    "name": "Record the evidence gap",
    "type": "bpmn:ServiceTask",
+   "stepHref": "evidence-retrieval.html#step-Task_RecordGap",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
      "name": "todo-manager"
@@ -440,28 +470,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"
@@ -479,10 +508,13 @@
    "id": "Task_AttachEvidence",
    "name": "Attach the evidence",
    "type": "bpmn:UserTask",
+   "stepHref": "evidence-retrieval.html#step-Task_AttachEvidence",
    "lane": "Author / guideline developer (person)",
+   "laneHref": "evidence-retrieval.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "content-author"
+     "name": "content-author",
+     "href": "../../../en/cat-harness/processes/skills/content-author.html"
     }
    ],
    "role": {
@@ -491,28 +523,27 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
-     },
-     {
-      "name": "content-plan"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
       "name": "staging-review"

@@ -99,15 +99,19 @@
    }
   }
  ],
+ "processHref": "guideline-updates.html",
  "tasks": {
   "Task_ChangeNotes": {
    "id": "Task_ChangeNotes",
    "name": "Publish the version with its change notes",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_ChangeNotes",
    "lane": "Guideline publisher",
+   "laneHref": "guideline-updates.html#lane-Lane_Publisher",
    "skills": [
     {
-     "name": "content-publish"
+     "name": "content-publish",
+     "href": "../../../en/cat-harness/processes/skills/content-publish.html"
     }
    ],
    "role": {
@@ -116,16 +120,15 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
-     },
-     {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "instance-publication"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
       "name": "package-release"
@@ -137,7 +140,8 @@
       "name": "qa-report-signing"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
       "name": "staging-review"
@@ -149,10 +153,13 @@
    "id": "Task_MapCone",
    "name": "Map the affected layers in order",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_MapCone",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "remote-mount"
+     "name": "remote-mount",
+     "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
     }
    ],
    "role": {
@@ -188,10 +195,13 @@
    "id": "Task_OpenRepin",
    "name": "Open the re-pin for the next ready layer",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_OpenRepin",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "remote-mount"
+     "name": "remote-mount",
+     "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
     }
    ],
    "role": {
@@ -227,7 +237,9 @@
    "id": "Task_Impact",
    "name": "Compare old, new and our adaptations",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Impact",
    "lane": "Adaptation team (human or agentic)",
+   "laneHref": "guideline-updates.html#lane-Lane_Adaptation",
    "skills": [
     {
      "name": "rendered-impact"
@@ -239,10 +251,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -260,19 +274,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -281,7 +299,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -290,10 +309,13 @@
    "id": "Task_Review",
    "name": "Review the impact with stakeholders",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Review",
    "lane": "Adaptation committee (policy, clinical, programme)",
+   "laneHref": "guideline-updates.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -302,7 +324,8 @@
     "title": "Authoring Committee",
     "skills": [
      {
-      "name": "review-sheet-script"
+      "name": "review-sheet-script",
+      "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
      }
     ]
    }
@@ -311,7 +334,9 @@
    "id": "Task_Decide",
    "name": "Decide each adaptation: keep, revise or retire",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Decide",
    "lane": "Adaptation committee (policy, clinical, programme)",
+   "laneHref": "guideline-updates.html#lane-Lane_Committee",
    "skills": [
     {
      "name": "decision-audit"
@@ -323,7 +348,8 @@
     "title": "Authoring Committee",
     "skills": [
      {
-      "name": "review-sheet-script"
+      "name": "review-sheet-script",
+      "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
      }
     ]
    }
@@ -332,10 +358,13 @@
    "id": "Task_Revise",
    "name": "Revise the adaptations as decided",
    "type": "bpmn:CallActivity",
+   "stepHref": "guideline-updates.html#step-Task_Revise",
    "lane": "Adaptation team (human or agentic)",
+   "laneHref": "guideline-updates.html#lane-Lane_Adaptation",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "calls": {
@@ -349,10 +378,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -370,19 +401,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -391,7 +426,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -400,7 +436,9 @@
    "id": "Task_Merge",
    "name": "Merge the re-pin with its decided revisions",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Merge",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "prepare-merge"

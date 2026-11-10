@@ -25,7 +25,7 @@
         }
       ],
       "skos:notation": "AI",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -40,7 +40,7 @@
         }
       ],
       "skos:notation": "DIIG",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -55,7 +55,7 @@
         }
       ],
       "skos:notation": "DPI",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -70,7 +70,7 @@
         }
       ],
       "skos:notation": "DPI-F",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -85,7 +85,7 @@
         }
       ],
       "skos:notation": "DPI-H",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -100,7 +100,7 @@
         }
       ],
       "skos:notation": "HL7 FHIR®",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -115,7 +115,7 @@
         }
       ],
       "skos:notation": "ICD-11",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -130,7 +130,7 @@
         }
       ],
       "skos:notation": "ICVP",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -145,7 +145,7 @@
         }
       ],
       "skos:notation": "IPS",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -160,7 +160,7 @@
         }
       ],
       "skos:notation": "LMIC",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -175,7 +175,7 @@
         }
       ],
       "skos:notation": "LOINC",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "skos:notation": "OpenHIE",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -205,7 +205,7 @@
         }
       ],
       "skos:notation": "REDDHI",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -220,7 +220,7 @@
         }
       ],
       "skos:notation": "SDG",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -235,7 +235,7 @@
         }
       ],
       "skos:notation": "SMART Guidelines",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -250,7 +250,7 @@
         }
       ],
       "skos:notation": "SNOMED CT",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -265,7 +265,7 @@
         }
       ],
       "skos:notation": "SNOMED GPS",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     },
     {
@@ -280,7 +280,7 @@
         }
       ],
       "skos:notation": "TOGAF",
-      "dcterms:source": "folio/dpi-h-ra/acronyms/t-acronyms-lead-bf4749.md",
+      "dcterms:source": "folio/dpi-h-ra/glossary/t-acronyms-lead-bf4749.md",
       "skos:note": "candidate"
     }
   ]

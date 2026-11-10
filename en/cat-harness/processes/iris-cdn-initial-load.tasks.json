@@ -123,15 +123,19 @@
    }
   }
  ],
+ "processHref": "iris-cdn-initial-load.html",
  "tasks": {
   "Task_StateBudget": {
    "id": "Task_StateBudget",
    "name": "State scope and budget, with denominators",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_StateBudget",
    "lane": "Owner",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Owner",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -140,30 +144,21 @@
     "title": "IRIS CDN owner",
     "skills": [
      {
-      "name": "content-plan",
-      "via": "programme-manager"
-     },
-     {
-      "name": "content-publish",
-      "via": "programme-manager"
-     },
-     {
-      "name": "content-retire",
-      "via": "programme-manager"
-     },
-     {
       "name": "decision-audit",
       "via": "programme-manager"
      },
      {
       "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html",
       "via": "programme-manager"
      },
      {
-      "name": "iris-cdn-exporter"
+      "name": "iris-cdn-exporter",
+      "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
      },
      {
       "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html",
       "via": "programme-manager"
      },
      {
@@ -181,13 +176,17 @@
    "id": "Task_PlanBatches",
    "name": "Plan batches by community and collection",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_PlanBatches",
    "lane": "IRIS CDN Exporter (agent)",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Exporter",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     },
     {
-     "name": "iris-dspace"
+     "name": "iris-dspace",
+     "href": "../../../en/cat-harness/processes/skills/iris-dspace.html"
     }
    ],
    "role": {
@@ -196,13 +195,16 @@
     "title": "IRIS CDN Exporter",
     "skills": [
      {
-      "name": "iris-cdn-exporter"
+      "name": "iris-cdn-exporter",
+      "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
      },
      {
-      "name": "iris-dspace"
+      "name": "iris-dspace",
+      "href": "../../../en/cat-harness/processes/skills/iris-dspace.html"
      },
      {
-      "name": "iris-rest-feed"
+      "name": "iris-rest-feed",
+      "href": "../../../en/cat-harness/processes/skills/iris-rest-feed.html"
      }
     ]
    }
@@ -211,13 +213,17 @@
    "id": "Task_HarvestBatch",
    "name": "Harvest a batch of item records (REST)",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_HarvestBatch",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-rest-feed"
+     "name": "iris-rest-feed",
+     "href": "../../../en/cat-harness/processes/skills/iris-rest-feed.html"
     },
     {
-     "name": "iris-dspace"
+     "name": "iris-dspace",
+     "href": "../../../en/cat-harness/processes/skills/iris-dspace.html"
     }
    ],
    "role": {
@@ -229,25 +235,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -262,19 +270,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -289,10 +301,13 @@
    "id": "Task_FetchBitstreams",
    "name": "Fetch bitstreams not already held",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_FetchBitstreams",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -304,25 +319,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -337,19 +354,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -364,10 +385,13 @@
    "id": "Task_StoreBytes",
    "name": "Store bytes under SHA-256 (skip if held)",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_StoreBytes",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -379,25 +403,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -412,19 +438,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -439,10 +469,13 @@
    "id": "Task_Checkpoint",
    "name": "Commit the batch checkpoint",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_Checkpoint",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -454,25 +487,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -487,19 +522,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -514,10 +553,13 @@
    "id": "Task_Quarantine",
    "name": "Quarantine and report the mismatch",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_Quarantine",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -529,25 +571,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -562,19 +606,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -589,19 +637,20 @@
    "id": "Call_BuildGraph",
    "name": "Build the graph partitions",
    "type": "bpmn:CallActivity",
+   "stepHref": "iris-cdn-initial-load.html#step-Call_BuildGraph",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-oxigraph"
+     "name": "iris-oxigraph",
+     "href": "../../../en/cat-harness/processes/skills/iris-oxigraph.html"
     },
     {
      "name": "nquads-distribution"
     }
    ],
    "calls": {
-    "name": "Package and distribute partitioned W3C N-Quads and named queries",
-    "href": "nquads-distribution.html",
-    "diagram": "nquads-distribution.html"
+    "name": "Process_NQuadsDistribution"
    },
    "role": {
     "name": "build-pipeline",
@@ -612,25 +661,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -645,19 +696,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -672,10 +727,13 @@
    "id": "Call_SignPublish",
    "name": "Sign and publish the release",
    "type": "bpmn:CallActivity",
+   "stepHref": "iris-cdn-initial-load.html#step-Call_SignPublish",
    "lane": "Build pipeline",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "iris-cdn-signing"
+     "name": "iris-cdn-signing",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-signing.html"
     }
    ],
    "calls": {
@@ -692,25 +750,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -725,19 +785,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -752,10 +816,13 @@
    "id": "Task_ReviewLoad",
    "name": "Review the load report; open beans for gaps",
    "type": "bpmn:Task",
+   "stepHref": "iris-cdn-initial-load.html#step-Task_ReviewLoad",
    "lane": "IRIS CDN Exporter (agent)",
+   "laneHref": "iris-cdn-initial-load.html#lane-Lane_Exporter",
    "skills": [
     {
-     "name": "iris-cdn-exporter"
+     "name": "iris-cdn-exporter",
+     "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
     }
    ],
    "role": {
@@ -764,13 +831,16 @@
     "title": "IRIS CDN Exporter",
     "skills": [
      {
-      "name": "iris-cdn-exporter"
+      "name": "iris-cdn-exporter",
+      "href": "../../../en/cat-harness/processes/skills/iris-cdn-exporter.html"
      },
      {
-      "name": "iris-dspace"
+      "name": "iris-dspace",
+      "href": "../../../en/cat-harness/processes/skills/iris-dspace.html"
      },
      {
-      "name": "iris-rest-feed"
+      "name": "iris-rest-feed",
+      "href": "../../../en/cat-harness/processes/skills/iris-rest-feed.html"
      }
     ]
    }

@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "public-comment-release.html",
  "tasks": {
   "Task_AgreeReleaseDate": {
    "id": "Task_AgreeReleaseDate",
    "name": "Agree the release date and comment period",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_AgreeReleaseDate",
    "lane": "Review committee and editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -107,7 +111,8 @@
       "name": "rendered-impact"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
       "name": "staging-review"
@@ -122,10 +127,13 @@
    "id": "Task_BuildPcRelease",
    "name": "Build the public comment release",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_BuildPcRelease",
    "lane": "Release build and archive (pipeline)",
+   "laneHref": "public-comment-release.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "document-publishing"
+     "name": "document-publishing",
+     "href": "../../../en/cat-harness/processes/skills/document-publishing.html"
     }
    ],
    "role": {
@@ -137,25 +145,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -170,19 +180,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -197,16 +211,21 @@
    "id": "Task_SetUpChannels",
    "name": "Set up the comment channels, with instructions and links",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_SetUpChannels",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment-channels"
+     "name": "public-comment-channels",
+     "href": "../../../en/cat-harness/processes/skills/public-comment-channels.html"
     },
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     },
     {
-     "name": "review-sheet-script"
+     "name": "review-sheet-script",
+     "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
     }
    ],
    "role": {
@@ -216,22 +235,17 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
@@ -239,14 +253,17 @@
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
@@ -267,13 +284,17 @@
    "id": "Task_WriteAnnouncement",
    "name": "Write the announcement, with links",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_WriteAnnouncement",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment-channels"
+     "name": "public-comment-channels",
+     "href": "../../../en/cat-harness/processes/skills/public-comment-channels.html"
     },
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -283,22 +304,17 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
@@ -306,14 +322,17 @@
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
@@ -334,10 +353,13 @@
    "id": "Task_Distribute",
    "name": "Distribute to the public",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_Distribute",
    "lane": "Review committee and editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -349,7 +371,8 @@
       "name": "rendered-impact"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
       "name": "staging-review"
@@ -364,10 +387,13 @@
    "id": "CallActivity_PublicComment",
    "name": "Public comment on the release",
    "type": "bpmn:CallActivity",
+   "stepHref": "public-comment-release.html#step-CallActivity_PublicComment",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "calls": {
@@ -382,22 +408,17 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
@@ -405,14 +426,17 @@
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
@@ -433,10 +457,13 @@
    "id": "Task_ArchiveRelease",
    "name": "Archive the release with the review",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_ArchiveRelease",
    "lane": "Release build and archive (pipeline)",
+   "laneHref": "public-comment-release.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "document-publishing"
+     "name": "document-publishing",
+     "href": "../../../en/cat-harness/processes/skills/document-publishing.html"
     }
    ],
    "role": {
@@ -448,25 +475,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -481,19 +510,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"

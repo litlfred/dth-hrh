@@ -34,7 +34,40 @@
       "labelEnd": null,
       "words": 379,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "draft",
+          "heading": true
+        },
+        {
+          "term": "user personas",
+          "heading": false
+        },
+        {
+          "term": "confirm",
+          "heading": false
+        },
+        {
+          "term": "cases",
+          "heading": false
+        },
+        {
+          "term": "points",
+          "heading": false
+        },
+        {
+          "term": "quality",
+          "heading": false
+        },
+        {
+          "term": "chapters",
+          "heading": false
+        },
+        {
+          "term": "health workers",
+          "heading": false
+        }
+      ],
       "extract": "Each chapter gives objectives, key messages, proposed sections with the main points to be covered, suggested figures and tables, tools and checklists, and the outputs that a country would be expected to produce. The content draws on published WHO guidance listed at the end of this document. Questions for the TWG Does the five-part structure work for both health workforce and digital readers? Is anything missing that",
       "extractCut": true
     },
@@ -49,7 +82,40 @@
       "labelEnd": null,
       "words": 381,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "user personas",
+          "heading": false
+        },
+        {
+          "term": "functional requirements",
+          "heading": false
+        },
+        {
+          "term": "nhwa mapping",
+          "heading": false
+        },
+        {
+          "term": "management",
+          "heading": false
+        },
+        {
+          "term": "dataset",
+          "heading": false
+        },
+        {
+          "term": "lifecycle",
+          "heading": false
+        },
+        {
+          "term": "topics",
+          "heading": false
+        },
+        {
+          "term": "cases",
+          "heading": false
+        }
+      ],
       "extract": "Part; Chapter; Sections Part 0. Introduction; 1. Why Digital Health Workforce Registries Matter; Global challenges; Value proposition; Registry as digital public infrastructure; Benefits and outcomes 2. Scope and Boundaries; Included topics; Excluded topics; Target audiences 3. Digital Transformation Approach; DIIG alignment; Transformation principles; Country pathway Part 1. Foundations; 4. Purpose and Role of a",
       "extractCut": true
     },
@@ -64,7 +130,20 @@
       "labelEnd": null,
       "words": 48,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "introduction",
+          "heading": true
+        },
+        {
+          "term": "covers",
+          "heading": false
+        },
+        {
+          "term": "move",
+          "heading": false
+        }
+      ],
       "extract": "Purpose: This part explains why the handbook exists, what it covers and does not cover, who it is for, and the approach it takes: helping countries move from where they are today towards digital, interoperable health workforce registries built on shared digital building blocks.",
       "extractCut": false
     },
@@ -79,7 +158,28 @@
       "labelEnd": null,
       "words": 149,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "health workforce",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "matter",
+          "heading": true
+        },
+        {
+          "term": "cannot",
+          "heading": false
+        },
+        {
+          "term": "health workers",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Explain the health workforce data problems that a digital registry helps to solve. Describe the value of a registry for health workers, regulators, employers, planners and the public. Position the registry as a shared, reusable part of a country's digital public infrastructure for health. Key messages Countries cannot plan, deploy, pay or protect a workforce that",
       "extractCut": true
     },
@@ -94,7 +194,20 @@
       "labelEnd": null,
       "words": 71,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "global",
+          "heading": true
+        },
+        {
+          "term": "challenges",
+          "heading": true
+        },
+        {
+          "term": "accounts",
+          "heading": false
+        }
+      ],
       "extract": "WHO projects a global shortfall of about 11 million health workers by 2030, with uneven distribution within and between countries. Workforce data are spread across ministries, regulatory councils, employers, training institutions and the private sector, often on paper or in stand-alone systems. The results are duplicate and “ghost” records, unverified credentials, slow licensing, weak planning and difficulty",
       "extractCut": true
     },
@@ -109,7 +222,20 @@
       "labelEnd": null,
       "words": 52,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "proposition",
+          "heading": true
+        },
+        {
+          "term": "value",
+          "heading": true
+        },
+        {
+          "term": "administrative",
+          "heading": false
+        }
+      ],
       "extract": "One trusted identity and record for each health worker, reused by every system that needs it (“capture once, use many times”). Faster and cheaper administrative processes: registration, licence renewal, verification, deployment and payroll reconciliation. Better evidence for decisions on training, recruitment, distribution, retention and migration.",
       "extractCut": false
     },
@@ -124,7 +250,20 @@
       "labelEnd": null,
       "words": 75,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "public infrastructure",
+          "heading": true
+        },
+        {
+          "term": "digital public",
+          "heading": true
+        },
+        {
+          "term": "registry",
+          "heading": true
+        }
+      ],
       "extract": "The draft WHO/ITU reference architecture for digital public infrastructure for health (DPI-H) lists the health workforce registry as a foundational registry, alongside client, facility and product registries. Shared building blocks (identity, registries, data exchange, terminology) are built once and reused by many applications. The registry is publicly governed, interoperable and based on open standards, so",
       "extractCut": true
     },
@@ -139,7 +278,28 @@
       "labelEnd": null,
       "words": 138,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "benefits",
+          "heading": true
+        },
+        {
+          "term": "outcomes",
+          "heading": true
+        },
+        {
+          "term": "reporting",
+          "heading": false
+        },
+        {
+          "term": "centre",
+          "heading": false
+        },
+        {
+          "term": "inputs",
+          "heading": false
+        }
+      ],
       "extract": "For health workers: portable and verifiable credentials, simpler renewals, and recognition of training and continuing professional development. For the public and employers: confidence that practitioners are qualified and authorized to practise. For government: reliable workforce numbers for planning, financing, emergency response and international reporting (NHWA, the WHO Global Code of Practice). Suggested figures",
       "extractCut": true
     },
@@ -154,7 +314,24 @@
       "labelEnd": null,
       "words": 141,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "handbook covers",
+          "heading": false
+        },
+        {
+          "term": "boundaries",
+          "heading": true
+        },
+        {
+          "term": "scope",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Define what the handbook covers and what is left to other guidance. Clarify how a registry differs from, and relates to, human resources information systems (HRIS), regulatory, payroll and education systems. Identify the audiences and how each should use the handbook. Key messages The handbook covers the registry as a shared foundation, not the full range of",
       "extractCut": true
     },
@@ -169,7 +346,20 @@
       "labelEnd": null,
       "words": 52,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "topics",
+          "heading": true
+        },
+        {
+          "term": "operation",
+          "heading": false
+        },
+        {
+          "term": "points",
+          "heading": false
+        }
+      ],
       "extract": "Purpose, governance, minimum data set, functional requirements and architecture options for a registry. Interoperability with regulators, employers, training institutions, the facility registry, identity systems and NHWA reporting. A phased country pathway from assessment to routine operation, for paper-based, partly digital and fully digital starting points.",
       "extractCut": false
     },
@@ -184,7 +374,20 @@
       "labelEnd": null,
       "words": 58,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "excluded",
+          "heading": true
+        },
+        {
+          "term": "topics",
+          "heading": true
+        },
+        {
+          "term": "appraisal",
+          "heading": false
+        }
+      ],
       "extract": "Detailed human resource management functions (recruitment, performance appraisal, leave, payroll processing), which belong to HRIS and payroll systems. Design of regulatory policy, scopes of practice and accreditation standards, which are covered by WHO guidance on health practitioner regulation. Workforce planning and labour market analysis methods, and endorsement of specific software products.",
       "extractCut": false
     },
@@ -199,7 +402,28 @@
       "labelEnd": null,
       "words": 131,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "scope",
+          "heading": false
+        },
+        {
+          "term": "audiences",
+          "heading": true
+        },
+        {
+          "term": "target",
+          "heading": true
+        },
+        {
+          "term": "sectors",
+          "heading": false
+        },
+        {
+          "term": "occupations",
+          "heading": false
+        }
+      ],
       "extract": "Decision-makers: ministry of health leadership, health workforce directorates, digital health units, regulators and professional councils. Implementers: enterprise architects, business analysts, software developers, data managers and implementing partners. Supporters: funders, professional associations, training institutions, private sector employers, and WHO regional and country offices. Suggested figures and",
       "extractCut": true
     },
@@ -214,7 +438,24 @@
       "labelEnd": null,
       "words": 119,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "digital transformation",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "approach",
+          "heading": true
+        },
+        {
+          "term": "guide",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Explain how the handbook applies the WHO Digital Implementation Investment Guide (DIIG) to registries. Describe the principles that guide a registry transformation. Outline a phased pathway that a country can follow, whatever its starting point. Key messages Digital transformation changes processes, governance and skills. It is not only about installing software.",
       "extractCut": true
     },
@@ -229,7 +470,20 @@
       "labelEnd": null,
       "words": 69,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "diig",
+          "heading": true
+        },
+        {
+          "term": "alignment",
+          "heading": true
+        },
+        {
+          "term": "architecture",
+          "heading": false
+        }
+      ],
       "extract": "The handbook follows the DIIG sequence: form the team, identify challenges, choose interventions, plan implementation, link to the enterprise architecture, budget and monitor. It sits alongside the other WHO digital transformation handbooks (primary health care, health supply chain architecture, health product catalogue) and the SMART Guidelines approach. It gives the health workforce detail that the DPI-H reference",
       "extractCut": true
     },
@@ -244,7 +498,20 @@
       "labelEnd": null,
       "words": 47,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "principles",
+          "heading": true
+        },
+        {
+          "term": "transformation",
+          "heading": true
+        },
+        {
+          "term": "governed",
+          "heading": false
+        }
+      ],
       "extract": "Country-owned and publicly governed: meet countries where they are. Interoperable, standards-based, reusable, secure and privacy-protecting by design (in line with the draft DPI-H principles and the Principles for Digital Development). People-centred: designed with health workers, regulators and employers as users.",
       "extractCut": false
     },
@@ -259,7 +526,28 @@
       "labelEnd": null,
       "words": 141,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "country pathway",
+          "heading": true
+        },
+        {
+          "term": "starting points",
+          "heading": false
+        },
+        {
+          "term": "entry",
+          "heading": false
+        },
+        {
+          "term": "guidance",
+          "heading": false
+        },
+        {
+          "term": "handbook",
+          "heading": false
+        }
+      ],
       "extract": "Four broad stages: prepare and assess, design, implement, and operate and improve (detailed in Part 3). Typical starting points: paper registers; stand-alone digital systems in each council or ministry; partly connected systems. The guidance will also be published in a form that digital tools, including AI assistants, can use (for example machine-readable requirements and data dictionary). Suggested figures and",
       "extractCut": true
     },
@@ -274,7 +562,20 @@
       "labelEnd": null,
       "words": 48,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "foundations",
+          "heading": true
+        },
+        {
+          "term": "follow",
+          "heading": false
+        },
+        {
+          "term": "teams",
+          "heading": false
+        }
+      ],
       "extract": "Purpose: This part sets out the common understanding that health workforce and digital teams need before design starts: what a registry is and what it is for, who uses it, who governs it, what it must do, and the architecture principles it should follow.",
       "extractCut": false
     },
@@ -289,7 +590,24 @@
       "labelEnd": null,
       "words": 150,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "role",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "registry",
+          "heading": true
+        },
+        {
+          "term": "authoritative",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Define a health workforce registry and related terms in plain language. Explain what “authoritative source” means and how it can be achieved with one system or several. Show how the registry supports each stage of the health worker life cycle and its main strategic uses. Key messages The registry holds a minimum set of trusted information that uniquely identifies",
       "extractCut": true
     },
@@ -304,7 +622,20 @@
       "labelEnd": null,
       "words": 69,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "definitions",
+          "heading": true
+        },
+        {
+          "term": "register",
+          "heading": false
+        },
+        {
+          "term": "health workforce",
+          "heading": false
+        }
+      ],
       "extract": "Working definitions of health workforce registry, professional register, HRIS, health worker, registration, licence and credential (see Glossary annex). Alignment with the WHO 2015 minimum data set definition (“the single authoritative source of health workforce information”) and with the draft DPI-H reference architecture. The difference between a “registry” (the shared national capability) and a “register” (a",
       "extractCut": true
     },
@@ -319,7 +650,20 @@
       "labelEnd": null,
       "words": 54,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "source",
+          "heading": true
+        },
+        {
+          "term": "authoritative",
+          "heading": true
+        },
+        {
+          "term": "consistent",
+          "heading": false
+        }
+      ],
       "extract": "Which institution is the source of truth for each data item, such as identity, qualification, licence status and employment. How records from several sources are matched to one unique health worker identifier. Options: a single national system, or several source systems connected to give one consistent view.",
       "extractCut": false
     },
@@ -334,7 +678,20 @@
       "labelEnd": null,
       "words": 57,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "lifecycle",
+          "heading": true
+        },
+        {
+          "term": "labour",
+          "heading": false
+        },
+        {
+          "term": "education",
+          "heading": false
+        }
+      ],
       "extract": "Stages: pre-service education, graduation, registration and licensing, employment and deployment, continuing professional development, renewal, mobility, exit and re-entry. The events at each stage that create or change registry data, and who records them. Link to the NHWA health labour market framework (education, labour force, and serving population health needs).",
       "extractCut": false
     },
@@ -349,7 +706,28 @@
       "labelEnd": null,
       "words": 130,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "strategic",
+          "heading": true
+        },
+        {
+          "term": "item",
+          "heading": false
+        },
+        {
+          "term": "events",
+          "heading": false
+        },
+        {
+          "term": "life",
+          "heading": false
+        },
+        {
+          "term": "practitioners",
+          "heading": false
+        }
+      ],
       "extract": "Regulation and public protection: confirming that practitioners are qualified and in good standing. Planning and management: stock, distribution, skill mix, attrition and migration. Service delivery and digital health: identifying and authorizing health workers in electronic records, prescribing, telehealth and payment systems. Suggested figures and tables Figure: health worker life cycle with the data events at",
       "extractCut": true
     },
@@ -364,7 +742,24 @@
       "labelEnd": null,
       "words": 115,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "cases",
+          "heading": true
+        },
+        {
+          "term": "personas",
+          "heading": true
+        },
+        {
+          "term": "user",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Identify the people and systems that supply or use registry information. Prioritize a small set of use cases to drive the first phase. Show how personas, use cases and user stories are turned into requirements. Key messages Requirements should come from real users and tasks, not from software features. Systems are users too: many registry “users” are other",
       "extractCut": true
     },
@@ -379,7 +774,20 @@
       "labelEnd": null,
       "words": 55,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "personas",
+          "heading": true
+        },
+        {
+          "term": "goals",
+          "heading": false
+        },
+        {
+          "term": "manager",
+          "heading": false
+        }
+      ],
       "extract": "People: health worker, registration officer in a regulatory body, employer or facility human resources manager, training institution registrar, workforce planner, member of the public, emergency coordinator. Systems: HRIS, payroll, electronic medical record, facility registry, national identity system, NHWA platform. For each persona: goals, tasks, difficulties, digital skills and connectivity.",
       "extractCut": false
     },
@@ -394,7 +802,20 @@
       "labelEnd": null,
       "words": 48,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "cases",
+          "heading": true
+        },
+        {
+          "term": "priority",
+          "heading": true
+        },
+        {
+          "term": "graduate",
+          "heading": false
+        }
+      ],
       "extract": "Register and license a new graduate; renew a licence; update employment or place of practice. Verify a health worker's status (by an employer, a patient, another system or another country). Produce workforce counts and distribution for planning and NHWA reporting.",
       "extractCut": false
     },
@@ -424,7 +845,28 @@
       "labelEnd": null,
       "words": 128,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "derivation",
+          "heading": true
+        },
+        {
+          "term": "requirements",
+          "heading": true
+        },
+        {
+          "term": "case",
+          "heading": false
+        },
+        {
+          "term": "prioritization",
+          "heading": false
+        },
+        {
+          "term": "generic",
+          "heading": false
+        }
+      ],
       "extract": "The chain from use case to business process, to functional and non-functional requirements, to data elements. Traceability between each requirement and the use case it serves. Prioritization (must have, should have, could have) to support phased delivery. Suggested figures and tables Figure: persona cards. Table: use case overview (actor, trigger, data used, systems involved). Figure: traceability from use case to",
       "extractCut": true
     },
@@ -439,7 +881,24 @@
       "labelEnd": null,
       "words": 130,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "stewardship",
+          "heading": true
+        },
+        {
+          "term": "governance",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "health workers",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Describe the institutional arrangements needed to govern a registry across health workforce, regulatory and digital bodies. Identify the legal and policy foundations for collecting, sharing and publishing health worker data. Plan for long-term stewardship, financing and sustainability. Key messages Weak governance, not technology, is the most common reason",
       "extractCut": true
     },
@@ -454,7 +913,20 @@
       "labelEnd": null,
       "words": 58,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "institutions",
+          "heading": true
+        },
+        {
+          "term": "ministry",
+          "heading": false
+        },
+        {
+          "term": "authorities",
+          "heading": false
+        }
+      ],
       "extract": "Roles of the ministry of health (health workforce and digital units), regulatory councils, public service commission, finance and payroll, education ministry and training institutions, private sector and sub-national authorities. Governance structure: steering committee, technical working group, and registry operator or custodian. Decision rights: who approves data standards, access, changes and new connections.",
       "extractCut": false
     },
@@ -469,7 +941,20 @@
       "labelEnd": null,
       "words": 50,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "legal",
+          "heading": true
+        },
+        {
+          "term": "foundations",
+          "heading": true
+        },
+        {
+          "term": "consent",
+          "heading": false
+        }
+      ],
       "extract": "A legal mandate to establish and operate the registry and to require institutions to submit data. Data protection, privacy and consent, including what may be public (for example licence status) and what is restricted. Data-sharing agreements between institutions and, where relevant, across borders.",
       "extractCut": false
     },
@@ -484,7 +969,20 @@
       "labelEnd": null,
       "words": 37,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "stewardship",
+          "heading": true
+        },
+        {
+          "term": "access",
+          "heading": false
+        },
+        {
+          "term": "named",
+          "heading": false
+        }
+      ],
       "extract": "Named data owners, stewards and custodians for each group of data. Policies for data access, use, retention, correction and release. Health workers' rights to access and correct their own record.",
       "extractCut": false
     },
@@ -499,7 +997,28 @@
       "labelEnd": null,
       "words": 119,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "sustainability",
+          "heading": true
+        },
+        {
+          "term": "data-sharing",
+          "heading": false
+        },
+        {
+          "term": "policy",
+          "heading": false
+        },
+        {
+          "term": "governance",
+          "heading": false
+        },
+        {
+          "term": "accountable",
+          "heading": false
+        }
+      ],
       "extract": "Options for recurrent financing: government budget, registration and licensing fees, shared digital infrastructure budgets. Institutional capacity: permanent posts for registry operation, data management and technical support. Managing dependence on suppliers and external partners, including handover and exit planning. Suggested figures and tables Figure: model governance structure. Table: responsibility matrix (who",
       "extractCut": true
     },
@@ -514,7 +1033,24 @@
       "labelEnd": null,
       "words": 108,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "requirements",
+          "heading": true
+        },
+        {
+          "term": "functions",
+          "heading": false
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "functional",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Describe the core functions that any health workforce registry should provide. Distinguish minimum functions from optional or advanced ones. Provide a requirements catalogue that countries can adapt for specification and procurement. Key messages The core is small: identify each worker uniquely, hold a trusted record, keep it current, and answer queries.",
       "extractCut": true
     },
@@ -529,7 +1065,20 @@
       "labelEnd": null,
       "words": 44,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "identity",
+          "heading": true
+        },
+        {
+          "term": "management",
+          "heading": true
+        },
+        {
+          "term": "available",
+          "heading": false
+        }
+      ],
       "extract": "Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. Search, match and merge duplicate records across source systems. Manage changes of name and other identity details over a career.",
       "extractCut": false
     },
@@ -544,7 +1093,20 @@
       "labelEnd": null,
       "words": 41,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "records",
+          "heading": true
+        },
+        {
+          "term": "evidence",
+          "heading": false
+        },
+        {
+          "term": "supporting",
+          "heading": false
+        }
+      ],
       "extract": "Create, view, update and archive the health worker record in line with the minimum data set. Hold supporting evidence, such as certificates, or links to it. Record the source and date of each data item.",
       "extractCut": false
     },
@@ -559,7 +1121,20 @@
       "labelEnd": null,
       "words": 36,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "lifecycle",
+          "heading": true
+        },
+        {
+          "term": "management",
+          "heading": true
+        },
+        {
+          "term": "renewals",
+          "heading": false
+        }
+      ],
       "extract": "Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. Support renewals, recording of continuing professional development, and reminders. Record changes of employment and place of practice over time.",
       "extractCut": false
     },
@@ -574,7 +1149,20 @@
       "labelEnd": null,
       "words": 42,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "verification",
+          "heading": true
+        },
+        {
+          "term": "services",
+          "heading": true
+        },
+        {
+          "term": "confirm",
+          "heading": false
+        }
+      ],
       "extract": "Confirm registration and licence status in real time for employers, the public and other systems. Issue digital, verifiable credentials or certificates (for example a certificate of good standing). Respond to verification requests from other countries.",
       "extractCut": false
     },
@@ -589,7 +1177,20 @@
       "labelEnd": null,
       "words": 87,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "analytics",
+          "heading": true
+        },
+        {
+          "term": "requirements",
+          "heading": false
+        },
+        {
+          "term": "reports",
+          "heading": false
+        }
+      ],
       "extract": "Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Data extracts for NHWA and national planning. Data quality reports for registry managers. Suggested figures and tables Figure: overview of registry functions. Table: minimum and advanced functions. Table: sample requirements (identifier, requirement, priority, linked use case). Implementation tools and checklists Functional",
       "extractCut": true
     },
@@ -604,7 +1205,24 @@
       "labelEnd": null,
       "words": 122,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "architecture",
+          "heading": true
+        },
+        {
+          "term": "principles",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "product",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Explain the main architecture options for a registry in non-technical terms. Help countries choose a pattern that fits their governance, existing systems and capacity. Set out principles that keep the registry scalable, reusable and independent of any one product. Key messages There is no single correct architecture. The choice depends on how authority over",
       "extractCut": true
     },
@@ -619,7 +1237,20 @@
       "labelEnd": null,
       "words": 75,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "patterns",
+          "heading": true
+        },
+        {
+          "term": "architecture",
+          "heading": true
+        },
+        {
+          "term": "fit",
+          "heading": false
+        }
+      ],
       "extract": "The three main patterns and what each means in practice: centralized (one national system holds the master record), federated (source systems keep their data and are linked), and hybrid (a national index with detail held at source). Criteria for choosing: legal mandates, number of regulators, existing systems, connectivity and capacity. Fit with the national digital health enterprise architecture and the registry",
       "extractCut": true
     },
@@ -634,7 +1265,20 @@
       "labelEnd": null,
       "words": 48,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "federation",
+          "heading": true
+        },
+        {
+          "term": "common",
+          "heading": false
+        },
+        {
+          "term": "linking",
+          "heading": false
+        }
+      ],
       "extract": "How several regulators or sub-national registries contribute to a national view through a shared identifier, a common data set and common interfaces. Linking records and resolving conflicts between sources. Responsibilities that stay with each source and those that sit at national level.",
       "extractCut": false
     },
@@ -649,7 +1293,20 @@
       "labelEnd": null,
       "words": 41,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "scalability",
+          "heading": true
+        },
+        {
+          "term": "centre",
+          "heading": false
+        },
+        {
+          "term": "modular",
+          "heading": false
+        }
+      ],
       "extract": "Start with priority occupations or regions and expand without redesign. Performance, availability and hosting options (government data centre or cloud), including for low-connectivity settings. Modular design, so that functions can be added or replaced independently.",
       "extractCut": false
     },
@@ -664,7 +1321,24 @@
       "labelEnd": null,
       "words": 108,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "architecture pattern",
+          "heading": false
+        },
+        {
+          "term": "architecture principles",
+          "heading": false
+        },
+        {
+          "term": "neutrality",
+          "heading": true
+        },
+        {
+          "term": "technology",
+          "heading": true
+        }
+      ],
       "extract": "Specify standards and interfaces, not products. Considerations for open-source, commercial and custom-built options, including digital public goods. Avoiding dependence on one supplier: data ownership, data export, documentation and exit clauses. Suggested figures and tables Figure: the three architecture patterns side by side. Figure: decision tree for choosing a pattern. Table: comparison of patterns (advantages,",
       "extractCut": true
     },
@@ -679,7 +1353,20 @@
       "labelEnd": null,
       "words": 50,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "technical",
+          "heading": true
+        },
+        {
+          "term": "design",
+          "heading": true
+        },
+        {
+          "term": "exchanges",
+          "heading": false
+        }
+      ],
       "extract": "Purpose: This part gives the technical guidance needed to design a registry that connects with the wider health and government digital ecosystem: where the registry sits, how it exchanges data, what data it holds, and how those data are kept secure and of good quality.",
       "extractCut": false
     },
@@ -694,7 +1381,24 @@
       "labelEnd": null,
       "words": 111,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "ecosystem",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "registry",
+          "heading": true
+        },
+        {
+          "term": "flow",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Map the systems that supply data to the registry or use data from it. Describe the main data flows between these systems. Illustrate how the registry fits into different national architectures. Key messages The registry is one of several foundational registries. It is most valuable when linked to the facility registry and to identity systems. Every connection",
       "extractCut": true
     },
@@ -709,7 +1413,20 @@
       "labelEnd": null,
       "words": 54,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "landscape",
+          "heading": true
+        },
+        {
+          "term": "electronic",
+          "heading": false
+        },
+        {
+          "term": "authentication",
+          "heading": false
+        }
+      ],
       "extract": "Source systems: regulatory council systems, training institution records, HRIS, payroll, national identity and civil registration. Systems that use registry data: electronic medical records, electronic prescribing, telehealth, insurance and claims, health management information systems, emergency rosters, the NHWA platform. Shared services: facility registry, terminology service, interoperability layer,",
       "extractCut": true
     },
@@ -724,7 +1441,20 @@
       "labelEnd": null,
       "words": 40,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "flows",
+          "heading": true
+        },
+        {
+          "term": "exchange",
+          "heading": false
+        },
+        {
+          "term": "queries",
+          "heading": false
+        }
+      ],
       "extract": "Who sends what to whom, when, and which event triggers it. Flows into the registry (new records and updates) and out of it (queries, notifications, reports). Periodic batch exchange compared with real-time exchange.",
       "extractCut": false
     },
@@ -739,7 +1469,20 @@
       "labelEnd": null,
       "words": 97,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "diagram",
+          "heading": false
+        },
+        {
+          "term": "flow",
+          "heading": false
+        },
+        {
+          "term": "architecture",
+          "heading": true
+        }
+      ],
       "extract": "Illustrative architectures for centralized, federated and hybrid models. An example in which the registry is part of a national health information exchange. An example for a country starting from paper registers or spreadsheets. Suggested figures and tables Figure: ecosystem landscape diagram. Figure: data flow diagram. Table: systems, their owners, and the data they supply or use. Implementation tools and",
       "extractCut": true
     },
@@ -754,7 +1497,24 @@
       "labelEnd": null,
       "words": 111,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "interoperability",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "exchange",
+          "heading": false
+        },
+        {
+          "term": "allow",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Explain the standards and interfaces that allow the registry to exchange data with other systems. Describe common data exchange patterns and when to use each. Define how interoperability is governed and tested. Key messages Interoperability means that systems can exchange information and use it without manual re-entry. Use existing open standards. Do not create",
       "extractCut": true
     },
@@ -769,7 +1529,20 @@
       "labelEnd": null,
       "words": 54,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "standards",
+          "heading": true
+        },
+        {
+          "term": "discovery",
+          "heading": false
+        },
+        {
+          "term": "ihe",
+          "heading": false
+        }
+      ],
       "extract": "HL7 FHIR resources for health workers and where they work (Practitioner, PractitionerRole, Organization, Location) as the recommended exchange format. IHE profiles such as Mobile Care Services Discovery (mCSD) for querying and updating health worker and facility directories. Code systems and classifications, covered in the chapter on data standards.",
       "extractCut": false
     },
@@ -784,7 +1557,20 @@
       "labelEnd": null,
       "words": 43,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "apis",
+          "heading": true
+        },
+        {
+          "term": "authentication",
+          "heading": false
+        },
+        {
+          "term": "authorization",
+          "heading": false
+        }
+      ],
       "extract": "Core interfaces: search for and read a health worker record; verify status; submit and update records; receive notice of changes. Security of interfaces: authentication, authorization and consent. Documentation and version management, so that other systems can connect.",
       "extractCut": false
     },
@@ -799,7 +1585,20 @@
       "labelEnd": null,
       "words": 45,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "exchange",
+          "heading": true
+        },
+        {
+          "term": "exchange through",
+          "heading": false
+        },
+        {
+          "term": "patterns",
+          "heading": true
+        }
+      ],
       "extract": "Query on demand, notification of changes, and bulk exchange through periodic files or extracts. Direct connection compared with exchange through an interoperability layer. Transitional approaches where source systems cannot yet use standards (for example structured file uploads).",
       "extractCut": false
     },
@@ -814,7 +1613,20 @@
       "labelEnd": null,
       "words": 98,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "conformance",
+          "heading": false
+        },
+        {
+          "term": "specification",
+          "heading": false
+        },
+        {
+          "term": "interoperability",
+          "heading": false
+        }
+      ],
       "extract": "Rules and agreements for systems that connect to the registry. Conformance testing against published specifications before a connection goes live. Managing changes to standards and interface versions. Suggested figures and tables Figure: layers of interoperability (legal, organizational, semantic, technical). Table: standards and what each is used for. Figure: step-by-step sequence of a verification query.",
       "extractCut": true
     },
@@ -829,7 +1641,24 @@
       "labelEnd": null,
       "words": 111,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "nhwa indicators",
+          "heading": false
+        },
+        {
+          "term": "minimum",
+          "heading": true
+        },
+        {
+          "term": "dataset",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Present a minimum data set for a health workforce registry and the reason for each element. Identify the classifications and code lists that make data comparable. Show how registry data map to NHWA indicators. Key messages Collect only what is needed, define it precisely, and keep it up to date. The minimum data set is a floor, not a ceiling. Countries can extend",
       "extractCut": true
     },
@@ -844,7 +1673,20 @@
       "labelEnd": null,
       "words": 81,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "dataset",
+          "heading": true
+        },
+        {
+          "term": "address",
+          "heading": false
+        },
+        {
+          "term": "core",
+          "heading": true
+        }
+      ],
       "extract": "The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution. Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of",
       "extractCut": true
     },
@@ -859,7 +1701,20 @@
       "labelEnd": null,
       "words": 42,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "classifications",
+          "heading": true
+        },
+        {
+          "term": "occupations",
+          "heading": false
+        },
+        {
+          "term": "occupational",
+          "heading": false
+        }
+      ],
       "extract": "Occupations: International Standard Classification of Occupations (ISCO-08), with mapping from national occupational titles. Education levels and fields (ISCED), facility types and ownership, and administrative geography. Supporting standards for countries (ISO 3166), dates (ISO 8601) and languages.",
       "extractCut": false
     },
@@ -874,7 +1729,20 @@
       "labelEnd": null,
       "words": 42,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "metadata",
+          "heading": true
+        },
+        {
+          "term": "date",
+          "heading": false
+        },
+        {
+          "term": "dictionary",
+          "heading": false
+        }
+      ],
       "extract": "Data dictionary structure: element name, definition, data type, permitted values and mapping to FHIR. Information about each data item's origin: source, date recorded, date verified. Version control and publication of the data dictionary and code lists.",
       "extractCut": false
     },
@@ -889,7 +1757,28 @@
       "labelEnd": null,
       "words": 141,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "nhwa mapping",
+          "heading": true
+        },
+        {
+          "term": "nhwa indicators",
+          "heading": false
+        },
+        {
+          "term": "occupational titles",
+          "heading": false
+        },
+        {
+          "term": "national occupational",
+          "heading": false
+        },
+        {
+          "term": "mapped",
+          "heading": false
+        }
+      ],
       "extract": "NHWA indicators that can be derived from registry data, such as stock, density, distribution, age and sex, and place of training. Indicators that need other sources, such as finance data and labour market surveys. The breakdowns that NHWA requires and what they mean for the data set. Suggested figures and tables Table: minimum data set. Figure: logical data model (health worker, qualification, licence, role,",
       "extractCut": true
     },
@@ -904,7 +1793,24 @@
       "labelEnd": null,
       "words": 115,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "trust",
+          "heading": true
+        },
+        {
+          "term": "security",
+          "heading": true
+        },
+        {
+          "term": "privacy",
+          "heading": true
+        },
+        {
+          "term": "personal",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Apply privacy by design to health workers' personal data. Identify the security controls that a registry needs. Describe how access is controlled and audited so that stakeholders can trust the registry. Key messages A registry holds personal data about health workers. Protecting those data is a legal and ethical duty. Decide what is public, what is shared between",
       "extractCut": true
     },
@@ -919,7 +1825,20 @@
       "labelEnd": null,
       "words": 46,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "privacy",
+          "heading": true
+        },
+        {
+          "term": "view",
+          "heading": false
+        },
+        {
+          "term": "design",
+          "heading": true
+        }
+      ],
       "extract": "Collect the minimum data needed, use them only for stated purposes, and set retention limits. Carry out a privacy impact assessment before implementation and before major changes. Tiered disclosure: a public view, an institutional view and restricted data.",
       "extractCut": false
     },
@@ -934,7 +1853,20 @@
       "labelEnd": null,
       "words": 33,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "cybersecurity",
+          "heading": true
+        },
+        {
+          "term": "backup",
+          "heading": false
+        },
+        {
+          "term": "policies",
+          "heading": false
+        }
+      ],
       "extract": "Risk assessment, secure hosting, encryption of stored and transmitted data, backup and recovery. Incident response and notification of data breaches. Alignment with national cybersecurity policies and standards.",
       "extractCut": false
     },
@@ -949,7 +1881,20 @@
       "labelEnd": null,
       "words": 33,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "access",
+          "heading": true
+        },
+        {
+          "term": "control",
+          "heading": true
+        },
+        {
+          "term": "permissions",
+          "heading": false
+        }
+      ],
       "extract": "Role-based access for people; authenticated and authorized access for systems. Self-service access for health workers to their own record. Regular review of user accounts and permissions.",
       "extractCut": false
     },
@@ -964,7 +1909,20 @@
       "labelEnd": null,
       "words": 101,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "audit",
+          "heading": true
+        },
+        {
+          "term": "privacy impact",
+          "heading": false
+        },
+        {
+          "term": "impact assessment",
+          "heading": false
+        }
+      ],
       "extract": "A log of who viewed or changed which record, when and why. Routine review of logs, with reports to the governance body. Use of audit data to detect misuse and fraud. Suggested figures and tables Figure: tiered data access model. Table: main threats and the controls that address them. Table: roles and permissions. Implementation tools and checklists Privacy impact assessment template. Security checklist. Roles and",
       "extractCut": true
     },
@@ -979,7 +1937,20 @@
       "labelEnd": null,
       "words": 104,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "quality",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "management",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Define data quality for a registry and how to measure it. Describe validation when data are entered and when they are compared across sources. Set up routine monitoring and improvement of data quality. Key messages A registry is only as useful as its data are complete, accurate and current. Quality is best assured at source, by the institution that owns the data.",
       "extractCut": true
     },
@@ -1009,7 +1980,20 @@
       "labelEnd": null,
       "words": 39,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "validation",
+          "heading": true
+        },
+        {
+          "term": "entry",
+          "heading": false
+        },
+        {
+          "term": "procedures",
+          "heading": false
+        }
+      ],
       "extract": "Automated rules at data entry (formats, mandatory fields, code lists). Verification against primary sources, such as training institutions, the national identity system and the issuing regulator. Procedures for finding and resolving duplicate records.",
       "extractCut": false
     },
@@ -1024,7 +2008,24 @@
       "labelEnd": null,
       "words": 89,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "quality",
+          "heading": false
+        },
+        {
+          "term": "indicators",
+          "heading": false
+        },
+        {
+          "term": "monitoring",
+          "heading": true
+        },
+        {
+          "term": "dashboards",
+          "heading": false
+        }
+      ],
       "extract": "Data quality indicators and dashboards. Periodic audits and reconciliation with payroll, facility staffing lists or census data. Feedback to data suppliers and corrective action. Suggested figures and tables Table: data quality dimensions with example indicators. Figure: data quality improvement cycle. Implementation tools and checklists Data quality assessment checklist. Catalogue of validation rules. Standard",
       "extractCut": true
     },
@@ -1039,7 +2040,20 @@
       "labelEnd": null,
       "words": 37,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "practical",
+          "heading": false
+        },
+        {
+          "term": "country",
+          "heading": true
+        },
+        {
+          "term": "enter",
+          "heading": false
+        }
+      ],
       "extract": "Purpose: This part guides countries through the practical steps of transformation, from preparing and assessing readiness to operating and improving the registry. Countries can enter at the step that matches their situation.",
       "extractCut": false
     },
@@ -1054,7 +2068,20 @@
       "labelEnd": null,
       "words": 95,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "transformation",
+          "heading": true
+        },
+        {
+          "term": "preparing",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Secure leadership and form the team that will lead the transformation. Assess readiness and the current state of registry-related systems. Engage the stakeholders on whose participation the registry depends. Key messages Joint leadership by the health workforce and digital health units is essential. A readiness assessment prevents costly surprises later.",
       "extractCut": true
     },
@@ -1069,7 +2096,20 @@
       "labelEnd": null,
       "words": 40,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "leadership",
+          "heading": true
+        },
+        {
+          "term": "goals",
+          "heading": false
+        },
+        {
+          "term": "digital health",
+          "heading": false
+        }
+      ],
       "extract": "An executive sponsor and a clear mandate. A shared vision and goals linked to the national health workforce and digital health strategies. The registry's place in the national digital health architecture and investment plans.",
       "extractCut": false
     },
@@ -1084,7 +2124,20 @@
       "labelEnd": null,
       "words": 36,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "teams",
+          "heading": true
+        },
+        {
+          "term": "lead",
+          "heading": false
+        },
+        {
+          "term": "external",
+          "heading": false
+        }
+      ],
       "extract": "Core team: health workforce lead, digital health lead, regulator representatives, business analyst, architect, data manager and legal adviser. Roles, responsibilities and time commitment. When to bring in external technical support.",
       "extractCut": false
     },
@@ -1099,7 +2152,20 @@
       "labelEnd": null,
       "words": 37,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "readiness",
+          "heading": true
+        },
+        {
+          "term": "areas",
+          "heading": false
+        },
+        {
+          "term": "gaps",
+          "heading": false
+        }
+      ],
       "extract": "Assessment areas: governance and law, data, processes, technology and infrastructure, people and skills, and financing. An inventory of existing registers and systems. Placement on the maturity model and identification of gaps.",
       "extractCut": false
     },
@@ -1114,7 +2180,24 @@
       "labelEnd": null,
       "words": 100,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "stakeholder engagement",
+          "heading": true
+        },
+        {
+          "term": "stakeholder mapping",
+          "heading": false
+        },
+        {
+          "term": "readiness assessment",
+          "heading": false
+        },
+        {
+          "term": "team",
+          "heading": false
+        }
+      ],
       "extract": "Stakeholder mapping, with analysis of interests and influence. Engagement methods: workshops, one-to-one consultation with councils, and dialogue with health worker associations. Responding to concerns about loss of control, workload and use of data. Suggested figures and tables Figure: team structure. Table: readiness assessment areas and sample questions. Figure: stakeholder map. Implementation tools and",
       "extractCut": true
     },
@@ -1129,7 +2212,24 @@
       "labelEnd": null,
       "words": 93,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "process",
+          "heading": true
+        },
+        {
+          "term": "redesign",
+          "heading": true
+        },
+        {
+          "term": "processes",
+          "heading": false
+        },
+        {
+          "term": "poor",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Document how registration, licensing and related processes work today. Design improved processes that make use of digital capabilities. Derive system requirements from the redesigned processes. Key messages Digitizing a poor process produces a poor digital process. Simplify first. Mapping processes with the people who do the work reveals the real bottlenecks.",
       "extractCut": true
     },
@@ -1144,7 +2244,20 @@
       "labelEnd": null,
       "words": 33,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "state",
+          "heading": true
+        },
+        {
+          "term": "current",
+          "heading": true
+        },
+        {
+          "term": "mapping",
+          "heading": true
+        }
+      ],
       "extract": "Map priority processes: first registration, licence renewal, verification, transfer and exit. Record the steps, people involved, documents, time taken and difficulties. Identify duplication across institutions.",
       "extractCut": false
     },
@@ -1159,7 +2272,20 @@
       "labelEnd": null,
       "words": 42,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "workflows",
+          "heading": true
+        },
+        {
+          "term": "future",
+          "heading": true
+        },
+        {
+          "term": "checks",
+          "heading": false
+        }
+      ],
       "extract": "Redesigned workflows using online application, automated checks, shared data and digital credentials. Paper or assisted channels kept where connectivity or digital skills are limited. Policy or legal changes needed to make the new workflows possible.",
       "extractCut": false
     },
@@ -1174,7 +2300,20 @@
       "labelEnd": null,
       "words": 84,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "requirements",
+          "heading": true
+        },
+        {
+          "term": "future",
+          "heading": false
+        },
+        {
+          "term": "process",
+          "heading": false
+        }
+      ],
       "extract": "Turn future workflows into functional and non-functional requirements (linked to the chapters on use cases and functional requirements). Data requirements for each step. Prioritization and phasing. Suggested figures and tables Figure: example current and future workflow for licence renewal. Table: common difficulties and redesign options. Implementation tools and checklists Process mapping template. Requirements",
       "extractCut": true
     },
@@ -1189,7 +2328,20 @@
       "labelEnd": null,
       "words": 96,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "procurement",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "planning",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Compare the options for delivering the registry. Choose a procurement approach and prepare specifications. Develop a costed implementation plan and manage risk. Key messages Consider adapting or connecting existing systems before buying or building new ones. The total cost of ownership over at least five years matters more than the purchase price. Contracts must",
       "extractCut": true
     },
@@ -1204,7 +2356,20 @@
       "labelEnd": null,
       "words": 56,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "options",
+          "heading": true
+        },
+        {
+          "term": "analysis",
+          "heading": true
+        },
+        {
+          "term": "cost",
+          "heading": false
+        }
+      ],
       "extract": "Options: enhance an existing system, adopt an open-source solution or digital public good, buy a commercial product, build a custom system, or use a shared government platform. Criteria: fit with requirements, conformance to standards, cost, local capacity and sustainability. Total cost of ownership and budgeting, following the DIIG approach.",
       "extractCut": false
     },
@@ -1219,7 +2384,20 @@
       "labelEnd": null,
       "words": 40,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "procurement",
+          "heading": true
+        },
+        {
+          "term": "approaches",
+          "heading": true
+        },
+        {
+          "term": "based",
+          "heading": false
+        }
+      ],
       "extract": "Specifications and evaluation criteria based on the requirements and standards. Contract terms: data ownership, access to source code, support, service levels, training and exit. Coordination of funders and alignment with national procurement rules.",
       "extractCut": false
     },
@@ -1234,7 +2412,24 @@
       "labelEnd": null,
       "words": 98,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "risk",
+          "heading": true
+        },
+        {
+          "term": "risk register",
+          "heading": false
+        },
+        {
+          "term": "roadmap",
+          "heading": false
+        },
+        {
+          "term": "management",
+          "heading": true
+        }
+      ],
       "extract": "Common risks: weak mandate, stakeholder resistance, poor data, funding gaps, supplier dependence and staff turnover. A risk register with mitigation measures. Phasing and pilots to reduce risk. Suggested figures and tables Table: comparison of delivery options. Figure: sample phased roadmap. Table: risk matrix. Implementation tools and checklists Options analysis template. Total cost of ownership and budget",
       "extractCut": true
     },
@@ -1249,7 +2444,20 @@
       "labelEnd": null,
       "words": 85,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "deployment",
+          "heading": true
+        },
+        {
+          "term": "operations",
+          "heading": false
+        },
+        {
+          "term": "phases",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Plan the migration of existing records into the registry. Test the registry before and during roll-out. Roll out in phases and establish routine operations. Key messages Data migration and cleaning usually take longer than expected. Plan and resource them. Test with real users and realistic data. Roll out in phases, learn, and adjust. Put operations and support",
       "extractCut": true
     },
@@ -1264,7 +2472,20 @@
       "labelEnd": null,
       "words": 39,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "migration",
+          "heading": true
+        },
+        {
+          "term": "paper",
+          "heading": false
+        },
+        {
+          "term": "occupation",
+          "heading": false
+        }
+      ],
       "extract": "Take stock of existing paper and digital records, then clean, de-duplicate and map them. Digitize paper registers and verify the records. Load data in a planned order, for example by occupation or sector.",
       "extractCut": false
     },
@@ -1294,7 +2515,20 @@
       "labelEnd": null,
       "words": 37,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "rollout",
+          "heading": true
+        },
+        {
+          "term": "during",
+          "heading": false
+        },
+        {
+          "term": "going",
+          "heading": false
+        }
+      ],
       "extract": "A pilot, followed by phased roll-out by occupation, institution or region. Criteria for going live, and a period of running old and new processes in parallel. User support during the transition.",
       "extractCut": false
     },
@@ -1309,7 +2543,24 @@
       "labelEnd": null,
       "words": 95,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "standard operating",
+          "heading": false
+        },
+        {
+          "term": "operations",
+          "heading": true
+        },
+        {
+          "term": "test",
+          "heading": false
+        },
+        {
+          "term": "procedures",
+          "heading": false
+        }
+      ],
       "extract": "Standard operating procedures, help desk and service levels. Hosting, backup, maintenance and updates. Bringing new data suppliers and connecting systems on board. Suggested figures and tables Figure: data migration steps. Table: types of testing and their purpose. Figure: phased roll-out timeline. Implementation tools and checklists Migration plan template. Test plan and user acceptance test templates. Go-live",
       "extractCut": true
     },
@@ -1324,7 +2575,20 @@
       "labelEnd": null,
       "words": 89,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "change",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "management",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Plan communications for each stakeholder group. Promote adoption and routine use of the registry. Build the skills needed to operate, use and sustain the registry. Key messages People adopt systems that make their work easier and whose purpose they understand. Communicate early, often and in the language of each audience. Health workers must see benefits for",
       "extractCut": true
     },
@@ -1354,7 +2618,20 @@
       "labelEnd": null,
       "words": 36,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "adoption",
+          "heading": true
+        },
+        {
+          "term": "users",
+          "heading": false
+        },
+        {
+          "term": "feedback",
+          "heading": false
+        }
+      ],
       "extract": "Champions, incentives, and links between the registry and processes that users already need, such as licence renewal and employment. Monitoring uptake and removing barriers. Ways for users to give feedback.",
       "extractCut": false
     },
@@ -1369,7 +2646,24 @@
       "labelEnd": null,
       "words": 93,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "communications plan",
+          "heading": false
+        },
+        {
+          "term": "training plan",
+          "heading": false
+        },
+        {
+          "term": "plan template",
+          "heading": false
+        },
+        {
+          "term": "strengthening",
+          "heading": true
+        }
+      ],
       "extract": "Competencies for registry managers, data officers, technical staff and other users. Training approaches: on-the-job training, e-learning, and peer learning between councils and countries. Building registry skills into pre-service and in-service programmes, and retaining skilled staff. Suggested figures and tables Table: communication matrix by stakeholder group. Table: competencies by role. Implementation tools and",
       "extractCut": true
     },
@@ -1384,7 +2678,20 @@
       "labelEnd": null,
       "words": 88,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "improvement",
+          "heading": true
+        },
+        {
+          "term": "continuous",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Define indicators to track the registry's performance and use. Use a maturity model to plan progress. Evaluate results and feed lessons into improvement. Key messages Measure whether the registry is used and useful, not only whether it is installed. Maturity is gradual. Set realistic targets for the next level. Regular review keeps the registry in step with",
       "extractCut": true
     },
@@ -1399,7 +2706,20 @@
       "labelEnd": null,
       "words": 39,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "kpis",
+          "heading": true
+        },
+        {
+          "term": "number",
+          "heading": false
+        },
+        {
+          "term": "decisions",
+          "heading": false
+        }
+      ],
       "extract": "Coverage and completeness, timeliness of updates, and data quality. Service performance: time to register, renew and verify; system availability. Use: number of connected systems, number of verification queries, and reports used for decisions.",
       "extractCut": false
     },
@@ -1414,7 +2734,20 @@
       "labelEnd": null,
       "words": 33,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "maturity",
+          "heading": true
+        },
+        {
+          "term": "assessments",
+          "heading": false
+        },
+        {
+          "term": "links",
+          "heading": false
+        }
+      ],
       "extract": "Maturity levels across governance, data, processes, technology, interoperability and use. Self-assessment and target-setting. Links to existing WHO assessments of health workforce information systems and digital health maturity.",
       "extractCut": false
     },
@@ -1429,7 +2762,20 @@
       "labelEnd": null,
       "words": 85,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "evaluation",
+          "heading": true
+        },
+        {
+          "term": "maturity",
+          "heading": false
+        },
+        {
+          "term": "costs",
+          "heading": false
+        }
+      ],
       "extract": "Periodic evaluation of results against objectives and costs. Learning reviews with stakeholders. Updates to the roadmap, requirements and standards. Suggested figures and tables Table: key performance indicators with definitions and data sources. Figure: maturity model summary. Figure: results chain from inputs to outcomes. Implementation tools and checklists Indicator framework template. Maturity self-assessment",
       "extractCut": true
     },
@@ -1459,7 +2805,24 @@
       "labelEnd": null,
       "words": 99,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "cases",
+          "heading": true
+        },
+        {
+          "term": "illustrative",
+          "heading": true
+        },
+        {
+          "term": "chapter",
+          "heading": true
+        },
+        {
+          "term": "developers",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Show how the registry supports specific real-world scenarios from start to finish. Set out the people, data, workflows and interfaces involved in each scenario. Help countries adapt the use cases to their own context. Key messages Use cases make the value of a registry concrete for decision-makers and guide developers. The same core data and interfaces serve all",
       "extractCut": true
     },
@@ -1474,7 +2837,20 @@
       "labelEnd": null,
       "words": 44,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "licensing",
+          "heading": true
+        },
+        {
+          "term": "graduate",
+          "heading": false
+        },
+        {
+          "term": "applies",
+          "heading": false
+        }
+      ],
       "extract": "A new graduate applies, the qualification is verified with the training institution, a licence is issued and the registry is updated. Renewal linked to continuing professional development. Status changes, such as suspension and reinstatement, with notification to employers.",
       "extractCut": false
     },
@@ -1489,7 +2865,20 @@
       "labelEnd": null,
       "words": 43,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "checks",
+          "heading": false
+        },
+        {
+          "term": "online",
+          "heading": false
+        },
+        {
+          "term": "verification",
+          "heading": true
+        }
+      ],
       "extract": "An employer or member of the public checks a health worker's status online. A clinical system checks automatically that a prescriber is authorized. A health worker holds a digital credential that can be verified online or offline.",
       "extractCut": false
     },
@@ -1504,7 +2893,20 @@
       "labelEnd": null,
       "words": 32,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "emergency",
+          "heading": true
+        },
+        {
+          "term": "response",
+          "heading": true
+        },
+        {
+          "term": "deployment",
+          "heading": false
+        }
+      ],
       "extract": "Quickly identify available, qualified workers by skill and location for surge deployment. Verify the credentials of emergency medical teams and volunteers. Track deployment and return.",
       "extractCut": false
     },
@@ -1519,7 +2921,20 @@
       "labelEnd": null,
       "words": 96,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "mobility",
+          "heading": true
+        },
+        {
+          "term": "case",
+          "heading": false
+        },
+        {
+          "term": "diagram",
+          "heading": false
+        }
+      ],
       "extract": "Verify the credentials of internationally trained workers and issue certificates of good standing. Track inflows and outflows to support reporting under the WHO Global Code of Practice on the International Recruitment of Health Personnel. Movement within the country between regions, sectors and employers. Suggested figures and tables Figure: workflow diagram for each use case. Table: people, data and interfaces",
       "extractCut": true
     },
@@ -1534,7 +2949,20 @@
       "labelEnd": null,
       "words": 90,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "studies",
+          "heading": true
+        },
+        {
+          "term": "context",
+          "heading": false
+        },
+        {
+          "term": "fragile",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Present how countries with different governance models have built their registries. Draw out practical lessons, including from fragile and low-resource settings. Help readers find experience that is relevant to their own context. Key messages Countries have succeeded with different models. Context determines the choice. Progress is usually gradual, over several",
       "extractCut": true
     },
@@ -1564,7 +2992,20 @@
       "labelEnd": null,
       "words": 44,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "federated",
+          "heading": true
+        },
+        {
+          "term": "authorities",
+          "heading": false
+        },
+        {
+          "term": "sub-national",
+          "heading": false
+        }
+      ],
       "extract": "A country where several councils or sub-national authorities keep their own registers, linked to give a national view (case to be confirmed by the working group). How identifiers, the data set and interfaces were harmonized. Results and challenges.",
       "extractCut": false
     },
@@ -1579,7 +3020,20 @@
       "labelEnd": null,
       "words": 42,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "fragile",
+          "heading": true
+        },
+        {
+          "term": "settings",
+          "heading": true
+        },
+        {
+          "term": "coordination",
+          "heading": false
+        }
+      ],
       "extract": "A fragile, conflict-affected or very low-resource setting, to be nominated through WHO regional offices. A minimum workable approach, options for working offline, and coordination of partners. Protecting data and health workers where security is poor.",
       "extractCut": false
     },
@@ -1594,7 +3048,20 @@
       "labelEnd": null,
       "words": 79,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "lessons",
+          "heading": true
+        },
+        {
+          "term": "learned",
+          "heading": true
+        },
+        {
+          "term": "case",
+          "heading": false
+        }
+      ],
       "extract": "Common success factors and pitfalls. What countries would do differently. What the lessons mean for the country pathway. Suggested figures and tables Summary box for each case study, in a standard format. Table: comparison across the case studies. Implementation tools and checklists Case study documentation template. Expected outputs for countries A list of peer countries to learn from. The country's own documented",
       "extractCut": true
     },
@@ -1609,7 +3076,20 @@
       "labelEnd": null,
       "words": 98,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "tools",
+          "heading": true
+        },
+        {
+          "term": "templates",
+          "heading": true
+        },
+        {
+          "term": "kept",
+          "heading": false
+        }
+      ],
       "extract": "Chapter objectives This chapter will help readers to: Provide ready-to-adapt tools for each step of the pathway. Explain when and how to use each tool. Point to the annexes and online resources where full versions are kept. Key messages Tools save time but must be adapted to the national context. Each tool is linked to a step in the country pathway. Completed tools should be kept up to date as living documents.",
       "extractCut": true
     },
@@ -1639,7 +3119,20 @@
       "labelEnd": null,
       "words": 32,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "roadmaps",
+          "heading": true
+        },
+        {
+          "term": "milestones",
+          "heading": false
+        },
+        {
+          "term": "stand-alone",
+          "heading": false
+        }
+      ],
       "extract": "Sample phased roadmaps for each starting point: paper, stand-alone digital, and partly connected. Milestones, dependencies and decision points. Budget and resource planning linked to the roadmap.",
       "extractCut": false
     },
@@ -1654,7 +3147,20 @@
       "labelEnd": null,
       "words": 88,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "assessment",
+          "heading": true
+        },
+        {
+          "term": "tools",
+          "heading": true
+        },
+        {
+          "term": "carry",
+          "heading": false
+        }
+      ],
       "extract": "Readiness assessment, maturity model and data quality assessment. How to carry out each assessment: who takes part, scoring, and use of results. Repeating assessments to track progress. Suggested figures and tables Table: all tools, with purpose, when to use, related chapter and annex. Implementation tools and checklists The full set of tools and templates listed in this chapter and in the annexes. Expected outputs",
       "extractCut": true
     },
@@ -1669,7 +3175,32 @@
       "labelEnd": null,
       "words": 173,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "annex",
+          "heading": false
+        },
+        {
+          "term": "annexes",
+          "heading": true
+        },
+        {
+          "term": "elements",
+          "heading": false
+        },
+        {
+          "term": "definitions",
+          "heading": false
+        },
+        {
+          "term": "models",
+          "heading": false
+        },
+        {
+          "term": "terms",
+          "heading": false
+        }
+      ],
       "extract": "Annex 1. Minimum Data Set: Proposed core and optional data elements with definitions. An update of the WHO 2015 minimum data set. Annex 2. Data Dictionary: For each data element: definition, data type, permitted values, source, and mapping to FHIR. Annex 3. Governance Template: Model terms of reference for the steering committee and technical working group, a responsibility matrix, and a sample data-sharing",
       "extractCut": true
     },
@@ -1684,13 +3215,88 @@
       "labelEnd": null,
       "words": 188,
       "summary": null,
-      "keywords": [],
+      "keywords": [
+        {
+          "term": "transformation handbook",
+          "heading": false
+        },
+        {
+          "term": "standard classification",
+          "heading": false
+        },
+        {
+          "term": "international standard",
+          "heading": false
+        },
+        {
+          "term": "digital interventions",
+          "heading": false
+        },
+        {
+          "term": "human resources",
+          "heading": false
+        },
+        {
+          "term": "health workforce",
+          "heading": false
+        }
+      ],
       "extract": "WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. WHO. Global strategy on human resources for health: Workforce 2030. 2016. WHO. National health workforce accounts: a handbook, second edition. 2023. WHO. Global Code of Practice on the International Recruitment of Health Personnel. 2010. WHO. Health practitioner regulation: design, reform and implementation",
       "extractCut": true
     }
   ],
   "checks": {},
   "withheld": false,
+  "keywords": [
+    {
+      "term": "digital health",
+      "heading": true
+    },
+    {
+      "term": "national health",
+      "heading": false
+    },
+    {
+      "term": "health workforce",
+      "heading": true
+    },
+    {
+      "term": "workforce registry",
+      "heading": false
+    },
+    {
+      "term": "health workers",
+      "heading": false
+    },
+    {
+      "term": "cases chapter",
+      "heading": true
+    },
+    {
+      "term": "chapter objectives",
+      "heading": false
+    },
+    {
+      "term": "chapter sections",
+      "heading": false
+    },
+    {
+      "term": "health information",
+      "heading": false
+    },
+    {
+      "term": "management chapter",
+      "heading": true
+    },
+    {
+      "term": "digital architecture",
+      "heading": true
+    },
+    {
+      "term": "messages registry",
+      "heading": false
+    }
+  ],
   "links": {
     "repo": "litlfred/dth-hrh",
     "branch": "main",

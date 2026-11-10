@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "harness-default-rendering.html",
  "tasks": {
   "A_Tiles": {
    "id": "A_Tiles",
    "name": "Compose each harness's nav and tile",
    "type": "bpmn:Task",
+   "stepHref": "harness-default-rendering.html#step-A_Tiles",
    "lane": "Build pipeline",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "harness-tiles"
+     "name": "harness-tiles",
+     "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
     }
    ],
    "role": {
@@ -107,25 +111,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -140,19 +146,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -167,10 +177,13 @@
    "id": "A_Ground",
    "name": "Resolve each harness's page ground",
    "type": "bpmn:Task",
+   "stepHref": "harness-default-rendering.html#step-A_Ground",
    "lane": "Build pipeline",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "harness-tiles"
+     "name": "harness-tiles",
+     "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
     }
    ],
    "role": {
@@ -182,25 +195,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -215,19 +230,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -242,10 +261,13 @@
    "id": "A_Publish",
    "name": "Publish docs on their theme's art",
    "type": "bpmn:Task",
+   "stepHref": "harness-default-rendering.html#step-A_Publish",
    "lane": "Build pipeline",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "liquid-templates"
+     "name": "liquid-templates",
+     "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
     }
    ],
    "role": {
@@ -257,25 +279,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -290,19 +314,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -317,7 +345,9 @@
    "id": "A_Board",
    "name": "Draw the board of todos and beans",
    "type": "bpmn:Task",
+   "stepHref": "harness-default-rendering.html#step-A_Board",
    "lane": "Board renderer",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Board",
    "skills": [
     {
      "name": "todo-manager"
@@ -329,22 +359,27 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
       "name": "incremental-render"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
       "name": "pdf-inline-viewer"
@@ -359,10 +394,13 @@
    "id": "A_Read",
    "name": "Read a page or a card",
    "type": "bpmn:UserTask",
+   "stepHref": "harness-default-rendering.html#step-A_Read",
    "lane": "Reviewer",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -374,10 +412,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -392,7 +432,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -407,10 +448,13 @@
    "id": "A_Propose",
    "name": "Propose the change",
    "type": "bpmn:UserTask",
+   "stepHref": "harness-default-rendering.html#step-A_Propose",
    "lane": "Reviewer",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "kg-affordances"
+     "name": "kg-affordances",
+     "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
     }
    ],
    "role": {
@@ -422,10 +466,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -440,7 +486,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -455,10 +502,13 @@
    "id": "A_Todo",
    "name": "Leave it as feedback",
    "type": "bpmn:UserTask",
+   "stepHref": "harness-default-rendering.html#step-A_Todo",
    "lane": "Reviewer",
+   "laneHref": "harness-default-rendering.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-feedback"
+     "name": "content-feedback",
+     "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
     }
    ],
    "role": {
@@ -470,10 +520,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -488,7 +540,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"

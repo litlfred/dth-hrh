@@ -51,15 +51,19 @@
    }
   }
  ],
+ "processHref": "ig-ast-delta-review.html",
  "tasks": {
   "Task_Validity": {
    "id": "Task_Validity",
    "name": "Check the base AST against the inputs",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-delta-review.html#step-Task_Validity",
    "lane": "Incremental build (system)",
+   "laneHref": "ig-ast-delta-review.html#lane-Lane_Build",
    "skills": [
     {
-     "name": "ig-ast-delta"
+     "name": "ig-ast-delta",
+     "href": "../../../en/cat-harness/processes/skills/ig-ast-delta.html"
     }
    ],
    "role": {
@@ -71,25 +75,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -104,19 +110,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -131,10 +141,13 @@
    "id": "Task_Diff",
    "name": "Diff the two ASTs",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-delta-review.html#step-Task_Diff",
    "lane": "Incremental build (system)",
+   "laneHref": "ig-ast-delta-review.html#lane-Lane_Build",
    "skills": [
     {
-     "name": "ig-ast-delta"
+     "name": "ig-ast-delta",
+     "href": "../../../en/cat-harness/processes/skills/ig-ast-delta.html"
     }
    ],
    "role": {
@@ -146,25 +159,27 @@
       "name": "ci-health"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
-     },
-     {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "feature-staging"
      },
      {
-      "name": "harness-projections"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "kg-separation"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
       "name": "platform-gates"
@@ -179,19 +194,23 @@
       "name": "qa-reports"
      },
      {
-      "name": "remote-mount"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
       "name": "todo-manager"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "upstream-version-adoption"
@@ -206,10 +225,13 @@
    "id": "Task_Review",
    "name": "Read the delta",
    "type": "bpmn:UserTask",
+   "stepHref": "ig-ast-delta-review.html#step-Task_Review",
    "lane": "QC reviewer",
+   "laneHref": "ig-ast-delta-review.html#lane-Lane_Review",
    "skills": [
     {
-     "name": "ig-ast-delta"
+     "name": "ig-ast-delta",
+     "href": "../../../en/cat-harness/processes/skills/ig-ast-delta.html"
     }
    ],
    "role": {
@@ -223,13 +245,12 @@
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
-      "name": "content-publish"
-     },
-     {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
@@ -237,7 +258,8 @@
       "via": "reviewer"
      },
      {
-      "name": "evidence-review"
+      "name": "evidence-review",
+      "href": "../../../en/cat-harness/processes/skills/evidence-review.html"
      },
      {
       "name": "narrative-asserts-code",
@@ -253,6 +275,7 @@
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
@@ -273,7 +296,9 @@
    "id": "Task_FileCoupling",
    "name": "Note the missed coupling on the work plan",
    "type": "bpmn:Task",
+   "stepHref": "ig-ast-delta-review.html#step-Task_FileCoupling",
    "lane": "QC reviewer",
+   "laneHref": "ig-ast-delta-review.html#lane-Lane_Review",
    "skills": [
     {
      "name": "todo-manager"
@@ -290,13 +315,12 @@
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
-      "name": "content-publish"
-     },
-     {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
@@ -304,7 +328,8 @@
       "via": "reviewer"
      },
      {
-      "name": "evidence-review"
+      "name": "evidence-review",
+      "href": "../../../en/cat-harness/processes/skills/evidence-review.html"
      },
      {
       "name": "narrative-asserts-code",
@@ -320,6 +345,7 @@
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {

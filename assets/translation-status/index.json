@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-08",
+  "changedAt": "2026-11-10",
   "scope": "cat-harness/translations",
   "tile": {},
   "page": "en/cat-harness/translation-status/index.md",
@@ -37,8 +37,8 @@
         },
         {
           "path": "concepts/skills.po",
-          "entries": 92,
-          "translated": 92,
+          "entries": 83,
+          "translated": 83,
           "fuzzy": 0,
           "untranslated": 0,
           "official": "no"
@@ -122,10 +122,10 @@
           "untranslated": 0
         }
       ],
-      "templates": 105,
+      "templates": 109,
       "catalogues": 15,
-      "entries": 745,
-      "translated": 696,
+      "entries": 736,
+      "translated": 687,
       "fuzzy": 0,
       "untranslated": 49,
       "unreadable": []
@@ -161,8 +161,8 @@
         },
         {
           "path": "concepts/skills.po",
-          "entries": 92,
-          "translated": 92,
+          "entries": 83,
+          "translated": 83,
           "fuzzy": 0,
           "untranslated": 0
         },
@@ -246,10 +246,10 @@
           "untranslated": 0
         }
       ],
-      "templates": 106,
+      "templates": 110,
       "catalogues": 15,
-      "entries": 746,
-      "translated": 697,
+      "entries": 737,
+      "translated": 688,
       "fuzzy": 0,
       "untranslated": 49,
       "unreadable": []
@@ -285,8 +285,8 @@
         },
         {
           "path": "concepts/skills.po",
-          "entries": 92,
-          "translated": 92,
+          "entries": 83,
+          "translated": 83,
           "fuzzy": 0,
           "untranslated": 0
         },
@@ -376,10 +376,10 @@
           "untranslated": 0
         }
       ],
-      "templates": 108,
+      "templates": 112,
       "catalogues": 16,
-      "entries": 778,
-      "translated": 729,
+      "entries": 769,
+      "translated": 720,
       "fuzzy": 0,
       "untranslated": 49,
       "unreadable": []
@@ -415,8 +415,8 @@
         },
         {
           "path": "concepts/skills.po",
-          "entries": 92,
-          "translated": 92,
+          "entries": 83,
+          "translated": 83,
           "fuzzy": 0,
           "untranslated": 0
         },
@@ -499,10 +499,10 @@
           "untranslated": 0
         }
       ],
-      "templates": 105,
+      "templates": 109,
       "catalogues": 15,
-      "entries": 745,
-      "translated": 696,
+      "entries": 736,
+      "translated": 687,
       "fuzzy": 0,
       "untranslated": 49,
       "unreadable": []
@@ -538,8 +538,8 @@
         },
         {
           "path": "concepts/skills.po",
-          "entries": 92,
-          "translated": 92,
+          "entries": 83,
+          "translated": 83,
           "fuzzy": 0,
           "untranslated": 0,
           "official": "no"
@@ -624,10 +624,10 @@
           "untranslated": 0
         }
       ],
-      "templates": 106,
+      "templates": 110,
       "catalogues": 15,
-      "entries": 747,
-      "translated": 698,
+      "entries": 738,
+      "translated": 689,
       "fuzzy": 0,
       "untranslated": 49,
       "unreadable": []
@@ -1130,16 +1130,16 @@
             },
             {
               "path": "site/iris-site.po",
-              "entries": 116,
-              "translated": 116,
+              "entries": 158,
+              "translated": 158,
               "fuzzy": 0,
               "untranslated": 0
             }
           ],
           "templates": 6,
           "catalogues": 2,
-          "entries": 120,
-          "translated": 120,
+          "entries": 162,
+          "translated": 162,
           "fuzzy": 0,
           "untranslated": 0,
           "unreadable": []
@@ -1161,16 +1161,16 @@
             },
             {
               "path": "site/iris-site.po",
-              "entries": 116,
-              "translated": 116,
+              "entries": 158,
+              "translated": 158,
               "fuzzy": 0,
               "untranslated": 0
             }
           ],
           "templates": 6,
           "catalogues": 2,
-          "entries": 120,
-          "translated": 120,
+          "entries": 162,
+          "translated": 162,
           "fuzzy": 0,
           "untranslated": 0,
           "unreadable": []
@@ -1192,16 +1192,16 @@
             },
             {
               "path": "site/iris-site.po",
-              "entries": 116,
-              "translated": 116,
+              "entries": 158,
+              "translated": 158,
               "fuzzy": 0,
               "untranslated": 0
             }
           ],
           "templates": 6,
           "catalogues": 2,
-          "entries": 120,
-          "translated": 120,
+          "entries": 162,
+          "translated": 162,
           "fuzzy": 0,
           "untranslated": 0,
           "unreadable": []
@@ -1223,16 +1223,16 @@
             },
             {
               "path": "site/iris-site.po",
-              "entries": 116,
-              "translated": 116,
+              "entries": 158,
+              "translated": 158,
               "fuzzy": 0,
               "untranslated": 0
             }
           ],
           "templates": 6,
           "catalogues": 2,
-          "entries": 120,
-          "translated": 120,
+          "entries": 162,
+          "translated": 162,
           "fuzzy": 0,
           "untranslated": 0,
           "unreadable": []
@@ -1254,16 +1254,16 @@
             },
             {
               "path": "site/iris-site.po",
-              "entries": 116,
-              "translated": 116,
+              "entries": 158,
+              "translated": 158,
               "fuzzy": 0,
               "untranslated": 0
             }
           ],
           "templates": 6,
           "catalogues": 2,
-          "entries": 120,
-          "translated": 120,
+          "entries": 162,
+          "translated": 162,
           "fuzzy": 0,
           "untranslated": 0,
           "unreadable": []

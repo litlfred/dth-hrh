@@ -123,12 +123,15 @@
    }
   }
  ],
+ "processHref": "content-change-review-committee.html",
  "tasks": {
   "Task_CompareBeforeAfter": {
    "id": "Task_CompareBeforeAfter",
    "name": "Compare main vs staging",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_CompareBeforeAfter",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
      "name": "staging-review"
@@ -149,10 +152,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -167,7 +172,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -182,10 +188,13 @@
    "id": "Task_IngestComments",
    "name": "Ingest tagged review comments",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_IngestComments",
    "lane": "Review Coordinator",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Coordinator",
    "skills": [
     {
-     "name": "review-comments"
+     "name": "review-comments",
+     "href": "../../../en/cat-harness/processes/skills/review-comments.html"
     }
    ],
    "role": {
@@ -197,7 +206,8 @@
       "name": "rendered-impact"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
       "name": "staging-review"
@@ -212,10 +222,13 @@
    "id": "Task_SliceAndAssign",
    "name": "Slice the change and assign reviewers",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_SliceAndAssign",
    "lane": "Review Coordinator",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Coordinator",
    "skills": [
     {
-     "name": "review-heatmap"
+     "name": "review-heatmap",
+     "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
     },
     {
      "name": "staging-review"
@@ -233,7 +246,8 @@
       "name": "rendered-impact"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
       "name": "staging-review"
@@ -248,13 +262,17 @@
    "id": "Call_ReviewSlices",
    "name": "Review each slice",
    "type": "bpmn:CallActivity",
+   "stepHref": "content-change-review-committee.html#step-Call_ReviewSlices",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     },
     {
-     "name": "review-comments"
+     "name": "review-comments",
+     "href": "../../../en/cat-harness/processes/skills/review-comments.html"
     }
    ],
    "calls": {
@@ -271,10 +289,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -289,7 +309,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -304,10 +325,13 @@
    "id": "Task_WithdrawComment",
    "name": "Withdraw a review comment",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_WithdrawComment",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "review-comments"
+     "name": "review-comments",
+     "href": "../../../en/cat-harness/processes/skills/review-comments.html"
     }
    ],
    "role": {
@@ -319,10 +343,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -337,7 +363,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -352,16 +379,16 @@
    "id": "Call_Adjudication",
    "name": "Adjudicate the disagreement",
    "type": "bpmn:CallActivity",
+   "stepHref": "content-change-review-committee.html#step-Call_Adjudication",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
      "name": "adjudication"
     }
    ],
    "calls": {
-    "name": "Adjudication",
-    "href": "adjudication.html",
-    "diagram": "adjudication.html"
+    "name": "Process_Adjudication"
    },
    "role": {
     "name": "reviewer",
@@ -372,10 +399,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -390,7 +419,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -405,10 +435,13 @@
    "id": "Task_ReviewUses",
    "name": "Review the editorial dependencies",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_ReviewUses",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "uses-editorial-review"
+     "name": "uses-editorial-review",
+     "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
     }
    ],
    "role": {
@@ -420,10 +453,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -438,7 +473,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -453,10 +489,13 @@
    "id": "Task_ReviewImpact",
    "name": "Review impact assessment",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_ReviewImpact",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -468,10 +507,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -486,7 +527,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -501,13 +543,17 @@
    "id": "Task_RequestChanges",
    "name": "Request changes",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_RequestChanges",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     },
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -519,10 +565,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -537,7 +585,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"
@@ -552,7 +601,9 @@
    "id": "Task_Approve",
    "name": "Approve",
    "type": "bpmn:Task",
+   "stepHref": "content-change-review-committee.html#step-Task_Approve",
    "lane": "Review Committee",
+   "laneHref": "content-change-review-committee.html#lane-Lane_Reviewer",
    "skills": [
     {
      "name": "decision-audit"
@@ -567,10 +618,12 @@
       "name": "adjudication"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
       "name": "decision-audit"
@@ -585,7 +638,8 @@
       "name": "staging-review"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "visual-diff"

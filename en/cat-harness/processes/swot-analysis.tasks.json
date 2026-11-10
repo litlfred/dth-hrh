@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "swot-analysis.html",
  "tasks": {
   "A_FrameSubject": {
    "id": "A_FrameSubject",
    "name": "Name the subject and the level",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_FrameSubject",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -110,10 +114,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -131,19 +137,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -152,7 +162,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -161,10 +172,13 @@
    "id": "A_ScanExternal",
    "name": "Scan the environment opportunities and threats",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_ScanExternal",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -179,10 +193,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -200,19 +216,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -221,7 +241,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -230,10 +251,13 @@
    "id": "A_ScanInternal",
    "name": "Scan the subject strengths and weaknesses",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_ScanInternal",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -248,10 +272,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -269,19 +295,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -290,7 +320,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -299,10 +330,13 @@
    "id": "A_GroupReview",
    "name": "Pool knowledge across participants",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_GroupReview",
    "lane": "Stakeholder",
+   "laneHref": "swot-analysis.html#lane-Lane_Stakeholder",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -322,10 +356,13 @@
    "id": "A_RecordAmbiguous",
    "name": "Record what did not classify cleanly",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_RecordAmbiguous",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -340,10 +377,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -361,19 +400,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -382,7 +425,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -391,10 +435,13 @@
    "id": "A_Cross",
    "name": "Cross the axes into SO, WO, ST, WT",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_Cross",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
      "name": "swot-analysis",
+     "href": "../../../en/cat-harness/processes/skills/swot-analysis.html",
      "methodologies": [
       {
        "name": "swot",
@@ -409,10 +456,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -430,19 +479,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -451,7 +504,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -460,10 +514,13 @@
    "id": "A_HandOff",
    "name": "Hand the candidates to a decision methodology",
    "type": "bpmn:Task",
+   "stepHref": "swot-analysis.html#step-A_HandOff",
    "lane": "Business analyst",
+   "laneHref": "swot-analysis.html#lane-Lane_BusinessAnalyst",
    "skills": [
     {
-     "name": "methodology-adoption"
+     "name": "methodology-adoption",
+     "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
     }
    ],
    "role": {
@@ -472,10 +529,12 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "crdm-impact-analysis"
@@ -493,19 +552,23 @@
       "name": "crdm-requirements-workflow"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
       "name": "decision-audit"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
       "name": "opening-brief"
@@ -514,7 +577,8 @@
       "name": "staging-review"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }

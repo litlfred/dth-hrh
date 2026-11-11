@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "**11.3 Metadata**",
   "text": "../sections/s058-11-3-metadata.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
   "provenance": "ingested"
 }

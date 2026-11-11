@@ -13,7 +13,7 @@
   "kind": "table",
   "label": "TWG instructions",
   "headers": [],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-glossary-2026-09-29",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-glossary-2026-09-29",
   "provenance": "ingested"
 }

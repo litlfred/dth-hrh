@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "**6.3 Data stewardship**",
   "text": "../sections/s032-6-3-data-stewardship.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
   "provenance": "ingested"
 }

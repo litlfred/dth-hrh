@@ -1,4 +1,4 @@
-**Data submission institution** — element 10 of the WHO 2015 minimum data set for a health workforce registry.
+**Data submission institution**: working definition, for working-group review.
 
 | Definition | Format | Mandatory | Source | Sensitivity | FHIR mapping |
 |---|---|---|---|---|---|

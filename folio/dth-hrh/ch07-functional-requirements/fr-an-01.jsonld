@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/freq-FR-AN-01",
@@ -25,7 +25,70 @@
       "requirementIdAssigned": "agent, when dth-hrh was set up from the outline (85a6ea7, 2026-10-14); not in the source"
     },
     "requirementId": "FR-AN-01",
-    "priority": "to-be-prioritized"
+    "priority": "to-be-prioritized",
+    "nhwaIndicators": {
+      "source": "who-iris library/9789240081291-eng (National health workforce accounts: a handbook, 2nd ed., 2023)",
+      "basis": "agent-proposed: the NHWA indicators on stock and distribution by age, sex and facility that this requirement's reports cover, for working-group review (dth-hrh#47)",
+      "indicators": [
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-023-01",
+          "number": "1-01",
+          "name": "Density of health workers per 10 000 population"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-024-01",
+          "number": "1-02",
+          "name": "Density of active health workers per 10 000 population at subnational level"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-025-01",
+          "number": "1-03",
+          "name": "Percentage of active health workers in different age groups"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-026-01",
+          "number": "1-04",
+          "name": "Percentage of active health workers by sex"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-027-01",
+          "number": "1-05",
+          "name": "Percentage of active health workers employed by facility ownership"
+        },
+        {
+          "iri": "https://litlfred.github.io/folio/library/9789240081291-eng/blocks/indicator-sec-028-01",
+          "number": "1-06",
+          "name": "Percentage of active health workers employed by facility type"
+        }
+      ]
+    },
+    "externalGlossaryReferences": {
+      "scheme": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015",
+      "schemeId": "hrhis-registry-2015",
+      "publisher": "who-iris glossary (who-iris#167)",
+      "role": "external, non-definitional: contributes to a definition, does not define it; this handbook's terms stay its own working definitions (owner, 2026-11-02 07:10Z)",
+      "basis": "agent-proposed by reading, for working-group review (dth-hrh#47)",
+      "concepts": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-006-04",
+          "id": "fr-sec-006-04"
+        },
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-037-02",
+          "id": "fr-sec-037-02"
+        },
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/fr-sec-038-05",
+          "id": "fr-sec-038-05"
+        }
+      ],
+      "systemTypes": [
+        {
+          "iri": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/health-workforce-registry",
+          "id": "health-workforce-registry"
+        }
+      ]
+    }
   },
   "provenance": "authored"
 }

@@ -1,4 +1,4 @@
-**Identification number** — element 1 of the WHO 2015 minimum data set for a health workforce registry.
+**Identification number**: working definition, for working-group review.
 
 | Definition | Format | Mandatory | Source | Sensitivity | FHIR mapping |
 |---|---|---|---|---|---|

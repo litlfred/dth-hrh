@@ -1,3 +1,4 @@
-- The WHO 2015 minimum data set as the starting point: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.
+- Working data elements, each with a working definition for working-group review: identification number, name, birth history, citizenship and language, address, contact information, professional licence and certification, employment status, employment address, and data submission institution.
 - Updates to consider: unique health worker identifier, more detail on education and qualifications, specialty, licence status and validity, place of practice linked to the facility registry, sector, and continuing professional development.
 - For each element: definition, format, whether mandatory, source and sensitivity.
+- Terms and definitions follow the TWG glossary (draft, 2026-09-29), the external source this handbook uses for agreed terms.

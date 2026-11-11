@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "**Chapter 11\\. Data Standards and Minimum Dataset**",
   "text": "../sections/s055-chapter-11-data-standards-and-minimum-dataset.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
   "provenance": "ingested"
 }

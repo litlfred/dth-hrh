@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "**Part 4\\. Examples and Resources**",
   "text": "../sections/s096-part-4-examples-and-resources.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-outline-2026-10-02/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-outline-2026-10-02",
   "provenance": "ingested"
 }

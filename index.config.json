@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
+          "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -137,8 +137,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
+              "evidence": "owner card tap 2026-11-11T10:37:11Z 'A: Merge and re-pin' on the card 'Fix the dth-hrh publish: merge core#742, then re-pin dth-hrh?'"
             }
           }
         }

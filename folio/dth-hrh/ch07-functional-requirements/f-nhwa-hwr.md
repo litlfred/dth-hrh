@@ -1,0 +1,3 @@
+![The health workforce registry and the National Health Workforce Accounts (NHWA): the registry view of the reference architecture with the NHWA work this handbook adds](media/nhwa-hwr.svg)
+
+*Source: the dth-hrh ArchiMate overlay 0.1.0-draft.1 on the smart-ra (DPI-H RA) model 0.2.0, view "Health workforce registry and NHWA (dth-hrh)", a copy of smart-ra view "1. Central Health Workforce Registry" with the NHWA elements added, drawn from the model by the `archimate-blocks` tool. The NHWA elements belong to this handbook's overlay, not to smart-ra. Agent-proposed, for working-group review (dth-hrh#47).*

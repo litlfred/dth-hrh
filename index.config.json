@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
+          "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +38,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
-              "evidence": "litlfred, 2026-10-31 21:01:15Z, decision card Q-IRIS1 in thread on dth-pc/dth-sc figures: 'A. Yes, merge on green' (merge who-iris#149, then re-pin dth-hrh#68 and dth-pc); window 20:59:38Z 'merge when green and ready +3hrs'. who-iris 7314adf = #149 (DIIG figure data); core, cat-harness and cat-harness-tools re-pinned to main together to avoid skew."
+              "on": "2026-11-11",
+              "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
+          "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -78,16 +78,17 @@
                 "smart-base-scenarios",
                 "smart-base-code-lists",
                 "smart-base-typologies",
-                "smart-base-validators"
+                "smart-base-validators",
+                "l1-extraction-9789240116191-eng"
               ]
             }
           },
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
-              "evidence": "Owner litlfred, 2026-10-16 (06:51Z): 'merge and repin window open 3 hrs'; re-pin to main after smart-base#93/#97 and folio-assistant-core#132 merged; main tip 07a4c1e (who-iris mount #224, CI #227 #229, schemas move #225, sidecars #198). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "on": "2026-11-11",
+              "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -98,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
+          "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -107,9 +108,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
-              "evidence": "Re-pin fhir-harness to its current main for dth-hrh (owner 2026-10-16: open a new window to fix the smart-base folder declaration, remove the expo cap, and re-pin); main tip 5545d6b (IG pages #214, CI #217 #221, direction #224, schemas move #215). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "on": "2026-11-11",
+              "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -120,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
+          "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -135,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "d95399b3940d71bc09e396b62878d25d0e2de265",
-              "evidence": "folio-assistant-core moved to main d95399b = #462 (shared DTH checks: folio-l1-coverage.ts and glossary-validate.ts, bean cysv). litlfred, 2026-11-01 09:26Z, thread 'Share DTH scripts and add dth init': chose 'A. Merge it now' (then repin core in the 5 DTH pull requests). Window: litlfred, 2026-11-01 07:27Z, '+3hrs merge + repin'."
+              "on": "2026-11-11",
+              "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -148,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "d9223fb780333c7dd179e0ad50734a0b144c3955",
+          "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -163,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "d9223fb780333c7dd179e0ad50734a0b144c3955",
-              "evidence": "litlfred, 2026-10-31 21:01:15Z, decision card Q-IRIS1 in thread on dth-pc/dth-sc figures: 'A. Yes, merge on green' (merge who-iris#149, then re-pin dth-hrh#68 and dth-pc); window 20:59:38Z 'merge when green and ready +3hrs'. who-iris 7314adf = #149 (DIIG figure data); core, cat-harness and cat-harness-tools re-pinned to main together to avoid skew."
+              "on": "2026-11-11",
+              "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -176,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6417b9dab87fdebf27775f79f31a59e1c79e43b8",
+          "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -188,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "6417b9dab87fdebf27775f79f31a59e1c79e43b8",
-              "evidence": "litlfred, 2026-10-31 21:43:07Z: '+3hrs merge+repin' (merge when green and re-pin until 00:43Z). cat-harness-tools 6417b9d = #1198 (kg:audit:check computes mounted test runs; fixes #1191)."
+              "on": "2026-11-11",
+              "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -201,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -210,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'; main tip 3ce2b5d (main, matches cat-harness-tools). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "on": "2026-11-11",
+              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -223,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -235,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'; main tip b7fb762 (main, exports importClosure that cat-harness-tools needs). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "on": "2026-11-08",
+              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -248,7 +249,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "6c60711bf241a9fe04755e29f2c00e0c2d58e46a",
+          "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -284,9 +285,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "6c60711bf241a9fe04755e29f2c00e0c2d58e46a",
-              "evidence": "litlfred, 2026-10-31 08:14Z, decision card in thread 'Finish dth-hrh issue 47': 'A. Wiring now (items 1-4)' (merge smart-ra#144 and #148, then one dth-hrh draft PR mounting smart-ra with glossary and ArchiMate links); plan option A for L2 DTHs on smart-ra, 2026-10-31 00:26Z, thread 'Prepare DTH ingests as L2 on smart-ra'. main tip 6c60711 = #148 (RA glossary as SKOS) on #144 (full-STAC glossary)."
+              "on": "2026-11-10",
+              "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
+              "evidence": "Owner litlfred, 2026-11-10 19:54:37Z, first-hand tap on decision card \"Bring the gutter fix to the DTH sites how?\" in thread \"Remove left gutter on DTH sites\" (cmsg_017WNUkNK8kdDziPK58Pv6G9A4FVReTMWQNcJHJWxMVMtd): \"B: every layer to main\" (re-pin dth-hrh, dth-sc, dth-phc to every layer main)."
             }
           }
         }

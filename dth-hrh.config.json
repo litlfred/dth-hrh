@@ -31,10 +31,13 @@
         "site:wg-comment",
         "site:library",
         "site:review-sheet",
-        "site:glossary"
+        "site:glossary",
+        "site:archimate",
+        "site:context"
       ],
       "siteSteps": [
-        "site:node-kinds"
+        "site:node-kinds",
+        "site:export"
       ],
       "pre": [
         "check:dth-glossary",
@@ -42,11 +45,8 @@
         "check:kg-blocks",
         "check:library-kg",
         "check:page-furniture"
-      ],
-      "keep": [
-        "ns"
       ]
     }
   },
-  "_site_comment": "`site.build.keep`: `ns`, the JSON-LD context at ns/context/v1.jsonld that the block KG nodes name (iriBase in dth-hrh.json); the root publish keeps it, as smart-ra's does."
+  "_site_comment": "`site:context` builds the JSON-LD context the KG nodes name (ns/context/v1.jsonld under iriBase) into the site, so it is published with it (cat-harness-tools#1052); nothing else writes it, so nothing is kept."
 }

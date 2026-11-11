@@ -27,5 +27,10 @@ export default chapter({
       label: "sec:glossary-councils",
       blocks: ["t-professional-council-examples"],
     }),
+    section({
+      title: "Data element terms",
+      label: "sec:glossary-data-elements",
+      blocks: ["t-data-element-terms"],
+    }),
   ],
 });

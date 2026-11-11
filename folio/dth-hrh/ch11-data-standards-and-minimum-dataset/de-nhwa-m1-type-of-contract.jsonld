@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/de-nhwa-m1-type-of-contract",
@@ -27,6 +27,12 @@
     "elementSet": "nhwa-m1",
     "supportsIndicators": [
       "1-12"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/type-of-contract",
+        "name": "Type of contract"
+      }
     ]
   },
   "provenance": "authored"

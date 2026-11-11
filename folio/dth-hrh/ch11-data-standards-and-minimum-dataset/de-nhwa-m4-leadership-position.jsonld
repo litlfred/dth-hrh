@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/de-nhwa-m4-leadership-position",
@@ -27,6 +27,12 @@
     "elementSet": "nhwa-m4",
     "supportsIndicators": [
       "4-03"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/leadership-position",
+        "name": "Leadership position"
+      }
     ]
   },
   "provenance": "authored"

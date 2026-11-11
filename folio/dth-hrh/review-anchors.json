@@ -990,6 +990,11 @@
    "chapter": "glossary"
   },
   {
+   "label": "sec:glossary-data-elements",
+   "title": "Data element terms",
+   "chapter": "glossary"
+  },
+  {
    "label": "sec:references-lead",
    "title": "References",
    "chapter": "references"
@@ -2786,8 +2791,8 @@
     "sec:11-1"
    ],
    "caption": "Core data elements (CDE-HRH), at a glance",
-   "hash": "afb4966b9434",
-   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Identification number]( de:cde-identification-number) — — to draft 2 [",
+   "hash": "d170a445cbcb",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Identification number]( de:cde-identification-number) — — To draft 2 [",
    "method": "folio-snapshot"
   },
   {
@@ -2955,7 +2960,7 @@
     "sec:11-2"
    ],
    "caption": "NHWA Module 1 (stock and flow) extension data elements, at a glance",
-   "hash": "0973ef655800",
+   "hash": "d050e21e677f",
    "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Activity level]( de:nhwa-m1-activity-level) 1-01 practising, professio",
    "method": "folio-snapshot"
   },
@@ -3353,7 +3358,7 @@
     "sec:11-4"
    ],
    "caption": "NHWA Module 3 (finance and expenditures) extension data elements, at a glance",
-   "hash": "c4e2e83b6ad6",
+   "hash": "63aaeb09bb59",
    "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Employer sector]( de:nhwa-m3-employer-sector) 3-01, 3-02 public, priva",
    "method": "folio-snapshot"
   },
@@ -3462,8 +3467,8 @@
     "sec:11-5"
    ],
    "caption": "NHWA Module 4 (working conditions, governance and leadership) extension data elements, at a glance",
-   "hash": "bf1ddf9eb382",
-   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Leadership position]( de:nhwa-m4-leadership-position) 4-03 — to draft",
+   "hash": "f66b29916ecf",
+   "excerpt": "Data element NHWA indicators Categories (NHWA handbook) Definition --- --- --- --- --- 1 [Leadership position]( de:nhwa-m4-leadership-position) 4-03 — Provision",
    "method": "folio-snapshot"
   },
   {
@@ -5520,6 +5525,19 @@
    "caption": "Professional councils and boards: statutory definitions and mandates (AI generated in the workbook, then fact-checked; see the Checked column)",
    "hash": "62593fb56220",
    "excerpt": "WHO region Country Council Regulates Statutory definition Mandate Reference Checked --- --- --- --- --- --- --- --- AFR Ghana Medical and Dental Council (MDC) G",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:glossary-data-element-terms",
+   "kind": "table",
+   "chapter": "glossary",
+   "root": "t-data-element-terms",
+   "sections": [
+    "sec:glossary-data-elements"
+   ],
+   "caption": "Data element terms: one per data element in chapter 11. Provisional definitions are quoted from the NHWA handbook, 2nd edition, for working-group review",
+   "hash": "780f727e6d8e",
+   "excerpt": "Term Description --- --- Identification number [Definition to draft] Name [Definition to draft] Birth history [Definition to draft] Sex Male or Female, based on",
    "method": "folio-snapshot"
   },
   {

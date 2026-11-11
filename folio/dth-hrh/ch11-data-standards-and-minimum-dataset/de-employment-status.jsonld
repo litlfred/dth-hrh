@@ -27,6 +27,12 @@
       "1-01",
       "1-09",
       "1-10"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/employment-status",
+        "name": "Employment status"
+      }
     ]
   },
   "provenance": "authored"

@@ -26,6 +26,12 @@
     "supportsIndicators": [
       "1-03",
       "1-07"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/birth-history",
+        "name": "Birth history"
+      }
     ]
   },
   "provenance": "authored"

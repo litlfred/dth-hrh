@@ -512,6 +512,10 @@ def write_chapter(folio_dir, concepts, order, links, councils, prior):
         + sec("Priority terms for TWG agreement", "sec:glossary-priority", blocks_priority)
         + sec("Health workforce terms", "sec:glossary-terms", blocks_general)
         + sec("Professional councils: country examples", "sec:glossary-councils", [tbl])
+        # Data element terms (dth-hrh#94): a hand-kept scheme, drawn as a table
+        # by core's glossary-table tool (glossary/glossary-tables.json).
+        + (sec("Data element terms", "sec:glossary-data-elements", ["t-data-element-terms"])
+           if (ch / "t-data-element-terms.ts").exists() else "")
         + "  ],\n});\n"
     )
 

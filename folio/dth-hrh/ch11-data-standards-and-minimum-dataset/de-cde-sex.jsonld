@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-hrh/blocks/de-cde-sex",
@@ -35,6 +35,12 @@
       "1-09",
       "1-10",
       "2-04"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/sex",
+        "name": "Sex"
+      }
     ]
   },
   "provenance": "authored"

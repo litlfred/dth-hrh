@@ -4,5 +4,5 @@ export default dataElement({
   label: "de:nhwa-m1-activity-level",
   title: "Activity level",
   uses: [],
-  meta: {"source": {"library": "who-iris:9789240081291-eng", "sections": ["sec-023-1-01-health-worker-density"], "method": "nhwa-indicator-disaggregation"}, "definitionStatus": "working", "glossarySource": "twg-glossary-2026-09-29", "elementSet": "nhwa-m1", "supportsIndicators": ["1-01"]},
+  meta: {"source": {"library": "who-iris:9789240081291-eng", "sections": ["sec-023-1-01-health-worker-density"], "method": "nhwa-indicator-disaggregation"}, "definitionStatus": "working", "glossarySource": "twg-glossary-2026-09-29", "elementSet": "nhwa-m1", "supportsIndicators": ["1-01"], "glossary": [{"iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/activity-level", "name": "Activity level"}]},
 });

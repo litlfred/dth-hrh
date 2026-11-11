@@ -5,7 +5,7 @@
       "@base": "https://litlfred.github.io/folio/"
     }
   ],
-  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/twg-glossary-2026-09-29/manifest.jsonld",
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/dth-hrh/source/twg-glossary-2026-09-29",
   "@type": [
     "cat-harness:SourceDocument"
   ],

@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
+          "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +38,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "c7590682c6eb17bb19e76bc7f4fb5cee23c22634",
-              "evidence": "litlfred, 2026-11-03 ~07:30Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (dth-hrh#100 to the same lower-layer mains as dth-hrh#88, including cat-harness-tools#1434)."
+              "on": "2026-11-11",
+              "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "cd5d1df72d44268730640703f89a934f72113558",
+          "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -86,9 +86,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "cd5d1df72d44268730640703f89a934f72113558",
-              "evidence": "litlfred, 2026-11-03 ~07:55Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'repin and merge all yours ready' (smart-base main after smart-base#299, the workplan link that check:subgraphs reported)."
+              "on": "2026-11-11",
+              "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "0953e31371536198f077f5907d71569b8393b65e",
+          "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -108,9 +108,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-04",
-              "ref": "0953e31371536198f077f5907d71569b8393b65e",
-              "evidence": "litlfred, 2026-11-04, Claude Code session session_01EucfRofg2aQdYRJcySHLzo: 'Repin and merge when needed and ready for the next 3 hours', choosing 'Re-pin all six'. fhir-harness main at fhir-harness#284 (docs QA)."
+              "on": "2026-11-11",
+              "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
+          "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-06",
-              "ref": "47a28691e8dd1fb0686ae9fff81259e9a0758165",
-              "evidence": "also do the reference.docx fix (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp; earlier: 'Both. Merge nd repins.as needed for green and ready')"
+              "on": "2026-11-11",
+              "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "febffc697f44096afc2c676f1e2afe64e252e927",
+          "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-04",
-              "ref": "febffc697f44096afc2c676f1e2afe64e252e927",
-              "evidence": "litlfred, 2026-11-04 ~20:35Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL: 'Try again' on dth-hrh#101 (backport approach): cat-harness 9d2a99b plus the archimate-check wording fix (cat-harness#1033) on claude/backport-archimate-wording-9d2a99b, so check:declaration-claims no longer reads the tool text as a declaration claim."
+              "on": "2026-11-11",
+              "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
+          "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-06",
-              "ref": "3c02503675eae67a04e4a0f76d3d4272dd4f3bbf",
-              "evidence": "Both.   Merge nd repins.as needed for  green and ready (owner, 2026-11-06, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "on": "2026-11-11",
+              "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -202,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
+          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -211,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "on": "2026-11-11",
+              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "aa25987a2e637838be02baf4ed239d58086551a3",
+          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -236,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "aa25987a2e637838be02baf4ed239d58086551a3",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "on": "2026-11-08",
+              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
             }
           }
         }
@@ -249,7 +249,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "8257473ee8fc4a57d7e139a80d76e38f73a81b40",
+          "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -285,9 +285,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-03",
-              "ref": "8257473ee8fc4a57d7e139a80d76e38f73a81b40",
-              "evidence": "litlfred, 2026-11-03 ~05:50Z, Claude Code session session_01EucfRmwpKymG3j2sPLyroL decision card on dth-hrh#100: 'Repin the lower layers in #100' (move every lower layer to its main so core d6bff48's slash-IRI namespaces (core 7953af7) meet layers that mint ns/; publish the PDF and offline .docx with the site)."
+              "on": "2026-11-10",
+              "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
+              "evidence": "Owner litlfred, 2026-11-10 19:54:37Z, first-hand tap on decision card \"Bring the gutter fix to the DTH sites how?\" in thread \"Remove left gutter on DTH sites\" (cmsg_017WNUkNK8kdDziPK58Pv6G9A4FVReTMWQNcJHJWxMVMtd): \"B: every layer to main\" (re-pin dth-hrh, dth-sc, dth-phc to every layer main)."
             }
           }
         }

@@ -84,9 +84,9 @@ for i in sorted(want, key=lambda i: (by_id[i].get(T), by_id[i].get("name") or ""
     is_base = i in base_by_id
     e = copy.deepcopy(base_by_id[i] if is_base else by_id[i])
     owned_f, base_f = folders[top_type[i]]
-    kind = "relationships" if "Relationship" in (e.get(T) or "") else "elements"
+    kind = "relationship" if "Relationship" in (e.get(T) or "") else "element"
     tag(e, [ET.Element("property", {"key": "overlay:base", "value":
-            f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/{kind}/{i}.jsonld"})] if is_base
+            f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/{kind}/{i}"})] if is_base
         else [ET.Element("property", {"key": "overlay:owner", "value": "dth-hrh"})])
     (base_f if is_base else owned_f).append(e)
     counts["base" if is_base else "owned"] += 1
@@ -103,7 +103,7 @@ docv.text = (f"smart-ra {base_ver} view \"{SOURCE_VIEW}\" with the NHWA work tha
 v.insert(0, docv)
 tag(v, [ET.Element("property", {"key": "overlay:owner", "value": "dth-hrh"}),
         ET.Element("property", {"key": "overlay:derived-from", "value":
-                   f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/views/{view.get('id')}.jsonld"})])
+                   f"https://litlfred.github.io/smart-ra/archimate/{base_ver}/view/{view.get('id')}"})])
 folders["diagrams"][0].append(v)
 # A second, banded view of the same items, drawn as a poster for the handbook's
 # figure (owner, 2026-11-01 20:32Z: "make view poster from model of the nhwa and

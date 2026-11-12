@@ -1371,6 +1371,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "fig:smart-guidelines-approach",
+   "kind": "figure",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "f-smart-guidelines-approach",
+   "sections": [
+    "sec:3-1"
+   ],
+   "caption": "WHO SMART Guidelines approach: L1–L5 knowledge layers and country adaptations (from the product catalogue handbook, Fig. 5, adapted from WHO SMART Guidelines)",
+   "hash": "bf5690b96bc9",
+   "excerpt": "Source: WHO Digital transformation handbook for health product catalogue, 2025, Fig. 5 (p. 14), adapted from WHO SMART Guidelines (Mehl et al., 2021). Generated",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "tbl:ch03-diig-mapping",
    "kind": "table",
    "chapter": "ch03-digital-transformation-approach",

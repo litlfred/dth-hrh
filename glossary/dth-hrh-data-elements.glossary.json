@@ -11,25 +11,44 @@
       "id": "identification-number",
       "prefLabel": "Identification number",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-identification-number: core data element (CDE-HRH, section 11.1).",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-identification-number: core data element (CDE-HRH, section 11.1). Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-01",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-identification-number"
+      ],
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-date"
+      ]
     },
     {
       "id": "name",
       "prefLabel": "Name",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-name: core data element (CDE-HRH, section 11.1).",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-name: core data element (CDE-HRH, section 11.1). Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-02",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-full-name"
+      ]
     },
     {
       "id": "birth-history",
       "prefLabel": "Birth history",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-birth-history: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-07.",
+      "scopeNote": "Data element de:cde-birth-history: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-07. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/place-of-birth"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/place-of-birth",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-date",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-country"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-03"
+      ],
+      "narrowMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-photograph"
+      ]
     },
     {
       "id": "sex",
@@ -37,32 +56,62 @@
       "definition": "Male or Female, based on physical characteristics observed at birth.",
       "editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "closeMatch": [
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/sex"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/sex",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-sex-at-birth"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=106",
-      "scopeNote": "Data element de:cde-sex: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-04, 1-09, 1-10, 2-04.",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-sex: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-03, 1-04, 1-09, 1-10, 2-04. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-03"
+      ]
     },
     {
       "id": "citizenship-and-language",
       "prefLabel": "Citizenship and language",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-citizenship-and-language: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-07.",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-citizenship-and-language: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-07. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-04"
+      ],
+      "narrowMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-language"
+      ],
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-country"
+      ]
     },
     {
       "id": "address",
       "prefLabel": "Address",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-address: core data element (CDE-HRH, section 11.1).",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-address: core data element (CDE-HRH, section 11.1). Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-05",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-address-physical"
+      ],
+      "narrowMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-postal-code"
+      ],
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-country"
+      ]
     },
     {
       "id": "contact-information",
       "prefLabel": "Contact information",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-contact-information: core data element (CDE-HRH, section 11.1).",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-contact-information: core data element (CDE-HRH, section 11.1). Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-06"
+      ],
+      "narrowMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-telephone-number",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-address-electronic-mail"
+      ]
     },
     {
       "id": "occupation",
@@ -70,52 +119,80 @@
       "definition": "The concept of occupation is defined as a “set of jobs whose main tasks and duties are characterized by a high degree of similarity”. A job is defined as “a set of tasks and duties performed, or meant to be performed, by one person, including for an employer or in self-employment”. The National Health Workforce Accounts covers health and health-related occupations grouped according to the International Standard Classification of Occupations 2008.",
       "editorialNote": "Provisional definition, NHWA handbook 2nd ed.",
       "closeMatch": [
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/occupation"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/occupation",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-occupational-category"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=106",
-      "scopeNote": "Data element de:cde-occupation: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 3-02.",
+      "scopeNote": "Data element de:cde-occupation: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-02, 1-03, 1-04, 1-05, 1-06, 1-07, 1-08, 1-09, 1-10, 1-12, 3-02. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/occupation",
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-standard-classification-of-occupations"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-title"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-08"
+      ]
     },
     {
       "id": "professional-licence-and-certification",
       "prefLabel": "Professional licence and certification",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-professional-licence-and-certification: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01.",
+      "scopeNote": "Data element de:cde-professional-licence-and-certification: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/licensing",
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/certification",
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/registration"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/registration",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-disciplinary-action",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-education"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-07",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-license-registration-and-certification"
+      ]
     },
     {
       "id": "employment-status",
       "prefLabel": "Employment status",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-employment-status: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-09, 1-10.",
+      "scopeNote": "Data element de:cde-employment-status: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-01, 1-09, 1-10. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/employment-status-full-time-part-time-temporary-permanent",
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/status-in-employment"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/status-in-employment",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-title"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-status"
+      ],
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-08"
+      ]
     },
     {
       "id": "employment-address",
       "prefLabel": "Employment address",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-employment-address: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-02, 1-05, 1-06.",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-employment-address: core data element (CDE-HRH, section 11.1). NHWA indicators: 1-02, 1-05, 1-06. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-09"
+      ],
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-address-physical",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-gps-coordinates"
+      ]
     },
     {
       "id": "data-submission-institution",
       "prefLabel": "Data submission institution",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:cde-data-submission-institution: core data element (CDE-HRH, section 11.1).",
-      "status": "candidate"
+      "scopeNote": "Data element de:cde-data-submission-institution: core data element (CDE-HRH, section 11.1). Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-10"
+      ]
     },
     {
       "id": "activity-level",
@@ -126,10 +203,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/activity-level"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=102",
-      "scopeNote": "Data element de:nhwa-m1-activity-level: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-01.",
+      "scopeNote": "Data element de:nhwa-m1-activity-level: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-01. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/activity-level",
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/active-health-worker"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/active-health-worker",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-status"
       ],
       "status": "candidate"
     },
@@ -142,9 +220,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/subnational-level"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=107",
-      "scopeNote": "Data element de:nhwa-m1-subnational-unit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-02.",
+      "scopeNote": "Data element de:nhwa-m1-subnational-unit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-02. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/distribution"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/distribution",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-gps-coordinates",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-address-physical"
       ],
       "status": "candidate"
     },
@@ -157,8 +237,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/facility-institution-ownership-type"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=104",
-      "scopeNote": "Data element de:nhwa-m1-facility-ownership: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-05.",
-      "status": "candidate"
+      "scopeNote": "Data element de:nhwa-m1-facility-ownership: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-05. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-facility-type-and-ownership"
+      ]
     },
     {
       "id": "facility-type",
@@ -169,8 +252,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/facility-type"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=103",
-      "scopeNote": "Data element de:nhwa-m1-facility-type: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-06.",
-      "status": "candidate"
+      "scopeNote": "Data element de:nhwa-m1-facility-type: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-06. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-facility-type-and-ownership"
+      ]
     },
     {
       "id": "place-of-training",
@@ -181,9 +267,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/place-of-training"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=106",
-      "scopeNote": "Data element de:nhwa-m1-place-of-training: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-08, 1-09.",
+      "scopeNote": "Data element de:nhwa-m1-place-of-training: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-08, 1-09. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/place-of-training"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/place-of-training",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-education",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-country"
       ],
       "status": "candidate"
     },
@@ -191,10 +279,11 @@
       "id": "date-of-entry-into-the-active-workforce",
       "prefLabel": "Date of entry into the active workforce",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:nhwa-m1-entry-date: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-09.",
+      "scopeNote": "Data element de:nhwa-m1-entry-date: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-09. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/mobility-flow",
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/newly-active-health-worker"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/newly-active-health-worker",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-status"
       ],
       "status": "candidate"
     },
@@ -202,10 +291,12 @@
       "id": "date-and-type-of-exit-from-the-active-workforce",
       "prefLabel": "Date and type of exit from the active workforce",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:nhwa-m1-exit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-10.",
+      "scopeNote": "Data element de:nhwa-m1-exit: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-10. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/attrition",
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/mobility-flow"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/mobility-flow",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-status",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-date"
       ],
       "status": "candidate"
     },
@@ -218,9 +309,10 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/contract-type"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=102",
-      "scopeNote": "Data element de:nhwa-m1-type-of-contract: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-12.",
+      "scopeNote": "Data element de:nhwa-m1-type-of-contract: NHWA Module 1 extension (section 11.2). NHWA indicators: 1-12. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/contract-type"
+        "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/contract-type",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-status"
       ],
       "status": "candidate"
     },
@@ -228,26 +320,33 @@
       "id": "qualification-and-education-programme",
       "prefLabel": "Qualification and education programme",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:nhwa-m2-qualification: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04.",
+      "scopeNote": "Data element de:nhwa-m2-qualification: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/qualification",
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/health-workforce-education-and-training-programme",
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/graduate"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/graduate",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/mds-07"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "closeMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-education"
+      ]
     },
     {
       "id": "training-institution-and-year-of-graduation",
       "prefLabel": "Training institution and year of graduation",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:nhwa-m2-training-institution: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04.",
+      "scopeNote": "Data element de:nhwa-m2-training-institution: NHWA Module 2 extension (section 11.3). NHWA indicators: 2-04. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/education-and-training-institution",
         "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/educational-institution",
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/health-workforce-education-and-training-institution",
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/graduate"
       ],
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-education"
+      ]
     },
     {
       "id": "employer-sector",
@@ -258,16 +357,20 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/institutional-sector"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=105",
-      "scopeNote": "Data element de:nhwa-m3-employer-sector: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-01, 3-02.",
-      "status": "candidate"
+      "scopeNote": "Data element de:nhwa-m3-employer-sector: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-01, 3-02. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-facility-type-and-ownership"
+      ]
     },
     {
       "id": "salary-grade-at-entry",
       "prefLabel": "Salary grade at entry",
       "editorialNote": "Definition to draft",
-      "scopeNote": "Data element de:nhwa-m3-entry-salary-grade: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-02.",
+      "scopeNote": "Data element de:nhwa-m3-entry-salary-grade: NHWA Module 3 extension (section 11.4). NHWA indicators: 3-02. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
       "related": [
-        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/wage-and-salary"
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/wage-and-salary",
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-title"
       ],
       "status": "candidate"
     },
@@ -280,8 +383,11 @@
         "https://litlfred.github.io/who-iris/v0/ns/glossary/nhwa-2023/leadership-role"
       ],
       "source": "uploads/9789240081291-eng/9789240081291-eng.pdf#page=105",
-      "scopeNote": "Data element de:nhwa-m4-leadership-position: NHWA Module 4 extension (section 11.5). NHWA indicators: 4-03.",
-      "status": "candidate"
+      "scopeNote": "Data element de:nhwa-m4-leadership-position: NHWA Module 4 extension (section 11.5). NHWA indicators: 4-03. Links to the WHO 2015 MDS (hrhis-registry-2015) are cross-references only: the 2015 MDS is not the basis of this data element.",
+      "status": "candidate",
+      "related": [
+        "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/data-element-employment-title"
+      ]
     }
   ]
 }

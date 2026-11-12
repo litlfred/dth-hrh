@@ -6,6 +6,7 @@ export default prose({
   // The References chapter's entries, in chapter order, as KG reference nodes (references/<key>.json).
   // The chapter's .md is generated from them: `bun run cat references:render --instance .` (meta.referenceList).
   cites: [
+    "who-hrhis-mds-2015",
     "who-workforce-2030-2016",
     "9789240081291-eng",
     "who-global-code-recruitment-2010",

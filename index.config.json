@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
+          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -108,9 +108,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
+          "ref": "19208f3f878ce4debc05c33d20f8019844002df4",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "50422b586b1fa239ab199a89e27e587bd7ee1550",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "19208f3f878ce4debc05c33d20f8019844002df4",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
+          "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
+          "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -202,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+          "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -211,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+          "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -236,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-08",
-              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
-              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
+              "on": "2026-11-12",
+              "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
+              "evidence": "litlfred, 2026-11-12: Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C), owner 'fix reds'; re-pin platform layers so check:dth-glossary accepts the slash ArchiMate IRIs this PR introduces (core#764). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }

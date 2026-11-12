@@ -23,6 +23,17 @@ LA  - es
 ER  - 
 
 TY  - GEN
+ID  - 10665-279506
+AU  - Asamblea Mundial de la Salud, 71
+TI  - Salud digital
+PY  - 2018
+DA  - 2018/12/31
+PB  - Organización Mundial de la Salud
+UR  - https://iris.who.int/handle/10665/279506
+LA  - es
+ER  - 
+
+TY  - GEN
 ID  - 10665-83270
 AU  - Assemblée mondiale de la Santé, 52
 TI  - Tables rondes : enseignements tirés en matière de santé mondiale : Rapport du Secrétariat
@@ -30,6 +41,17 @@ PY  - 1999
 DA  - 1999/12/31
 PB  - Organisation mondiale de la Santé
 UR  - https://iris.who.int/handle/10665/83270
+LA  - fr
+ER  - 
+
+TY  - GEN
+ID  - 10665-279507
+AU  - Assemblée mondiale de la Santé, 71
+TI  - Santé numérique
+PY  - 2018
+DA  - 2018/12/31
+PB  - Organisation mondiale de la Santé
+UR  - https://iris.who.int/handle/10665/279507
 LA  - fr
 ER  - 
 
@@ -56,6 +78,24 @@ DA  - 1972/12/31
 PB  - Organisation mondiale de la santé
 UR  - https://iris.who.int/handle/10665/67518
 LA  - Français
+ER  - 
+
+TY  - GEN
+ID  - 10665-44118-ara
+TI  - Casebook on ethical issues in international health research / edited by Richard Cash [... et al]
+DA  - D:20130710
+ER  - 
+
+TY  - GEN
+ID  - 10665-44118-chi
+TI  - Casebook on ethical issues in international health research / edited by Richard Cash [... et al]
+DA  - D:20160817
+ER  - 
+
+TY  - GEN
+ID  - 10665-44118-rus
+TI  - Casebook on ethical issues in international health research / edited by Richard Cash [... et al]
+DA  - D:20120503
 ER  - 
 
 TY  - BOOK
@@ -110,6 +150,13 @@ DA  - 1952/12/31
 PB  - Organisation mondiale de la santé
 UR  - https://iris.who.int/handle/10665/266214
 LA  - fr
+ER  - 
+
+TY  - GEN
+ID  - 10665-329964-rus
+AU  - Com, L'IV
+TI  - WHO recommends social network-based HIV testing approaches for key populations as part of partner services package: policy brief
+DA  - D:20200824
 ER  - 
 
 TY  - GEN
@@ -197,6 +244,13 @@ DA  - 2026
 ER  - 
 
 TY  - GEN
+ID  - 10665-94830-per
+AU  - Edition, Corporate
+TI  - WHO guidelines for screening and treatment of precancerous lesions for cervical cancer prevention
+DA  - D:20150117
+ER  - 
+
+TY  - GEN
 ID  - 10665-20231
 AU  - Executive Board 115
 TI  - Global smallpox vaccine reserve: report by the Secretariat
@@ -241,6 +295,13 @@ LA  - en
 ER  - 
 
 TY  - GEN
+ID  - 10665-273155-por
+AU  - EXPOSTAS, ARV EM CRIANÇAS
+TI  - HIV diagnosis and ARV use in HIV-exposed infants: a programmatic update
+DA  - D:20200303
+ER  - 
+
+TY  - GEN
 ID  - hl7-2023-fhir-r5-testplan
 TI  - FHIR R5 (5.0.0) — TestPlan resource
 PY  - 2023
@@ -267,6 +328,24 @@ PB  - Organisation mondiale de la Santé
 SN  - 9242591173
 UR  - https://iris.who.int/handle/10665/42988
 LA  - ru
+ER  - 
+
+TY  - GEN
+ID  - 10665-344249-ara
+TI  - Global strategy on digital health 2020-2025
+DA  - D:20210818
+ER  - 
+
+TY  - GEN
+ID  - 10665-344249-chi
+TI  - Global strategy on digital health 2020-2025
+DA  - D:20210701
+ER  - 
+
+TY  - GEN
+ID  - 10665-344249-rus
+TI  - Global strategy on digital health 2020-2025
+DA  - D:20210702
 ER  - 
 
 TY  - GEN
@@ -297,6 +376,18 @@ PY  - 2002
 DA  - 2002/12/31
 UR  - https://iris.who.int/handle/10665/72254
 LA  - fr
+ER  - 
+
+TY  - GEN
+ID  - 10665-66977-ara
+TI  - Hepatitis B immunization : introducing hepatitis B vaccine into national immunization services
+DA  - D:19101120
+ER  - 
+
+TY  - GEN
+ID  - 10665-66977-rus
+TI  - Hepatitis B immunization : introducing hepatitis B vaccine into national immunization services
+DA  - D:19101120
 ER  - 
 
 TY  - GEN
@@ -421,6 +512,18 @@ LA  - fr
 ER  - 
 
 TY  - GEN
+ID  - 10665-75211-ara
+TI  - National eHealth strategy toolkit
+DA  - D:20140618
+ER  - 
+
+TY  - GEN
+ID  - 10665-75211-rus
+TI  - National eHealth strategy toolkit
+DA  - D:20150331
+ER  - 
+
+TY  - GEN
 ID  - mehl-2021-who-smart-guidelines
 AU  - Online, Published
 TI  - WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age
@@ -461,6 +564,57 @@ UR  - https://iris.who.int/handle/10665/331629
 LA  - fr
 ER  - 
 
+TY  - BOOK
+ID  - 10665-344250
+AU  - Organisation mondiale de la Santé
+TI  - Stratégie mondiale pour la santé numérique 2020-2025
+PY  - 2021
+DA  - 2021/08/18
+PB  - Organisation mondiale de la Santé
+SN  - 9789240027558 (version électronique)
+UR  - https://iris.who.int/handle/10665/344250
+LA  - fr
+AB  - La Stratégie mondiale pour la santé numérique 2020–2025 fournit un cadre destiné à aider les États Membres à renforcer leurs systèmes de santé grâce à l’adoption et à l’utilisation appropriées des technologies numériques. Élaborée en réponse aux mandats de l’Assemblée mondiale de la Santé et alignée sur les Objectifs de développement durable ainsi que sur les objectifs du « Triple milliard » de l’OMS, cette stratégie présente une vision commune visant à améliorer la santé et le bien-être au moyen de solutions de santé numérique accessibles, abordables, sûres et durables. Elle souligne l’importance d’une gouvernance solide, de l’interopérabilité, de l’utilisation éthique des données, de la protection de la vie privée, du renforcement des capacités des personnels de santé et des investissements dans les infrastructures numériques afin de soutenir les priorités nationales de santé et la couverture sanitaire universelle. Le document définit quatre objectifs stratégiques : promouvoir la collaboration mondiale et le partage des connaissances ; faire progresser la mise en œuvre des stratégies nationales de santé numérique ; renforcer la gouvernance de la santé numérique aux niveaux mondial, régional et national ; et promouvoir des systèmes de santé centrés sur les personnes grâce aux technologies numériques. Il présente également des principes directeurs, un cadre de mise en œuvre et des mécanismes de suivi destinés à soutenir les pays dans le développement d’écosystèmes numériques interopérables. Une attention particulière est accordée aux obstacles rencontrés par les pays à revenu faible ou intermédiaire et à la nécessité de veiller à ce que la transformation numérique contribue à des systèmes de santé plus équitables, efficaces et résilients.
+ER  - 
+
+TY  - BOOK
+ID  - 10665-353150
+AU  - Organisation mondiale de la Santé
+TI  - Guide d’investissement pour la mise en oeuvre numérique (DIIG) : intégrer les interventions numériques dans les programmes de santé
+PY  - 2022
+DA  - 2022/04/14
+PB  - Organisation mondiale de la Santé
+SN  - 9789240047556 (version électronique)
+UR  - https://iris.who.int/handle/10665/353150
+LA  - fr
+ER  - 
+
+TY  - BOOK
+ID  - 10665-354400
+AU  - Organisation mondiale de la Santé
+TI  - Lignes directrices de l'OMS : recommandations sur les interventions numériques pour le renforcement des systèmes de santé
+PY  - 2022
+DA  - 2022/05/19
+PB  - Organisation mondiale de la Santé
+SN  - 9789240046641 (version électronique)
+UR  - https://iris.who.int/handle/10665/354400
+LA  - fr
+AB  - Ces lignes directrices de l’OMS présentent des recommandations fondées sur des données probantes concernant l’utilisation des interventions numériques pour renforcer les systèmes de santé et soutenir les progrès vers la couverture sanitaire universelle (CSU). Élaborées en réponse à l’adoption croissante des technologies numériques et à la résolution sur la santé numérique approuvée par l’Assemblée mondiale de la Santé en 2018, elles répondent à la nécessité d’évaluer rigoureusement les interventions de santé numérique afin que les investissements reposent sur des données probantes relatives à leurs avantages, leurs inconvénients, leur acceptabilité, leur faisabilité, leurs implications en matière de ressources et les considérations d’équité. Les lignes directrices soulignent que les technologies numériques doivent compléter, et non remplacer, les composantes fondamentales de systèmes de santé performants. Les recommandations portent sur un ensemble prioritaire d’interventions de santé numérique, principalement accessibles au moyen d’appareils mobiles, notamment la notification des naissances et des décès, la notification des stocks et la gestion des produits de base, la télémédecine entre client et prestataire ainsi qu’entre prestataires, la communication ciblée avec les clients, le suivi numérique de l’état de santé et des services reçus, les outils d’aide à la décision destinés aux professionnels de santé et l’apprentissage numérique. Les lignes directrices présentent également des considérations relatives à la mise en œuvre, recensent les principales lacunes en matière de recherche et visent à aider les ministères de la santé, les responsables des politiques de santé, les professionnels de santé, les partenaires du développement et les autres parties prenantes à prendre des décisions éclairées concernant l’adoption, le déploiement à grande échelle et l’institutionnalisation des interventions de santé numérique efficaces.
+ER  - 
+
+TY  - BOOK
+ID  - 10665-378873
+AU  - Organisation mondiale de la Santé
+TI  - Classification des interventions, des services et des applications numériques dans le domaine de la santé : un langage commun pour décrire les diverses utilisations de la technologie numérique dans le domaine de la santé
+PY  - 2024
+DA  - 2024/09/12
+PB  - Organisation mondiale de la Santé
+SN  - 9789240093720 (version électronique)
+UR  - https://iris.who.int/handle/10665/378873
+LA  - fr
+AB  - Cette deuxième édition de la Classification des interventions, services et applications numériques en santé présente une taxonomie normalisée permettant de décrire la manière dont les technologies numériques sont utilisées pour répondre aux besoins des individus et des systèmes de santé. Élaborée par l’OMS, cette classification établit un langage commun destiné à faciliter la communication entre les décideurs, les responsables de programmes de santé, les chercheurs, les responsables de mise en œuvre, les développeurs de technologies et les autres acteurs du domaine de la santé numérique. Elle organise les interventions numériques en santé autour de capacités technologiques distinctes conçues pour répondre à des défis des systèmes de santé et relie ces interventions aux services et types d’applications numériques qui les mettent en œuvre. La publication met à jour et élargit la première édition publiée en 2018 afin de refléter les progrès des technologies de santé numérique, l’évolution des pratiques de mise en œuvre et les enseignements tirés de leur utilisation à l’échelle mondiale. Le cadre est structuré autour de trois axes interconnectés : les défis des systèmes de santé, les interventions numériques en santé et les services et types d’applications numériques. Il comprend des interventions destinées aux personnes, aux prestataires de soins, aux gestionnaires des systèmes de santé et aux services de données, ainsi que des catégories d’applications numériques et de systèmes d’information. Cette classification vise à soutenir la planification, la mise en œuvre, l’analyse des investissements, la recherche, l’interopérabilité, l’élaboration des politiques et la gouvernance des initiatives de santé numérique.
+ER  - 
+
 TY  - RPRT
 ID  - 10665-387553
 AU  - Organisation mondiale de la Santé. Bureau régional de la Méditerranée orientale
@@ -470,6 +624,19 @@ DA  - 2026/09/15
 PB  - Organisation mondiale de la Santé. Bureau régional de la Méditerranée orientale
 UR  - https://iris.who.int/handle/10665/387553
 LA  - fr
+ER  - 
+
+TY  - BOOK
+ID  - 10665-344251
+AU  - Organización Mundial de la Salud
+TI  - Estrategia mundial sobre salud digital 2020–2025
+PY  - 2021
+DA  - 2021/08/18
+PB  - Organización Mundial de la Salud
+SN  - 9789240027572 (versión electrónica)
+UR  - https://iris.who.int/handle/10665/344251
+LA  - es
+AB  - La Estrategia mundial sobre salud digital 2020–2025 proporciona un marco para apoyar a los Estados Miembros en el fortalecimiento de los sistemas de salud mediante la adopción y el uso adecuados de las tecnologías digitales. Elaborada en respuesta a los mandatos de la Asamblea Mundial de la Salud y alineada con los Objetivos de Desarrollo Sostenible y las metas de los “Tres Mil Millones” de la OMS, la estrategia establece una visión compartida para mejorar la salud y el bienestar a través de soluciones de salud digital accesibles, asequibles, seguras y sostenibles. Destaca la importancia de una gobernanza sólida, la interoperabilidad, el uso ético de los datos, la protección de la privacidad, el fortalecimiento de las capacidades del personal sanitario y la inversión en infraestructura digital para apoyar las prioridades nacionales de salud y la cobertura sanitaria universal. El documento define cuatro objetivos estratégicos: promover la colaboración mundial y el intercambio de conocimientos; avanzar en la implementación de estrategias nacionales de salud digital; fortalecer la gobernanza de la salud digital a nivel mundial, regional y nacional; y fomentar sistemas de salud centrados en las personas mediante el uso de tecnologías digitales. Asimismo, presenta principios rectores, un marco de implementación y mecanismos de seguimiento destinados a apoyar a los países en el desarrollo de ecosistemas de salud digital interoperables. Se presta especial atención a los obstáculos que enfrentan los países de ingresos bajos y medianos y a garantizar que la transformación digital contribuya a sistemas de salud más equitativos, eficaces y resilientes.
 ER  - 
 
 TY  - RPRT
@@ -492,6 +659,86 @@ DA  - 2021/01/25
 PB  - Organización Mundial de la Salud
 UR  - https://iris.who.int/handle/10665/338849
 LA  - es
+ER  - 
+
+TY  - BOOK
+ID  - 10665-354399
+AU  - Organización Mundial de la Salud
+TI  - Directriz de la OMS: recomendaciones sobre intervenciones digitales para fortalecer los sistemas de salud
+PY  - 2022
+DA  - 2022/05/19
+PB  - Organización Mundial de la Salud
+SN  - 9789240046993 (versión electrónica)
+UR  - https://iris.who.int/handle/10665/354399
+LA  - es
+AB  - Este documento presenta las recomendaciones de la OMS, basadas en la evidencia, sobre el uso de intervenciones digitales para fortalecer los sistemas de salud y apoyar el avance hacia la cobertura sanitaria universal (CSU). Elaborada en respuesta a la creciente adopción de las tecnologías digitales y a la resolución sobre salud digital aprobada por la Asamblea Mundial de la Salud en 2018, la directriz aborda la necesidad de evaluar rigurosamente las intervenciones de salud digital para garantizar que las inversiones se fundamenten en evidencia sobre sus beneficios, riesgos, aceptabilidad, factibilidad, implicaciones en materia de recursos y consideraciones de equidad. Asimismo, subraya que las tecnologías digitales deben complementar, y no sustituir, los componentes fundamentales de unos sistemas de salud sólidos y eficaces. Las recomendaciones se centran en un conjunto priorizado de intervenciones de salud digital accesibles, como mínimo, mediante dispositivos móviles, entre ellas la notificación de nacimientos y defunciones, la notificación de existencias y la gestión de suministros, la telemedicina entre pacientes y profesionales y entre profesionales, la comunicación dirigida a los pacientes, el seguimiento digital del estado de salud y de los servicios recibidos, las herramientas de apoyo a la toma de decisiones para el personal sanitario y el aprendizaje digital para los trabajadores de la salud. La directriz también presenta consideraciones para la implementación, identifica las principales lagunas de investigación y proporciona orientación a los ministerios de salud, los responsables de salud pública, los asociados para el desarrollo y otras partes interesadas para adoptar, ampliar e institucionalizar intervenciones de salud digital eficaces sobre la base de la mejor evidencia disponible.
+ER  - 
+
+TY  - BOOK
+ID  - 10665-353151
+AU  - Organización Mundial de la Salud
+TI  - Guía para la inversión en la implementación digital (DIIG): incorporación de intervenciones digitales en los programas de salud
+PY  - 2022
+DA  - 2022/04/14
+PB  - Organización Mundial de la Salud
+SN  - 9789240047570 (versión electrónica)
+UR  - https://iris.who.int/handle/10665/353151
+LA  - es
+ER  - 
+
+TY  - BOOK
+ID  - 10665-379033
+AU  - Organización Mundial de la Salud
+TI  - Clasificación de intervenciones, servicios y aplicaciones digitales en salud: un lenguaje compartido para describir los usos de la tecnología digital para la salud
+PY  - 2024
+DA  - 2024/09/24
+PB  - Organización Mundial de la Salud
+SN  - 9789240093744 (versión electrónica)
+UR  - https://iris.who.int/handle/10665/379033
+LA  - es
+AB  - Esta segunda edición de la Clasificación de intervenciones, servicios y aplicaciones digitales en salud proporciona una taxonomía normalizada para describir cómo se utilizan las tecnologías digitales para responder a las necesidades de las personas y de los sistemas de salud. Desarrollada por la OMS, la clasificación establece un lenguaje común destinado a facilitar la comunicación entre responsables de la formulación de políticas, gestores de programas de salud, investigadores, implementadores, desarrolladores tecnológicos y otras partes interesadas en la salud digital. Organiza las intervenciones de salud digital en torno a capacidades tecnológicas específicas diseñadas para abordar desafíos de los sistemas de salud y las vincula con los servicios digitales y los tipos de aplicaciones mediante los cuales se prestan. La publicación actualiza y amplía la primera edición, publicada en 2018, para reflejar los avances en las tecnologías de salud digital, la evolución de las prácticas de implementación y las lecciones aprendidas a partir de su utilización a nivel mundial. El marco se estructura en torno a tres ejes interrelacionados: los desafíos de los sistemas de salud, las intervenciones de salud digital y los tipos de servicios y aplicaciones digitales. Incluye intervenciones dirigidas a las personas, los proveedores de atención sanitaria, los gestores de sistemas de salud y los servicios de datos, junto con categorías de aplicaciones digitales y sistemas de información. La clasificación está concebida para apoyar la planificación, la implementación, el análisis de inversiones, la investigación, las consideraciones de interoperabilidad, la elaboración de políticas y la gobernanza de las iniciativas de salud digital, facilitando así un uso más coherente y eficaz de las tecnologías digitales en los sistemas de salud.
+ER  - 
+
+TY  - GEN
+ID  - 10665-75211-por
+TI  - Pacote de Ferramentas da Estratégia Nacional de eSaúde
+DA  - D:20140729
+ER  - 
+
+TY  - GEN
+ID  - 10665-44796-ara
+TI  - Pandemic influenza preparedness framework for the sharing of influenza viruses and access to vaccines and other benefits
+DA  - D:20120529
+ER  - 
+
+TY  - GEN
+ID  - 10665-44796-chi
+TI  - Pandemic influenza preparedness framework for the sharing of influenza viruses and access to vaccines and other benefits
+DA  - D:20120507
+ER  - 
+
+TY  - GEN
+ID  - 10665-44796-rus
+TI  - Pandemic influenza preparedness framework for the sharing of influenza viruses and access to vaccines and other benefits
+DA  - D:20120427
+ER  - 
+
+TY  - GEN
+ID  - 10665-69384-ara
+TI  - Preparing for the introduction of HPV vaccines : policy and programme guidance for countries
+DA  - D:20070426
+ER  - 
+
+TY  - GEN
+ID  - 10665-69384-chi
+TI  - Preparing for the introduction of HPV vaccines : policy and programme guidance for countries
+DA  - D:20100326
+ER  - 
+
+TY  - GEN
+ID  - 10665-69384-rus
+TI  - Preparing for the introduction of HPV vaccines : policy and programme guidance for countries
+DA  - D:20070423
 ER  - 
 
 TY  - RPRT
@@ -533,6 +780,14 @@ PY  - 1999
 DA  - 1999/12/31
 UR  - https://iris.who.int/handle/10665/57150
 LA  - en
+ER  - 
+
+TY  - GEN
+ID  - 10665-196326-chi
+AU  - Research, surveillance
+AU  - care, patient
+TI  - Ethics in epidemics, emergencies and disasters: research, surveillance and patient care: training manual
+DA  - D:20180904
 ER  - 
 
 TY  - GEN
@@ -599,6 +854,13 @@ UR  - https://iris.who.int/handle/10665/47160
 ER  - 
 
 TY  - GEN
+ID  - 10665-66977-chi
+AU  - TRA
+TI  - Hepatitis B immunization : introducing hepatitis B vaccine into national immunization services
+DA  - D:20020208
+ER  - 
+
+TY  - GEN
 ID  - twg-glossary-2026-09-29
 TI  - twg-glossary-2026-09-29
 PY  - 2026
@@ -643,6 +905,13 @@ TI  - Web supplement WHO recommendations on antenatal care for a positive pregna
 DA  - D:20161128
 ER  - 
 
+TY  - GEN
+ID  - 10665-331525-rus
+AU  - WHO
+TI  - WHO operational handbook on tuberculosis: module 1: prevention: tuberculosis preventive treatment
+DA  - D:20210920
+ER  - 
+
 TY  - BOOK
 ID  - 10665-37905
 AU  - WHO Expanded Programme on Immunization
@@ -674,6 +943,24 @@ DA  - D:20161108
 ER  - 
 
 TY  - GEN
+ID  - 10665-77764-chi
+TI  - WHO recommendations: optimizing health worker roles to improve access to key maternal and newborn health interventions through task shifting
+DA  - D:20130812
+ER  - 
+
+TY  - GEN
+ID  - 10665-77764-rus
+TI  - WHO recommendations: optimizing health worker roles to improve access to key maternal and newborn health interventions through task shifting
+DA  - D:20140303
+ER  - 
+
+TY  - GEN
+ID  - 10665-329964-chi
+TI  - WHO recommends social network-based HIV testing approaches for key populations as part of partner services package: policy brief
+DA  - D:20200416
+ER  - 
+
+TY  - GEN
 ID  - smart-trust
 TI  - WHO SMART Trust
 ER  - 
@@ -686,6 +973,17 @@ PY  - 1986
 DA  - 1986/12/31
 PB  - World Health Organization
 UR  - https://iris.who.int/handle/10665/162250
+LA  - en
+ER  - 
+
+TY  - GEN
+ID  - 10665-279505
+AU  - World Health Assembly, 71
+TI  - Digital health
+PY  - 2018
+DA  - 2018/12/31
+PB  - World Health Organization
+UR  - https://iris.who.int/handle/10665/279505
 LA  - en
 ER  - 
 
@@ -862,6 +1160,17 @@ UR  - https://iris.who.int/handle/10665/67132
 LA  - en
 ER  - 
 
+TY  - GEN
+ID  - 10665-66977
+AU  - World Health Organization
+TI  - Hepatitis B immunization : introducing hepatitis B vaccine into national immunization services
+PY  - 2001
+DA  - 2001/12/31
+PB  - World Health Organization
+UR  - https://iris.who.int/handle/10665/66977
+LA  - ar
+ER  - 
+
 TY  - BOOK
 ID  - 10665-42458
 AU  - World Health Organization
@@ -872,6 +1181,28 @@ PB  - World Health Organization
 SN  - 9291731447
 UR  - https://iris.who.int/handle/10665/42458
 LA  - en
+ER  - 
+
+TY  - GEN
+ID  - 10665-67212
+AU  - World Health Organization
+TI  - Inmunización contra la Hepatitis B : introducción de la vacuna contra la hepatitis B en los servicios nacionales de inmunización
+PY  - 2001
+DA  - 2001/12/31
+PB  - Organización Mundial de la Salud
+UR  - https://iris.who.int/handle/10665/67212
+LA  - ar
+ER  - 
+
+TY  - GEN
+ID  - 10665-67211
+AU  - World Health Organization
+TI  - Vaccination contre l' hépatite B : introduire le vaccin contre l' hépatite B dans les services nationaux de vaccination
+PY  - 2001
+DA  - 2001/12/31
+PB  - Organisation mondiale de la Santé
+UR  - https://iris.who.int/handle/10665/67211
+LA  - ar
 ER  - 
 
 TY  - GEN
@@ -915,6 +1246,39 @@ DA  - 2005/12/31
 PB  - World Health Organization
 UR  - https://iris.who.int/handle/10665/69034
 LA  - en
+ER  - 
+
+TY  - GEN
+ID  - 10665-69653
+AU  - World Health Organization
+TI  - Phase préparatoire à l' instauration de la vaccination anti-papillomavirus : directives stratégiques à l' intention des pays
+PY  - 2006
+DA  - 2006/12/31
+PB  - Organisation mondiale de la Santé
+UR  - https://iris.who.int/handle/10665/69653
+LA  - ar
+ER  - 
+
+TY  - GEN
+ID  - 10665-69654
+AU  - World Health Organization
+TI  - Preparación de las introducción de las vacunas contra el virus del papiloma humano : orientaciones normativas y programáticas para los países
+PY  - 2006
+DA  - 2006/12/31
+PB  - Organización Mundial de la Salud
+UR  - https://iris.who.int/handle/10665/69654
+LA  - ar
+ER  - 
+
+TY  - GEN
+ID  - 10665-69384
+AU  - World Health Organization
+TI  - Preparing for the introduction of HPV vaccines : policy and programme guidance for countries
+PY  - 2006
+DA  - 2006/12/31
+PB  - World Health Organization
+UR  - https://iris.who.int/handle/10665/69384
+LA  - ar
 ER  - 
 
 TY  - GEN
@@ -965,6 +1329,18 @@ LA  - en
 ER  - 
 
 TY  - BOOK
+ID  - 10665-44796
+AU  - World Health Organization
+TI  - Pandemic influenza preparedness framework for the sharing of influenza viruses and access to vaccines and other benefits
+PY  - 2011
+DA  - 2011/12/31
+PB  - World Health Organization
+SN  - 9789241503082
+UR  - https://iris.who.int/handle/10665/44796
+LA  - en
+ER  - 
+
+TY  - BOOK
 ID  - 10665-44759
 AU  - World Health Organization
 TI  - Use of tuberculosis interferon-gamma release assays (IGRAs) in low- and middle-income countries : policy statement
@@ -988,6 +1364,18 @@ LA  - en
 ER  - 
 
 TY  - BOOK
+ID  - 10665-44853
+AU  - World Health Organization
+TI  - Cadre de préparation en cas de grippe pandémique pour l'échange des virus grippaux et l'accès aux vaccins et autres avantages
+PY  - 2012
+DA  - 2012/06/16
+PB  - World Health Organization
+SN  - 9789242503081
+UR  - https://iris.who.int/handle/10665/44853
+LA  - en
+ER  - 
+
+TY  - BOOK
 ID  - 10665-75211
 AU  - World Health Organization
 AU  - International Telecommunication Union
@@ -997,6 +1385,18 @@ DA  - 2012/07/31
 PB  - International Telecommunication Union
 SN  - 9789241548465 (WHO)
 UR  - https://iris.who.int/handle/10665/75211
+LA  - en
+ER  - 
+
+TY  - BOOK
+ID  - 10665-44867
+AU  - World Health Organization
+TI  - Preparación para una gripe pandémica:  marco para el intercambio de virus gripales y el acceso a las vacunas y otros beneficios
+PY  - 2012
+DA  - 2012/06/16
+PB  - Organización Mundial de la Salud
+SN  - 9789243503080
+UR  - https://iris.who.int/handle/10665/44867
 LA  - en
 ER  - 
 
@@ -2344,6 +2744,17 @@ UR  - https://iris.who.int/handle/10665/253894
 LA  - ru
 ER  - 
 
+TY  - GEN
+ID  - 10665-279508
+AU  - Всемирная ассамблея здравоохранения, 71
+TI  - Цифровое здравоохранение
+PY  - 2018
+DA  - 2018/12/31
+PB  - Всемирная организация здравоохранения
+UR  - https://iris.who.int/handle/10665/279508
+LA  - ru
+ER  - 
+
 TY  - RPRT
 ID  - 10665-354214
 AU  - Всемирная организация здравоохранения
@@ -2411,6 +2822,30 @@ LA  - ar
 ER  - 
 
 TY  - GEN
+ID  - 10665-279510
+AU  - جمعية الصحة العالمية، ٧١
+TI  - الصحــة الـرقمية
+PY  - 2018
+DA  - 2018/12/31
+PB  - منظمة الصحة العالمية
+UR  - https://iris.who.int/handle/10665/279510
+LA  - ar
+ER  - 
+
+TY  - BOOK
+ID  - 10665-379160
+AU  - منظمة الصحة العالمية
+TI  - تصنيف التدخلات والخدمات والتطبيقات الرقمية في مجال الصحة: لغة مشتركة لوصف استخدامات التكنولوجيا الرقمية من أجل الصحة
+PY  - 2024
+DA  - 2024/10/08
+PB  - منظمة الصحة العالمية
+SN  - 9789240093768 (نسخة إلكترونية)
+UR  - https://iris.who.int/handle/10665/379160
+LA  - ar
+AB  - تقدم هذه الطبعة الثانية من «تصنيف التدخلات والخدمات والتطبيقات الرقمية في مجال الصحة» تصنيفاً معيارياً يصف كيفية استخدام التقنيات الرقمية لتلبية احتياجات الأفراد والنظم الصحية. وقد أعدت منظمة الصحة العالمية هذا التصنيف ليكون لغة مشتركة تدعم التواصل بين صانعي السياسات، ومديري البرامج الصحية، والباحثين، والمنفذين، ومطوري التكنولوجيا، وغيرهم من أصحاب المصلحة في مجال الصحة الرقمية. وينظم التصنيف التدخلات الصحية الرقمية حول قدرات تكنولوجية محددة صُممت لمعالجة التحديات التي تواجه النظم الصحية، ويربط هذه التدخلات بالخدمات وأنواع التطبيقات الرقمية التي تُستخدم لتنفيذها. ويُحدِّث هذا المنشور ويوسِّع الطبعة الأولى الصادرة عام 2018 ليعكس التقدم في تقنيات الصحة الرقمية، وتطور ممارسات التنفيذ، والدروس المستفادة من استخدامها على المستوى العالمي. ويستند الإطار إلى ثلاثة محاور مترابطة: تحديات النظم الصحية، والتدخلات الصحية الرقمية، والخدمات وأنواع التطبيقات الرقمية. ويشمل تدخلات موجهة للأفراد، ولمقدمي الرعاية الصحية، ولمديري النظم الصحية، ولخدمات البيانات، إلى جانب فئات التطبيقات الرقمية ونظم المعلومات. ويهدف هذا التصنيف إلى دعم التخطيط والتنفيذ، وتحليل الاستثمارات، والبحوث، واعتبارات التشغيل البيني، وصياغة السياسات، وحوكمة مبادرات الصحة الرقمية، بما يعزز الاستخدام المنسق والفعال للتقنيات الرقمية في النظم الصحية.
+ER  - 
+
+TY  - GEN
 ID  - 10665-83077
 AU  - 世界卫生大会, 53
 TI  - 甲委员会第一份报告：（草案）
@@ -2440,5 +2875,16 @@ PY  - 1994
 DA  - 1994/12/31
 PB  - 世界卫生组织
 UR  - https://iris.who.int/handle/10665/198389
+LA  - zh
+ER  - 
+
+TY  - GEN
+ID  - 10665-279509
+AU  - 第七十一届世界卫生大会
+TI  - 数字卫生保健
+PY  - 2018
+DA  - 2018/12/31
+PB  - 世界卫生组织
+UR  - https://iris.who.int/handle/10665/279509
 LA  - zh
 ER  - 

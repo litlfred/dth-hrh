@@ -126,6 +126,11 @@
           "@value": "Community health workers"
         }
       ],
+      "skos:altLabel": [
+        "CHW",
+        "CHWs"
+      ],
+      "skos:notation": "CHW",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -189,6 +194,7 @@
       "skos:altLabel": [
         "CPD"
       ],
+      "skos:notation": "CPD",
       "skos:scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
       "skos:related": [
         {
@@ -378,6 +384,11 @@
           "@value": "Health labour market"
         }
       ],
+      "skos:altLabel": [
+        "HLM",
+        "HLMA"
+      ],
+      "skos:notation": "HLM",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -483,6 +494,7 @@
         "human resources for health (HRH)",
         "HRH"
       ],
+      "skos:notation": "HRH",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -527,8 +539,10 @@
         }
       ],
       "skos:altLabel": [
-        "HWF"
+        "HWF",
+        "HCWF"
       ],
+      "skos:notation": "HWF",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -551,8 +565,11 @@
       ],
       "skos:altLabel": [
         "Health worker registry",
-        "Provider registry"
+        "Provider registry",
+        "HWR",
+        "PR"
       ],
+      "skos:notation": "HWR",
       "skos:scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions). Must stay consistent with the final DPI-H reference architecture definition.",
       "skos:related": [
         {
@@ -643,6 +660,11 @@
           "@value": "Human resources management"
         }
       ],
+      "skos:altLabel": [
+        "HRM",
+        "HR"
+      ],
+      "skos:notation": "HRM",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -669,8 +691,11 @@
         "human resources information systems for health",
         "HRIS",
         "HRHIS",
-        "Information Systems for Human Resources for Health (ISHRH)"
+        "Information Systems for Human Resources for Health (ISHRH)",
+        "ISHRH",
+        "HWIS"
       ],
+      "skos:notation": "HRIS",
       "skos:scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions).",
       "skos:related": [
         {
@@ -748,8 +773,10 @@
         }
       ],
       "skos:altLabel": [
-        "ISCO"
+        "ISCO",
+        "ISCO-08"
       ],
+      "skos:notation": "ISCO",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -856,6 +883,7 @@
       "skos:altLabel": [
         "NHWA"
       ],
+      "skos:notation": "NHWA",
       "skos:scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
       "skos:related": [
         {
@@ -1151,6 +1179,761 @@
           "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/supply--who-hlma-2021"
         }
       ],
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/world-health-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "World Health Organization"
+        }
+      ],
+      "skos:altLabel": [
+        "WHO",
+        "AFRO",
+        "WPRO",
+        "AFR",
+        "AMR",
+        "EUR",
+        "SEAR",
+        "WPR"
+      ],
+      "skos:notation": "WHO",
+      "skos:scopeNote": "Named throughout the handbook outline and glossary workbook, including its six regional offices (AFRO, WPRO, AFR, AMR, EUR, SEAR, WPR). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/digital-public-infrastructure-for-health",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Digital public infrastructure for health"
+        }
+      ],
+      "skos:altLabel": [
+        "DPI-H"
+      ],
+      "skos:notation": "DPI-H",
+      "skos:scopeNote": "Expanded in Chapter 1 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/business-process-model-and-notation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Business Process Model and Notation"
+        }
+      ],
+      "skos:altLabel": [
+        "BPMN"
+      ],
+      "skos:notation": "BPMN",
+      "skos:scopeNote": "Used in Chapters 4 and 5 for business process workflows; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/digital-implementation-investment-guide",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Digital implementation investment guide"
+        }
+      ],
+      "skos:altLabel": [
+        "DIIG"
+      ],
+      "skos:notation": "DIIG",
+      "skos:scopeNote": "Expanded in Chapter 3 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/electronic-medical-record",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Electronic medical record"
+        }
+      ],
+      "skos:altLabel": [
+        "EMR"
+      ],
+      "skos:notation": "EMR",
+      "skos:scopeNote": "Used in Chapter 5 and Chapter 10 for point-of-care clinical systems; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/smart-guidelines",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Standards-based, machine-readable, adaptive, requirements-based and testable"
+        }
+      ],
+      "skos:altLabel": [
+        "SMART",
+        "SMART Guidelines"
+      ],
+      "skos:notation": "SMART",
+      "skos:scopeNote": "Used in Chapter 3 of the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/technical-working-group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Technical working group"
+        }
+      ],
+      "skos:altLabel": [
+        "TWG"
+      ],
+      "skos:notation": "TWG",
+      "skos:scopeNote": "Expanded in the handbook front matter and glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-telecommunication-union",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International Telecommunication Union"
+        }
+      ],
+      "skos:altLabel": [
+        "ITU"
+      ],
+      "skos:notation": "ITU",
+      "skos:scopeNote": "Named in Chapter 1 (WHO/ITU DPI-H reference architecture); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/minimum-data-set",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Minimum Data Set"
+        }
+      ],
+      "skos:altLabel": [
+        "MDS"
+      ],
+      "skos:notation": "MDS",
+      "skos:scopeNote": "Expanded in Chapter 11 and the glossary workbook (WHO Minimum Data Set for Health Workforce Registry), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/open-health-information-exchange",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Open Health Information Exchange"
+        }
+      ],
+      "skos:altLabel": [
+        "OpenHIE"
+      ],
+      "skos:notation": "OpenHIE",
+      "skos:scopeNote": "Named in Chapter 10 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/health-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Health information system"
+        }
+      ],
+      "skos:altLabel": [
+        "HIS"
+      ],
+      "skos:notation": "HIS",
+      "skos:scopeNote": "Expanded in the glossary workbook and Chapter 10, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/decision-model-and-notation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Decision Model and Notation"
+        }
+      ],
+      "skos:altLabel": [
+        "DMN"
+      ],
+      "skos:notation": "DMN",
+      "skos:scopeNote": "Used in Chapter 7 for decision-support logic tables; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/electronic-health-record",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Electronic health record"
+        }
+      ],
+      "skos:altLabel": [
+        "EHR"
+      ],
+      "skos:notation": "EHR",
+      "skos:scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/application-programming-interface",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Application programming interface"
+        }
+      ],
+      "skos:altLabel": [
+        "API"
+      ],
+      "skos:notation": "API",
+      "skos:scopeNote": "Used in the handbook outline and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/education-management-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Education management information system"
+        }
+      ],
+      "skos:altLabel": [
+        "EMIS"
+      ],
+      "skos:notation": "EMIS",
+      "skos:scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/global-digital-health-certification-network",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Global Digital Health Certification Network"
+        }
+      ],
+      "skos:altLabel": [
+        "GDHCN"
+      ],
+      "skos:notation": "GDHCN",
+      "skos:scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/health-level-seven",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Health Level Seven"
+        }
+      ],
+      "skos:altLabel": [
+        "HL7"
+      ],
+      "skos:notation": "HL7",
+      "skos:scopeNote": "Named in Chapter 10 (HL7 FHIR); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/health-management-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Health management information system"
+        }
+      ],
+      "skos:altLabel": [
+        "HMIS"
+      ],
+      "skos:notation": "HMIS",
+      "skos:scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/healthcare-provider-directory",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Healthcare Provider Directory"
+        }
+      ],
+      "skos:altLabel": [
+        "HPD"
+      ],
+      "skos:notation": "HPD",
+      "skos:scopeNote": "Expanded in the glossary workbook (IHE Healthcare Provider Directory), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/integrating-the-healthcare-enterprise",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Integrating the Healthcare Enterprise"
+        }
+      ],
+      "skos:altLabel": [
+        "IHE"
+      ],
+      "skos:notation": "IHE",
+      "skos:scopeNote": "Named in Chapter 10 (IHE mCSD and HPD profiles); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/ihris",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "iHRIS"
+        }
+      ],
+      "skos:altLabel": [
+        "iHRIS"
+      ],
+      "skos:notation": "iHRIS",
+      "skos:scopeNote": "Named in the glossary workbook (open-source human resources for health information system software). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-standard-classification-of-education",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International Standard Classification of Education"
+        }
+      ],
+      "skos:altLabel": [
+        "ISCED"
+      ],
+      "skos:notation": "ISCED",
+      "skos:scopeNote": "Expanded in Chapter 11, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-organization-for-standardization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International Organization for Standardization"
+        }
+      ],
+      "skos:altLabel": [
+        "ISO"
+      ],
+      "skos:notation": "ISO",
+      "skos:scopeNote": "Named in Chapter 11; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/learning-management-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Learning management system"
+        }
+      ],
+      "skos:altLabel": [
+        "LMS"
+      ],
+      "skos:notation": "LMS",
+      "skos:scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/mobile-care-services-discovery",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Mobile Care Services Discovery"
+        }
+      ],
+      "skos:altLabel": [
+        "mCSD"
+      ],
+      "skos:notation": "mCSD",
+      "skos:scopeNote": "Expanded in Chapter 10 (IHE mCSD profile), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/training-institution-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Training institution information system"
+        }
+      ],
+      "skos:altLabel": [
+        "TIIS"
+      ],
+      "skos:notation": "TIIS",
+      "skos:scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/zimbabwe-human-resources-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Zimbabwe Human Resources Information System"
+        }
+      ],
+      "skos:altLabel": [
+        "ZHRIS"
+      ],
+      "skos:notation": "ZHRIS",
+      "skos:scopeNote": "Expanded in the glossary workbook (HRHIS candidates), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/artificial-intelligence",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Artificial intelligence"
+        }
+      ],
+      "skos:altLabel": [
+        "AI"
+      ],
+      "skos:notation": "AI",
+      "skos:scopeNote": "Used in Chapter 3 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/international-labour-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International Labour Organization"
+        }
+      ],
+      "skos:altLabel": [
+        "ILO"
+      ],
+      "skos:notation": "ILO",
+      "skos:scopeNote": "Named in Chapter 11 and references (ISCO-08 custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/key-performance-indicator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Key performance indicator"
+        }
+      ],
+      "skos:altLabel": [
+        "KPI",
+        "KPIs"
+      ],
+      "skos:notation": "KPI",
+      "skos:scopeNote": "Used in the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/monitoring-and-evaluation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Monitoring and evaluation"
+        }
+      ],
+      "skos:altLabel": [
+        "M&E"
+      ],
+      "skos:notation": "M&E",
+      "skos:scopeNote": "Used in Chapter 3 (DIIG mapping); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/ministry-of-health",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Ministry of Health"
+        }
+      ],
+      "skos:altLabel": [
+        "MoH",
+        "MOH"
+      ],
+      "skos:notation": "MoH",
+      "skos:scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/organisation-for-economic-co-operation-and-development",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Organisation for Economic Co-operation and Development"
+        }
+      ],
+      "skos:altLabel": [
+        "OECD"
+      ],
+      "skos:notation": "OECD",
+      "skos:scopeNote": "Named in the glossary workbook (Joint Questionnaire on non-monetary health care statistics); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/service-oriented-architecture",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Service-oriented architecture"
+        }
+      ],
+      "skos:altLabel": [
+        "SOA"
+      ],
+      "skos:notation": "SOA",
+      "skos:scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/single-sign-on",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Single sign-on"
+        }
+      ],
+      "skos:altLabel": [
+        "SSO"
+      ],
+      "skos:notation": "SSO",
+      "skos:scopeNote": "Used in the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/united-nations",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "United Nations"
+        }
+      ],
+      "skos:altLabel": [
+        "UN"
+      ],
+      "skos:notation": "UN",
+      "skos:scopeNote": "Used in Chapter 3; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/unesco",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "United Nations Educational, Scientific and Cultural Organization"
+        }
+      ],
+      "skos:altLabel": [
+        "UNESCO"
+      ],
+      "skos:notation": "UNESCO",
+      "skos:scopeNote": "Named in Chapter 11 and references (ISCED custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/simple-knowledge-organization-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Simple Knowledge Organization System"
+        }
+      ],
+      "skos:altLabel": [
+        "SKOS"
+      ],
+      "skos:notation": "SKOS",
+      "skos:scopeNote": "Used in the glossary introduction; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh/registered-nurse",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Registered nurse"
+        }
+      ],
+      "skos:altLabel": [
+        "RN",
+        "RNs",
+        "RPN",
+        "APN",
+        "LHV"
+      ],
+      "skos:notation": "RN",
+      "skos:scopeNote": "Expanded in the professional council examples sheet (RN, RPN, APN, LHV nursing cadres), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
       "dcterms:source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
       "skos:note": "candidate"
     }

@@ -394,6 +394,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/public-comment-changesets",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Public-comment change-sets"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Bring a public review's change-sets back in line with GitHub: open the primary issue of each change-set somebody has engaged with, link the other issues that discuss it, and re-render each issue's change-set section from its `changesets/CS-*.json` record. The nightly half of what the folio's public-comment workflow does on each issue event (`github`); `check` validates the records without writing."
+        }
+      ],
+      "skos:notation": "public-comment-changesets",
+      "dcterms:source": "folio-assistant-core/tools/public-comment-changesets/public-comment-changesets.ts#public-comment-changesets",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/publish-extracted-statements",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -411,6 +431,26 @@
       ],
       "skos:notation": "publish-extracted-statements",
       "dcterms:source": "folio-assistant-core/tools/publish-extracted-statements/publish-extracted-statements.ts#publish-extracted-statements",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/references-extract",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Reference lists to reference nodes"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Split each library entry's reference lists (a References, Bibliography or Further reading section or heading, in the six UN languages and Portuguese) into folio-reference/v1 nodes in the instance's declared `references` directory, one per cited work, keyed `<doc-id>.<section>.<n>`: provenance extracted, derivedFrom the section file, printed the entry verbatim, and only the fields read without guessing (URL, DOI, ISBN, year, access date). The bibliography page lists them as the document's own bibliography. `--check` writes nothing and fails when a node is stale."
+        }
+      ],
+      "skos:notation": "references-extract",
+      "dcterms:source": "folio-assistant-core/tools/references-extract/references-extract.ts#references-extract",
       "skos:note": "candidate"
     },
     {

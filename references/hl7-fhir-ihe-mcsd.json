@@ -1,0 +1,10 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "hl7-fhir-ihe-mcsd",
+  "type": "standard",
+  "title": "HL7 FHIR; IHE Mobile Care Services Discovery (mCSD) profile",
+  "note": "One entry in the References chapter naming two standards: HL7 FHIR, and the IHE Mobile Care Services Discovery (mCSD) profile.",
+  "provenance": "extracted",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 14 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: HL7 FHIR; IHE Mobile Care Services Discovery (mCSD) profile."
+}

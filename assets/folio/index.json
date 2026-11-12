@@ -5041,8 +5041,8 @@
         },
         {
           "path": "dth-hrh/references/p-references.jsonld",
-          "bytes": 683,
-          "size": "683 B"
+          "bytes": 1422,
+          "size": "1.4 KB"
         },
         {
           "path": "dth-hrh/references/p-references.md",
@@ -5051,8 +5051,8 @@
         },
         {
           "path": "dth-hrh/references/p-references.ts",
-          "bytes": 294,
-          "size": "294 B"
+          "bytes": 1063,
+          "size": "1.0 KB"
         },
         {
           "path": "dth-hrh/references/references.ts",

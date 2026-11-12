@@ -621,6 +621,27 @@
       "dcterms:hasVersion": "who-iris/library/10665-66977-rus"
     },
     {
+      "@id": "references/hl7-fhir-ihe-mcsd",
+      "@type": [
+        "fabio:Work",
+        "bibo:Standard"
+      ],
+      "dcterms:title": "HL7 FHIR; IHE Mobile Care Services Discovery (mCSD) profile",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/ilo-isco-08-unesco-isced",
+      "@type": [
+        "fabio:Work",
+        "bibo:Standard"
+      ],
+      "dcterms:title": "International Standard Classification of Occupations (ISCO-08)",
+      "dcterms:creator": [
+        "ILO"
+      ],
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
       "@id": "references/isaitb-2026-interoperability-test-bed-readme",
       "@type": [
         "fabio:Work",
@@ -1393,6 +1414,31 @@
       "dcterms:hasVersion": "who-iris/library/9789241549912-websupplement-eng"
     },
     {
+      "@id": "references/who-global-strategy-digital-health-2020-2025",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Global strategy on digital health 2020–2025",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/who-smart-guidelines",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "SMART Guidelines",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:identifier": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
       "@id": "references/10665-331525-rus",
       "@type": [
         "fabio:Work",
@@ -1405,6 +1451,160 @@
       "dcterms:issued": "D:20210920",
       "dcterms:source": "who-iris/library/10665-331525-rus/manifest.jsonld",
       "dcterms:hasVersion": "who-iris/library/10665-331525-rus"
+    },
+    {
+      "@id": "references/who-global-code-recruitment-2010",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Global Code of Practice on the International Recruitment of Health Personnel",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2010",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/who-hrhis-mds-2015",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Human resources for health information system: minimum data set for health workforce registry",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2015",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/who-workforce-2030-2016",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Global strategy on human resources for health: Workforce 2030",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2016",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240010567-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2020",
+      "bibo:isbn": "9789240010567",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/334306",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240081949-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Classification of digital interventions, services and applications in health, second edition",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2023",
+      "bibo:isbn": "9789240081949",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/373581",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240081291-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "National health workforce accounts: a handbook, second edition",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2023",
+      "bibo:isbn": "9789240081291",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/374320",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240101197-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Digital transformation handbook for health supply chain architecture",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2024",
+      "bibo:isbn": "9789240101197",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/379506",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240093362-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Digital transformation handbook for primary health care: optimizing person-centred point of service systems",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2024",
+      "bibo:isbn": "9789240093362",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/379452",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/who-health-practitioner-regulation-2024",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Health practitioner regulation: design, reform and implementation guidance",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2024",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/9789240116191-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Digital transformation handbook for health product catalogue",
+      "dcterms:creator": [
+        "WHO"
+      ],
+      "dcterms:issued": "2025",
+      "dcterms:identifier": "https://iris.who.int/handle/10665/383309",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
+    },
+    {
+      "@id": "references/who-dpi-h-reference-architecture-draft-v1",
+      "@type": [
+        "fabio:Work",
+        "bibo:Report"
+      ],
+      "dcterms:title": "Reference architecture guidance for digital public infrastructure for health (DPI-H)",
+      "dcterms:creator": [
+        "WHO and ITU"
+      ],
+      "dcterms:issued": "2026-07",
+      "dcterms:source": "folio/dth-hrh/references/p-references.md"
     },
     {
       "@id": "references/10665-37905",

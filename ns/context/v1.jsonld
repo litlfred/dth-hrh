@@ -3,12 +3,18 @@
     "@version": 1.1,
     "@protected": true,
     "cat-harness": "https://litlfred.github.io/cat-harness/v0/ns/",
+    "cito": "http://purl.org/spar/cito/",
     "dcterms": "http://purl.org/dc/terms/",
     "doco": "http://purl.org/spar/doco/",
     "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/",
     "prov": "http://www.w3.org/ns/prov#",
     "$schema": {
       "@id": "dcterms:conformsTo"
+    },
+    "cites": {
+      "@id": "cito:cites",
+      "@type": "@id",
+      "@container": "@set"
     },
     "contains": {
       "@id": "dcterms:hasPart",

@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "cb77a096cc22e00cdb6ea172d0ff6a4eb485187b",
+          "ref": "ef03802d63519a11b1fa59cc3c192f4152494f47",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -137,8 +137,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "cb77a096cc22e00cdb6ea172d0ff6a4eb485187b",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "ef03802d63519a11b1fa59cc3c192f4152494f47",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time in a quiet window (owner C. Keep strict, ~19:30Z)"
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "13ce2d92bdad8baed9d331c685f1d9273447ff3e",
+          "ref": "b94878a36e2a9c06f92a9079aee951ee13e1022b",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -165,8 +165,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "13ce2d92bdad8baed9d331c685f1d9273447ff3e",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "b94878a36e2a9c06f92a9079aee951ee13e1022b",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time in a quiet window (owner C. Keep strict, ~19:30Z)"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "a05d652867c57053b5631c6af9d499bc184bcd37",
+          "ref": "8c80c3fa895162f568a1383e7f8df30f54d9306c",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "a05d652867c57053b5631c6af9d499bc184bcd37",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "8c80c3fa895162f568a1383e7f8df30f54d9306c",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time in a quiet window (owner C. Keep strict, ~19:30Z)"
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
+          "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -237,8 +237,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time in a quiet window (owner C. Keep strict, ~19:30Z)"
             }
           }
         }

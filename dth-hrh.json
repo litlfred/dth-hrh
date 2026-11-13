@@ -183,5 +183,10 @@
       "title": "HRHIS registry glossary (WHO, 2015; who-iris)",
       "description": "External reference only, not definitional (owner, 2026-11-02). The handbook's terms are its own working definitions; this ingested who-iris SKOS glossary is linked from the glossary as an external source."
     }
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab"
   ]
 }

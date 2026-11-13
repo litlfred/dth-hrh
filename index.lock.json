@@ -9,7 +9,7 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "6f578c3b3db89d80c896133935bdd294903bea83"
+      "ref": "33020ee90d1f608358cada563c363aa2074faa5f"
     },
     {
       "harness": "fhir-harness",
@@ -289,7 +289,7 @@
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "6f578c3b3db89d80c896133935bdd294903bea83",
+      "sha": "33020ee90d1f608358cada563c363aa2074faa5f",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -479,7 +479,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-13",
-        "ref": "6f578c3b3db89d80c896133935bdd294903bea83",
+        "ref": "33020ee90d1f608358cada563c363aa2074faa5f",
         "approver": "unverified"
       }
     },

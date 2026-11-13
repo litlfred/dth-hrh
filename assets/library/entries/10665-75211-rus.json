@@ -12,26 +12,9 @@
       "title": "",
       "pageStart": 1,
       "pageEnd": 1,
-      "target": "../images/img-p001-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p001-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 1,
-      "pageEnd": 1,
-      "target": "../images/img-p001-2.png",
-      "narrative": "not-authored",
-      "content": null,
+      "target": "../images/img-p001-1.webp",
+      "narrative": "draft",
+      "content": "Cover illustration in shades of blue showing a world map overlaid with a glowing heartbeat (ECG) line, a translucent wave and a rod of Asclepius (a staff with a serpent).",
       "truncated": false,
       "provenance": "ingested",
       "summary": null
@@ -62,91 +45,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p002-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p002-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p002-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p002-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p002-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-002",
@@ -203,91 +101,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p004-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p004-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p004-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p004-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p004-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-004",
       "types": [
         "folio-assistant-core:Prose",
@@ -315,23 +128,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p005-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 5,
-      "pageEnd": 5,
-      "target": "../images/img-p005-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/figure-img-p005-2",
       "types": [
         "folio-assistant-core:Figure",
@@ -341,9 +137,9 @@
       "title": "",
       "pageStart": 5,
       "pageEnd": 5,
-      "target": "../images/img-p005-2.png",
-      "narrative": "not-authored",
-      "content": null,
+      "target": "../images/img-p005-2.webp",
+      "narrative": "draft",
+      "content": "Handwritten signature under the foreword, apparently that of Dr Margaret Chan, Director-General of the World Health Organization, one of the two signatories named on the page.",
       "truncated": false,
       "provenance": "ingested",
       "summary": null
@@ -565,23 +361,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p013-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 13,
-      "pageEnd": 13,
-      "target": "../images/img-p013-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-013",
       "types": [
         "folio-assistant-core:Prose",
@@ -634,91 +413,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p015-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 15,
-      "pageEnd": 15,
-      "target": "../images/img-p015-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p015-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 15,
-      "pageEnd": 15,
-      "target": "../images/img-p015-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p015-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 15,
-      "pageEnd": 15,
-      "target": "../images/img-p015-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p015-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 15,
-      "pageEnd": 15,
-      "target": "../images/img-p015-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p015-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 15,
-      "pageEnd": 15,
-      "target": "../images/img-p015-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-015",
@@ -1315,23 +1009,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p037-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 37,
-      "pageEnd": 37,
-      "target": "../images/img-p037-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-037",
       "types": [
         "folio-assistant-core:Prose",
@@ -1424,11 +1101,11 @@
       "pageEnd": 40,
       "target": "../sections/page-040.md",
       "narrative": null,
-      "content": "f\nf организации, занимающиеся страхованием здоровья и на случай потери трудоспособности;\nf\nf объединения пациентов и адвокационные группы;\nf\nf общественность;\nf\nf государственные органы по вопросам общественного здравоохранения и медицинского \nобслуживания общегосударственного, регионального и местного уровней;\nf\nf частные поставщики услуг в сфере здравоохранения, включая частные организации \nздравоохранения, неправительственные ассоциации и благотворительные фонды-партнеры;\nf\nf поставщики ИКТ в медицинском секторе (местные, общенациональные и международные фирмы);\nf\nf средства массовой информ",
+      "content": "Комплект материалов по национальной стратегии электронного здравоохранения „ Часть 1. концепция\n\n> организации, занимающиеся страхованием здоровья и на случай потери трудоспособности;\n> объединения пациентов и адвокационные группы;\n> общественность;\n\n> государственные органы по вопросам общественного здравоохранения и медицинского\nобслуживания общегосударственного, регионального и местного уровней;\n\n> частные поставщики услуг в сфере здравоохранения, включая частные организации\nздравоохранения, неправительственные ассоциации и благотворительные фонды-партнеры;\n\n> поставщики ИКТ в медицинском с",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Completes the list of health sector stakeholders, including insurers, patient groups, public health bodies, private providers, ICT vendors and media. It also lists stakeholders outside health, such as civil registration services and ICT ministries, and stresses engaging those most affected or influential.",
         "state": "draft",
         "draftedBy": {
@@ -1451,11 +1128,11 @@
       "pageEnd": 41,
       "target": "../sections/page-041.md",
       "narrative": null,
-      "content": "5.3\t Прояснение роли заинтересованных сторон\nЗаинтересованные стороны можно охарактеризовать, исходя из их роли, вклада, уровня влияния \nи интересов, которые они, скорее всего, будут преследовать при разработке национальной \nконцепции электронного здравоохранения. Понимание этих аспектов даст возможность \nстратегического привлечения ключевых групп на нужных этапах процесса (Рисунок 7, Таблица 7).\nРисунок 7. Четыре наиболее распространенных роли заинтересованных сторон в разработке \nнациональной концепции электронного здравоохранения\nО\nст\nал\nьн\nы\nе \nза\nи\nнт\nер\nес\nов\nан\nн\nы\nе \nст\nо\nр\nо\nн\nы \nи \nп",
+      "content": "Комплект материалов по национальной стратегии электронного здравоохранения „ Часть 7. концепция\n\n5.3 Прояснение роли заинтересованных сторон\n\nЗаинтересованные стороны можно охарактеризовать, исходя из их роли, вклада, уровня влияния\nи интересов, которые они, скорее всего, будут преследовать при разработке национальной\nконцепции электронного здравоохранения. Понимание этих аспектов даст возможность\nстратегического привлечения ключевых групп на нужных этапах процесса (Рисунок 7, Таблица 7).\n\nРисунок 7. Четыре наиболее распространенных роли заинтересованных сторон в разработке\nнациональной концеп",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Describes four common stakeholder roles in developing the vision, from decision-makers and key influencers to engaged stakeholders and the wider public. Figure 7 and Table 7 set out their roles, with examples such as advisers, health executives, health workers, families and community groups.",
         "state": "draft",
         "draftedBy": {
@@ -1802,11 +1479,11 @@
       "pageEnd": 54,
       "target": "../sections/page-054.md",
       "narrative": null,
-      "content": "7.1\t Исследование национальных концепций, стратегий и \nпрограмм в сфере электронного здравоохранения\nЦель\nНа данном этапе определяются знания и уроки, извлеченные из реализации других концепций, \nстратегий и программ, которые можно использовать как информацию, способствующую \nпроцессу разработки национальной концепции электронного здравоохранения.\nПримерная информация, которую необходимо получить на этом этапе, включает:\nf\nf цели и задачи системы здравоохранения, которых страны стремятся достичь или решить с \nпомощью электронного здравоохранения;\nf\nf стратегические рекомендации по использовани",
+      "content": "Комплект материалов по национальной стратегии электронного здравоохранения „ Часть 1. концепция\n\n7.1 Исследование национальных концепций, стратегий и\nпрограмм в сфере электронного здравоохранения\n\nЦель\n\nНа данном этапе определяются знания и уроки, извлеченные из реализации других концепций,\nстратегий и программ, которые можно использовать как информацию, способствующую\nпроцессу разработки национальной концепции электронного здравоохранения.\n\nПримерная информация, которую необходимо получить на этом этапе, включает:\n\n> цели и задачи системы здравоохранения, которых страны стремятся достичь или",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Describes researching other countries' eHealth visions, strategies and programmes, listing the information to gather, such as goals, recommendations, changes to information flows, current projects and lessons learned. It advises focusing on countries with similar health systems and goals and using reports from international bodies such as WHO when direct information is lacking.",
         "state": "draft",
         "draftedBy": {
@@ -2639,11 +2316,11 @@
       "pageEnd": 85,
       "target": "../sections/page-085.md",
       "narrative": null,
-      "content": "Глава 11\nАнализ перспектив, недостатков, рисков \nи препятствий\n Данный этап направлен на проведение оценки существующей среды электронного \nздравоохранения для определения перспектив, недостатков и препятствий на пути внедрения \nконцепции электронного здравоохранения.\nОпределите\nнеобходимые\nкомпоненты\nОткорректируйте\nконцепцию и\nразработайте\nстратегические\nрекомендации\nУстановите контакт с заинтересованными сторонами\nОрганизуйте процесс\nСоберите данные о среде электронного здравоохранения\nРазработайте\nпроект\nконцепции\nПроанализируйте\nперспективы и\nнедостатки\nИзучите тенденции и\nопыт\nОпределите",
+      "content": "Комплект материалов по национальной стратегии электронного здравоохранения „ Часть 1. концепция\n\nГЛАВА 11\nАна пер ‚ недостатков, рисков\n\nДанный этап направлен на проведение оценки существующей среды электронного\nздравоохранения для определения перспектив, недостатков и препятствий на пути внедрения\nконцепции электронного здравоохранения.\n\n'Организуйте процесс\nУстановите контакт с заинтересованными сторонами\n\nОпределите Разработайте Определите Проанализируйте Откорректируйте\n‘стратеги ческий контекст проект необходимые перспективы и концепцию и\n\nконцепции компоненты недостатки разработайте\n\nИзу",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Opens Chapter 11 on analysing opportunities, gaps, risks and barriers, which compares the existing eHealth environment with the draft vision. It shows the toolkit's process diagram and lists the expected outputs, such as components that can be reused and those that must be developed.",
         "state": "draft",
         "draftedBy": {
@@ -3249,57 +2926,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p108-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p108-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p108-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-108",
       "types": [
         "folio-assistant-core:Prose",
@@ -3327,23 +2953,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p109-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 109,
-      "pageEnd": 109,
-      "target": "../images/img-p109-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-109",
       "types": [
         "folio-assistant-core:Prose",
@@ -3369,57 +2978,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p110-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 110,
-      "pageEnd": 110,
-      "target": "../images/img-p110-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p110-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 110,
-      "pageEnd": 110,
-      "target": "../images/img-p110-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p110-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 110,
-      "pageEnd": 110,
-      "target": "../images/img-p110-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-110",
@@ -3827,57 +3385,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p125-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 125,
-      "pageEnd": 125,
-      "target": "../images/img-p125-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p125-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 125,
-      "pageEnd": 125,
-      "target": "../images/img-p125-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p125-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 125,
-      "pageEnd": 125,
-      "target": "../images/img-p125-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-125",
       "types": [
         "folio-assistant-core:Prose",
@@ -3970,11 +3477,11 @@
       "pageEnd": 128,
       "target": "../sections/page-128.md",
       "narrative": null,
-      "content": "Заинтересованные стороны вне сектора здравоохранения также будут играть важную роль в \nреализации национальной концепции электронного здравоохранения. Они могут внести вклад \nв виде ресурсов (специальные знания и услуги), а также могут быть серьезно заинтересованы \nв результатах развития среды электронного здравоохранения, например в создании новых \nэкономических возможностей. К таким заинтересованным сторонам, к примеру, относятся:\nf\nf министерства и поставщики услуг в сфере ИКТ/электросвязи;\nf\nf профессиональные учебные и научные учреждения;\nf\nf службы по вопросам социального обеспечения и о",
+      "content": "Комплект материалов по национальной стратегии электронного здравоохранения > Часть 2: Разработка плана действий по\n\nЗаинтересованные стороны вне сектора здравоохранения также будут играть важную роль в\nреализации национальной концепции электронного здравоохранения. Они могут внести вклад\nв виде ресурсов (специальные знания и услуги), а также могут быть серьезно заинтересованы\n\nв результатах развития среды электронного здравоохранения, например в создании новых\nэкономических возможностей. К таким заинтересованным сторонам, к примеру, относятся:\n\nминистерства и поставщики услуг в сфере ИКТ/элект",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Describes in Russian stakeholders outside the health sector, such as ICT ministries and telecom providers and education and research institutions, who may contribute resources or benefit from eHealth. It begins to group stakeholders by role, such as decision-making bodies.",
         "state": "draft",
         "draftedBy": {
@@ -4686,23 +4193,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p155-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 155,
-      "pageEnd": 155,
-      "target": "../images/img-p155-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-155",
@@ -5434,57 +4924,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p182-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p182-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p182-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-182",
       "types": [
         "folio-assistant-core:Prose",
@@ -5512,23 +4951,6 @@
       }
     },
     {
-      "id": "library/10665-75211-rus/blocks/figure-img-p183-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 183,
-      "pageEnd": 183,
-      "target": "../images/img-p183-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-rus/blocks/prose-page-183",
       "types": [
         "folio-assistant-core:Prose",
@@ -5554,57 +4976,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p184-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 184,
-      "pageEnd": 184,
-      "target": "../images/img-p184-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p184-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 184,
-      "pageEnd": 184,
-      "target": "../images/img-p184-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p184-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 184,
-      "pageEnd": 184,
-      "target": "../images/img-p184-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-184",
@@ -6739,23 +6110,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-rus/blocks/figure-img-p226-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 226,
-      "pageEnd": 226,
-      "target": "../images/img-p226-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-rus/blocks/prose-page-226",

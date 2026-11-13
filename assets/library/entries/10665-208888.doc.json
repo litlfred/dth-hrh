@@ -1162,11 +1162,11 @@
           "heading": false
         },
         {
-          "term": "causalité avec",
+          "term": "postvaccinales indésirables",
           "heading": false
         },
         {
-          "term": "postvaccinales indésirables",
+          "term": "causalité avec",
           "heading": false
         },
         {
@@ -1174,7 +1174,7 @@
           "heading": false
         },
         {
-          "term": "pour évaluation",
+          "term": "manifestations postvaccinales",
           "heading": false
         },
         {
@@ -1182,11 +1182,11 @@
           "heading": false
         },
         {
-          "term": "manifestations postvaccinales",
+          "term": "réaction liée",
           "heading": false
         },
         {
-          "term": "réaction liée",
+          "term": "pour évaluation",
           "heading": false
         }
       ],
@@ -1213,19 +1213,19 @@
           "heading": false
         },
         {
-          "term": "une maladie",
-          "heading": false
-        },
-        {
-          "term": "une erreur",
-          "heading": false
-        },
-        {
           "term": "produit vaccinal",
           "heading": false
         },
         {
           "term": "vaccin lui-même",
+          "heading": false
+        },
+        {
+          "term": "une maladie",
+          "heading": false
+        },
+        {
+          "term": "une erreur",
           "heading": false
         },
         {
@@ -1237,7 +1237,7 @@
           "heading": false
         },
         {
-          "term": "entre une",
+          "term": "anxiété égard",
           "heading": false
         }
       ],
@@ -1299,11 +1299,11 @@
           "heading": false
         },
         {
-          "term": "que des",
+          "term": "des réactions",
           "heading": false
         },
         {
-          "term": "des réactions",
+          "term": "quelque millions",
           "heading": false
         },
         {
@@ -1311,7 +1311,7 @@
           "heading": false
         },
         {
-          "term": "que les",
+          "term": "que des",
           "heading": false
         },
         {
@@ -1319,11 +1319,11 @@
           "heading": false
         },
         {
-          "term": "les vaccins",
+          "term": "effets indésirables",
           "heading": false
         },
         {
-          "term": "quelque millions",
+          "term": "les vaccins",
           "heading": false
         }
       ],
@@ -1350,15 +1350,15 @@
           "heading": false
         },
         {
+          "term": "anxiété égard",
+          "heading": false
+        },
+        {
           "term": "mapi dont",
           "heading": false
         },
         {
           "term": "précipitée par",
-          "heading": false
-        },
-        {
-          "term": "anxiété égard",
           "heading": false
         },
         {
@@ -1397,12 +1397,12 @@
           "heading": true
         },
         {
-          "term": "une manifestation",
-          "heading": false
-        },
-        {
           "term": "causalité",
           "heading": true
+        },
+        {
+          "term": "une manifestation",
+          "heading": false
         },
         {
           "term": "évaluer",
@@ -1444,20 +1444,12 @@
       },
       "keywords": [
         {
-          "term": "des",
-          "heading": true
-        },
-        {
           "term": "lien",
           "heading": true
         },
         {
           "term": "mapi",
           "heading": true
-        },
-        {
-          "term": "des hypothèses",
-          "heading": false
         },
         {
           "term": "vaccin antirotavirus",
@@ -1468,11 +1460,19 @@
           "heading": true
         },
         {
-          "term": "formuler des",
+          "term": "des hypothèses",
           "heading": false
         },
         {
           "term": "une manifestation",
+          "heading": false
+        },
+        {
+          "term": "formuler des",
+          "heading": false
+        },
+        {
+          "term": "lien entre",
           "heading": false
         }
       ],
@@ -1499,11 +1499,11 @@
           "heading": true
         },
         {
-          "term": "niveaux",
+          "term": "lien",
           "heading": true
         },
         {
-          "term": "lien",
+          "term": "niveaux",
           "heading": true
         }
       ],
@@ -1585,19 +1585,11 @@
           "heading": false
         },
         {
-          "term": "lien est",
-          "heading": false
-        },
-        {
-          "term": "catégorique que",
-          "heading": false
-        },
-        {
           "term": "vaccin est",
           "heading": false
         },
         {
-          "term": "une mapi",
+          "term": "lien est",
           "heading": false
         },
         {
@@ -1605,7 +1597,15 @@
           "heading": false
         },
         {
+          "term": "catégorique que",
+          "heading": false
+        },
+        {
           "term": "preuve catégorique",
+          "heading": false
+        },
+        {
+          "term": "une mapi",
           "heading": false
         }
       ],
@@ -1632,12 +1632,12 @@
           "heading": true
         },
         {
-          "term": "les données",
-          "heading": false
-        },
-        {
           "term": "enquêtes",
           "heading": true
+        },
+        {
+          "term": "les données",
+          "heading": false
         }
       ],
       "extract": "Enquêtes sur les signaux Pour évaluer si un vaccin donné peut causer une MAPI donnée, il faut prendre en compte toutes les données sur les cas individuels de MAPI ainsi que les données de surveillance et, s’il y a lieu, les enquêtes en grappes et les données non cliniques.",
@@ -1663,19 +1663,15 @@
           "heading": true
         },
         {
-          "term": "des",
-          "heading": true
-        },
-        {
           "term": "par exemple",
           "heading": false
         },
         {
-          "term": "sélection",
+          "term": "des",
           "heading": true
         },
         {
-          "term": "pour",
+          "term": "sélection",
           "heading": true
         },
         {
@@ -1685,6 +1681,10 @@
         {
           "term": "causalité",
           "heading": true
+        },
+        {
+          "term": "manifestations",
+          "heading": false
         }
       ],
       "extract": "Sélection des cas pour l’évaluation du lien de causalité Les cas devraient être sélectionnés en donnant la priorité :  aux MAPI graves 1 qui entraînent la mort, engagent le pronostic vital, nécessitent une hospitalisation ou une prolongation de l’hospitalisation, provoquent des handicaps durables ou importants ou sont des anomalies congénitales ;  aux manifestations d’une fréquence supérieure aux taux prévus ou",
@@ -1706,20 +1706,20 @@
       },
       "keywords": [
         {
+          "term": "doit être",
+          "heading": false
+        },
+        {
           "term": "doivent être",
           "heading": false
         },
         {
-          "term": "doit être",
+          "term": "surveillance passive",
           "heading": false
         },
         {
           "term": "évaluation",
           "heading": true
-        },
-        {
-          "term": "surveillance passive",
-          "heading": false
         },
         {
           "term": "préalables",
@@ -1745,15 +1745,11 @@
       },
       "keywords": [
         {
-          "term": "que les",
-          "heading": false
-        },
-        {
           "term": "vaccine pharmacovigilance",
           "heading": false
         },
         {
-          "term": "pour que",
+          "term": "que les",
           "heading": false
         },
         {
@@ -1761,7 +1757,7 @@
           "heading": true
         },
         {
-          "term": "des",
+          "term": "pour que",
           "heading": false
         },
         {
@@ -1771,6 +1767,10 @@
         {
           "term": "soient",
           "heading": false
+        },
+        {
+          "term": "évaluation",
+          "heading": true
         }
       ],
       "extract": "Pour que les critères décrits ci-dessus soient remplis, et pour que les résultats soient plus largement acceptés, l’évaluation du lien de causalité des MAPI doit, dans l’idéal, être réalisée par une équipe ou un comité composé d’experts des disciplines concernées. Il se peut néanmoins que, dans nombre de pays et dans bien des contextes, ces vastes compétences ne soient pas disponibles. Les ressources humaines",
@@ -1835,7 +1835,7 @@
           "heading": false
         },
         {
-          "term": "peut être",
+          "term": "signe défavorable",
           "heading": false
         },
         {
@@ -1843,15 +1843,15 @@
           "heading": false
         },
         {
-          "term": "signe défavorable",
+          "term": "diagnostic valable",
+          "heading": false
+        },
+        {
+          "term": "peut être",
           "heading": false
         },
         {
           "term": "les informations",
-          "heading": false
-        },
-        {
-          "term": "des informations",
           "heading": false
         }
       ],
@@ -1882,19 +1882,11 @@
           "heading": false
         },
         {
-          "term": "liste",
-          "heading": true
+          "term": "est-elle survenue",
+          "heading": false
         },
         {
           "term": "une erreur",
-          "heading": false
-        },
-        {
-          "term": "des données",
-          "heading": false
-        },
-        {
-          "term": "est-elle survenue",
           "heading": false
         },
         {
@@ -1904,6 +1896,14 @@
         {
           "term": "contrôle",
           "heading": true
+        },
+        {
+          "term": "liste",
+          "heading": true
+        },
+        {
+          "term": "des données",
+          "heading": false
         }
       ],
       "extract": "Étape 2 : Liste de contrôle La liste de contrôle (Tableau 1) a pour objet de guider les évaluateurs dans la collecte des données nécessaires à l’examen du cas. Tableau 1. Évaluation du lien de causalité : liste de contrôle I. Des données solides étayent-elles d’autres causes ? O N Inc. SO Observations Un examen clinique ou des examens de laboratoire sur le patient confirment-ils une autre cause ?     II. Y",
@@ -1933,10 +1933,6 @@
           "heading": false
         },
         {
-          "term": "des",
-          "heading": true
-        },
-        {
           "term": "encéphalite",
           "heading": false
         },
@@ -1945,12 +1941,16 @@
           "heading": true
         },
         {
+          "term": "des",
+          "heading": true
+        },
+        {
           "term": "solides",
           "heading": true
         },
         {
-          "term": "données",
-          "heading": true
+          "term": "laboratoire",
+          "heading": false
         }
       ],
       "extract": "Des données solides étayent-elles d’autres causes ? Pour évaluer si un lien signalé est de nature causale, il faut voir dans quelle mesure les chercheurs ont examiné d’autres explications et les ont effectivement rejetées. Un examen clinique ou des examens de laboratoire sur le patient confirment-ils une autre cause ? Les examens cliniques et de laboratoire peuvent révéler d’autres affections ayant peut-être causé",
@@ -1976,23 +1976,7 @@
           "heading": true
         },
         {
-          "term": "des réactions",
-          "heading": false
-        },
-        {
-          "term": "des mapi",
-          "heading": false
-        },
-        {
-          "term": "les réactions",
-          "heading": false
-        },
-        {
           "term": "réactions systémiques",
-          "heading": false
-        },
-        {
-          "term": "une erreur",
           "heading": false
         },
         {
@@ -2000,8 +1984,24 @@
           "heading": false
         },
         {
-          "term": "entraîner des",
+          "term": "des réactions",
           "heading": false
+        },
+        {
+          "term": "mauvais diluant",
+          "heading": false
+        },
+        {
+          "term": "des mapi",
+          "heading": false
+        },
+        {
+          "term": "une erreur",
+          "heading": false
+        },
+        {
+          "term": "a-t-il",
+          "heading": true
         }
       ],
       "extract": "Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination ? La plupart des manifestations postvaccinales sont mineures et passagères, un bras douloureux ou une légère fièvre, par exemple. Les réactions graves sont rares (probabilité de l’ordre d’un cas pour plusieurs milliers de doses à un cas pour plusieurs millions de doses), et certaines sont même si peu fréquentes qu’il est impossible d’évaluer",
@@ -2027,15 +2027,15 @@
           "heading": true
         },
         {
-          "term": "délai approprié",
-          "heading": false
-        },
-        {
           "term": "jours après",
           "heading": false
         },
         {
           "term": "ppav chez",
+          "heading": false
+        },
+        {
+          "term": "délai approprié",
           "heading": false
         },
         {
@@ -2121,6 +2121,10 @@
           "heading": false
         },
         {
+          "term": "antécédents anaphylaxie",
+          "heading": false
+        },
+        {
           "term": "une coïncidence",
           "heading": false
         },
@@ -2129,11 +2133,7 @@
           "heading": false
         },
         {
-          "term": "antécédents anaphylaxie",
-          "heading": false
-        },
-        {
-          "term": "sont des",
+          "term": "manifestation pourrait-elle",
           "heading": false
         }
       ],
@@ -2211,11 +2211,11 @@
           "heading": false
         },
         {
-          "term": "causalité avec",
+          "term": "classification finale",
           "heading": false
         },
         {
-          "term": "classification finale",
+          "term": "causalité avec",
           "heading": false
         },
         {
@@ -2305,7 +2305,7 @@
           "heading": false
         },
         {
-          "term": "pour",
+          "term": "causalité",
           "heading": true
         }
       ],
@@ -2348,16 +2348,16 @@
           "heading": true
         },
         {
-          "term": "des",
-          "heading": false
-        },
-        {
           "term": "évaluateurs",
           "heading": false
         },
         {
-          "term": "logique",
-          "heading": true
+          "term": "des",
+          "heading": false
+        },
+        {
+          "term": "spéciaux",
+          "heading": false
         }
       ],
       "extract": "La causalité est évaluée à l’aide des informations et des ressources dont disposent les évaluateurs à un moment donné, éléments qui peuvent être ou non adéquats. S’ils ne le sont pas, il est impossible de mener une évaluation du lien de causalité. Et même lorsqu’ils le sont, la précision de l’analyse dépend largement des compétences, de l’expérience et du savoir-faire des évaluateurs (Figure 5). Dans certains cas,",
@@ -2427,19 +2427,19 @@
           "heading": false
         },
         {
-          "term": "des réactions",
-          "heading": false
+          "term": "vaccin",
+          "heading": true
         },
         {
           "term": "réactions indésirables",
           "heading": false
         },
         {
-          "term": "vaccin",
-          "heading": true
+          "term": "des réactions",
+          "heading": false
         },
         {
-          "term": "par exemple",
+          "term": "réponse inflammatoire",
           "heading": false
         },
         {
@@ -2466,7 +2466,7 @@
       },
       "keywords": [
         {
-          "term": "comme résultat",
+          "term": "mauvais diluant",
           "heading": false
         },
         {
@@ -2474,28 +2474,28 @@
           "heading": false
         },
         {
-          "term": "une",
-          "heading": true
-        },
-        {
-          "term": "mauvais diluant",
-          "heading": false
-        },
-        {
           "term": "erreur",
           "heading": true
+        },
+        {
+          "term": "comme résultat",
+          "heading": false
         },
         {
           "term": "des réactions",
           "heading": false
         },
         {
-          "term": "avec comme",
+          "term": "vivant atténué",
           "heading": false
         },
         {
-          "term": "les réactions",
+          "term": "microbien durant",
           "heading": false
+        },
+        {
+          "term": "une",
+          "heading": true
         }
       ],
       "extract": "Les MAPI de cette catégorie sont évitables par nature. Le mécanisme de classification s’intéresse donc à la nature de l’erreur plutôt qu’au(x) processus biologique(s) à l’origine de la MAPI en question. Néanmoins, de nombreuses MAPI de cette catégorie résultent de processus identiques ou similaires à ceux qui sous-tendent les réactions liées au produit vaccinal ou à un problème de qualité du vaccin. Les réactions",
@@ -2574,15 +2574,15 @@
           "heading": false
         },
         {
-          "term": "données",
-          "heading": true
-        },
-        {
           "term": "probant",
           "heading": true
         },
         {
           "term": "temporel",
+          "heading": true
+        },
+        {
+          "term": "données",
           "heading": true
         }
       ],
@@ -2644,7 +2644,7 @@
           "heading": true
         },
         {
-          "term": "vaccination",
+          "term": "causalité",
           "heading": true
         }
       ],
@@ -2667,15 +2667,15 @@
       },
       "keywords": [
         {
+          "term": "complications affections",
+          "heading": false
+        },
+        {
           "term": "les manifestations",
           "heading": false
         },
         {
-          "term": "les complications",
-          "heading": false
-        },
-        {
-          "term": "complications affections",
+          "term": "congénitales",
           "heading": false
         }
       ],
@@ -2741,8 +2741,8 @@
           "heading": false
         },
         {
-          "term": "sur les",
-          "heading": false
+          "term": "évaluation",
+          "heading": true
         }
       ],
       "extract": "Mesures à prendre après l’évaluation du lien de causalité L’imputation causale n’est pas une fin en soi. Les leçons tirées de l’évaluation doivent éclairer les responsables techniques et administratifs et les responsables des programmes de vaccination sur les causes des problèmes et sur les prochaines mesures à prendre pour éviter autant que possible qu’ils se reproduisent. Ces mesures peuvent concerner, entre",
@@ -2764,11 +2764,11 @@
       },
       "keywords": [
         {
-          "term": "vaccination",
+          "term": "causalité",
           "heading": true
         },
         {
-          "term": "causalité",
+          "term": "vaccination",
           "heading": true
         },
         {
@@ -2999,15 +2999,15 @@
           "heading": false
         },
         {
+          "term": "une mapi",
+          "heading": false
+        },
+        {
           "term": "causalité pour",
           "heading": false
         },
         {
           "term": "les facteurs",
-          "heading": false
-        },
-        {
-          "term": "une mapi",
           "heading": false
         },
         {
@@ -3019,11 +3019,11 @@
           "heading": false
         },
         {
-          "term": "élaboré par",
+          "term": "consultatif mondial",
           "heading": false
         },
         {
-          "term": "consultatif mondial",
+          "term": "élaboré par",
           "heading": false
         }
       ],
@@ -3087,11 +3087,11 @@
           "heading": false
         },
         {
-          "term": "une erreur",
+          "term": "est-elle survenue",
           "heading": false
         },
         {
-          "term": "est-elle survenue",
+          "term": "une erreur",
           "heading": false
         },
         {
@@ -3099,7 +3099,7 @@
           "heading": false
         },
         {
-          "term": "des données",
+          "term": "solides réfutent-elles",
           "heading": false
         },
         {
@@ -3156,7 +3156,7 @@
           "heading": true
         },
         {
-          "term": "logique",
+          "term": "pouvons",
           "heading": false
         }
       ],
@@ -3205,11 +3205,11 @@
           "heading": false
         },
         {
-          "term": "est placé",
+          "term": "placé sous",
           "heading": false
         },
         {
-          "term": "placé sous",
+          "term": "est placé",
           "heading": false
         },
         {
@@ -3225,7 +3225,7 @@
           "heading": true
         },
         {
-          "term": "traitement",
+          "term": "encéphalite",
           "heading": false
         }
       ],
@@ -3270,11 +3270,11 @@
           "heading": false
         },
         {
-          "term": "vérification menée",
+          "term": "manifestation pourrait-elle",
           "heading": false
         },
         {
-          "term": "manifestation pourrait-elle",
+          "term": "vérification menée",
           "heading": false
         },
         {
@@ -3294,7 +3294,7 @@
           "heading": false
         },
         {
-          "term": "des données",
+          "term": "solides réfutent-elles",
           "heading": false
         }
       ],
@@ -3335,16 +3335,16 @@
       },
       "keywords": [
         {
-          "term": "étape",
-          "heading": true
-        },
-        {
           "term": "méningo-encéphalite",
           "heading": false
         },
         {
           "term": "herpès",
           "heading": false
+        },
+        {
+          "term": "étape",
+          "heading": true
         }
       ],
       "extract": "Cocher  toutes les cases pertinentes Notes pour l’étape 3. I A : car PCR positive au virus de l’herpès. IV C : car il existe plusieurs causes de méningo-encéphalite chez le nourrisson. Plusieurs infections différentes peuvent être évoquées. Résumer la logique sous-tendant la classification : À la lumière des données disponibles, nous pouvons proposer la classification suivante : Lien de causalité avec la",
@@ -3386,11 +3386,11 @@
           "heading": true
         },
         {
-          "term": "membres sont",
+          "term": "médecin",
           "heading": false
         },
         {
-          "term": "médecin",
+          "term": "membre supérieur",
           "heading": false
         },
         {
@@ -3435,15 +3435,19 @@
       },
       "keywords": [
         {
-          "term": "une manifestation",
-          "heading": false
-        },
-        {
           "term": "manifestation est-elle",
           "heading": false
         },
         {
           "term": "manifestation pourrait-elle",
+          "heading": false
+        },
+        {
+          "term": "une manifestation",
+          "heading": false
+        },
+        {
+          "term": "est-elle survenue",
           "heading": false
         },
         {
@@ -3455,15 +3459,11 @@
           "heading": false
         },
         {
-          "term": "est-elle survenue",
+          "term": "solides réfutent-elles",
           "heading": false
         },
         {
-          "term": "dans les",
-          "heading": false
-        },
-        {
-          "term": "des données",
+          "term": "une autre",
           "heading": false
         }
       ],
@@ -3547,10 +3547,6 @@
           "heading": false
         },
         {
-          "term": "développé une",
-          "heading": false
-        },
-        {
           "term": "dengue sévère",
           "heading": false
         },
@@ -3559,11 +3555,15 @@
           "heading": false
         },
         {
-          "term": "avec une",
+          "term": "été administrés",
           "heading": false
         },
         {
-          "term": "été administrés",
+          "term": "été posé",
+          "heading": false
+        },
+        {
+          "term": "alors été",
           "heading": false
         }
       ],
@@ -3627,7 +3627,7 @@
           "heading": false
         },
         {
-          "term": "une erreur",
+          "term": "vaccin antirougeoleux",
           "heading": false
         },
         {
@@ -3635,11 +3635,7 @@
           "heading": false
         },
         {
-          "term": "vaccin antirougeoleux",
-          "heading": false
-        },
-        {
-          "term": "erreur dans",
+          "term": "une erreur",
           "heading": false
         },
         {
@@ -3647,7 +3643,11 @@
           "heading": false
         },
         {
-          "term": "une autre",
+          "term": "erreur dans",
+          "heading": false
+        },
+        {
+          "term": "pas erreur",
           "heading": false
         }
       ],
@@ -3777,11 +3777,11 @@
           "heading": false
         },
         {
-          "term": "une erreur",
+          "term": "vérification menée",
           "heading": false
         },
         {
-          "term": "vérification menée",
+          "term": "une erreur",
           "heading": false
         },
         {
@@ -3793,11 +3793,11 @@
           "heading": false
         },
         {
-          "term": "des données",
+          "term": "pas erreur",
           "heading": false
         },
         {
-          "term": "une autre",
+          "term": "non confirmée",
           "heading": false
         }
       ],
@@ -3871,7 +3871,7 @@
           "heading": false
         },
         {
-          "term": "santé",
+          "term": "avenue appia",
           "heading": false
         },
         {
@@ -3879,7 +3879,7 @@
           "heading": true
         },
         {
-          "term": "avenue appia",
+          "term": "santé",
           "heading": false
         }
       ],
@@ -3911,15 +3911,7 @@
   "withheld": false,
   "keywords": [
     {
-      "term": "une des",
-      "heading": false
-    },
-    {
       "term": "causalité des",
-      "heading": true
-    },
-    {
-      "term": "manifestation une",
       "heading": true
     },
     {
@@ -3927,15 +3919,19 @@
       "heading": true
     },
     {
-      "term": "des mapi",
-      "heading": true
-    },
-    {
-      "term": "dans des",
+      "term": "une des",
       "heading": false
     },
     {
-      "term": "des données",
+      "term": "manifestation une",
+      "heading": true
+    },
+    {
+      "term": "vaccin vaccination",
+      "heading": true
+    },
+    {
+      "term": "des mapi",
       "heading": true
     },
     {
@@ -3943,11 +3939,11 @@
       "heading": false
     },
     {
-      "term": "par les",
+      "term": "vaccin est",
       "heading": false
     },
     {
-      "term": "que des",
+      "term": "dans des",
       "heading": false
     },
     {
@@ -3955,7 +3951,11 @@
       "heading": true
     },
     {
-      "term": "pour les",
+      "term": "par les",
+      "heading": false
+    },
+    {
+      "term": "des données",
       "heading": true
     }
   ],
@@ -4392,6 +4392,176 @@
         "in-sequence",
         "graphic"
       ]
+    }
+  ],
+  "images": [
+    {
+      "id": "img-p021-1",
+      "file": "images/img-p021-1.webp",
+      "page": 21,
+      "narratives": {
+        "en": "Chevron diagram (Figure 1, in French) of four eligibility steps for AEFI causality assessment: AEFI case (ensure the investigation is complete and all case information is available, and store it for data mining); list the vaccine(s) given before the event; valid diagnosis (select the adverse sign, abnormal laboratory finding, symptom or disease presumed to be causally linked to the vaccine); and case definition (use an appropriate definition, e.g. Brighton Collaboration, standard literature, national or other approved definition, to assess diagnostic certainty).",
+        "ar": "مخطط على شكل أسهم (الشكل 1، بالفرنسية) يوضح أربع خطوات لأهلية تقييم العلاقة السببية للأحداث الضائرة التالية للتمنيع: حالة الحدث الضائر (التأكد من اكتمال التحقيق وتوافر جميع معلومات الحالة وحفظها في قاعدة بيانات لاستخراج البيانات)؛ وإدراج اللقاح (اللقاحات) المعطاة قبل الحدث؛ والتشخيص الصحيح (اختيار العلامة الضائرة أو النتيجة المختبرية غير الطبيعية أو العرض أو المرض المفترض ارتباطه سببيًا باللقاح)؛ وتعريف الحالة (استخدام تعريف مناسب، مثل Brighton Collaboration أو التعريف القياسي في الأدبيات أو التعريف الوطني أو غيره من التعاريف المعتمدة، لتقييم درجة اليقين من التشخيص).",
+        "zh": "箭头形示意图（图1，法文），列出疫苗接种后不良事件（AEFI）因果关系评估的四个纳入步骤：AEFI病例（确保调查完成、所有病例信息齐全，并存入数据库以供数据挖掘）；列出事件前接种的疫苗；有效诊断（选择推定与疫苗有因果关系的不良体征、异常实验室结果、症状或疾病）；病例定义（使用适当的定义，如Brighton Collaboration、文献标准定义、国家定义或其他认可定义，评估诊断确定程度）。",
+        "es": "Diagrama de cheurones (figura 1, en francés) con cuatro pasos de elegibilidad para la evaluación de la causalidad de los ESAVI: caso de ESAVI (asegurarse de que la investigación esté terminada y se disponga de toda la información del caso, y conservarla en una base de datos para la minería de datos); enumerar la(s) vacuna(s) administrada(s) antes del evento; diagnóstico válido (seleccionar el signo adverso, el resultado de laboratorio anormal, el síntoma o la enfermedad con presunta relación causal con la vacuna); y definición de caso (usar una definición adecuada, p. ej., Brighton Collaboration, definición estándar de la literatura, nacional u otra aprobada, para evaluar la certeza diagnóstica).",
+        "fr": "Diagramme en chevrons (figure 1) présentant quatre étapes de sélection pour l'évaluation du lien de causalité des MAPI : Cas de MAPI (s'assurer que l'enquête est terminée et que toutes les informations sur le cas sont disponibles, et les conserver dans une base pour l'exploration de données) ; Répertorier le(s) vaccin(s) administré(s) avant la manifestation ; Diagnostic valable (sélectionner le signe défavorable, le résultat de laboratoire anormal, le symptôme ou la maladie ayant un lien de causalité présumé avec le vaccin) ; Définition du cas (utiliser une définition adaptée – Brighton Collaboration, définition standard de la littérature, définition nationale ou autre définition approuvée – pour évaluer le degré de certitude du diagnostic).",
+        "ru": "Схема из шевронов (рисунок 1, на французском языке) с четырьмя этапами отбора для оценки причинно-следственной связи ПППИ: случай ПППИ (убедиться, что расследование завершено и вся информация о случае доступна, и сохранить ее в базе для анализа данных); перечислить вакцину(ы), введенные до события; достоверный диагноз (выбрать неблагоприятный признак, аномальный лабораторный результат, симптом или заболевание с предполагаемой причинной связью с вакциной); определение случая (использовать подходящее определение — Brighton Collaboration, стандартное определение из литературы, национальное или иное утвержденное — для оценки степени достоверности диагноза)."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p031-1",
+      "file": "images/img-p031-1.webp",
+      "page": 31,
+      "narratives": {
+        "en": "Causality assessment algorithm flowchart (in French). I. Is there strong evidence for other causes? (Yes → IA, causal association inconsistent with vaccination); II. Is there a known causal association with the vaccine or vaccination, and did the event occur within the time window of increased risk? (Yes → IIA, consistent causal association); III. Is there strong evidence against a causal association? (Yes → IIIA, inconsistent); IV. Other qualifying factors → is the event classifiable? (No → IVD, unclassifiable; Yes → IVA consistent, IVB indeterminate or IVC inconsistent).",
+        "ar": "مخطط انسيابي لخوارزمية تقييم العلاقة السببية (بالفرنسية). I. هل توجد بيّنات قوية على أسباب أخرى؟ (نعم ← IA، علاقة سببية غير متسقة مع التطعيم)؛ II. هل توجد علاقة سببية معروفة مع اللقاح أو التطعيم، وهل وقع الحدث ضمن الفترة الزمنية لزيادة الخطر؟ (نعم ← IIA، علاقة سببية متسقة)؛ III. هل توجد بيّنات قوية تنفي وجود علاقة سببية؟ (نعم ← IIIA، غير متسقة)؛ IV. عوامل التصنيف الأخرى ← هل الحدث قابل للتصنيف؟ (لا ← IVD، غير قابل للتصنيف؛ نعم ← IVA متسقة، أو IVB غير محددة، أو IVC غير متسقة).",
+        "zh": "因果关系评估算法流程图（法文）。I. 是否有强有力的证据支持其他原因？（是 → IA，与接种不一致的因果关系）；II. 是否存在与疫苗或接种的已知因果关系，事件是否发生在风险增加的时间窗内？（是 → IIA，一致的因果关系）；III. 是否有强有力的证据否定因果关系？（是 → IIIA，不一致）；IV. 其他分类因素 → 事件是否可分类？（否 → IVD，无法分类；是 → IVA一致、IVB不确定或IVC不一致）。",
+        "es": "Diagrama de flujo del algoritmo de evaluación de la causalidad (en francés). I. ¿Hay pruebas sólidas de otras causas? (Sí → IA, relación causal incompatible con la vacunación); II. ¿Existe una relación causal conocida con la vacuna o la vacunación, y se produjo el evento en el periodo de mayor riesgo? (Sí → IIA, relación causal compatible); III. ¿Hay pruebas sólidas en contra de una relación causal? (Sí → IIIA, incompatible); IV. Otros factores de clasificación → ¿es clasificable el evento? (No → IVD, inclasificable; Sí → IVA compatible, IVB indeterminado o IVC incompatible).",
+        "fr": "Logigramme de l'algorithme d'évaluation du lien de causalité. I. Des données solides étayent-elles d'autres causes ? (Oui → IA, lien de causalité avec la vaccination improbable) ; II. Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination, et la manifestation est-elle survenue dans la période de risque accru ? (Oui → IIA, lien probable) ; III. Des données solides réfutent-elles l'existence d'un lien de causalité ? (Oui → IIIA, improbable) ; IV. Autres facteurs de classification → la manifestation est-elle classable ? (Non → IVD, inclassable ; Oui → IVA probable, IVB indéterminé ou IVC improbable).",
+        "ru": "Блок-схема алгоритма оценки причинно-следственной связи (на французском языке). I. Есть ли веские доказательства других причин? (Да → IA, причинная связь с вакцинацией маловероятна); II. Есть ли известная причинная связь с вакциной или вакцинацией и произошло ли событие в период повышенного риска? (Да → IIA, связь вероятна); III. Есть ли веские доказательства против причинной связи? (Да → IIIA, маловероятна); IV. Прочие классификационные факторы → поддается ли событие классификации? (Нет → IVD, не классифицируется; Да → IVA вероятна, IVB не определена или IVC маловероятна)."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p032-1",
+      "file": "images/img-p032-1.webp",
+      "page": 32,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف.",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación.",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p044-1",
+      "file": "images/img-p044-1.webp",
+      "page": 44,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification. It is the Annex 1 worksheet copy of Figure 4.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف. وهي نسخة استمارة الملحق 1 من الشكل 4.",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。这是附件1工作表中的图4副本。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación. Es la copia del anexo 1 de la figura 4.",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification. Il s'agit de la copie de la figure 4 dans la fiche de l'annexe 1.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация. Это копия рисунка 4 в форме приложения 1."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p047-1",
+      "file": "images/img-p047-1.webp",
+      "page": 47,
+      "narratives": {
+        "en": "Causality assessment algorithm flowchart (in French). I. Is there strong evidence for other causes? (Yes → IA, causal association inconsistent with vaccination); II. Is there a known causal association with the vaccine or vaccination, and did the event occur within the time window of increased risk? (Yes → IIA, consistent causal association); III. Is there strong evidence against a causal association? (Yes → IIIA, inconsistent); IV. Other qualifying factors → is the event classifiable? (No → IVD, unclassifiable; Yes → IVA consistent, IVB indeterminate or IVC inconsistent). Completed for Example 1 (meningococcal conjugate vaccine and seizures): boxes IA and IVC are ticked.",
+        "ar": "مخطط انسيابي لخوارزمية تقييم العلاقة السببية (بالفرنسية). I. هل توجد بيّنات قوية على أسباب أخرى؟ (نعم ← IA، علاقة سببية غير متسقة مع التطعيم)؛ II. هل توجد علاقة سببية معروفة مع اللقاح أو التطعيم، وهل وقع الحدث ضمن الفترة الزمنية لزيادة الخطر؟ (نعم ← IIA، علاقة سببية متسقة)؛ III. هل توجد بيّنات قوية تنفي وجود علاقة سببية؟ (نعم ← IIIA، غير متسقة)؛ IV. عوامل التصنيف الأخرى ← هل الحدث قابل للتصنيف؟ (لا ← IVD، غير قابل للتصنيف؛ نعم ← IVA متسقة، أو IVB غير محددة، أو IVC غير متسقة). مكتمل لـمثال 1 (لقاح المكورات السحائية المقترن والنوبات التشنجية): تم وضع علامة على المربعين IA وIVC.",
+        "zh": "因果关系评估算法流程图（法文）。I. 是否有强有力的证据支持其他原因？（是 → IA，与接种不一致的因果关系）；II. 是否存在与疫苗或接种的已知因果关系，事件是否发生在风险增加的时间窗内？（是 → IIA，一致的因果关系）；III. 是否有强有力的证据否定因果关系？（是 → IIIA，不一致）；IV. 其他分类因素 → 事件是否可分类？（否 → IVD，无法分类；是 → IVA一致、IVB不确定或IVC不一致）。已针对示例1（脑膜炎球菌结合疫苗与惊厥）填写：勾选了IA和IVC。",
+        "es": "Diagrama de flujo del algoritmo de evaluación de la causalidad (en francés). I. ¿Hay pruebas sólidas de otras causas? (Sí → IA, relación causal incompatible con la vacunación); II. ¿Existe una relación causal conocida con la vacuna o la vacunación, y se produjo el evento en el periodo de mayor riesgo? (Sí → IIA, relación causal compatible); III. ¿Hay pruebas sólidas en contra de una relación causal? (Sí → IIIA, incompatible); IV. Otros factores de clasificación → ¿es clasificable el evento? (No → IVD, inclasificable; Sí → IVA compatible, IVB indeterminado o IVC incompatible). Completado para el ejemplo 1 (vacuna antimeningocócica conjugada y convulsiones): están marcadas las casillas IA e IVC.",
+        "fr": "Logigramme de l'algorithme d'évaluation du lien de causalité. I. Des données solides étayent-elles d'autres causes ? (Oui → IA, lien de causalité avec la vaccination improbable) ; II. Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination, et la manifestation est-elle survenue dans la période de risque accru ? (Oui → IIA, lien probable) ; III. Des données solides réfutent-elles l'existence d'un lien de causalité ? (Oui → IIIA, improbable) ; IV. Autres facteurs de classification → la manifestation est-elle classable ? (Non → IVD, inclassable ; Oui → IVA probable, IVB indéterminé ou IVC improbable). Complété pour l'Exemple 1 (vaccin antiméningococcique conjugué et convulsions) : les cases IA et IVC sont cochées.",
+        "ru": "Блок-схема алгоритма оценки причинно-следственной связи (на французском языке). I. Есть ли веские доказательства других причин? (Да → IA, причинная связь с вакцинацией маловероятна); II. Есть ли известная причинная связь с вакциной или вакцинацией и произошло ли событие в период повышенного риска? (Да → IIA, связь вероятна); III. Есть ли веские доказательства против причинной связи? (Да → IIIA, маловероятна); IV. Прочие классификационные факторы → поддается ли событие классификации? (Нет → IVD, не классифицируется; Да → IVA вероятна, IVB не определена или IVC маловероятна). Заполнен для примера 1 (конъюгированная менингококковая вакцина и судороги): отмечены IA и IVC."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p047-2",
+      "file": "images/img-p047-2.webp",
+      "page": 47,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification. Completed for Example 1 (meningococcal conjugate vaccine and seizures): C (coincidence) is ticked.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف. مكتمل لـمثال 1 (لقاح المكورات السحائية المقترن والنوبات التشنجية): تم وضع علامة على C (مصادفة).",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。已针对示例1（脑膜炎球菌结合疫苗与惊厥）填写：勾选了C（偶合）。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación. Completado para el ejemplo 1 (vacuna antimeningocócica conjugada y convulsiones): está marcada C (coincidencia).",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification. Complété pour l'Exemple 1 (vaccin antiméningococcique conjugué et convulsions) : C (coïncidence) est cochée.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация. Заполнена для примера 1 (конъюгированная менингококковая вакцина и судороги): отмечено C (совпадение)."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p050-1",
+      "file": "images/img-p050-1.webp",
+      "page": 50,
+      "narratives": {
+        "en": "Causality assessment algorithm flowchart (in French). I. Is there strong evidence for other causes? (Yes → IA, causal association inconsistent with vaccination); II. Is there a known causal association with the vaccine or vaccination, and did the event occur within the time window of increased risk? (Yes → IIA, consistent causal association); III. Is there strong evidence against a causal association? (Yes → IIIA, inconsistent); IV. Other qualifying factors → is the event classifiable? (No → IVD, unclassifiable; Yes → IVA consistent, IVB indeterminate or IVC inconsistent). Completed for Example 2 (OPV and acute flaccid paralysis): boxes IIA and IVC are ticked.",
+        "ar": "مخطط انسيابي لخوارزمية تقييم العلاقة السببية (بالفرنسية). I. هل توجد بيّنات قوية على أسباب أخرى؟ (نعم ← IA، علاقة سببية غير متسقة مع التطعيم)؛ II. هل توجد علاقة سببية معروفة مع اللقاح أو التطعيم، وهل وقع الحدث ضمن الفترة الزمنية لزيادة الخطر؟ (نعم ← IIA، علاقة سببية متسقة)؛ III. هل توجد بيّنات قوية تنفي وجود علاقة سببية؟ (نعم ← IIIA، غير متسقة)؛ IV. عوامل التصنيف الأخرى ← هل الحدث قابل للتصنيف؟ (لا ← IVD، غير قابل للتصنيف؛ نعم ← IVA متسقة، أو IVB غير محددة، أو IVC غير متسقة). مكتمل لـمثال 2 (لقاح شلل الأطفال الفموي والشلل الرخو الحاد): تم وضع علامة على المربعين IIA وIVC.",
+        "zh": "因果关系评估算法流程图（法文）。I. 是否有强有力的证据支持其他原因？（是 → IA，与接种不一致的因果关系）；II. 是否存在与疫苗或接种的已知因果关系，事件是否发生在风险增加的时间窗内？（是 → IIA，一致的因果关系）；III. 是否有强有力的证据否定因果关系？（是 → IIIA，不一致）；IV. 其他分类因素 → 事件是否可分类？（否 → IVD，无法分类；是 → IVA一致、IVB不确定或IVC不一致）。已针对示例2（口服脊灰疫苗与急性弛缓性麻痹）填写：勾选了IIA和IVC。",
+        "es": "Diagrama de flujo del algoritmo de evaluación de la causalidad (en francés). I. ¿Hay pruebas sólidas de otras causas? (Sí → IA, relación causal incompatible con la vacunación); II. ¿Existe una relación causal conocida con la vacuna o la vacunación, y se produjo el evento en el periodo de mayor riesgo? (Sí → IIA, relación causal compatible); III. ¿Hay pruebas sólidas en contra de una relación causal? (Sí → IIIA, incompatible); IV. Otros factores de clasificación → ¿es clasificable el evento? (No → IVD, inclasificable; Sí → IVA compatible, IVB indeterminado o IVC incompatible). Completado para el ejemplo 2 (VPO y parálisis flácida aguda): están marcadas las casillas IIA e IVC.",
+        "fr": "Logigramme de l'algorithme d'évaluation du lien de causalité. I. Des données solides étayent-elles d'autres causes ? (Oui → IA, lien de causalité avec la vaccination improbable) ; II. Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination, et la manifestation est-elle survenue dans la période de risque accru ? (Oui → IIA, lien probable) ; III. Des données solides réfutent-elles l'existence d'un lien de causalité ? (Oui → IIIA, improbable) ; IV. Autres facteurs de classification → la manifestation est-elle classable ? (Non → IVD, inclassable ; Oui → IVA probable, IVB indéterminé ou IVC improbable). Complété pour l'Exemple 2 (VPO et paralysie flasque aiguë) : les cases IIA et IVC sont cochées.",
+        "ru": "Блок-схема алгоритма оценки причинно-следственной связи (на французском языке). I. Есть ли веские доказательства других причин? (Да → IA, причинная связь с вакцинацией маловероятна); II. Есть ли известная причинная связь с вакциной или вакцинацией и произошло ли событие в период повышенного риска? (Да → IIA, связь вероятна); III. Есть ли веские доказательства против причинной связи? (Да → IIIA, маловероятна); IV. Прочие классификационные факторы → поддается ли событие классификации? (Нет → IVD, не классифицируется; Да → IVA вероятна, IVB не определена или IVC маловероятна). Заполнен для примера 2 (ОПВ и острый вялый паралич): отмечены IIA и IVC."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p050-2",
+      "file": "images/img-p050-2.webp",
+      "page": 50,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification. Completed for Example 2 (OPV and acute flaccid paralysis): A1 (vaccine product-related reaction) is ticked.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف. مكتمل لـمثال 2 (لقاح شلل الأطفال الفموي والشلل الرخو الحاد): تم وضع علامة على A1 (تفاعل مرتبط بمنتج اللقاح).",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。已针对示例2（口服脊灰疫苗与急性弛缓性麻痹）填写：勾选了A1（疫苗产品相关反应）。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación. Completado para el ejemplo 2 (VPO y parálisis flácida aguda): está marcada A1 (reacción relacionada con el producto vacunal).",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification. Complété pour l'Exemple 2 (VPO et paralysie flasque aiguë) : A1 (réaction liée au produit vaccinal) est cochée.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация. Заполнена для примера 2 (ОПВ и острый вялый паралич): отмечено A1 (реакция, связанная с вакцинным продуктом)."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p054-1",
+      "file": "images/img-p054-1.webp",
+      "page": 54,
+      "narratives": {
+        "en": "Causality assessment algorithm flowchart (in French). I. Is there strong evidence for other causes? (Yes → IA, causal association inconsistent with vaccination); II. Is there a known causal association with the vaccine or vaccination, and did the event occur within the time window of increased risk? (Yes → IIA, consistent causal association); III. Is there strong evidence against a causal association? (Yes → IIIA, inconsistent); IV. Other qualifying factors → is the event classifiable? (No → IVD, unclassifiable; Yes → IVA consistent, IVB indeterminate or IVC inconsistent). Completed for Example 3, option 1 (MMR vaccine and thrombocytopenia): boxes IIA, IVB and IVC are ticked.",
+        "ar": "مخطط انسيابي لخوارزمية تقييم العلاقة السببية (بالفرنسية). I. هل توجد بيّنات قوية على أسباب أخرى؟ (نعم ← IA، علاقة سببية غير متسقة مع التطعيم)؛ II. هل توجد علاقة سببية معروفة مع اللقاح أو التطعيم، وهل وقع الحدث ضمن الفترة الزمنية لزيادة الخطر؟ (نعم ← IIA، علاقة سببية متسقة)؛ III. هل توجد بيّنات قوية تنفي وجود علاقة سببية؟ (نعم ← IIIA، غير متسقة)؛ IV. عوامل التصنيف الأخرى ← هل الحدث قابل للتصنيف؟ (لا ← IVD، غير قابل للتصنيف؛ نعم ← IVA متسقة، أو IVB غير محددة، أو IVC غير متسقة). مكتمل لـمثال 3، الخيار 1 (لقاح الحصبة والنكاف والحصبة الألمانية ونقص الصفيحات): تم وضع علامة على المربعات IIA وIVB وIVC.",
+        "zh": "因果关系评估算法流程图（法文）。I. 是否有强有力的证据支持其他原因？（是 → IA，与接种不一致的因果关系）；II. 是否存在与疫苗或接种的已知因果关系，事件是否发生在风险增加的时间窗内？（是 → IIA，一致的因果关系）；III. 是否有强有力的证据否定因果关系？（是 → IIIA，不一致）；IV. 其他分类因素 → 事件是否可分类？（否 → IVD，无法分类；是 → IVA一致、IVB不确定或IVC不一致）。已针对示例3选项1（麻腮风疫苗与血小板减少症）填写：勾选了IIA、IVB和IVC。",
+        "es": "Diagrama de flujo del algoritmo de evaluación de la causalidad (en francés). I. ¿Hay pruebas sólidas de otras causas? (Sí → IA, relación causal incompatible con la vacunación); II. ¿Existe una relación causal conocida con la vacuna o la vacunación, y se produjo el evento en el periodo de mayor riesgo? (Sí → IIA, relación causal compatible); III. ¿Hay pruebas sólidas en contra de una relación causal? (Sí → IIIA, incompatible); IV. Otros factores de clasificación → ¿es clasificable el evento? (No → IVD, inclasificable; Sí → IVA compatible, IVB indeterminado o IVC incompatible). Completado para el ejemplo 3, opción 1 (vacuna triple vírica y trombocitopenia): están marcadas las casillas IIA, IVB e IVC.",
+        "fr": "Logigramme de l'algorithme d'évaluation du lien de causalité. I. Des données solides étayent-elles d'autres causes ? (Oui → IA, lien de causalité avec la vaccination improbable) ; II. Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination, et la manifestation est-elle survenue dans la période de risque accru ? (Oui → IIA, lien probable) ; III. Des données solides réfutent-elles l'existence d'un lien de causalité ? (Oui → IIIA, improbable) ; IV. Autres facteurs de classification → la manifestation est-elle classable ? (Non → IVD, inclassable ; Oui → IVA probable, IVB indéterminé ou IVC improbable). Complété pour l'Exemple 3, option 1 (vaccin ROR et thrombopénie) : les cases IIA, IVB et IVC sont cochées.",
+        "ru": "Блок-схема алгоритма оценки причинно-следственной связи (на французском языке). I. Есть ли веские доказательства других причин? (Да → IA, причинная связь с вакцинацией маловероятна); II. Есть ли известная причинная связь с вакциной или вакцинацией и произошло ли событие в период повышенного риска? (Да → IIA, связь вероятна); III. Есть ли веские доказательства против причинной связи? (Да → IIIA, маловероятна); IV. Прочие классификационные факторы → поддается ли событие классификации? (Нет → IVD, не классифицируется; Да → IVA вероятна, IVB не определена или IVC маловероятна). Заполнен для примера 3, вариант 1 (вакцина КПК и тромбоцитопения): отмечены IIA, IVB и IVC."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p055-1",
+      "file": "images/img-p055-1.webp",
+      "page": 55,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification. Completed for Example 3, option 1 (MMR vaccine and thrombocytopenia): B2 (conflicting trends) and C (coincidence) are ticked.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف. مكتمل لـمثال 3، الخيار 1 (لقاح الحصبة والنكاف والحصبة الألمانية ونقص الصفيحات): تم وضع علامة على B2 (اتجاهات متضاربة) وC (مصادفة).",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。已针对示例3选项1（麻腮风疫苗与血小板减少症）填写：勾选了B2（趋势相互矛盾）和C（偶合）。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación. Completado para el ejemplo 3, opción 1 (vacuna triple vírica y trombocitopenia): están marcadas B2 (tendencias contradictorias) y C (coincidencia).",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification. Complété pour l'Exemple 3, option 1 (vaccin ROR et thrombopénie) : B2 (tendances contradictoires) et C (coïncidence) sont cochées.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация. Заполнена для примера 3, вариант 1 (вакцина КПК и тромбоцитопения): отмечены B2 (противоречивые тенденции) и C (совпадение)."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p057-1",
+      "file": "images/img-p057-1.webp",
+      "page": 57,
+      "narratives": {
+        "en": "Causality assessment algorithm flowchart (in French). I. Is there strong evidence for other causes? (Yes → IA, causal association inconsistent with vaccination); II. Is there a known causal association with the vaccine or vaccination, and did the event occur within the time window of increased risk? (Yes → IIA, consistent causal association); III. Is there strong evidence against a causal association? (Yes → IIIA, inconsistent); IV. Other qualifying factors → is the event classifiable? (No → IVD, unclassifiable; Yes → IVA consistent, IVB indeterminate or IVC inconsistent). Completed for Example 3, option 2 (MMR vaccine and septicaemia): boxes IVB and IVC are ticked.",
+        "ar": "مخطط انسيابي لخوارزمية تقييم العلاقة السببية (بالفرنسية). I. هل توجد بيّنات قوية على أسباب أخرى؟ (نعم ← IA، علاقة سببية غير متسقة مع التطعيم)؛ II. هل توجد علاقة سببية معروفة مع اللقاح أو التطعيم، وهل وقع الحدث ضمن الفترة الزمنية لزيادة الخطر؟ (نعم ← IIA، علاقة سببية متسقة)؛ III. هل توجد بيّنات قوية تنفي وجود علاقة سببية؟ (نعم ← IIIA، غير متسقة)؛ IV. عوامل التصنيف الأخرى ← هل الحدث قابل للتصنيف؟ (لا ← IVD، غير قابل للتصنيف؛ نعم ← IVA متسقة، أو IVB غير محددة، أو IVC غير متسقة). مكتمل لـمثال 3، الخيار 2 (لقاح الحصبة والنكاف والحصبة الألمانية وتسمم الدم): تم وضع علامة على المربعين IVB وIVC.",
+        "zh": "因果关系评估算法流程图（法文）。I. 是否有强有力的证据支持其他原因？（是 → IA，与接种不一致的因果关系）；II. 是否存在与疫苗或接种的已知因果关系，事件是否发生在风险增加的时间窗内？（是 → IIA，一致的因果关系）；III. 是否有强有力的证据否定因果关系？（是 → IIIA，不一致）；IV. 其他分类因素 → 事件是否可分类？（否 → IVD，无法分类；是 → IVA一致、IVB不确定或IVC不一致）。已针对示例3选项2（麻腮风疫苗与败血症）填写：勾选了IVB和IVC。",
+        "es": "Diagrama de flujo del algoritmo de evaluación de la causalidad (en francés). I. ¿Hay pruebas sólidas de otras causas? (Sí → IA, relación causal incompatible con la vacunación); II. ¿Existe una relación causal conocida con la vacuna o la vacunación, y se produjo el evento en el periodo de mayor riesgo? (Sí → IIA, relación causal compatible); III. ¿Hay pruebas sólidas en contra de una relación causal? (Sí → IIIA, incompatible); IV. Otros factores de clasificación → ¿es clasificable el evento? (No → IVD, inclasificable; Sí → IVA compatible, IVB indeterminado o IVC incompatible). Completado para el ejemplo 3, opción 2 (vacuna triple vírica y septicemia): están marcadas las casillas IVB e IVC.",
+        "fr": "Logigramme de l'algorithme d'évaluation du lien de causalité. I. Des données solides étayent-elles d'autres causes ? (Oui → IA, lien de causalité avec la vaccination improbable) ; II. Y a-t-il un lien de causalité connu avec le vaccin ou la vaccination, et la manifestation est-elle survenue dans la période de risque accru ? (Oui → IIA, lien probable) ; III. Des données solides réfutent-elles l'existence d'un lien de causalité ? (Oui → IIIA, improbable) ; IV. Autres facteurs de classification → la manifestation est-elle classable ? (Non → IVD, inclassable ; Oui → IVA probable, IVB indéterminé ou IVC improbable). Complété pour l'Exemple 3, option 2 (vaccin ROR et septicémie) : les cases IVB et IVC sont cochées.",
+        "ru": "Блок-схема алгоритма оценки причинно-следственной связи (на французском языке). I. Есть ли веские доказательства других причин? (Да → IA, причинная связь с вакцинацией маловероятна); II. Есть ли известная причинная связь с вакциной или вакцинацией и произошло ли событие в период повышенного риска? (Да → IIA, связь вероятна); III. Есть ли веские доказательства против причинной связи? (Да → IIIA, маловероятна); IV. Прочие классификационные факторы → поддается ли событие классификации? (Нет → IVD, не классифицируется; Да → IVA вероятна, IVB не определена или IVC маловероятна). Заполнен для примера 3, вариант 2 (вакцина КПК и сепсис): отмечены IVB и IVC."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p058-1",
+      "file": "images/img-p058-1.webp",
+      "page": 58,
+      "narratives": {
+        "en": "Causality classification grid (in French). Where adequate information is available: A. consistent causal association (A1 vaccine product-related reaction, A2 vaccine quality defect, A3 immunization error, A4 immunization anxiety-related reaction); B. indeterminate (B1 consistent temporal relationship but insufficient evidence, a potential signal; B2 conflicting trends); C. inconsistent causal association (coincidental: underlying or emerging conditions, or exposure to something other than the vaccine). Where it is not available: unclassifiable, with additional information needed for classification. Completed for Example 3, option 2 (MMR vaccine and septicaemia): B2 (conflicting trends) and C (coincidence) are ticked.",
+        "ar": "شبكة تصنيف العلاقة السببية (بالفرنسية). عند توافر المعلومات الكافية: A. علاقة سببية متسقة مع التطعيم (A1 تفاعل مرتبط بمنتج اللقاح، A2 تفاعل مرتبط بخلل في جودة اللقاح، A3 تفاعل مرتبط بخطأ في التمنيع، A4 تفاعل مرتبط بالقلق من التمنيع)؛ B. غير محددة (B1 علاقة زمنية متسقة لكن البيّنات غير كافية، وهي إشارة محتملة؛ B2 اتجاهات متضاربة)؛ C. علاقة سببية غير متسقة (مصادفة: حالات كامنة أو ناشئة، أو التعرض لشيء آخر غير اللقاح). وعند عدم توافرها: غير قابل للتصنيف، مع الحاجة إلى معلومات إضافية للتصنيف. مكتمل لـمثال 3، الخيار 2 (لقاح الحصبة والنكاف والحصبة الألمانية وتسمم الدم): تم وضع علامة على B2 (اتجاهات متضاربة) وC (مصادفة).",
+        "zh": "因果关系分类表（法文）。在有充分信息时：A. 与接种一致的因果关系（A1 疫苗产品相关反应、A2 疫苗质量缺陷相关反应、A3 接种差错相关反应、A4 接种焦虑相关反应）；B. 不确定（B1 时间关系一致但证据不足，为潜在信号；B2 趋势相互矛盾）；C. 不一致的因果关系（偶合：基础或新发疾病，或接触疫苗以外的因素）。在信息不充分时：无法分类，需要更多信息才能分类。已针对示例3选项2（麻腮风疫苗与败血症）填写：勾选了B2（趋势相互矛盾）和C（偶合）。",
+        "es": "Cuadro de clasificación de la causalidad (en francés). Cuando se dispone de información suficiente: A. relación causal compatible con la vacunación (A1 reacción relacionada con el producto vacunal, A2 con un defecto de calidad de la vacuna, A3 con un error de vacunación, A4 con la ansiedad por la vacunación); B. indeterminada (B1 relación temporal compatible pero pruebas insuficientes, una posible señal; B2 tendencias contradictorias); C. relación causal incompatible (coincidencia: afecciones subyacentes o emergentes, o exposición a algo distinto de la vacuna). Cuando no se dispone de ella: inclasificable, se necesita información adicional para la clasificación. Completado para el ejemplo 3, opción 2 (vacuna triple vírica y septicemia): están marcadas B2 (tendencias contradictorias) y C (coincidencia).",
+        "fr": "Grille de classification pour l'évaluation du lien de causalité. Informations nécessaires disponibles : A. Lien de causalité avec la vaccination probable (A1 réaction liée au produit vaccinal, A2 réaction liée à un problème de qualité du vaccin, A3 réaction liée à une erreur de vaccination, A4 réaction liée à l'anxiété à l'égard de la vaccination) ; B. Lien indéterminé (B1 lien temporel probant mais données insuffisantes, signal potentiel ; B2 tendances contradictoires) ; C. Lien de causalité avec la vaccination improbable (coïncidence : affection(s) sous-jacente(s) ou émergente(s), ou exposition à autre chose que le vaccin). Informations nécessaires non disponibles : inclassable, informations supplémentaires nécessaires pour la classification. Complété pour l'Exemple 3, option 2 (vaccin ROR et septicémie) : B2 (tendances contradictoires) et C (coïncidence) sont cochées.",
+        "ru": "Таблица классификации причинно-следственной связи (на французском языке). При наличии достаточной информации: A. причинная связь с вакцинацией вероятна (A1 реакция, связанная с вакцинным продуктом, A2 — с дефектом качества вакцины, A3 — с ошибкой иммунизации, A4 — с тревогой по поводу иммунизации); B. не определена (B1 временная связь согласуется, но доказательств недостаточно — возможный сигнал; B2 противоречивые тенденции); C. причинная связь маловероятна (совпадение: фоновые или возникающие состояния либо воздействие иного фактора, чем вакцина). При отсутствии информации: не классифицируется, для классификации нужна дополнительная информация. Заполнена для примера 3, вариант 2 (вакцина КПК и сепсис): отмечены B2 (противоречивые тенденции) и C (совпадение)."
+      },
+      "state": "draft"
     }
   ],
   "links": {

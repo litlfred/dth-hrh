@@ -63,11 +63,11 @@
       },
       "keywords": [
         {
-          "term": "pour les",
+          "term": "tabagisme pour",
           "heading": false
         },
         {
-          "term": "tabagisme pour",
+          "term": "pour les",
           "heading": false
         },
         {
@@ -75,11 +75,11 @@
           "heading": false
         },
         {
-          "term": "les capacités",
+          "term": "les adultes",
           "heading": false
         },
         {
-          "term": "les adultes",
+          "term": "une tendance",
           "heading": false
         },
         {
@@ -91,7 +91,7 @@
           "heading": false
         },
         {
-          "term": "les femmes",
+          "term": "les capacités",
           "heading": false
         }
       ],
@@ -114,11 +114,7 @@
       },
       "keywords": [
         {
-          "term": "sur les",
-          "heading": false
-        },
-        {
-          "term": "les capacités",
+          "term": "tabac été",
           "heading": false
         },
         {
@@ -126,7 +122,15 @@
           "heading": false
         },
         {
-          "term": "sur des",
+          "term": "lutte antitabac",
+          "heading": false
+        },
+        {
+          "term": "les capacités",
+          "heading": false
+        },
+        {
+          "term": "sur les",
           "heading": false
         },
         {
@@ -134,15 +138,11 @@
           "heading": false
         },
         {
-          "term": "tabac été",
+          "term": "ont été",
           "heading": false
         },
         {
-          "term": "des besoins",
-          "heading": false
-        },
-        {
-          "term": "dans les",
+          "term": "formation régional",
           "heading": false
         }
       ],
@@ -165,6 +165,10 @@
       },
       "keywords": [
         {
+          "term": "cclat oms",
+          "heading": false
+        },
+        {
           "term": "les états",
           "heading": false
         },
@@ -173,15 +177,7 @@
           "heading": false
         },
         {
-          "term": "cclat oms",
-          "heading": false
-        },
-        {
           "term": "états membres",
-          "heading": false
-        },
-        {
-          "term": "modèle",
           "heading": false
         },
         {
@@ -189,7 +185,11 @@
           "heading": false
         },
         {
-          "term": "données",
+          "term": "épidémie",
+          "heading": false
+        },
+        {
+          "term": "tabagisme",
           "heading": false
         }
       ],
@@ -216,7 +216,11 @@
           "heading": false
         },
         {
-          "term": "pour les",
+          "term": "vie sains",
+          "heading": false
+        },
+        {
+          "term": "programmes villes-santé",
           "heading": false
         },
         {
@@ -224,11 +228,7 @@
           "heading": false
         },
         {
-          "term": "vie sains",
-          "heading": false
-        },
-        {
-          "term": "programmes villes-santé",
+          "term": "pour les",
           "heading": false
         },
         {
@@ -240,7 +240,7 @@
           "heading": false
         },
         {
-          "term": "les points",
+          "term": "nationaux pour",
           "heading": false
         }
       ],
@@ -275,10 +275,6 @@
           "heading": false
         },
         {
-          "term": "est prévu",
-          "heading": false
-        },
-        {
           "term": "démocratique populaire",
           "heading": false
         },
@@ -287,11 +283,15 @@
           "heading": false
         },
         {
-          "term": "ministère",
+          "term": "est prévu",
           "heading": false
         },
         {
-          "term": "des",
+          "term": "villes-santé",
+          "heading": false
+        },
+        {
+          "term": "îles-santé",
           "heading": false
         }
       ],
@@ -318,11 +318,11 @@
           "heading": false
         },
         {
-          "term": "l'application",
+          "term": "villes-santé",
           "heading": false
         },
         {
-          "term": "l'expansion",
+          "term": "régional",
           "heading": false
         }
       ],
@@ -361,15 +361,15 @@
           "heading": false
         },
         {
+          "term": "lutte contre",
+          "heading": false
+        },
+        {
           "term": "renforcement des",
           "heading": false
         },
         {
-          "term": "des actions",
-          "heading": false
-        },
-        {
-          "term": "lutte contre",
+          "term": "non transmissibles",
           "heading": false
         },
         {
@@ -404,11 +404,11 @@
           "heading": false
         },
         {
-          "term": "renforcement des",
+          "term": "réunion régionale",
           "heading": false
         },
         {
-          "term": "réunion régionale",
+          "term": "renforcement des",
           "heading": false
         },
         {
@@ -420,11 +420,11 @@
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "est tenue",
           "heading": false
         },
         {
-          "term": "risques des",
+          "term": "une réunion",
           "heading": false
         }
       ],
@@ -467,15 +467,15 @@
           "heading": false
         },
         {
-          "term": "qui seront",
-          "heading": false
-        },
-        {
           "term": "comité régional",
           "heading": false
         },
         {
-          "term": "suivi des",
+          "term": "réunion mondiale",
+          "heading": false
+        },
+        {
+          "term": "pacifique occidental",
           "heading": false
         }
       ],
@@ -498,19 +498,11 @@
       },
       "keywords": [
         {
-          "term": "millénaire pour",
-          "heading": false
-        },
-        {
-          "term": "des pays",
-          "heading": false
-        },
-        {
           "term": "mortalité maternelle",
           "heading": false
         },
         {
-          "term": "pour élimination",
+          "term": "millénaire pour",
           "heading": false
         },
         {
@@ -518,15 +510,23 @@
           "heading": false
         },
         {
+          "term": "des pays",
+          "heading": false
+        },
+        {
+          "term": "pour élimination",
+          "heading": false
+        },
+        {
           "term": "plupart des",
           "heading": false
         },
         {
-          "term": "pays sont",
+          "term": "omd",
           "heading": false
         },
         {
-          "term": "omd",
+          "term": "pays sont",
           "heading": false
         }
       ],
@@ -569,11 +569,11 @@
           "heading": false
         },
         {
-          "term": "les populations",
+          "term": "médicaments essentiels",
           "heading": false
         },
         {
-          "term": "médicaments essentiels",
+          "term": "les populations",
           "heading": false
         },
         {
@@ -616,7 +616,7 @@
           "heading": false
         },
         {
-          "term": "les problèmes",
+          "term": "oms travaillé",
           "heading": false
         },
         {
@@ -624,11 +624,11 @@
           "heading": false
         },
         {
-          "term": "les soins",
+          "term": "les problèmes",
           "heading": false
         },
         {
-          "term": "des nations",
+          "term": "les soins",
           "heading": false
         }
       ],
@@ -675,11 +675,11 @@
           "heading": false
         },
         {
-          "term": "que des",
+          "term": "renforcer les",
           "heading": false
         },
         {
-          "term": "renforcer les",
+          "term": "que des",
           "heading": false
         }
       ],
@@ -730,7 +730,7 @@
           "heading": false
         },
         {
-          "term": "santé",
+          "term": "pour atteindre",
           "heading": false
         }
       ],
@@ -753,11 +753,11 @@
       },
       "keywords": [
         {
-          "term": "santé dans",
+          "term": "financement des",
           "heading": false
         },
         {
-          "term": "financement des",
+          "term": "santé dans",
           "heading": false
         },
         {
@@ -765,15 +765,7 @@
           "heading": false
         },
         {
-          "term": "des soins",
-          "heading": false
-        },
-        {
           "term": "couverture universelle",
-          "heading": false
-        },
-        {
-          "term": "des systèmes",
           "heading": false
         },
         {
@@ -781,7 +773,15 @@
           "heading": false
         },
         {
-          "term": "oms pour",
+          "term": "des soins",
+          "heading": false
+        },
+        {
+          "term": "des systèmes",
+          "heading": false
+        },
+        {
+          "term": "bureau régional",
           "heading": false
         }
       ],
@@ -804,11 +804,23 @@
       },
       "keywords": [
         {
+          "term": "pacifique occidental",
+          "heading": false
+        },
+        {
+          "term": "bureau régional",
+          "heading": false
+        },
+        {
           "term": "des capacités",
           "heading": false
         },
         {
           "term": "des systèmes",
+          "heading": false
+        },
+        {
+          "term": "comptes nationaux",
           "heading": false
         },
         {
@@ -820,19 +832,7 @@
           "heading": false
         },
         {
-          "term": "pacifique occidental",
-          "heading": false
-        },
-        {
-          "term": "pour les",
-          "heading": false
-        },
-        {
-          "term": "bureau régional",
-          "heading": false
-        },
-        {
-          "term": "des données",
+          "term": "renforcement des",
           "heading": false
         }
       ],
@@ -855,7 +855,7 @@
       },
       "keywords": [
         {
-          "term": "santé ont",
+          "term": "directeur régional",
           "heading": false
         },
         {
@@ -863,19 +863,11 @@
           "heading": false
         },
         {
-          "term": "directeur régional",
-          "heading": false
-        },
-        {
-          "term": "élaboration des",
-          "heading": false
-        },
-        {
-          "term": "haut niveau",
-          "heading": false
-        },
-        {
           "term": "viet nam",
+          "heading": false
+        },
+        {
+          "term": "santé ont",
           "heading": false
         },
         {
@@ -884,6 +876,14 @@
         },
         {
           "term": "populaire lao",
+          "heading": false
+        },
+        {
+          "term": "élaboration des",
+          "heading": false
+        },
+        {
+          "term": "république démocratique",
           "heading": false
         }
       ],
@@ -926,15 +926,15 @@
           "heading": false
         },
         {
+          "term": "dialogue",
+          "heading": false
+        },
+        {
           "term": "pour",
           "heading": false
         },
         {
-          "term": "financement",
-          "heading": false
-        },
-        {
-          "term": "sur",
+          "term": "fonds",
           "heading": false
         }
       ],
@@ -969,6 +969,10 @@
           "heading": false
         },
         {
+          "term": "associations médicamenteuses",
+          "heading": false
+        },
+        {
           "term": "traitements par",
           "heading": false
         },
@@ -977,15 +981,11 @@
           "heading": false
         },
         {
+          "term": "parasite plasmodium",
+          "heading": false
+        },
+        {
           "term": "des médicaments",
-          "heading": false
-        },
-        {
-          "term": "associations médicamenteuses",
-          "heading": false
-        },
-        {
-          "term": "les traitements",
           "heading": false
         }
       ],
@@ -1024,15 +1024,15 @@
           "heading": false
         },
         {
-          "term": "dans les",
-          "heading": false
-        },
-        {
           "term": "visant endiguer",
           "heading": false
         },
         {
-          "term": "les pays",
+          "term": "grand mékong",
+          "heading": false
+        },
+        {
+          "term": "dans les",
           "heading": false
         },
         {
@@ -1063,19 +1063,19 @@
           "heading": false
         },
         {
-          "term": "des médicaments",
-          "heading": false
-        },
-        {
           "term": "sont instamment",
           "heading": false
         },
         {
-          "term": "les population",
+          "term": "des médicaments",
           "heading": false
         },
         {
           "term": "soutien politique",
+          "heading": false
+        },
+        {
+          "term": "les population",
           "heading": false
         },
         {
@@ -1110,11 +1110,11 @@
           "heading": false
         },
         {
-          "term": "pour atteindre",
+          "term": "états membres",
           "heading": false
         },
         {
-          "term": "états membres",
+          "term": "pour atteindre",
           "heading": false
         },
         {
@@ -1126,15 +1126,15 @@
           "heading": false
         },
         {
-          "term": "haut niveau",
-          "heading": false
-        },
-        {
           "term": "hépatite",
           "heading": false
         },
         {
           "term": "taux infection",
+          "heading": false
+        },
+        {
+          "term": "haut niveau",
           "heading": false
         }
       ],
@@ -1161,6 +1161,10 @@
           "heading": false
         },
         {
+          "term": "états membres",
+          "heading": false
+        },
+        {
           "term": "les enfants",
           "heading": false
         },
@@ -1169,19 +1173,15 @@
           "heading": false
         },
         {
-          "term": "états membres",
-          "heading": false
-        },
-        {
           "term": "inférieur chez",
           "heading": false
         },
         {
-          "term": "des",
+          "term": "hépatite",
           "heading": false
         },
         {
-          "term": "hépatite",
+          "term": "des",
           "heading": false
         },
         {
@@ -1228,15 +1228,15 @@
           "heading": false
         },
         {
-          "term": "les",
-          "heading": false
-        },
-        {
           "term": "passant",
           "heading": false
         },
         {
           "term": "traitement",
+          "heading": false
+        },
+        {
+          "term": "prévention",
           "heading": false
         }
       ],
@@ -1259,19 +1259,7 @@
       },
       "keywords": [
         {
-          "term": "dans les",
-          "heading": false
-        },
-        {
-          "term": "des interventions",
-          "heading": false
-        },
-        {
           "term": "mère enfant",
-          "heading": false
-        },
-        {
-          "term": "couverture par",
           "heading": false
         },
         {
@@ -1279,7 +1267,15 @@
           "heading": false
         },
         {
-          "term": "chez les",
+          "term": "dans les",
+          "heading": false
+        },
+        {
+          "term": "couverture par",
+          "heading": false
+        },
+        {
+          "term": "des interventions",
           "heading": false
         },
         {
@@ -1288,6 +1284,10 @@
         },
         {
           "term": "par antirétroviraux",
+          "heading": false
+        },
+        {
+          "term": "chez les",
           "heading": false
         }
       ],
@@ -1371,7 +1371,7 @@
           "heading": false
         },
         {
-          "term": "est-ce",
+          "term": "soixante-troisième",
           "heading": false
         }
       ],
@@ -1416,11 +1416,11 @@
           "heading": false
         },
         {
-          "term": "l'élaboration",
+          "term": "intervient",
           "heading": false
         },
         {
-          "term": "intervient",
+          "term": "déclarés",
           "heading": false
         }
       ],
@@ -1473,23 +1473,23 @@
           "heading": false
         },
         {
-          "term": "action nationaux",
-          "heading": false
-        },
-        {
           "term": "haut niveau",
           "heading": false
         },
         {
-          "term": "plans action",
-          "heading": false
-        },
-        {
-          "term": "œuvre",
+          "term": "action nationaux",
           "heading": false
         },
         {
           "term": "lutte antitabac",
+          "heading": false
+        },
+        {
+          "term": "traité",
+          "heading": false
+        },
+        {
+          "term": "tabac",
           "heading": false
         }
       ],
@@ -1512,15 +1512,7 @@
       },
       "keywords": [
         {
-          "term": "sur les",
-          "heading": false
-        },
-        {
-          "term": "des taxes",
-          "heading": false
-        },
-        {
-          "term": "dans les",
+          "term": "conditionnement neutre",
           "heading": false
         },
         {
@@ -1528,7 +1520,15 @@
           "heading": false
         },
         {
-          "term": "conditionnement neutre",
+          "term": "des taxes",
+          "heading": false
+        },
+        {
+          "term": "sur les",
+          "heading": false
+        },
+        {
+          "term": "dans les",
           "heading": false
         },
         {
@@ -1540,7 +1540,7 @@
           "heading": false
         },
         {
-          "term": "santé",
+          "term": "tabagisme",
           "heading": false
         }
       ],
@@ -1571,11 +1571,7 @@
           "heading": false
         },
         {
-          "term": "pour les",
-          "heading": false
-        },
-        {
-          "term": "niveau actuel",
+          "term": "tabagisme chez",
           "heading": false
         },
         {
@@ -1584,6 +1580,10 @@
         },
         {
           "term": "les adultes",
+          "heading": false
+        },
+        {
+          "term": "niveau actuel",
           "heading": false
         },
         {
@@ -1618,15 +1618,15 @@
           "heading": false
         },
         {
+          "term": "steps mnt",
+          "heading": false
+        },
+        {
           "term": "tabagisme actuel",
           "heading": false
         },
         {
           "term": "étude nationale",
-          "heading": false
-        },
-        {
-          "term": "steps mnt",
           "heading": false
         },
         {
@@ -1669,15 +1669,7 @@
           "heading": false
         },
         {
-          "term": "les garçons",
-          "heading": false
-        },
-        {
           "term": "tabagisme quotidien",
-          "heading": false
-        },
-        {
-          "term": "usage actuel",
           "heading": false
         },
         {
@@ -1685,15 +1677,23 @@
           "heading": false
         },
         {
+          "term": "les garçons",
+          "heading": false
+        },
+        {
+          "term": "usage actuel",
+          "heading": false
+        },
+        {
           "term": "les filles",
           "heading": false
         },
         {
-          "term": "les taux",
+          "term": "garçons était",
           "heading": false
         },
         {
-          "term": "pour les",
+          "term": "les taux",
           "heading": false
         }
       ],
@@ -1732,15 +1732,15 @@
           "heading": false
         },
         {
-          "term": "pour les",
-          "heading": false
-        },
-        {
           "term": "enquête mondiale",
           "heading": false
         },
         {
           "term": "chez les",
+          "heading": false
+        },
+        {
+          "term": "îles",
           "heading": false
         },
         {
@@ -1771,27 +1771,27 @@
           "heading": false
         },
         {
-          "term": "les données",
-          "heading": false
-        },
-        {
           "term": "bétel associée",
           "heading": false
         },
         {
-          "term": "chez les",
-          "heading": false
-        },
-        {
-          "term": "dans les",
-          "heading": false
-        },
-        {
-          "term": "que les",
-          "heading": false
-        },
-        {
           "term": "tabagisme chez",
+          "heading": false
+        },
+        {
+          "term": "les données",
+          "heading": false
+        },
+        {
+          "term": "fumée chez",
+          "heading": false
+        },
+        {
+          "term": "tabac sans",
+          "heading": false
+        },
+        {
+          "term": "noix",
           "heading": false
         },
         {
@@ -1869,7 +1869,15 @@
           "heading": false
         },
         {
+          "term": "tabac sous",
+          "heading": false
+        },
+        {
           "term": "tsf actuel",
+          "heading": false
+        },
+        {
+          "term": "tabac sans",
           "heading": false
         },
         {
@@ -1881,19 +1889,11 @@
           "heading": false
         },
         {
-          "term": "actuel pour",
-          "heading": false
-        },
-        {
-          "term": "tabac sous",
-          "heading": false
-        },
-        {
-          "term": "tabac sans",
-          "heading": false
-        },
-        {
           "term": "les jeunes",
+          "heading": false
+        },
+        {
+          "term": "actuel pour",
           "heading": false
         }
       ],
@@ -1932,7 +1932,7 @@
           "heading": false
         },
         {
-          "term": "toutes ses",
+          "term": "sous toutes",
           "heading": false
         },
         {
@@ -1940,11 +1940,11 @@
           "heading": false
         },
         {
-          "term": "chez les",
+          "term": "îles",
           "heading": false
         },
         {
-          "term": "îles",
+          "term": "chez les",
           "heading": false
         }
       ],
@@ -1967,6 +1967,10 @@
       },
       "keywords": [
         {
+          "term": "mortalité prématurée",
+          "heading": false
+        },
+        {
           "term": "les femmes",
           "heading": false
         },
@@ -1975,23 +1979,19 @@
           "heading": false
         },
         {
-          "term": "les données",
-          "heading": false
-        },
-        {
           "term": "les hommes",
           "heading": false
         },
         {
-          "term": "mortalité prématurée",
-          "heading": false
-        },
-        {
-          "term": "entre les",
+          "term": "les données",
           "heading": false
         },
         {
           "term": "aux mnt",
+          "heading": false
+        },
+        {
+          "term": "entre les",
           "heading": false
         },
         {
@@ -2022,15 +2022,11 @@
           "heading": false
         },
         {
-          "term": "les données",
+          "term": "pour prédire",
           "heading": false
         },
         {
           "term": "les garçons",
-          "heading": false
-        },
-        {
-          "term": "pour prédire",
           "heading": false
         },
         {
@@ -2046,7 +2042,11 @@
           "heading": false
         },
         {
-          "term": "modèle pour",
+          "term": "les données",
+          "heading": false
+        },
+        {
+          "term": "les femmes",
           "heading": false
         }
       ],
@@ -2077,19 +2077,19 @@
           "heading": false
         },
         {
-          "term": "les hommes",
-          "heading": false
-        },
-        {
           "term": "élevé",
           "heading": false
         },
         {
-          "term": "les femmes",
+          "term": "les hommes",
           "heading": false
         },
         {
           "term": "groupes prévalence",
+          "heading": false
+        },
+        {
+          "term": "les femmes",
           "heading": false
         },
         {
@@ -2120,10 +2120,6 @@
       },
       "keywords": [
         {
-          "term": "pour les",
-          "heading": false
-        },
-        {
           "term": "dans les",
           "heading": false
         },
@@ -2132,7 +2128,7 @@
           "heading": false
         },
         {
-          "term": "tous les",
+          "term": "pour les",
           "heading": false
         },
         {
@@ -2140,15 +2136,19 @@
           "heading": false
         },
         {
+          "term": "tabagisme dans",
+          "heading": false
+        },
+        {
           "term": "les lieux",
           "heading": false
         },
         {
-          "term": "sur les",
+          "term": "tous les",
           "heading": false
         },
         {
-          "term": "les villages",
+          "term": "fumée secondaire",
           "heading": false
         }
       ],
@@ -2171,6 +2171,10 @@
       },
       "keywords": [
         {
+          "term": "îles cook",
+          "heading": false
+        },
+        {
           "term": "les îles",
           "heading": false
         },
@@ -2179,19 +2183,7 @@
           "heading": false
         },
         {
-          "term": "îles cook",
-          "heading": false
-        },
-        {
           "term": "des cigarettes",
-          "heading": false
-        },
-        {
-          "term": "pour les",
-          "heading": false
-        },
-        {
-          "term": "dans les",
           "heading": false
         },
         {
@@ -2199,7 +2191,15 @@
           "heading": false
         },
         {
+          "term": "îles marshall",
+          "heading": false
+        },
+        {
           "term": "prix des",
+          "heading": false
+        },
+        {
+          "term": "prévalence chez",
           "heading": false
         }
       ],
@@ -2226,11 +2226,11 @@
           "heading": false
         },
         {
-          "term": "les hommes",
+          "term": "tabagisme chez",
           "heading": false
         },
         {
-          "term": "chez les",
+          "term": "les hommes",
           "heading": false
         },
         {
@@ -2246,11 +2246,11 @@
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "prévalence chez",
           "heading": false
         },
         {
-          "term": "tabagisme chez",
+          "term": "les taxes",
           "heading": false
         }
       ],
@@ -2281,15 +2281,7 @@
           "heading": false
         },
         {
-          "term": "chez les",
-          "heading": false
-        },
-        {
           "term": "lieux publics",
-          "heading": false
-        },
-        {
-          "term": "intensifier les",
           "heading": false
         },
         {
@@ -2297,11 +2289,19 @@
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "chez les",
           "heading": false
         },
         {
-          "term": "comme les",
+          "term": "tabagisme chez",
+          "heading": false
+        },
+        {
+          "term": "prévalence chez",
+          "heading": false
+        },
+        {
+          "term": "intensifier les",
           "heading": false
         }
       ],
@@ -2336,15 +2336,11 @@
           "heading": false
         },
         {
-          "term": "durcissement des",
-          "heading": false
-        },
-        {
-          "term": "fondation pour",
-          "heading": false
-        },
-        {
           "term": "taxes perçues",
+          "heading": false
+        },
+        {
+          "term": "durcissement des",
           "heading": false
         },
         {
@@ -2352,7 +2348,11 @@
           "heading": false
         },
         {
-          "term": "les hommes",
+          "term": "fondation pour",
+          "heading": false
+        },
+        {
+          "term": "interdiction totale",
           "heading": false
         }
       ],
@@ -2379,15 +2379,7 @@
           "heading": false
         },
         {
-          "term": "chez les",
-          "heading": false
-        },
-        {
           "term": "prévalence chez",
-          "heading": false
-        },
-        {
-          "term": "les taux",
           "heading": false
         },
         {
@@ -2395,7 +2387,15 @@
           "heading": false
         },
         {
+          "term": "les taux",
+          "heading": false
+        },
+        {
           "term": "des taxes",
+          "heading": false
+        },
+        {
+          "term": "interdiction totale",
           "heading": false
         },
         {
@@ -2403,7 +2403,7 @@
           "heading": false
         },
         {
-          "term": "les femmes",
+          "term": "sanitaires graphiques",
           "heading": false
         }
       ],
@@ -2434,15 +2434,7 @@
           "heading": false
         },
         {
-          "term": "pour les",
-          "heading": false
-        },
-        {
           "term": "les lieux",
-          "heading": false
-        },
-        {
-          "term": "chez les",
           "heading": false
         },
         {
@@ -2450,7 +2442,15 @@
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "chez les",
+          "heading": false
+        },
+        {
+          "term": "pour les",
+          "heading": false
+        },
+        {
+          "term": "tabagisme chez",
           "heading": false
         },
         {
@@ -2485,11 +2485,15 @@
           "heading": false
         },
         {
+          "term": "lutte antitabac",
+          "heading": false
+        },
+        {
           "term": "réduire les",
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "prévalence dans",
           "heading": false
         },
         {
@@ -2501,11 +2505,7 @@
           "heading": false
         },
         {
-          "term": "prévalence dans",
-          "heading": false
-        },
-        {
-          "term": "les populations",
+          "term": "hong kong",
           "heading": false
         }
       ],
@@ -2532,15 +2532,15 @@
           "heading": false
         },
         {
-          "term": "les pays",
-          "heading": false
-        },
-        {
           "term": "cclat oms",
           "heading": false
         },
         {
           "term": "lutte antitabac",
+          "heading": false
+        },
+        {
+          "term": "les pays",
           "heading": false
         },
         {
@@ -2575,7 +2575,19 @@
       },
       "keywords": [
         {
+          "term": "entièrement non-fumeurs",
+          "heading": false
+        },
+        {
+          "term": "espaces entièrement",
+          "heading": false
+        },
+        {
           "term": "des taxes",
+          "heading": false
+        },
+        {
+          "term": "cclat oms",
           "heading": false
         },
         {
@@ -2591,19 +2603,7 @@
           "heading": false
         },
         {
-          "term": "entièrement non-fumeurs",
-          "heading": false
-        },
-        {
           "term": "renforcement des",
-          "heading": false
-        },
-        {
-          "term": "espaces entièrement",
-          "heading": false
-        },
-        {
-          "term": "cclat oms",
           "heading": false
         }
       ],
@@ -2774,11 +2774,11 @@
           "heading": false
         },
         {
-          "term": "dans les",
+          "term": "îles",
           "heading": false
         },
         {
-          "term": "îles",
+          "term": "dans les",
           "heading": false
         },
         {
@@ -2817,19 +2817,19 @@
           "heading": false
         },
         {
-          "term": "les mises",
-          "heading": false
-        },
-        {
           "term": "les paquets",
           "heading": false
         },
         {
-          "term": "sanitaires sur",
+          "term": "les mises",
           "heading": false
         },
         {
           "term": "non",
+          "heading": false
+        },
+        {
+          "term": "sanitaires sur",
           "heading": false
         },
         {
@@ -2923,10 +2923,6 @@
           "heading": false
         },
         {
-          "term": "les",
-          "heading": false
-        },
-        {
           "term": "radio",
           "heading": false
         },
@@ -2935,11 +2931,15 @@
           "heading": false
         },
         {
-          "term": "sion",
+          "term": "publicité",
           "heading": false
         },
         {
-          "term": "publicité",
+          "term": "interna",
+          "heading": false
+        },
+        {
+          "term": "sion",
           "heading": false
         }
       ],
@@ -3029,7 +3029,7 @@
           "heading": false
         },
         {
-          "term": "cours des",
+          "term": "derniers mois",
           "heading": false
         },
         {
@@ -3037,11 +3037,11 @@
           "heading": false
         },
         {
-          "term": "derniers mois",
+          "term": "sevrage",
           "heading": false
         },
         {
-          "term": "nationale sur",
+          "term": "tabagisme chez",
           "heading": false
         }
       ],
@@ -3117,10 +3117,6 @@
       },
       "keywords": [
         {
-          "term": "les progrès",
-          "heading": false
-        },
-        {
           "term": "îles salomon",
           "heading": false
         },
@@ -3129,7 +3125,11 @@
           "heading": false
         },
         {
-          "term": "les mesures",
+          "term": "lutte antitabac",
+          "heading": false
+        },
+        {
+          "term": "les progrès",
           "heading": false
         },
         {
@@ -3137,15 +3137,15 @@
           "heading": false
         },
         {
-          "term": "lutte antitabac",
-          "heading": false
-        },
-        {
           "term": "république démocratique",
           "heading": false
         },
         {
-          "term": "prises dans",
+          "term": "les mesures",
+          "heading": false
+        },
+        {
+          "term": "démocratique populaire",
           "heading": false
         }
       ],
@@ -3184,15 +3184,15 @@
           "heading": false
         },
         {
+          "term": "viet nam",
+          "heading": false
+        },
+        {
           "term": "lignes directrices",
           "heading": false
         },
         {
           "term": "atelier sur",
-          "heading": false
-        },
-        {
-          "term": "viet nam",
           "heading": false
         },
         {
@@ -3219,23 +3219,7 @@
       },
       "keywords": [
         {
-          "term": "des projets",
-          "heading": false
-        },
-        {
           "term": "des tonga",
-          "heading": false
-        },
-        {
-          "term": "des finances",
-          "heading": false
-        },
-        {
-          "term": "taxes sur",
-          "heading": false
-        },
-        {
-          "term": "sans tabac",
           "heading": false
         },
         {
@@ -3243,11 +3227,27 @@
           "heading": false
         },
         {
-          "term": "les taxes",
+          "term": "des projets",
+          "heading": false
+        },
+        {
+          "term": "sans tabac",
           "heading": false
         },
         {
           "term": "démocratique populaire",
+          "heading": false
+        },
+        {
+          "term": "populaire lao",
+          "heading": false
+        },
+        {
+          "term": "taxes sur",
+          "heading": false
+        },
+        {
+          "term": "des finances",
           "heading": false
         }
       ],
@@ -3270,10 +3270,6 @@
       },
       "keywords": [
         {
-          "term": "les produits",
-          "heading": false
-        },
-        {
           "term": "territoire emploie",
           "heading": false
         },
@@ -3282,7 +3278,7 @@
           "heading": false
         },
         {
-          "term": "sur les",
+          "term": "les produits",
           "heading": false
         },
         {
@@ -3291,6 +3287,10 @@
         },
         {
           "term": "notre état",
+          "heading": false
+        },
+        {
+          "term": "sur les",
           "heading": false
         }
       ],
@@ -3313,11 +3313,15 @@
       },
       "keywords": [
         {
-          "term": "les villes",
+          "term": "sans tabac",
           "heading": false
         },
         {
-          "term": "sans tabac",
+          "term": "viet nam",
+          "heading": false
+        },
+        {
+          "term": "les villes",
           "heading": false
         },
         {
@@ -3329,7 +3333,7 @@
           "heading": false
         },
         {
-          "term": "viet nam",
+          "term": "république démocratique",
           "heading": false
         },
         {
@@ -3337,11 +3341,7 @@
           "heading": false
         },
         {
-          "term": "république démocratique",
-          "heading": false
-        },
-        {
-          "term": "collaboration avec",
+          "term": "lutte antitabac",
           "heading": false
         }
       ],
@@ -3403,7 +3403,7 @@
           "heading": false
         },
         {
-          "term": "santé des",
+          "term": "notre état",
           "heading": false
         },
         {
@@ -3411,7 +3411,11 @@
           "heading": false
         },
         {
-          "term": "notre état",
+          "term": "état territoire",
+          "heading": false
+        },
+        {
+          "term": "santé des",
           "heading": false
         },
         {
@@ -3423,11 +3427,7 @@
           "heading": false
         },
         {
-          "term": "des enfants",
-          "heading": false
-        },
-        {
-          "term": "avec les",
+          "term": "aux philippines",
           "heading": false
         }
       ],
@@ -3450,11 +3450,7 @@
       },
       "keywords": [
         {
-          "term": "des investissements",
-          "heading": false
-        },
-        {
-          "term": "planification des",
+          "term": "des projets",
           "heading": false
         },
         {
@@ -3462,7 +3458,7 @@
           "heading": false
         },
         {
-          "term": "des projets",
+          "term": "des investissements",
           "heading": false
         },
         {
@@ -3470,11 +3466,15 @@
           "heading": false
         },
         {
-          "term": "des ressources",
+          "term": "planification des",
           "heading": false
         },
         {
           "term": "lutte antitabac",
+          "heading": false
+        },
+        {
+          "term": "des ressources",
           "heading": false
         },
         {
@@ -3552,23 +3552,7 @@
       },
       "keywords": [
         {
-          "term": "les données",
-          "heading": false
-        },
-        {
-          "term": "des données",
-          "heading": false
-        },
-        {
-          "term": "données pour",
-          "heading": false
-        },
-        {
-          "term": "données sur",
-          "heading": false
-        },
-        {
-          "term": "les projets",
+          "term": "lutte antitabac",
           "heading": false
         },
         {
@@ -3576,11 +3560,27 @@
           "heading": false
         },
         {
+          "term": "des données",
+          "heading": false
+        },
+        {
+          "term": "les données",
+          "heading": false
+        },
+        {
+          "term": "les projets",
+          "heading": false
+        },
+        {
+          "term": "données sur",
+          "heading": false
+        },
+        {
           "term": "les îles",
           "heading": false
         },
         {
-          "term": "lutte antitabac",
+          "term": "données pour",
           "heading": false
         }
       ],
@@ -3615,11 +3615,11 @@
           "heading": false
         },
         {
-          "term": "données sur",
+          "term": "comparables sur",
           "heading": false
         },
         {
-          "term": "comparables sur",
+          "term": "données sur",
           "heading": false
         },
         {
@@ -3685,11 +3685,15 @@
           "heading": false
         },
         {
+          "term": "sevrage tabagique",
+          "heading": false
+        },
+        {
           "term": "santé primaires",
           "heading": false
         },
         {
-          "term": "sevrage tabagique",
+          "term": "brefs conseils",
           "heading": false
         },
         {
@@ -3698,10 +3702,6 @@
         },
         {
           "term": "les soins",
-          "heading": false
-        },
-        {
-          "term": "brefs conseils",
           "heading": false
         },
         {
@@ -3743,7 +3743,7 @@
       "heading": false
     },
     {
-      "term": "santé des",
+      "term": "tabagisme des",
       "heading": false
     },
     {
@@ -3751,15 +3751,11 @@
       "heading": false
     },
     {
-      "term": "tabagisme des",
+      "term": "santé des",
       "heading": false
     },
     {
       "term": "les pays",
-      "heading": false
-    },
-    {
-      "term": "avec les",
       "heading": false
     },
     {
@@ -3771,7 +3767,11 @@
       "heading": false
     },
     {
-      "term": "par les",
+      "term": "avec les",
+      "heading": false
+    },
+    {
+      "term": "les philippines",
       "heading": false
     }
   ],
@@ -4275,6 +4275,36 @@
         "in-sequence",
         "graphic"
       ]
+    }
+  ],
+  "images": [
+    {
+      "id": "img-p054-1",
+      "file": "images/img-p054-1.webp",
+      "page": 54,
+      "narratives": {
+        "en": "Figure 1, an annotated line chart (in French) of the prevalence of daily cigarette smokers aged 15 years and over in Hong Kong (China), 1982–2010, with prevalence (%) on a 0–30 axis. Prevalence falls from about 23% in 1982 to about 15% by the early 1990s, dips to about 12.5% around 2000, and ends near 12% around 2009. Callouts link the trend to tobacco control measures, including the 1982 smoking (public health) ordinance, the 1990 ban on cigarette advertising and sponsorship on television and radio, the 1994 ban on sales to under-18s, the 1999 restaurant non-smoking areas and print advertising ban, the creation of the Tobacco Control Office in 2001, China’s ratification of the WHO FCTC in 2005 (in force 2006), the 2007 extension of non-smoking areas and graphic health warnings, the 2009 retail display advertising ban, and tobacco tax increases in 2009 and 2011.",
+        "ar": "الشكل 1، مخطط خطي مشروح (بالفرنسية) لمعدل انتشار المدخنين اليوميين للسجائر من سن 15 عاماً فأكثر في هونغ كونغ (الصين)، 1982–2010، مع معدل الانتشار (%) على محور من 0 إلى 30. وينخفض المعدل من نحو 23% في عام 1982 إلى نحو 15% بحلول أوائل التسعينيات، ثم يهبط إلى نحو 12.5% في حوالي عام 2000، وينتهي قرب 12% في حوالي عام 2009. وتربط التعليقات التوضيحية هذا الاتجاه بتدابير مكافحة التبغ، ومنها مرسوم التدخين (الصحة العامة) لعام 1982، وحظر الإعلان عن السجائر ورعايتها في التلفزيون والإذاعة عام 1990، وحظر البيع لمن هم دون 18 عاماً عام 1994، ومناطق عدم التدخين في المطاعم وحظر الإعلان في الصحافة المطبوعة عام 1999، وإنشاء مكتب مكافحة التبغ عام 2001، وتصديق الصين على اتفاقية المنظمة الإطارية بشأن مكافحة التبغ عام 2005 (نفاذها عام 2006)، وتوسيع مناطق عدم التدخين والتحذيرات المصورة عام 2007، وحظر الإعلان لدى باعة التجزئة عام 2009، وزيادة الضرائب على التبغ في عامي 2009 و2011.",
+        "zh": "图1：带注释的折线图（法文），显示1982–2010年中国香港15岁及以上每日吸卷烟者的流行率，流行率（%）坐标轴为0–30。流行率从1982年的约23%降至20世纪90年代初的约15%，2000年前后降至约12.5%，2009年前后约为12%。标注将该趋势与烟草控制措施联系起来，包括1982年《吸烟（公众卫生）条例》、1990年禁止在电视和电台播放卷烟广告和赞助、1994年禁止向18岁以下者售烟、1999年餐馆无烟区及禁止印刷品烟草广告、2001年设立控烟办公室、中国于2005年批准《世卫组织烟草控制框架公约》（2006年生效）、2007年扩大无烟区并在烟包上加印图形警示、2009年禁止零售点烟草广告展示，以及2009年和2011年提高烟草税。",
+        "es": "Figura 1: gráfico de líneas anotado (en francés) de la prevalencia de fumadores diarios de cigarrillos de 15 años o más en Hong Kong (China), 1982–2010, con la prevalencia (%) en un eje de 0 a 30. La prevalencia baja de aproximadamente el 23% en 1982 a aproximadamente el 15% a principios de los años noventa, desciende a aproximadamente el 12,5% hacia 2000 y termina cerca del 12% hacia 2009. Los recuadros relacionan la tendencia con medidas de control del tabaco, como la ordenanza sobre el tabaquismo (salud pública) de 1982, la prohibición en 1990 de la publicidad y el patrocinio de cigarrillos en televisión y radio, la prohibición en 1994 de la venta a menores de 18 años, las zonas sin humo en restaurantes y la prohibición de la publicidad en prensa escrita en 1999, la creación de la Oficina de Control del Tabaco en 2001, la ratificación del CMCT de la OMS por China en 2005 (en vigor en 2006), la ampliación de las zonas sin humo y las advertencias gráficas en 2007, la prohibición de la publicidad en puntos de venta en 2009 y los aumentos de los impuestos al tabaco en 2009 y 2011.",
+        "fr": "Figure 1 : graphique linéaire annoté (en français) de la prévalence des fumeurs de cigarettes quotidiens (15 ans et plus) à Hong Kong (Chine), 1982-2010, avec la prévalence (%) sur un axe de 0 à 30. La prévalence passe d’environ 23 % en 1982 à environ 15 % au début des années 1990, descend à environ 12,5 % vers 2000 et finit vers 12 % vers 2009. Des encadrés relient la tendance aux mesures de lutte antitabac, notamment l’arrêté sur le tabagisme (santé publique) de 1982, l’interdiction en 1990 de toute publicité et parrainage en faveur de la cigarette à la télévision et à la radio, l’interdiction en 1994 de la vente de tabac aux moins de 18 ans, les zones non-fumeurs dans les restaurants et l’interdiction de la publicité dans la presse écrite en 1999, la création du Bureau pour la lutte antitabac (TCO) en 2001, la ratification par la Chine de la CCLAT OMS en 2005 (entrée en vigueur en 2006), l’extension des zones non-fumeurs et les mises en garde graphiques sur les paquets en 2007, l’interdiction des publicités chez les revendeurs en 2009 et la hausse des taxes sur le tabac en 2009 et 2011.",
+        "ru": "Рисунок 1 — аннотированный линейный график (на французском языке) распространённости ежедневного курения сигарет среди лиц в возрасте 15 лет и старше в Гонконге (Китай) за 1982–2010 гг.; распространённость (%) по оси от 0 до 30. Показатель снижается примерно с 23% в 1982 г. до около 15% к началу 1990-х годов, опускается примерно до 12,5% около 2000 г. и составляет около 12% около 2009 г. Выноски связывают эту тенденцию с мерами борьбы против табака, включая постановление о курении (общественное здравоохранение) 1982 г., запрет рекламы и спонсорства сигарет на телевидении и радио в 1990 г., запрет продажи табака лицам моложе 18 лет в 1994 г., зоны для некурящих в ресторанах и запрет рекламы в печатных СМИ в 1999 г., создание Бюро по борьбе против табака в 2001 г., ратификацию Китаем РКБТ ВОЗ в 2005 г. (вступила в силу в 2006 г.), расширение зон для некурящих и графические предупреждения на пачках в 2007 г., запрет рекламы в точках розничной продажи в 2009 г. и повышение налогов на табак в 2009 и 2011 гг."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p057-1",
+      "file": "images/img-p057-1.webp",
+      "page": 57,
+      "narratives": {
+        "en": "Annex 1 diagram (in French) titled “How the tobacco industry intervenes in the different phases of policy-making”. A vertical flow of ovals runs from policy idea, draft law, public hearings, plenary session, highest committee/cabinet and highest-level approval to implementation. Around it, red octagons and arrows mark industry tactics: manipulation of science and scientific research, friendly relations at each stage, deceiving the public and discrediting advocates, interest groups and appeals to friends acting on public opinion, corporate social responsibility, image building and self-regulation, and avoiding economic regulation and circumventing the law.",
+        "ar": "مخطط الملحق 1 (بالفرنسية) بعنوان \"كيف تتدخل صناعة التبغ في المراحل المختلفة لوضع السياسات\". يمتد تدفق رأسي من الأشكال البيضاوية من فكرة السياسة، ومشروع القانون، والجلسات العامة، والجلسة العامة، وأعلى لجنة/مجلس وزراء، والموافقة على أعلى مستوى، إلى التنفيذ. وحوله تشير مثمنات حمراء وأسهم إلى أساليب الصناعة: التلاعب بالعلم والبحث العلمي، والعلاقات الودية في كل مرحلة، وخداع الجمهور وتشويه سمعة المدافعين، وجماعات المصالح واللجوء إلى الأصدقاء للتأثير في الرأي العام، والمسؤولية الاجتماعية للشركات وبناء الصورة والتنظيم الذاتي، وتجنب التنظيم الاقتصادي والالتفاف على القانون.",
+        "zh": "附件1示意图（法文），标题为“烟草业如何干预政策制定的不同阶段”。纵向椭圆流程从政策构想、法律草案、公开听证、全体会议、最高委员会/内阁、最高级别批准直至实施。周围的红色八边形和箭头标示烟草业的手段：操纵科学和科学研究、在各阶段利用友好关系、欺骗公众并诋毁倡导者、借助利益集团和朋友影响公众舆论、企业社会责任、形象塑造和自我监管，以及规避经济监管和绕开法律。",
+        "es": "Diagrama del anexo 1 (en francés) titulado «Cómo interviene la industria tabacalera en las diferentes fases de la elaboración de políticas». Un flujo vertical de óvalos va de la idea de política, el proyecto de ley, las audiencias públicas, la sesión plenaria y el comité o gabinete más alto y la aprobación al más alto nivel hasta la aplicación. A su alrededor, octógonos rojos y flechas señalan las tácticas de la industria: manipulación de la ciencia y la investigación científica, relaciones amistosas en cada etapa, engaño al público y descrédito de los defensores, grupos de interés y recurso a amigos para influir en la opinión pública, responsabilidad social empresarial, construcción de imagen y autorregulación, y evitar la regulación económica y eludir la ley.",
+        "fr": "Schéma de l’annexe 1 (en français) intitulé « Comment l’industrie du tabac intervient dans les différentes phases de l’élaboration de politiques ». Un enchaînement vertical d’ovales va de l’idée politique, du projet de loi, des audiences publiques, de la séance plénière, de la plus haute instance (comité/cabinet) et de l’approbation au plus haut niveau jusqu’à l’application. Autour, des octogones rouges et des flèches indiquent les tactiques de l’industrie : manipulation de la science et recherche scientifique, relations amicales à chaque étape, tromper le public et discréditer les avocats, groupes d’intérêt et recours aux amis agissant sur l’opinion publique, responsabilité sociale des entreprises, construction d’image et autoréglementation, et éviter la réglementation économique et détourner la loi.",
+        "ru": "Схема приложения 1 (на французском языке) под названием «Как табачная промышленность вмешивается в различные этапы разработки политики». Вертикальная последовательность овалов ведёт от идеи политики, законопроекта, публичных слушаний, пленарного заседания, высшего комитета/кабинета и одобрения на высшем уровне к применению. Вокруг неё красные восьмиугольники и стрелки обозначают тактики отрасли: манипулирование наукой и научными исследованиями, дружеские связи на каждом этапе, обман общественности и дискредитация защитников, группы интересов и обращение к друзьям для влияния на общественное мнение, корпоративная социальная ответственность, создание имиджа и саморегулирование, а также уклонение от экономического регулирования и обход закона."
+      },
+      "state": "draft"
     }
   ],
   "links": {

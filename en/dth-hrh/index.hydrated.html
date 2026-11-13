@@ -42,6 +42,7 @@
   .cite { color: var(--muted); }
   .fa-blk:empty { min-height: 3rem; }
   .fa-one-page { font-size: .85rem; color: var(--muted); }
+  .fa-downloads { font-size: .9rem; color: var(--muted); }
   .fa-live-figure, .fa-live-figure img { display: block; max-width: 100%; height: auto; }
   .fa-live-figure-note { display: block; font-size: .85rem; color: var(--muted); }
 </style>
@@ -79,6 +80,8 @@ html.fa-bp .fa-block-panel .block-actions > .ba-existing { display:block; }
 <main>
 
 <h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</h1>
+<p class="fa-downloads">Download the current version: <a href="export/dth-hrh-public-comment-latest.docx" download type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Word (.docx)</a> · <a href="export/dth-hrh-public-comment-latest.pdf" download type="application/pdf">PDF</a> · <a href="export/">all formats</a></p>
+
 <p><a id="chap:about-this-draft"></a></p>
 <h2>About this draft</h2>
 <p><a id="sec:about-lead"></a>
@@ -4952,7 +4955,10 @@ Table linking registry data elements to NHWA indicators.</p>
     "html.fa-bp .main-content .anchor-heading{right:-3rem;width:2.25rem;padding:0 .375rem}" +
     "html.fa-bp .main-content .anchor-heading svg{width:1.5rem;height:1.5rem}" +
     "html.fa-bp .main-content .block-actions{width:2.25rem;margin-right:-4rem}" +
-    "html.fa-bp .main-content .fa-sec-actions{right:-3rem}" +
+    // A section box is placed by its right offset, not by the margin above, so it
+    // must not pick up that -4rem margin too: with both, it sat 7rem past the
+    // text and off the right edge of the window (smart-trust-demo, 11-11).
+    "html.fa-bp .main-content .fa-sec-actions{right:-3rem;margin:0}" +
     "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:3.25rem}" +
     "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark{width:30px;height:30px;font-size:20px}" +
     "html.fa-bp .block-actions>.ba-trigger .ba-n{top:-5px;right:-8px;font-size:12px;padding:0 4px}}" +

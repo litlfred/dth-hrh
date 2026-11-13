@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-12",
+  "changedAt": "2026-11-13",
   "scope": "cat-harness/translations",
   "tile": {},
   "page": "en/cat-harness/translation-status/index.md",
@@ -122,7 +122,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 109,
+      "templates": 110,
       "catalogues": 15,
       "entries": 734,
       "translated": 685,
@@ -246,7 +246,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 110,
+      "templates": 111,
       "catalogues": 15,
       "entries": 735,
       "translated": 686,
@@ -376,7 +376,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 112,
+      "templates": 113,
       "catalogues": 16,
       "entries": 767,
       "translated": 718,
@@ -499,7 +499,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 109,
+      "templates": 110,
       "catalogues": 15,
       "entries": 734,
       "translated": 685,
@@ -624,7 +624,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 110,
+      "templates": 111,
       "catalogues": 15,
       "entries": 736,
       "translated": 687,
@@ -646,7 +646,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 6,
+          "templates": 7,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -662,7 +662,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 6,
+          "templates": 7,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -678,7 +678,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 6,
+          "templates": 7,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -694,7 +694,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 6,
+          "templates": 7,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -710,7 +710,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 6,
+          "templates": 7,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,

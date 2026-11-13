@@ -74,6 +74,26 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/c-value-terms",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Rank candidate glossary terms in prose by C-value"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The scoring step of the `automatic-term-extraction` method: count the word n-grams of one or more Markdown or text files (not across punctuation, front matter or code), and rank them by C-value as Frantzi & Ananiadou 1996 define it, so nested multi-word terms are not swamped by the longer phrases that contain them. Tested against the paper's own worked example (Table 2). Every row is a candidate; it writes nothing and promotes nothing."
+        }
+      ],
+      "skos:notation": "c-value-terms",
+      "dcterms:source": "folio-assistant-core/tools/c-value-terms/c-value-terms.ts#c-value-terms",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/catalogue-from-references",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -391,6 +411,26 @@
       ],
       "skos:notation": "l1-coverage",
       "dcterms:source": "folio-assistant-core/tools/l1-coverage/l1-coverage.ts#l1-coverage",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools/mesh-authority",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/kg-tools"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Validate draft MeSH headings against NLM's authority"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Stage three of `skill-pipeline-subject-indexing` for MeSH: look up every candidate heading of a draft (a preferred heading, an entry term, or a descriptor id, with an optional qualifier) in NLM's MeSH authority at id.nlm.nih.gov, current year. Each candidate comes back `resolved` (in the preferred form), `qualifier-not-allowed` (descriptor kept, qualifier dropped), `ambiguous` (options listed for a person) or `not-found` (dropped). It never adds a heading the draft did not propose and never emits one the authority lacks."
+        }
+      ],
+      "skos:notation": "mesh-authority",
+      "dcterms:source": "folio-assistant-core/tools/mesh-authority/mesh-authority.ts#mesh-authority",
       "skos:note": "candidate"
     },
     {

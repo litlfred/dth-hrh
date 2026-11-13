@@ -3,57 +3,6 @@
   "id": "10665-75211-ara",
   "blocks": [
     {
-      "id": "library/10665-75211-ara/blocks/figure-img-p001-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 1,
-      "pageEnd": 1,
-      "target": "../images/img-p001-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p001-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 1,
-      "pageEnd": 1,
-      "target": "../images/img-p001-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p001-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 1,
-      "pageEnd": 1,
-      "target": "../images/img-p001-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-ara/blocks/prose-page-001",
       "types": [
         "folio-assistant-core:Prose",
@@ -81,91 +30,6 @@
       }
     },
     {
-      "id": "library/10665-75211-ara/blocks/figure-img-p002-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p002-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p002-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p002-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p002-6",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 2,
-      "pageEnd": 2,
-      "target": "../images/img-p002-6.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-ara/blocks/prose-page-002",
       "types": [
         "folio-assistant-core:Prose",
@@ -177,11 +41,11 @@
       "pageEnd": 2,
       "target": "../sections/page-002.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nفاجع لامالا (©)\n001 ب",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\n@) World Health\nWSs Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "A near-blank title page of the Arabic National eHealth Strategy Toolkit, with garbled logo text.",
         "state": "draft",
         "draftedBy": {
@@ -191,91 +55,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p003-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 3,
-      "pageEnd": 3,
-      "target": "../images/img-p003-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p003-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 3,
-      "pageEnd": 3,
-      "target": "../images/img-p003-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p003-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 3,
-      "pageEnd": 3,
-      "target": "../images/img-p003-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p003-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 3,
-      "pageEnd": 3,
-      "target": "../images/img-p003-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p003-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 3,
-      "pageEnd": 3,
-      "target": "../images/img-p003-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-003",
@@ -314,26 +93,9 @@
       "title": "",
       "pageStart": 4,
       "pageEnd": 4,
-      "target": "../images/img-p004-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p004-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 4,
-      "pageEnd": 4,
-      "target": "../images/img-p004-2.png",
-      "narrative": "not-authored",
-      "content": null,
+      "target": "../images/img-p004-1.webp",
+      "narrative": "draft",
+      "content": "A handwritten signature in black ink.",
       "truncated": false,
       "provenance": "ingested",
       "summary": null
@@ -501,23 +263,6 @@
       }
     },
     {
-      "id": "library/10665-75211-ara/blocks/figure-img-p010-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 10,
-      "pageEnd": 10,
-      "target": "../images/img-p010-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-ara/blocks/prose-page-010",
       "types": [
         "folio-assistant-core:Prose",
@@ -529,11 +274,11 @@
       "pageEnd": 10,
       "target": "../sections/page-010.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nإعداد رؤية وطنية للصحة الإلكترونية\n\nطغاجءن رمالا ©\n0 ل",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nإعداد رؤية وطنية للصحة الإلكترونية\n\n@) World Health\nY&S37 Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "The title page of Part 1 of the Arabic eHealth toolkit, on developing a national eHealth vision, with garbled logo text.",
         "state": "draft",
         "draftedBy": {
@@ -543,91 +288,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p011-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 11,
-      "pageEnd": 11,
-      "target": "../images/img-p011-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p011-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 11,
-      "pageEnd": 11,
-      "target": "../images/img-p011-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p011-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 11,
-      "pageEnd": 11,
-      "target": "../images/img-p011-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p011-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 11,
-      "pageEnd": 11,
-      "target": "../images/img-p011-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p011-6",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 11,
-      "pageEnd": 11,
-      "target": "../images/img-p011-6.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-011",
@@ -641,11 +301,11 @@
       "pageEnd": 11,
       "target": "../sections/page-011.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nالجزء 1\nإعداد رؤية وطنية للصحة الإلكترونية\n\nاذاهعل عملي زر (\n011101 0",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nالجزء 1\nإعداد رؤية وطنية للصحة الإلكترونية\n\n( ‏زر‎ World Health\nWSS Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "A divider page for Part 1 of the Arabic eHealth toolkit, on developing a national eHealth vision, with some garbled characters.",
         "state": "draft",
         "draftedBy": {
@@ -655,91 +315,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p012-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 12,
-      "pageEnd": 12,
-      "target": "../images/img-p012-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p012-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 12,
-      "pageEnd": 12,
-      "target": "../images/img-p012-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p012-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 12,
-      "pageEnd": 12,
-      "target": "../images/img-p012-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p012-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 12,
-      "pageEnd": 12,
-      "target": "../images/img-p012-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p012-5",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 12,
-      "pageEnd": 12,
-      "target": "../images/img-p012-5.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-012",
@@ -1361,23 +936,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p035-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 35,
-      "pageEnd": 35,
-      "target": "../images/img-p035-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-035",
@@ -3308,11 +2866,11 @@
       "pageEnd": 106,
       "target": "../sections/page-106.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nإعداد خطة عمل وطنية للصحة الإلكترونية\n\nكي حص\n\nطغاجءل ل0اءملالا ©\n0 ل",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nإعداد خطة عمل وطنية للصحة الإلكترونية\n\n——\n\n@) World Health\nQSss7 Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "A section divider page for Part 2 of the toolkit, on developing a national eHealth action plan.",
         "state": "draft",
         "draftedBy": {
@@ -3322,57 +2880,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p107-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 107,
-      "pageEnd": 107,
-      "target": "../images/img-p107-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p107-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 107,
-      "pageEnd": 107,
-      "target": "../images/img-p107-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p107-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 107,
-      "pageEnd": 107,
-      "target": "../images/img-p107-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-107",
@@ -3386,11 +2893,11 @@
       "pageEnd": 107,
       "target": "../sections/page-107.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nالجزء 2\nإعداد خطة عمل وطنية للصحة الإلكترونية\n\nطكادء نا ارملا ©\nاكع 1ت اف ل",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\n\nالجزء 2\nإعداد خطة عمل وطنية للصحة الإلكترونية\n\n@) World Health\ny Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "The title page of Part 2 of the toolkit, on developing a national eHealth action plan.",
         "state": "draft",
         "draftedBy": {
@@ -3400,57 +2907,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p108-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p108-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p108-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 108,
-      "pageEnd": 108,
-      "target": "../images/img-p108-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-108",
@@ -3856,57 +3312,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p123-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 123,
-      "pageEnd": 123,
-      "target": "../images/img-p123-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p123-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 123,
-      "pageEnd": 123,
-      "target": "../images/img-p123-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p123-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 123,
-      "pageEnd": 123,
-      "target": "../images/img-p123-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-123",
@@ -4719,23 +4124,6 @@
       }
     },
     {
-      "id": "library/10665-75211-ara/blocks/figure-img-p153-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 153,
-      "pageEnd": 153,
-      "target": "../images/img-p153-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
       "id": "library/10665-75211-ara/blocks/prose-page-153",
       "types": [
         "folio-assistant-core:Prose",
@@ -5476,11 +4864,11 @@
       "pageEnd": 180,
       "target": "../sections/page-180.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\nالجزء 6\nالرصد والتقييم\n\nكي حص\n\nطغاجءل ل0اءملالا ©\n0 ل /",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\nالجزء 3\nالرصد والتقييم\n\n——\n\n@) World Health\n/ ‏ل‎ 0",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "A near-blank Arabic divider page for the monitoring and evaluation part, with garbled characters and a part number that appears misread.",
         "state": "draft",
         "draftedBy": {
@@ -5490,57 +4878,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p181-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 181,
-      "pageEnd": 181,
-      "target": "../images/img-p181-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p181-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 181,
-      "pageEnd": 181,
-      "target": "../images/img-p181-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p181-4",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 181,
-      "pageEnd": 181,
-      "target": "../images/img-p181-4.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-181",
@@ -5554,11 +4891,11 @@
       "pageEnd": 181,
       "target": "../sections/page-181.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\nالجرء 3\nالرصد والتقييم\n\nادع ارملا ©\n0 ل",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية\nالجرء 3\nالرصد والتقييم\n\n@) World Health\nWSs Organization",
       "truncated": false,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "A near-blank Arabic divider page for Part 3 on monitoring and evaluation.",
         "state": "draft",
         "draftedBy": {
@@ -5568,57 +4905,6 @@
         },
         "draftedAt": "2026-11-11"
       }
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p182-1",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-1.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p182-2",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-2.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
-    },
-    {
-      "id": "library/10665-75211-ara/blocks/figure-img-p182-3",
-      "types": [
-        "folio-assistant-core:Figure",
-        "doco:Figure"
-      ],
-      "kind": "figure",
-      "title": "",
-      "pageStart": 182,
-      "pageEnd": 182,
-      "target": "../images/img-p182-3.png",
-      "narrative": "not-authored",
-      "content": null,
-      "truncated": false,
-      "provenance": "ingested",
-      "summary": null
     },
     {
       "id": "library/10665-75211-ara/blocks/prose-page-182",
@@ -6685,11 +5971,11 @@
       "pageEnd": 221,
       "target": "../sections/page-221.md",
       "narrative": null,
-      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية ‎٠‏ ا جزء 3: الرصد والتقييم\n\nللجمهور عبر الإنترنت. والجدول أدناه يسرد مجموعة عتقارة . من هذه م للشو ات امل على ةا التى قت كما\nبلدان مختلفة إستراتيجيات وخرائط طريق الصحة الإلكترونية الخاصة بما. ومع ذلك» ينبغي ملاحظة أن كل ذلك سبق\nإعداد هذا الدليل» ولذا فإن أياً منها لم يُعَدّ لاستخدام النهج المقترح في الدليل.\n\nالجدول 12. أمثلة على إستراتيجيات الصحة الإلكترونية\n\nالإستراتيجية الوطنية للصحة الإلكترونية\n\nإستراتيجية الولايات للصحة الإلكترونية» كوينسلاند\nالإستراتيجية الوطنية لتكنولوجيا المعلومات 2007-2003\nمن أجل خدمة الرعاية الصحية الدتماركية\n\nالإستراتيجية",
+      "content": "دليل الإستراتيجية الوطنية للصحة الإلكترونية ‎٠‏ ا جزء 3: الرصد والتقييم\n\nللجمهور عبر الإنترنت. ‎Ugly‏ أدناه يسرد مجموعة ‎abe‏ من هذه م للشو ات ‎tbl‏ على ةا التى ‎a‏ كما\nبلدان مختلفة إستراتيجيات وخرائط طريق الصحة الإلكترونية الخاصة بما. ومع ذلك» ينبغي ملاحظة أن كل ذلك سبق\n‎She]‏ هذا الدليل» ولذا ‎OB‏ أياً منها لم ‎Sak‏ لاستخدام النهج المقترح في الدليل.\n\nالجدول 12. أمثلة على إستراتيجيات الصحة الإلكترونية\n\nالإستراتيجية الوطنية للصحة الإلكترونية\n\nإستراتيجية الولايات للصحة الإلكترونية» كوينسلاند\nالإستراتيجية الوطنية لتكنولوجيا المعلومات 2007-2003\nمن أجل خدمة الرعاية الصحية الدتماركية\n\nالإستراتيجية",
       "truncated": true,
       "provenance": "ingested",
       "summary": {
-        "status": "draft",
+        "status": "stale",
         "text": "Introduces in Arabic a table of example national and state eHealth strategies from several countries, noting they predate the toolkit and do not follow its approach. The page includes some garbled OCR.",
         "state": "draft",
         "draftedBy": {

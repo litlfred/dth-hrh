@@ -92,10 +92,10 @@
 <meta name="fa-glass-strip" content="[&quot;glass-todos&quot;,&quot;glass-settings&quot;]"><meta name="fa-baseurl" content="../.."><meta name="fa-staging" content=""><meta name="fa-search-index" content=""><meta name="fa-search-exclude" content="true">
 
 <meta name="fa-beans-src" content="../../assets/beans/index.json"><meta name="fa-processes-src" content="../../subgraph/index.jsonld"><meta name="fa-build-src" content="../../build.json"><link rel="stylesheet" href="../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../assets/css/docs-ui.css?v=3dc1393d297a"><link rel="stylesheet" href="../../assets/css/narrow-viewport.css?v=173ef819dbf2"><link rel="stylesheet" href="../../assets/css/work-plan.css?v=bd8c73337b01"><link rel="stylesheet" href="../../assets/css/themes.css?v=37c8ab192a5f"><link rel="stylesheet" href="../../assets/css/uml.css?v=e677f91cbf66"><link rel="stylesheet" href="../../assets/css/avatars.css?v=05433996459b"><script type="application/json" id="fa-declared-kinds">["archimate","beans","folio","fsh-guts","glossary","library","public-comments","references","todo-items","todos","uploads"]</script><script src="../../assets/js/harness-data.js" defer></script>
+<link rel="stylesheet" href="../../assets/css/docs-ui.css?v=5386a6134c28"><link rel="stylesheet" href="../../assets/css/narrow-viewport.css?v=173ef819dbf2"><link rel="stylesheet" href="../../assets/css/work-plan.css?v=bd8c73337b01"><link rel="stylesheet" href="../../assets/css/themes.css?v=37c8ab192a5f"><link rel="stylesheet" href="../../assets/css/uml.css?v=e677f91cbf66"><link rel="stylesheet" href="../../assets/css/avatars.css?v=dc8694990be6"><script type="application/json" id="fa-declared-kinds">["archimate","beans","folio","fsh-guts","glossary","library","public-comments","references","todo-items","todos","uploads"]</script><script src="../../assets/js/harness-data.js" defer></script>
 <script src="../../assets/js/vendor/qrcode.js" defer></script>
 <script src="../../assets/js/vendor/qrcode_UTF8.js" defer></script><script src="../../assets/js/kg-render.js" defer></script><script src="../../assets/js/navbar-row.js?v=cc1885e41c70" defer></script>
-<script src="../../assets/js/docs-ui.js?v=4d45b88bbab8" defer></script><script src="../../assets/js/edit-links.js?v=9c6835feddf7" defer></script><script src="../../assets/js/work-plan.js" defer></script><script src="../../assets/js/process-index.js" defer></script><style>
+<script src="../../assets/js/docs-ui.js?v=829c614a8b9d" defer></script><script src="../../assets/js/edit-links.js?v=b4f948dbab24" defer></script><script src="../../assets/js/code-highlight.js?v=0f94772226c3" defer></script><script src="../../assets/js/work-plan.js" defer></script><script src="../../assets/js/process-index.js" defer></script><style>
   .folio-landing { position: relative; margin: 0 0 2rem; }
 
   /* WHAT IS LEFT HERE, AND WHY IT IS SO LITTLE.
@@ -233,6 +233,7 @@
 .fa-doc .cite { opacity: .72; }
 .fa-doc .fa-blk:empty { min-height: 3rem; }
 .fa-doc .fa-one-page { font-size: .85rem; opacity: .72; }
+.fa-doc .fa-downloads { font-size: .9rem; }
 .fa-doc .pc-bar { position: static; background: none; }
 
   .fa-doc table { display: block; box-sizing: border-box; width: max-content; min-width: 0; max-width: 100%; overflow-x: auto; margin: 1.5rem 0; border-collapse: collapse;
@@ -299,6 +300,8 @@ html[data-fa-open] p:has(+ .fa-blk[data-fold]) > .pc-note { display: none; }
   
 </h1>
     
+<p class="fa-downloads">Download the current version: <a href="export/dth-hrh-public-comment-latest.docx" download type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Word (.docx)</a> · <a href="export/dth-hrh-public-comment-latest.pdf" download type="application/pdf">PDF</a> · <a href="export/">all formats</a></p>
+
 <p><a id="chap:about-this-draft"></a></p>
 <h2 id="h-chap:about-this-draft">
   
@@ -3253,7 +3256,10 @@ html[data-fa-open] p:has(+ .fa-blk[data-fold]) > .pc-note { display: none; }
     "html.fa-bp .main-content .anchor-heading{right:-3rem;width:2.25rem;padding:0 .375rem}" +
     "html.fa-bp .main-content .anchor-heading svg{width:1.5rem;height:1.5rem}" +
     "html.fa-bp .main-content .block-actions{width:2.25rem;margin-right:-4rem}" +
-    "html.fa-bp .main-content .fa-sec-actions{right:-3rem}" +
+    // A section box is placed by its right offset, not by the margin above, so it
+    // must not pick up that -4rem margin too: with both, it sat 7rem past the
+    // text and off the right edge of the window (smart-trust-demo, 11-11).
+    "html.fa-bp .main-content .fa-sec-actions{right:-3rem;margin:0}" +
     "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:3.25rem}" +
     "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark{width:30px;height:30px;font-size:20px}" +
     "html.fa-bp .block-actions>.ba-trigger .ba-n{top:-5px;right:-8px;font-size:12px;padding:0 4px}}" +

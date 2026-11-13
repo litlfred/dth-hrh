@@ -10,5 +10,8 @@
   "schema:name": "DPI-H: Facility Registry",
   "schema:description": "https://worldhealthorganization.github.io/smart-ra/ActorDefinition-FacilityRegistry.html",
   "schema:category": "Application",
+  "dcterms:source": {
+    "@id": "https://litlfred.github.io/smart-ra/archimate/0.2.0/element/id-4e0767822dcf46409554156a133fbc67"
+  },
   "dcterms:isPartOf": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1"
 }

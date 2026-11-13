@@ -90,11 +90,11 @@
           "heading": false
         },
         {
-          "term": "المكتب الإقليمي",
+          "term": "لشرق المتوسطء",
           "heading": false
         },
         {
-          "term": "لشرق المتوسطء",
+          "term": "المكتب الإقليمي",
           "heading": false
         },
         {
@@ -451,11 +451,11 @@
           "heading": false
         },
         {
-          "term": "التي تثيرها",
+          "term": "القضايا الأخلاقية",
           "heading": false
         },
         {
-          "term": "القضايا الأخلاقية",
+          "term": "التي تثيرها",
           "heading": false
         },
         {
@@ -494,11 +494,11 @@
           "heading": false
         },
         {
-          "term": "العامية والسكان",
+          "term": "بمنظمة الصحة",
           "heading": false
         },
         {
-          "term": "بمنظمة الصحة",
+          "term": "العامية والسكان",
           "heading": false
         },
         {
@@ -530,13 +530,13 @@
       "pageEnd": 12,
       "labelStart": null,
       "labelEnd": null,
-      "words": 4,
+      "words": 2,
       "summary": {
         "text": "A near-empty page with a short garbled string.",
         "status": "draft"
       },
       "keywords": [],
-      "extract": "3ط تامغمام /0لاللا ©",
+      "extract": "@@WHO/ Photolibrary",
       "extractCut": false
     },
     {
@@ -668,13 +668,13 @@
       "pageEnd": 16,
       "labelStart": null,
       "labelEnd": null,
-      "words": 3,
+      "words": 1,
       "summary": {
         "text": "A near-empty page with a short garbled string.",
         "status": "draft"
       },
       "keywords": [],
-      "extract": "مسن 00/108/6ا ©",
+      "extract": "©WHO/TDR/Crump",
       "extractCut": false
     },
     {
@@ -756,15 +756,11 @@
           "heading": false
         },
         {
-          "term": "للحالات التي",
-          "heading": false
-        },
-        {
           "term": "للعلوم الطبية",
           "heading": false
         },
         {
-          "term": "على الحالة",
+          "term": "للحالات التي",
           "heading": false
         },
         {
@@ -772,7 +768,11 @@
           "heading": false
         },
         {
-          "term": "المرتكزة على",
+          "term": "على الحالة",
+          "heading": false
+        },
+        {
+          "term": "الدولية للعلوم",
           "heading": false
         }
       ],
@@ -866,15 +866,15 @@
           "heading": false
         },
         {
-          "term": "نظر ومواقف",
-          "heading": false
-        },
-        {
           "term": "علم واطلاع",
           "heading": false
         },
         {
           "term": "إذا كان",
+          "heading": false
+        },
+        {
+          "term": "بالإضافة إلى",
           "heading": false
         }
       ],
@@ -896,10 +896,6 @@
         "status": "draft"
       },
       "keywords": [
-        {
-          "term": "شجع المشاركين",
-          "heading": false
-        },
         {
           "term": "المشاركين على",
           "heading": false
@@ -927,6 +923,10 @@
         {
           "term": "الحديث",
           "heading": false
+        },
+        {
+          "term": "النقاشء",
+          "heading": false
         }
       ],
       "extract": "20 وإذا حملتهم على إعادة التفكير في حججهم: ‎٠‏ فإنهم سوف يكسبون من المعارف والمهارات ما يمكن أن يخدمهم على أفضل وجه عندما تواجههم أي معضلات أخلاقية في عملهم في ال مستقبل. دلائل إرشادية لتيسير مناقشات ا مجموعات في الوقت الذي يأقي كل ميسّر بما لديه من خبرات إلى حيث يقوم بعمله. لا نجد بأساً في تقديم مجموعة من الاقتراحات في م يلي: .1 بتعزيز البيئة اللأمونة والداعمة الي تسا على التغلب على أي عزوف عن الكلام لدى بعض",
@@ -948,19 +948,15 @@
       },
       "keywords": [
         {
-          "term": "مقدمات الفصول",
-          "heading": false
-        },
-        {
           "term": "المعالجة الطبية",
           "heading": false
         },
         {
-          "term": "هذه الأنشطة",
+          "term": "مقدمات الفصول",
           "heading": false
         },
         {
-          "term": "فيه مقدمات",
+          "term": "هذه الأنشطة",
           "heading": false
         },
         {
@@ -969,6 +965,10 @@
         },
         {
           "term": "فصول الكتاب",
+          "heading": false
+        },
+        {
+          "term": "فيه مقدمات",
           "heading": false
         },
         {
@@ -1023,11 +1023,11 @@
           "heading": false
         },
         {
-          "term": "سريع التأثر",
+          "term": "الطبية البيولوجية",
           "heading": false
         },
         {
-          "term": "الطبية البيولوجية",
+          "term": "الدلائل الإرشادية",
           "heading": false
         }
       ],
@@ -1074,11 +1074,11 @@
           "heading": false
         },
         {
-          "term": "والموافقة المستنيرة",
+          "term": "التحديات الأخلاقية",
           "heading": false
         },
         {
-          "term": "التحديات الأخلاقية",
+          "term": "والموافقة المستنيرة",
           "heading": false
         }
       ],
@@ -1117,11 +1117,11 @@
           "heading": false
         },
         {
-          "term": "المفاوضات حول",
+          "term": "لجان أخلاقيات",
           "heading": false
         },
         {
-          "term": "لجان أخلاقيات",
+          "term": "المفاوضات حول",
           "heading": false
         },
         {
@@ -1156,10 +1156,6 @@
           "heading": false
         },
         {
-          "term": "اللجنة الاستشارية",
-          "heading": false
-        },
-        {
           "term": "البحوث الدولية",
           "heading": false
         },
@@ -1172,7 +1168,7 @@
           "heading": false
         },
         {
-          "term": "الاستشارية الوطنية",
+          "term": "اللجنة الاستشارية",
           "heading": false
         },
         {
@@ -1181,6 +1177,10 @@
         },
         {
           "term": "البحوث الطبية",
+          "heading": false
+        },
+        {
+          "term": "وإذا كان",
           "heading": false
         }
       ],
@@ -1227,11 +1227,11 @@
           "heading": false
         },
         {
-          "term": "هذا الفصل",
+          "term": "إذا كانت",
           "heading": false
         },
         {
-          "term": "إذا كانت",
+          "term": "هذا الفصل",
           "heading": false
         }
       ],
@@ -1317,11 +1317,11 @@
           "heading": false
         },
         {
-          "term": "البلدان النامية",
+          "term": "الرعاية التي",
           "heading": false
         },
         {
-          "term": "الرعاية التي",
+          "term": "البلدان النامية",
           "heading": false
         },
         {
@@ -1376,11 +1376,11 @@
           "heading": false
         },
         {
-          "term": "بلد متقدم",
+          "term": "الباحثين ورعاة",
           "heading": false
         },
         {
-          "term": "الباحثين ورعاة",
+          "term": "بلد متقدم",
           "heading": false
         },
         {
@@ -1553,7 +1553,7 @@
       "pageEnd": 34,
       "labelStart": null,
       "labelEnd": null,
-      "words": 112,
+      "words": 87,
       "summary": {
         "text": "A list of further readings on case-based teaching, including Harvard Kennedy School and other online resources; the web addresses are garbled in the extracted text.",
         "status": "draft"
@@ -1572,15 +1572,11 @@
           "heading": false
         },
         {
-          "term": "كته",
-          "heading": false
-        },
-        {
           "term": "مدرسة",
           "heading": false
         }
       ],
-      "extract": "هيريود العودة إلى المريخ - كيف لا تعلم دراسة الحالات /دعقهء /كاءء زه:1م /وع عه طن[ /سحلء.10 كن .حاتاطن //:صاغط لحصغاط.ى همد /وستطعوع] (تمت زيارة الموقع في 2 أيار/مايو 2009) إتش. هاسوك \"استعمال حالة تعليمية\". برنامج الحالات في مدرسة كندى الحكومية. جامعة هارفارد: 0. تالمع كته تقط.ء موعع مكلت :اكد (تمت زيارة الموقع في 7 نيسان/أبريل 2009) إم. أووترومان» إي دي إِي ستائلي \"تقييم تعلّم الحالات” التعلم المرتكز على الحالات",
+      "extract": "هيريود العودة إلى المريخ - كيف لا تعلم دراسة الحالات ‎http://ublib.buffalo.edu/libraries/projects/cases/‏ ‎teaching/mars.html‏ (تمت زيارة الموقع في 2 أيار/مايو 2009( إتش. هاسوك \"استعمال حالة تعليمية\". برنامج الحالات في مدرسة كندى الحكومية. جامعة هارفارد: 2000. ‎/http://wwwksgcase.harvard.edu‏ (تمت زيارة الموقع في 7 نيسان/أبريل 2009( إم. أووترومان» إي دي إِي ستائلي \"تقييم تعلّم الحالات” التعلم المرتكز على الحالات في",
       "extractCut": true
     },
     {
@@ -1671,11 +1667,11 @@
       },
       "keywords": [
         {
-          "term": "البحوث الصحية",
+          "term": "أخلاقيات البحوث",
           "heading": false
         },
         {
-          "term": "أخلاقيات البحوث",
+          "term": "البحوث الصحية",
           "heading": false
         },
         {
@@ -1726,11 +1722,11 @@
           "heading": false
         },
         {
-          "term": "البحوث التي",
+          "term": "الرسالة العلمية",
           "heading": false
         },
         {
-          "term": "الرسالة العلمية",
+          "term": "البحوث التي",
           "heading": false
         },
         {
@@ -1848,7 +1844,7 @@
           "heading": false
         },
         {
-          "term": "بحوث الصحة",
+          "term": "أخلاقيات البحوث",
           "heading": false
         },
         {
@@ -1887,11 +1883,11 @@
           "heading": false
         },
         {
-          "term": "على قائمة",
+          "term": "نفس الرحلة",
           "heading": false
         },
         {
-          "term": "نفس الرحلة",
+          "term": "على قائمة",
           "heading": false
         },
         {
@@ -1997,15 +1993,15 @@
           "heading": false
         },
         {
-          "term": "النخاع",
-          "heading": false
-        },
-        {
           "term": "تجربة سريرية",
           "heading": false
         },
         {
           "term": "مزدوجة التعمية",
+          "heading": false
+        },
+        {
+          "term": "أمريكا الشمالية",
           "heading": false
         }
       ],
@@ -2040,11 +2036,11 @@
           "heading": false
         },
         {
-          "term": "تقوم على",
+          "term": "مراجعة البروتوكول",
           "heading": false
         },
         {
-          "term": "مراجعة البروتوكول",
+          "term": "تقوم على",
           "heading": false
         },
         {
@@ -2090,13 +2086,13 @@
       "pageEnd": 48,
       "labelStart": null,
       "labelEnd": null,
-      "words": 11,
+      "words": 8,
       "summary": {
         "text": "The title page of the casebook's chapter 2, on issues in study design.",
         "status": "draft"
       },
       "keywords": [],
-      "extract": "الفصل الثاني قضايا تتعلق بتصميم الدراسات 8|306 بعلاممغأ 0/6 انلا ©",
+      "extract": "الفصل الثاني قضايا تتعلق بتصميم الدراسات ©WHO/Christopher Black",
       "extractCut": false
     },
     {
@@ -2327,11 +2323,11 @@
           "heading": false
         },
         {
-          "term": "برنامج الأمم",
+          "term": "على المشتركين",
           "heading": false
         },
         {
-          "term": "على المشتركين",
+          "term": "برنامج الأمم",
           "heading": false
         },
         {
@@ -2390,11 +2386,11 @@
           "heading": false
         },
         {
-          "term": "الضعيفة الموارد",
+          "term": "هذه الدراسة",
           "heading": false
         },
         {
-          "term": "هذه الدراسة",
+          "term": "الضعيفة الموارد",
           "heading": false
         },
         {
@@ -2535,11 +2531,11 @@
           "heading": false
         },
         {
-          "term": "أعضاء اللجنة",
+          "term": "حول استعمال",
           "heading": false
         },
         {
-          "term": "حول استعمال",
+          "term": "أعضاء اللجنة",
           "heading": false
         }
       ],
@@ -2629,15 +2625,15 @@
           "heading": false
         },
         {
-          "term": "احتمال انتقال",
-          "heading": false
-        },
-        {
           "term": "لكل طفل",
           "heading": false
         },
         {
           "term": "على الإطلاق",
+          "heading": false
+        },
+        {
+          "term": "احتمال انتقال",
           "heading": false
         },
         {
@@ -2892,11 +2888,11 @@
           "heading": false
         },
         {
-          "term": "الانتقال العمودي",
+          "term": "العوز المناعي",
           "heading": false
         },
         {
-          "term": "العوز المناعي",
+          "term": "الانتقال العمودي",
           "heading": false
         }
       ],
@@ -2998,7 +2994,7 @@
           "heading": false
         },
         {
-          "term": "هذه العيادات",
+          "term": "على استعمال",
           "heading": false
         }
       ],
@@ -3096,7 +3092,7 @@
           "heading": false
         },
         {
-          "term": "على الدراسة",
+          "term": "تشير إلى",
           "heading": false
         }
       ],
@@ -3198,7 +3194,7 @@
           "heading": false
         },
         {
-          "term": "الولدان",
+          "term": "الميدانية",
           "heading": false
         }
       ],
@@ -3229,11 +3225,11 @@
           "heading": false
         },
         {
-          "term": "الواجبات المتصلة",
+          "term": "دراسة بالملاحظة",
           "heading": false
         },
         {
-          "term": "دراسة بالملاحظة",
+          "term": "الواجبات المتصلة",
           "heading": false
         },
         {
@@ -3408,11 +3404,11 @@
           "heading": false
         },
         {
-          "term": "البلدان النامية",
+          "term": "الأطفال والمراهقين",
           "heading": false
         },
         {
-          "term": "الأطفال والمراهقين",
+          "term": "البلدان النامية",
           "heading": false
         },
         {
@@ -3455,15 +3451,11 @@
           "heading": false
         },
         {
-          "term": "إنتاج اللقاح",
-          "heading": false
-        },
-        {
           "term": "الإصابة بالفيروسة",
           "heading": false
         },
         {
-          "term": "والبلدان النامية",
+          "term": "إنتاج اللقاح",
           "heading": false
         },
         {
@@ -3471,7 +3463,11 @@
           "heading": false
         },
         {
-          "term": "البلدان النامية",
+          "term": "والبلدان النامية",
+          "heading": false
+        },
+        {
+          "term": "الوفاة الناتجة",
           "heading": false
         }
       ],
@@ -3557,11 +3553,11 @@
           "heading": false
         },
         {
-          "term": "على الأطفال",
+          "term": "الفئة الشاهدة",
           "heading": false
         },
         {
-          "term": "الفئة الشاهدة",
+          "term": "على الأطفال",
           "heading": false
         },
         {
@@ -3596,11 +3592,11 @@
       },
       "keywords": [
         {
-          "term": "سرطان الثدي",
+          "term": "مراقبة سلامة",
           "heading": false
         },
         {
-          "term": "مراقبة سلامة",
+          "term": "سرطان الثدي",
           "heading": false
         },
         {
@@ -3608,11 +3604,11 @@
           "heading": false
         },
         {
-          "term": "هيئة مراقبة",
+          "term": "بسرطان الثدي",
           "heading": false
         },
         {
-          "term": "بسرطان الثدي",
+          "term": "هيئة مراقبة",
           "heading": false
         },
         {
@@ -3675,7 +3671,7 @@
           "heading": false
         },
         {
-          "term": "حاملا أثناء",
+          "term": "الدراسة إلى",
           "heading": false
         }
       ],
@@ -3710,11 +3706,11 @@
           "heading": false
         },
         {
-          "term": "حالة وفاة",
+          "term": "حالة تعقيم",
           "heading": false
         },
         {
-          "term": "حالة تعقيم",
+          "term": "حالة وفاة",
           "heading": false
         },
         {
@@ -3860,7 +3856,7 @@
           "heading": false
         },
         {
-          "term": "لإعطاء الموافقة",
+          "term": "للعلوم الطبية",
           "heading": false
         }
       ],
@@ -4162,11 +4158,11 @@
           "heading": false
         },
         {
-          "term": "شحيحة الموارد",
+          "term": "الطبية البيولوجية",
           "heading": false
         },
         {
-          "term": "الطبية البيولوجية",
+          "term": "شحيحة الموارد",
           "heading": false
         }
       ],
@@ -4260,7 +4256,7 @@
           "heading": false
         },
         {
-          "term": "القيام بذلك",
+          "term": "للحصول على",
           "heading": false
         }
       ],
@@ -4346,11 +4342,11 @@
           "heading": false
         },
         {
-          "term": "البلدان",
+          "term": "البحوث",
           "heading": false
         },
         {
-          "term": "البحوث",
+          "term": "البلدان",
           "heading": false
         },
         {
@@ -4436,11 +4432,11 @@
           "heading": false
         },
         {
-          "term": "لفيروس العو",
+          "term": "المناعي الب",
           "heading": false
         },
         {
-          "term": "المناعي الب",
+          "term": "لفيروس العو",
           "heading": false
         },
         {
@@ -4632,23 +4628,23 @@
           "heading": false
         },
         {
+          "term": "المناعي الب",
+          "heading": false
+        },
+        {
+          "term": "ناع الب",
+          "heading": false
+        },
+        {
+          "term": "امناعي الب",
+          "heading": false
+        },
+        {
           "term": "فيروس العو",
           "heading": false
         },
         {
           "term": "فيروس الع",
-          "heading": false
-        },
-        {
-          "term": "حليب الأطفال",
-          "heading": false
-        },
-        {
-          "term": "المناعي الب",
-          "heading": false
-        },
-        {
-          "term": "امناعي الب",
           "heading": false
         }
       ],
@@ -4679,11 +4675,11 @@
           "heading": false
         },
         {
-          "term": "انتقال فيروس",
+          "term": "هذه الدراسة",
           "heading": false
         },
         {
-          "term": "هذه الدراسة",
+          "term": "انتقال فيروس",
           "heading": false
         },
         {
@@ -4905,11 +4901,11 @@
           "heading": false
         },
         {
-          "term": "الأحادي العالمي",
+          "term": "إعلان هلسنكي",
           "heading": false
         },
         {
-          "term": "إعلان هلسنكي",
+          "term": "الأحادي العالمي",
           "heading": false
         },
         {
@@ -4948,11 +4944,11 @@
           "heading": false
         },
         {
-          "term": "منخفضة التكلفة",
+          "term": "مكان آخر",
           "heading": false
         },
         {
-          "term": "مكان آخر",
+          "term": "منخفضة التكلفة",
           "heading": false
         },
         {
@@ -5101,15 +5097,19 @@
           "heading": false
         },
         {
-          "term": "المضادة للفيروسات",
-          "heading": false
-        },
-        {
           "term": "يروس الع",
           "heading": false
         },
         {
+          "term": "المضادة للفيروسات",
+          "heading": false
+        },
+        {
           "term": "انقلاب تفاعلية",
+          "heading": false
+        },
+        {
+          "term": "ناعي الب",
           "heading": false
         },
         {
@@ -5118,10 +5118,6 @@
         },
         {
           "term": "على الدراسة",
-          "heading": false
-        },
-        {
-          "term": "ناعي الب",
           "heading": false
         }
       ],
@@ -5211,15 +5207,15 @@
           "heading": false
         },
         {
-          "term": "للنساء الحوامل",
-          "heading": false
-        },
-        {
           "term": "التنظيم الأوروبية",
           "heading": false
         },
         {
-          "term": "الانتقال العمودي",
+          "term": "الصحة العامية",
+          "heading": false
+        },
+        {
+          "term": "للفيروسات القهقرية",
           "heading": false
         }
       ],
@@ -5254,19 +5250,19 @@
           "heading": false
         },
         {
-          "term": "باستخدام جهاز",
-          "heading": false
-        },
-        {
           "term": "النساء اللائي",
           "heading": false
         },
         {
-          "term": "داخل الرحم",
+          "term": "باستخدام جهاز",
           "heading": false
         },
         {
           "term": "أمريكا الجنوبية",
+          "heading": false
+        },
+        {
+          "term": "داخل الرحم",
           "heading": false
         },
         {
@@ -5406,13 +5402,13 @@
       "pageEnd": 118,
       "labelStart": null,
       "labelEnd": null,
-      "words": 8,
+      "words": 7,
       "summary": {
         "text": "A divider page for the chapter on obligations to participants and communities, with some garbled characters.",
         "status": "draft"
       },
       "keywords": [],
-      "extract": "الالتزامات نحو ال مشتركين وال مجتمع 0لا ©",
+      "extract": "الالتزامات نحو ال مشتركين وال مجتمع ©WHO",
       "extractCut": false
     },
     {
@@ -5431,6 +5427,10 @@
       },
       "keywords": [
         {
+          "term": "للمشتركين الذين",
+          "heading": false
+        },
+        {
           "term": "الحاجة للرعاية",
           "heading": false
         },
@@ -5439,15 +5439,11 @@
           "heading": false
         },
         {
-          "term": "للمشتركين الذين",
+          "term": "الرعاية الصحية",
           "heading": false
         },
         {
           "term": "لتقديم الرعاية",
-          "heading": false
-        },
-        {
-          "term": "الرعاية الصحية",
           "heading": false
         },
         {
@@ -5482,11 +5478,11 @@
       },
       "keywords": [
         {
-          "term": "أطباء الأطفال",
+          "term": "سبيل المثالء",
           "heading": false
         },
         {
-          "term": "سبيل المثالء",
+          "term": "أطباء الأطفال",
           "heading": false
         },
         {
@@ -5592,11 +5588,11 @@
           "heading": false
         },
         {
-          "term": "مبيد المكروبات",
+          "term": "زيارة الموقع",
           "heading": false
         },
         {
-          "term": "زيارة الموقع",
+          "term": "مبيد المكروبات",
           "heading": false
         },
         {
@@ -5659,11 +5655,11 @@
           "heading": false
         },
         {
-          "term": "تجارب اللقاحات",
+          "term": "المبادئ الأخلاقية",
           "heading": false
         },
         {
-          "term": "المبادئ الأخلاقية",
+          "term": "تجارب اللقاحات",
           "heading": false
         }
       ],
@@ -5808,15 +5804,15 @@
           "heading": false
         },
         {
-          "term": "نجاعة اللقاح",
-          "heading": false
-        },
-        {
           "term": "المنطقة الصحية",
           "heading": false
         },
         {
           "term": "المتصورات النشيطة",
+          "heading": false
+        },
+        {
+          "term": "نجاعة اللقاح",
           "heading": false
         }
       ],
@@ -5992,15 +5988,15 @@
           "heading": false
         },
         {
+          "term": "مساعدو البحث",
+          "heading": false
+        },
+        {
           "term": "الأطفال الذين",
           "heading": false
         },
         {
           "term": "بين الأطفال",
-          "heading": false
-        },
-        {
-          "term": "مساعدو البحث",
           "heading": false
         },
         {
@@ -6012,11 +6008,11 @@
           "heading": false
         },
         {
-          "term": "الشهر الأول",
+          "term": "مجتمعية المرتكز",
           "heading": false
         },
         {
-          "term": "مجتمعية المرتكز",
+          "term": "الشهر الأول",
           "heading": false
         }
       ],
@@ -6090,7 +6086,7 @@
           "heading": false
         },
         {
-          "term": "شرق آسياء",
+          "term": "العيادة الحكومية",
           "heading": false
         },
         {
@@ -6098,7 +6094,7 @@
           "heading": false
         },
         {
-          "term": "العيادة الحكومية",
+          "term": "شرق آسياء",
           "heading": false
         },
         {
@@ -6145,11 +6141,11 @@
           "heading": false
         },
         {
-          "term": "والموظفين الرسميين",
+          "term": "المضيفة لهم",
           "heading": false
         },
         {
-          "term": "المضيفة لهم",
+          "term": "والموظفين الرسميين",
           "heading": false
         },
         {
@@ -6290,11 +6286,11 @@
           "heading": false
         },
         {
-          "term": "كان يعاني",
+          "term": "الذين تترا",
           "heading": false
         },
         {
-          "term": "الذين تترا",
+          "term": "كان يعاني",
           "heading": false
         },
         {
@@ -6353,7 +6349,7 @@
           "heading": false
         },
         {
-          "term": "مرض الإيدز",
+          "term": "الباحثين على",
           "heading": false
         }
       ],
@@ -6376,15 +6372,15 @@
       },
       "keywords": [
         {
-          "term": "سكان",
-          "heading": false
-        },
-        {
           "term": "على أساس",
           "heading": false
         },
         {
           "term": "للحصول على",
+          "heading": false
+        },
+        {
+          "term": "سكان",
           "heading": false
         },
         {
@@ -6892,11 +6888,11 @@
           "heading": false
         },
         {
-          "term": "لحماية النساء",
+          "term": "إجراء المقابلة",
           "heading": false
         },
         {
-          "term": "إجراء المقابلة",
+          "term": "لحماية النساء",
           "heading": false
         },
         {
@@ -7002,11 +6998,11 @@
           "heading": false
         },
         {
-          "term": "السكان الأصليين",
+          "term": "أخلاقيات البحوث",
           "heading": false
         },
         {
-          "term": "أخلاقيات البحوث",
+          "term": "السكان الأصليين",
           "heading": false
         },
         {
@@ -7057,11 +7053,11 @@
           "heading": false
         },
         {
-          "term": "نظرا إلى",
+          "term": "بين استئصال",
           "heading": false
         },
         {
-          "term": "بين استئصال",
+          "term": "نظرا إلى",
           "heading": false
         },
         {
@@ -7096,15 +7092,15 @@
           "heading": false
         },
         {
-          "term": "سرطان عنق",
-          "heading": false
-        },
-        {
           "term": "المريضات",
           "heading": false
         },
         {
           "term": "إلى المستشفى",
+          "heading": false
+        },
+        {
+          "term": "سرطان عنق",
           "heading": false
         },
         {
@@ -7116,7 +7112,7 @@
           "heading": false
         },
         {
-          "term": "باب",
+          "term": "للحصول على",
           "heading": false
         }
       ],
@@ -7241,11 +7237,11 @@
           "heading": false
         },
         {
-          "term": "جنوب الصحراء",
+          "term": "الخصوصية والسرية",
           "heading": false
         },
         {
-          "term": "الخصوصية والسرية",
+          "term": "جنوب الصحراء",
           "heading": false
         },
         {
@@ -7291,13 +7287,13 @@
       "pageEnd": 158,
       "labelStart": null,
       "labelEnd": null,
-      "words": 2,
+      "words": 1,
       "summary": {
         "text": "A near-blank page whose extracted text consists of only a few stray characters.",
         "status": "draft"
       },
       "keywords": [],
-      "extract": "0لا ©",
+      "extract": "©WHO",
       "extractCut": false
     },
     {
@@ -7387,11 +7383,11 @@
           "heading": false
         },
         {
-          "term": "حالات التضارب",
+          "term": "للجان أخلاقيات",
           "heading": false
         },
         {
-          "term": "للجان أخلاقيات",
+          "term": "حالات التضارب",
           "heading": false
         },
         {
@@ -7748,11 +7744,11 @@
           "heading": false
         },
         {
-          "term": "فيروس العوز",
+          "term": "المناعي البشري",
           "heading": false
         },
         {
-          "term": "المناعي البشري",
+          "term": "فيروس العوز",
           "heading": false
         }
       ],
@@ -7783,11 +7779,11 @@
           "heading": false
         },
         {
-          "term": "لفريق البحث",
+          "term": "فريق البحث",
           "heading": false
         },
         {
-          "term": "فريق البحث",
+          "term": "لفريق البحث",
           "heading": false
         },
         {
@@ -8285,11 +8281,11 @@
           "heading": false
         },
         {
-          "term": "فيروس العوز",
+          "term": "المسكرات",
           "heading": false
         },
         {
-          "term": "المسكرات",
+          "term": "المناعي البشري",
           "heading": false
         }
       ],
@@ -8442,7 +8438,7 @@
           "heading": false
         },
         {
-          "term": "الطبية بالتعاون",
+          "term": "الطبية العالمية",
           "heading": false
         }
       ],
@@ -8567,11 +8563,11 @@
       },
       "keywords": [
         {
-          "term": "المتطلبات التقنية",
+          "term": "التقنية لتسجيل",
           "heading": false
         },
         {
-          "term": "التقنية لتسجيل",
+          "term": "المتطلبات التقنية",
           "heading": false
         },
         {
@@ -8583,11 +8579,11 @@
           "heading": false
         },
         {
-          "term": "المؤتمر الدولي",
+          "term": "الصيدلانية للاستعمال",
           "heading": false
         },
         {
-          "term": "الصيدلانية للاستعمال",
+          "term": "المؤتمر الدولي",
           "heading": false
         },
         {
@@ -8595,7 +8591,7 @@
           "heading": false
         },
         {
-          "term": "لتسجيل المواد",
+          "term": "جحصمء إعطاعي",
           "heading": false
         }
       ],
@@ -8642,11 +8638,11 @@
           "heading": false
         },
         {
-          "term": "والمتصورة",
+          "term": "السريرية الجيدة",
           "heading": false
         },
         {
-          "term": "السريرية الجيدة",
+          "term": "والمتصورة",
           "heading": false
         }
       ],
@@ -8771,15 +8767,15 @@
       },
       "keywords": [
         {
-          "term": "تستحق الاهتمام",
-          "heading": false
-        },
-        {
           "term": "البحث العملي",
           "heading": false
         },
         {
           "term": "نتائج تستحق",
+          "heading": false
+        },
+        {
+          "term": "تستحق الاهتمام",
           "heading": false
         },
         {
@@ -8877,11 +8873,11 @@
           "heading": false
         },
         {
-          "term": "اضطراب نفسي",
+          "term": "الدلائل الإرشادية",
           "heading": false
         },
         {
-          "term": "الدلائل الإرشادية",
+          "term": "اضطراب نفسي",
           "heading": false
         },
         {
@@ -9140,11 +9136,11 @@
           "heading": false
         },
         {
-          "term": "الأمم المتحدة",
+          "term": "أيار مايو",
           "heading": false
         },
         {
-          "term": "أيار مايو",
+          "term": "الأمم المتحدة",
           "heading": false
         },
         {
@@ -9246,11 +9242,11 @@
           "heading": false
         },
         {
-          "term": "الطبية العالمية",
+          "term": "الجمعية الطبية",
           "heading": false
         },
         {
-          "term": "الجمعية الطبية",
+          "term": "الطبية العالمية",
           "heading": false
         },
         {
@@ -9289,10 +9285,6 @@
           "heading": false
         },
         {
-          "term": "منظمة التجارة",
-          "heading": false
-        },
-        {
           "term": "الفقار علي",
           "heading": false
         },
@@ -9301,15 +9293,19 @@
           "heading": false
         },
         {
+          "term": "منظمة التجارة",
+          "heading": false
+        },
+        {
           "term": "زيارة الموقع",
           "heading": false
         },
         {
-          "term": "العلوم والتنمية",
+          "term": "تمت زيارة",
           "heading": false
         },
         {
-          "term": "تمت زيارة",
+          "term": "العلوم والتنمية",
           "heading": false
         }
       ],
@@ -9454,15 +9450,15 @@
           "heading": false
         },
         {
-          "term": "مكافحة الأمراض",
-          "heading": false
-        },
-        {
           "term": "زيارة الموقع",
           "heading": false
         },
         {
           "term": "تمت زيارة",
+          "heading": false
+        },
+        {
+          "term": "التحديات الأخلاقية",
           "heading": false
         }
       ],
@@ -9658,11 +9654,11 @@
           "heading": false
         },
         {
-          "term": "الأغذية والأدوية",
+          "term": "معايير أخلاقية",
           "heading": false
         },
         {
-          "term": "معايير أخلاقية",
+          "term": "الأغذية والأدوية",
           "heading": false
         },
         {
@@ -9689,11 +9685,11 @@
       },
       "keywords": [
         {
-          "term": "البلدان النامية",
+          "term": "مبيدات المكروبات",
           "heading": false
         },
         {
-          "term": "مبيدات المكروبات",
+          "term": "البلدان النامية",
           "heading": false
         },
         {
@@ -9705,11 +9701,11 @@
           "heading": false
         },
         {
-          "term": "نيسان أبريل",
+          "term": "زيارة الموقع",
           "heading": false
         },
         {
-          "term": "زيارة الموقع",
+          "term": "نيسان أبريل",
           "heading": false
         },
         {
@@ -9862,11 +9858,11 @@
           "heading": false
         },
         {
-          "term": "البحوث التي",
+          "term": "للعلوم الطبية",
           "heading": false
         },
         {
-          "term": "للعلوم الطبية",
+          "term": "البحوث التي",
           "heading": false
         },
         {
@@ -9968,15 +9964,15 @@
       "heading": false
     },
     {
-      "term": "على هذه",
-      "heading": false
-    },
-    {
       "term": "البحوث إلى",
       "heading": false
     },
     {
       "term": "البحوث التي",
+      "heading": false
+    },
+    {
+      "term": "على هذه",
       "heading": false
     },
     {
@@ -9992,7 +9988,7 @@
       "heading": false
     },
     {
-      "term": "الصحية على",
+      "term": "حول البحوث",
       "heading": false
     },
     {
@@ -10000,8 +9996,164 @@
       "heading": false
     },
     {
-      "term": "حول البحوث",
+      "term": "الصحية على",
       "heading": false
+    }
+  ],
+  "images": [
+    {
+      "id": "img-p001-1",
+      "file": "images/img-p001-1.webp",
+      "page": 1,
+      "narratives": {
+        "en": "Cover photograph of a person resting their chin on their hand among a blurred crowd, overlaid with faint words such as RESEARCH, HEALTH, ETHICS, CARE, SAFETY, RESPONSIBILITY, RISK, IDENTITY, HUMAN, WORLD and SIGNATURE.",
+        "ar": "صورة غلاف لشخص يسند ذقنه على يده وسط حشد ضبابي، تعلوها كلمات باهتة مثل RESEARCH وHEALTH وETHICS وCARE وSAFETY وRESPONSIBILITY وRISK وIDENTITY وHUMAN وWORLD وSIGNATURE.",
+        "zh": "封面照片：一个人在模糊的人群中以手托腮，照片上叠印着淡淡的英文单词，如RESEARCH、HEALTH、ETHICS、CARE、SAFETY、RESPONSIBILITY、RISK、IDENTITY、HUMAN、WORLD和SIGNATURE。",
+        "es": "Fotografía de portada de una persona que apoya la barbilla en la mano entre una multitud desenfocada, con palabras tenues superpuestas como RESEARCH, HEALTH, ETHICS, CARE, SAFETY, RESPONSIBILITY, RISK, IDENTITY, HUMAN, WORLD y SIGNATURE.",
+        "fr": "Photographie de couverture d’une personne appuyant le menton sur la main au milieu d’une foule floue, avec en surimpression des mots estompés tels que RESEARCH, HEALTH, ETHICS, CARE, SAFETY, RESPONSIBILITY, RISK, IDENTITY, HUMAN, WORLD et SIGNATURE.",
+        "ru": "Фотография на обложке: человек, подперев подбородок рукой, среди размытой толпы; поверх изображения бледные слова RESEARCH, HEALTH, ETHICS, CARE, SAFETY, RESPONSIBILITY, RISK, IDENTITY, HUMAN, WORLD и SIGNATURE."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p012-1",
+      "file": "images/img-p012-1.webp",
+      "page": 12,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a smiling young child resting their chin on their arms and holding a cup.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لطفل صغير مبتسم يسند ذقنه على ذراعيه ويمسك كوبًا.",
+        "zh": "深褐色章节首页照片：一个微笑的幼儿将下巴搁在手臂上，手握一只杯子。",
+        "es": "Fotografía en sepia de apertura de capítulo de un niño pequeño sonriente que apoya la barbilla en los brazos y sostiene una taza.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’un jeune enfant souriant, le menton posé sur les bras, tenant une tasse.",
+        "ru": "Фотография в тонах сепии в начале главы: улыбающийся маленький ребёнок, опершись подбородком на руки, держит чашку."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p016-1",
+      "file": "images/img-p016-1.webp",
+      "page": 16,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a woman wearing glasses reading a document in front of shelves of archive binders.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لامرأة ترتدي نظارة تقرأ وثيقة أمام رفوف من ملفات الأرشيف.",
+        "zh": "深褐色章节首页照片：一名戴眼镜的女性在档案文件夹书架前阅读一份文件。",
+        "es": "Fotografía en sepia de apertura de capítulo de una mujer con gafas que lee un documento delante de estanterías con archivadores.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’une femme portant des lunettes qui lit un document devant des étagères de classeurs d’archives.",
+        "ru": "Фотография в тонах сепии в начале главы: женщина в очках читает документ на фоне полок с архивными папками."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p038-1",
+      "file": "images/img-p038-1.webp",
+      "page": 38,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a smiling man carrying a smiling young girl on his back.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لرجل مبتسم يحمل فتاة صغيرة مبتسمة على ظهره.",
+        "zh": "深褐色章节首页照片：一名微笑的男子背着一个微笑的小女孩。",
+        "es": "Fotografía en sepia de apertura de capítulo de un hombre sonriente que lleva a una niña sonriente a la espalda.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’un homme souriant portant sur son dos une petite fille souriante.",
+        "ru": "Фотография в тонах сепии в начале главы: улыбающийся мужчина несёт на спине улыбающуюся девочку."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p048-1",
+      "file": "images/img-p048-1.webp",
+      "page": 48,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of two children posing cheek to cheek.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لطفلين متلاصقي الوجنتين.",
+        "zh": "深褐色章节首页照片：两个孩子脸贴着脸合影。",
+        "es": "Fotografía en sepia de apertura de capítulo de dos niños posando mejilla con mejilla.",
+        "fr": "Photographie sépia d’ouverture de chapitre de deux enfants posant joue contre joue.",
+        "ru": "Фотография в тонах сепии в начале главы: двое детей позируют, прижавшись щеками."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p072-1",
+      "file": "images/img-p072-1.webp",
+      "page": 72,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a large group of laughing children, one holding a ball.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لمجموعة كبيرة من الأطفال الضاحكين، يحمل أحدهم كرة.",
+        "zh": "深褐色章节首页照片：一大群欢笑的孩子，其中一人拿着一个球。",
+        "es": "Fotografía en sepia de apertura de capítulo de un gran grupo de niños riendo, uno de ellos con un balón.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’un grand groupe d’enfants riant, l’un d’eux tenant un ballon.",
+        "ru": "Фотография в тонах сепии в начале главы: большая группа смеющихся детей, один из них держит мяч."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p084-1",
+      "file": "images/img-p084-1.webp",
+      "page": 84,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a girl holding a toddler, with a young woman behind them.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لفتاة تحمل طفلًا صغيرًا، وخلفهما شابة.",
+        "zh": "深褐色章节首页照片：一个女孩抱着一个幼儿，身后是一名年轻女子。",
+        "es": "Fotografía en sepia de apertura de capítulo de una niña que sostiene a un niño pequeño, con una mujer joven detrás.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’une fillette tenant un tout-petit, avec une jeune femme derrière elles.",
+        "ru": "Фотография в тонах сепии в начале главы: девочка держит малыша, позади них — молодая женщина."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p106-1",
+      "file": "images/img-p106-1.webp",
+      "page": 106,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a smiling woman with a head covering, with another smiling person beside her.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لامرأة مبتسمة تغطي رأسها، وبجانبها شخص آخر مبتسم.",
+        "zh": "深褐色章节首页照片：一名戴头巾的微笑女性，旁边是另一个微笑的人。",
+        "es": "Fotografía en sepia de apertura de capítulo de una mujer sonriente con la cabeza cubierta, junto a otra persona sonriente.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’une femme souriante, la tête couverte, à côté d’une autre personne souriante.",
+        "ru": "Фотография в тонах сепии в начале главы: улыбающаяся женщина с покрытой головой и рядом ещё один улыбающийся человек."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p118-1",
+      "file": "images/img-p118-1.webp",
+      "page": 118,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a group of smiling children posing outdoors.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لمجموعة من الأطفال المبتسمين في الهواء الطلق.",
+        "zh": "深褐色章节首页照片：一群微笑的孩子在户外合影。",
+        "es": "Fotografía en sepia de apertura de capítulo de un grupo de niños sonrientes posando al aire libre.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’un groupe d’enfants souriants posant en plein air.",
+        "ru": "Фотография в тонах сепии в начале главы: группа улыбающихся детей позирует на улице."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p140-1",
+      "file": "images/img-p140-1.webp",
+      "page": 140,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a woman wrapped in a shawl standing beside a water tap that is filling a clay jar.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لامرأة ملتفة بشال تقف بجانب صنبور ماء يملأ جرة فخارية.",
+        "zh": "深褐色章节首页照片：一名裹着披肩的女性站在水龙头旁，水正注入一个陶罐。",
+        "es": "Fotografía en sepia de apertura de capítulo de una mujer envuelta en un chal junto a un grifo que llena una vasija de barro.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’une femme enveloppée d’un châle debout près d’un robinet qui remplit une jarre en terre.",
+        "ru": "Фотография в тонах сепии в начале главы: женщина, закутанная в шаль, стоит у водопроводного крана, из которого наполняется глиняный кувшин."
+      },
+      "state": "draft"
+    },
+    {
+      "id": "img-p158-1",
+      "file": "images/img-p158-1.webp",
+      "page": 158,
+      "narratives": {
+        "en": "Sepia chapter-opener photograph of a woman holding a young child wearing a fur-trimmed hat.",
+        "ar": "صورة افتتاحية لفصل بلون بني داكن لامرأة تحمل طفلًا صغيرًا يرتدي قبعة مبطنة بالفرو.",
+        "zh": "深褐色章节首页照片：一名女性抱着一个戴毛边帽子的幼儿。",
+        "es": "Fotografía en sepia de apertura de capítulo de una mujer que sostiene a un niño pequeño con un gorro ribeteado de piel.",
+        "fr": "Photographie sépia d’ouverture de chapitre d’une femme tenant un jeune enfant coiffé d’un bonnet bordé de fourrure.",
+        "ru": "Фотография в тонах сепии в начале главы: женщина держит маленького ребёнка в шапке с меховой опушкой."
+      },
+      "state": "draft"
     }
   ],
   "links": {

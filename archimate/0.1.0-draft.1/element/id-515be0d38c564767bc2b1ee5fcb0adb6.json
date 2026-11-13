@@ -9,5 +9,8 @@
   "schema:identifier": "id-515be0d38c564767bc2b1ee5fcb0adb6",
   "schema:name": "Health Care Institutions",
   "schema:category": "Motivation",
+  "dcterms:source": {
+    "@id": "https://litlfred.github.io/smart-ra/archimate/0.2.0/element/id-515be0d38c564767bc2b1ee5fcb0adb6"
+  },
   "dcterms:isPartOf": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1"
 }

@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "e3080551a933ca207d43cd6759d8d4f5d8fbbace",
+          "ref": "e149ff46aa916fb5ec9d7b58d1f466ac4696c6e2",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,7 +190,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "e3080551a933ca207d43cd6759d8d4f5d8fbbace",
+              "ref": "e149ff46aa916fb5ec9d7b58d1f466ac4696c6e2",
               "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); lock:freshness follow-up"
             }
           }

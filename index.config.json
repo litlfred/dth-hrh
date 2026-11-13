@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "d16af04f1944af6eb4fff25ee888f49f062c760b",
+          "ref": "5dfaf3cdd538c4ea8e0a0a3ed27628281f3eae6c",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -87,8 +87,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "d16af04f1944af6eb4fff25ee888f49f062c760b",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "ref": "5dfaf3cdd538c4ea8e0a0a3ed27628281f3eae6c",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); lock:freshness follow-up"
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b721f0ffcfeecdfe86850b4f0f307936581cff9a",
+          "ref": "9d723f1aa4a0af8fdedd42247805df103f061e99",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -109,8 +109,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "b721f0ffcfeecdfe86850b4f0f307936581cff9a",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "ref": "9d723f1aa4a0af8fdedd42247805df103f061e99",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); lock:freshness follow-up"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "fb1e702c8ff004a46b6b6a7a2c077f04be85cfc3",
+          "ref": "e3080551a933ca207d43cd6759d8d4f5d8fbbace",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "fb1e702c8ff004a46b6b6a7a2c077f04be85cfc3",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp)"
+              "ref": "e3080551a933ca207d43cd6759d8d4f5d8fbbace",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); lock:freshness follow-up"
             }
           }
         }

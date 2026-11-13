@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
+          "ref": "60687101a7f707dbc491a2f1aaacb03e4387936b",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +38,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "d9978060f997a1b1bd55eae1ae7e49115854e648",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "60687101a7f707dbc491a2f1aaacb03e4387936b",
+              "evidence": "owner card tap 2026-11-12 '1. All nine to main (Recommended)': re-pin every dth-hrh layer to its current main in one re-pin, to satisfy the 'Lock pins agree with each other and are at main' gate on litlfred/dth-hrh#124 (document download links, litlfred/folio-assistant-core#771); Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
+          "ref": "6976e637c092f5862f0fd2a01b4735b1dc2f4ab2",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -86,9 +86,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "b2c3f72c60cfbd47ffa7fd61d96da3dd4d865c66",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "6976e637c092f5862f0fd2a01b4735b1dc2f4ab2",
+              "evidence": "owner card tap 2026-11-12 '1. All nine to main (Recommended)': re-pin every dth-hrh layer to its current main in one re-pin, to satisfy the 'Lock pins agree with each other and are at main' gate on litlfred/dth-hrh#124 (document download links, litlfred/folio-assistant-core#771); Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
+          "ref": "091bd49ca6363135f6200cdfe05c1b791f731d04",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -108,9 +108,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "091bd49ca6363135f6200cdfe05c1b791f731d04",
+              "evidence": "owner card tap 2026-11-12 '1. All nine to main (Recommended)': re-pin every dth-hrh layer to its current main in one re-pin, to satisfy the 'Lock pins agree with each other and are at main' gate on litlfred/dth-hrh#124 (document download links, litlfred/folio-assistant-core#771); Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -121,7 +121,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
+          "ref": "b2cec2562a7e3a5de3e8702813cf706537814996",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,9 +136,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
-              "evidence": "owner card tap 2026-11-11T10:37:11Z 'A: Merge and re-pin' on the card 'Fix the dth-hrh publish: merge core#742, then re-pin dth-hrh?'"
+              "on": "2026-11-12",
+              "ref": "b2cec2562a7e3a5de3e8702813cf706537814996",
+              "evidence": "owner card tap 2026-11-12 '1. Run the update (Recommended)': re-pin folio-assistant-core to main (includes litlfred/folio-assistant-core#771, document download links) and the four layers its lock pins, for litlfred/dth-hrh#124; Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -149,7 +149,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
+          "ref": "edaa380219fbc4f949db2c1f2e08c9a45e6a26ad",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,9 +164,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "a3e0047270f76181681cdc3a4b93a832c7577b4c",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "edaa380219fbc4f949db2c1f2e08c9a45e6a26ad",
+              "evidence": "owner card tap 2026-11-12 '1. Run the update (Recommended)': re-pin folio-assistant-core to main (includes litlfred/folio-assistant-core#771, document download links) and the four layers its lock pins, for litlfred/dth-hrh#124; Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
+          "ref": "4a8013fe65a6516eae28ce6d02a030d74f1c06c4",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,9 +189,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "4a8013fe65a6516eae28ce6d02a030d74f1c06c4",
+              "evidence": "owner card tap 2026-11-12 '1. All nine to main (Recommended)': re-pin every dth-hrh layer to its current main in one re-pin, to satisfy the 'Lock pins agree with each other and are at main' gate on litlfred/dth-hrh#124 (document download links, litlfred/folio-assistant-core#771); Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -202,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -211,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
-              "evidence": "owner card tap 2026-11-11T02:45:31Z 'A: Merge the train' (library IRI-move train, tools#1833 + layer regens), merge-manager thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR"
+              "on": "2026-11-12",
+              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+              "evidence": "owner card tap 2026-11-12 '1. Run the update (Recommended)': re-pin folio-assistant-core to main (includes litlfred/folio-assistant-core#771, document download links) and the four layers its lock pins, for litlfred/dth-hrh#124; Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+          "ref": "bbdaffb757007bf0c4fe0ce4d21018491df308a9",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -236,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-08",
-              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
-              "evidence": "Owner litlfred, 2026-11-08 06:43:26Z, first-hand in the merge-master thread (cmsg_017WNUkNK8kdDziPK58Pv6G9KXP4MmBwRDyaJzVqgwQDGf): \"non-content can merge/repin + 12hr\" (window to 2026-11-08 19:00Z; card Q-MM-1 A). Re-pin dth-hrh#105: every layer to its main."
+              "on": "2026-11-12",
+              "ref": "bbdaffb757007bf0c4fe0ce4d21018491df308a9",
+              "evidence": "owner card tap 2026-11-12 '1. Run the update (Recommended)': re-pin folio-assistant-core to main (includes litlfred/folio-assistant-core#771, document download links) and the four layers its lock pins, for litlfred/dth-hrh#124; Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }
@@ -249,7 +249,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
+          "ref": "fa85c6bed1c03ac0010da08bcfba9f00cd35a527",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -285,9 +285,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-10",
-              "ref": "7a3df32635d07b1ec95c4cd3730d938386a6a000",
-              "evidence": "Owner litlfred, 2026-11-10 19:54:37Z, first-hand tap on decision card \"Bring the gutter fix to the DTH sites how?\" in thread \"Remove left gutter on DTH sites\" (cmsg_017WNUkNK8kdDziPK58Pv6G9A4FVReTMWQNcJHJWxMVMtd): \"B: every layer to main\" (re-pin dth-hrh, dth-sc, dth-phc to every layer main)."
+              "on": "2026-11-12",
+              "ref": "fa85c6bed1c03ac0010da08bcfba9f00cd35a527",
+              "evidence": "owner card tap 2026-11-12 '1. All nine to main (Recommended)': re-pin every dth-hrh layer to its current main in one re-pin, to satisfy the 'Lock pins agree with each other and are at main' gate on litlfred/dth-hrh#124 (document download links, litlfred/folio-assistant-core#771); Claude Code session https://claude.ai/code/session_01EucfRo1h2EWuvUzmajrc2W"
             }
           }
         }

@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
+          "ref": "d5b542bf032b5ebff1ab0983e18d8001db2a2726",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "d5b542bf032b5ebff1ab0983e18d8001db2a2726",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); during the owner-approved 15-min tools merge freeze (~20:02–20:17Z)"
             }
           }
         }
@@ -99,7 +99,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
+          "ref": "79cb2ca31b473eab6998fa0c5566bdba54318e76",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -109,8 +109,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time repin agreed with the merge manager"
+              "ref": "79cb2ca31b473eab6998fa0c5566bdba54318e76",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); during the owner-approved 15-min tools merge freeze (~20:02–20:17Z)"
             }
           }
         }
@@ -177,7 +177,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "8c80c3fa895162f568a1383e7f8df30f54d9306c",
+          "ref": "f8191f642b141ecce7958abedc152940d43183cf",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -190,8 +190,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "8c80c3fa895162f568a1383e7f8df30f54d9306c",
-              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); just-in-time in a quiet window (owner C. Keep strict, ~19:30Z)"
+              "ref": "f8191f642b141ecce7958abedc152940d43183cf",
+              "evidence": "2. Repin dth-hrh again — every layer to its current main (owner, 2026-11-13 ~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); during the owner-approved 15-min tools merge freeze (~20:02–20:17Z)"
             }
           }
         }

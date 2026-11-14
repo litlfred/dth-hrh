@@ -75,8 +75,8 @@ html.fa-bp .fa-block-panel .block-actions > a { display:block; margin:.5rem 0; p
 .fa-block-panel .block-actions > .ba-existing { display:block; margin:.5rem 0; }
 html.fa-bp .fa-block-panel .block-actions > .ba-existing { display:block; }
 .fa-block-panel .block-actions > .ba-ic { display:none; }
-</style><link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-7jnivcyk1b.js" defer></script><script src="../../assets/js/navbar.js" defer></script><script src="../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../assets/css/navbar-row.css"><script src="../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../assets/js/vendor/lunr.min.js" defer></script><script src="../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../assets/page-layout.css" data-fa-page-layout><script src="../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../.."></head>
-<body><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-7jnivcyk1b","here":"/en/dth-hrh/index.hydrated.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+</style><link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-1n2pmtncli3.js" defer></script><script src="../../assets/js/navbar.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../assets/js/vendor/lunr.min.js" defer></script><script src="../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../assets/page-layout.css" data-fa-page-layout><script src="../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../.."></head>
+<body><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-1n2pmtncli3","here":"/en/dth-hrh/index.hydrated.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <main>
 
 <h1>Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries - working draft (TWG outline stage)</h1>
@@ -4910,6 +4910,11 @@ Table linking registry data elements to NHWA indicators.</p>
     // A standalone page (an IG's thin layout) has no .main-content-wrap to
     // pad, so its column leaves the same gutter itself.
     "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:2.5rem}}" +
+    // Below 50rem there is no gutter, so a section's box sits in the text
+    // column under its heading. Owner, 2026-11-13 ("phone first"): there it is
+    // ONE row, right-aligned, not the gutter's column, which left two icon
+    // heights of empty space under every heading on a phone.
+    "@media (max-width:49.99rem){html.fa-bp .main-content .fa-sec-actions{flex-direction:row;justify-content:flex-end;align-items:center;gap:8px}}" +
     // A section's QA / TR chips, under its 📣 and 🔖 in the gutter; pressed,
     // they open the section's panel, where each badge says what it found.
     "html.fa-bp .main-content .fa-sec-actions>.fa-sec-qa{order:9;margin:0;display:flex;flex-direction:column;align-items:center;gap:2px}" +
@@ -5177,11 +5182,21 @@ Table linking registry data elements to NHWA indicators.</p>
     if (!d) return null;
     try { const m = JSON.parse(d.textContent); return m && m.blob ? m : null; } catch { return null; }
   };
+  // A docs page says the same of ITSELF in <script id="fa-page-source">,
+  // written by head_custom.html from compose-docs' _data/page_sources.json
+  // (owner, 2026-11-13). Only the headings its own Markdown writes are listed,
+  // so a section an include draws keeps its 📣 alone: "own-text sections only".
+  const pageLines = () => {
+    const d = document.getElementById("fa-page-source");
+    if (!d) return null;
+    try { const m = JSON.parse(d.textContent); return m && m.blob ? m : null; } catch { return null; }
+  };
   const norm = (s) => String(s).toLowerCase().replace(/&[a-z]+;/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
   const sectionBoxes = () => {
     const main = document.querySelector(".main-content");
     if (!main || main.querySelector(".fa-doc, .block-actions")) return;
     const ig = igLines();
+    const own = ig ? null : pageLines();
     const ghRepo = ig ? (/^https:\/\/github\.com\/([^/]+\/[^/]+)/.exec(ig.blob) || [])[1] || "" : "";
     const site = ig ? (ig.repo || ghRepo) : siteRepo();
     const used = {};
@@ -5215,18 +5230,20 @@ Table linking registry data elements to NHWA indicators.</p>
         if (qa) box.append(el("p", { className: "fa-sec-qa" }, [qa]));
         nx.remove();
       }
-      if (ig) {
+      const lm = ig || (from ? null : own);
+      if (lm) {
         const k = norm(sec);
-        const lines = Array.isArray(ig.lines) ? ig.lines : [];
+        const lines = Array.isArray(lm.lines) ? lm.lines : [];
         for (let i = 0; i < lines.length; i++) if (!used[i] && norm(lines[i].t) === k) {
           used[i] = 1;
-          src = (lines[i].b || ig.blob) + "#L" + lines[i].l;
+          src = (lines[i].b || lm.blob) + "#L" + lines[i].l;
           break;
         }
         if (src) {
           const e = el("a", { className: "ba-edit", href: src, textContent: "\u270e edit", title: "Edit this section's source on GitHub" });
           e.dataset.faLink = "edit";
           box.append(e);
+          if (!ig) addSuggest(box);
         }
       }
       const repo = (from && from.dataset.repo) || site;

@@ -13,10 +13,28 @@
 .lib-page #document .docbody { padding: 0 16px 8px; }
 .lib-page #document .dockw { padding: 4px 16px; }
 /* Kept figures and transcribed tables (who-iris#224). */
-.lib-page #document .doc-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: .5rem 0 1rem; }
-.lib-page #document .doc-figure { margin: 0; border: 1px solid var(--border, #8884); border-radius: 6px; padding: 6px; background: var(--card, transparent); }
-.lib-page #document .doc-figure img { display: block; width: 100%; height: auto; max-height: 320px; object-fit: contain; background: #fff; border-radius: 4px; }
-.lib-page #document .doc-figure figcaption { font-size: .85em; margin-top: 6px; }
+.lib-page #document .doc-gallery { display: flex; flex-direction: column; gap: 8px; margin: .5rem 0 1rem; }
+.lib-page #document .doc-figure { margin: 0; display: flex; align-items: center; gap: 12px; border: 1px solid var(--border, #8884); border-radius: 6px; padding: 6px; background: var(--card, transparent); }
+.lib-page #document .fig-thumb { flex: 0 0 auto; padding: 0; border: 0; background: #fff; border-radius: 4px; cursor: zoom-in; }
+.lib-page #document .fig-thumb:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; }
+.lib-page #document .doc-figure img { display: block; width: 120px; height: 90px; object-fit: contain; border-radius: 4px; }
+.lib-page #document .doc-figure figcaption { flex: 1 1 auto; min-width: 0; font-size: .9em; display: flex; gap: 8px; align-items: baseline; }
+.lib-page #document .fig-name { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600; }
+.lib-page .fig-print-desc { display: none; }
+.lib-page .doc-print { margin-inline-start: 8px; font-size: .8rem; cursor: pointer; }
+@media print {
+  .lib-page .fig-print-desc { display: block; margin: 4px 0 0; font-size: .85em; }
+  .lib-page #document .doc-figure { display: block; break-inside: avoid; }
+  .lib-page #document .doc-figure img { width: auto; height: auto; max-width: 100%; max-height: 60vh; }
+  .lib-page #document .fig-thumb { cursor: default; }
+  .lib-page .doc-print, .lib-page .fig-pop { display: none; }
+}
+.lib-page .fig-pop { max-width: min(92vw, 1100px); max-height: 92vh; padding: 0; border: 1px solid var(--border, #8884); border-radius: 8px; background: var(--bg, #fff); color: inherit; }
+.lib-page .fig-pop::backdrop { background: rgba(0,0,0,.6); }
+.lib-page .fig-pop-box { position: relative; padding: 12px 16px; }
+.lib-page .fig-pop-box img { display: block; max-width: 100%; max-height: 70vh; margin: 8px auto; background: #fff; object-fit: contain; }
+.lib-page .fig-pop-box h3 { margin: 0 32px 0 0; }
+.lib-page .fig-pop-x { position: absolute; top: 6px; inset-inline-end: 8px; min-width: 32px; min-height: 32px; font-size: 22px; line-height: 1; border: 0; background: none; color: inherit; cursor: pointer; }
 .lib-page #document .doc-table { margin: .4rem 0; }
 .lib-page #document .doc-table-scroll { overflow-x: auto; max-width: 100%; }
 .lib-page #document .doc-table table { font-size: .85em; }
@@ -186,7 +204,12 @@ html[data-fa-scheme="light"] .lib-page {
    count broken over two lines is harder to read than one scrolled to. */
 .lib-page #listing td.lib-first { white-space:normal; min-width:13rem; max-width:17rem; }
 .lib-page #listing td.t-title { white-space:normal; min-width:14rem; max-width:22rem; }
-.lib-page #listing td.t-title a.lib-title { display:inline-flex; align-items:center; min-height:24px; }
+/* A long title is capped at three lines (owner, 2026-11-13: "some titles are
+   really long. need cap + hover for complete"). The rest stays in the DOM, so
+   a screen reader reads all of it; the title attribute shows it on hover. */
+.lib-page #listing td.t-title a.lib-title, .lib-page #listing td.t-title .lib-title-locale {
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; line-clamp:3; overflow:hidden; min-height:24px; }
+.lib-page #listing td.t-title .lib-title-locale { font-size:.85em; color:var(--muted); line-height:1.35; }
 .lib-page #listing td.t-source { white-space:normal; min-width:9rem; max-width:14rem; }
 .lib-page #listing td.t-source .slug { overflow-wrap:anywhere; }
 .lib-page #listing td.t-source .pill { white-space:nowrap; }
@@ -245,8 +268,8 @@ html[data-fa-scheme="light"] .lib-page {
 body { max-width: 72rem; margin: 0 auto; padding: 1rem 16px; }
 .doc-actions a { margin-left: .4em; font-size: .8rem; font-weight: normal; }
 </style>
-<link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><script src="../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../assets/css/navbar-row.css"><script src="../../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../.."></head>
-<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-158mycfjxen","here":"/en/folio-assistant-core/library/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<link rel="stylesheet" href="../../../assets/css/navbar.css"><script src="../../../assets/navbar/rail-1han5k2rnfp.js" defer></script><script src="../../../assets/js/navbar.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../assets/page-layout.css" data-fa-page-layout><script src="../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../.."></head>
+<body><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-1han5k2rnfp","here":"/en/folio-assistant-core/library/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <h1>Library</h1>
 <p class="note">Frozen sources. Each opens on its table of contents.</p>
 <ul>

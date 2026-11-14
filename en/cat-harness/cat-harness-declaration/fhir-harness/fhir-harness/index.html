@@ -210,9 +210,21 @@
     &quot;id&quot;: &quot;fhir-harness-processes&quot;,
     &quot;path&quot;: &quot;processes/&quot;,
     &quot;dependents&quot;: &quot;skip&quot;,
-    &quot;description&quot;: &quot;The BPMN this layer OWNS, grouped by concern as the harness groups its own (`processes/&lt;group&gt;/`): in `content/`, the FHIR IG pipeline (`l3-fhir-pipeline.bpmn`), its incremental build (`ig-incremental-build.bpmn`), the IG AST cache and delta review (`ig-ast-cache.bpmn`, `ig-ast-delta-review.bpmn`), the IG release, its owner&#39;s tag and its catch-up (`ig-release.bpmn`) and the Questionnaire wireframe review (`questionnaire-wireframe-review.bpmn`), beside the IG skills they bind.&quot;,
+    &quot;description&quot;: &quot;The BPMN this layer OWNS, grouped by concern as the harness groups its own (`processes/&lt;group&gt;/`): in `content/`, the IG AST cache (`ig-ast-cache.bpmn`), the IG release, its owner&#39;s tag and its catch-up (`ig-release.bpmn`) and the Questionnaire wireframe review (`questionnaire-wireframe-review.bpmn`), beside the IG skills they bind. The FHIR IG pipeline, its incremental build and the IG AST delta review keep the work plan, so they are in the opt-in `collab/` (owner, 2026-11-13).&quot;,
     &quot;graphTypologies&quot;: [
       &quot;processes&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;collab&quot;,
+    &quot;path&quot;: &quot;collab/&quot;,
+    &quot;optIn&quot;: true,
+    &quot;requires&quot;: [
+      &quot;cat-harness.sdlc&quot;
+    ],
+    &quot;description&quot;: &quot;The collaborative-development sub-graph — a NAMED SUB-GRAPH of this layer, OPT-IN: off in every layer, this one included, unless that layer lists `fhir-harness.collab` in its own `enableSubgraphs` (owner, 2026-11-13, check:optin-refs follow-up). It holds the FHIR IG processes that keep the work plan — the L3 pipeline (`l3-fhir-pipeline.bpmn`), the incremental build (`ig-incremental-build.bpmn`) and the IG AST delta review (`ig-ast-delta-review.bpmn`), each of which names `todo-manager`. It `requires` `cat-harness.sdlc`, which requires `cat-harness.work-plan`, so switching it on switches both on. The graph inside it is declared FROM WITHIN, in `collab/graph.json`.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;cat-harness&quot;
     ]
   },
   {
@@ -307,6 +319,9 @@
 <dt>_needs_comment</dt><dd>It sits directly on core. NOT on cat-harness: the harness layer is inherited through core rather than declared twice, in the same shape folio-assistant-core uses. Owner&#39;s ordering, 2026-09-20: bootstrap, cat-harness, f-a-core, then the layers above.</dd>
 <dt>needs</dt><dd><pre>[
   &quot;folio-assistant-core&quot;
+]</pre></dd>
+<dt>enableSubgraphs</dt><dd><pre>[
+  &quot;fhir-harness.collab&quot;
 ]</pre></dd>
 <dt>liquid</dt><dd><pre>{
   &quot;prefix&quot;: &quot;site.data&quot;,

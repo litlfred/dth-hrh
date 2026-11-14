@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m1-facility-type",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m1-facility-type",
+  "kind": "data-element",
+  "title": "Facility type",
+  "text": "de-nhwa-m1-facility-type.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-028-1-06-health-worker-distribution-by-facility-type"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m1",
+    "supportsIndicators": [
+      "1-06"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/facility-type",
+        "name": "Facility type"
+      }
+    ]
+  },
+  "provenance": "authored"
+}

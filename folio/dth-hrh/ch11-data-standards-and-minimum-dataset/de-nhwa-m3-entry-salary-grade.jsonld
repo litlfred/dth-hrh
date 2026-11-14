@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-hrh/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-hrh/blocks/de-nhwa-m3-entry-salary-grade",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:nhwa-m3-entry-salary-grade",
+  "kind": "data-element",
+  "title": "Salary grade at entry",
+  "text": "de-nhwa-m3-entry-salary-grade.md",
+  "meta": {
+    "source": {
+      "library": "who-iris:9789240081291-eng",
+      "sections": [
+        "sec-045-3-02-entry-level-wages-and-salaries"
+      ],
+      "method": "nhwa-indicator-disaggregation"
+    },
+    "definitionStatus": "working",
+    "glossarySource": "twg-glossary-2026-09-29",
+    "elementSet": "nhwa-m3",
+    "supportsIndicators": [
+      "3-02"
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns/glossary/dth-hrh-data-elements/salary-grade-at-entry",
+        "name": "Salary grade at entry"
+      }
+    ]
+  },
+  "provenance": "authored"
+}

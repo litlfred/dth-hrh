@@ -1,0 +1,10 @@
+{
+  "$schema": "folio-glossary-tables/v1",
+  "tables": [
+    {
+      "glossary": "glossary/dth-hrh-data-elements.glossary.json",
+      "block": "folio/dth-hrh/glossary/t-data-element-terms.md",
+      "kind": "terms"
+    }
+  ]
+}

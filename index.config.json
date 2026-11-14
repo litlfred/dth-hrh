@@ -41,6 +41,13 @@
               "on": "2026-11-14",
               "ref": "c5180ee461634872af178b79d7da007025ffaa64",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -87,6 +94,13 @@
               "on": "2026-11-14",
               "ref": "cc33d42e2e25c36ed6eb168183b7804bc126ee18",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -109,6 +123,13 @@
               "on": "2026-11-14",
               "ref": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -137,6 +158,13 @@
               "on": "2026-11-14",
               "ref": "9d2388dba8d4fe4727b40067470fa5c543c7166c",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -165,6 +193,13 @@
               "on": "2026-11-14",
               "ref": "855c93fa1ef9690508c398c738706817070b9a91",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -190,6 +225,13 @@
               "on": "2026-11-14",
               "ref": "1d779e9104cd32e101989409b427c567134c64a2",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -212,6 +254,13 @@
               "on": "2026-11-14",
               "ref": "aa7e13e0f3fd3f8fb69452427068b8b01a6f59c1",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -237,6 +286,13 @@
               "on": "2026-11-14",
               "ref": "e379e4757988c7ef7afe840fe34fe65a8badf063",
               "evidence": "owner litlfred, 2026-11-14 ~05:50Z ('A. Renew 6h + re-pin') and ~07:05Z ('repin+merge all green and ready for next 16 hrs'), in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -286,6 +342,13 @@
               "on": "2026-11-13",
               "ref": "b40c425af54b66552c393812806b7c94c1c0380a",
               "evidence": "owner litlfred, 2026-11-13: \"2. Repin dth-hrh again\" (~17:15Z, session_01VQDpPfQjS6Ah9hRnot9HUp); card in merge manager session_01VQDpPffYARDQ8juksAZScf ~21:40Z \"A. I re-pin by hand now\""
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }

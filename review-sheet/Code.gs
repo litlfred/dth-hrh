@@ -28,7 +28,7 @@
  * so a pasted copy can be checked (skill review-sheet-script, "Trusting the
  * script").
  */
-// folio-assistant-core tools/review-sheet-sync at 91b24a9b4ddd3dbf791643eaf7478265cc37949d.
+// folio-assistant-core tools/review-sheet-sync at bc046c75a1218b345b465171333a09fb694450af.
 
 /**
  * Run this one, once, from the editor (or Folio Assistant, then Install automatic
@@ -75,7 +75,7 @@ const CONFIG_TAB = 'Config';
 // Which build this is, and where the latest is published (owner, 2026-10-31:
 // "sheets likely to drift anyways ... they need to know where to see latest
 // published"). The build stamps SCRIPT_VERSION; the script never fetches.
-const SCRIPT_VERSION = '91b24a9b4ddd3dbf791643eaf7478265cc37949d';
+const SCRIPT_VERSION = 'bc046c75a1218b345b465171333a09fb694450af';
 const LIBRARY_URL = 'https://script.google.com/home/projects/1us7_ApIq_XvDG-V1XtqdcyHucF0hSlST0qracv1Tw9KTb4-lAFvK1bMQ/edit';
 const COPY_PAGE_URL = 'https://claude.ai/artifact/MXNQcLMzLYqq5us5x6phGd';
 // The menu's name and the page it points to for more (owner, 2026-11-01:

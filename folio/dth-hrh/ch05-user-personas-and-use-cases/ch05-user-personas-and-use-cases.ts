@@ -20,7 +20,7 @@ export default chapter({
     section({
       title: "5.2 Priority use cases",
       label: "sec:5-2",
-      blocks: ["p-ch05-priority-use-cases", "scen-register-and-license-new-graduate", "scen-renew-licence", "scen-update-employment", "scen-verify-status", "scen-workforce-counts-and-nhwa-reporting"],
+      blocks: ["p-ch05-priority-use-cases", "scen-register-and-license-new-graduate", "bp-hrh-bp-02-register-and-license-graduate", "scen-renew-licence", "scen-verify-status", "bp-hrh-bp-03-renew-licence-and-verify-status", "scen-update-employment", "bp-hrh-bp-04-update-employment-and-deployment", "scen-workforce-counts-and-nhwa-reporting", "bp-hrh-bp-05-workforce-analytics-and-nhwa-reporting"],
     }),
     section({
       title: "5.3 User stories",

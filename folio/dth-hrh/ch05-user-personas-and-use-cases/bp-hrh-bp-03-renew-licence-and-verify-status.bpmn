@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_HRH_BP_03"
+                  targetNamespace="https://litlfred.github.io/dth-hrh/bpmn">
+
+  <bpmn:resource id="pers:health-worker" name="Health worker"/>
+  <bpmn:resource id="pers:registration-officer" name="Registration officer (regulatory body)"/>
+  <bpmn:resource id="pers:member-of-public" name="Member of the public"/>
+  <bpmn:resource id="pers:system-emr" name="Electronic medical record"/>
+
+  <bpmn:collaboration id="Collab_HRH_BP_03">
+    <bpmn:participant id="Pool_HRH_BP_03" name="HRH-BP-03 Renew a licence and verify registration status" processRef="HRH_BP_03"/>
+  </bpmn:collaboration>
+
+  <bpmn:process id="HRH_BP_03" name="Renew a licence and verify registration status (HRH-BP-03)" isExecutable="false">
+    <bpmn:documentation>Renews a health worker's licence to practise based on continuing professional development and good-standing rules, and serves tiered status verification responses to members of the public and point-of-care clinical systems.</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_HRH_BP_03">
+      <bpmn:lane id="Lane_BP03_HealthWorker" name="Health worker" partitionElementRef="pers:health-worker">
+        <bpmn:flowNodeRef>Start_BP03</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP03_01</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP03_RegistrationOfficer" name="Registration officer (regulatory body)" partitionElementRef="pers:registration-officer">
+        <bpmn:flowNodeRef>Task_BP03_02</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_BP03_Renewed</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP03_03</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP03_04</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP03_07</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_BP03</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP03_Public" name="Member of the public" partitionElementRef="pers:member-of-public">
+        <bpmn:flowNodeRef>Task_BP03_05</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP03_EMR" name="Electronic medical record" partitionElementRef="pers:system-emr">
+        <bpmn:flowNodeRef>Task_BP03_06</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_BP03" name="Renewal due or verification requested">
+      <bpmn:outgoing>Flow_BP03_01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_BP03_01" name="Submit licence renewal and CPD evidence">
+      <bpmn:incoming>Flow_BP03_01</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_02</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Task_BP03_02" name="Evaluate lifecycle status transition rules">
+      <bpmn:incoming>Flow_BP03_02</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_03</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gw_BP03_Renewed" name="Status?">
+      <bpmn:incoming>Flow_BP03_03</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_04</bpmn:outgoing>
+      <bpmn:outgoing>Flow_BP03_05</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_BP03_03" name="Update licence validity and refresh credential">
+      <bpmn:incoming>Flow_BP03_04</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_06</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_BP03_04" name="Record lapsed or suspended status and notify">
+      <bpmn:incoming>Flow_BP03_05</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_07</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_BP03_05" name="Look up public register status">
+      <bpmn:incoming>Flow_BP03_06</bpmn:incoming>
+      <bpmn:incoming>Flow_BP03_07</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_08</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Task_BP03_06" name="Query practitioner authorization at point of care">
+      <bpmn:incoming>Flow_BP03_08</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_09</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_BP03_07" name="Return tiered verification response">
+      <bpmn:incoming>Flow_BP03_09</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP03_10</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="End_BP03" name="Status updated and verified">
+      <bpmn:incoming>Flow_BP03_10</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_BP03_01" sourceRef="Start_BP03" targetRef="Task_BP03_01"/>
+    <bpmn:sequenceFlow id="Flow_BP03_02" sourceRef="Task_BP03_01" targetRef="Task_BP03_02"/>
+    <bpmn:sequenceFlow id="Flow_BP03_03" sourceRef="Task_BP03_02" targetRef="Gw_BP03_Renewed"/>
+    <bpmn:sequenceFlow id="Flow_BP03_04" sourceRef="Gw_BP03_Renewed" targetRef="Task_BP03_03" name="Active"/>
+    <bpmn:sequenceFlow id="Flow_BP03_05" sourceRef="Gw_BP03_Renewed" targetRef="Task_BP03_04" name="Lapsed / suspended"/>
+    <bpmn:sequenceFlow id="Flow_BP03_06" sourceRef="Task_BP03_03" targetRef="Task_BP03_05"/>
+    <bpmn:sequenceFlow id="Flow_BP03_07" sourceRef="Task_BP03_04" targetRef="Task_BP03_05"/>
+    <bpmn:sequenceFlow id="Flow_BP03_08" sourceRef="Task_BP03_05" targetRef="Task_BP03_06"/>
+    <bpmn:sequenceFlow id="Flow_BP03_09" sourceRef="Task_BP03_06" targetRef="Task_BP03_07"/>
+    <bpmn:sequenceFlow id="Flow_BP03_10" sourceRef="Task_BP03_07" targetRef="End_BP03"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_HRH_BP_03">
+    <bpmndi:BPMNPlane id="BPMNPlane_HRH_BP_03" bpmnElement="Collab_HRH_BP_03">
+      <bpmndi:BPMNShape id="Pool_HRH_BP_03_di" bpmnElement="Pool_HRH_BP_03" isHorizontal="true">
+        <dc:Bounds x="120" y="80" width="1320" height="670" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP03_HealthWorker_di" bpmnElement="Lane_BP03_HealthWorker" isHorizontal="true">
+        <dc:Bounds x="150" y="80" width="1290" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP03_RegistrationOfficer_di" bpmnElement="Lane_BP03_RegistrationOfficer" isHorizontal="true">
+        <dc:Bounds x="150" y="230" width="1290" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP03_Public_di" bpmnElement="Lane_BP03_Public" isHorizontal="true">
+        <dc:Bounds x="150" y="450" width="1290" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP03_EMR_di" bpmnElement="Lane_BP03_EMR" isHorizontal="true">
+        <dc:Bounds x="150" y="590" width="1290" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_BP03_di" bpmnElement="Start_BP03">
+        <dc:Bounds x="212" y="108" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="186" y="148" width="88" height="72" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_01_di" bpmnElement="Task_BP03_01">
+        <dc:Bounds x="290" y="104" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_02_di" bpmnElement="Task_BP03_02">
+        <dc:Bounds x="290" y="306" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_BP03_Renewed_di" bpmnElement="Gw_BP03_Renewed" isMarkerVisible="true">
+        <dc:Bounds x="510" y="315" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="465" y="285" width="55" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_03_di" bpmnElement="Task_BP03_03">
+        <dc:Bounds x="680" y="246" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_04_di" bpmnElement="Task_BP03_04">
+        <dc:Bounds x="680" y="356" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_05_di" bpmnElement="Task_BP03_05">
+        <dc:Bounds x="900" y="486" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_06_di" bpmnElement="Task_BP03_06">
+        <dc:Bounds x="900" y="636" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP03_07_di" bpmnElement="Task_BP03_07">
+        <dc:Bounds x="1120" y="306" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_BP03_di" bpmnElement="End_BP03">
+        <dc:Bounds x="1340" y="322" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1316" y="362" width="84" height="54" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_BP03_01_di" bpmnElement="Flow_BP03_01">
+        <di:waypoint x="248" y="126" />
+        <di:waypoint x="290" y="126" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_02_di" bpmnElement="Flow_BP03_02">
+        <di:waypoint x="375" y="172" />
+        <di:waypoint x="375" y="306" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_03_di" bpmnElement="Flow_BP03_03">
+        <di:waypoint x="460" y="340" />
+        <di:waypoint x="510" y="340" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_04_di" bpmnElement="Flow_BP03_04">
+        <di:waypoint x="535" y="315" />
+        <di:waypoint x="535" y="280" />
+        <di:waypoint x="680" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="580" y="256" width="50" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_05_di" bpmnElement="Flow_BP03_05">
+        <di:waypoint x="535" y="365" />
+        <di:waypoint x="535" y="390" />
+        <di:waypoint x="680" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="560" y="396" width="110" height="36" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_06_di" bpmnElement="Flow_BP03_06">
+        <di:waypoint x="850" y="280" />
+        <di:waypoint x="875" y="280" />
+        <di:waypoint x="875" y="520" />
+        <di:waypoint x="900" y="520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_07_di" bpmnElement="Flow_BP03_07">
+        <di:waypoint x="850" y="390" />
+        <di:waypoint x="875" y="390" />
+        <di:waypoint x="875" y="520" />
+        <di:waypoint x="900" y="520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_08_di" bpmnElement="Flow_BP03_08">
+        <di:waypoint x="985" y="554" />
+        <di:waypoint x="985" y="636" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_09_di" bpmnElement="Flow_BP03_09">
+        <di:waypoint x="1070" y="670" />
+        <di:waypoint x="1095" y="670" />
+        <di:waypoint x="1095" y="340" />
+        <di:waypoint x="1120" y="340" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP03_10_di" bpmnElement="Flow_BP03_10">
+        <di:waypoint x="1290" y="340" />
+        <di:waypoint x="1340" y="340" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_HRH_BP_04"
+                  targetNamespace="https://litlfred.github.io/dth-hrh/bpmn">
+
+  <bpmn:resource id="pers:health-worker" name="Health worker"/>
+  <bpmn:resource id="pers:employer-hr-manager" name="Employer or facility human resources manager"/>
+  <bpmn:resource id="pers:system-facility-registry" name="Facility registry"/>
+  <bpmn:resource id="pers:system-hris" name="Human resources information system (HRIS)"/>
+  <bpmn:resource id="pers:emergency-coordinator" name="Emergency coordinator"/>
+
+  <bpmn:collaboration id="Collab_HRH_BP_04">
+    <bpmn:participant id="Pool_HRH_BP_04" name="HRH-BP-04 Update employment, place of practice and surge deployment" processRef="HRH_BP_04"/>
+  </bpmn:collaboration>
+
+  <bpmn:process id="HRH_BP_04" name="Update employment, place of practice and surge deployment (HRH-BP-04)" isExecutable="false">
+    <bpmn:documentation>Updates a health worker's employer, position, facility affiliation and emergency surge deployment in the registry while validating facility identifiers against the authoritative facility registry and synchronizing with the HRIS.</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_HRH_BP_04">
+      <bpmn:lane id="Lane_BP04_HealthWorker" name="Health worker" partitionElementRef="pers:health-worker">
+        <bpmn:flowNodeRef>Task_BP04_01</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP04_EmployerHR" name="Employer or facility HR manager" partitionElementRef="pers:employer-hr-manager">
+        <bpmn:flowNodeRef>Start_BP04</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BP04_02</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_BP04_Surge</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP04_FacilityRegistry" name="Facility registry" partitionElementRef="pers:system-facility-registry">
+        <bpmn:flowNodeRef>Task_BP04_03</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP04_HRIS" name="Human resources information system (HRIS)" partitionElementRef="pers:system-hris">
+        <bpmn:flowNodeRef>Task_BP04_04</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_BP04</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_BP04_EmergencyCoord" name="Emergency coordinator" partitionElementRef="pers:emergency-coordinator">
+        <bpmn:flowNodeRef>Task_BP04_05</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_BP04" name="Posting change or surge need">
+      <bpmn:outgoing>Flow_BP04_01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_BP04_01" name="Report change of employer or place of practice">
+      <bpmn:incoming>Flow_BP04_01</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_02</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_BP04_02" name="Verify active licence and submit appointment/transfer">
+      <bpmn:incoming>Flow_BP04_02</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_03</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Task_BP04_03" name="Resolve and validate authoritative facility ID">
+      <bpmn:incoming>Flow_BP04_03</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_04</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_BP04_04" name="Synchronize employment and facility affiliation">
+      <bpmn:incoming>Flow_BP04_04</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_05</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gw_BP04_Surge" name="Surge deployment?">
+      <bpmn:incoming>Flow_BP04_05</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_06</bpmn:outgoing>
+      <bpmn:outgoing>Flow_BP04_07</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_BP04_05" name="Verify credentials and record temporary emergency deployment">
+      <bpmn:incoming>Flow_BP04_06</bpmn:incoming>
+      <bpmn:outgoing>Flow_BP04_08</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="End_BP04" name="Affiliation and deployment current">
+      <bpmn:incoming>Flow_BP04_07</bpmn:incoming>
+      <bpmn:incoming>Flow_BP04_08</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_BP04_01" sourceRef="Start_BP04" targetRef="Task_BP04_01"/>
+    <bpmn:sequenceFlow id="Flow_BP04_02" sourceRef="Task_BP04_01" targetRef="Task_BP04_02"/>
+    <bpmn:sequenceFlow id="Flow_BP04_03" sourceRef="Task_BP04_02" targetRef="Task_BP04_03"/>
+    <bpmn:sequenceFlow id="Flow_BP04_04" sourceRef="Task_BP04_03" targetRef="Task_BP04_04"/>
+    <bpmn:sequenceFlow id="Flow_BP04_05" sourceRef="Task_BP04_04" targetRef="Gw_BP04_Surge"/>
+    <bpmn:sequenceFlow id="Flow_BP04_06" sourceRef="Gw_BP04_Surge" targetRef="Task_BP04_05" name="Emergency surge"/>
+    <bpmn:sequenceFlow id="Flow_BP04_07" sourceRef="Gw_BP04_Surge" targetRef="End_BP04" name="Routine posting"/>
+    <bpmn:sequenceFlow id="Flow_BP04_08" sourceRef="Task_BP04_05" targetRef="End_BP04"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_HRH_BP_04">
+    <bpmndi:BPMNPlane id="BPMNPlane_HRH_BP_04" bpmnElement="Collab_HRH_BP_04">
+      <bpmndi:BPMNShape id="Pool_HRH_BP_04_di" bpmnElement="Pool_HRH_BP_04" isHorizontal="true">
+        <dc:Bounds x="120" y="80" width="1140" height="812" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP04_HealthWorker_di" bpmnElement="Lane_BP04_HealthWorker" isHorizontal="true">
+        <dc:Bounds x="150" y="80" width="1110" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP04_EmployerHR_di" bpmnElement="Lane_BP04_EmployerHR" isHorizontal="true">
+        <dc:Bounds x="150" y="220" width="1110" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP04_FacilityRegistry_di" bpmnElement="Lane_BP04_FacilityRegistry" isHorizontal="true">
+        <dc:Bounds x="150" y="370" width="1110" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP04_HRIS_di" bpmnElement="Lane_BP04_HRIS" isHorizontal="true">
+        <dc:Bounds x="150" y="510" width="1110" height="242" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_BP04_EmergencyCoord_di" bpmnElement="Lane_BP04_EmergencyCoord" isHorizontal="true">
+        <dc:Bounds x="150" y="752" width="1110" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_BP04_di" bpmnElement="Start_BP04">
+        <dc:Bounds x="208" y="267" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="188" y="307" width="76" height="54" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP04_01_di" bpmnElement="Task_BP04_01">
+        <dc:Bounds x="290" y="116" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP04_02_di" bpmnElement="Task_BP04_02">
+        <dc:Bounds x="290" y="261" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP04_03_di" bpmnElement="Task_BP04_03">
+        <dc:Bounds x="520" y="406" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP04_04_di" bpmnElement="Task_BP04_04">
+        <dc:Bounds x="520" y="597" width="170" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_BP04_Surge_di" bpmnElement="Gw_BP04_Surge" isMarkerVisible="true">
+        <dc:Bounds x="750" y="270" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="732" y="230" width="86" height="36" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BP04_05_di" bpmnElement="Task_BP04_05">
+        <dc:Bounds x="910" y="776.5" width="170" height="91" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_BP04_di" bpmnElement="End_BP04">
+        <dc:Bounds x="1150" y="613" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1129" y="653" width="78" height="72" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_BP04_01_di" bpmnElement="Flow_BP04_01">
+        <di:waypoint x="226" y="267" />
+        <di:waypoint x="226" y="150" />
+        <di:waypoint x="290" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_02_di" bpmnElement="Flow_BP04_02">
+        <di:waypoint x="375" y="184" />
+        <di:waypoint x="375" y="261" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_03_di" bpmnElement="Flow_BP04_03">
+        <di:waypoint x="460" y="295" />
+        <di:waypoint x="490" y="295" />
+        <di:waypoint x="490" y="440" />
+        <di:waypoint x="520" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_04_di" bpmnElement="Flow_BP04_04">
+        <di:waypoint x="605" y="474" />
+        <di:waypoint x="605" y="597" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_05_di" bpmnElement="Flow_BP04_05">
+        <di:waypoint x="690" y="631" />
+        <di:waypoint x="720" y="631" />
+        <di:waypoint x="720" y="295" />
+        <di:waypoint x="750" y="295" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_06_di" bpmnElement="Flow_BP04_06">
+        <di:waypoint x="775" y="320" />
+        <di:waypoint x="775" y="822" />
+        <di:waypoint x="910" y="822" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="790" y="775" width="80" height="36" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_07_di" bpmnElement="Flow_BP04_07">
+        <di:waypoint x="800" y="295" />
+        <di:waypoint x="1168" y="295" />
+        <di:waypoint x="1168" y="613" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="940" y="253" width="70" height="36" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_BP04_08_di" bpmnElement="Flow_BP04_08">
+        <di:waypoint x="1080" y="822" />
+        <di:waypoint x="1115" y="822" />
+        <di:waypoint x="1115" y="631" />
+        <di:waypoint x="1150" y="631" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

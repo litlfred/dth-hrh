@@ -148,6 +148,14 @@
           }
         ]
       }
+    },
+    {
+      "id": "references",
+      "path": "references/",
+      "description": "dth-hrh's bibliography: one folio-reference/v1 CSL-JSON node per entry of the document's References chapter (`folio/dth-hrh/references/p-references.md`), `<key>.json`, in the KG at `references/<key>` (owner, 2026-11-02: \"each document should have a bibliography pages which includes refrenced content in the document\"). Committee content, wording kept: each node's fields are taken word for word from its entry, and `_comment` holds the entry as printed. The References chapter's block names every node in `cites`, in chapter order, so the chapter and the KG Bibliography (`en/folio-assistant-core/bibliography/`) list the same works. A key shared with the who-iris catalogue, a library asset or another folio's bibliography names the same work there.",
+      "graphTypologies": [
+        "references"
+      ]
     }
   ],
   "description": "WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.",
@@ -163,6 +171,17 @@
       "covers": [
         "archimate"
       ]
+      }
+    ],
+  "remoteGraphs": [
+    {
+      "id": "hrhis-registry-2015-glossary",
+      "url": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "title": "HRHIS registry glossary (WHO, 2015; who-iris)",
+      "description": "External reference only, not definitional (owner, 2026-11-02). The handbook's terms are its own working definitions; this ingested who-iris SKOS glossary is linked from the glossary as an external source."
     }
   ]
 }

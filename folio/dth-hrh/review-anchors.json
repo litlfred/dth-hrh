@@ -1400,6 +1400,19 @@
    "method": "folio-snapshot"
   },
   {
+   "label": "fig:smart-guidelines-approach",
+   "kind": "figure",
+   "chapter": "ch03-digital-transformation-approach",
+   "root": "f-smart-guidelines-approach",
+   "sections": [
+    "sec:3-1"
+   ],
+   "caption": "WHO SMART Guidelines approach: L1–L5 knowledge layers and country adaptations (from the product catalogue handbook, Fig. 5, adapted from WHO SMART Guidelines)",
+   "hash": "bf5690b96bc9",
+   "excerpt": "Source: WHO Digital transformation handbook for health product catalogue, 2025, Fig. 5 (p. 14), adapted from WHO SMART Guidelines (Mehl et al., 2021). Generated",
+   "method": "folio-snapshot"
+  },
+  {
    "label": "tbl:ch03-diig-mapping",
    "kind": "table",
    "chapter": "ch03-digital-transformation-approach",
@@ -2068,7 +2081,7 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "e5e785b9d94d",
+   "hash": "f1d7a5c74e8b",
    "excerpt": "FR-ID-01. Assign a unique, persistent health worker identifier, linked to the national identity number where available and lawful. Priority: to be set (must / s",
    "method": "folio-snapshot"
   },
@@ -2080,7 +2093,7 @@
    "sections": [
     "sec:7-1"
    ],
-   "hash": "607f781d5cb6",
+   "hash": "746d97ea007f",
    "excerpt": "FR-ID-02. Search, match and merge duplicate records across source systems. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: ",
    "method": "folio-snapshot"
   },
@@ -2116,7 +2129,7 @@
    "sections": [
     "sec:7-2"
    ],
-   "hash": "208f1834303c",
+   "hash": "ffffaebbc018",
    "excerpt": "FR-REC-01. Create, view, update and archive the health worker record in line with the minimum data set. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
@@ -2164,7 +2177,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "344abb87e521",
+   "hash": "ec4e8dcc67a8",
    "excerpt": "FR-LC-01. Manage status changes: registered, licensed, suspended, lapsed, retired, deceased, emigrated. Priority: to be set (must / should / could). Linked use ",
    "method": "folio-snapshot"
   },
@@ -2176,7 +2189,7 @@
    "sections": [
     "sec:7-3"
    ],
-   "hash": "aecfb1099b91",
+   "hash": "1f716b71533f",
    "excerpt": "FR-LC-02. Support renewals, recording of continuing professional development, and reminders. Priority: to be set (must / should / could). Linked use cases: to b",
    "method": "folio-snapshot"
   },
@@ -2212,7 +2225,7 @@
    "sections": [
     "sec:7-4"
    ],
-   "hash": "2a2599b22e79",
+   "hash": "d88720b8f0dd",
    "excerpt": "FR-VER-01. Confirm registration and licence status in real time for employers, the public and other systems. Priority: to be set (must / should / could). Linked",
    "method": "folio-snapshot"
   },
@@ -2286,7 +2299,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "243180b49307",
+   "hash": "f6c3f8f2ec24",
    "excerpt": "FR-AN-01. Standard reports and dashboards on stock, distribution, age, sex, occupation and status. Priority: to be set (must / should / could). Linked use cases",
    "method": "folio-snapshot"
   },
@@ -2298,7 +2311,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "01cbf6a9dc7f",
+   "hash": "24f49d6ce278",
    "excerpt": "FR-AN-02. Data extracts for NHWA and national planning. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG outline (L1",
    "method": "folio-snapshot"
   },
@@ -2310,7 +2323,7 @@
    "sections": [
     "sec:7-5"
    ],
-   "hash": "0d25fbfcd192",
+   "hash": "e5ac2f1c44cc",
    "excerpt": "FR-AN-03. Data quality reports for registry managers. Priority: to be set (must / should / could). Linked use cases: to be traced. Source: the TWG outline (L1, ",
    "method": "folio-snapshot"
   },
@@ -5200,8 +5213,8 @@
    "sections": [
     "sec:references-lead"
    ],
-   "hash": "3af373a4501e",
-   "excerpt": "- WHO. Global strategy on human resources for health: Workforce 2030. 2016. - WHO. National health workforce accounts: a handbook, second edition. 2023. - WHO. ",
+   "hash": "4b85faaad1af",
+   "excerpt": "- WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. - WHO. Global strategy on human resources for health",
    "method": "folio-snapshot"
   }
  ]

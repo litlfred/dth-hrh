@@ -29,7 +29,7 @@
  ],
  [
   "CFG",
-  "|{\n  \"SOURCE\": \"review/drafting/sheet-sync.json\",\n  \"SHEET\": \"136BxUK15IUKEm2u-H6rpUkFac6754aRWTeJFe_UKbdU\",\n  \"SITE_URL\": \"https://litlfred.github.io/dth-hrh/\",\n  \"REPO_URL\": \"https://github.com/litlfred/dth-hrh\",\n  \"LATEST_BUILD\": \"template sha256 c8096bfe73c0560d\",\n  \"MODE\": \"drafting\",\n  \"FEEDBACK\": \"Contributor Feedback\",\n  \"AGENT\": \"Agent\",\n  \"TOC\": \"TOC\",\n  \"SECTION_URL\": \"https://litlfred.github.io/dth-hrh/en/dth-hrh/#\"\n}"
+  "|{\n  \"SOURCE\": \"review/drafting/sheet-sync.json\",\n  \"SHEET\": \"136BxUK15IUKEm2u-H6rpUkFac6754aRWTeJFe_UKbdU\",\n  \"SITE_URL\": \"https://litlfred.github.io/dth-hrh/\",\n  \"REPO_URL\": \"https://github.com/litlfred/dth-hrh\",\n  \"LATEST_BUILD\": \"template sha256 a6f49f795b895460\",\n  \"MODE\": \"drafting\",\n  \"FEEDBACK\": \"Contributor Feedback\",\n  \"AGENT\": \"Agent\",\n  \"TOC\": \"TOC\",\n  \"SECTION_URL\": \"https://litlfred.github.io/dth-hrh/en/dth-hrh/#\"\n}"
  ],
  [
   "COLS",

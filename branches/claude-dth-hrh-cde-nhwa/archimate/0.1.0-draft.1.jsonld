@@ -4,7 +4,7 @@
     "schema": "https://schema.org/",
     "dcterms": "http://purl.org/dc/terms/"
   },
-  "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1.jsonld",
+  "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1",
   "@type": "archimate:Model",
   "schema:identifier": "0.1.0-draft.1",
   "schema:name": "DTH-HRH overlay 0.1.0-draft.1",
@@ -13,12 +13,12 @@
   "schema:contentUrl": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/dth-hrh-overlay.archimate",
   "schema:hasPart": [
     {
-      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-hwr-nhwa.jsonld",
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/view/id-dthhrh-view-hwr-nhwa",
       "@type": "archimate:Diagram",
       "schema:name": "Health workforce registry and NHWA (dth-hrh)"
     },
     {
-      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/views/id-dthhrh-view-nhwa-poster.jsonld",
+      "@id": "https://litlfred.github.io/dth-hrh/archimate/0.1.0-draft.1/view/id-dthhrh-view-nhwa-poster",
       "@type": "archimate:Diagram",
       "schema:name": "NHWA on the health workforce registry (poster, dth-hrh)"
     }

@@ -1,0 +1,162 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 1109,
+ "unresolved": [],
+ "selfAddress": [
+  {
+   "page": "en/cat-harness/attestations/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/attestations/"
+  },
+  {
+   "page": "en/cat-harness/beans/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/beans/"
+  },
+  {
+   "page": "en/cat-harness/block-kinds/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/block-kinds/"
+  },
+  {
+   "page": "en/cat-harness/code-lists/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/code-lists/"
+  },
+  {
+   "page": "en/cat-harness/code/dth-hrh/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/code/dth-hrh/"
+  },
+  {
+   "page": "en/cat-harness/code/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/code/"
+  },
+  {
+   "page": "en/cat-harness/content-adapters/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/content-adapters/"
+  },
+  {
+   "page": "en/cat-harness/folio/dpi-h-ra/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/folio/dpi-h-ra/"
+  },
+  {
+   "page": "en/cat-harness/folio/dth-hrh/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/folio/dth-hrh/"
+  },
+  {
+   "page": "en/cat-harness/folio/folio-assistant-core/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/folio/folio-assistant-core/"
+  },
+  {
+   "page": "en/cat-harness/folio/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/folio/"
+  },
+  {
+   "page": "en/cat-harness/folio/who-iris/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/folio/who-iris/"
+  },
+  {
+   "page": "en/cat-harness/graph-typologies/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/graph-typologies/"
+  },
+  {
+   "page": "en/cat-harness/health/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/health/"
+  },
+  {
+   "page": "en/cat-harness/issue-marks/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/issue-marks/"
+  },
+  {
+   "page": "en/cat-harness/library/dth-hrh/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/library/dth-hrh/"
+  },
+  {
+   "page": "en/cat-harness/library/dth-hrh/twg-glossary-2026-09-29/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/library/dth-hrh/twg-glossary-2026-09-29/"
+  },
+  {
+   "page": "en/cat-harness/library/dth-hrh/twg-outline-2026-10-02/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/library/dth-hrh/twg-outline-2026-10-02/"
+  },
+  {
+   "page": "en/cat-harness/library/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/library/"
+  },
+  {
+   "page": "en/cat-harness/memory/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/memory/"
+  },
+  {
+   "page": "en/cat-harness/merge-reviews/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/merge-reviews/"
+  },
+  {
+   "page": "en/cat-harness/pipeline-plugins/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/pipeline-plugins/"
+  },
+  {
+   "page": "en/cat-harness/policies/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/policies/"
+  },
+  {
+   "page": "en/cat-harness/qa-checkers/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/qa-checkers/"
+  },
+  {
+   "page": "en/cat-harness/qa/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/qa/"
+  },
+  {
+   "page": "en/cat-harness/scenarios/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/scenarios/"
+  },
+  {
+   "page": "en/cat-harness/substrate-snapshots/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/substrate-snapshots/"
+  },
+  {
+   "page": "en/cat-harness/swimlane-glossary/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/swimlane-glossary/"
+  },
+  {
+   "page": "en/cat-harness/test-plans/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/test-plans/"
+  },
+  {
+   "page": "en/cat-harness/todos/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/todos/"
+  },
+  {
+   "page": "en/cat-harness/tool-releases/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/tool-releases/"
+  },
+  {
+   "page": "en/cat-harness/uploads-queue/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/uploads-queue/"
+  },
+  {
+   "page": "en/cat-harness/validators/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/validators/"
+  },
+  {
+   "page": "en/cat-harness/vocab-mappings/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/cat-harness/vocab-mappings/"
+  },
+  {
+   "page": "en/dth-hrh/assets/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/dth-hrh/assets/"
+  },
+  {
+   "page": "en/dth-hrh/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/dth-hrh/"
+  },
+  {
+   "page": "en/folio-assistant-core/glossary/instance/dth-hrh/index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/en/folio-assistant-core/glossary/instance/dth-hrh/"
+  },
+  {
+   "page": "index.html",
+   "href": "https://litlfred.github.io/dth-hrh/branches/claude-dth-hrh-cde-nhwa/"
+  }
+ ],
+ "content": [],
+ "diagrams": 14,
+ "inDiagrams": []
+}

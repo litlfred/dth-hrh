@@ -76,127 +76,20 @@ html.fa-bp .fa-block-panel .block-actions > a { display:block; margin:.5rem 0; p
 html.fa-bp .fa-block-panel .block-actions > .ba-existing { display:block; }
 .fa-block-panel .block-actions > .ba-ic { display:none; }
 #comments .block-actions { float:none; display:block; margin:.2rem 0 0; opacity:.8; } #comments .block-actions a { margin:0 .5rem 0 0; }</style>
-<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-158mycfjxen.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><script src="../../../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../../../assets/css/navbar-row.css"><script src="../../../../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../../.."></head>
-<body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
-function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
-function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
-function chip(text){return el('span',{style:"font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:3px"},text);}
-function sep(){return document.createTextNode(' \u00b7 ');}
-function root(){var m=location.pathname.match(/^(.*\/(?:branches|STAGING)\/[^/]+\/)/);return m?m[1]:null;}
-// Release or preview (owner, 2026-11-05): a full build is a release and is
-// drawn purple, a preview green. Set here from staging.json, not in the
-// fragment, so the fragment stays byte-identical on every build.
-function kind(f){if(f.buildType!=='full')return;var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;b.style.background="#6B3FA0";b.setAttribute('data-fa-build-type','full');var t=b.querySelector('b');if(t)t.textContent='RELEASE BUILD';}
-function measure(){var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');}
-function fill(d,f,r){
-  kind(f);
-  while(d.firstChild)d.removeChild(d.firstChild);
-  d.appendChild(document.createTextNode('\u2014 '));
-  var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
-  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
-  d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
-  d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
-  d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
-  if(f.issue){d.appendChild(sep());d.appendChild(link(f.issueUrl,'issue #'+f.issue));}
-  d.appendChild(sep());
-  var rel=location.pathname.slice(r.length);
-  if(rel===''||rel.charAt(rel.length-1)==='/')rel+='index.html';
-  if(!f.mainPagesKnown){
-    d.appendChild(link(f.mainSite+'/','compare with '+(f.beforeRef||'main')+' \u2197'));
-  }else if(f.newPages.indexOf(rel)>=0){
-    d.appendChild(link(f.mainSite+'/',(f.beforeRef||'main')+' \u2197'));
-    d.appendChild(document.createTextNode(' '));
-    d.appendChild(el('span',{style:'opacity:.85'},'(new page)'));
-  }else{
-    d.appendChild(link(f.mainSite+'/'+rel,'compare with '+(f.beforeRef||'main')+' \u2197'));
-  }
-  d.appendChild(sep());d.appendChild(link(f.runUrl,'build log'));
-  if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
-  stamp(f);
-  measure();
-  fresh(d,f);
-  review(rv,r,rel);
-}
-// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
-// find it from a staging page. A folio writes it at <root>/<locale>/review/,
-// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
-// through, so a 404 here is not answered with the live site's page. No review
-// page, no link.
-function review(s,r,rel){
-  if(typeof fetch!=='function')return;
-  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
-  if(m)c.push(r+m[1]+'/review/');
-  c.push(r+'review/');
-  (function next(i){
-    if(i>=c.length)return;
-    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
-      if(!x.ok)return next(i+1);
-      s.appendChild(sep());
-      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
-      measure();
-    }).catch(function(){next(i+1);});
-  })(0);
-}
-// Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
-// head now and say so when it has moved past the commit this preview was
-// built from. Unauthenticated, one request per page view; on any failure
-// (rate limit, offline, a deleted branch) it says nothing rather than guess.
-function fresh(d,f){
-  var m=String(f.branchUrl||'').match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\//);
-  if(!m||!f.branch||!f.sha||typeof fetch!=='function')return;
-  fetch('https://api.github.com/repos/'+m[1]+'/'+m[2]+'/commits/'+encodeURIComponent(f.branch),
-    {headers:{Accept:'application/vnd.github.sha'},cache:'no-store'})
-    .then(function(x){if(!x.ok)throw 0;return x.text();})
-    .then(function(head){
-      head=String(head).trim();
-      if(!/^[0-9a-f]{7,40}$/.test(head)||head.indexOf(f.sha)===0)return;
-      d.appendChild(sep());
-      var w=el('strong',{'data-fa-staging-stale':'',style:'background:#b00020;padding:0 .4em;border-radius:3px'},'\u26a0 stale: the branch is now at ');
-      w.appendChild(chip(head.slice(0,7)));
-      w.appendChild(document.createTextNode(', newer than this preview'));
-      d.appendChild(w);measure();
-    }).catch(function(){});
-}
-function stamp(f){
-  var p=document.querySelector('.fa-build-stamp');if(!p)return;
-  while(p.firstChild)p.removeChild(p.firstChild);
-  p.appendChild(document.createTextNode('deployed '));
-  var a=link(f.runUrl,'');a.appendChild(el('code',null,f.sha));p.appendChild(a);
-  p.appendChild(document.createTextNode(' · '+f.built));
-}
-function go(){
-  measure();
-  var d=document.querySelector('[data-fa-staging-detail]');if(!d)return;
-  var r=root();
-  if(!r){d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
-  fetch(r+'staging.json',{cache:'no-store'}).then(function(x){if(!x.ok)throw 0;return x.json();})
-    .then(function(f){fill(d,f,r);})
-    .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
-}
-// First visit to a preview: the shared stylesheets 404 until the worker is
-// in control, so the page would paint unstyled (a page-wide search icon) for
-// the moment before the reload. Hide it until then, only when a stylesheet
-// in the head actually failed, and show it again if no reload comes.
-function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
-function share(){
-  var r=root();if(!r||!('serviceWorker' in navigator))return;
-  var k='fa-share:'+r,s=document.documentElement.style;
-  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
-  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
-  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
-  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
-    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(show);
-}
-measure();share();
-if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
-window.addEventListener('resize',measure);window.addEventListener('load',measure);
-})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="../../../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-158mycfjxen","here":"/en/folio-assistant-core/public-comments/folio/dth-hrh/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1han5k2rnfp.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../../../assets/js/vendor/lunr.min.js" defer></script><script src="../../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../../.."></head>
+<body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:var(--fa-font-sans,system-ui,sans-serif)">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+var b=document.querySelector('[data-fa-staging-banner]'),d=document.querySelector('[data-fa-staging-detail]');
+if(b)document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');
+var m=location.pathname.match(/^(.*\/(?:branches|STAGING)\/[^/]+\/)/);
+if(!m){if(d)d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+var s=document.createElement('script');s.src=m[1]+'staging-banner.js';
+s.onerror=function(){if(d)d.textContent='\u2014 build details unavailable';};
+(document.head||document.documentElement).appendChild(s);
+})();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1han5k2rnfp","here":"/en/folio-assistant-core/public-comments/folio/dth-hrh/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../../">Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
 <main>
 <p><a href="../../../../../en/dth-hrh/index.html">← DTH-HRH working document (internal working-group review)</a></p>
 <h1>Public comments</h1>
-<p class="muted">Generated 2026-11-08 18:27 UTC from the comment store. Open = not yet decided. Editing = decided, and the change is being made on a feature branch. Closed = incorporated, duplicate or withdrawn.</p>
+<p class="muted">Generated 2026-11-14 16:09 UTC from the comment store. Open = not yet decided. Editing = decided, and the change is being made on a feature branch. Closed = incorporated, duplicate or withdrawn.</p>
 <div class="tiles" role="group" aria-label="Filter by count">
 <button type="button" class="tile" data-tile="all" aria-pressed="false" title="Show comments"><b>3</b>comments</button>
 <button type="button" class="tile" data-tile="open" aria-pressed="false" title="Show open"><b>3</b>open</button>
@@ -417,6 +310,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   // the page loads that also contains this page (a page can load another
   // site's chrome from the same origin, /folio-assistant/assets/…).
   const vendorBase = () => {
+    // A site that loads its shared assets from a host names the bundle's
+    // address in a meta (cat-harness-tools scripts/lib/shared-assets.ts).
+    const shared = document.querySelector('meta[name="fa-shared-asset"][data-dir="assets/vendor/crepe/"]');
+    if (shared && shared.getAttribute("content")) return shared.getAttribute("content");
     let best = null;
     for (const e of document.querySelectorAll("script[src], link[href]")) {
       let u;
@@ -513,7 +410,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     ".fa-suggest-status{color:#5b6770;font-size:.9rem;margin:.25rem .75rem}",
     ".fa-suggest-status:empty{display:none}",
     ".fa-suggest-editor{flex:1;min-height:8rem;overflow:auto;margin:0}",
-    ".fa-suggest-editor textarea{width:100%;height:100%;min-height:12rem;box-sizing:border-box;font-family:ui-monospace,monospace;font-size:.9rem;border:0;padding:.75rem;resize:none}",
+    ".fa-suggest-editor textarea{width:100%;height:100%;min-height:12rem;box-sizing:border-box;font-family:var(--fa-font-mono,Menlo,Consolas,monospace);font-size:.9rem;border:0;padding:.75rem;resize:none}",
     "dialog.fa-suggest .milkdown .ProseMirror{padding:.75rem 1rem}",
     "dialog.fa-suggest .ProseMirror a{text-decoration-style:dotted}",
     "ins.fa-sg-ins,.fa-sg-ins-block{color:#0b6b2a;background:#e6f4ea;text-decoration:underline 3px;text-underline-offset:3px}",
@@ -1037,22 +934,78 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     // inside it (owner, 2026-11-06: "need bit padding to left of text and
     // buttons"), then the right gutter the icons sit in. The 📣's margin is
     // the panel's 1rem padding plus the anchor's 2.25rem, so both line up.
-    "@media (min-width:50rem){html.fa-bp .main-content-wrap{padding-left:.75rem;padding-right:2.5rem}" +
+    // Owner, 2026-11-08: "i dont wnat the left grill between LHS navbar and
+    // dsiplay content" — the .75rem of backdrop on the LEFT showed as a grey
+    // strip under the blue bar. It is gone: the white panel now meets the
+    // navbar, and its own 1rem keeps the text off the edge.
+    "@media (min-width:50rem){html.fa-bp .main-content-wrap{padding-left:0;padding-right:2.5rem}" +
     "html.fa-bp .main-content{position:relative;padding-left:1rem;padding-right:1rem}" +
     "html.fa-bp .main-content :is(h1,h2,h3,h4,h5,h6):has(>.anchor-heading){position:static}" +
     "html.fa-bp .main-content .anchor-heading{left:auto;right:-2.25rem;top:auto;height:auto;width:1.5rem}" +
     "html.fa-bp .main-content .block-actions{float:right;clear:right;width:1.5rem;margin:0 -3.25rem 6px 0;text-align:center}" +
     // A section's box hangs under its heading's 🔗, placed like the 🔗 against
     // .main-content so a heading inside a bordered box still uses the gutter.
-    "html.fa-bp .main-content .fa-sec-actions{position:absolute;float:none;right:-2.25rem;margin:0}}" +
+    "html.fa-bp .main-content .fa-sec-actions{position:absolute;float:none;right:-2.25rem;margin:0}" +
+    // A standalone page (an IG's thin layout) has no .main-content-wrap to
+    // pad, so its column leaves the same gutter itself.
+    "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:2.5rem}}" +
+    // Below 50rem there is no gutter, so a section's box sits in the text
+    // column under its heading. Owner, 2026-11-13 ("phone first"): there it is
+    // ONE row, right-aligned, not the gutter's column, which left two icon
+    // heights of empty space under every heading on a phone.
+    "@media (max-width:49.99rem){html.fa-bp .main-content .fa-sec-actions{flex-direction:row;justify-content:flex-end;align-items:center;gap:8px}}" +
+    // A section's QA / TR chips, under its 📣 and 🔖 in the gutter; pressed,
+    // they open the section's panel, where each badge says what it found.
+    "html.fa-bp .main-content .fa-sec-actions>.fa-sec-qa{order:9;margin:0;display:flex;flex-direction:column;align-items:center;gap:2px}" +
+    "html.fa-bp .main-content .fa-sec-actions>.fa-sec-qa .fa-qa-badges{display:flex;flex-direction:column;gap:2px;margin:0}" +
+    "html.fa-bp .main-content .fa-sec-actions>.fa-sec-qa .fa-qa-badge{min-height:0;padding:1px 2px;font-size:9px;cursor:pointer}" +
+    "html.fa-bp .main-content .fa-sec-actions>.fa-sec-qa .fa-qa-panel{display:none}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa{display:block;margin:1rem 0 0;text-align:left}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa::before{content:'Quality checks';display:block;font-weight:600;font-size:.9rem;margin-bottom:.3rem}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa .fa-qa-badges{display:flex;flex-direction:column;align-items:stretch;gap:.3rem;margin:0}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa .fa-qa-badge{display:flex;width:100%;box-sizing:border-box;text-align:left;font-size:.8rem}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa span.fa-qa-badge{cursor:default;opacity:.85}" +
+    "html.fa-bp .fa-block-panel .fa-sec-qa span.fa-qa-badge::after{content:attr(title);margin-left:.5em}" +
     "html.fa-bp .fa-hot+.fa-sec-actions>.ba-ic" + ON +
     // Its feedback link is the panel's content, not a second icon on the page.
     "html.fa-bp .fa-sec-actions>a{display:none}html.fa-bp .fa-block-panel .fa-sec-actions>a{display:block;margin:.5rem 0;padding:.55rem .7rem;border:1px solid #8885;border-radius:8px;text-decoration:none}" +
     "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark{width:20px;height:20px;border:0;background:none;font-size:13px;opacity:.35;filter:grayscale(1)}" +
     "html.fa-bp .block-actions>.ba-trigger .ba-n{top:-4px;right:-6px;font-size:9px;padding:0 3px}" +
-    "html.fa-bp .block-actions:hover>.ba-trigger,html.fa-bp .ba-trigger:focus-visible,html.fa-bp .ba-trigger[aria-expanded=true],html.fa-bp :hover>.block-actions>.ba-trigger,html.fa-bp p:has(+.fa-blk:hover)>.block-actions>.ba-trigger" + ON +
-    "html.fa-bp .block-actions:hover>.ba-bookmark,html.fa-bp .ba-bookmark:focus-visible,html.fa-bp .ba-bookmark[aria-pressed=true],html.fa-bp :hover>.block-actions>.ba-bookmark,html.fa-bp p:has(+.fa-blk:hover)>.block-actions>.ba-bookmark" + ON +
+    "html.fa-bp .block-actions:hover>.ba-trigger,html.fa-bp .ba-trigger:focus-visible,html.fa-bp .ba-trigger[aria-expanded=true],html.fa-bp :not(.main-content,.fa-doc,main):hover>.block-actions>.ba-trigger,html.fa-bp p:has(+.fa-blk:hover)>.block-actions>.ba-trigger" + ON +
+    // Owner, 2026-11-09: "anchor is only highlighted on the content block it
+    // is in, but not feedback and bookmark ... always highlighted on any
+    // content block". A section's box hangs straight off .main-content, so
+    // ":hover>" matched the whole page and lit every box at once. The page
+    // column is not a block: a section's box lights from its .fa-hot heading.
+    "html.fa-bp .block-actions:hover>.ba-bookmark,html.fa-bp .ba-bookmark:focus-visible,html.fa-bp .ba-bookmark[aria-pressed=true],html.fa-bp :not(.main-content,.fa-doc,main):hover>.block-actions>.ba-bookmark,html.fa-bp p:has(+.fa-blk:hover)>.block-actions>.ba-bookmark" + ON +
+    // Owner, 2026-11-08: "pin icon does not get highlighted on hover". A
+    // pressed 🔖 is always in full colour, so hovering it changed nothing.
+    // Every gutter icon now lights a tinted tile under the pointer, pressed
+    // or not, so the one you are about to press is always the one that shows.
+    "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark,html.fa-bp .main-content .anchor-heading{border-radius:5px;transition:background-color .12s}" +
+    "html.fa-bp .block-actions>.ba-trigger:hover,html.fa-bp .block-actions>.ba-bookmark:hover,html.fa-bp .main-content .anchor-heading:hover{opacity:1;filter:none;background:color-mix(in srgb,var(--link,#0b5cad) 18%,transparent)}" +
+    // Owner, 2026-11-09: "no indication if a bookmark has been selected or
+    // not". Hovering a block lights every gutter icon in full colour, so a
+    // pressed 🔖 looked the same as one that was not. A pressed 🔖 now keeps
+    // a tinted tile with an accent ring at all times, hovered or not.
+    "html.fa-bp .block-actions>.ba-bookmark[aria-pressed=true]{opacity:1;filter:none;background:color-mix(in srgb,var(--link,#0b5cad) 24%,transparent);box-shadow:inset 0 0 0 1.5px var(--link,#0b5cad)}" +
+    "html.fa-bp .block-actions>.ba-bookmark[aria-pressed=true]:hover{background:color-mix(in srgb,var(--link,#0b5cad) 34%,transparent)}" +
     "html.fa-bp .main-content .anchor-heading svg{visibility:visible;opacity:.35;filter:grayscale(1)}" +
+    // Owner, 2026-11-10: "make RHS grill icons 50% bigger on laptop". From
+    // laptop width up, the 🔗, 📣 and 🔖 are half again as big (20px -> 30px
+    // tiles, 1rem -> 1.5rem link icon) and the right gutter widens to fit,
+    // keeping the same spacing to the text. Tablets and phones are unchanged.
+    "@media (min-width:64rem){html.fa-bp .main-content-wrap{padding-right:3.25rem}" +
+    "html.fa-bp .main-content .anchor-heading{right:-3rem;width:2.25rem;padding:0 .375rem}" +
+    "html.fa-bp .main-content .anchor-heading svg{width:1.5rem;height:1.5rem}" +
+    "html.fa-bp .main-content .block-actions{width:2.25rem;margin-right:-4rem}" +
+    // A section box is placed by its right offset, not by the margin above, so it
+    // must not pick up that -4rem margin too: with both, it sat 7rem past the
+    // text and off the right edge of the window (smart-trust-demo, 11-11).
+    "html.fa-bp .main-content .fa-sec-actions{right:-3rem;margin:0}" +
+    "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:3.25rem}" +
+    "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark{width:30px;height:30px;font-size:20px}" +
+    "html.fa-bp .block-actions>.ba-trigger .ba-n{top:-5px;right:-8px;font-size:12px;padding:0 4px}}" +
     "html.fa-bp .main-content .fa-hot>.anchor-heading svg,html.fa-bp .main-content :hover>.anchor-heading svg,html.fa-bp .main-content .anchor-heading:focus svg" + ON +
     ".fa-block-panel .bp-copy{font:inherit;font-size:.82rem;margin:.1rem .35rem .3rem 0;padding:.3rem .6rem;border:1px solid #8886;border-radius:6px;background:none;color:inherit;cursor:pointer}" +
     ".fa-block-panel .bp-copy.ba-copied,.fa-block-panel .bp-bookmark[aria-pressed=true]{border-color:#2e7d32;background:#2e7d32;color:#fff}" +
@@ -1131,7 +1084,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       }
       const links = Array.from(box.querySelectorAll(":scope > a[data-fa-link]"));
       links.sort((a, b) => ORDER.indexOf(a.dataset.faLink) - ORDER.indexOf(b.dataset.faLink)).forEach((a) => box.append(a));
-      box.querySelectorAll(":scope > .ba-existing").forEach((s) => box.append(s));
+      box.querySelectorAll(":scope > .ba-existing, :scope > .fa-sec-qa").forEach((s) => box.append(s));
       home = el("span", { hidden: true });
       box.parentNode.insertBefore(home, box);
       moved = box;
@@ -1253,26 +1206,103 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     const seg = /^\/([A-Za-z0-9._-]+)\//.exec(location.pathname || "");
     return h && seg && seg[1] !== "." && seg[1] !== ".." ? h[1] + "/" + seg[1] : "";
   };
+  // An IG page (the FHIR layer's thin layout) says where each heading's text
+  // is in its markdown source: <script id="ig-source-lines">, the IG's own
+  // repository and, per heading, its line and, for an included file, that
+  // file. Its sections take the same right-gutter box as any plain page's
+  // (owner, 2026-11-08: "edit feedback on IGs like rest of documents should
+  // be on right grill not touching section title ... consolidate
+  // infrastructure"), with the ✎ to the section's own source line beside the
+  // 📣, both in the panel. Its headings carry no theme anchor, so each is
+  // matched by its id instead, and its 📣 goes to the IG's repository, not
+  // the site's.
+  const igLines = () => {
+    const d = document.getElementById("ig-source-lines");
+    if (!d) return null;
+    try { const m = JSON.parse(d.textContent); return m && m.blob ? m : null; } catch { return null; }
+  };
+  // A docs page says the same of ITSELF in <script id="fa-page-source">,
+  // written by head_custom.html from compose-docs' _data/page_sources.json
+  // (owner, 2026-11-13). Only the headings its own Markdown writes are listed,
+  // so a section an include draws keeps its 📣 alone: "own-text sections only".
+  const pageLines = () => {
+    const d = document.getElementById("fa-page-source");
+    if (!d) return null;
+    try { const m = JSON.parse(d.textContent); return m && m.blob ? m : null; } catch { return null; }
+  };
+  const norm = (s) => String(s).toLowerCase().replace(/&[a-z]+;/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
   const sectionBoxes = () => {
     const main = document.querySelector(".main-content");
     if (!main || main.querySelector(".fa-doc, .block-actions")) return;
-    const repo = siteRepo();
+    const ig = igLines();
+    const own = ig ? null : pageLines();
+    const ghRepo = ig ? (/^https:\/\/github\.com\/([^/]+\/[^/]+)/.exec(ig.blob) || [])[1] || "" : "";
+    const site = ig ? (ig.repo || ghRepo) : siteRepo();
+    const used = {};
     let made = false;
-    for (const h of main.querySelectorAll("h1[id], h2[id], h3[id], h4[id]")) {
-      if (!h.querySelector(":scope > .anchor-heading") || h.closest(".fa-block-panel, nav")) continue;
+    for (const h of main.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]")) {
+      if (h.closest(".fa-block-panel, nav")) continue;
+      if (ig ? !/^H[1-6]$/.test(h.tagName) : (!h.querySelector(":scope > .anchor-heading") || /^H[56]$/.test(h.tagName))) continue;
       const sec = h.textContent.trim();
       const box = el("span", { className: "block-actions fa-sec-actions" });
       box.dataset.block = h.id;
       box.dataset.sec = sec;
+      let src = "", from = null;
+      // A generated docs page writes each section's own ✎ Edit and its QA /
+      // TR badges in a paragraph under the heading (cat-harness-tools
+      // gen-docs-pages). Owner, 2026-11-08: "Suggest is now redundant with
+      // right grill icons. QA and TR should be in right grill." So that
+      // paragraph moves into the box: its ✎ (and the ✍ beside it) become the
+      // panel's links, its badges the box's chips, and the empty line goes.
+      const nx = h.nextElementSibling;
+      if (!ig && nx && nx.tagName === "P" && nx.children.length && Array.from(nx.children).every((c) => c.matches("a.fa-node-edit, a.ba-suggest, .fa-qa-badges"))
+        && nx.textContent.replace(/\s/g, "") === Array.from(nx.children, (c) => c.textContent).join("").replace(/\s/g, "")) {
+        from = nx.querySelector("a.fa-node-edit[data-fa-link]");
+        if (from) {
+          for (const a of nx.querySelectorAll("a.fa-node-edit, a.ba-suggest")) box.append(a);
+          if (from.dataset.src) {
+            const r = from.dataset.repo || siteRepo();
+            src = r ? "https://github.com/" + r + "/blob/" + (from.dataset.branch || config().branch || "main") + "/" + from.dataset.src : "";
+          }
+        }
+        const qa = nx.querySelector(".fa-qa-badges");
+        if (qa) box.append(el("p", { className: "fa-sec-qa" }, [qa]));
+        nx.remove();
+      }
+      const lm = ig || (from ? null : own);
+      if (lm) {
+        const k = norm(sec);
+        const lines = Array.isArray(lm.lines) ? lm.lines : [];
+        for (let i = 0; i < lines.length; i++) if (!used[i] && norm(lines[i].t) === k) {
+          used[i] = 1;
+          src = (lines[i].b || lm.blob) + "#L" + lines[i].l;
+          break;
+        }
+        if (src) {
+          const e = el("a", { className: "ba-edit", href: src, textContent: "\u270e edit", title: "Edit this section's source on GitHub" });
+          e.dataset.faLink = "edit";
+          box.append(e);
+          if (!ig) addSuggest(box);
+        }
+      }
+      const repo = (from && from.dataset.repo) || site;
       if (repo) {
+        const here = location.href.split("#")[0] + "#" + encodeURIComponent(h.id);
         const q = new URLSearchParams();
-        q.set("title", "Feedback: " + (document.title ? document.title + " \u2014 " : "") + sec);
-        q.set("body", ["**Section:** " + sec, "**On the site:** " + location.href.split("#")[0] + "#" + encodeURIComponent(h.id),
-          "", "**Type:** general | technical | editorial", "", "**Comment:**", "", ""].join("\n"));
+        if (ig) {
+          const pt = document.title.split(/ [|\u2014] /)[0].trim();
+          q.set("title", "Feedback on \u201c" + sec + "\u201d" + (pt && norm(pt) !== norm(sec) ? " (page: " + pt + ")" : ""));
+          q.set("body", ["**Page:** " + here, "**Section:** " + sec + " (#" + h.id + ")", "**Source:** " + (src || ig.blob), "", "**Feedback:**", "", ""].join("\n"));
+        } else {
+          q.set("title", "Feedback: " + (document.title ? document.title + " \u2014 " : "") + sec);
+          q.set("body", ["**Section:** " + sec, "**On the site:** " + here].concat(src ? ["**Source:** " + src] : []).concat([
+            "", "**Type:** general | technical | editorial", "", "**Comment:**", "", ""]).join("\n"));
+        }
         const a = el("a", { className: "ba-feedback", href: "https://github.com/" + repo + "/issues/new?" + q, textContent: "\ud83d\udce3 feedback", title: "Give feedback on this section (opens a GitHub issue)" });
         a.dataset.faLink = "feedback";
         box.append(a);
       }
+      h.classList.add("fa-sec-h");
       h.after(box);
       made = true;
     }
@@ -1307,7 +1337,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     let h = null;
     if (n && !n.closest(".fa-block-panel, nav, .side-bar")) {
       while (n.parentElement && !n.parentElement.matches(".fa-doc, .main-content, main")) n = n.parentElement;
-      for (let x = n; x && !h; x = x.previousElementSibling) if (/^H[1-6]$/.test(x.tagName) && x.querySelector(":scope > .anchor-heading")) h = x;
+      for (let x = n; x && !h; x = x.previousElementSibling) if (/^H[1-6]$/.test(x.tagName) && (x.classList.contains("fa-sec-h") || x.querySelector(":scope > .anchor-heading"))) h = x;
     }
     if (h === hot) return;
     if (hot) hot.classList.remove("fa-hot");
@@ -1327,6 +1357,17 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     }
     if (panel && panel.classList.contains("open") && !panel.contains(e.target) && !e.target.closest(".fa-suggest, dialog")) close();
   });
+  // A QA chip in the gutter opens its section's panel; docs-ui opens a
+  // badge's own detail only once it is in the panel, with room for it.
+  document.addEventListener("click", (e) => {
+    const q = e.target.closest && e.target.closest(".fa-sec-qa");
+    if (!q || (panel && panel.contains(q))) return;
+    const box = q.closest(".block-actions");
+    if (!box) return;
+    e.preventDefault();
+    e.stopPropagation();
+    open(box, "edit", box.querySelector(":scope > .ba-trigger"));
+  }, true);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && panel && panel.classList.contains("open") && !document.querySelector("dialog[open]")) close(); });
   if (typeof document.documentElement === "object" && document.documentElement && document.documentElement.classList) {
     document.documentElement.classList.add("fa-bp");

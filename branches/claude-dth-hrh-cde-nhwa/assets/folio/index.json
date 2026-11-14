@@ -14,7 +14,7 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 1390,
+          "bytes": 1384,
           "size": "1.4 KB"
         },
         {
@@ -636,8 +636,8 @@
         },
         {
           "path": "dth-hrh/ch03-digital-transformation-approach/ch03-digital-transformation-approach.ts",
-          "bytes": 1050,
-          "size": "1.0 KB"
+          "bytes": 1081,
+          "size": "1.1 KB"
         },
         {
           "path": "dth-hrh/ch03-digital-transformation-approach/f-diig-phases.jsonld",
@@ -653,6 +653,21 @@
           "path": "dth-hrh/ch03-digital-transformation-approach/f-diig-phases.ts",
           "bytes": 1369,
           "size": "1.3 KB"
+        },
+        {
+          "path": "dth-hrh/ch03-digital-transformation-approach/f-smart-guidelines-approach.jsonld",
+          "bytes": 4117,
+          "size": "4.0 KB"
+        },
+        {
+          "path": "dth-hrh/ch03-digital-transformation-approach/f-smart-guidelines-approach.md",
+          "bytes": 531,
+          "size": "531 B"
+        },
+        {
+          "path": "dth-hrh/ch03-digital-transformation-approach/f-smart-guidelines-approach.ts",
+          "bytes": 3287,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-hrh/ch03-digital-transformation-approach/p-ch03-country-pathway.jsonld",
@@ -5395,9 +5410,14 @@
           "size": "5.3 KB"
         },
         {
+          "path": "dth-hrh/media/smart-guidelines-approach.svg",
+          "bytes": 10238,
+          "size": "10.0 KB"
+        },
+        {
           "path": "dth-hrh/references/p-references.jsonld",
-          "bytes": 683,
-          "size": "683 B"
+          "bytes": 1422,
+          "size": "1.4 KB"
         },
         {
           "path": "dth-hrh/references/p-references.md",
@@ -5406,8 +5426,8 @@
         },
         {
           "path": "dth-hrh/references/p-references.ts",
-          "bytes": 294,
-          "size": "294 B"
+          "bytes": 1063,
+          "size": "1.0 KB"
         },
         {
           "path": "dth-hrh/references/references.ts",
@@ -5416,8 +5436,8 @@
         },
         {
           "path": "dth-hrh/review-anchors.json",
-          "bytes": 172467,
-          "size": "168.4 KB"
+          "bytes": 173088,
+          "size": "169.0 KB"
         },
         {
           "path": "schema/builders.ts",

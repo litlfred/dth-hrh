@@ -111,121 +111,14 @@
 
 </style>
 </head>
-<body data-fa-node-kind-page><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
-function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
-function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
-function chip(text){return el('span',{style:"font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:3px"},text);}
-function sep(){return document.createTextNode(' \u00b7 ');}
-function root(){var m=location.pathname.match(/^(.*\/(?:branches|STAGING)\/[^/]+\/)/);return m?m[1]:null;}
-// Release or preview (owner, 2026-11-05): a full build is a release and is
-// drawn purple, a preview green. Set here from staging.json, not in the
-// fragment, so the fragment stays byte-identical on every build.
-function kind(f){if(f.buildType!=='full')return;var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;b.style.background="#6B3FA0";b.setAttribute('data-fa-build-type','full');var t=b.querySelector('b');if(t)t.textContent='RELEASE BUILD';}
-function measure(){var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');}
-function fill(d,f,r){
-  kind(f);
-  while(d.firstChild)d.removeChild(d.firstChild);
-  d.appendChild(document.createTextNode('\u2014 '));
-  var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
-  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
-  d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
-  d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
-  d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
-  if(f.issue){d.appendChild(sep());d.appendChild(link(f.issueUrl,'issue #'+f.issue));}
-  d.appendChild(sep());
-  var rel=location.pathname.slice(r.length);
-  if(rel===''||rel.charAt(rel.length-1)==='/')rel+='index.html';
-  if(!f.mainPagesKnown){
-    d.appendChild(link(f.mainSite+'/','compare with '+(f.beforeRef||'main')+' \u2197'));
-  }else if(f.newPages.indexOf(rel)>=0){
-    d.appendChild(link(f.mainSite+'/',(f.beforeRef||'main')+' \u2197'));
-    d.appendChild(document.createTextNode(' '));
-    d.appendChild(el('span',{style:'opacity:.85'},'(new page)'));
-  }else{
-    d.appendChild(link(f.mainSite+'/'+rel,'compare with '+(f.beforeRef||'main')+' \u2197'));
-  }
-  d.appendChild(sep());d.appendChild(link(f.runUrl,'build log'));
-  if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
-  stamp(f);
-  measure();
-  fresh(d,f);
-  review(rv,r,rel);
-}
-// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
-// find it from a staging page. A folio writes it at <root>/<locale>/review/,
-// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
-// through, so a 404 here is not answered with the live site's page. No review
-// page, no link.
-function review(s,r,rel){
-  if(typeof fetch!=='function')return;
-  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
-  if(m)c.push(r+m[1]+'/review/');
-  c.push(r+'review/');
-  (function next(i){
-    if(i>=c.length)return;
-    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
-      if(!x.ok)return next(i+1);
-      s.appendChild(sep());
-      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
-      measure();
-    }).catch(function(){next(i+1);});
-  })(0);
-}
-// Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
-// head now and say so when it has moved past the commit this preview was
-// built from. Unauthenticated, one request per page view; on any failure
-// (rate limit, offline, a deleted branch) it says nothing rather than guess.
-function fresh(d,f){
-  var m=String(f.branchUrl||'').match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\//);
-  if(!m||!f.branch||!f.sha||typeof fetch!=='function')return;
-  fetch('https://api.github.com/repos/'+m[1]+'/'+m[2]+'/commits/'+encodeURIComponent(f.branch),
-    {headers:{Accept:'application/vnd.github.sha'},cache:'no-store'})
-    .then(function(x){if(!x.ok)throw 0;return x.text();})
-    .then(function(head){
-      head=String(head).trim();
-      if(!/^[0-9a-f]{7,40}$/.test(head)||head.indexOf(f.sha)===0)return;
-      d.appendChild(sep());
-      var w=el('strong',{'data-fa-staging-stale':'',style:'background:#b00020;padding:0 .4em;border-radius:3px'},'\u26a0 stale: the branch is now at ');
-      w.appendChild(chip(head.slice(0,7)));
-      w.appendChild(document.createTextNode(', newer than this preview'));
-      d.appendChild(w);measure();
-    }).catch(function(){});
-}
-function stamp(f){
-  var p=document.querySelector('.fa-build-stamp');if(!p)return;
-  while(p.firstChild)p.removeChild(p.firstChild);
-  p.appendChild(document.createTextNode('deployed '));
-  var a=link(f.runUrl,'');a.appendChild(el('code',null,f.sha));p.appendChild(a);
-  p.appendChild(document.createTextNode(' · '+f.built));
-}
-function go(){
-  measure();
-  var d=document.querySelector('[data-fa-staging-detail]');if(!d)return;
-  var r=root();
-  if(!r){d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
-  fetch(r+'staging.json',{cache:'no-store'}).then(function(x){if(!x.ok)throw 0;return x.json();})
-    .then(function(f){fill(d,f,r);})
-    .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
-}
-// First visit to a preview: the shared stylesheets 404 until the worker is
-// in control, so the page would paint unstyled (a page-wide search icon) for
-// the moment before the reload. Hide it until then, only when a stylesheet
-// in the head actually failed, and show it again if no reload comes.
-function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
-function share(){
-  var r=root();if(!r||!('serviceWorker' in navigator))return;
-  var k='fa-share:'+r,s=document.documentElement.style;
-  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
-  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
-  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
-  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
-    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(show);
-}
-measure();share();
-if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
-window.addEventListener('resize',measure);window.addEventListener('load',measure);
+<body data-fa-node-kind-page><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:var(--fa-font-sans,system-ui,sans-serif)">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+var b=document.querySelector('[data-fa-staging-banner]'),d=document.querySelector('[data-fa-staging-detail]');
+if(b)document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');
+var m=location.pathname.match(/^(.*\/(?:branches|STAGING)\/[^/]+\/)/);
+if(!m){if(d)d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+var s=document.createElement('script');s.src=m[1]+'staging-banner.js';
+s.onerror=function(){if(d)d.textContent='\u2014 build details unavailable';};
+(document.head||document.documentElement).appendChild(s);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-162ga3nlp9x","here":"/en/cat-harness/cat-harness-declaration/who-iris/who-iris/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav>
 <main>
 <h1 id="nk-title">WHO IRIS</h1>
@@ -309,7 +202,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   {
     &quot;id&quot;: &quot;who-iris-site&quot;,
     &quot;path&quot;: &quot;site/&quot;,
-    &quot;description&quot;: &quot;THE IRIS REPLICA&#39;S HOME PAGE, and nothing else of the replica. Owner, 2026-10-30: the replica&#39;s item pages duplicated the library entry pages without a locale in the URL (\&quot;i want consitent bevarioior for things nuders librayr/\&quot;), so the item, collection and community-list pages are gone and their addresses 404. The IRIS-style home stays (follow-up, option A), in every language it is built in: its held items link to their library entry pages and its communities and collections to the catalogue page. `scripts/gen-iris-pages.ts` writes it (gated by `bun run cat iris:pages:check`). On the platform&#39;s site it is what `/who-iris/` serves; on who-iris&#39;s own site the `site:home` build step also writes it at the site root, and the docs home moved to `/docs/`. History: Moved out of `library/` on 2026-09-30 (bean 2b5s) so that the corpus and its rendering are separate directories: before, the mount copied the corpus along with the pages. A page shows an item&#39;s cover by referencing `../library/&lt;slug&gt;-cover.png`; the build publishes exactly the files a page embeds, beside the replica, and not the directory they sit in.&quot;,
+    &quot;description&quot;: &quot;THE IRIS REPLICA&#39;S HOME PAGE AND SEARCH PAGE, and nothing else of the replica. The search page (search.html, issue #196, owner 2026-11-08) mimics iris.who.int/search: its facet categories are IRIS&#39;s, and their values and counts are computed in the browser from the items the query matches. Owner, 2026-10-30: the replica&#39;s item pages duplicated the library entry pages without a locale in the URL (\&quot;i want consitent bevarioior for things nuders librayr/\&quot;), so the item, collection and community-list pages are gone and their addresses 404. The IRIS-style home stays (follow-up, option A), in every language it is built in: its held items link to their library entry pages and its communities and collections to the catalogue page. `scripts/gen-iris-pages.ts` writes it (gated by `bun run cat iris:pages:check`). On the platform&#39;s site it is what `/who-iris/` serves; on who-iris&#39;s own site the `site:home` build step also writes it at the site root, and the docs home moved to `/docs/`. History: Moved out of `library/` on 2026-09-30 (bean 2b5s) so that the corpus and its rendering are separate directories: before, the mount copied the corpus along with the pages. A page shows an item&#39;s cover by referencing `../library/&lt;slug&gt;-cover.png`; the build publishes exactly the files a page embeds, beside the replica, and not the directory they sit in.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;docs&quot;
     ],
@@ -395,6 +288,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     ]
   },
   {
+    &quot;id&quot;: &quot;who-iris-references&quot;,
+    &quot;path&quot;: &quot;references/&quot;,
+    &quot;description&quot;: &quot;The reference lists of the held IRIS documents, one `folio-reference/v1` node per cited work. Owner, 2026-11-11: \&quot;i want all who-iris docs that have references put into their own biblio\&quot;. Written by the Tool `references-extract` (step `Task_References` of folio-assistant-core&#39;s `ingest-build-l1-kg.bpmn`) from each library entry&#39;s L1 sections: keyed `&lt;doc-id&gt;.&lt;section&gt;.&lt;n&gt;`, `provenance: extracted`, `derivedFrom` the section file, `printed` the entry verbatim. The bibliography page lists them under the document they came from (`bibliography/library/&lt;doc-id&gt;/`). Regenerated, not hand-edited: re-run the tool after a section is re-derived.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;references&quot;
+    ]
+  },
+  {
     &quot;id&quot;: &quot;who-iris-sources&quot;,
     &quot;path&quot;: &quot;sources/&quot;,
     &quot;description&quot;: &quot;Source descriptors (`folio-source-descriptor/v1`): how to ENUMERATE WHO IRIS and ask it for a SUBSET, so an agent asked for part of it is not told the API by a human every time. Moved here from large-datasets&#39; `sources/` on 2026-10-01 (owner ruling: large-datasets dissolves into cat-harness; bean `j7ql`), because a descriptor is ABOUT one corpus and the instance that holds or catalogues that corpus owns it — the schema stays in cat-harness. Its far-apart sibling, Lean mathlib, is in folio-assistant-sci: IRIS items stand alone (`subsetIsSelfContained: true`), three identifier systems, paged REST.&quot;,
@@ -450,7 +351,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   {
     &quot;id&quot;: &quot;who-iris-tools&quot;,
     &quot;path&quot;: &quot;tools/&quot;,
-    &quot;description&quot;: &quot;who-iris&#39;s Tool nodes: `iris-pages`, the generator that renders the catalogue visualiser (its `renderedBy`). Discovered by graph typology, never imported by name.&quot;,
+    &quot;description&quot;: &quot;who-iris&#39;s Tool nodes: `iris-pages`, the generator that renders the catalogue visualiser (its `renderedBy`), and `translation-qa-prune`, which drops the round-trip rulings of removed strings. Discovered by graph typology, never imported by name.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;tools&quot;
     ]
@@ -582,6 +483,9 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     &quot;because&quot;: &quot;checkout&quot;,
     &quot;reason&quot;: &quot;the prefixes and content-context terms its documents use, flattened with the jsonldPrefixes of the layers it needs at the checkout&#39;s pins&quot;
   }
+]</pre></dd>
+<dt>enableSubgraphs</dt><dd><pre>[
+  &quot;folio-assistant-core.collab&quot;
 ]</pre></dd>
 </dl>
 </main>

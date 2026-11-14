@@ -13,8 +13,29 @@
   ],
   "label": "prose:references",
   "kind": "prose",
+  "cites": [
+    "references/who-hrhis-mds-2015",
+    "references/who-workforce-2030-2016",
+    "references/9789240081291-eng",
+    "references/who-global-code-recruitment-2010",
+    "references/who-health-practitioner-regulation-2024",
+    "references/9789240010567-eng",
+    "references/9789240093362-eng",
+    "references/9789240101197-eng",
+    "references/9789240116191-eng",
+    "references/who-dpi-h-reference-architecture-draft-v1",
+    "references/9789240081949-eng",
+    "references/who-global-strategy-digital-health-2020-2025",
+    "references/who-smart-guidelines",
+    "references/hl7-fhir-ihe-mcsd",
+    "references/ilo-isco-08-unesco-isced"
+  ],
   "text": "p-references.md",
   "meta": {
+    "referenceList": {
+      "style": "short",
+      "list": "bullet"
+    },
     "source": {
       "library": "twg-outline-2026-10-02",
       "file": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",

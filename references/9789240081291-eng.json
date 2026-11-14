@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "9789240081291-eng",
+  "type": "book",
+  "title": "National health workforce accounts: a handbook, second edition",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023
+      ]
+    ]
+  },
+  "ISBN": "9789240081291",
+  "URL": "https://iris.who.int/handle/10665/374320",
+  "provenance": "extracted",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 3 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. National health workforce accounts: a handbook, second edition. 2023. ISBN and URL added from the who-iris catalogue record who-iris/catalogue/records/9789240081291-eng.dc.json; the chapter text is unchanged."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-hrhis-mds-2015",
+  "type": "report",
+  "title": "Human resources for health information system: minimum data set for health workforce registry",
+  "author": [
+    {
+      "literal": "WHO"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2015
+      ]
+    ]
+  },
+  "provenance": "extracted",
+  "derivedFrom": "folio/dth-hrh/references/p-references.md",
+  "_comment": "Entry 1 of the References chapter (folio/dth-hrh/references/p-references.md), as printed: WHO. Human resources for health information system: minimum data set for health workforce registry. 2015. The 2015 HRHIS minimum data set is cross-referenced in DTH-HRH; it is not the basis for the core data elements (owner, 2026-11-12 06:14Z). This entry is existing committee content, kept exactly as printed."
+}

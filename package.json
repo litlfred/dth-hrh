@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "cat": "bun .github/cat.ts",
-    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --out",
+    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --downloads --out",
     "site:wg-comment": "bun run folio-assistant-core/scripts/public-comment-site.ts --store review/wg-comment --out",
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
     "site:context": "bun run cat-harness-tools/scripts/publish-instance-context.ts build --root . --instance dth-hrh --site",

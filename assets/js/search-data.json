@@ -1,710 +1,710 @@
 {"0": {
-    "doc": "Memory",
-    "title": "Memory",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/memory/#memory",
-    
-    "relUrl": "/en/cat-harness/memory/#memory"
-  },"1": {
-    "doc": "Memory",
-    "title": "Memory",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/memory/",
-    
-    "relUrl": "/en/cat-harness/memory/"
-  },"2": {
-    "doc": "Graph typologies",
-    "title": "Graph typologies",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/graph-typologies/#graph-typologies",
-    
-    "relUrl": "/en/cat-harness/graph-typologies/#graph-typologies"
-  },"3": {
-    "doc": "Graph typologies",
-    "title": "Graph typologies",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/graph-typologies/",
-    
-    "relUrl": "/en/cat-harness/graph-typologies/"
-  },"4": {
-    "doc": "folio — folio-assistant-core",
-    "title": "folio — folio-assistant-core",
-    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is folio-assistant-core's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/folio-assistant-core/index.json\"; var INSTANCE = \"folio-assistant-core\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-title",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-title"
-  },"5": {
-    "doc": "folio — folio-assistant-core",
-    "title": "Folio: published and in this browser",
-    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-merged-head",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-merged-head"
-  },"6": {
-    "doc": "folio — folio-assistant-core",
-    "title": "Declared folio directories",
-    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-dirs-head",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-dirs-head"
-  },"7": {
-    "doc": "folio — folio-assistant-core",
-    "title": "List view: files",
-    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-files-head",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-files-head"
-  },"8": {
-    "doc": "folio — folio-assistant-core",
-    "title": "Folio nodes",
-    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head"
-  },"9": {
-    "doc": "folio — folio-assistant-core",
-    "title": "Folio nodes",
-    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head"
-  },"10": {
-    "doc": "folio — folio-assistant-core",
-    "title": "folio — folio-assistant-core",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/",
-    
-    "relUrl": "/en/cat-harness/folio/folio-assistant-core/"
-  },"11": {
-    "doc": "folio — who-iris",
-    "title": "folio — who-iris",
-    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is who-iris's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/who-iris/index.json\"; var INSTANCE = \"who-iris\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-title",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-title"
-  },"12": {
-    "doc": "folio — who-iris",
-    "title": "Folio: published and in this browser",
-    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-merged-head",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-merged-head"
-  },"13": {
-    "doc": "folio — who-iris",
-    "title": "Declared folio directories",
-    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-dirs-head",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-dirs-head"
-  },"14": {
-    "doc": "folio — who-iris",
-    "title": "List view: files",
-    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-files-head",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-files-head"
-  },"15": {
-    "doc": "folio — who-iris",
-    "title": "Folio nodes",
-    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-nodes-head"
-  },"16": {
-    "doc": "folio — who-iris",
-    "title": "Folio nodes",
-    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/#fo-nodes-head"
-  },"17": {
-    "doc": "folio — who-iris",
-    "title": "folio — who-iris",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/folio/who-iris/",
-    
-    "relUrl": "/en/cat-harness/folio/who-iris/"
-  },"18": {
-    "doc": "folio — dth-hrh",
-    "title": "folio — dth-hrh",
-    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is dth-hrh's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/dth-hrh/index.json\"; var INSTANCE = \"dth-hrh\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-title",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-title"
-  },"19": {
-    "doc": "folio — dth-hrh",
-    "title": "Folio: published and in this browser",
-    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-merged-head",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-merged-head"
-  },"20": {
-    "doc": "folio — dth-hrh",
-    "title": "Declared folio directories",
-    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-dirs-head",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-dirs-head"
-  },"21": {
-    "doc": "folio — dth-hrh",
-    "title": "List view: files",
-    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-files-head",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-files-head"
-  },"22": {
-    "doc": "folio — dth-hrh",
-    "title": "Folio nodes",
-    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-nodes-head"
-  },"23": {
-    "doc": "folio — dth-hrh",
-    "title": "Folio nodes",
-    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-nodes-head"
-  },"24": {
-    "doc": "folio — dth-hrh",
-    "title": "folio — dth-hrh",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/",
-    
-    "relUrl": "/en/cat-harness/folio/dth-hrh/"
-  },"25": {
-    "doc": "folio — dpi-h-ra",
-    "title": "folio — dpi-h-ra",
-    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is dpi-h-ra's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/dpi-h-ra/index.json\"; var INSTANCE = \"dpi-h-ra\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-title",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-title"
-  },"26": {
-    "doc": "folio — dpi-h-ra",
-    "title": "Folio: published and in this browser",
-    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-merged-head",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-merged-head"
-  },"27": {
-    "doc": "folio — dpi-h-ra",
-    "title": "Declared folio directories",
-    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-dirs-head",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-dirs-head"
-  },"28": {
-    "doc": "folio — dpi-h-ra",
-    "title": "List view: files",
-    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-files-head",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-files-head"
-  },"29": {
-    "doc": "folio — dpi-h-ra",
-    "title": "Folio nodes",
-    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head"
-  },"30": {
-    "doc": "folio — dpi-h-ra",
-    "title": "Folio nodes",
-    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head"
-  },"31": {
-    "doc": "folio — dpi-h-ra",
-    "title": "folio — dpi-h-ra",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/",
-    
-    "relUrl": "/en/cat-harness/folio/dpi-h-ra/"
-  },"32": {
-    "doc": "folio — the graph",
-    "title": "folio — the graph",
-    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. loading… . var DATA_HREF = \"../../../assets/folio/index.json\"; var INSTANCE = \"\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-title",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-title"
-  },"33": {
-    "doc": "folio — the graph",
-    "title": "Folio: published and in this browser",
-    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-merged-head",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-merged-head"
-  },"34": {
-    "doc": "folio — the graph",
-    "title": "Declared folio directories",
-    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-dirs-head",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-dirs-head"
-  },"35": {
-    "doc": "folio — the graph",
-    "title": "List view: files",
-    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-files-head",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-files-head"
-  },"36": {
-    "doc": "folio — the graph",
-    "title": "Folio nodes",
-    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-nodes-head"
-  },"37": {
-    "doc": "folio — the graph",
-    "title": "Folio nodes",
-    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
-    "url": "/dth-hrh/en/cat-harness/folio/#fo-nodes-head",
-    
-    "relUrl": "/en/cat-harness/folio/#fo-nodes-head"
-  },"38": {
-    "doc": "folio — the graph",
-    "title": "folio — the graph",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/folio/",
-    
-    "relUrl": "/en/cat-harness/folio/"
-  },"39": {
-    "doc": "Pipeline plugins",
-    "title": "Pipeline plugins",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/pipeline-plugins/#pipeline-plugins",
-    
-    "relUrl": "/en/cat-harness/pipeline-plugins/#pipeline-plugins"
-  },"40": {
-    "doc": "Pipeline plugins",
-    "title": "Pipeline plugins",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/pipeline-plugins/",
-    
-    "relUrl": "/en/cat-harness/pipeline-plugins/"
-  },"41": {
-    "doc": "QA checkers",
-    "title": "QA checkers",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/qa-checkers/#qa-checkers",
-    
-    "relUrl": "/en/cat-harness/qa-checkers/#qa-checkers"
-  },"42": {
-    "doc": "QA checkers",
-    "title": "QA checkers",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/qa-checkers/",
-    
-    "relUrl": "/en/cat-harness/qa-checkers/"
-  },"43": {
-    "doc": "swimlane-glossary — state",
-    "title": "swimlane-glossary",
-    "content": "glossary/ · swimlane-glossary . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/swimlane-glossary/index.html (not published by this site). The directory is glossary/. ",
-    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/#swimlane-glossary",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/#swimlane-glossary"
-  },"44": {
-    "doc": "swimlane-glossary — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/"
-  },"45": {
-    "doc": "swimlane-glossary — state",
-    "title": "swimlane-glossary — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/"
-  },"46": {
-    "doc": "attestations — state",
-    "title": "attestations",
-    "content": "test/attestations/ · attestations . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/attestations/cat-harness/index.html (not published by this site). The directory is test/attestations/. ",
-    "url": "/dth-hrh/en/cat-harness/attestations/#attestations",
-    
-    "relUrl": "/en/cat-harness/attestations/#attestations"
-  },"47": {
-    "doc": "attestations — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/attestations/",
-    
-    "relUrl": "/en/cat-harness/attestations/"
-  },"48": {
-    "doc": "attestations — state",
-    "title": "attestations — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/attestations/",
-    
-    "relUrl": "/en/cat-harness/attestations/"
-  },"49": {
-    "doc": "Tool releases",
-    "title": "Tool releases",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/tool-releases/#tool-releases",
-    
-    "relUrl": "/en/cat-harness/tool-releases/#tool-releases"
-  },"50": {
-    "doc": "Tool releases",
-    "title": "Tool releases",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/tool-releases/",
-    
-    "relUrl": "/en/cat-harness/tool-releases/"
-  },"51": {
-    "doc": "issue-marks — state",
-    "title": "issue-marks",
-    "content": "issue-marks/ · issue-marks . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/issue-marks/index.html (not published by this site). The directory is issue-marks/. ",
-    "url": "/dth-hrh/en/cat-harness/issue-marks/#issue-marks",
-    
-    "relUrl": "/en/cat-harness/issue-marks/#issue-marks"
-  },"52": {
-    "doc": "issue-marks — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/issue-marks/",
-    
-    "relUrl": "/en/cat-harness/issue-marks/"
-  },"53": {
-    "doc": "issue-marks — state",
-    "title": "issue-marks — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/issue-marks/",
-    
-    "relUrl": "/en/cat-harness/issue-marks/"
-  },"54": {
-    "doc": "Test plans",
-    "title": "Test plans",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/test-plans/#test-plans",
-    
-    "relUrl": "/en/cat-harness/test-plans/#test-plans"
-  },"55": {
-    "doc": "Test plans",
-    "title": "Test plans",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/test-plans/",
-    
-    "relUrl": "/en/cat-harness/test-plans/"
-  },"56": {
-    "doc": "qa — state",
-    "title": "qa",
-    "content": "test/results/ · qa . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/lsi/index.html (not published by this site). The directory is test/results/. ",
-    "url": "/dth-hrh/en/cat-harness/qa/#qa",
-    
-    "relUrl": "/en/cat-harness/qa/#qa"
-  },"57": {
-    "doc": "qa — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/qa/",
-    
-    "relUrl": "/en/cat-harness/qa/"
-  },"58": {
-    "doc": "qa — state",
-    "title": "qa — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/qa/",
-    
-    "relUrl": "/en/cat-harness/qa/"
-  },"59": {
-    "doc": "Validators",
-    "title": "Validators",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/validators/#validators",
-    
-    "relUrl": "/en/cat-harness/validators/#validators"
-  },"60": {
-    "doc": "Validators",
-    "title": "Validators",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/validators/",
-    
-    "relUrl": "/en/cat-harness/validators/"
-  },"61": {
-    "doc": "Vocab mappings",
-    "title": "Vocab mappings",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/vocab-mappings/#vocab-mappings",
-    
-    "relUrl": "/en/cat-harness/vocab-mappings/#vocab-mappings"
-  },"62": {
-    "doc": "Vocab mappings",
-    "title": "Vocab mappings",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/vocab-mappings/",
-    
-    "relUrl": "/en/cat-harness/vocab-mappings/"
-  },"63": {
-    "doc": "Substrate snapshots",
-    "title": "Substrate snapshots",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/substrate-snapshots/#substrate-snapshots",
-    
-    "relUrl": "/en/cat-harness/substrate-snapshots/#substrate-snapshots"
-  },"64": {
-    "doc": "Substrate snapshots",
-    "title": "Substrate snapshots",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/substrate-snapshots/",
-    
-    "relUrl": "/en/cat-harness/substrate-snapshots/"
-  },"65": {
-    "doc": "Content adapters",
-    "title": "Content adapters",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/content-adapters/#content-adapters",
-    
-    "relUrl": "/en/cat-harness/content-adapters/#content-adapters"
-  },"66": {
-    "doc": "Content adapters",
-    "title": "Content adapters",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/content-adapters/",
-    
-    "relUrl": "/en/cat-harness/content-adapters/"
-  },"67": {
-    "doc": "wg-comments — state",
-    "title": "wg-comments",
-    "content": "review/wg-comment/ · todo-items, public-comments . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/todos/index.html (not published by this site). The directory is review/wg-comment/. ",
-    "url": "/dth-hrh/en/cat-harness/todos/#wg-comments",
-    
-    "relUrl": "/en/cat-harness/todos/#wg-comments"
-  },"68": {
-    "doc": "wg-comments — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/todos/",
-    
-    "relUrl": "/en/cat-harness/todos/"
-  },"69": {
-    "doc": "wg-comments — state",
-    "title": "wg-comments — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/todos/",
-    
-    "relUrl": "/en/cat-harness/todos/"
-  },"70": {
-    "doc": "Scenarios",
-    "title": "Scenarios",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/scenarios/#scenarios",
-    
-    "relUrl": "/en/cat-harness/scenarios/#scenarios"
-  },"71": {
-    "doc": "Scenarios",
-    "title": "Scenarios",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/scenarios/",
-    
-    "relUrl": "/en/cat-harness/scenarios/"
-  },"72": {
-    "doc": "Code lists",
-    "title": "Code lists",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/code-lists/#code-lists",
-    
-    "relUrl": "/en/cat-harness/code-lists/#code-lists"
-  },"73": {
-    "doc": "Code lists",
-    "title": "Code lists",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/code-lists/",
-    
-    "relUrl": "/en/cat-harness/code-lists/"
-  },"74": {
-    "doc": "beans — state",
-    "title": "beans",
-    "content": "beans/ · beans . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/beans/index.html (not published by this site). The directory is beans/. ",
-    "url": "/dth-hrh/en/cat-harness/beans/#beans",
-    
-    "relUrl": "/en/cat-harness/beans/#beans"
-  },"75": {
-    "doc": "beans — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/beans/",
-    
-    "relUrl": "/en/cat-harness/beans/"
-  },"76": {
-    "doc": "beans — state",
-    "title": "beans — state",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/beans/",
-    
-    "relUrl": "/en/cat-harness/beans/"
-  },"77": {
-    "doc": "Policies",
-    "title": "Policies",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/dth-hrh/en/cat-harness/policies/#policies",
-    
-    "relUrl": "/en/cat-harness/policies/#policies"
-  },"78": {
-    "doc": "Policies",
-    "title": "Policies",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/policies/",
-    
-    "relUrl": "/en/cat-harness/policies/"
-  },"79": {
-    "doc": "dth-hrh — Code",
-    "title": "Code: dth-hrh",
-    "content": "dth-hrh · 1 declared code directory · This instance is not a pinned mount here, so files are listed without links. scripts/ bootstrap-tools-scripts . The schema generator and drawn schema page; the vocabulary, graph and named-subgraph exporters; the README writers (each directory's README, the `kg:processes`, `kg:files`, `kg:roles` and `kg:toc` sections, and the one-page README book) with their Liquid templates; the Process renderer; the site stager, publisher and push status; initialization; the release-IRI sync and the term linker; and the checks: import closure, node identifiers, bootstrap's concepts, bootstrap's documents parsed against their Zod (`validate`), and the semver bump the published schemas require, computed from a diff (`semver`). 4 files . | archimate/extract_overlay.py | folio/build_from_outline.py | folio/check_page_furniture.ts | glossary/build_glossary.py | . ",
-    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/#code-dth-hrh",
-    
-    "relUrl": "/en/cat-harness/code/dth-hrh/#code-dth-hrh"
-  },"80": {
-    "doc": "dth-hrh — Code",
-    "title": "Instances holding code",
-    "content": ". | dth-hrh | . ",
-    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/",
-    
-    "relUrl": "/en/cat-harness/code/dth-hrh/"
-  },"81": {
-    "doc": "dth-hrh — Code",
-    "title": "dth-hrh — Code",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/",
-    
-    "relUrl": "/en/cat-harness/code/dth-hrh/"
-  },"82": {
-    "doc": "Code",
-    "title": "Code",
-    "content": "One page per instance in this checkout holding a directory of this kind. | dth-hrh · scripts/ | . ",
-    "url": "/dth-hrh/en/cat-harness/code/#code",
-    
-    "relUrl": "/en/cat-harness/code/#code"
-  },"83": {
-    "doc": "Code",
-    "title": "Code",
-    "content": " ",
-    "url": "/dth-hrh/en/cat-harness/code/",
-    
-    "relUrl": "/en/cat-harness/code/"
-  },"84": {
     "doc": "Block kinds",
     "title": "Block kinds",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
     "url": "/dth-hrh/en/cat-harness/block-kinds/#block-kinds",
     
     "relUrl": "/en/cat-harness/block-kinds/#block-kinds"
-  },"85": {
+  },"1": {
     "doc": "Block kinds",
     "title": "Block kinds",
     "content": " ",
     "url": "/dth-hrh/en/cat-harness/block-kinds/",
     
     "relUrl": "/en/cat-harness/block-kinds/"
-  },"86": {
-    "doc": "Merge reviews",
-    "title": "Merge reviews",
-    "content": "merge-reviews/ · merge-reviews . merge-reviews/ is not mounted in this build, so its verdicts are unknown, not none. bun run cat state:mount mounts it. ",
-    "url": "/dth-hrh/en/cat-harness/merge-reviews/#merge-reviews",
+  },"2": {
+    "doc": "Validators",
+    "title": "Validators",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/validators/#validators",
     
-    "relUrl": "/en/cat-harness/merge-reviews/#merge-reviews"
-  },"87": {
-    "doc": "Merge reviews",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/merge-reviews/",
-    
-    "relUrl": "/en/cat-harness/merge-reviews/"
-  },"88": {
-    "doc": "Merge reviews",
-    "title": "Merge reviews",
+    "relUrl": "/en/cat-harness/validators/#validators"
+  },"3": {
+    "doc": "Validators",
+    "title": "Validators",
     "content": " ",
-    "url": "/dth-hrh/en/cat-harness/merge-reviews/",
+    "url": "/dth-hrh/en/cat-harness/validators/",
     
-    "relUrl": "/en/cat-harness/merge-reviews/"
-  },"89": {
-    "doc": "uploads — state",
-    "title": "uploads",
-    "content": "uploads/ · uploads . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/uploads/cat-harness/index.html (not published by this site). The directory is uploads/. ",
-    "url": "/dth-hrh/en/cat-harness/uploads-queue/#uploads",
+    "relUrl": "/en/cat-harness/validators/"
+  },"4": {
+    "doc": "Test plans",
+    "title": "Test plans",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/test-plans/#test-plans",
     
-    "relUrl": "/en/cat-harness/uploads-queue/#uploads"
-  },"90": {
-    "doc": "uploads — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
-    "url": "/dth-hrh/en/cat-harness/uploads-queue/",
-    
-    "relUrl": "/en/cat-harness/uploads-queue/"
-  },"91": {
-    "doc": "uploads — state",
-    "title": "uploads — state",
+    "relUrl": "/en/cat-harness/test-plans/#test-plans"
+  },"5": {
+    "doc": "Test plans",
+    "title": "Test plans",
     "content": " ",
-    "url": "/dth-hrh/en/cat-harness/uploads-queue/",
+    "url": "/dth-hrh/en/cat-harness/test-plans/",
     
-    "relUrl": "/en/cat-harness/uploads-queue/"
-  },"92": {
+    "relUrl": "/en/cat-harness/test-plans/"
+  },"6": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/memory/#memory",
+    
+    "relUrl": "/en/cat-harness/memory/#memory"
+  },"7": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/memory/",
+    
+    "relUrl": "/en/cat-harness/memory/"
+  },"8": {
+    "doc": "Tool releases",
+    "title": "Tool releases",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/tool-releases/#tool-releases",
+    
+    "relUrl": "/en/cat-harness/tool-releases/#tool-releases"
+  },"9": {
+    "doc": "Tool releases",
+    "title": "Tool releases",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/tool-releases/",
+    
+    "relUrl": "/en/cat-harness/tool-releases/"
+  },"10": {
+    "doc": "dth-hrh — Code",
+    "title": "Code: dth-hrh",
+    "content": "dth-hrh · 1 declared code directory · This instance is not a pinned mount here, so files are listed without links. scripts/ bootstrap-tools-scripts . The schema generator and drawn schema page; the vocabulary, graph and named-subgraph exporters; the README writers (each directory's README, the `kg:processes`, `kg:files`, `kg:roles` and `kg:toc` sections, and the one-page README book) with their Liquid templates; the Process renderer; the site stager, publisher and push status; initialization; the release-IRI sync and the term linker; and the checks: import closure, node identifiers, bootstrap's concepts, bootstrap's documents parsed against their Zod (`validate`), and the semver bump the published schemas require, computed from a diff (`semver`). 4 files . | archimate/extract_overlay.py | folio/build_from_outline.py | folio/check_page_furniture.ts | glossary/build_glossary.py | . ",
+    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/#code-dth-hrh",
+    
+    "relUrl": "/en/cat-harness/code/dth-hrh/#code-dth-hrh"
+  },"11": {
+    "doc": "dth-hrh — Code",
+    "title": "Instances holding code",
+    "content": ". | dth-hrh | . ",
+    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/",
+    
+    "relUrl": "/en/cat-harness/code/dth-hrh/"
+  },"12": {
+    "doc": "dth-hrh — Code",
+    "title": "dth-hrh — Code",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/code/dth-hrh/",
+    
+    "relUrl": "/en/cat-harness/code/dth-hrh/"
+  },"13": {
+    "doc": "Code",
+    "title": "Code",
+    "content": "One page per instance in this checkout holding a directory of this kind. | dth-hrh · scripts/ | . ",
+    "url": "/dth-hrh/en/cat-harness/code/#code",
+    
+    "relUrl": "/en/cat-harness/code/#code"
+  },"14": {
+    "doc": "Code",
+    "title": "Code",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/code/",
+    
+    "relUrl": "/en/cat-harness/code/"
+  },"15": {
+    "doc": "folio — who-iris",
+    "title": "folio — who-iris",
+    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is who-iris's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/who-iris/index.json\"; var INSTANCE = \"who-iris\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-title",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-title"
+  },"16": {
+    "doc": "folio — who-iris",
+    "title": "Folio: published and in this browser",
+    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-merged-head",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-merged-head"
+  },"17": {
+    "doc": "folio — who-iris",
+    "title": "Declared folio directories",
+    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-dirs-head",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-dirs-head"
+  },"18": {
+    "doc": "folio — who-iris",
+    "title": "List view: files",
+    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-files-head",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-files-head"
+  },"19": {
+    "doc": "folio — who-iris",
+    "title": "Folio nodes",
+    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-nodes-head"
+  },"20": {
+    "doc": "folio — who-iris",
+    "title": "Folio nodes",
+    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/#fo-nodes-head"
+  },"21": {
+    "doc": "folio — who-iris",
+    "title": "folio — who-iris",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/folio/who-iris/",
+    
+    "relUrl": "/en/cat-harness/folio/who-iris/"
+  },"22": {
+    "doc": "folio — dth-hrh",
+    "title": "folio — dth-hrh",
+    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is dth-hrh's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/dth-hrh/index.json\"; var INSTANCE = \"dth-hrh\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-title",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-title"
+  },"23": {
+    "doc": "folio — dth-hrh",
+    "title": "Folio: published and in this browser",
+    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-merged-head",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-merged-head"
+  },"24": {
+    "doc": "folio — dth-hrh",
+    "title": "Declared folio directories",
+    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-dirs-head",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-dirs-head"
+  },"25": {
+    "doc": "folio — dth-hrh",
+    "title": "List view: files",
+    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-files-head",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-files-head"
+  },"26": {
+    "doc": "folio — dth-hrh",
+    "title": "Folio nodes",
+    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-nodes-head"
+  },"27": {
+    "doc": "folio — dth-hrh",
+    "title": "Folio nodes",
+    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/#fo-nodes-head"
+  },"28": {
+    "doc": "folio — dth-hrh",
+    "title": "folio — dth-hrh",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/folio/dth-hrh/",
+    
+    "relUrl": "/en/cat-harness/folio/dth-hrh/"
+  },"29": {
+    "doc": "folio — dpi-h-ra",
+    "title": "folio — dpi-h-ra",
+    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is dpi-h-ra's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/dpi-h-ra/index.json\"; var INSTANCE = \"dpi-h-ra\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-title",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-title"
+  },"30": {
+    "doc": "folio — dpi-h-ra",
+    "title": "Folio: published and in this browser",
+    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-merged-head",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-merged-head"
+  },"31": {
+    "doc": "folio — dpi-h-ra",
+    "title": "Declared folio directories",
+    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-dirs-head",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-dirs-head"
+  },"32": {
+    "doc": "folio — dpi-h-ra",
+    "title": "List view: files",
+    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-files-head",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-files-head"
+  },"33": {
+    "doc": "folio — dpi-h-ra",
+    "title": "Folio nodes",
+    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head"
+  },"34": {
+    "doc": "folio — dpi-h-ra",
+    "title": "Folio nodes",
+    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/#fo-nodes-head"
+  },"35": {
+    "doc": "folio — dpi-h-ra",
+    "title": "folio — dpi-h-ra",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/folio/dpi-h-ra/",
+    
+    "relUrl": "/en/cat-harness/folio/dpi-h-ra/"
+  },"36": {
+    "doc": "folio — folio-assistant-core",
+    "title": "folio — folio-assistant-core",
+    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. This page is folio-assistant-core's folio graph alone; the full view is cat-harness's. loading… . var DATA_HREF = \"../../../../assets/folio/folio-assistant-core/index.json\"; var INSTANCE = \"folio-assistant-core\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-title",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-title"
+  },"37": {
+    "doc": "folio — folio-assistant-core",
+    "title": "Folio: published and in this browser",
+    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-merged-head",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-merged-head"
+  },"38": {
+    "doc": "folio — folio-assistant-core",
+    "title": "Declared folio directories",
+    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-dirs-head",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-dirs-head"
+  },"39": {
+    "doc": "folio — folio-assistant-core",
+    "title": "List view: files",
+    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-files-head",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-files-head"
+  },"40": {
+    "doc": "folio — folio-assistant-core",
+    "title": "Folio nodes",
+    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head"
+  },"41": {
+    "doc": "folio — folio-assistant-core",
+    "title": "Folio nodes",
+    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/#fo-nodes-head"
+  },"42": {
+    "doc": "folio — folio-assistant-core",
+    "title": "folio — folio-assistant-core",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/folio/folio-assistant-core/",
+    
+    "relUrl": "/en/cat-harness/folio/folio-assistant-core/"
+  },"43": {
+    "doc": "folio — the graph",
+    "title": "folio — the graph",
+    "content": "Every node the folio graph holds: what it anchors to, the theme it claims, where it was declared, and the links it carries. The folio's content renders as the landing board; this is a view of the graph behind it. loading… . var DATA_HREF = \"../../../assets/folio/index.json\"; var INSTANCE = \"\"; /* The reader's folio, the store docs-ui's glass reads and writes (R30 j2if). */ var FOLIO_KEY = \"fa-folio-assets\"; var mergeFolio = function mergeFolio(published, local, instance) { const CONTENT = { title: 1, summary: 1, href: 1, links: 1, anchor: 1, theme: 1, declaredIn: 1, chars: 1, file: 1, id: 1 }, DESCRIBE = { kind: 1, nodeKind: 1, avatar: 1, source: 1, shown: 1, geom: 1 }, pub = Array.isArray(published) ? published.filter(function(n) { return n && typeof n.id === \"string\" && n.id; }) : [], loc = local && typeof local === \"object\" && !Array.isArray(local) ? local : {}, str = function(v) { return v == null ? \"\" : String(v); }, bare = function(k) { return k.replace(/^(pin|bookmark):/, \"\"); }, byId = {}; for (let i = 0;i /g,\"&gt;\").replace(/\"/g,\"&quot;\"); } /* BOTH SOURCES, LOADED DYNAMICALLY (owner, 2026-11-13). The published projection and the reader's folio in this browser are read on every load and merged by mergeFolio (scripts/folio-merge.ts): a union keyed by id, the published copy wins for content, the local copy for the reader's own state, and a local-only item is kept and marked unsynced. The projection is fetched with no-store and a stamp, so a cached copy cannot hide what was published since; it is fetched again when the tab comes back, and the merge is redrawn whenever the reader's folio changes (this tab or another). */ var published = null, publishedError = null, publishedText = null; function readLocalFolio() { try { var raw = localStorage.getItem(FOLIO_KEY); var parsed = raw ? JSON.parse(raw) : {}; return parsed && typeof parsed === \"object\" && !Array.isArray(parsed) ? parsed : {}; } catch (_e) { return {}; } } function stamped(h) { return h + (h.indexOf(\"?\") published, in this browser', published: 'published', unsynced: 'this browser only, unsynced' }; var head = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-title",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-title"
+  },"44": {
+    "doc": "folio — the graph",
+    "title": "Folio: published and in this browser",
+    "content": "' + '' + (published ? \"\" + c.published + \" published\" : publishedError ? 'published copy could not be read' : \"published copy loading…\") + \" · \" + c.local + \" in this browser\" + \" · \" + c.unsynced + \" unsynced. Your own items stay in this browser; \" + \"the site cannot see them. \"; if (M.rows.length === 0) { $(\"merged\").innerHTML = head + 'Nothing published and nothing in this browser’s folio. '; return; } $(\"merged\").innerHTML = head + '' + \"Folio: published and in this browser\" + \" | item | source | on your glass | from | . | \" + M.rows.map(function(r){ /* A published link is site-rooted (linkHref resolves it); a local one is the address docs-ui stored after its own safeHref, used as it is when it is http(s), rooted or relative, and text otherwise. */ var h = r.hrefFrom === \"published\" ? linkHref(r.href) : (/^https?:[/][/]|^[/.#]/.test(r.href) ? r.href : \"\"); var name = h ? '' + esc(r.title) + \"\" : esc(r.title); return '' + \" | \" + name + '' + esc(r.id) + \" | \" + \" | \" + STATUS[r.status] + \" | \" + \" | \" + (r.shown === null ? 'not in your folio' : r.shown ? \"on the glass\" : 'shelved') + \" | \" + ' | ' + esc(r.source || r.declaredIn || \"\") + \" | . \"; }).join(\"\") + \"\"; } function loadPublished() { return fetch(stamped(DATA_HREF), { cache: \"no-store\" }) .then(function(r){ if(!r.ok) throw new Error(r.status + \" \" + r.statusText); return r.text(); }) .then(function(t){ publishedError = null; if (t === publishedText) return; var G = JSON.parse(t); publishedText = t; published = G; renderPublished(G); }) .catch(function(e){ publishedError = e; if (published) return; /* COULD NOT LOAD IS NOT EMPTY, and the page says which. */ $(\"nodes\").innerHTML = 'The projection at ' + esc(DATA_HREF) + \" could not be read: \" + esc(e.message) + \". That is not an empty folio — it is a folio that could not be loaded. \"; }) .then(renderMerged); } renderMerged(); loadPublished(); window.addEventListener(\"storage\", function(ev){ if (ev.key === null || ev.key === FOLIO_KEY) renderMerged(); }); document.addEventListener(\"fa:folio-changed\", renderMerged); document.addEventListener(\"visibilitychange\", function(){ if (document.visibilityState === \"visible\") loadPublished(); }); window.addEventListener(\"pageshow\", function(ev){ if (ev.persisted) loadPublished(); }); function renderPublished(G){ $(\"badges\").innerHTML = '' + G.nodes.length + \" stick\" + (G.nodes.length===1?\"y\":\"ies\") + \"\" + '' + G.directories.length + \" declared director\" + (G.directories.length===1?\"y\":\"ies\") + \"\"; /* A DECLARED-BUT-ABSENT DIRECTORY GETS A ROW. Omitting it is the dh4f shape: a consumer scans nothing and reports a clean run over it. */ $(\"dirs\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-merged-head",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-merged-head"
+  },"45": {
+    "doc": "folio — the graph",
+    "title": "Declared folio directories",
+    "content": "' + '' + 'Declared folio directories' + ' | declared directory | state | stickies | . | ' + G.directories.map(function(d){ return \" | \" + esc(d.dir) + \" | \" + (d.present ? \"present\" : 'declared, absent') + \" | \" + d.nodes + \" | . \"; }).join(\"\") + \"\"; /* THE 'LIST' VIEW (bean ohx6): the folio as the files it holds, the same list the harness's own page (folio/index.md) renders. Drawn before the node table so it shows even when the folio has no stickies. */ $(\"files\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-dirs-head",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-dirs-head"
+  },"46": {
+    "doc": "folio — the graph",
+    "title": "List view: files",
+    "content": "' + G.directories.map(function(d){ var files = d.files || []; if (!d.present) return '' + esc(d.dir) + \" is declared but absent, so it holds no files. \"; if (files.length === 0) return '' + esc(d.dir) + \" holds no files. \"; return '' + \"Files in \" + esc(d.dir) + \"\" + \" | file | size | . | \" + files.map(function(f){ return \" | \" + esc(f.path) + ' | ' + esc(f.size) + \" | . \"; }).join(\"\") + \"\"; }).join(\"\"); if (G.nodes.length === 0) { $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-files-head",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-files-head"
+  },"47": {
+    "doc": "folio — the graph",
+    "title": "Folio nodes",
+    "content": "' + 'No stickies. That is a folio graph with no nodes, ' + \"not a graph that could not be read \\u2014 the directories above say which were found. \"; return; } $(\"nodes\").innerHTML = ' ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-nodes-head"
+  },"48": {
+    "doc": "folio — the graph",
+    "title": "Folio nodes",
+    "content": "' + '' + 'Folio nodes' + ' | id | summary | anchor | ' + \" | theme | declared in | links | prose | . | \" + G.nodes.map(function(n){ return \"\" + \" | \" + esc(n.id) + \" | \" + \" | \" + esc(n.summary) + \" | \" + \" | \" + (n.anchor ? \"\" + esc(n.anchor) + \"\" : 'none') + \" | \" + \" | \" + (n.theme ? esc(n.theme) : 'none') + \" | \" + ' | ' + esc(n.declaredIn || \"\\u2014\") + \" | \" + \" | \" + (n.links.length ? '' + n.links.map(function(l){ var h = linkHref(l.href); return h ? '' + esc(l.label) + \"\" : '' + esc(l.label) + \"\"; }).join(\"\") + \"\" : 'none') + \" | \" + ' | ' + n.chars.toLocaleString() + \" chars | \" + \" . \"; }).join(\"\") + \"\"; } ",
+    "url": "/dth-hrh/en/cat-harness/folio/#fo-nodes-head",
+    
+    "relUrl": "/en/cat-harness/folio/#fo-nodes-head"
+  },"49": {
+    "doc": "folio — the graph",
+    "title": "folio — the graph",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/folio/",
+    
+    "relUrl": "/en/cat-harness/folio/"
+  },"50": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/code-lists/#code-lists",
+    
+    "relUrl": "/en/cat-harness/code-lists/#code-lists"
+  },"51": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/code-lists/",
+    
+    "relUrl": "/en/cat-harness/code-lists/"
+  },"52": {
     "doc": "health — state",
     "title": "health",
     "content": "test/health/results/ · health . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/health/cat-harness/index.html (not published by this site). The directory is test/health/results/. ",
     "url": "/dth-hrh/en/cat-harness/health/#health",
     
     "relUrl": "/en/cat-harness/health/#health"
-  },"93": {
+  },"53": {
     "doc": "health — state",
     "title": "State graphs this harness declares",
     "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
     "url": "/dth-hrh/en/cat-harness/health/",
     
     "relUrl": "/en/cat-harness/health/"
-  },"94": {
+  },"54": {
     "doc": "health — state",
     "title": "health — state",
     "content": " ",
     "url": "/dth-hrh/en/cat-harness/health/",
     
     "relUrl": "/en/cat-harness/health/"
-  },"95": {
+  },"55": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/graph-typologies/#graph-typologies",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/#graph-typologies"
+  },"56": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/graph-typologies/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/"
+  },"57": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/substrate-snapshots/#substrate-snapshots",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/#substrate-snapshots"
+  },"58": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/substrate-snapshots/",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/"
+  },"59": {
     "doc": "dth-hrh — library",
     "title": "Library",
     "content": "loading… . Listing Desktop ",
     "url": "/dth-hrh/en/cat-harness/library/dth-hrh/#lib-title",
     
     "relUrl": "/en/cat-harness/library/dth-hrh/#lib-title"
-  },"96": {
+  },"60": {
     "doc": "dth-hrh — library",
     "title": "Source JSON-LD and assets",
     "content": "The published files this page is a rendering of. | index.json library projection (JSON) | source/twg-glossary-2026-09-29.jsonld entry JSON-LD | source/twg-outline-2026-10-02.jsonld entry JSON-LD | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
     "url": "/dth-hrh/en/cat-harness/library/dth-hrh/",
     
     "relUrl": "/en/cat-harness/library/dth-hrh/"
-  },"97": {
+  },"61": {
     "doc": "dth-hrh — library",
     "title": "dth-hrh — library",
     "content": "| ",
     "url": "/dth-hrh/en/cat-harness/library/dth-hrh/",
     
     "relUrl": "/en/cat-harness/library/dth-hrh/"
-  },"98": {
+  },"62": {
     "doc": "Library",
     "title": "Library",
     "content": "loading… . Listing Desktop ",
     "url": "/dth-hrh/en/cat-harness/library/#lib-title",
     
     "relUrl": "/en/cat-harness/library/#lib-title"
-  },"99": {
+  },"63": {
     "doc": "Library",
     "title": "Source JSON-LD and assets",
     "content": "The published files this page is a rendering of. | index.json library projection (JSON) | . Library subgraphs in this checkout . | Instance | Entries | Library page | Subgraph JSON-LD | . | cat-harness | 0 | — | not published | . | dpi-h-ra | 0 | — | not published | . | dth-hrh | 2 | dth-hrh | not published | . | fhir-harness | 0 | — | not published | . | smart-base | 0 | — | not published | . | who-iris | 0 | — | not published | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
     "url": "/dth-hrh/en/cat-harness/library/",
     
     "relUrl": "/en/cat-harness/library/"
-  },"100": {
+  },"64": {
     "doc": "Library",
     "title": "Library",
     "content": "| ",
     "url": "/dth-hrh/en/cat-harness/library/",
     
     "relUrl": "/en/cat-harness/library/"
+  },"65": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/scenarios/#scenarios",
+    
+    "relUrl": "/en/cat-harness/scenarios/#scenarios"
+  },"66": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/scenarios/",
+    
+    "relUrl": "/en/cat-harness/scenarios/"
+  },"67": {
+    "doc": "qa — state",
+    "title": "qa",
+    "content": "test/results/ · qa . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/lsi/index.html (not published by this site). The directory is test/results/. ",
+    "url": "/dth-hrh/en/cat-harness/qa/#qa",
+    
+    "relUrl": "/en/cat-harness/qa/#qa"
+  },"68": {
+    "doc": "qa — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"69": {
+    "doc": "qa — state",
+    "title": "qa — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"70": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/pipeline-plugins/#pipeline-plugins",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/#pipeline-plugins"
+  },"71": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/pipeline-plugins/",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/"
+  },"72": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary",
+    "content": "glossary/ · swimlane-glossary . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/swimlane-glossary/index.html (not published by this site). The directory is glossary/. ",
+    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/#swimlane-glossary",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/#swimlane-glossary"
+  },"73": {
+    "doc": "swimlane-glossary — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"74": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"75": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": "merge-reviews/ · merge-reviews . merge-reviews/ is not mounted in this build, so its verdicts are unknown, not none. bun run cat state:mount mounts it. ",
+    "url": "/dth-hrh/en/cat-harness/merge-reviews/#merge-reviews",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/#merge-reviews"
+  },"76": {
+    "doc": "Merge reviews",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"77": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"78": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/content-adapters/#content-adapters",
+    
+    "relUrl": "/en/cat-harness/content-adapters/#content-adapters"
+  },"79": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/content-adapters/",
+    
+    "relUrl": "/en/cat-harness/content-adapters/"
+  },"80": {
+    "doc": "wg-comments — state",
+    "title": "wg-comments",
+    "content": "review/wg-comment/ · todo-items, public-comments . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/todos/index.html (not published by this site). The directory is review/wg-comment/. ",
+    "url": "/dth-hrh/en/cat-harness/todos/#wg-comments",
+    
+    "relUrl": "/en/cat-harness/todos/#wg-comments"
+  },"81": {
+    "doc": "wg-comments — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"82": {
+    "doc": "wg-comments — state",
+    "title": "wg-comments — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"83": {
+    "doc": "Policies",
+    "title": "Policies",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/policies/#policies",
+    
+    "relUrl": "/en/cat-harness/policies/#policies"
+  },"84": {
+    "doc": "Policies",
+    "title": "Policies",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/policies/",
+    
+    "relUrl": "/en/cat-harness/policies/"
+  },"85": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks",
+    "content": "issue-marks/ · issue-marks . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/issue-marks/index.html (not published by this site). The directory is issue-marks/. ",
+    "url": "/dth-hrh/en/cat-harness/issue-marks/#issue-marks",
+    
+    "relUrl": "/en/cat-harness/issue-marks/#issue-marks"
+  },"86": {
+    "doc": "issue-marks — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"87": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"88": {
+    "doc": "Vocab mappings",
+    "title": "Vocab mappings",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/vocab-mappings/#vocab-mappings",
+    
+    "relUrl": "/en/cat-harness/vocab-mappings/#vocab-mappings"
+  },"89": {
+    "doc": "Vocab mappings",
+    "title": "Vocab mappings",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/vocab-mappings/",
+    
+    "relUrl": "/en/cat-harness/vocab-mappings/"
+  },"90": {
+    "doc": "uploads — state",
+    "title": "uploads",
+    "content": "uploads/ · uploads . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/uploads/cat-harness/index.html (not published by this site). The directory is uploads/. ",
+    "url": "/dth-hrh/en/cat-harness/uploads-queue/#uploads",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/#uploads"
+  },"91": {
+    "doc": "uploads — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"92": {
+    "doc": "uploads — state",
+    "title": "uploads — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"93": {
+    "doc": "attestations — state",
+    "title": "attestations",
+    "content": "test/attestations/ · attestations . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/attestations/cat-harness/index.html (not published by this site). The directory is test/attestations/. ",
+    "url": "/dth-hrh/en/cat-harness/attestations/#attestations",
+    
+    "relUrl": "/en/cat-harness/attestations/#attestations"
+  },"94": {
+    "doc": "attestations — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"95": {
+    "doc": "attestations — state",
+    "title": "attestations — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"96": {
+    "doc": "beans — state",
+    "title": "beans",
+    "content": "beans/ · beans . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/beans/index.html (not published by this site). The directory is beans/. ",
+    "url": "/dth-hrh/en/cat-harness/beans/#beans",
+    
+    "relUrl": "/en/cat-harness/beans/#beans"
+  },"97": {
+    "doc": "beans — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | wg-comments elsewhere . The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), . | . ",
+    "url": "/dth-hrh/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"98": {
+    "doc": "beans — state",
+    "title": "beans — state",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"99": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/dth-hrh/en/cat-harness/qa-checkers/#qa-checkers",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/#qa-checkers"
+  },"100": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": " ",
+    "url": "/dth-hrh/en/cat-harness/qa-checkers/",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/"
   },"101": {
     "doc": "Glossary: dth-hrh",
     "title": "Glossary: dth-hrh",

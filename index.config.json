@@ -35,14 +35,9 @@
       },
       "site": {
         "build": {
+          "extends": "document-folio",
           "sourceSteps": [
-            "site:document",
-            "site:wg-comment",
-            "site:library",
-            "site:review-sheet",
-            "site:glossary",
-            "site:archimate",
-            "site:context"
+            "site:wg-comment"
           ],
           "siteSteps": [
             "site:node-kinds",
@@ -57,6 +52,7 @@
           ]
         }
       },
+      "_site_build_comment": "`extends: document-folio` (folio-assistant-core templates/site-presets/, litlfred/cat-harness-tools#2345): the shared document-folio steps run first (document, library, review sheet, glossary, bibliography, ArchiMate, context) and the publish refuses on any broken internal link. Only this folio's own steps are listed here; its package.json site:document keeps --downloads.",
       "_site_comment": "`site:context` builds the JSON-LD context the KG nodes name (ns/context/v1.jsonld under iriBase) into the site, so it is published with it (cat-harness-tools#1052); nothing else writes it, so nothing is kept."
     },
     {
@@ -108,7 +104,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "63daa5276909996824d0180082265817bb9e7e58",
+          "ref": "0b45b934abf523a21faed6328cccde4a367b7131",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -141,9 +137,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "63daa5276909996824d0180082265817bb9e7e58",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "0b45b934abf523a21faed6328cccde4a367b7131",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
@@ -161,7 +157,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
+          "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -170,9 +166,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
@@ -190,7 +186,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "ca6ede70999e539df19a3346a02911b83bb693f6",
+          "ref": "d0e98403408161df09a90d2b8bcf6e67a5b7623f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -205,9 +201,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "ca6ede70999e539df19a3346a02911b83bb693f6",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "d0e98403408161df09a90d2b8bcf6e67a5b7623f",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
@@ -225,7 +221,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "dc97a6bc1aa3643e9dbf8213574225decb7e0e73",
+          "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -240,9 +236,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "dc97a6bc1aa3643e9dbf8213574225decb7e0e73",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
@@ -260,7 +256,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "864ff1fc03c61c9bf6a429103a6ee1076947dc03",
+          "ref": "85c74e0c27b7f5a049922ffc20063df0a463806e",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -272,9 +268,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "864ff1fc03c61c9bf6a429103a6ee1076947dc03",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "85c74e0c27b7f5a049922ffc20063df0a463806e",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
@@ -353,7 +349,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
+          "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -389,9 +385,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
-              "evidence": "litlfred 2026-11-18 ~19:55Z in session session_01EucfRmKLrFezKp16GjTKi4 (card 'Re-pin tools', option 'Separate re-pin PR'): re-pin every followed layer to its current main so dth-hrh#154 picks up cat-harness-tools#2427 (prov-qaqc publishes in the root layer's own site)"
+              "on": "2026-11-21",
+              "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
+              "evidence": "litlfred 2026-11-21 17:48:37Z in session session_01Qmmkt8uBwv6vsMUHNmy7AQ, thread 'Stop content sites missing pages' (decision cmsg_017WNUkNK8kdDziPK58Pv6G9JpZ1T7DgP986NtMcW8jkYL, 'A. Re-pin all layers (rec.)' on 'Re-pin the five site PRs to current main?'): re-pin every layer to current main so the site picks up cat-harness-tools#2483 and folio-assistant-core#857 and passes links: refuse (cat-harness-tools#2345)"
             },
             "standing": {
               "follows": "main",
